@@ -1,0 +1,36 @@
+{
+  "name": "polkadot-blockchain-academy",
+  "version": "0.1.0",
+  "description": "Polkadot Blockchain Academy",
+  "scripts": {
+    "s": "yarn serve-slides",
+    "dev": "yarn serve-slides",
+    "start": "yarn serve-slides",
+    "b": "yarn build-slides-local",
+    "f": "yarn fmt",
+    "l": "yarn links",
+    "help-rmd": "reveal-md --help",
+    "serve-slides": "reveal-md ./ --watch --absolute-url http://localhost:1948",
+    "serve-book": "http-server ./html-book -p 1949 -s & printf '\\n****************************** 👇 ctrl+click to open 👇 ******\\nNon-watching server started @    http://localhost:1949\\n'",
+    "build-slides-local": "rm -rf html-slides && reveal-md ./ --static html-slides",
+    "build-slides-fleek": "rm -rf html-slides && reveal-md ./ --static html-slides --absolute-url https://polkadot-blockchain-academy.on.fleek.co/",
+    "build-slides-gh-pages": "rm -rf html-slides && reveal-md ./ --static html-slides --absolute-url https://polkadot-blockchain-academy.github.io/testing-only/",
+    "fmt": "prettier --config .prettierrc.js --write '**/*.md'",
+    "fmt-slides": "prettier --config .prettierrc.js --write '**/*slides.md'",
+    "fmt-book": "prettier --config .prettierrc.js --write '../**/*page.md'",
+    "links": "yarn links-top && yarn links-content",
+    "links-top": "find *.md -maxdepth 0 -print0 | xargs -0 -n1 markdown-link-check -c .github/workflows/mlc_config.json",
+    "links-content": "find content/ -path content\\*.md -print0 | xargs -0 -n1 markdown-link-check -c .github/workflows/mlc_config.json",
+    "links-for": "markdown-link-check -c .github/workflows/mlc_config.json"
+  },
+  "dependencies": {
+    "reveal-md": "git+https://github.com/NukeManDan/reveal-md.git#patch-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "markdown-link-check": "^3.10.3",
+    "prettier": "^2.6.2"
+  },
+  "packageManager": "yarn@3.2.1",
+  "license": "Unlicensed"
+}

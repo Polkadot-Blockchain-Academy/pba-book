@@ -1,0 +1,206 @@
+# Make using this repo easy with https://github.com/sagiegurari/cargo-make#installation
+#
+# See all insluded task with:
+# makers --list-all-steps
+
+[tasks.default]
+alias = "serve"
+dependencies = ["check-install"]
+
+[config]
+# Catch errors and report to try and help user
+on_error_task = "catch-error"
+# Skip loading of all core tasks which saves up a bit on toml parsing and task creation
+# Also makse minimal listing of included tasks: https://github.com/sagiegurari/cargo-make#disabling-predefined-tasksflows
+skip_core_tasks = true
+# Skips loading Git related environment variables
+skip_git_env_info = true
+# Skips loading rust related environment variables
+skip_rust_env_info = true
+# Skips loading the current crate related environment variables
+skip_crate_env_info = true
+
+# -----------------------------------------------------------------------------
+# Installation
+
+[tasks.i]
+category = "Install"
+alias = "install"
+
+
+[tasks.install]
+description = "Install dependencies for slides and book tooling."
+category = "Install"
+dependencies = ["install-slides", "install-book"]
+
+[tasks.install-book]
+description = "Install dependencies for book tooling only."
+category = "Install"
+script = "cargo install mdbook"
+
+[tasks.install-slides]
+description = "Install dependencies for slides tooling only."
+category = "Install"
+script = '''
+# https://github.com/nvm-sh/nvm#installing-and-updating // https://yarnpkg.com/getting-started/install
+echo "⬢ Install node via nvm..."
+if ! [ -d "${HOME}/.nvm/.git" ]; then
+    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash > /dev/null
+fi
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" > /dev/null 2>&1
+nvm i > /dev/null
+echo "💽 Node installed."
+
+echo "🧶 Install slides tooling with yarn..."
+corepack enable
+yarn
+echo "✅ Slides instalation complete!"
+'''
+
+[tasks.reinstall]
+description = "Wipeout build and dependancy artifacts, then install."
+category = "Install"
+script = 'rm -rf node_modules/ html-slides/ html-book/ && makers i'
+
+# -----------------------------------------------------------------------------
+# Serve
+
+[tasks.s]
+alias = "serve"
+
+[tasks.serve]
+# FIXME - want some way to have a watching server for slides AND the book. Likely some hooks in mdBook and/or reveal-md could be used.
+description = "First *build* the embedded slides, then serve book." # We must build static HTML for slides that is embedded into the book
+category = "Serve"
+dependencies = ["build-slides", "build-book"]
+script = '''
+# copy files from slides build to book build
+rsync -av html-slides/content/ html-book/ --ignore-existing  > /dev/null
+rsync -av html-slides/ --exclude "content" html-book/ --ignore-existing  > /dev/null
+
+# The reveal tooling uses a one-too-deep path for the book
+# "./../../../" in ALL CASES within the html flies should be "../../" so we fix those:
+find html-book/ -regex .*\.html | xargs sed -i 's#./../../../#../../#g' > /dev/null
+
+# serve the book with embedded slides
+# FIXME non-watching server becuase mdBook clobbers the rsync we did above 😭
+yarn serve-book
+'''
+
+[tasks.serve-book]
+description = "Serve book for local viewing, auto-updates for book file changes"
+category = "Serve"
+script = "mdbook serve -o"
+
+[tasks.serve-slides]
+description = "Serve slides only for local viewing, auto-updates for slides-source file changes"
+category = "Serve"
+script = "yarn s"
+
+# -----------------------------------------------------------------------------
+# Build, staging for and/or publishing for production
+
+[tasks.b]
+category = "Build"
+alias = "build"
+
+[tasks.build]
+description = "Build the embedded slides, then the static site for the book."
+category = "Build"
+dependencies = ["build-slides", "build-book"]
+
+[tasks.build-book]
+description = "Build the static site for the book."
+category = "Build"
+script = "mdbook build"
+
+[tasks.build-slides]
+description = "Build the static slides only, local developmet."
+category = "Build"
+script = "yarn build-slides-local > /dev/null"
+# script = "yarn build-slides-gh-pages > /dev/null"
+
+# -----------------------------------------------------------------------------
+# Helpers for style, convention, and formatting
+
+[tasks.c]
+category = "Clean"
+alias = "clean"
+
+[tasks.clean]
+description = "Clean the static build files"
+category = "Clean"
+dependencies = ["clean-slides", "clean-book"]
+
+[tasks.clean-book]
+description = "Clean the book static build files"
+category = "Clean"
+script = "rm -rf html-book"
+
+[tasks.clean-slides]
+description = "Clean the slides static build files"
+category = "Clean"
+script = "rm -rf html-slides"
+
+[tasks.img]
+# FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
+category = "Checks"
+description = "Scan for image issues througout content."
+script = "./tools/scripts/orphan-image-scan.sh content/"
+
+[tasks.l]
+category = "Checks"
+alias = "all-links"
+
+[tasks.all-links]
+# FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
+category = "Checks"
+description = "Check included links for all markdown files."
+script = "yarn l"
+
+[tasks.links-for]
+# FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
+category = "Checks"
+description = "Check links for specific file(s). Example: `makers links-for ./content/contribute/**/*.md`"
+script = "yarn links-for ${@}"
+
+[tasks.f]
+category = "Format"
+alias = "fmt"
+
+[tasks.fmt]
+# FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
+category = "Format"
+description = "Format everything."
+script = "yarn fmt"
+
+[tasks.fmt-book]
+description = "Format the book source, only. (requires slides tooling installed)"
+category = "Format"
+script = "yarn fmt-book"
+
+[tasks.fmt-slides]
+description = "Format the slides source, only."
+category = "Format"
+script = "yarn fmt-slides"
+
+[tasks.catch-error]
+description = "Check and hint at solutions to common errors."
+category = "Tools"
+script = '''
+
+# Build deps are present?
+
+if ! $(echo "type mdbook" | sh > /dev/null ) ; then
+    echo "\n❌ You may need to install the book tooling. Run:\n\nmarkers install\n\n***********"
+    exit 127
+fi
+
+if ! $(yarn --cwd ./slides-source/ --version > /dev/null) ; then
+    echo "\n❌ You may need to install the slides tooling. Run:\n\nmarkers slides-install\n"
+    exit 127
+fi
+
+echo "✅ Instalation of dependencies seems OK."
+'''

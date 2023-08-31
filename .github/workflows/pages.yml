@@ -1,0 +1,90 @@
+# From https://github.com/rust-lang/mdBook/wiki/Automated-Deployment%3A-GitHub-Actions#raw-example
+name: Build and push to `html-*` branches, publish to Pages
+on:
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write # needed to push to branches
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      MDBOOK_VERSION: v0.4.34
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install Yarn
+        uses: bahmutov/npm-install@HEAD
+        with:
+          working-directory: .
+
+      # # Fleek publishes files when a push to `html-slides` by this CI happens.
+      # # Thus the book and slides can be separately hosted from each other.
+      # - name: Build static slides, publish to `html-slides` branch
+      #   run: yarn build-slides-fleek
+      # - name: Deploy `html-slides` branch
+      #   uses: crazy-max/ghaction-github-pages@v2
+      #   with:
+      #     target_branch: html-slides
+      #     build_dir: html-slides
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install mdBook
+        run: |
+          url="https://github.com/rust-lang/mdbook/releases/download/${MDBOOK_VERSION}/mdbook-${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+          mkdir mdbook
+          curl -sSL $url | tar -xz --directory=./mdbook
+          echo `pwd`/mdbook >> $GITHUB_PATH
+      - name: Build static slides to embed in gh-pages book
+        run: yarn build-slides-gh-pages
+      - name: Build book
+        run: mdbook build
+      - name: Embed `html-slides` into `html-book`, fix relative paths
+        run: |
+          rsync -av html-slides/content/ html-book/ --ignore-existing
+          rsync -av html-slides/ --exclude 'content' html-book/ --ignore-existing
+          find html-book/ -regex .*\.html | xargs sed -i 's#./../../../#../../#g'
+      - name: Deploy `html-book` branch
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: html-book
+          build_dir: html-book
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./html-book
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

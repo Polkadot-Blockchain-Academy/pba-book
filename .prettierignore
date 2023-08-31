@@ -1,0 +1,14 @@
+# Ignore build/dev artifacts:
+html*
+node_modules
+build
+.cache
+.yarn
+.github
+public
+package-lock.json
+yarn.lock
+
+# Ignore files that don't need *text* formatting
+assets
+plugin

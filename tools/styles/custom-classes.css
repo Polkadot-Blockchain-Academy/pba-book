@@ -1,0 +1,204 @@
+/*********************************************
+  * CUSTOM CLASSES
+  *********************************************/
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction
+	   and if we allow the items to wrap
+	 * Remember this is the same as:
+	 * flex-direction: row;
+	 * flex-wrap: wrap;
+	 */
+  flex-flow: row nowrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+}
+
+.flex-container > * {
+  flex: 1 100%;
+}
+
+.left {
+  order: 1;
+}
+
+.left-small {
+  order: 1;
+  flex-shrink: 2;
+}
+
+.left-large {
+  order: 1;
+  flex-grow: 2;
+}
+
+.right {
+  order: 2;
+}
+
+.centered * {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.text-center > * {
+  text-align: center !important;
+}
+
+.text-right > * {
+  text-align: right !important;
+}
+
+.text-left > * {
+  text-align: left !important;
+}
+
+/* Classes for Table in 4.5*/
+
+.storage-layer-table {
+  position: fixed;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.storage-layer-table td {
+  padding: 20px !important;
+  background-color: white;
+  color: black;
+}
+
+.storage-layer-table .active {
+  background-color: pink;
+  color: black;
+}
+
+.storage-layer-table .ends {
+  background-color: transparent;
+  color: white;
+}
+
+th {
+  font-weight: 400;
+}
+
+/* positioning within a container */
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.center-right {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.black-box {
+  background-color: black;
+  color: white;
+  padding: 30px;
+}
+
+.black-box ol,
+.black-box ul {
+  margin-top: 0px !important;
+  margin-left: 24px;
+}
+
+.text-small * {
+  font-size: 24px !important;
+}
+
+.text-smaller * {
+  font-size: 18px !important;
+}
+
+.overlay-table {
+  width: 800px;
+}
+
+.overlay-table,
+.overlay-table tr,
+.overlay-table td {
+  border: 2px solid;
+  border-color: white;
+  border-collapse: separate;
+  text-align: center !important;
+}
+
+.overlay-table td {
+  width: 200px;
+}
+
+.layers-table,
+.layers-table tr,
+.layers-table td {
+  border: 2px solid;
+  border-color: white;
+  border-collapse: separate;
+  text-align: center !important;
+  background-color: lightgray;
+  color: black;
+}
+
+.layers-table td {
+  min-width: 200px;
+  height: 100px;
+}
+
+.spec-block {
+  width: 100px;
+  height: 100px;
+  color: white;
+  display: block;
+  font-size: 24px;
+  float: left;
+  margin: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.no-bullet-padding ul,
+.no-bullet-padding ul > li::before {
+  padding: 0 !important;
+  /* Remove padding */
+  margin: 0 !important;
+  /* Remove margins */
+}

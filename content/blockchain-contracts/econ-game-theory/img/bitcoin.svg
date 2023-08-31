@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:none;stroke:#A01127;stroke-miterlimit:10;}
+	.st2{fill:#1F3049;}
+	.st3{fill:#E6CA56;}
+	.st4{fill:#D5872A;}
+	.st5{fill:#C9553E;}
+	.st6{fill:#F5F5F5;}
+	.st7{fill:#75A897;}
+	.st8{fill:#FFFFFF;}
+	.st9{fill:#E29E6F;}
+	.st10{fill:#57646E;}
+	.st11{fill:#8F9BA6;}
+	.st12{fill:#F3F1E8;}
+	.st13{fill:#E09E9A;}
+	.st14{fill:#5E2D16;}
+	.st15{fill:#32A57C;}
+	.st16{fill:#858E96;}
+	.st17{fill:#394755;}
+	.st18{fill:#5082A9;}
+	.st19{clip-path:url(#SVGID_2_);}
+	.st20{clip-path:url(#SVGID_4_);fill:#E09E9A;}
+	.st21{clip-path:url(#SVGID_4_);fill:#1F3049;}
+	.st22{clip-path:url(#SVGID_4_);fill:#F5F5F5;}
+	.st23{clip-path:url(#SVGID_4_);}
+	.st24{fill:#9B6A57;}
+	.st25{fill:#82492E;}
+</style>
+<g id="GUIDELINES" class="st0">
+</g>
+<g id="WORKSPACE" class="st0">
+	<line id="XMLID_465_" class="st1" x1="486" y1="-4" x2="486" y2="516"/>
+	<line id="XMLID_1_" class="st1" x1="-4" y1="26" x2="516" y2="26"/>
+	<line id="XMLID_492_" class="st1" x1="-4" y1="486" x2="516" y2="486"/>
+	<line id="XMLID_480_" class="st1" x1="26" y1="-4" x2="26" y2="516"/>
+</g>
+<g id="ICON">
+</g>
+<g id="Layer_6">
+	<g>
+		<circle class="st2" cx="256" cy="256" r="256"/>
+		<g>
+			<g>
+				<g>
+					<path class="st3" d="M431.6,253.5c-1.4,97.1-81.4,174.6-178.5,173.2C156.1,425.2,78.6,345.3,80,248.2
+						C81.5,151.1,161.4,73.5,258.5,75C355.6,76.5,433.1,156.4,431.6,253.5z"/>
+				</g>
+				<g>
+					<g>
+						<path class="st4" d="M399.4,253c-1.2,79.3-66.5,142.6-145.8,141.4c-79.3-1.2-142.6-66.5-141.4-145.7
+							c1.2-79.3,66.5-142.6,145.7-141.4C337.3,108.5,400.6,173.7,399.4,253z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<g>
+							<path class="st3" d="M184,303h22V192h-22v-24h79.4c35.2,0,59.1,15.2,59.1,41.5c0,15.1-7.8,29.2-30,36
+								c24.2,6,34.6,20.7,34.6,38.6c0,25.8-21.1,42.8-60.4,42.8H184V303z M261.3,235c19.8,0,31.3-7.8,31.3-21.9
+								c0-13.8-11.5-21.1-29.2-21.1H236v43H261.3z M266,303c19.3,0,31-7.7,31-22.2c0-13.8-10.7-22.8-31.8-22.8H236v45H266z"/>
+						</g>
+					</g>
+					<g>
+						<g>
+							<rect x="226" y="141" class="st3" width="22" height="43"/>
+							<rect x="264" y="141" class="st3" width="22" height="43"/>
+						</g>
+						<g>
+							<rect x="226" y="317" class="st3" width="22" height="44"/>
+							<rect x="264" y="317" class="st3" width="22" height="44"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
