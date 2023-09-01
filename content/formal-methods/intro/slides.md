@@ -143,7 +143,7 @@ Note:
 
 Notes:
 
-- [Great blog](https://web.archive.org/web/20230209000724/www.pl-enthusiast.net/2017/10/23/what-is-soundness-in-static-analysis/) that explains the trade-offs between soundness and tractability
+- [Great blog](https://web.archive.org/web/20230209000724/www.pl-enthusiast.net/2017/10/23/what-is-soundness-in-static-analysis/) that explains the trade-offs between soundness and tractability <!-- markdown-link-check-disable-line -->
 
 ---
 

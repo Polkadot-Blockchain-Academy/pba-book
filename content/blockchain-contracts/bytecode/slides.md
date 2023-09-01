@@ -663,7 +663,7 @@ Notes:
 
 - `extern "C"`:
 
-  - > https://doc.rust-lang.org/std/keyword.extern.html>
+  - <https://doc.rust-lang.org/std/keyword.extern.html>
   - <https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html#using-extern-functions-to-call-external-code>
 
 - Chapter 11 of this book is a great read: <https://nostarch.com/rust-rustaceans>

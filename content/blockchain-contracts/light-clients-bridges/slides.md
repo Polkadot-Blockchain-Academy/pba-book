@@ -445,8 +445,20 @@ Your app is only as quality as the lower of the blockspaces.
 
 ---v
 
-## Example
+## Example: Depository Mint Model
 
-Depository - Mint model - Full backing
+- Send tokens to a contract on source chain
+- Message is relayed to destination chain
+  - Offchain relay and transaction
+  - XCM
+  - "Somehow"
+- New "wrapped" tokens are minted on the destination chain
 
-TODO - complete slide
+<!-- TODO really needs a figure -->
+
+Notes:
+
+The same process works in reverse to get the original tokens back.
+This can get get complex when there are multiple bridges.
+Are their wrapped tokens interchangeable?
+What if one of the bridges gets hacked?

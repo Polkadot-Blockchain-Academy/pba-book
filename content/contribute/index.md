@@ -312,7 +312,7 @@ makers l
 
 The checker uses the `.github/workflows/mlc_config.json` configuration, primarily used to _globally_ ignore specific common URLs that throw errors, in error 😛.
 _Notice that ignored links must be check from time to time manually!_
-_Thus don't use this unless explicitly needed, rather use a know good URL if at all possible, perhaps from the <https://web.archive.org/>_
+_Thus don't use this unless explicitly needed, rather use a know good URL if at all possible, perhaps from the <https://archive.org/web/>_
 The same tool is also run by our CI on all files for all pushes to all branches.
 See the `.github/workflows/link-check.yml` file in this repo for details.
 

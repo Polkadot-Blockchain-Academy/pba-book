@@ -381,7 +381,7 @@ If that is not possible, draw a partial LTS.
 
 ## Garage Door Lock
 
-TODO figure of garage door opener
+<img rounded width="60%" src="./img/garage-door-keypad.jpg" />
 
 Notes:
 
@@ -392,9 +392,7 @@ If the user enters the correct 4 digits, the door opens (or closes if it was alr
 The thing is, you could enter some random digits before you enter the correct code, and it would still open after the correct code.
 As you sketch your states, be sure to handle that correctly.
 
-This example is drawn from <https://eng.libretexts.org/Under_Construction/Book%3A_Discrete_Structures/09%3A_Finite-State_Automata/9.02%3A_State_Transition_Diagrams> which has many other excellent examples
-
-TODO add this example to blockchain from scratch.
+This example is drawn from https://eng.libretexts.org/Under_Construction/Book%3A_Discrete_Structures/09%3A_Finite-State_Automata/9.02%3A_State_Transition_Diagrams which has many other excellent examples
 
 ---
 

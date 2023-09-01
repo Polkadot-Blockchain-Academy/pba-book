@@ -218,7 +218,8 @@ It contains the game metadata. You will need this in order to interact with the 
 
 Notes:
 
-And it has 2 todo files. The first is some instructions on General setup and the second one is in order to build your player.
+And it has 2 `todo` files.
+The first is some instructions on General setup and the second one is in order to build your player.
 
 ---
 

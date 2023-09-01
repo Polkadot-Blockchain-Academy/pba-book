@@ -14,9 +14,9 @@ create-missing = false # opt out of helper to create missing stub files, we want
 edition = "2021"
 
 [output.html]
-site-url = "/book/" # needed for gh-pages, MUST match repo name on github!
-git-repository-url = "https://github.com/Polkadot-Blockchain-Academy/book"
-edit-url-template = "https://github.com/Polkadot-Blockchain-Academy/book/edit/main/{path}"
+site-url = "/pba-book/" # needed for gh-pages, MUST match repo name on github!
+git-repository-url = "https://github.com/Polkadot-Blockchain-Academy/pba-book"
+edit-url-template = "https://github.com/Polkadot-Blockchain-Academy/pba-book/edit/main/{path}"
 
 [output.html.search]
 limit-results = 20

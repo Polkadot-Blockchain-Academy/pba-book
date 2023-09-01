@@ -8,7 +8,7 @@ We suggest the [online](#hosted-online) version for general use, but cloning, in
 
 ### Hosted Online
 
-The latest version is hosted at: <a target="_blank" href="https://polkadot-blockchain-academy.github.io/testing-only/">https://polkadot-blockchain-academy.github.io/testing-only/</a> FIXME
+The latest version is hosted at: <a target="_blank" href="https://polkadot-blockchain-academy.github.io/pba-book/">https://polkadot-blockchain-academy.github.io/pba-book/</a>
 
 ### Build Offline
 
