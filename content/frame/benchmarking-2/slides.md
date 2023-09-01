@@ -29,7 +29,7 @@ A Persistent Key-Value Store for Flash and RAM Storage.
 - Keys and values are arbitrary byte arrays.
 - Fast for a general database.
 
-See http://rocksdb.org/.
+See: <https://rocksdb.org/>.
 
 Big project, can be very tricky to configure properly.
 
@@ -52,7 +52,7 @@ An Embedded Persistent Key-Value Store Optimized for Blockchain Applications.
 
 Notes:
 
-See: https://github.com/paritytech/parity-db/issues/82
+See: <https://github.com/paritytech/parity-db/issues/82
 
 Main point is that paritydb suit the triedb model.
 Indeed triedb store encoded key by their hash.
@@ -63,14 +63,14 @@ Iteration on state value is done over the trie structure: having a KVDB with ite
 Both rocksdb and paritydb uses "Transactions" as "writes done in batches".
 We typically run a transaction per block (all in memory before), things are fast (that's probably what you meant).
 In blockchains, writes are typically performed in large batches, when the new block is imported and must be done atomically.
-See: https://github.com/paritytech/parity-db
+See: <https://github.com/paritytech/parity-db>
 
 Concurrency does not matter in this, paritydb lock access to single writer (no concurrency).
 Similarly code strive at being simple and avoid redundant feature: no cache in parity db (there is plenty in substrate).
 
 'Quick commit' : all changes are stored in memory on commit , and actual writing in the WriteAheadLog is done in an asynchronous way.
 
-TODO merge with content from https://github.com/paritytech/parity-db/issues/82
+TODO merge with content from <https://github.com/paritytech/parity-db/issues/82>
 
 ---
 
@@ -173,7 +173,7 @@ Other content access can be interesting to audit enhance though (with paritydb).
 
 See more details here:
 
-https://substrate.stackexchange.com/questions/525/how-expensive-is-it-to-access-storage-items/526#526
+<https://substrate.stackexchange.com/questions/525/how-expensive-is-it-to-access-storage-items/526#526>
 
 ---
 

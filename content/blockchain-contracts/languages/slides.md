@@ -162,7 +162,7 @@ gas_price --> max_base_fee_per_gas
 
 Notes:
 
-https://eips.ethereum.org/EIPS/eip-1559
+<https://eips.ethereum.org/EIPS/eip-1559>
 Introduced in London hard-fork.
 
 ---v
@@ -641,7 +641,7 @@ contract Foo {
 We will use the online [Remix IDE](https://remix.ethereum.org) for our sample coding.
 It provides an editor, compiler, EVM, and debugger all within the browser, making it trivial to get started.
 
-> https://remix.ethereum.org
+> <https://remix.ethereum.org>
 
 ---v
 
@@ -748,7 +748,7 @@ def doSomething() -> bool:
 
 Notes:
 
-source: https://docs.vyperlang.org/en/stable/control-structures.html#decorators-reference
+source: <https://docs.vyperlang.org/en/stable/control-structures.html#decorators-reference>
 
 ---v
 

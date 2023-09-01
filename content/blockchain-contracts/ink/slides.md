@@ -1087,7 +1087,7 @@ Notes:
 <div style="font-size: 0.72em;">
 
 - [Details](https://github.com/openethereum/parity-ethereum/issues/6995) of the exploit:
-- https://etherscan.io/address/0x863df6bfa4469f3ead0be8f9f2aae51c91a907b4#code
+- <https://etherscan.io/address/0x863df6bfa4469f3ead0be8f9f2aae51c91a907b4#code>
 
 <!-- ```solidity -->
 <!-- function kill(address _to) onlymanyowners(sha3(msg.data)) external { -->
@@ -1112,7 +1112,7 @@ Notes:
 Notes:
 
 - might seem trivial but a very similar hack has happend in the past trapping a lot of funds
-- see: https://etherscan.io/address/0x863df6bfa4469f3ead0be8f9f2aae51c91a907b4#code
+- see: <https://etherscan.io/address/0x863df6bfa4469f3ead0be8f9f2aae51c91a907b4#code>
 - hacker has "accidentally" called an unprotected `initMultiowned` and proceeded to delete the contract code
 
 ---

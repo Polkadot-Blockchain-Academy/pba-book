@@ -72,12 +72,12 @@ almost all external communication happens over JSPN-RPC, so let's take a closer 
 
 Notes:
 
-recall:
+Recall:
 
-https://paritytech.github.io/substrate/master/sc_rpc_api/index.html
-https://paritytech.github.io/substrate/master/sc_rpc/index.html
+- <https://paritytech.github.io/substrate/master/sc_rpc_api/index.html>
+- <https://paritytech.github.io/substrate/master/sc_rpc/index.html>
 
-The full list can also be seen here: https://polkadot.js.org/docs/substrate/rpc/
+The full list can also be seen here: <https://polkadot.js.org/docs/substrate/rpc/>
 
 ---v
 
@@ -141,9 +141,9 @@ RPC-Server vs. Light Client
 
 Notes:
 
-https://github.com/JFJun/go-substrate-rpc-client
-https://github.com/polkascan/py-substrate-interface
-more here: https://project-awesome.org/substrate-developer-hub/awesome-substrate
+<https://github.com/JFJun/go-substrate-rpc-client>
+<https://github.com/polkascan/py-substrate-interface>
+more here: <https://project-awesome.org/substrate-developer-hub/awesome-substrate>
 
 ---
 
@@ -187,7 +187,7 @@ Notice that this number that we get back is the little endian (SCALE) encoded va
 
 A brief introduction.
 
-Excellent tutorial at: http://polkadot.js.org/docs
+Excellent tutorial at: <https://polkadot.js.org/docs>
 
 ---v
 
@@ -245,9 +245,10 @@ await api.rpc.state.getRuntimeVersion()
 await api.rpc.state.getPairs("0x")
 await api.rpc.state.getKeysPaged("0x", 100)
 await api.rpc.state.getStorage()
-https://polkadot.js.org/docs/substrate/rpc#getstoragekey-storagekey-at-blockhash-storagedata
 await api.rpc.state.getStorageSize("0x3A636F6465"),
 ```
+
+<https://polkadot.js.org/docs/substrate/rpc#getstoragekey-storagekey-at-blockhash-storagedata>
 
 A few random other things:
 
@@ -276,6 +277,6 @@ xxHashAsHex("Foo");
 
 Notes:
 
-- see "Client Libraries" here: https://project-awesome.org/substrate-developer-hub/awesome-substrate
-- https://paritytech.github.io/json-rpc-interface-spec/introduction.html
-- Full subxt guide: https://docs.rs/subxt/latest/subxt/book/index.html
+- see "Client Libraries" here: <https://project-awesome.org/substrate-developer-hub/awesome-substrate>
+- <https://paritytech.github.io/json-rpc-interface-spec/introduction.html>
+- Full `subxt` guide: <https://docs.rs/subxt/latest/subxt/book/index.html>

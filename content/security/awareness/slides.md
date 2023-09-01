@@ -1,18 +1,7 @@
 ---
-title: Security Awareness in web3 # Also update the h1 header on the first slide to the same name
+title: Security Awareness in web3
 description: A sentence for what these slides are about.
 duration: 45 minutes
-# PBA has a theme: "reveal-md/PBA-theme.css", alternatively, you can use a named default like "night" from this list: https://github.com/hakimel/reveal.js/tree/master/css/theme/source
-# Add custom css files for your slides here, comma separated:
-separator: "\r?\n---\r?\n"
-verticalSeparator: "\r?\n---v\r?\n"
-# Below can be any of these: https://revealjs.com/config/
-revealOptions:
-  transition: "slide" # animation between slides = none/fade/slide/convex/concave/zoom
-  backgroundTransition: "fade" # background swap between slides = none/fade/slide/convex/concave/zoom
-  slideNumber: true
-  controls: true
-  progress: true
 ---
 
 # Security Awareness in web3

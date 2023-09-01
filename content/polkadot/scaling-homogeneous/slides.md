@@ -66,11 +66,11 @@ duration: 45 mins
 
 Notes:
 
-- https://dahliamalkhi.files.wordpress.com/2018/03/hot-stuff-arxiv2018.pdf
-- https://arxiv.org/pdf/2305.13556.pdf
-- https://arxiv.org/pdf/2105.11827.pdf
-- https://eprint.iacr.org/2023/031.pdf
-- https://move-book.com/
+- <https://dahliamalkhi.files.wordpress.com/2018/03/hot-stuff-arxiv2018.pdf>
+- <https://arxiv.org/pdf/2305.13556.pdf>
+- <https://arxiv.org/pdf/2105.11827.pdf>
+- <https://eprint.iacr.org/2023/031.pdf>
+- <https://move-book.com/>
 
 ---
 
@@ -107,7 +107,7 @@ Notes:
 
 Notes:
 
-- https://vitalik.ca/general/2021/04/07/sharding.html
+- <https://vitalik.ca/general/2021/04/07/sharding.html>
 
 ---
 
@@ -148,7 +148,7 @@ Notes:
 
 Notes:
 
-- https://near.org/papers/nightshade
+- <https://near.org/papers/nightshade>
 
 ---
 
@@ -167,7 +167,7 @@ Notes:
 
 Notes:
 
-- https://eprint.iacr.org/2017/406.pdf
+- <https://eprint.iacr.org/2017/406.pdf>
 
 ---
 
@@ -197,9 +197,9 @@ Notes:
 
 Notes:
 
-- https://vitalik.ca/general/2021/01/05/rollup.html
-- https://www.jeffcoleman.ca/state-channels/
-- https://lightning.network/lightning-network-paper.pdf
+- <https://vitalik.ca/general/2021/01/05/rollup.html>
+- <https://www.jeffcoleman.ca/state-channels/>
+- <https://lightning.network/lightning-network-paper.pdf>
 
 ---
 
@@ -240,7 +240,7 @@ Notes:
 
 Notes:
 
-- https://plasma.io/plasma-deprecated.pdf
+- <https://plasma.io/plasma-deprecated.pdf>
 
 ---
 
@@ -254,9 +254,9 @@ Notes:
 
 Notes:
 
-- https://ethresear.ch/t/plasma-world-map-the-hitchhiker-s-guide-to-the-plasma/4333
-- https://ethresear.ch/t/plasma-cash-plasma-with-much-less-per-user-data-checking/1298
-- https://ethresear.ch/t/minimal-viable-plasma/426
+- <https://ethresear.ch/t/plasma-world-map-the-hitchhiker-s-guide-to-the-plasma/4333>
+- <https://ethresear.ch/t/plasma-cash-plasma-with-much-less-per-user-data-checking/1298>
+- <https://ethresear.ch/t/minimal-viable-plasma/426>
 
 ---
 
@@ -281,5 +281,5 @@ Notes:
 
 Notes:
 
-- https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad
-- https://ethresear.ch/t/minimal-viable-merged-consensus/5617
+- <https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad>
+- <https://ethresear.ch/t/minimal-viable-merged-consensus/5617>

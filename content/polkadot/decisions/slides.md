@@ -20,7 +20,7 @@ Jeff Bezos outlined in an annual letter to Amazon shareholders how he approaches
 
 Notes:
 
-https://www.sec.gov/Archives/edgar/data/1018724/000119312516530910/d168744dex991.htm <!-- markdown-link-check-disable-line -->
+<https://www.sec.gov/Archives/edgar/data/1018724/000119312516530910/d168744dex991.htm> <!-- markdown-link-check-disable-line -->
 
 ---
 
@@ -452,8 +452,8 @@ Polkadot was designed around Parachains, but the exact meaning and manifestation
 
 Notes:
 
-- https://hackmd.io/9xhCNYIOQny0v0QTsWuNwQ#/
-- https://www.youtube.com/watch?v=GIB1WeVuJD0
+- <https://hackmd.io/9xhCNYIOQny0v0QTsWuNwQ#/>
+- <https://www.youtube.com/watch?v=GIB1WeVuJD0>
 
 ---
 
@@ -483,7 +483,7 @@ XCM is Parity's current flavor of a cross-consensus message format, but we alrea
 
 Notes:
 
-https://github.com/paritytech/xcm-format
+<https://github.com/paritytech/xcm-format>
 
 ---
 

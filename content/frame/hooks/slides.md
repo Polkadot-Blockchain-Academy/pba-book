@@ -24,7 +24,7 @@ duration: 1 hour
 
 Notes:
 
-https://paritytech.github.io/substrate/master/frame_support/traits/trait.Hooks.html
+<https://paritytech.github.io/substrate/master/frame_support/traits/trait.Hooks.html>
 
 ---v
 
@@ -141,7 +141,7 @@ Sometimes, rather than thinking "at the end of block N", consider writing code "
 
 Notes:
 
-See https://github.com/paritytech/substrate/pull/14279 and related PRs
+See: <https://github.com/paritytech/substrate/pull/14279> and related PRs
 
 ---
 
@@ -164,8 +164,8 @@ Notes:
 
 This is all in the agenda of the FRAME team at Parity for 2023.
 
-https://github.com/paritytech/substrate/issues/13530
-https://github.com/paritytech/substrate/issues/13690
+<https://github.com/paritytech/substrate/issues/13530>
+<https://github.com/paritytech/substrate/issues/13690>
 
 ---
 
@@ -211,7 +211,7 @@ Notes:
 
 implicit in this:
 
-Inherents are only first, which is being discussed RIGHT NOW: https://github.com/polkadot-fellows/RFCs/pull/13
+Inherents are only first, which was being discussed: <https://github.com/polkadot-fellows/RFCs/pull/13>
 
 ---
 
@@ -283,7 +283,7 @@ struct RuntimeGenesisConfig {
 
 Notes:
 
-https://paritytech.github.io/substrate/master/node_template_runtime/struct.RuntimeGenesisConfig.html
+<https://paritytech.github.io/substrate/master/node_template_runtime/struct.RuntimeGenesisConfig.html>
 
 ---v
 
@@ -294,7 +294,7 @@ https://paritytech.github.io/substrate/master/node_template_runtime/struct.Runti
 
 Notes:
 
-https://github.com/paritytech/substrate/issues/13334
+<https://github.com/paritytech/substrate/issues/13334>
 
 ---
 
@@ -318,7 +318,7 @@ Notes:
 People have often thought that they can do magic with things with OCW, please don't. BIG warning to
 founders to be careful with this!
 
-https://paritytech.github.io/substrate/master/pallet_examples/index.html
+<https://paritytech.github.io/substrate/master/pallet_examples/index.html>
 
 ---v
 
@@ -354,7 +354,7 @@ https://paritytech.github.io/substrate/master/pallet_examples/index.html
 
 Notes:
 
-https://paritytech.github.io/substrate/master/sp_runtime/offchain/storage_lock/index.html
+<https://paritytech.github.io/substrate/master/sp_runtime/offchain/storage_lock/index.html>
 
 ---v
 
@@ -475,8 +475,8 @@ Notes:
 What other ideas you can think of?
 
 - a hook called once a pallet is first initialized.
-  https://github.com/paritytech/substrate/issues/14098
-- Local on Post/Pre dispatch: https://github.com/paritytech/substrate/issues/12047
+  <https://github.com/paritytech/substrate/issues/14098>
+- Local on Post/Pre dispatch: <https://github.com/paritytech/substrate/issues/12047>
 - Global on Post/Pre dispatch is in fact a signed extension. It has to live in the runtime, because you have to specify order.
 
 ---

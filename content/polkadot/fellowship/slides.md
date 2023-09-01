@@ -49,7 +49,7 @@ Notes:
 - **Node operators** are a concept here. They have the duty to run the "correct software". But how
   they come to this decision is something that needs knowledge, which brings us to the next point.
 
-https://moxie.org/2022/01/07/web3-first-impressions.html
+<https://moxie.org/2022/01/07/web3-first-impressions.html>
 
 ---v
 
@@ -69,7 +69,7 @@ Notes:
 1. the cathedral and bazaar
 1. the papal model
 
-https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar
+<https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar>
 
 ---v
 
@@ -301,5 +301,5 @@ The manifesto provides one such example
 
 Learn more:
 
-- https://github.com/polkadot-fellows
-- https://kusama.subscan.io/fellowship
+- <https://github.com/polkadot-fellows>
+- <https://kusama.subscan.io/fellowship>

@@ -271,7 +271,7 @@ mod runtime {
 
 Notes:
 
-See: https://github.com/paritytech/substrate/issues/13137
+See: <https://github.com/paritytech/substrate/issues/13137>
 
 ---
 
@@ -545,11 +545,11 @@ fn test() {
 
 Notes:
 
-- This PR was actually an outcome Cambridge PBA: https://github.com/paritytech/substrate/pull/11932
-- https://github.com/paritytech/substrate/pull/11818
-- https://github.com/paritytech/substrate/pull/10043
-- On usage of macros un Substrate: https://github.com/paritytech/substrate/issues/12331
-- Disscussion on advance testing: https://forum.polkadot.network/t/testing-complex-frame-pallets-discussion-tools/356
+- This PR was actually an outcome Cambridge PBA: <https://github.com/paritytech/substrate/pull/11932>
+- <https://github.com/paritytech/substrate/pull/11818>
+- <https://github.com/paritytech/substrate/pull/10043>
+- On usage of macros un Substrate: <https://github.com/paritytech/substrate/issues/12331>
+- Discussion on advance testing: <https://forum.polkadot.network/t/testing-complex-frame-pallets-discussion-tools/356>
 - Reserve topic: Reading events.
 - Reserve-topic: try-state.
 

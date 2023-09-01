@@ -453,8 +453,8 @@ He was pretty excited about some of the research in multi-party computation that
 Remember, there is a second smart contract definition that we called the "web3 definition" right at the beginning of this lecture.
 That definition is heavily dependent on content you'll learn during the blockchain module - so Joshy will be sure to build off of that later this week.
 
-https://nakamotoinstitute.org/the-god-protocols/
-https://nakamotoinstitute.org/formalizing-securing-relationships/
+<https://nakamotoinstitute.org/the-god-protocols/>
+<https://nakamotoinstitute.org/formalizing-securing-relationships/>
 
 ---
 

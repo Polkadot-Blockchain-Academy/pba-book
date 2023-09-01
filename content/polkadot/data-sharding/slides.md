@@ -257,7 +257,7 @@ This approach guarantees there's at least one honest full nodes that has the dat
 
 <br/>
 
-> https://arxiv.org/abs/1809.09044
+> <https://arxiv.org/abs/1809.09044>
 
 ---
 
@@ -328,12 +328,12 @@ Danksharding is aiming at 1.3 MB/s and Celestia < 1 MB/s.
 
 </pba-flex>
 
-> https://github.com/paritytech/reed-solomon-novelpoly
+> <https://github.com/paritytech/reed-solomon-novelpoly>
 
 ---
 
 ## References
 
-1. https://www.youtube.com/watch?v=1pQJkt7-R4Q
-1. https://notes.ethereum.org/@vbuterin/proto_danksharding_faq
-1. https://www.paradigm.xyz/2022/08/das
+1. <https://www.youtube.com/watch?v=1pQJkt7-R4Q>
+1. <https://notes.ethereum.org/@vbuterin/proto_danksharding_faq>
+1. <https://www.paradigm.xyz/2022/08/das>

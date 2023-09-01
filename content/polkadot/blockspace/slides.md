@@ -19,7 +19,7 @@ In this lesson, we will cover:
 
 Notes:
 
-Deep Dive Article is https://www.rob.tech/polkadot-blockspace-over-blockchains/
+Deep Dive Article is <https://www.rob.tech/polkadot-blockspace-over-blockchains/>
 
 ---
 

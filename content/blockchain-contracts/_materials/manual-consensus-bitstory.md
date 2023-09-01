@@ -16,7 +16,7 @@ To add a word to the story, a student must create a valid block, and draw that b
 
 ## Proof of Work
 
-The PoW phase is the original, and a working hasher tool is available here: https://joshorndorff.github.io/BitStory/bitStoryLive.html
+The PoW phase is the original, and a working hasher tool is available here: <https://joshorndorff.github.io/BitStory/bitStoryLive.html>
 
 To begin we'll explore the Nakamoto style Proof of Work.
 To add a block a student must:

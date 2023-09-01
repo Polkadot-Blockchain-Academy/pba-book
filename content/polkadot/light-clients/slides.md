@@ -304,7 +304,7 @@ Notes:
 Time: Polkadot decoded 2022; Stage: Co-founder of Talisman wallet, Jonathan Dunne, takes the stage demo of our Light client solution (smoldot) is integrated in the wallet, and what are the benefits - using a very "questionable internet connection" which had a very bad day due to way-too-many-connected people;
 Once the [talisman wallet](https://www.talisman.xyz/) loads up, pay attention to the spinners - Polkadot is loading with a light client while Kusama with the usual JSON-RPC method
 
-Full video: https://tinyurl.com/decoded-talisman-light-client
+Full video: <https://tinyurl.com/decoded-talisman-light-client>
 
 ---v
 

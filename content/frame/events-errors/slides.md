@@ -307,7 +307,7 @@ pub enum Error<T> {
 
 Notes:
 
-https://github.com/paritytech/substrate/pull/10242
+<https://github.com/paritytech/substrate/pull/10242>
 
 ---
 

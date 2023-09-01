@@ -444,13 +444,12 @@ Notes:
 
 For more details see:
 
-https://github.com/paritytech/substrate/issues/10806
-
-https://github.com/paritytech/substrate/pull/10809
+- <https://github.com/paritytech/substrate/issues/10806>
+- <https://github.com/paritytech/substrate/pull/10809>
 
 In module 6, we can take a closer look at how this functionality is exposed in FRAME.
 
-See: https://github.com/paritytech/substrate/pull/11431
+See: <https://github.com/paritytech/substrate/pull/11431>
 
 ---
 
@@ -600,7 +599,7 @@ This is populated thanks to FRAME's macro magic.
 
 Notes:
 
-https://substrate.stackexchange.com/questions/476/storage-definition-syntax/478#478
+<https://substrate.stackexchange.com/questions/476/storage-definition-syntax/478#478>
 
 ---
 
@@ -1321,7 +1320,7 @@ More info in the docs...
 
 ### Read the StorageMap Docs for API
 
-https://crates.parity.io/frame_support/pallet_prelude/struct.StorageMap.html
+<https://crates.parity.io/frame_support/pallet_prelude/struct.StorageMap.html>
 
 ---
 

@@ -307,8 +307,8 @@ svg, png, gif, ... anything that works on the web should work here!
 
 Notes:
 
-Image source: https://giphy.com/stickers/transparent-hU2uvl6LdxILQOIad3
-License: https://support.giphy.com/hc/en-us/articles/360020027752-GIPHY-Terms-of-Service <!-- markdown-link-check-disable-line -->
+Image source: <https://giphy.com/stickers/transparent-hU2uvl6LdxILQOIad3>
+License: <https://support.giphy.com/hc/en-us/articles/360020027752-GIPHY-Terms-of-Service> <!-- markdown-link-check-disable-line -->
 
 ---v
 
@@ -333,8 +333,8 @@ mp4, webm, ... anything that works on the web should work here!
 
 Notes:
 
-Video source: https://www.youtube.com/watch?v=oaidhA5eL_8
-License: https://www.youtube.com/static?template=terms
+Video source: <https://www.youtube.com/watch?v=oaidhA5eL_8>
+License: <https://www.youtube.com/static?template=terms>
 
 ---v
 

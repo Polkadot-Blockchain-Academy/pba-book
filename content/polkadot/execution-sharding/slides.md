@@ -517,7 +517,7 @@ This must be accounted for in the protocol: we cannot assume that the runtime is
 
 ## Orchestra
 
-https://github.com/paritytech/orchestra
+> <https://github.com/paritytech/orchestra>
 
 **Orchestra** allows us to split up the node's logic into many "Subsystems" which run asynchronously.
 

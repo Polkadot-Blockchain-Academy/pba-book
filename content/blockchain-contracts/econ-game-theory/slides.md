@@ -306,7 +306,7 @@ It's the BLOCKSPACE.
 Miners secure and produce blockspace and sell it in an auction to various users.
 Blockspace as a product is actually a pretty new way of thinking about blockchains so I highly suggest checking out the article linked in the notes.
 
-- https://polkadot.network/blog/blockspace-blockspace-ecosystems-how-polkadot-is-unlocking-the-full-potential-of-web3/
+- <https://polkadot.network/blog/blockspace-blockspace-ecosystems-how-polkadot-is-unlocking-the-full-potential-of-web3/>
 
 ---v
 
@@ -863,7 +863,7 @@ So Bitcoin mining is in fact a huge coordination game and this is why honesty AK
 
 - More complex examples will be explored later in the forks lecture on Friday
 - Paper investigating PoW Nash Equilibrium and following the majority:
-  https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=7bf78054192d98e999edcdf08971a5eed42518d2
+  <https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=7bf78054192d98e999edcdf08971a5eed42518d2>
 
 ---
 
@@ -2365,8 +2365,8 @@ I encourage you to read the speaker notes for further reading.
 The whole field of blockchain incentivization and protocol design is still developing so there are many unknowns but overall I hope all the methods shown today help you in making more informed decisions later down the line.
 Thats it...
 
-- Podcast: https://www.youtube.com/watch?v=aP9f_1v9Ulc
-- Whitepaper: https://2039955362-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FPy2Kmkwju3mPSo9jrKKt%2Fuploads%2F9tExk4U2OdiRKGEsUWqW%2FEigenLayer_WhitePaper.pdf?alt=media&token=c20ac4bd-badd-4826-9fb6-492923741c9e <!-- markdown-link-check-disable-line -->
+- Podcast: <https://www.youtube.com/watch?v=aP9f_1v9Ulc>
+- Whitepaper: <https://2039955362-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FPy2Kmkwju3mPSo9jrKKt%2Fuploads%2F9tExk4U2OdiRKGEsUWqW%2FEigenLayer_WhitePaper.pdf?alt=media&token=c20ac4bd-badd-4826-9fb6-492923741c9e> <!-- markdown-link-check-disable-line -->
 
 ---
 

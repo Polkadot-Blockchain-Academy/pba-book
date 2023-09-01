@@ -12,7 +12,7 @@ duration: 60 minutes
 
 While I speak, please clone `polkadot-sdk`, and run `cargo build && cargo build --release`.
 
-> https://github.com/paritytech-stg/polkadot-sdk/
+> <https://github.com/paritytech-stg/polkadot-sdk/>
 
 ---
 
@@ -94,8 +94,8 @@ I am not against L2s per se, but it is truth that they mostly exist because the 
 is too hard/slow to upgrade itself. ETH Gas prices is also shows that the underlying protocol cannot
 meet the demands of today.
 
-https://en.wikipedia.org/wiki/Bitcoin_scalability_problem
-https://ycharts.com/indicators/ethereum_average_gas_price
+<https://en.wikipedia.org/wiki/Bitcoin_scalability_problem>
+<https://ycharts.com/indicators/ethereum_average_gas_price>
 
 ---v
 
@@ -205,7 +205,7 @@ fn main() {
 
 Notes:
 
-https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/3215760/nsa-releases-guidance-on-how-to-protect-against-software-memory-safety-issues/#:~:text=Microsoft%20and%20Google%20have%20each,70%20percent%20of%20their%20vulnerabilities.
+<https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/3215760/nsa-releases-guidance-on-how-to-protect-against-software-memory-safety-issues/#:~:text=Microsoft%20and%20Google%20have%20each,70%20percent%20of%20their%20vulnerabilities.>
 
 ---v
 
@@ -964,25 +964,25 @@ want to see how it works. This allows you to kickstart with your assignment earl
 
 Notes:
 
-- Great documentation about all things substrate/blockchain from SMOLDOT: https://docs.rs/smoldot/latest/smoldot/
+- Great documentation about all things substrate/blockchain from smoldot: <https://docs.rs/smoldot/latest/smoldot/>
 
-- Read more about why we use Rust at Parity: https://www.parity.io/blog/why-rust
+- Read more about why we use Rust at Parity: <https://www.parity.io/blog/why-rust>
 
-- An interesting question on JVM/Wasm: https://stackoverflow.com/questions/58131892/why-the-jvm-cannot-be-used-in-place-of-webassembly
+- An interesting question on JVM/Wasm: <https://stackoverflow.com/questions/58131892/why-the-jvm-cannot-be-used-in-place-of-webassembly>
 
-- Rust safety: https://stanford-cs242.github.io/f18/lectures/05-1-rust-memory-safety.html
-- https://www.reddit.com/r/rust/comments/5y3cxb/how_many_security_exploits_would_rust_prevent/
+- Rust safety: <https://stanford-cs242.github.io/f18/lectures/05-1-rust-memory-safety.html>
+- <https://www.reddit.com/r/rust/comments/5y3cxb/how_many_security_exploits_would_rust_prevent/>
 
 - The substrate clients should still have some level of _determinism in their performance_. If
   authority nodes have extremely varied performances, they could start finalizing different forks.
 
-- There have been attempts at writing FRAME alternatives, namely AssemblyScript. https://github.com/LimeChain/as-substrate-runtime
+- There have been attempts at writing FRAME alternatives, namely AssemblyScript. <https://github.com/LimeChain/as-substrate-runtime>
 
 - Think about the differences between a runtime and a smart contract.
 
   - A runtime is in some sense a smart contract as well, but not a user-deployed one.
-  - https://en.wikipedia.org/wiki/Smart_contract
-  - https://www.futurelearn.com/info/courses/defi-exploring-decentralised-finance-with-blockchain-technologies/0/steps/251885#:~:text=to%20the%201990s.-,Writing%20in%201994%2C%20the%20computer%20scientist%20Nick%20Szabo%20defined%20a,of%20artificial%20intelligence%20is%20implied.
+  - <https://en.wikipedia.org/wiki/Smart_contract>
+  - <https://www.futurelearn.com/info/courses/defi-exploring-decentralised-finance-with-blockchain-technologies/0/steps/251885#:~:text=to%20the%201990s.-,Writing%20in%201994%2C%20the%20computer%20scientist%20Nick%20Szabo%20defined%20a,of%20artificial%20intelligence%20is%20implied.>
 
 - Substrate Primitives (`sp-*`), Frame (`frame-*`) and the pallets (`pallets-*`), binaries (`/bin`)
   and all other utilities are licensed under [Apache
@@ -998,7 +998,7 @@ exception](https://www.gnu.org/software/classpath/license.html).
 - GPL3 ensures any deeper improvements made to Substrate's core logic (e.g. Substrate's internal
   consensus, crypto or database code) to be contributed back so everyone can benefit.
 
-- Currently, the Wasm binary spec v1 is used, read more about the new version here: https://webassembly.github.io/spec/core/binary/index.html
+- Currently, the Wasm binary spec v1 is used, read more about the new version here: <https://webassembly.github.io/spec/core/binary/index.html>
 
 ### Post Lecture Feedback
 

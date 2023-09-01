@@ -352,9 +352,8 @@ Get a target repo, find a "victim" - a popular person,<br/>uses mixed verified a
 
 <img rounded style="width: 1000px" src="./img/commit-forgery1.png" />
 
-- https://github.com/ethereum/research/commits?author=vbuterin
-
-- https://github.com/jayphelps/git-blame-someone-else
+- <https://github.com/ethereum/research/commits?author=vbuterin>
+- <https://github.com/jayphelps/git-blame-someone-else>
 
 ---
 
@@ -401,7 +400,7 @@ But the attacker still can play around Pull Requests, mix forged/non-forged comm
 
 See the result (a fork was created to have write access):
 
-https://github.com/pavelsupr/research/commit/99cb1cbe3b729cfada10aa53d531b5f2bcb5aa7f
+<https://github.com/pavelsupr/research/commit/99cb1cbe3b729cfada10aa53d531b5f2bcb5aa7f>
 
 <img rounded style="width: 1000px" src="./img/commit-forgery3.png" />
 

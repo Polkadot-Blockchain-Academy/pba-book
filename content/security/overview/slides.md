@@ -61,7 +61,7 @@ Different actors with different drivers but commonalities on modus operandi.
 Notes:
 
 On the crypto ecosystem there have been number of cyber events!
-https://medium.com/ngrave/the-history-of-crypto-hacks-top-10-biggest-heists-that-shocked-the-crypto-industry-828a12495e76
+<https://medium.com/ngrave/the-history-of-crypto-hacks-top-10-biggest-heists-that-shocked-the-crypto-industry-828a12495e76>
 
 ---
 
@@ -73,21 +73,21 @@ https://medium.com/ngrave/the-history-of-crypto-hacks-top-10-biggest-heists-that
 
 Notes:
 
-- https://www.forbes.com/sites/ninabambysheva/2022/12/28/over-3-billion-stolen-in-crypto-heists-here-are-the-eight-biggest/?sh=5d411c13699f
-- https://www.zdnet.com/article/iota-cryptocurrency-shuts-down-entire-network-after-wallet-hack/
-- https://news.bitcoin.com/kucoin-boss-on-strategy-after-hack-we-chose-to-act/
-- https://halborn.com/explained-the-ronin-hack-march-2022/
-- https://www.bitdefender.com/blog/hotforsecurity/cryptocurrency-monero-website-hacked-original-binaries-replaced <!-- markdown-link-check-disable-line -->
-- https://www.coindesk.com/markets/2020/02/10/new-crypto-exchange-altsbit-says-it-will-close-following-hack/
-- https://peckshield.medium.com/akropolis-incident-root-cause-analysis-c11ee59e05d4
-- https://www.coindesk.com/markets/2020/12/21/bitgrail-operator-may-have-hacked-own-exchange-to-steal-120m-police-allege/
-- https://coinmarketcap.com/alexandria/article/bitgrail-hack-one-of-the-largest-crypto-hacks-in-history
-- https://www.coindesk.com/tech/2020/04/08/hacker-exploits-flaw-in-decentralized-bitcoin-exchange-bisq-to-steal-250k/
-- https://www.coindesk.com/policy/2021/02/20/cryptopia-exchange-currently-in-liquidation-gets-hacked-again-report/
-- https://bravenewcoin.com/insights/cryptopia-exchange-liquidator-releases-third-report
-- https://elementus.io/blog/cryptopia-hack-transparency/
-- https://blog.merklescience.com/hacktrack/hack-track-eterbase-cryptocurrency-exchange
-- https://www.reuters.com/investigates/special-report/fintech-crypto-binance-dirtymoney/
+- <https://www.forbes.com/sites/ninabambysheva/2022/12/28/over-3-billion-stolen-in-crypto-heists-here-are-the-eight-biggest/?sh=5d411c13699f>
+- <https://www.zdnet.com/article/iota-cryptocurrency-shuts-down-entire-network-after-wallet-hack/>
+- <https://news.bitcoin.com/kucoin-boss-on-strategy-after-hack-we-chose-to-act/>
+- <https://halborn.com/explained-the-ronin-hack-march-2022/>
+- <https://www.bitdefender.com/blog/hotforsecurity/cryptocurrency-monero-website-hacked-original-binaries-replaced> <!-- markdown-link-check-disable-line -->
+- <https://www.coindesk.com/markets/2020/02/10/new-crypto-exchange-altsbit-says-it-will-close-following-hack/>
+- <https://peckshield.medium.com/akropolis-incident-root-cause-analysis-c11ee59e05d4>
+- <https://www.coindesk.com/markets/2020/12/21/bitgrail-operator-may-have-hacked-own-exchange-to-steal-120m-police-allege/>
+- <https://coinmarketcap.com/alexandria/article/bitgrail-hack-one-of-the-largest-crypto-hacks-in-history>
+- <https://www.coindesk.com/tech/2020/04/08/hacker-exploits-flaw-in-decentralized-bitcoin-exchange-bisq-to-steal-250k/>
+- <https://www.coindesk.com/policy/2021/02/20/cryptopia-exchange-currently-in-liquidation-gets-hacked-again-report/>
+- <https://bravenewcoin.com/insights/cryptopia-exchange-liquidator-releases-third-report>
+- <https://elementus.io/blog/cryptopia-hack-transparency/>
+- <https://blog.merklescience.com/hacktrack/hack-track-eterbase-cryptocurrency-exchange>
+- <https://www.reuters.com/investigates/special-report/fintech-crypto-binance-dirtymoney/>
 
 ---
 

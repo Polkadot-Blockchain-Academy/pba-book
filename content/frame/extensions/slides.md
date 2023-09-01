@@ -192,8 +192,8 @@ fn check(self, lookup: &Lookup) -> Result<Self::Checked, TransactionValidityErro
 
 Notes:
 
-https://github.com/paritytech/substrate/issues/6102
-https://github.com/paritytech/substrate/issues/4419
+- <https://github.com/paritytech/substrate/issues/6102>
+- <https://github.com/paritytech/substrate/issues/4419>
 
 ---v
 
@@ -283,7 +283,7 @@ Put the genesis hash in `additional_signed`.
 
 Notes:
 
-https://github.com/paritytech/substrate/issues/10413
+<https://github.com/paritytech/substrate/issues/10413>
 
 ---v
 

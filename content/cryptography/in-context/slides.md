@@ -333,7 +333,7 @@ Notes:
 
 When the standardization process started, professors proposed 128-bit keys. Western european (british especially) intelligence agencies wanted weaker security. Snowden eventually came out and said the NSA could easily read A5/1 calls.
 
-[article source](http://goodenoughsecurity.blogspot.com/2011/10/gsm-a51-substandard-security-pt2.html)
+[article source](https://goodenoughsecurity.blogspot.com/2011/10/gsm-a51-substandard-security-pt2.html)
 [source on weakening](https://www.aftenposten.no/verden/i/Olkl/sources-we-were-pressured-to-weaken-the-mobile-security-in-the-80s)
 
 ---v

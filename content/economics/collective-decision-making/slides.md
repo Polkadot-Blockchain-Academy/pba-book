@@ -629,7 +629,7 @@ Notes:
   Luckily, the original Chandu Sahu still managed to win, but by only a razor-thin margin of 1200 votes, as the other 10 fake candidates accumulated around 70 thousand votes.
 - This technique is known as vote splitting, and plurality voting is well known to be susceptible to it.
 
-Image source: https://indianexpress.com/article/political-pulse/the-10-other-sahus-how-namesakes-almost-cost-bjps-chandu-lal-sahu-a-win/
+Image source: <https://indianexpress.com/article/political-pulse/the-10-other-sahus-how-namesakes-almost-cost-bjps-chandu-lal-sahu-a-win/>
 
 ---
 

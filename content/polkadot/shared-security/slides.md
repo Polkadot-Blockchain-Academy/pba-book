@@ -476,7 +476,7 @@ Notes:
 
 See the section on "Key Risks and Vulnerabilities" here:
 
-https://consensys.net/blog/cryptoeconomic-research/eigenlayer-a-restaking-primitive/
+<https://consensys.net/blog/cryptoeconomic-research/eigenlayer-a-restaking-primitive/>
 
 > Generally there are two main attack vectors of EigenLayer.
 > One is that many validators collude to attack a set of middleware services simultaneously.

@@ -169,7 +169,7 @@ mod well_known_keys {
 
 Notes:
 
-See https://paritytech.github.io/substrate/master/sp_storage/well_known_keys/index.html
+See <https://paritytech.github.io/substrate/master/sp_storage/well_known_keys/index.html>
 
 ---v
 
@@ -206,20 +206,15 @@ Notes:
 as in, do we want to able to update our transactions format as well in a forkless manner?
 we want the runtime to be able to change its transactions format as well, in a forkless manner.
 
-The answer to the latter is more involved. The short answer is that these fields like header must be
-known and established between client and runtime. If you want to alter the header format, that's a
-hard fork.
+The answer to the latter is more involved. The short answer is that these fields like header must be known and established between client and runtime. If you want to alter the header format, that's a hard fork.
 
-The concept of `digest` is a means through which additional data can be put in the header without
-breaking changes, but that is outside the scope of this lecture.
+The concept of `digest` is a means through which additional data can be put in the header without breaking changes, but that is outside the scope of this lecture.
 
-Yet, as with other primitives, substrate allows you to readily change your header type when you are
-building your blockchain. This is achieved by a set of traits in `sp-runtime`. Notably, `trait
-Block` and `trait Header` in this crate define what it means to be a header and block, and as long
-as you fulfill that, you are good to go.
+Yet, as with other primitives, substrate allows you to readily change your header type when you are building your blockchain.
+This is achieved by a set of traits in `sp-runtime`.
+Notably, `trait Block` and `trait Header` in this crate define what it means to be a header and block, and as long as you fulfill that, you are good to go.
 
-Also, substrate provides one set of implementation for all of these types in
-https://paritytech.github.io/substrate/master/sp_runtime/generic/index.html
+Also, substrate provides one set of implementation for all of these types in <https://paritytech.github.io/substrate/master/sp_runtime/generic/index.html>
 
 ---v
 
@@ -307,7 +302,8 @@ runtime.execute_block(opaque_block);
 Notes:
 
 - From which block's state do we fetch the code??
-- This probably calls into `host_functions::{get/set}` internally. What do we return
+- This probably calls into `host_functions::{get/set}` internally.
+  What do we return
 
 ---v
 
@@ -359,7 +355,8 @@ Notes:
   - The correct state (and other host functions) is provided.
 
 - Similarly, almost all RPC operations that interact with the runtime have an `Option<Hash>`
-  argument. This specifies "at which block to load the runtime and state from".
+  argument.
+  This specifies "at which block to load the runtime and state from".
 
 ---v
 
@@ -407,7 +404,8 @@ database::store_state(block.header.hash, state)
 
 ## Detour: Extrinsic
 
-- Previous slides used the term "transactions" in a simplified way. Let's correct it.
+- Previous slides used the term "transactions" in a simplified way.
+  Let's correct it.
 
 ---v
 
@@ -433,15 +431,15 @@ database::store_state(block.header.hash, state)
 
 Notes:
 
-extrinsics are just blobs of data which can be included in a block. inherents are types of extrinsic
-which are crafted by the block builder itself in the production process. they are unsigned because
-the assertion is that they are "inherently true" by virtue of getting past all validators.
-notionally the origin can be said to be a plurality of validators. take for example the timestamp
-set inherent. if the data were sufficiently incorrect (i.e. the wrong time), then the block would
-not be accepted by enough validators and would not become canonicalised. so the "nobody" origin is
-actually the tacit approval of the validators. transactions are generally statements of opinion
-which are valuable to the chain to have included (because fees are paid or some other good is done).
-the transaction pool filters out which of these are indeed valuable and nodes share them.
+Extrinsics are just blobs of data which can be included in a block.
+Inherents are types of extrinsic which are crafted by the block builder itself in the production process.
+They are unsigned because the assertion is that they are "inherently true" by virtue of getting past all validators.
+Notionally the origin can be said to be a plurality of validators.
+Take for example the timestamp set inherent.
+If the data were sufficiently incorrect (i.e. the wrong time), then the block would not be accepted by enough validators and would not become canonicalized.
+So the "nobody" origin is actually the tacit approval of the validators.
+Transactions are generally statements of opinion which are valuable to the chain to have included (because fees are paid or some other good is done).
+The transaction pool filters out which of these are indeed valuable and nodes share them.
 
 ---
 
@@ -672,9 +670,10 @@ In order the address the mentioned issue, metadata must be a runtime API.
 
 <hr>
 
-- Metadata contains all the basic information to know about all storage items, all extrinsics, and so
-  on. It will also help a client/app decode them into the right type.
-- Substrate itself doesn't impose what the metadata should be. It is `Vec<u8>`.
+- Metadata contains all the basic information to know about all storage items, all extrinsics, and so on.
+  It will also help a client/app decode them into the right type.
+- Substrate itself doesn't impose what the metadata should be.
+  It is `Vec<u8>`.
 - FRAME based runtime expose a certain format, which is extensively adopted in the ecosystem.
 
 ---v
@@ -691,8 +690,8 @@ In order the address the mentioned issue, metadata must be a runtime API.
 
 Notes:
 
-By Applications/Clients I really mean anyone/anything. Substrate client doesn't really use metadata
-because it is dynamically typed, but if needed, it could.
+By Applications/Clients I really mean anyone/anything.
+Substrate client doesn't really use metadata because it is dynamically typed, but if needed, it could.
 
 ---
 
@@ -704,12 +703,11 @@ Notes:
 
 I wish you could have both, but not so easy.
 
-Some personal rant: radical upgrade-ability is the biggest advantage, and arguably one of the main
-develop-ability problems of the substrate ecosystem. Writing clients, such as block explorers,
-scanners, and even exchange integration are orders of magnitude harder than a blockchain that has a
-fixed format and only changes every 18 months at most. That being said, this is a battle that is to
-me obvious: we simply HAVE to win. When ethereum first introduced smart contracts, everyone
-probably had the same class of issues. This is the same matter, on a a different level.
+Some personal rant: radical upgrade-ability is the biggest advantage, and arguably one of the main develop-ability problems of the substrate ecosystem.
+Writing clients, such as block explorers, scanners, and even exchange integration are orders of magnitude harder than a blockchain that has a fixed format and only changes every 18 months at most.
+That being said, this is a battle that is to me obvious: we simply HAVE to win.
+When ethereum first introduced smart contracts, everyone probably had the same class of issues.
+This is the same matter, on a a different level.
 
 also, as noted in an earlier slide, once you make it work for one chain, it works for many chains.
 
@@ -734,7 +732,8 @@ _Anything that is part of the STF is opaque to the client, but it can change for
 
 Notes:
 
-In essence, all components of the STF must be opaque to the client. `Vec<u8>`.
+In essence, all components of the STF must be opaque to the client.
+`Vec<u8>`.
 Metadata is there to assist where needed.
 This is why forkless upgrades are possible in substrate.
 
@@ -756,8 +755,8 @@ But, recall that substrate's extensibility and generic-ness clause applies here.
 
 For some, like header, some hacks exist, like the `digest` field.
 
-Changing these is hard in a forkless manner. If you want to just change them at genesis and launch a
-new chain, they are all VERY easy to change.
+Changing these is hard in a forkless manner.
+If you want to just change them at genesis and launch a new chain, they are all VERY easy to change.
 
 ---
 
@@ -829,7 +828,8 @@ let final_header = runtime.finalize_block();
 
 Notes:
 
-to be frank, these are still a simplification. Inherent for example are not really represented here.
+to be frank, these are still a simplification.
+Inherent for example are not really represented here.
 
 ---v
 
@@ -886,7 +886,8 @@ let outcome: Vec<u8> = api.execute_block(block, block_hash).unwrap();
 Notes:
 
 - All runtime APIs are generic over a `<Block>` by default.
-- All runtime APIs are executed on top of a **specific block**. This is the implicit _at_ parameter.
+- All runtime APIs are executed on top of a **specific block**.
+  This is the implicit _at_ parameter.
 - Going over the API, everything is SCALE encoded both ways, but abstractions like
   `impl_runtime_apis` hide that away from you.
 
@@ -963,7 +964,8 @@ Storage because of the runtime not being capable.
 - Going over the runtime boundary is analogous to your CPU needing to go to memory.
 
 On the other hand things as `next_storage` are high cost (generally iteration on state from runtime
-is expensive). This design is related to the memory location, there is alternative but this is
+is expensive).
+This design is related to the memory location, there is alternative but this is
 simple (simple as good design).
 
 - Question: we got host function for running computation intensive code in native, but when simd for
@@ -1098,11 +1100,13 @@ But, if some are executing native, then you will have a consensus error.
 Notes:
 
 While you might think the state revert is the good thing here, it is the main problem, and the main
-reason you should not let a code-path that is accessible by arbitrary users to panic. Because, any
+reason you should not let a code-path that is accessible by arbitrary users to panic.
+Because, any
 fees paid for the wasted execution of that runtime API call is also reverted.
 
 In other words, a panic in the runtime typically allows everyone's time to be wasted, for free,
-indefinitely. In other words, a DOS vector.
+indefinitely.
+In other words, a DOS vector.
 
 > A panic in `initialize_block` and `finalize_block` have even more catastrophic effects, which will
 > be discussed further in the FRAME section.
@@ -1140,12 +1144,14 @@ Notes:
 Consider two cases:
 
 1. A transaction that panic-ed
-2. A transaction that cannot pay for fees, but the pool somehow validated it by mistake.
+1. A transaction that cannot pay for fees, but the pool somehow validated it by mistake.
 
-when you author a block, you hope that the tx-pool has pre-validated things for you, but you cannot
-be sure. The pool cannot pre-execute stuff. If it fails, then you have to continue. For example, the
-pool might validate a nonce that becomes invalid. Or a fee payment. In that case, the block author
-wasted time, but everyone else will not.
+when you author a block, you hope that the tx-pool has pre-validated things for you, but you cannot be sure.
+The pool cannot pre-execute stuff.
+If it fails, then you have to continue.
+For example, the pool might validate a nonce that becomes invalid.
+Or a fee payment.
+In that case, the block author wasted time, but everyone else will not.
 
 To the contrary, once you have authored a block, the importers expect you to only have put VALID
 transactions into it, those that will not fail to be **included**.
@@ -1159,11 +1165,13 @@ See the documentation of `ApplyExtrinsicResult` in Substrate for more info about
 
 ### Consideration: Altering Host Function
 
-- A runtime upgrade now requires a new `sp_io::new_stuff::foo()`. Can we do a normal runtime upgrade?
+- A runtime upgrade now requires a new `sp_io::new_stuff::foo()`.
+  Can we do a normal runtime upgrade?
 
 <div>
 
-- Clients need to upgrade first. No more fully forkless upgrade 😢
+- Clients need to upgrade first.
+  No more fully forkless upgrade 😢
 
 </div>
 
@@ -1360,8 +1368,8 @@ fn root(&mut self, version: StateVersion) -> Vec<u8> { .. }
 
 ### Activity: Expected Panics In The Runtime
 
-- Look into the `frame-executive` crate's code. See instances of `panic!()`, and see if you can make
-  sense out of it.
+- Look into the `frame-executive` crate's code.
+  See instances of `panic!()`, and see if you can make sense out of it.
 - You have 15 minutes!
 
 <diagram class="mermaid">
@@ -1431,8 +1439,8 @@ Content that is not covered, but is relevant.
 
 Notes:
 
-Also, it is arguable to say that the runtime is the boss here. The client must serve the runtime
-fully, but the runtime may or may not want to support certain APIs for certain applications.
+Also, it is arguable to say that the runtime is the boss here.
+The client must serve the runtime fully, but the runtime may or may not want to support certain APIs for certain applications.
 
 Recall from another slide:
 
@@ -1443,7 +1451,8 @@ Recall from another slide:
 ### Consideration: Runtime API Versioning
 
 - The Rust code (which is **statically** typed) in substrate client does care if the change _is breaking_.
-  - For example, input/output types change. Rust code cannot deal with that!
+  - For example, input/output types change.
+    Rust code cannot deal with that!
 
 ---v
 

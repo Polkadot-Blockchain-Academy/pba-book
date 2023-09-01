@@ -351,11 +351,3 @@ impl pallet_timestamp::Config for Runtime {
 
 </div>
 </div>
-
----
-
-## Exercise: Proof of Existence Blockchain
-
-Let's get our hands dirty and use all of these pieces together!
-
-https://docs.substrate.io/tutorials/build-application-logic/use-macros-in-a-custom-pallet/

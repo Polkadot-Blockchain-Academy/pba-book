@@ -202,7 +202,7 @@ polkadot build-spec --chain rococo-local \
 
 Notes:
 
-Tutorials https://docs.substrate.io/tutorials/build-a-parachain/
+Tutorials <https://docs.substrate.io/tutorials/build-a-parachain/>
 
 ---v
 
@@ -347,7 +347,7 @@ Zombienet allow to [define your network](https://paritytech.github.io/zombienet/
 
 Notes:
 
-https://paritytech.github.io/zombienet/network-definition-spec.html
+<https://paritytech.github.io/zombienet/network-definition-spec.html>
 
 ---v
 
@@ -377,7 +377,7 @@ cumulus_based = true
 
 Notes:
 
-https://github.com/pepoviola/zombienet-presentation-examples/blob/main/examples/0001-small-network.toml
+<https://github.com/pepoviola/zombienet-presentation-examples/blob/main/examples/0001-small-network.toml>
 
 ---v
 
@@ -397,7 +397,7 @@ Try to launch a network with `2` parachains.
 
 <br/>
 
-https://paritytech.github.io/zombienet/
+<https://paritytech.github.io/zombienet/>
 
 ---
 
@@ -544,7 +544,7 @@ Learning a new DSL can be tedious, but if you are using vscode we develop an [ex
 Notes:
 
 Show the extension link
-https://github.com/paritytech/zombienet-vscode-extension
+<https://github.com/paritytech/zombienet-vscode-extension>
 
 ---
 
@@ -675,16 +675,12 @@ We encourage everyone to test it, provide feedback, ask question and contribute.
 
 Notes:
 
-- Zombienet repo: https://github.com/paritytech/zombienet
+Zombienet:
 
-- Zombienet docs: https://paritytech.github.io/zombienet/
-
-- Zombienet v2 Roadmap: https://github.com/orgs/paritytech/projects/55
-
-- [Zombienet sub0 slides](https://docs.google.com/presentation/d/1wPjbrqLg9MCfygvBYV5gDra39cSr5TXg)
-
-- [Zombienet sub0 presentation](https://www.youtube.com/watch?v=QKTZZCpdGH4)
-
+- [repo](https://github.com/paritytech/zombienet)
+- [docs](https://paritytech.github.io/zombienet)
+- [v2 Roadmap](https://github.com/orgs/paritytech/projects/55)
+- [sub0 slides](https://docs.google.com/presentation/d/1wPjbrqLg9MCfygvBYV5gDra39cSr5TXg)
+- [sub0 presentation](https://www.youtube.com/watch?v=QKTZZCpdGH4)
+- [Presentation examples](https://github.com/pepoviola/zombienet-presentation-examples)
 - [Setting up a local testnet](https://hackmd.io/kSFS2ButRESeJ7hu_iKKoA)
-
-- [zombienet presentation examples](https://github.com/pepoviola/zombienet-presentation-examples)

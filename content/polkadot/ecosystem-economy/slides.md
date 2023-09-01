@@ -221,7 +221,7 @@ Given the existence of a value bearing token, it can be used to provide security
 
 - Punishments are aggressive enough that rational actors would never act maliciously.
 
-https://polkadot.network/features/staking/
+<https://polkadot.network/features/staking/>
 
 </div>
 
@@ -276,7 +276,7 @@ Polkadot has an on-chain governance system called OpenGov which is used to:
 - Support Parachain Teams
 - etc...
 
-https://polkadot.network/features/opengov/
+<https://polkadot.network/features/opengov/>
 
 </div>
 
@@ -397,8 +397,8 @@ The main Polkadot Client is built using Rust in Substrate.
 
 However, other clients for Polkadot are under development:
 
-- Kagome (C++17): https://github.com/soramitsu/kagome
-- Gossamer (Go): https://github.com/ChainSafe/gossamer
+- Kagome (C++17): <https://github.com/soramitsu/kagome>
+- Gossamer (Go): <https://github.com/ChainSafe/gossamer>
 
 Over time, this can help provide additional resilience to the network from software bugs.
 
@@ -424,7 +424,7 @@ Perhaps this list will grow once more agile core allocation systems are implemen
 
 Notes:
 
-https://wiki.polkadot.network/docs/learn-system-chains
+<https://wiki.polkadot.network/docs/learn-system-chains>
 
 ---
 
@@ -445,7 +445,7 @@ Future:
 
 Notes:
 
-https://wiki.polkadot.network/docs/learn-system-chains
+<https://wiki.polkadot.network/docs/learn-system-chains>
 
 ---
 
@@ -471,7 +471,7 @@ Dozens of teams from around the world have already done that, and are taking adv
 
 Notes:
 
-https://polkadot.subscan.io/parachain
+<https://polkadot.subscan.io/parachain>
 
 ---
 
@@ -505,7 +505,7 @@ While this list is not exhaustive, some of the verticals we have seen appear in 
 
 Notes:
 
-https://substrate.io/ecosystem/projects/
+<https://substrate.io/ecosystem/projects/>
 
 ---
 
@@ -567,7 +567,7 @@ Users can get clear visibility into the transactions they are signing, and perfo
 
 Notes:
 
-https://wiki.polkadot.network/docs/build-tools-index#block-explorers
+<https://wiki.polkadot.network/docs/build-tools-index#block-explorers>
 
 ---
 
@@ -603,7 +603,7 @@ The most popular ones at the moment:
 
 Notes:
 
-https://forum.polkadot.network/
+<https://forum.polkadot.network/>
 
 ---
 
@@ -619,7 +619,7 @@ The Polkadot Fellowship is a decentralized technical collective on the Polkadot 
 
 Notes:
 
-https://github.com/polkadot-fellows
+<https://github.com/polkadot-fellows>
 
 ---
 
@@ -629,7 +629,7 @@ https://github.com/polkadot-fellows
 
 Notes:
 
-https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama-rpc.polkadot.io#/fellowship
+<https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama-rpc.polkadot.io#/fellowship>
 
 ---
 

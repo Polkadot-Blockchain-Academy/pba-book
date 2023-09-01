@@ -224,7 +224,7 @@ Notes:
 Notes:
 
 - There is also the notion of perfect and imperfect information which we should skip here.
-  More info: https://economics.stackexchange.com/questions/13292/imperfect-vs-incomplete-information
+  More info: <https://economics.stackexchange.com/questions/13292/imperfect-vs-incomplete-information>
 
 ---
 

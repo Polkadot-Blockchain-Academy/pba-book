@@ -455,7 +455,7 @@ pub type Executive = Executive<
 
 Notes:
 
-Short answer is, yes, but it is a LOT of work. See here: https://github.com/paritytech/substrate/issues/10308
+Short answer is, yes, but it is a LOT of work. See here: <https://github.com/paritytech/substrate/issues/10308>
 
 ---
 
@@ -463,7 +463,7 @@ Short answer is, yes, but it is a LOT of work. See here: https://github.com/pari
 
 - `translate` methods:
   - For `StorageValue`, `StorageMap`, etc.
-- https://paritytech.github.io/substrate/master/frame_support/storage/migration/index.html
+- <https://paritytech.github.io/substrate/master/frame_support/storage/migration/index.html>
 
 * `#[storage_alias]` macro to create storage types for removed for those that are being removed.
 
@@ -580,13 +580,13 @@ Reading all this data over RPC can be slow!
 
 Notes:
 
-- additional work on automatic version upgrades: https://github.com/paritytech/substrate/issues/13107
-- a Great talk about try-runtime and further testing of your runtime: https://www.youtube.com/watch?v=a_u3KMG-n-I
+- Additional work on automatic version upgrades: <https://github.com/paritytech/substrate/issues/13107>
+- A Great talk about try-runtime and further testing of your runtime: <https://www.youtube.com/watch?v=a_u3KMG-n-I>
 
 #### Reference material:
 
-https://docs.google.com/presentation/d/1hr3fiqOI0JlXw0ISs8uV9BXiDQ5mGOQLc3b_yWK6cxU/edit#slide=id.g43d9ae013f_0_82
-https://www.crowdcast.io/e/substrate-seminar/41
+<https://docs.google.com/presentation/d/1hr3fiqOI0JlXw0ISs8uV9BXiDQ5mGOQLc3b_yWK6cxU/edit#slide=id.g43d9ae013f_0_82>
+<https://www.crowdcast.io/e/substrate-seminar/41>
 
 #### Exercise ideas:
 

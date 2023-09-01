@@ -29,7 +29,7 @@ duration: 45 mins
 
 Notes:
 
-- https://l2beat.com/scaling/summary
+- <https://l2beat.com/scaling/summary>
 
 ---
 
@@ -72,8 +72,8 @@ https://www.starknet.io/en/posts/developers/rollup-validium-volition-where-is-yo
 
 Notes:
 
-- https://celestia.org/learn/sovereign-rollups/an-introduction/ <!-- markdown-link-check-disable-line -->
-- https://rollkit.dev/blog/sovereign-rollups-on-bitcoin-with-rollkit
+- <https://celestia.org/learn/sovereign-rollups/an-introduction/> <!-- markdown-link-check-disable-line -->
+- <https://rollkit.dev/blog/sovereign-rollups-on-bitcoin-with-rollkit>
 
 ---
 
@@ -88,7 +88,7 @@ Notes:
 
 Notes:
 
-- https://dba.mirror.xyz/LYUb_Y2huJhNUw_z8ltqui2d6KY8Fc3t_cnSE9rDL_o
+- <https://dba.mirror.xyz/LYUb_Y2huJhNUw_z8ltqui2d6KY8Fc3t_cnSE9rDL_o>
 
 ---
 
@@ -124,8 +124,8 @@ Notes:
 
 Notes:
 
-- https://arxiv.org/abs/1809.09044
-- https://github.com/availproject/data-availability/blob/master/reference%20document/Data%20Availability%20-%20Reference%20Document.pdf
+- <https://arxiv.org/abs/1809.09044>
+- <https://github.com/availproject/data-availability/blob/master/reference%20document/Data%20Availability%20-%20Reference%20Document.pdf>
 
 ---
 
@@ -164,7 +164,7 @@ Notes:
 
 Notes:
 
-- https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer/ <!-- markdown-link-check-disable-line -->
+- <https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer/> <!-- markdown-link-check-disable-line -->
 
 ---
 
@@ -182,9 +182,9 @@ Notes:
 
 Notes:
 
-- https://notes.ethereum.org/@vbuterin/proto_danksharding_faq
-- https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html
-- https://www.youtube.com/watch?v=4L30t_6JBAg
+- <https://notes.ethereum.org/@vbuterin/proto_danksharding_faq>
+- <https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html>
+- <https://www.youtube.com/watch?v=4L30t_6JBAg>
 
 ---
 
@@ -202,10 +202,10 @@ Notes:
 
 Notes:
 
-- https://medium.com/hackernoon/scaling-tezo-8de241dd91bd
-- https://eprint.iacr.org/2020/352.pdf
-- https://github.com/barryWhiteHat/roll_up
-- https://zkhack.dev/whiteboard/
+- <https://medium.com/hackernoon/scaling-tezo-8de241dd91bd>
+- <https://eprint.iacr.org/2020/352.pdf>
+- <https://github.com/barryWhiteHat/roll_up>
+- <https://zkhack.dev/whiteboard/>
 
 ---
 
@@ -220,7 +220,7 @@ Notes:
 
 Notes:
 
-- https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf
+- <https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-kalodner.pdf>
 
 ---
 
@@ -244,7 +244,7 @@ Notes:
 
 Notes:
 
-- https://ethereum-magicians.org/t/proposed-milestones-for-rollups-taking-off-training-wheels/11571
+- <https://ethereum-magicians.org/t/proposed-milestones-for-rollups-taking-off-training-wheels/11571>
 
 ---
 
@@ -256,9 +256,9 @@ Notes:
 
 Notes:
 
-- https://docs.espressosys.com/sequencer/espresso-sequencer-architecture/readme
-- https://stack.optimism.io/docs/understand/explainer/
-- https://ethereum.org/nl/roadmap/pbs/
+- <https://docs.espressosys.com/sequencer/espresso-sequencer-architecture/readme>
+- <https://stack.optimism.io/docs/understand/explainer/>
+- <https://ethereum.org/nl/roadmap/pbs/>
 
 ---
 
@@ -273,8 +273,8 @@ Notes:
 
 Notes:
 
-- https://github.com/OffchainLabs/bold/blob/main/docs/research-specs/BOLDChallengeProtocol.pdf
-- https://offchain.medium.com/solutions-to-delay-attacks-on-rollups-434f9d05a07a
+- <https://github.com/OffchainLabs/bold/blob/main/docs/research-specs/BOLDChallengeProtocol.pdf>
+- <https://offchain.medium.com/solutions-to-delay-attacks-on-rollups-434f9d05a07a>
 
 ---
 
@@ -287,8 +287,8 @@ Notes:
 
 Notes:
 
-- https://medium.com/offchainlabs/the-cheater-checking-problem-why-the-verifiers-dilemma-is-harder-than-you-think-9c7156505ca1
-- https://medium.com/offchainlabs/cheater-checking-how-attention-challenges-solve-the-verifiers-dilemma-681a92d9948e
+- <https://medium.com/offchainlabs/the-cheater-checking-problem-why-the-verifiers-dilemma-is-harder-than-you-think-9c7156505ca1>
+- <https://medium.com/offchainlabs/cheater-checking-how-attention-challenges-solve-the-verifiers-dilemma-681a92d9948e>
 
 ---
 

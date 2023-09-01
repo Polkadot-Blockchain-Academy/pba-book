@@ -70,7 +70,7 @@ High level
 
 ## Exploring the `substrate` crate.
 
-https://paritytech.github.io/substrate/master/substrate/index.html
+<https://paritytech.github.io/substrate/master/substrate/index.html>
 
 ---v
 
@@ -128,13 +128,13 @@ Study in the docs:
 
 Notes:
 
-all commands: https://paritytech.github.io/substrate/master/sc_cli/commands/index.html
-all args to a typical run command https://paritytech.github.io/substrate/master/sc_cli/commands/struct.RunCmd.html
+all commands: <https://paritytech.github.io/substrate/master/sc_cli/commands/index.html>
+all args to a typical run command <https://paritytech.github.io/substrate/master/sc_cli/commands/struct.RunCmd.html>
 
 Bute then each node can decide which subset of these it chooses, and how it implements it.
 
-https://paritytech.github.io/substrate/master/node_template/cli/enum.Subcommand.html
-https://paritytech.github.io/substrate/master/node_cli/enum.Subcommand.html
+<https://paritytech.github.io/substrate/master/node_template/cli/enum.Subcommand.html>
+<https://paritytech.github.io/substrate/master/node_cli/enum.Subcommand.html>
 
 - execution strategies
 - database type
@@ -152,8 +152,8 @@ https://paritytech.github.io/substrate/master/node_cli/enum.Subcommand.html
 
 Notes:
 
-https://crates.io/crates/substrate-wasm-builder (seen env variables, pretty useful!) <!-- markdown-link-check-disable-line -->
-https://docs.substrate.io/build/build-process/
+<https://crates.io/crates/substrate-wasm-builder> (seen env variables, pretty useful!) <!-- markdown-link-check-disable-line -->
+<https://docs.substrate.io/build/build-process>
 
 ---v
 

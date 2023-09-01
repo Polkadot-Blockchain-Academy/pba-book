@@ -214,7 +214,7 @@ _Redundancy for your secrets_
 
 Notes:
 
-Image credit here: https://medium.com/clavestone/bitcoin-multisig-vs-shamirs-secret-sharing-scheme-ea83a888f033
+Image source: <https://medium.com/clavestone/bitcoin-multisig-vs-shamirs-secret-sharing-scheme-ea83a888f033>
 
 ---
 

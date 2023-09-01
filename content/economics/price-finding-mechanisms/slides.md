@@ -48,7 +48,7 @@ Notes:
 
 Notes:
 
-Image source: https://funkypriceguide.com/collectible/512-gold-hopper-2018-sdcc-fundays/
+Image source: <https://funkypriceguide.com/collectible/512-gold-hopper-2018-sdcc-fundays/>
 
 ---
 
@@ -307,7 +307,7 @@ Notes:
   So it is better to bid exactly your valuation.
 - The proof can be easily generalized to any number of bidders (to obtain that in a second-price auction, it is a dominant strategy for each bidder to bid truthfully.
 
-TIP: use arrow chars in unicode for style: https://www.htmlsymbols.xyz/arrow-symbols
+TIP: use arrow chars in unicode for style: <https://www.htmlsymbols.xyz/arrow-symbols>
 
 ---
 

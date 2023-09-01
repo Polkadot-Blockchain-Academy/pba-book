@@ -505,8 +505,8 @@ Stress that as an oracle, the Fellowship can't take any action on its own. Any w
 
 <pba-flex center>
 
-- Vote - https://kusama.subsquare.io/referenda
-- Delegate vote - https://kusama.subsquare.io/referenda
-- Submit proposal - https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama-rpc.dwellir.com#/referenda
+- Vote - <https://kusama.subsquare.io/referenda>
+- Delegate vote - <https://kusama.subsquare.io/referenda>
+- Submit proposal - <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama-rpc.dwellir.com#/referenda>
 
 </pba-flex>

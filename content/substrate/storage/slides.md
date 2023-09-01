@@ -211,11 +211,11 @@ flowchart TD
 
 Notes:
 
-more resources:
+More resources:
 
-- https://en.wikipedia.org/wiki/Merkle_tree
-- https://en.wikipedia.org/wiki/Radix_tree
-- https://en.wikipedia.org/wiki/Trie
+- <https://en.wikipedia.org/wiki/Merkle_tree>
+- <https://en.wikipedia.org/wiki/Radix_tree>
+- <https://en.wikipedia.org/wiki/Trie>
 
 Namely:
 
@@ -224,7 +224,8 @@ Namely:
 
 > Donald Knuth, pages 498-500 in Volume III of The Art of Computer Programming, calls these
 > "Patricia's trees", presumably after the acronym in the title of Morrison's paper: "PATRICIA -
-> Practical Algorithm to Retrieve Information Coded in Alphanumeric". Today, Patricia tries are seen
+> Practical Algorithm to Retrieve Information Coded in Alphanumeric".
+> Today, Patricia tries are seen
 > as radix trees with radix equals 2, which means that each bit of the key is compared individually
 > and each node is a two-way (i.e., left versus right) branch.
 > ---v
@@ -284,7 +285,8 @@ simplification.
 ## Trie Walking Example
 
 - We know the state-root at a given block `n`.
-- assume this is a base-26, patricia trie. English alphabet is the key-scope.
+- assume this is a base-26, patricia trie.
+  English alphabet is the key-scope.
 - Let's see the steps needed to read `balances_alice` from the storage.
 
 ---v
@@ -404,14 +406,15 @@ Between a light clint and a full node, which one cares more about which?
 
 Notes:
 
-Light client cares about node size. When proof is being sent, there is no IO.
+Light client cares about node size.
+When proof is being sent, there is no IO.
 
 First glance, the radix-8 seems better: you will typically have less DB access to reach a key.
 For example, with binary, with 3 IO, we can reach only 8 items, but with radix-8 512.
 
-So why should not chose a very wide tree? because the wider you make the tree, the bigger each node
-gets, because it has to store more hashes. At some point, this start to screw with both the proof
-size and the cost of reading/writing/encoding/decoding all these nodes.
+So why should not chose a very wide tree?
+Because the wider you make the tree, the bigger each node gets, because it has to store more hashes.
+At some point, this start to screw with both the proof size and the cost of reading/writing/encoding/decoding all these nodes.
 
 ---v
 
@@ -446,7 +449,8 @@ Anyone interested in blockchain and research stuff should look into this.
 
 ### Unbalanced Tree
 
-- Unbalanced tree means unbalanced performance. An attack vector, if done right.
+- Unbalanced tree means unbalanced performance.
+  An attack vector, if done right.
 - More about this in FRAME storage, and how it is prevented there.
 
 Notes:
@@ -497,9 +501,9 @@ Notes:
 
 Both read and write have an extra step now, but proof are easier.
 
-Note from emeric: the green node is not really a "real" node, it is just `{ value: BIG_STUFF }`
-stored in the database. I will skip this detail for the sake of simplicity. One can assume that the
-green node is like any other node in the trie.
+Note from emeric: the green node is not really a "real" node, it is just `{ value: BIG_STUFF }` stored in the database.
+I will skip this detail for the sake of simplicity.
+One can assume that the green node is like any other node in the trie.
 
 ---
 
@@ -519,8 +523,7 @@ green node is like any other node in the trie.
 
 Notes:
 
-in other words, one should one care too much about updating a "trie" and all of its hashing details
-while the block is still being executed? all of that can be delayed.
+in other words, one should one care too much about updating a "trie" and all of its hashing details while the block is still being executed? all of that can be delayed.
 
 ---
 
@@ -585,9 +588,8 @@ while the block is still being executed? all of that can be delayed.
 
 Notes:
 
-- In your code, you often have an option to either pass stack variables around, or re-read code from
-  `sp-io`. Most often, this is a micro-optimization that won't matter too much, but in general you
-  should know that the former is more performant, as won't go the the host at all.
+- In your code, you often have an option to either pass stack variables around, or re-read code from `sp-io`.
+  Most often, this is a micro-optimization that won't matter too much, but in general you should know that the former is more performant, as won't go the the host at all.
 - A deletion is basically a write to `null`.
 
 ---v
@@ -660,15 +662,15 @@ with_storage_layer(|| {
 
 Notes:
 
-NO! overlay works on the level on key-values, ot knows nothing of trie nodes, and to compute the
-root we have to go to the trie layer and pull a whole lot of data back from the disk and build all
-the nodes etc. etc.
+NO!
+overlay works on the level on key-values, ot knows nothing of trie nodes, and to compute the root we have to go to the trie layer and pull a whole lot of data back from the disk and build all the nodes etc. etc.
 
 ---v
 
 ### Overlay: More Caches
 
-- There are more caches in the trie layer as well. But outside of the scope of this lecture.
+- There are more caches in the trie layer as well.
+  But outside of the scope of this lecture.
 
 ```bash
 ./substrate --help | grep cache
@@ -676,7 +678,7 @@ the nodes etc. etc.
 
 Notes:
 
-https://www.youtube.com/embed/OoMPlJKUULY
+<https://www.youtube.com/embed/OoMPlJKUULY>
 
 ---
 
@@ -822,33 +824,37 @@ Meaning, if another client wants to sync polkadot, it should know the details of
 
 Notes:
 
-- Shawn's deep dive: https://www.shawntabrizi.com/substrate/substrate-storage-deep-dive/
+- Shawn's deep dive: <https://www.shawntabrizi.com/substrate/substrate-storage-deep-dive/>
 
-- Basti's talk on Trie caching: https://www.youtube.com/watch?v=OoMPlJKUULY
+- Basti's talk on Trie caching: <https://www.youtube.com/watch?v=OoMPlJKUULY>
 
 - About state version:
 
-  - https://github.com/paritytech/substrate/pull/9732
-  - https://github.com/paritytech/substrate/discussions/11824
+  - <https://github.com/paritytech/substrate/pull/9732>
+  - <https://github.com/paritytech/substrate/discussions/11824>
 
-- An "old but gold" read about trie in Ethereum: https://medium.com/shyft-network/understanding-trie-databases-in-ethereum-9f03d2c3325d
+- An "old but gold" read about trie in Ethereum: <https://medium.com/shyft-network/understanding-trie-databases-in-ethereum-9f03d2c3325d>
 
-- On optimizing substrate storage proofs: https://github.com/paritytech/substrate/issues/3782
-- Underlying trie library maintained by Parity: https://github.com/paritytech/trie
+- On optimizing substrate storage proofs: <https://github.com/paritytech/substrate/issues/3782>
+- Underlying trie library maintained by Parity: <https://github.com/paritytech/trie>
 
-- https://github.com/paritytech/trie/
+- <https://github.com/paritytech/trie/>
 
-- https://spec.polkadot.network/chap-state#sect-state-storage
+- <https://spec.polkadot.network/chap-state#sect-state-storage>
 
-- https://research.polytope.technology/state-(machine)-proofs
+- <https://research.polytope.technology/state-(machine)-proofs>
 
-- An interesting, but heretical idea: can the runtime of block N, access state of block N-1? HELL
-  NO. It might sound like a "but why nooooot" type of situation, but it breaks down all assumptions
-  about what a state transition is. The runtime is the state transition function. Recall the formula
-  of that, and then you will know why this is not allowed.
+- An interesting, but heretical idea: can the runtime of block N, access state of block N-1?
+  HELL.
+  NO.
+  It might sound like a "but why nooooot" type of situation, but it breaks down all assumptions
+  about what a state transition is.
+  The runtime is the state transition function.
+  Recall the formula of that, and then you will know why this is not allowed.
 
 ### Post Lecture Feedback
 
-Double check the narrative and example of the `BIG_STUFF` node. An example/exercise of some sort
+Double check the narrative and example of the `BIG_STUFF` node.
+An example/exercise of some sort
 would be great, where students call a bunch of `sp_io` functions, visualize the trie, and invoke
 proof recorder, and see which pars of the trie is exactly part of the proof.

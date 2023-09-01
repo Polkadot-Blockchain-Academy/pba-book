@@ -600,7 +600,7 @@ Ok(())
 
 Notes:
 
-Source of graph: https://www.shawntabrizi.com/substrate-graph-benchmarks/old/
+Graph source: <https://www.shawntabrizi.com/substrate-graph-benchmarks/old/>
 
 ---
 
@@ -610,7 +610,7 @@ Source of graph: https://www.shawntabrizi.com/substrate-graph-benchmarks/old/
 
 Notes:
 
-Source of graph: https://www.shawntabrizi.com/substrate-graph-benchmarks/old/
+Graph source: <https://www.shawntabrizi.com/substrate-graph-benchmarks/old/>
 
 ---
 
@@ -620,7 +620,7 @@ Source of graph: https://www.shawntabrizi.com/substrate-graph-benchmarks/old/
 
 Notes:
 
-Source of graph: https://www.shawntabrizi.com/substrate-graph-benchmarks/old/
+Graph source: <https://www.shawntabrizi.com/substrate-graph-benchmarks/old/>
 
 ---
 
@@ -630,7 +630,7 @@ Source of graph: https://www.shawntabrizi.com/substrate-graph-benchmarks/old/
 
 Notes:
 
-Source of graph: https://www.shawntabrizi.com/substrate-graph-benchmarks/old/
+Graph source: <https://www.shawntabrizi.com/substrate-graph-benchmarks/old/>
 
 ---
 

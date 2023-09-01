@@ -92,7 +92,7 @@ In reality we strive for Absolute Unstoppability, but likely cannot grantee it i
 Notes:
 
 - Read Antifragile quote, recommend book recommended, see the links throughout slides for more after class.
-- Hydra fable & lore: https://en.wikipedia.org/wiki/Lernaean_Hydra - even though can be almost completely destroyed, it is _resilient_ and recovers.
+- Hydra fable & lore: <https://en.wikipedia.org/wiki/Lernaean_Hydra> - even though can be almost completely destroyed, it is _resilient_ and recovers.
   Absolutely Unstoppable doesn't mean it cannot be damaged or even paused temporarily, it means it cannot cease to exist and will eventually recover, and ideally come back stronger in doing so.
 
 ---
@@ -192,7 +192,7 @@ Notes:
 Key point: your "perfect" system in is likely weak to things outside of the "rules"!
 especially
 
-Image Source: https://xkcd.com/538/
+Image Source: <https://xkcd.com/538/>
 
 ---v
 
@@ -220,7 +220,7 @@ There are [valid criticisms](https://moxie.org/2022/01/07/web3-first-impressions
 
 Notes:
 
-https://moxie.org/2022/01/07/web3-first-impressions.html great critique on the state of the space, but founder of [Signal messenger](https://signal.org).
+<https://moxie.org/2022/01/07/web3-first-impressions.html> great critique on the state of the space, but founder of [Signal messenger](https://signal.org).
 
 Not all hope is lost!
 This is valid mostly in the present, we will discuss these and what we're building to realize a better stack.
@@ -272,7 +272,7 @@ Notes:
   - Everything in a chain is self-referential.
     Applications in a consensus system may want to _try_ and reason about something outside itself.
 - Inclusive of bridges
-- https://blog.chain.link/what-is-the-blockchain-oracle-problem/
+- <https://blog.chain.link/what-is-the-blockchain-oracle-problem/>
 
 ---v
 
@@ -312,7 +312,7 @@ Explain example of luna or other system collapse.
 
 Notes:
 
-- Great talk by the author: https://www.youtube.com/watch?v=S3REdLZ8Xis reference talk by book author.
+- Great talk by the author: <https://www.youtube.com/watch?v=S3REdLZ8Xis> reference talk by book author.
 
 Example: irrational actors can be represented in a very simple model as a completely random act, or opposite act of what a rational actor would do. If you "fuzz" you system you may discover fragility to irrational actions that could undermine your system. Perhaps it's far easier and more likely than it at first appears to experience a black swan event.
 
@@ -345,7 +345,7 @@ Notes:
 - Also in dependance on specific operational contexts.
   For example that it is legal to operate the software for nodes.
 
-Image source: https://xkcd.com/2347/
+Image source: <https://xkcd.com/2347/>
 
 ---v
 
@@ -546,7 +546,7 @@ Notes:
 
 - For PoW, hashing power for the same algo can be attacked!
   Buying hash power is possible:
-- Most GPU miners switch tasks to the mine the highest paying (relative to some base currency) chain using software like https://www.nicehash.com/.
+- Most GPU miners switch tasks to the mine the highest paying (relative to some base currency) chain using software like <https://www.nicehash.com/>.
 - ASICs are less flexible, but also can to the highest paying coin.
 - Example: [ETH classic deep re-ogs](https://coingeek.com/ethereum-classic-experiences-51-attack-and-3000-block-reorg/)
 
@@ -566,7 +566,7 @@ Notes:
 - Unlike PoW where voting on a chain costs something _extrinsic_ to the system, PoS has only _intrinsic_ measures to do accounting of consensus rules.
 - **Critical:** This was a problem with early naive implementations of PoS.
   Modern PoS schemes avoid this specific problem by having the security deposit and slashing for equivocation (in a few slides)
-- Good explainer, source of image: https://golden.com/wiki/Nothing-at-stake_problem-639PVZA <!-- markdown-link-check-disable-line -->
+- Good explainer, source of image: <https://golden.com/wiki/Nothing-at-stake_problem-639PVZA> <!-- markdown-link-check-disable-line -->
 
 ---v
 
@@ -742,7 +742,7 @@ A measure of the value that block authors can extract based on their knowledge o
 
 </pba-flex>
 
-> https://www.mev.wiki/
+> <https://www.mev.wiki/>
 
 Notes:
 
@@ -815,7 +815,7 @@ Notes:
 
 Notes:
 
-https://cryptoslate.com/op-ed-is-ethereum-now-under-u-s-control-99-of-latest-relay-blocks-are-censoring-the-network/ <!-- markdown-link-check-disable-line -->
+<https://cryptoslate.com/op-ed-is-ethereum-now-under-u-s-control-99-of-latest-relay-blocks-are-censoring-the-network/> <!-- markdown-link-check-disable-line -->
 
 - code is unstoppable, but platform _can_ sensor. ability -> responsibility (we may talk more on that latter)
 
@@ -825,7 +825,9 @@ https://cryptoslate.com/op-ed-is-ethereum-now-under-u-s-control-99-of-latest-rel
 
 Social systems and norms can help _cover up_ weaknesses in protocols.
 
-> Public monitor to shame OFAC censors:<br/> > https://www.mevwatch.info/
+> Public monitor to shame OFAC censors:
+>
+> <https://www.mevwatch.info/>
 
 Notes:
 
@@ -869,7 +871,7 @@ Notes:
 - All run same hardware (CPU, etc.)
 - ...
 
-- Image source, and good reference on this: https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA
+- Image source, and good reference on this: <https://mirror.xyz/jmcook.eth/S7ONEka_0RgtKTZ3-dakPmAHQNPvuj15nh0YGKPFriA>
 
 ---
 
@@ -964,10 +966,10 @@ Democratic Mediums is a directory of patterns<br/> for decision, deliberation, a
 
 <pba-flex center>
 
-- https://medlabboulder.gitlab.io/democraticmediums/
-- https://metagov.org/ -- weekly seminar
-- https://daocollective.xyz/
-- https://www.smartcontractresearch.org/
+- <https://medlabboulder.gitlab.io/democraticmediums/>
+- <https://metagov.org/> -- weekly seminar
+- <https://daocollective.xyz/>
+- <https://www.smartcontractresearch.org/>
 
 </pba-flex>
 

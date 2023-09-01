@@ -639,7 +639,7 @@ The relay chain needs a fairly hard guarantee that PVFs can be compiled within a
 
 Notes:
 
-https://github.com/paritytech-stg/polkadot-sdk/blob/9aa7526/cumulus/docs/overview.md#runtime-upgrade
+<https://github.com/paritytech-stg/polkadot-sdk/blob/9aa7526/cumulus/docs/overview.md#runtime-upgrade>
 
 ---
 
@@ -657,14 +657,14 @@ https://github.com/paritytech-stg/polkadot-sdk/blob/9aa7526/cumulus/docs/overvie
 
 Notes:
 
-reference: https://paritytech.github.io/polkadot/book/pvf-prechecking.html
+Reference: <https://paritytech.github.io/polkadot/book/pvf-prechecking.html>
 
 ---
 
 ## References
 
 1. 🦸 [Gabriele Miotti](https://github.com/gabriele-0201), who was a huge help putting together these slides
-1. https://github.com/paritytech-stg/polkadot-sdk/blob/9aa7526/cumulus/docs/overview.md
+1. <https://github.com/paritytech-stg/polkadot-sdk/blob/9aa7526/cumulus/docs/overview.md>
 
 ---
 

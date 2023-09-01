@@ -186,7 +186,7 @@ We're going to use Polkadot as a library configured for the collator side.
 
 Our PBA parachain is a trimmed down version of:
 
-- https://github.com/paritytech/polkadot/tree/master/parachain/test-parachains/adder
+- <https://github.com/paritytech/polkadot/tree/master/parachain/test-parachains/adder>
 
 ---
 
@@ -194,8 +194,8 @@ Our PBA parachain is a trimmed down version of:
 
 Make the state of the Parachain a fixed sized 2d field (e.g. 25x25) that evolves at each block according to Game of Life and print the state at each block.
 
-- https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-- https://rosettacode.org/wiki/Conway%27s_Game_of_Life#Rust
+- <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>
+- <https://rosettacode.org/wiki/Conway%27s_Game_of_Life#Rust>
 
 ---
 

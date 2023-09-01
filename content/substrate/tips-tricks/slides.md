@@ -328,7 +328,7 @@ will add a lot of string literals to your wasm blob.
 
 Notes:
 
-https://paritytech.github.io/substrate/master/sp_debug_derive/index.html
+<https://paritytech.github.io/substrate/master/sp_debug_derive/index.html>
 
 ---v
 
@@ -393,7 +393,7 @@ log::debug!(target: "bar", "hello world! ({})", 10u32);
 
 Notes:
 
-https://paritytech.github.io/substrate/master/sp_tracing/index.html
+<https://paritytech.github.io/substrate/master/sp_tracing/index.html>
 
 ---v
 
@@ -582,8 +582,8 @@ recovery.
 There's also `wrapping_op` and `carrying_op` etc on all rust primitives, but not quite
 relevant.
 
-https://doc.rust-lang.org/std/primitive.u32.html#method.checked_add
-https://doc.rust-lang.org/std/primitive.u32.html#method.saturating_add
+<https://doc.rust-lang.org/std/primitive.u32.html#method.checked_add>
+<https://doc.rust-lang.org/std/primitive.u32.html#method.saturating_add>
 
 ---v
 
@@ -629,10 +629,10 @@ impl TryFrom<u32> for u16 {
 
 Notes:
 
-typically you don't implement `Into` and `TryInto`, because of blanket impls. See:
-https://doc.rust-lang.org/std/convert/trait.From.html
+Typically you don't implement `Into` and `TryInto`, because of blanket impls. See:
+<https://doc.rust-lang.org/std/convert/trait.From.html>
 
-for any T and U, `impl From<T> for U` implies `impl Into<U> for T`
+For any T and U, `impl From<T> for U` implies `impl Into<U> for T`
 
 ---v
 
@@ -673,7 +673,7 @@ assert_eq!(u128::MAX.saturating_into::<u32>(), u32::MAX);
 
 Notes:
 
-https://paritytech.github.io/substrate/master/sp_arithmetic/traits/trait.SaturatedConversion.html
+<https://paritytech.github.io/substrate/master/sp_arithmetic/traits/trait.SaturatedConversion.html>
 
 ---
 
@@ -842,7 +842,7 @@ fn generic_fn<T: Config>() { <T as Config>::Convertor::convert(_, _)}
 
 Notes:
 
-often times, in examples above, you have to use this syntax: https://doc.rust-lang.org/book/ch19-03-advanced-traits.html#fully-qualified-syntax-for-disambiguation-calling-methods-with-the-same-name
+often times, in examples above, you have to use this syntax: <https://doc.rust-lang.org/book/ch19-03-advanced-traits.html#fully-qualified-syntax-for-disambiguation-calling-methods-with-the-same-name>
 
 ---
 
@@ -942,7 +942,7 @@ pub trait OnTimestampSet<Moment> {
 
 Notes:
 
-https://docs.rs/impl-trait-for-tuples/latest/impl_trait_for_tuples/
+<https://docs.rs/impl-trait-for-tuples/latest/impl_trait_for_tuples/>
 
 ---
 
@@ -1130,30 +1130,30 @@ It adds some boilerplate to:
 
 Notes:
 
-- Rust didn't have u128 until not too long ago! https://github.com/paritytech/substrate/pull/163/files
-- `TryFrom`/`TryInto` are also not too old! https://github.com/paritytech/substrate/pull/163/files#r188938077
-- Remove `As`, which tried to fill the lack of `TryFrom/TryInto` https://github.com/paritytech/substrate/pull/2602
-- Runtime Logging PR: https://github.com/paritytech/substrate/pull/3821
+- Rust didn't have u128 until not too long ago! <https://github.com/paritytech/substrate/pull/163/files>
+- `TryFrom`/`TryInto` are also not too old! <https://github.com/paritytech/substrate/pull/163/files#r188938077>
+- Remove `As`, which tried to fill the lack of `TryFrom/TryInto` <https://github.com/paritytech/substrate/pull/2602>
+- Runtime Logging PR: <https://github.com/paritytech/substrate/pull/3821>
 
 - Impl trait for tuples:
 
-  - https://stackoverflow.com/questions/64332037/how-can-i-store-a-type-in-an-array
-  - https://doc.rust-lang.org/book/ch17-02-trait-objects.html#trait-objects-perform-dynamic-dispatch
-  - https://doc.rust-lang.org/book/ch19-03-advanced-traits.html#fully-qualified-syntax-for-disambiguation-calling-methods-with-the-same-name
-  - https://turbo.fish/
-  - https://techblog.tonsser.com/posts/what-is-rusts-turbofish
-  - https://docs.rs/impl-trait-for-tuples/latest/impl_trait_for_tuples/
+  - <https://stackoverflow.com/questions/64332037/how-can-i-store-a-type-in-an-array>
+  - <https://doc.rust-lang.org/book/ch17-02-trait-objects.html#trait-objects-perform-dynamic-dispatch>
+  - <https://doc.rust-lang.org/book/ch19-03-advanced-traits.html#fully-qualified-syntax-for-disambiguation-calling-methods-with-the-same-name>
+  - <https://turbo.fish/>
+  - <https://techblog.tonsser.com/posts/what-is-rusts-turbofish>
+  - <https://docs.rs/impl-trait-for-tuples/latest/impl_trait_for_tuples/>
 
 - std/no_std
-  - https://paritytech.github.io/substrate/master/sp_std/index.html
-  - https://doc.rust-lang.org/core/index.html
-  - https://doc.rust-lang.org/std/index.html
-  - https://rust-lang.github.io/api-guidelines/naming.html#feature-names-are-free-of-placeholder-words-c-feature
+  - <https://paritytech.github.io/substrate/master/sp_std/index.html>
+  - <https://doc.rust-lang.org/core/index.html>
+  - <https://doc.rust-lang.org/std/index.html>
+  - <https://rust-lang.github.io/api-guidelines/naming.html#feature-names-are-free-of-placeholder-words-c-feature>
 
 ### Feedback After Lecture:
 
 - Lecture is still kinda dense and long, try and trim
-- Update on defensive ops: https://github.com/paritytech/substrate/pull/12967
+- Update on defensive ops: <https://github.com/paritytech/substrate/pull/12967>
 - Next time, talk about making a storage struct be `<T: Config>`.
 - Cargo format
 - SignedExtension should technically be part of the substrate module. Integrate it in the

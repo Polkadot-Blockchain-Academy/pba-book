@@ -273,7 +273,7 @@ In this case, the weight function name is assumed to match the call name for all
 
 Notes:
 
-https://github.com/paritytech/substrate/pull/13932
+<https://github.com/paritytech/substrate/pull/13932>
 
 ---
 
