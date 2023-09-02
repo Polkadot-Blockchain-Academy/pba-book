@@ -179,9 +179,9 @@ path = "lib.rs"
 [features]
 default = ["std"]
 std = [
-    "ink/std",
-    "scale/std",
-    "scale-info/std",
+  "ink/std",
+  "scale/std",
+  "scale-info/std",
 ]
 ```
 

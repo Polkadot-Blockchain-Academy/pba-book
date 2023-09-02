@@ -27,7 +27,6 @@ skip_crate_env_info = true
 category = "Install"
 alias = "install"
 
-
 [tasks.install]
 description = "Install dependencies for slides and book tooling."
 category = "Install"

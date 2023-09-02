@@ -1,12 +1,12 @@
 module.exports = {
-  arrowParens: 'avoid',
-  endOfLine: 'lf',
+  arrowParens: "avoid",
+  endOfLine: "lf",
   semi: true,
   singleQuote: true,
-  trailingComma: 'es5',
+  trailingComma: "es5",
   overrides: [
     {
-      files: '*.md',
+      files: "*.md",
       options: {
         singleQuote: false,
       },
