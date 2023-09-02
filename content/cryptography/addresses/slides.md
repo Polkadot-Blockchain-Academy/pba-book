@@ -75,7 +75,7 @@ Recall, both symmetric and asymmetric cryptography require a secret.
 
 ## Mnemonics
 
-Many wallets use a dictionary of words and give people phrases,<br/>often 12 or 24 words, as these are easier to back up/recover than byte arrays.
+Many wallets use a dictionary of words and give people phrases,<br />often 12 or 24 words, as these are easier to back up/recover than byte arrays.
 
 Notes:
 
@@ -116,7 +116,7 @@ _The first 5 words of the [BIP39 English dictionary](https://github.com/bitcoin/
 
 Of course, the secret key is a point on an elliptic curve, not a phrase.
 
-BIP39 applies 2,048 rounds of the SHA-512 hash function<br/>to the mnemonic to derive a 64 byte key.
+BIP39 applies 2,048 rounds of the SHA-512 hash function<br />to the mnemonic to derive a 64 byte key.
 
 Substrate uses the entropy byte array from the mnemonic.
 
@@ -204,7 +204,7 @@ Hierarchical Deterministic Key Derivation
 
 ## Hard vs. Soft
 
-Key derivation allows one to derive (virtually limitless)<br/>child keys from one "parent".
+Key derivation allows one to derive (virtually limitless)<br />child keys from one "parent".
 
 Derivations can either be "hard" or "soft".
 

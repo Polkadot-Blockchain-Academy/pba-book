@@ -197,7 +197,6 @@ MultiLocation {
     Junction::GeneralIndex(0u128),
   ),
 }
-
 ```
 
 ---v
@@ -327,7 +326,6 @@ stateDiagram-v2
 ### Matching NFTs
 
 ```rust [0|4-15|18-21]
-
 MultiAsset {
   // Where to find the NFT (contract or collection in an NFT pallet)
   id: AssetId::Concrete (
@@ -350,7 +348,6 @@ MultiAsset {
     AssetInstance::Instance(nft_id)
   )
 }
-
 ```
 
 ---v
@@ -518,6 +515,8 @@ During this presentation we went through a couple real world XCM use cases and s
 ## References
 
 - [XCM source code](https://github.com/paritytech-stg/polkadot-sdk/tree/master/polkadot/xcm) - The source code for the main XCM implementation in the paritytech/polkadot repository.
+
 <!-- FIXME new repo expected soon for XCM outside SDK -->
+
 - [XCM Documentation](https://paritytech.github.io/xcm-docs) - The official documentation for XCM: Cross-Consensus Messaging.
 - [InvArch's Pallet Rings](https://github.com/InvArch/InvArch-Frames/tree/main/pallet-rings) - Reference implementation of an XCM abstraction pallet for XCMultisigs.

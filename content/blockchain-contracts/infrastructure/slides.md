@@ -53,7 +53,8 @@ Notes:
 
 We know we need somewhere to run these things with no back door or trusted party.
 
-We have seen some hints so far. Let's check them out.
+We have seen some hints so far.
+Let's check them out.
 
 ---v
 
@@ -66,7 +67,8 @@ We have seen some hints so far. Let's check them out.
 
 Notes:
 
-Web2 gets a lot of this right. At least they are good at the first two and preventing accidental data loss etc.
+Web2 gets a lot of this right.
+At least they are good at the first two and preventing accidental data loss etc.
 There is a lot to be kept from web 2.
 Some digital services, or subsystems of digital services may never even need web3 upgrades.
 

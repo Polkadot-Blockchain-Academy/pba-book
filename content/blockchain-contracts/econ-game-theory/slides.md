@@ -533,7 +533,7 @@ Things like Twitter, Facebook or Bitcoin are often deemed as valuable because of
 
 ## Nash Equilibrium
 
-<br/>
+<br />
 
 #### _Network Effect_
 
@@ -551,11 +551,11 @@ In blockchains if more people use your chain it's more valuable.
 
 ## Nash Equilibrium
 
-<br/>
+<br />
 
 #### _Network Effect_
 
-<br/>
+<br />
 <strong>Assumptions revisited:</strong>
 <ul>
     <li style="color: grey;"> Only 2 miners </li>
@@ -695,10 +695,10 @@ But what if we change the assumptions a bit?
 
 ## Nash Equilibrium
 
-<br/>
+<br />
 What does it mean exactly to be <strong>dishonest</strong>?
-<br/>
-<br/>
+<br />
+<br />
 
 <div>
     There are some mainstream rules (the protocol) and if an individual miner breaks them it seems like an isolated
@@ -706,8 +706,8 @@ What does it mean exactly to be <strong>dishonest</strong>?
 </div>
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-<br/>
-<br/>
+<br />
+<br />
 
 If multiple miners break the protocol <strong>in the same way</strong>, it can be seen as a new protocol deviating from
 the main one.
@@ -828,8 +828,8 @@ And in fact what we have in here is two distinct Nash Equilibria!
 
 So is being honest the best strategy?
 
-<br/>
-<br/>
+<br />
+<br />
 
 Not always.
 If the majority of people are honest then honesty pays off.
@@ -838,8 +838,8 @@ same way then be _dishonest_ with them.
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-<br/>
-<br/>
+<br />
+<br />
 <div>
     In fact it was proven that in PoW following the majority is the true Nash Equilibrium no matter what
     strategy/protocol they are using as long as it's consistent.
@@ -881,6 +881,7 @@ What if we have multiple Nash Equilibria? Schelling point often comes to the res
 - A solution that people tend to choose (easiest to coordinate on)
 - Generally it is also a Nash Equilibrium
 - How in the world can it be useful in Blockchain?
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Notes:
@@ -974,8 +975,8 @@ And this concept is vital to something in blockchain called...
 #### _Oracles_
 
 Oracles are blockchain entities that provide information from the outside world to the blockchain.
-<br>
-<br>
+<br />
+<br />
 <img style="width: 700px" src="./img/oracles.drawio.svg" alt="Oracle getting information from real world" />
 
 Notes:
@@ -992,8 +993,8 @@ And that's a very very hard task.
 #### _Oracles_
 
 Oracles are blockchain entities that provide information from the outside world to the blockchain.
-<br/>
-<br/>
+<br />
+<br />
 
 <div>
     <strong>External Information Examples:</strong>
@@ -1016,8 +1017,8 @@ Let's actually see how they might work is a slightly simplified version with the
 
 #### _Oracles_
 
-<br>
-<br>
+<br />
+<br />
 <img style="width: 900px" src="./img/temp1.drawio.svg" alt="Temperature Line" />
 
 Notes:
@@ -1034,8 +1035,8 @@ But what it is exactly?
 
 #### _Oracles_
 
-<br>
-<br>
+<br />
+<br />
 <img style="width: 900px" src="./img/temp2.drawio.svg" alt="Temperature Line with Some Measurements" />
 
 Notes:
@@ -1094,7 +1095,7 @@ Submitting the truth is the Schelling Point in here and it makes it easy to be h
 
 <pba-cols>
     <pba-col>
-        What to do with attackers? 
+        What to do with attackers?
     </pba-col>
     <pba-col>
         <img style="width: 500px" src="./img/temp3.drawio.svg" alt="Temperature Line with a Cluster of Measurements" />
@@ -1113,8 +1114,8 @@ But what if there are some attackers? What can we do about them?
 
 <pba-cols>
     <pba-col>
-        What to do with attackers? 
-        <br/><br/>
+        What to do with attackers?
+        <br /><br />
         If they go unpunished they can repeat the attack until successful
     </pba-col>
     <pba-col>
@@ -1135,11 +1136,11 @@ And that's not good.
 
 <pba-cols>
     <pba-col>
-        What to do with attackers? 
-        <br/><br/>
+        What to do with attackers?
+        <br /><br />
         If they go unpunished they can repeat the attack until successful
-        <br/><br/>
-        Or even worse, they can make a million fake identities and spam incorrect votes 
+        <br /><br />
+        Or even worse, they can make a million fake identities and spam incorrect votes
     </pba-col>
     <pba-col>
         <img style="width: 500px" src="./img/temp3.drawio.svg" alt="Temperature Line with a Cluster of Measurements" />
@@ -1170,7 +1171,7 @@ And they are vital to the blockchain space.
 ## Incentives
 
 _"Something that encourages a person to do something."_
-<br/><br/>
+<br /><br />
 
 <div>In our case we want to shape incentives that motivate the users to submit honest values.</div>
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -1192,11 +1193,11 @@ We need to build out incentives in a way that shapes the expected behavior of th
 
 <pba-cols>
     <pba-col>
-        What to do with attackers? 
-        <br/><br/>
+        What to do with attackers?
+        <br /><br />
         If they go unpunished they can repeat the attack until successful
-        <br/><br/>
-        Or even worse, they can make a million fake identities and spam incorrect votes 
+        <br /><br />
+        Or even worse, they can make a million fake identities and spam incorrect votes
     </pba-col>
     <pba-col>
         <img style="width: 500px" src="./img/temp3.drawio.svg" alt="Temperature Line with a Cluster of Measurements" />
@@ -1215,10 +1216,10 @@ So going back to our oracle problem how can we deal with attackers?
 
 <pba-cols>
     <pba-col>
-        <div style="color: grey;">What to do with attackers? 
-        <br/><br/>
+        <div style="color: grey;">What to do with attackers?
+        <br /><br />
         If they go unpunished they can repeat the attack until successful
-        <br/><br/></div>
+        <br /><br /></div>
         <strong>Or even worse, they can make a million fake identities and spam incorrect votes</strong>
     </pba-col>
     <pba-col>
@@ -1240,9 +1241,9 @@ How can we prevent that?
 <pba-cols>
     <pba-col>
         <strong> Sybil Attacks </strong>
-        <br/><br/>
+        <br /><br />
         Common problem in blockchain.
-        <br/><br/>
+        <br /><br />
         <div>If deploying on a chain, an easy solution is to make users lock some funds.</div>
         <!-- .element: class="fragment" data-fragment-index="1" -->
     </pba-col>
@@ -1273,9 +1274,9 @@ This is a very simple solution but it's not always applicable.
 <pba-cols>
     <pba-col>
         <div style="color: grey;">What to do with attackers? </div>
-        <br/>
+        <br />
         <strong>If they go unpunished they can repeat the attack until successful</strong>
-        <br/><br/>
+        <br /><br />
         <div style="color: grey;">Or even worse, they can make a million fake identities and spam incorrect votes </div>
     </pba-col>
     <pba-col>
@@ -1297,11 +1298,11 @@ How can we deal with them so they don't continue attacking us?
 <pba-cols>
     <pba-col>
         <strong> Punishments </strong>
-        <br/><br/>
+        <br /><br />
         We already laid out the foundation for punishments.
-        <br/><br/>
+        <br /><br />
         <div> Our solution for de-sybiling users makes them lock funds.
-        <br/><br/>
+        <br /><br />
         If such a user would vote incorrectly, we can slash their funds.
         </div>
         <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -1330,10 +1331,10 @@ We have designed some protective incentives and now the system seems safe.
 
 #### _Oracles_
 
-<br/>
+<br />
 Did we forget about something?
 
-<br/><br/>
+<br /><br />
 
 **Why would anyone participate in this system?**
 
@@ -1356,9 +1357,9 @@ Why would anyone participate in this system? Why would anyone vote? Why would an
 <pba-cols>
     <pba-col>
         <strong> Ghost Town </strong>
-        <br/><br/>
+        <br /><br />
         No user wants to participate
-        <br/><br/>
+        <br /><br />
         Getting information from the real world is an effort and they voters are doing the protocol a service
     </pba-col>
     <pba-col>
@@ -1381,12 +1382,12 @@ We need a rewards scheme or otherwise the network will be a ghost town.
 <pba-cols>
     <pba-col>
         <strong> Reward Scheme </strong>
-        <br/><br/>
+        <br /><br />
         If users are doing the protocol a service they need to be rewarded
-        <br/><br/>
+        <br /><br />
         <div> One way to do it is to mint some token rewards for well-behaved voters </div>
         <!-- .element: class="fragment" data-fragment-index="1" -->
-        <br/>
+        <br />
         <div> Or distribute them from a previously acquired pool of rewards </div>
         <!-- .element: class="fragment" data-fragment-index="2" -->
     </pba-col>
@@ -1421,12 +1422,12 @@ Low-stakes oracles don't need to have super aggressive incentives.
 <pba-cols>
     <pba-col>
         <strong> Reward Scheme Question</strong>
-        <br/><br/>
+        <br /><br />
         <div>
         Can we distribute fixed value rewards for correct votes?
-        <br/>Correct vote = 10$
+        <br />Correct vote = 10$
         </div>
-        <br/><br/>
+        <br /><br />
         <div>
          No.
          We should base rewards on the size of the voter's stake.
@@ -1460,12 +1461,19 @@ So the reward should be proportional to the stake.
 **In summary:**
 
 - Make it easy to honest users and hard for attackers
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Service to the protocol needs to be rewarded
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Destructive or interfering actions need to be punished
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - De-Sybiling the users can help defend against spam
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Notes:
@@ -1526,11 +1534,11 @@ For them to work a bunch of code needs to be deployed on the chain.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> State Storage Replication </strong>
-        <br/><br/>
+        <br /><br />
         Whenever we store something on chain (like a smart contract) it needs to be at least partially replicated among the nodes.
-        <br/><br/>
+        <br /><br />
         <div> Multiple nodes store the same data.</div>
     </pba-col>
     <pba-col>
@@ -1551,11 +1559,11 @@ Thousands of nodes store the same data which is not super efficient.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> State Storage Replication Costs </strong>
-        <br/><br/>
+        <br /><br />
         Ethereum deals with the burden of replication by charging more gas for submitting bulky data.
-        <br/><br/>
+        <br /><br />
         All of that is ON TOP OF any computation gas costs.
     </pba-col>
     <pba-col>
@@ -1577,11 +1585,11 @@ And that's on top of any computation costs.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> State Storage Duration</strong>
-        <br/><br/>
+        <br /><br />
         This particular part of the state might be relevant for future state transitions so nodes cannot simply discard it.
-        <br/><br/>
+        <br /><br />
         <div> Full nodes need to keep ALL the data.</div>
     </pba-col>
     <pba-col>
@@ -1605,12 +1613,12 @@ Now let's explore an example.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> Meet Bob </strong>
-        <br/><br/>
+        <br /><br />
         Bob happily deploys his awesome smart contract in Ethereum.
         He paid a hefty gas fee but so be it.
-        <br/><br/>
+        <br /><br />
     </pba-col>
     <pba-col>
         <img style="width: 600px" src="./img/smart_contract.drawio.svg" alt="Deploying a smart contract on chain" />
@@ -1632,11 +1640,11 @@ His code was added to the state and now many nodes hold a copy of it.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> The Problem </strong>
-        <br/><br/>
+        <br /><br />
         Bob decided to become a musician or just no longer likes programming.
-        <br/><br/>
+        <br /><br />
         He doesn't care about his smart contract anymore.
     </pba-col>
     <pba-col>
@@ -1659,11 +1667,11 @@ His code still lives in the state and has to be continuously replicated and main
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> The Problem Made Worse </strong>
-        <br/><br/>
+        <br /><br />
         Many others like Bob follow suit.
-        <br/><br/>
+        <br /><br />
         Some of them continue developing but, <strong>why bother</strong> removing old data? They already paid for it.
     </pba-col>
     <pba-col>
@@ -1685,11 +1693,11 @@ And some of them just don't care anymore.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> "Why Bother?" </strong>
-        <br/><br/>
+        <br /><br />
         Getting data on chain is expensive, but there is no incentive to clean it up.
-        <br/><br/>
+        <br /><br />
         This is a core misalignment of incentives that lead to Ethereum state size growing out of control.
     </pba-col>
     <pba-col>
@@ -1714,9 +1722,9 @@ So the chain was getting overwhelmed in junk.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> The Goal </strong>
-        <br/><br/>
+        <br /><br />
         Design new protocol rules that shape the behavior of the users in a way that they start cleaning up the state.
     </pba-col>
     <pba-col>
@@ -1737,11 +1745,11 @@ Hopefully without any side effects.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> The Solution </strong>
-        <br/><br/>
+        <br /><br />
         State Storage Gas Refunds
-        <br/><br/>
+        <br /><br />
         Pay a hefty fee when deploying data to state, but get some of it refunded when removing it.
     </pba-col>
     <pba-col>
@@ -1761,7 +1769,7 @@ So now there is an incentive to clean up the state.
 
 #### _Ethereum State Storage Issue_
 
-<br/><br/>
+<br /><br />
 <strong>behavior Before</strong>
 
 <img style="width: 900px" src="./img/developer_musician.drawio.svg" alt="Developer becoming a musician" />
@@ -1776,7 +1784,7 @@ So what we had originally is Bob paid for his smart contract and then simply wen
 
 #### _Ethereum State Storage Issue_
 
-<br/><br/>
+<br /><br />
 <strong>behavior After</strong>
 
 <img style="width: 900px" src="./img/developer_musician2.drawio.svg" alt="Developer removing his contract and becoming a musician" />
@@ -1821,11 +1829,11 @@ When choosing between 10 and 30$ the opportunity cost of picking 30 is 10, the o
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> The Real Cost </strong>
-        <br/><br/>
+        <br /><br />
         Instead of having the funds locked in the storage deposit/refund scheme, Bob could have invested them somewhere else and gain some profit.
-        <br/><br/>
+        <br /><br />
         <div>Just locking your funds is sort of a punishment by itself.</div><!-- .element: class="fragment" data-fragment-index="1" -->
     </pba-col>
     <pba-col>
@@ -1855,7 +1863,8 @@ The opportunity cost is a clever mechanism that allows us to include costs witho
 - Creating invalid blocks in Bitcoin never gets directly punished even if the block is rejected by the network.
   The real cost is the opportunity cost, as the miner could have mined a valid block instead.
 - Polkadot native token DOT is inflationary (\~7.5% per year) but it can be staked to earn rewards (~15% per year).
-Not staking DOT has an opportunity cost which incentives staking to secure the network.
+  Not staking DOT has an opportunity cost which incentives staking to secure the network.
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Notes:
@@ -1920,9 +1929,9 @@ As protocol engineers or system designers you need to identify those externality
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> Negative Externality Cost </strong>
-        <br/><br/>
+        <br /><br />
         In the Ethereum State Storage problem we priced in the negative externality as the opportunity cost of locking your funds.
     </pba-col>
     <pba-col>
@@ -1944,11 +1953,11 @@ We aligned his incentives with the incentives of the chain.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> Positive Externality </strong>
-        <br/><br/>
+        <br /><br />
         Providing the voting services in the Oracle scheme can be seen as a positive externality for the network that can further use this extra information.
-        <br/><br/>
+        <br /><br />
         The voters are providing a valuable service to the protocol.
     </pba-col>
     <pba-col>
@@ -1989,11 +1998,11 @@ So having that mind should they pay any transaction fees when submitting votes?
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> Beneficial Transactions </strong>
-        <br/><br/>
+        <br /><br />
         Such a transaction can be totally free.
-        <br/><br/>
+        <br /><br />
         <div>But make sure it cannot be spammed!</div><!-- .element: class="fragment" data-fragment-index="1" -->
     </pba-col>
     <pba-col>
@@ -2017,9 +2026,9 @@ This way we remain safe and can make the transaction free to further incentivize
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         There are other free transactions that are not necessarily positive externalities.
-        <br/><br/>
+        <br /><br />
         <strong> Inherent Transactions </strong>
         <ul>
             <li> Block rewards in BTC </li>
@@ -2084,9 +2093,9 @@ They as they name suggests validate if the new blocks in the network are valid a
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> Approval Checkers </strong>
-        <br/><br/>
+        <br /><br />
         In Polkadot when new blocks are validated, not everyone does the work.
         Only some randomly chosen validators - called <strong>Approval Checkers</strong> - are selected to validate candidate blocks.
     </pba-col>
@@ -2109,11 +2118,11 @@ They are called Approval Checkers.
 
 <pba-cols>
     <pba-col>
-        <br/>
+        <br />
         <strong> Attackers </strong>
-        <br/><br/>
+        <br /><br />
         We assume that attackers can DDoS some but not ALL Validators.
-        <br/><br/>
+        <br /><br />
         Being DDoS'ed makes them unable to vote in time.
     </pba-col>
     <pba-col>
@@ -2186,6 +2195,7 @@ And only eliminate the relevant targets thus compromising the network.
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 - Limit the information the attackers have access to so they cannot plan ahead
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Notes:
@@ -2210,7 +2220,7 @@ We need to make this a game of incomplete information, where some things are hid
 - Approval Checkers reveal themselves by showing their low numbers and publish a vote at the same time <!-- .element: class="fragment" data-fragment-index="2" -->
 - If all the votes received confirm the block is fine it passes <!-- .element: class="fragment" data-fragment-index="2" -->
 
-<br/>
+<br />
 
 Notes:
 
@@ -2322,7 +2332,7 @@ Old incentives that were previously sensible may now motivate a vastly different
 <pba-cols>
     <pba-col>
         Restaking through EigenLayer incentives Ethereum stakers to stake the same funds for multiple apps at the same time.
-        <br/><br/>
+        <br /><br />
         The incentive game will be vastly different and the capital will effectively be leveraged (double risk and double rewards).
     </pba-col>
     <pba-col>
@@ -2348,9 +2358,9 @@ This is not something natively available in Ethereum and it wasn't taken into co
 <pba-cols>
     <pba-col>
         <strong> Consequences </strong>
-        <br/><br/>
+        <br /><br />
         Restaking consequences are still not fully understood and the research is ongoing.
-        <br/><br/>
+        <br /><br />
         Speaker Notes ("S") for further reading.
     </pba-col>
     <pba-col>

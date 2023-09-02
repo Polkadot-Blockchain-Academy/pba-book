@@ -27,7 +27,8 @@ And it allows them to know whether they have identical histories in O(1) by just
 
 Notes:
 
-This is a simplified blockchain. Each block has a pointer to the parent block as well as a payload.
+This is a simplified blockchain.
+Each block has a pointer to the parent block as well as a payload.
 
 ---v
 
@@ -37,7 +38,9 @@ This is a simplified blockchain. Each block has a pointer to the parent block as
 
 Notes:
 
-The pointer is a cryptographic hash of the parent block. This ensures data integrity throughout the entire history of the chain. This is the simplest form that a blockchain could take and indeed it allows us to agree on a shared history.
+The pointer is a cryptographic hash of the parent block.
+This ensures data integrity throughout the entire history of the chain.
+This is the simplest form that a blockchain could take and indeed it allows us to agree on a shared history.
 
 ---v
 
@@ -47,7 +50,8 @@ The pointer is a cryptographic hash of the parent block. This ensures data integ
 
 Notes:
 
-This ensures data integrity throughout the entire history of the chain. This is the simplest form that a blockchain could take and indeed it allows us to agree on a shared history.
+This ensures data integrity throughout the entire history of the chain.
+This is the simplest form that a blockchain could take and indeed it allows us to agree on a shared history.
 
 ---v
 
@@ -57,7 +61,9 @@ This ensures data integrity throughout the entire history of the chain. This is 
 
 Notes:
 
-The first block in the chain is typically called a the "Genesis block" named after the first book in the judaeo-christian mythology - The beginning of our shared story. The parent hash is chosen to be some specific value. Typically we use the all-zero hash, although any fixed widely agreed-upon value would also do.
+The first block in the chain is typically called a the "Genesis block" named after the first book in the judaeo-christian mythology - The beginning of our shared story.
+The parent hash is chosen to be some specific value.
+Typically we use the all-zero hash, although any fixed widely agreed-upon value would also do.
 
 ---
 
@@ -95,9 +101,15 @@ Somewhere else!
 
 Notes:
 
-There is a state associated with each block. But typically the state is NOT stored in the block. This state information is redundant because it can always be obtained by just re-executing the history of the transitions.
-It is possible to store the state in the blocks, but the redundancy is undesirable. It wastes disk space for anyone who wants to store the history of the chain. Storing the state in the block is not done by any moderately popular blockchain today.
-If you _want_ to store the states, you are welcome to do so. Software that does this is known as an Archive node or an indexer. But it is stored separately from the block
+There is a state associated with each block.
+But typically the state is NOT stored in the block.
+This state information is redundant because it can always be obtained by just re-executing the history of the transitions.
+It is possible to store the state in the blocks, but the redundancy is undesirable.
+It wastes disk space for anyone who wants to store the history of the chain.
+Storing the state in the block is not done by any moderately popular blockchain today.
+If you _want_ to store the states, you are welcome to do so.
+Software that does this is known as an Archive node or an indexer.
+But it is stored separately from the block
 ...Pause...
 One more time to make sure it sinks in: The state is NOT in the block.
 
@@ -111,8 +123,16 @@ A cryptographic anchor to the state
 
 Notes:
 
-Some data redundancy can be good to help avoid corruption etc. It is common for a block to contain a cryptographic fingerprint of
-the state. This is known as a state root. You think of it as a hash of the state. In practice, the state is typically built into a Merkle tree like structure and the tree root is included. Not all blockchains do this. Notably bitcoin doesn't. But most do. We'll go into details about exactly how this state root is calculated for Substrate in the next two modules, but for now we just consider the state root to be some kind of cryptographic fingerprint.
+Some data redundancy can be good to help avoid corruption etc.
+It is common for a block to contain a cryptographic fingerprint of
+the state.
+This is known as a state root.
+You think of it as a hash of the state.
+In practice, the state is typically built into a Merkle tree like structure and the tree root is included.
+Not all blockchains do this.
+Notably bitcoin doesn't.
+But most do.
+We'll go into details about exactly how this state root is calculated for Substrate in the next two modules, but for now we just consider the state root to be some kind of cryptographic fingerprint.
 
 ---
 
@@ -120,11 +140,14 @@ the state. This is known as a state root. You think of it as a hash of the state
 
 <img style="width: 1000px" src="./img/forks.svg" />
 
-A state machine can have different possible histories. These are called forks.
+A state machine can have different possible histories.
+These are called forks.
 
 Notes:
 
-You can think of them like alternate realities. We need to decide which of the many possible forks is ultimately the "real" one. This is the core job of consensus and we will talk about it in two upcoming lessons in this module.
+You can think of them like alternate realities.
+We need to decide which of the many possible forks is ultimately the "real" one.
+This is the core job of consensus and we will talk about it in two upcoming lessons in this module.
 
 ---v
 
@@ -147,8 +170,10 @@ Before we even get to hardcore consensus, we can rule out _some_ possibilities b
 
 Notes:
 
-The header is a minimal amount of information. In some ways it is like metadata.
-The body contains the real "payload". It is almost always a batch of state transitions.
+The header is a minimal amount of information.
+In some ways it is like metadata.
+The body contains the real "payload".
+It is almost always a batch of state transitions.
 There are many name aliases for what is included in the body:
 
 - Transitions
@@ -171,7 +196,8 @@ pub struct Block<Header, Extrinsic: MaybeSerialize> {
 
 Notes:
 
-This example is from Substrate and as such it strives to be a general and flexible format, we will cover Substrate in more depth in the next module. This is representative of nearly all real-world blockchains
+This example is from Substrate and as such it strives to be a general and flexible format, we will cover Substrate in more depth in the next module.
+This is representative of nearly all real-world blockchains
 
 ---
 
@@ -183,7 +209,8 @@ Headers are the _actual_ hash-linked list, not entire blocks.
 
 Notes:
 
-The parent hash links blocks together (cryptographically linked list). The other info is handy for other infrastructure and applications (more on that later).
+The parent hash links blocks together (cryptographically linked list).
+The other info is handy for other infrastructure and applications (more on that later).
 
 ---v
 
@@ -238,8 +265,10 @@ The parent hash links blocks together (cryptographically linked list). The other
 
 Notes:
 
-Extrinsics root is a crypto link to the body of the block. It is very similar to the state root.
-Consensus Digest is information necessary for the consensus algorithm to determine a block's validity. It varies widely with the consensus algorithm used and we will discuss it in two upcoming lectures.
+Extrinsics root is a crypto link to the body of the block.
+It is very similar to the state root.
+Consensus Digest is information necessary for the consensus algorithm to determine a block's validity.
+It varies widely with the consensus algorithm used and we will discuss it in two upcoming lectures.
 
 ---v
 
@@ -320,7 +349,7 @@ What do you see here?
 
 ## Nodes
 
-Software agents that participate in blockchain network.<br/>
+Software agents that participate in blockchain network.<br />
 May perform these jobs:
 
 <pba-cols>
@@ -397,7 +426,8 @@ Applications (maybe via their developers or users) pay for the privilege of havi
 Notes:
 
 Sometimes known as mempool (thanks bitcoin 🙄)
-Authoring nodes determine the order of upcoming transactions. In some sense they can see the future.
+Authoring nodes determine the order of upcoming transactions.
+In some sense they can see the future.
 
 Foreshadow forks where players disagree on the rules
 History: dao fork bch fork

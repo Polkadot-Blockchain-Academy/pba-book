@@ -137,7 +137,8 @@ In this lesson we'll also explore the advantages.
 
 Notes:
 
-The main goal of a PAB is to make the code **portable**, you should be able to compile it once and then share it around without caring about the architecture on which will be executed. Of course in a decentralized network we want that different nodes, with different architectures came up to the same result if the input are the same, that's called **determinism**, if a PAB would not have determinism then reaching consensus is impossible.
+The main goal of a PAB is to make the code **portable**, you should be able to compile it once and then share it around without caring about the architecture on which will be executed.
+Of course in a decentralized network we want that different nodes, with different architectures came up to the same result if the input are the same, that's called **determinism**, if a PAB would not have determinism then reaching consensus is impossible.
 
 ---v
 
@@ -148,14 +149,23 @@ The main goal of a PAB is to make the code **portable**, you should be able to c
 ## Desireable Features
 
 - Hardware Independence
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Efficiency
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Tool Simplicity
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Support as Compilation Target
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
+
 - Sandboxing
+
 <!-- .element: class="fragment" data-fragment-index="5" -->
 
 Notes:
@@ -268,10 +278,15 @@ Those things can't be addressed by the PAB itself but they can give good guideli
   - Rust, C, C++ and many others
   <!-- .element: class="fragment" data-fragment-index="2" -->
 - Fast (with near-native performance)
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Safe (executed in a sandboxed environment)
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
+
 - Open (programs can interoperate with their environment)
+
 <!-- .element: class="fragment" data-fragment-index="5" -->
 
 </pba-flex>
@@ -338,7 +353,8 @@ Wat has some features that allow for better readability:
 - Labels can be applied to elements.
 - Blocks can enclosed with parenthesis instead of explicit start/end instructions.
 
-Instructions push results to the stack and use values on the stack as arguments, the compilation process generally translate this stack-based bytecode to register based, where registers are used to pass values to instructions as a primary mechanism. The compilation will try to elide the wasm stack and work with only the architecture registers.
+Instructions push results to the stack and use values on the stack as arguments, the compilation process generally translate this stack-based bytecode to register based, where registers are used to pass values to instructions as a primary mechanism.
+The compilation will try to elide the wasm stack and work with only the architecture registers.
 
 There is another type of stack used in wasm and that's called: shadow stack, resource to learn more: <https://hackmd.io/RNp7oBzKQmmaGvssJDHxrw>
 
@@ -347,10 +363,15 @@ There is another type of stack used in wasm and that's called: shadow stack, res
 ## Wasm seems to be a perfect PAB, but
 
 - How does communication with the environment work?
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - How the memory is managed?
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - How is it executed?
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Notes:
@@ -430,9 +451,11 @@ The Rust compiler uses for dynamic/heap memory and to pass non primitives values
 
 Notes:
 
-Here's an example, wasm sees linear memory like a byte array and if it tries to access the second byte, it would use an index 1. When it's time to execute it the embedder will see this access and translate the linear memory access at index 1 to a standard memory access to base_linear_memory + 1.
+Here's an example, wasm sees linear memory like a byte array and if it tries to access the second byte, it would use an index 1.
+When it's time to execute it the embedder will see this access and translate the linear memory access at index 1 to a standard memory access to base_linear_memory + 1.
 
-Buffer overflow? Wasm uses 32 bit, this makes impossible to have an offset bigger then 4GiB, this means that the embedder can leave those 4GiB free in its virtual memory to makes impossible to the wasm blob to access any environment information. Even if the offset is only positive there are embedded that are defining as protected the 2GiB before the BLM so that if for some reason the wasm code trick the embedder to treat the offset as a signed number that would cause an Operating System error.
+Buffer overflow? Wasm uses 32 bit, this makes impossible to have an offset bigger then 4GiB, this means that the embedder can leave those 4GiB free in its virtual memory to makes impossible to the wasm blob to access any environment information.
+Even if the offset is only positive there are embedded that are defining as protected the 2GiB before the BLM so that if for some reason the wasm code trick the embedder to treat the offset as a signed number that would cause an Operating System error.
 
 ---
 
@@ -474,7 +497,8 @@ Notes:
 - wasmtime book: <https://docs.wasmtime.dev/>
 - Used in substrate as embedder for the blockchain logic
 
-Cranelift is a fast, secure, relatively simple and innovative compiler backend. It takes an intermediate representation of a program generated by some frontend and compiles it to executable machine code
+Cranelift is a fast, secure, relatively simple and innovative compiler backend.
+It takes an intermediate representation of a program generated by some frontend and compiles it to executable machine code
 
 ---v
 
@@ -531,7 +555,6 @@ There are also light clients, where both Runtime and Client are implemented in w
 - A browser as embedder of the node's client
   - the node's client as embedder for the node's runtime
     - the node's runtime as embedder for the SmartContract
-
 
 <img style="height: 30vh" src="./img/mind-blown-explosion.gif" />
 

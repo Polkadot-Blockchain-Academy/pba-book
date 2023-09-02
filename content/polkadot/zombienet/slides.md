@@ -32,24 +32,33 @@ Zombienet is an <span class="colored">integration testing tool</span> that allow
 
 Integration tests are always <span class="colored">complex</span>:
 
-<br/>
+<br />
 
 - Setup Configuration
+
 <!-- .element: class="fragment" -->
+
 - Port management
+
 <!-- .element: class="fragment" -->
+
 - Ready state off all artifacts
+
 <!-- .element: class="fragment" -->
+
 - Observability
+
 <!-- .element: class="fragment" -->
+
 - Leaking resources
+
 <!-- .element: class="fragment" -->
 
 ---v
 
 ## Friction to resolve
 
-<br/>
+<br />
 
 - Config flexibility
 - Local environment
@@ -62,7 +71,7 @@ Integration tests are always <span class="colored">complex</span>:
 
 ## Goals
 
-<br/>
+<br />
 
 <pba-cols style="align-items:normal">
     <pba-col>
@@ -177,7 +186,7 @@ chmod +x zombienet
 
 ## But first, try manually…
 
-<br/>
+<br />
 <div>
 <ul><li>Create chain-spec (parachain)</li></ul>
 
@@ -188,7 +197,7 @@ parachain-template-node build-spec --chain local \
 
 </div>
 <!-- .element: class="fragment" -->
-<br/>
+<br />
 <div>
 <ul><li>Create chain-spec (relay chain)</li></ul>
 
@@ -208,30 +217,30 @@ Tutorials <https://docs.substrate.io/tutorials/build-a-parachain/>
 
 ### Add keys\*
 
-<br/>
+<br />
 
 When not using --alice or --bob, you need to provide additional `aura` and `grandpa` keys and inject them into the keystore! (**per node**)
 
 ```sh
-  ./target/release/polkadot \
-  key insert --base-path /tmp/node01 \
-    --chain /tmp/relay.json \
-    --scheme Sr25519 \
-    --suri <your-secret-seed> \
-    --password-interactive \
-    --key-type aura
+./target/release/polkadot \
+key insert --base-path /tmp/node01 \
+  --chain /tmp/relay.json \
+  --scheme Sr25519 \
+  --suri <your-secret-seed> \
+  --password-interactive \
+  --key-type aura
 ```
 
-<br/>
+<br />
 
 ```sh
-  ./target/release/polkadot key insert \
-    --base-path /tmp/node01 \
-    --chain /tmp/relay.json \
-    --scheme Ed25519 \
-    --suri <your-secret-key> \
-    --password-interactive \
-    --key-type gran
+./target/release/polkadot key insert \
+  --base-path /tmp/node01 \
+  --chain /tmp/relay.json \
+  --scheme Ed25519 \
+  --suri <your-secret-key> \
+  --password-interactive \
+  --key-type gran
 ```
 
 Notes:
@@ -298,7 +307,7 @@ parachain-template-node \
 1. Generate genesis wasm and state
 1. Register parachain using sudo call
 
-<br/>
+<br />
 
 ```sh[1,2|4,5|7,8]
 parachain-template-node build-spec --chain /tmp/para-raw.json \
@@ -395,7 +404,7 @@ Notes:
 
 Try to launch a network with `2` parachains.
 
-<br/>
+<br />
 
 <https://paritytech.github.io/zombienet/>
 
@@ -406,7 +415,7 @@ Try to launch a network with `2` parachains.
 The network definition supports using [nunjucks](https://mozilla.github.io/nunjucks/) templating language (similar to [tera](https://github.com/Keats/tera)).
 Where <span class="colored-green">{{variables}}</span> are replaced with <span class="colored-green">env vars</span> and you can use all the built-in features.
 
-<br/>
+<br />
 
 ```toml[2]
 [relaychain]
@@ -433,7 +442,7 @@ Zombienet <span class="colored">providers</span> allow to <span class="colored-g
 <pba-col>
 
 <span class="colored">Kubernetes</span>
-<br/>
+<br />
 
 - Used internally, integrated with the [Grafana](https://grafana.com/oss/grafana/) stack.
 - You need to provide your infra stack.
@@ -443,7 +452,7 @@ Zombienet <span class="colored">providers</span> allow to <span class="colored-g
 <pba-col>
 
 <span class="colored">Podman</span>
-<br/>
+<br />
 
 - Automatically spawn and wire an instance of [Grafana](https://grafana.com/oss/grafana/) stack.
 - Attach a jaeger instance if enabled in the network definition.
@@ -453,7 +462,7 @@ Zombienet <span class="colored">providers</span> allow to <span class="colored-g
 <pba-col>
 
 <span class="colored">Native</span>
-<br/>
+<br />
 
 - Allow to attach to a running [Grafana](https://grafana.com/oss/grafana/) stack.
   **(wip)**
@@ -478,7 +487,7 @@ Zombienet’s built-in <span class="colored">test-runner</span> allows users to 
 
 ### Built-in assertions
 
-<br/>
+<br />
 
 - <span class="colored">Prometheus</span>: Query the exposed metrics/histograms and assert on their values.
 

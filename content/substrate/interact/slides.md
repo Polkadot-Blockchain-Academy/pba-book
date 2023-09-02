@@ -39,7 +39,7 @@ almost all external communication happens over JSPN-RPC, so let's take a closer 
 }
 ```
 
-<br/>
+<br />
 
 ```json
 { "jsonrpc": "2.0", "result": 19, "id": 3 }
@@ -156,7 +156,7 @@ In Kusama:
 - The block number is stored under `twox128("System") ++ twox128("Number")`.
   - Find it now, and at block 10,000,000.
 
-<br/>
+<br />
 
 - Refer to the "Substrate; Show Me The Code" lecture to find the right RPC endpoints.
 - You have 15 minutes!
@@ -222,7 +222,6 @@ Please revise this while you learn FRAME, and they will make perfect sense!
 Notes:
 
 ```ts
-
 import { ApiPromise, WsProvider } from "@polkadot/api";
 const provider = new WsProvider("wss://rpc.polkadot.io");
 const api = await ApiPromise.create({ provider });

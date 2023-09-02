@@ -81,7 +81,7 @@ To execute this operation, we will interact with the following components:
 - Source XCM Version: V3
 - Source Extrinsic: `xcmTransactor.transactThroughSigned`
 
-<br/>Consequently, it will initiate the remote execution of the following call:
+<br />Consequently, it will initiate the remote execution of the following call:
 
 - Target Chain: Turing Network
 - Target XCM Version: V3
@@ -117,7 +117,7 @@ Moonriver has further encapsulated the function to make their own xcmTransactor.
 
 ---v
 
-1. Ensure Barriers on the recipient chain.<br/>
+1. Ensure Barriers on the recipient chain.<br />
    In this case, an Allow Barrier\*\* `WithComputedOrigin<Everything>`, needs to be configured in the XCM config of Turing Network.
    This Barrier will allow the DescendOrigin instruction in XCM, which will reassign the origination of the transaction on Turing from Moonriver's sovereign account to the user's proxy account.
 1. Configure user’s remote wallet on the recipient chainThe remote wallet, or proxy wallet acts as an account abstraction, allowing the blockchain to execute specific code on behalf of the user.
@@ -144,7 +144,7 @@ This extrinsic serves as the gateway to composing the XCM message, incorporating
 
 ## XCM configs
 
-The following are the parameters you need to decide before sending an XCM message:<br/><br/>
+The following are the parameters you need to decide before sending an XCM message:<br /><br />
 
 1. **Version number**: Check the XCM version on both recipient (Turing Network) and source (Moonriver) chains.
    Ensure their XCM versions are compatible.
@@ -174,7 +174,7 @@ It requires the following parameters:
 
 **Destination**: It specifies the target chain, or for our case, the Turing Network, identified by {Relay, 2114} on Kusama.
 
-<br/>
+<br />
 
 <figure>
   <img rounded style="width: 900px;" src="./img/xcm-transactor-extrinsic.png" />

@@ -36,7 +36,7 @@ Your task is to use [cryptanalysis](https://en.wikipedia.org/wiki/Cryptanalysis)
 1. Team up with 2-4 students to complete this activity.
 1. Briefly inspect the ciphertext to see if you can identify patterns that may hint some things about their origin.
 1. Research based on what we know bout the messages to find clues to help come up with a theory and game plan to complete your task.
-1. Write a program in Rust that finds the key to generate the plaintext from the provided cipher texts.<br>
+1. Write a program in Rust that finds the key to generate the plaintext from the provided cipher texts.<br />
    The general steps are:
 
    1. Find the length of the longest input cipher text.

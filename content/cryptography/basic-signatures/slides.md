@@ -12,10 +12,10 @@ duration: 1 hour
 
 Signature libraries should generally all expose some basic functions:
 
-- `fn generate_key(r) -> sk;` <br/> Generate a `sk` (secret key) from some input `r`.
-- `fn public_key(sk) -> pk;` <br/> Return the `pk` (public key) from a `sk`.
-- `fn sign(sk, msg) -> signature;` <br/> Takes `sk` and a message; returns a digital signature.
-- `fn verify(pk, msg, signature) -> bool;` <br/> For the inputs `pk`, a message, and a signature; returns whether the signature is valid.
+- `fn generate_key(r) -> sk;` <br /> Generate a `sk` (secret key) from some input `r`.
+- `fn public_key(sk) -> pk;` <br /> Return the `pk` (public key) from a `sk`.
+- `fn sign(sk, msg) -> signature;` <br /> Takes `sk` and a message; returns a digital signature.
+- `fn verify(pk, msg, signature) -> bool;` <br /> For the inputs `pk`, a message, and a signature; returns whether the signature is valid.
 
 Notes:
 
@@ -44,7 +44,7 @@ See the Jupyter notebook and/or HackMD cheat sheet for this lesson.
 
 ## Hash Functions
 
-There are two lessons dedicated to hash functions.<br/>But they are used as part of all signing processes.
+There are two lessons dedicated to hash functions.<br />But they are used as part of all signing processes.
 
 For now, we only concern ourselves with using Blake2.
 
@@ -52,7 +52,7 @@ For now, we only concern ourselves with using Blake2.
 
 ## Hashed Messages
 
-As mentioned in the introduction,<br/>it's often more practical to sign the hash of a message.
+As mentioned in the introduction,<br />it's often more practical to sign the hash of a message.
 
 Therefore, the sign/verify API may be _used_ like:
 
@@ -63,7 +63,7 @@ Therefore, the sign/verify API may be _used_ like:
 
 </pba-flex>
 
-Where `H` is a hash function (for our purposes, Blake2).<br/>
+Where `H` is a hash function (for our purposes, Blake2).<br />
 This means the verifier will need to run the correct hash function on the message.
 
 ---
@@ -85,10 +85,10 @@ If a hash is signed, you can prove a signature is valid _without_ telling anyone
 
 ## Signing Payloads
 
-Signing payloads are an important part of system design.<br/>
+Signing payloads are an important part of system design.<br />
 Users should have credible expectations about how their messages are used.
 
-For example, when a user authorizes a transfer,<br/>they almost always mean just one time.
+For example, when a user authorizes a transfer,<br />they almost always mean just one time.
 
 Notes:
 
@@ -110,7 +110,7 @@ Note that signing and encryption are _not_ inverses.
 
 ## Replay Attacks
 
-Replay attacks occur when someone intercepts and resends a valid message.<br/>
+Replay attacks occur when someone intercepts and resends a valid message.<br />
 The receiver will carry out the instructions since the message contains a valid signature.
 
 <pba-flex center>
@@ -130,7 +130,7 @@ Tell the story of Ethereum Classic replays.
 
 ## Replay Attack Prevention
 
-Signing payloads should be designed so that they can<br/>only be used _one time_ and in _one context_.<br/>
+Signing payloads should be designed so that they can<br />only be used _one time_ and in _one context_.<br />
 Examples:
 
 <pba-flex center>
@@ -164,7 +164,7 @@ Examples:
 
 ## Sr25519
 
-Sr25519 addresses several small risk factors that emerged<br/>from Ed25519 usage by blockchains.
+Sr25519 addresses several small risk factors that emerged<br />from Ed25519 usage by blockchains.
 
 ---
 

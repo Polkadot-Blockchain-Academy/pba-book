@@ -28,7 +28,8 @@ duration: 30min
 
 ## Bitcoin
 
-- Bitcoin specifies the spent output. This satisfies membership and linkability
+- Bitcoin specifies the spent output.
+  This satisfies membership and linkability
 - Each Bitcoin output has a small, non-Turing complete program (Script) specifying how it can be spent
 - Each input has a `scriptSig` which proves the script is satisfied and this is an authorized spend (ownership)
 - The outputs cannot exceed the inputs, and the remainder becomes the fee (sum check)
@@ -77,7 +78,7 @@ duration: 30min
 - Amount
 - Owner
 - Mask
-- All in a single<br/>
+- All in a single<br />
   Pedersen commitment
 
 </pba-flex>

@@ -7,7 +7,6 @@ description: Principles of coordination, contracts, smart contracts, and compari
 
 Notes:
 
-Intro  
 In this module we're going to talk about Smart Contracts.
 
 ---
@@ -24,11 +23,12 @@ _aka Szabo definition_ <!-- .element: class="fragment" data-fragment-index="1" -
 
 Notes:
 
-The first question we should answer is "wtf is a smart contract"?  
+The first question we should answer is "wtf is a smart contract"?
 The term has been around for a long time (longer than any blockchain platform) and has evolved over time.
 It was first introduced by this guy Nick Szabo in the '90s.
 
-CLICK - read szabo definition  
+CLICK - read szabo definition
+
 Szabo's definition is primitive and kind of vague.
 It might even be argued that it includes all computer programs.
 But it gets at the essence of his thinking at the time.
@@ -49,7 +49,7 @@ _aka web3 definition_ <!-- .element: class="fragment" data-fragment-index="1" --
 
 Notes:
 
-click - read web3 definition  
+click - read web3 definition.
 This definition is clearly more technical and precise, which is helpful in a lot of ways.
 At this point though, we haven't even learned all the terms in this web3 definition.
 As an educator, that deeply pains me.
@@ -66,10 +66,15 @@ We'll also look at some criticisms of the term "smart contract" and some alterna
 <img rounded src="./img/railroad.jpeg" />
 
 Examples of coordinated activities:
-dancing, music band  
-money, business, trade  
-rowing team  
-building homes, buildings, roads
+
+<pba-flex center>
+
+- dancing, music band
+- money, business, trade
+- rowing team
+- building homes, buildings, roads
+
+</pba-flex>
 
 Doing the above safely through bureaucracies like inspection and certification procedures, automobile registration
 
@@ -163,7 +168,7 @@ Notes:
 From a historical perspective, one of the first forms of coordination was simple trading.
 Let's imagine that I grow food and you make houses.
 So, I'll give you some food, if you build me a house, and I pay your daily wage by giving you food as long as you're building my house.
-This is a classic example of what is called primitive trade  
+This is a classic example of what is called primitive trade.
 You the house builder - you need food, so you can only build houses for people who grow food.
 As in, you can't earn food by building houses for randos who don't have food to pay you with.
 Obviously there are a whole lot of problems within this situation and it won't scale over time.
@@ -201,9 +206,7 @@ Well then I in turn believe that we’ll build mine next week.
 
 # Rational Expectations
 
-Personal trust - you can build it over time through a slow give and take like you do with your family or long term business partners.
-
-<!-- .element: class="fragment" -->
+Personal trust - you can build it over time through a slow give and take like you do with your family or long term business partners. <!!-- .element: class="fragment" -->
 
 Notes:
 
@@ -232,10 +235,10 @@ Anyone? (check for nods)
 
 _So, some personal historical context on me_, when I was a newbie in the web3 space, I hadn’t heard this phrase (or slogan rather?).
 I saw it on ppl’s shirts and felt sort of confused and honestly, kind of excluded from what felt like maybe an inside joke.
-I remember thinking, _wait, I trust people, does that make me wrong? Is that a bad thing?_  
-I asked myself the question, _why is trust such a dirty world in our world?_  
+I remember thinking, _wait, I trust people, does that make me wrong... Is that a bad thing_?
+I asked myself the question, _why is trust such a dirty world in our world_?
 Well, in time, thanks to some of my fellow instructors in the room, I came to understand that this phrase is referring to the fact that life is not all sunshine and roses! Not all relationships and interactions are filled with trustful actors.
-In fact, most aren't!  
+In fact, most aren't!
 Literally every day we're in situations in which we are forced to treat complete strangers as if we've established real, authentic trust between one another.
 Treat them as if they're a close friend or business partner.
 And _that_ is definitely bad, and is a dirty word, and is a thing that we really shouldn't do.
@@ -261,7 +264,7 @@ So.
 We know that we don't have the luxury of only interacting with people we truly personally trust.
 It's impossible to get personal trust with every person you'd in theory like to because it takes a super long time to bootstrap that real kind of relationship.
 And frankly, sometimes you want to interact with a stranger more immediately, say today, and not have to court them for years upon years.
-So, again, this should lead us to the question of - how do you handle these every day situations? How DO I trust that the coffee guy isn't going to run off with my credit card details?  
+So, again, this should lead us to the question of - how do you handle these every day situations? How DO I trust that the coffee guy isn't going to run off with my credit card details?
 CLICK - Well, that's where rational expectations come into play.
 This is a game theory, incentives-based concept.
 Where you believe credibly that a person _will_ act faithfully according to an agreement you've made - because the incentives make them do so.
@@ -278,7 +281,7 @@ Notes:
 
 Again, I want to make sure you're all hearing me when I say that personal/familial trust is not wrong, or bad, or dirty.
 I don’t want us all walking out here calling our moms and dissolving our trust with them.
-That just isn’t the scenario we speak to when we say 'trust is dirty'  
+That just isn’t the scenario we speak to when we say 'trust is dirty'.
 And further, if you have someone who you genuinely trust, you can actually get things done a whole lot faster and more efficiently by leveraging that trust.
 So, it may be worth it to bootstrap genuine personal trust.
 You know, start small, accept a small bit of risk and gradually increase that over time.
@@ -304,7 +307,7 @@ Often they are civic duty based - the fear that society or your town will turn o
 OR they're morality or religion based - you know, you keep your promise to someone out of fear of otherwise going to hell.
 Or they are based on the fact that you have a reputation to uphold.
 You don't want to be known as a liar or a cheat.
-I think you get what I'm saying here, yeah?  
+I think you get what I'm saying here, yeah?
 It's social norms and expectations that keep people.
 Reputation is on the line.
 And this can get society pretty far.
@@ -344,7 +347,7 @@ I think this is his way of saying that we need some bigger and more resilient co
 
 Notes:
 
-So how do we incentivize people to keep their promises beyond a civic duty?  
+So how do we incentivize people to keep their promises beyond a civic duty?
 Ding ding ding - Finally! This brings us to the idea of contracts.
 They're basically, pretty much, promises.
 They could involve money, a lot of them do, though they don't have to.
@@ -414,10 +417,11 @@ Notes:
 So yeah, that's the goal and what we're trying to solve.
 But, again, just before we go any further, let’s make sure we’re all on the same page about what a contract itself is.
 A promise, made between parties, backed by the government, to coordinate together to accomplish something together.
-The notion of promise is very abstract:  
-It could involve coordinating over time.
-It could involve money or even credit.
-It also could have multiple possible valid outcomes.
+The notion of promise is very abstract:
+
+- It could involve coordinating over time.
+- It could involve money or even credit.
+- It also could have multiple possible valid outcomes.
 
 Okay.
 Cool.
@@ -441,9 +445,7 @@ And together we'll develop and tease out those same comparisons here.
 
 <blockquote>A machine program with rules that we could have defined in a contract, but instead a machine performs or verifies performance.</blockquote>
 
-Broad definition  
-_aka Szabo definition_  
-formulated c 1997
+Broad definition _aka Szabo definition_ formulated c 1997
 
 Notes:
 
@@ -667,7 +669,7 @@ Multiple controllers and multiple physically present users.
 The internet makes it better in some ways.
 We can interact with our smart contract remotely instead of being physically present.
 But now, there is the question of the server operator.
-Are they really executing the correct contract?  
+Are they really executing the correct contract?
 A corrupt server operator is essentially the same as a corrupt judge.
 Hmmm...
 so I wonder how we might solve this?
@@ -684,7 +686,7 @@ So, after all of that talk comparing law and code, it's inevitable that we get h
 We know tech can be used to enforce rules.
 So we might wonder, do we actually need lawyers? Can code dictate what we can and cannot do? Can smart contracts be the answer? I'm not coming for lawyers.
 I'm sure they're nice.
-But could this be the answer to make life more trustless and secure?  
+But could this be the answer to make life more trustless and secure?
 But this is where we'll end it today.
 I hope I've primed you with a few lingering questions.
 These smart contracts do sound cool, but perhaps the execution, where it actually happens, hopefully is a bit opaque and puzzling still.

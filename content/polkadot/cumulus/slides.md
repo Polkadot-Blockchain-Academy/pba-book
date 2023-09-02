@@ -18,14 +18,23 @@ Cumulus is the glue which attaches substrate based chains to Polkadot, convertin
 
 1. What is Cumulus?
 1. Cumulus and Para-Relay Communication
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 1. How Cumulus Keeps a Parachain Node Informed
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 1. Collation Generation and Advertisement
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 1. How Cumulus Collations Enable Parablock Validation
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
+
 1. How Cumulus Enables Runtime Upgrades
+
 <!-- .element: class="fragment" data-fragment-index="5" -->
 
 </pba-flex>
@@ -84,10 +93,15 @@ Notes:
 
 - Follow relay "new best head" to update para "new best head"
 - Follow relay finalized block to update para finalized block
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Request parablocks not shared by peers from relay (data recovery)
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Collation generation and announcement
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Notes:
@@ -115,7 +129,7 @@ Notes:
 Before addressing collation generation let's first address the other three key Cumulus processes.
 These drive parachain consensus and ensure the availability of parachain blocks.
 
-<br/>
+<br />
 Together they keep parachain nodes up to date such that collating is possible.
 
 Notes:
@@ -184,7 +198,7 @@ Notes:
 
 To facilitate shared security, parachains inherit their finality from the relay chain.
 
-<br/>
+<br />
 
 ```rust[|4-8]
 // Greatly simplified
@@ -206,7 +220,7 @@ loop {
 ### Ensuring Block Availability
 
 As a part of the parachains protocol, Polkadot makes parachain blocks available for several hours after they are backed.
-<br/><br/>
+<br /><br />
 
 <pba-flex center>
 
@@ -261,10 +275,15 @@ Notes:
 
 - Erasure coding is applied to the PoV, breaking it into chunks
 - 3x original PoV size, vs 300x to store copies
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - 1/3 of chunks sufficient to assemble PoV
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - 2/3 of validators must claim to have their chunks
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 </pba-flex>
@@ -289,12 +308,19 @@ The last of our key processes
 
 1. Relay node imports block in which parachain's avail. core was vacated
 1. `CollationGeneration` requests a collation from the collator
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 1. Parachain consensus decides whether this collator can author
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 1. Collator proposes, seals, and imports a new block
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 1. Collator bundles the new block and information necessary to process and validate it, a **collation!**
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 </pba-flex>
@@ -382,7 +408,7 @@ pub struct Pvf {
 }
 ```
 
-<br/>
+<br />
 
 - New state transitions that occur on a parachain must be validated against the PVF
 
@@ -404,11 +430,11 @@ The code is hashed and saved in the storage of the relay chain.
 
 - The PVF is not just a copy paste of the parachain Runtime
 
-<br/>
+<br />
 
 - The PVF contains an extra function, `validate_block`
 
-<br/>
+<br />
 
 **WHY!?**
 
@@ -444,12 +470,19 @@ The input of the runtime validation process is the PoV and the function called i
 
 - The parachain runtime expects to run in conjunction with a parachain client
 - But validation is occurring in a relay chain node
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - We need to implement the API the parachain client exposes to the runtime, known as host functions
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - The host functions most importantly allow the runtime to query its state, so we need a light weight replacement for the parachain's state sufficient for the execution of this single block
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - `validate_block` prepares said state and host functions
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 </pba-flex>
@@ -476,7 +509,7 @@ fn validate_block(input: InputParams) -> Output {
 }
 ```
 
-<br/>
+<br />
 
 > But where does `storage_proof` come from?
 
@@ -532,8 +565,11 @@ Code highlighting:
 
 - Acts as a replacement for the parachain's pre-state for the purpose of validating a single block
 - It allows the reconstruction of a sparse in-memory merkle trie
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - State root can then be compared to that from parent header
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ---
@@ -547,11 +583,14 @@ Code highlighting:
 <!-- .element: class="fragment" data-fragment-index="1" -->
 </div>
 
-<br/>
+<br />
 
 - Only includes the data modified in this block along with hashes of the data from the rest of the trie
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - This makes up the majority of the data in a collation (max 5MiB)
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Notes:
@@ -586,8 +625,11 @@ fn validate_block(input: InputParams) -> Output {
 
 - Now we know where the **storage_proof** comes from!
 - **into_state** constructs our storage trie
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Host functions written to access this new storage
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ---
@@ -597,6 +639,7 @@ fn validate_block(input: InputParams) -> Output {
 <pba-flex center>
 
 - Every Substrate blockchain supports runtime upgrades
+
 <!-- .element: class="fragment" data-fragment-index="0" -->
 
 ##### Problem
@@ -624,7 +667,7 @@ The relay chain needs a fairly hard guarantee that PVFs can be compiled within a
 
 <!-- .element: class="fragment" data-fragment-index="0" -->
 
-<br/>
+<br />
 
 - Collators execute a runtime upgrade but it is not applied
 - Collators send the new runtime code to the relay chain in a collation
@@ -651,8 +694,11 @@ Notes:
   - binary vote: accept or reject
   <!-- .element: class="fragment" data-fragment-index="1" -->
 - Super majority concludes the vote
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - The state of the new PVF is updated on the relay chain
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Notes:

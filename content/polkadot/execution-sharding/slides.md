@@ -112,14 +112,14 @@ Goal: Have as few checkers as reasonably possible.
 
 Notes:
 
-Every Session (4 hours), validators are _partitioned_ into small **groups** which work together.<br/>
+Every Session (4 hours), validators are _partitioned_ into small **groups** which work together.<br />
 Groups are assigned to specific **Execution Core**s, and these assignments change every few blocks.
 
 ---
 
 ## Definition: Candidate
 
-> A **Candidate** is a parachain block<br/>which has not yet been finalized in the relay chain.
+> A **Candidate** is a parachain block<br />which has not yet been finalized in the relay chain.
 
 ---
 
@@ -318,7 +318,7 @@ To fulfill this goal we need 2 things.
 <pba-flex center>
 
 1. A protocol for proving validity of included candidates
-1. Consensus rules for the relay chain<br/>to avoid building on or finalizing<br/>relay chain forks containing bad candidates.
+1. Consensus rules for the relay chain<br />to avoid building on or finalizing<br />relay chain forks containing bad candidates.
 
 </pba-flex>
 
@@ -332,7 +332,7 @@ Checking involves three operations:
 
 1. Recovering the data from the network (by fetching chunks)
 1. Executing the parablock, checking success
-1. Check that outputs match the ones posted<br/>to the relay chain by backers
+1. Check that outputs match the ones posted<br />to the relay chain by backers
 
 </pba-flex>
 
@@ -496,7 +496,7 @@ This causes a "reorganization" whenever a dispute resolves against a candidate.
 
 <!-- .slide: data-background-color="#4A2439" -->
 
-> How are complex off-chain systems<br/>implemented using Substrate?
+> How are complex off-chain systems<br />implemented using Substrate?
 
 ---
 

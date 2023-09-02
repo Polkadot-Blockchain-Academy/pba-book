@@ -4,7 +4,7 @@ description: Light Clients and Unstoppable Apps, for web3 builders.
 duration: 45+ mins
 ---
 
-# Light clients<br/>and<br/>Unstoppable Apps
+# Light clients<br />and<br />Unstoppable Apps
 
 ---
 
@@ -399,7 +399,7 @@ A Light client receives these justifications and this way it verifies the authen
 ready</div>
   </pba-col>
 
-  <pba-col left>
+<pba-col left>
     <div class="white, bg-[var(--r-heading-color)] text-base rounded-2xl p-4 !mt-2">Only verifies the authenticity of blocks</div>
     <div class="white, bg-[var(--r-heading-color)] text-base rounded-2xl p-4 !mt-2">Requests state of the chain on demand</div>
     <div class="white, bg-[var(--r-heading-color)] text-base rounded-2xl p-4 !mt-2">No database whatsoever</div>
@@ -504,10 +504,10 @@ Notes:
       Substrate_connect --> PolkadotJS_API
       PolkadotJS_API --> UI_dAPP
 
-      Smoldot_Light_Client --> Custom_Code\n(with_JSON_RPC_API)
-      Custom_Code\n(with_JSON_RPC_API) --> UI_dAPP
+    Smoldot_Light_Client --> Custom_Code\n(with_JSON_RPC_API)
+    Custom_Code\n(with_JSON_RPC_API) --> UI_dAPP
 
-  </diagram>
+</diagram>
 </section>
 
 ---
@@ -515,8 +515,11 @@ Notes:
 ## Smoldot Light Client
 
 - (As Substrate, it also) supports the new JSON-RPC protocol that has been developed;
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Light and fast enough so that it can be embedded into a mobile application or an application in general;
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Notes:
@@ -540,8 +543,11 @@ The dApp (UI) connects to a third-party-owned publicly-accessible node client
 ## So what one needs to do
 
 - Find the web-socket url of a 3rd party node (JSON-RPC node) that one trusts;
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Add it to the code and use it;
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ---v
@@ -575,15 +581,23 @@ The dApp (UI) connects to a node client that the user has installed on their mac
 
 <pba-flex center>
 
-1. Install dependencies<br/>
-(e.g. rust, openssl, cmake, llvm etc);
+1. Install dependencies<br />
+   (e.g. rust, openssl, cmake, llvm etc);
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 1. Clone from github the "polkadot" repo;
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 1. Build the node locally;
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 1. Start the node locally;
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
+
 1. Wait for the node to synchronize;
    <!-- .element: class="fragment" data-fragment-index="5" -->
    <pba-flex>
@@ -747,12 +761,19 @@ console.log('Please visit: https://cloudflare-ipfs.com/ipns/dotapps.io/?rpc=ws%3
 #### Known vulnerabilities
 
 - Eclipse attacks (Full node & Light client)
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Long-range attacks (Full node & Light client)
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Invalid best block (Only Light client)
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Finality stalls (Mostly Light client)
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Notes:

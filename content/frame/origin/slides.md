@@ -131,14 +131,14 @@ pub fn set_code(origin: OriginFor<T>, code: Vec<u8>) -> DispatchResultWithPostIn
 Setting the timestamp of the block.
 
 ```rust
-		/// Set the current time.
-		#[pallet::call_index(0)]
-		#[pallet::weight((T::WeightInfo::set(), DispatchClass::Mandatory))]
-		pub fn set(origin: OriginFor<T>, #[pallet::compact] now: T::Moment) -> DispatchResult {
-			ensure_none(origin)?;
-			// -- snip --
-		}
+	/// Set the current time.
+	#[pallet::call_index(0)]
+	#[pallet::weight((T::WeightInfo::set(), DispatchClass::Mandatory))]
+	pub fn set(origin: OriginFor<T>, #[pallet::compact] now: T::Moment) -> DispatchResult {
+		ensure_none(origin)?;
+		// -- snip --
 	}
+}
 ```
 
 `None` origin is not very straight forward. More details next...

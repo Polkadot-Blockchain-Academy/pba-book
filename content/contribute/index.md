@@ -293,7 +293,7 @@ If (and only if) formatting _breaks_ markdown from rendering correctly, you may 
 ```
 ````
 
-The above ` ```html ` block will not be formatted.
+The above `` ```html `` block will not be formatted.
 
 ### Checking Links
 

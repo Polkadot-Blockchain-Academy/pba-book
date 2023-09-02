@@ -145,10 +145,15 @@ Same issue as before.
 ### What is NPoS: Re-inventing the Wheel
 
 - ✅ As a nominator, you are free to express your desire to back non-winners as well. Once enough people have expressed the same desire, the non-winner will become a winner.
+
 <!-- .element: class="fragment" -->
+
 - ✅ Has a much higher chance to make sure staked tokens won't get wasted.
+
 <!-- .element: class="fragment" -->
+
 - ✅ Can optimize other criteria other than "who had more approval votes".
+
 <!-- .element: class="fragment" -->
 
 ---
@@ -226,10 +231,15 @@ Same issue as before.
 - Let's first recap:
 
 1. Polkadot validators are the source of truth for the state transition of both the relay chain and all of the parachains + bridges.
+
 <!-- .element: class="fragment" -->
+
 2. Polkadot validator are assigned to parachains as backing group, and swapped over time.
+
 <!-- .element: class="fragment" -->
+
 3. Polkadot validators all author the same number of blocks, i.e. they are of same importance.
+
 <!-- .element: class="fragment" -->
 
 Notes:
@@ -275,8 +285,7 @@ A common example: we allow signed submissions. What if they send solutions that 
 
 ### NPoS Objective: Election Score
 
-- The default algorithm used in both the onchain/offchain solvers is the [Phragmen
-  algorithm](https://en.wikipedia.org/wiki/Phragmen%27s_voting_rules).
+- The default algorithm used in both the onchain/offchain solvers is the [Phragmen algorithm](https://en.wikipedia.org/wiki/Phragmen%27s_voting_rules).
 - Proved to provide high fairness and justified representation properties whilst being verifiable in
   linear time.
 

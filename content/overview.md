@@ -40,6 +40,8 @@ The academy uses _explicit terms_ to describe materials use within as _content c
 
 The course is segmented into **modules**, with the granular **lessons** intended to be completed in the sequence provided in the left-side navigation bar.
 
+<!-- prettier-ignore-start -->
+
 | Module                                                        | Topic                                                                                                                |
 | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | [🔐 Cryptography](./cryptography/)                            | _Applied_ cryptography concepts and introduction to many common tools of the trade for web3 builders.                |
@@ -49,6 +51,8 @@ The course is segmented into **modules**, with the granular **lessons** intended
 | [🧱 FRAME](./frame/)                                          | The primary Substrate runtime framework used for parachain development.                                              |
 | [🟣 Polkadot](./polkadot/)                                    | The Polkadot blockchain covered in depth, focus on high-level design and practically how to utilize it's blockspace. |
 | [💱 XCM](./xcm/)                                              | The cross consensus messaging format covered from first principals to use in protocols.                              |
+
+<!-- prettier-ignore-end -->
 
 The lessons include materials used, with links and instructions to required external materials as needed.[^except]
 

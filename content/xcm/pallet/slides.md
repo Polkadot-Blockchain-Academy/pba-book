@@ -84,14 +84,12 @@ Notes:
   Executed on behalf of FRAME's signed origin.
 
 <diagram class="mermaid limit size-40">
-<!-- prettier-ignore-start -->
 flowchart TD
 subgraph paraA[Parachain A              .]
   executor --"success?"--> palletxcm
   palletxcm("pallet-xcm") --"execute"--> executor("xcm-executor")
 end
 execute("execute(xcm)") --> palletxcm
-<!-- prettier-ignore-end -->
 </diagram>
 
 Notes:
@@ -108,21 +106,16 @@ It executes the message **locally** and returns the outcome as an event.
 Sends a message to the provided destination.
 
 <diagram class="mermaid" style="display: flex; width: 150%; justify-content: center; transform: translateX(-17%);">
-<!-- prettier-ignore-start -->
 flowchart LR
 subgraph paraA[Parachain A]
-palletxcma("pallet-xcm") --"deliver"--> routera("xcm-router")
-routera --> mqueuea("message queue")
+  palletxcma("pallet-xcm") --"deliver"--> routera("xcm-router")
+  routera --> mqueuea("message queue")
 end
-
 subgraph paraB[Parachain B]
 mqueueb("message queue") --> executorb("xcm-executor")
 end
-
 send("send(xcm)") --> palletxcma
 mqueuea --> mqueueb
-
-<!-- prettier-ignore-end -->
 </diagram>
 
 Notes:
@@ -158,22 +151,16 @@ We have already seen what teleports and reserve transfers mean in lesson 7.1; A 
 This extrinsic allows the user to perform an asset teleport.
 
 <diagram class="mermaid">
-<!-- prettier-ignore-start -->
 flowchart LR
 subgraph paraA[Parachain A]
   palletxcma("pallet-xcm") --"1. execute"--> executora("xcm-executor")
   executora --"send"--> sendera("xcm-sender")
 end
-
 subgraph tdestination[Trusted Destination]
 end
 lteleport("limited_teleport_assets(\n  dest,\n  beneficiary,\n  assets,\n  fee_asset_item,\n  weight_limit\n)"):::left --> palletxcma
-
 sendera --"2."--> tdestination
-
 classDef left text-align:left
-
-<!-- prettier-ignore-end -->
 </diagram>
 
 ---v
@@ -214,22 +201,16 @@ Xcm(vec![
 Allow the user to perform a reserve-backed transfer from the reserve chain to the destination.
 
 <diagram class="mermaid" style="display: flex; width: 150%; justify-content: center; transform: translateX(-17%);">
-<!-- prettier-ignore-start -->
 flowchart LR
 subgraph reserve[Reserve Chain]
   palletxcma("pallet-xcm") --"1. execute"--> executora("xcm-executor")
   executora --"send"--> sendera("xcm-sender")
 end
-
 subgraph destination[Destination]
 end
 lteleport("limited_reserve_transfer_assets(\n  dest,\n  beneficiary,\n  assets,\n  fee_asset_item,\n  weight_limit\n)"):::left --> palletxcma
-
 sendera --"2."--> destination
-
 classDef left text-align:left
-
-<!-- prettier-ignore-end-->
 </diagram>
 
 ---v
@@ -323,11 +304,11 @@ Notes:
 <pba-flex center>
 
 ```rust
- impl Config for XcmConfig {
-  // --snip--
-  type ResponseHandler = PalletXcm;
-  type SubscriptionService = PalletXcm;
- }
+impl Config for XcmConfig {
+ // --snip--
+ type ResponseHandler = PalletXcm;
+ type SubscriptionService = PalletXcm;
+}
 ```
 
 Notes:
@@ -383,7 +364,6 @@ XCM version negotiation:
 In the following scenario Chain A is using XCM v2
 
 <diagram class="mermaid limit size-80">
-<!-- prettier-ignore-start -->
 flowchart BT
 subgraph registryA[Chain A's Registry]
   chainB("Chain B \n\n v2")
@@ -391,16 +371,11 @@ subgraph registryA[Chain A's Registry]
   chainD("Chain D \n\n v1")
   chainE("Chain E \n\n v3")
 end
-<!-- prettier-ignore-end-->
 </diagram>
 
 <diagram class="mermaid limit size-70">
-<!-- prettier-ignore-start -->
 flowchart LR
-
 chainARequest("Chain A") --"Chain E ? \n\n v2"--> chainERequest("Chain E")
-
-<!-- prettier-ignore-end-->
 </diagram>
 
 ---

@@ -200,11 +200,11 @@ And the most important - and most of the time the weakest: how we handle these k
 
 <pba-flex center>
 
-- Loss of confidentiality - your key is leaked or compromised.<br/>
+- Loss of confidentiality - your key is leaked or compromised.<br />
   i.e: someone else has access to the wallet.
-- Loss of availability - you cannot access your key anymore.<br/>
+- Loss of availability - you cannot access your key anymore.<br />
   i.e: you don't know where you noted.
-- Loss of integrity - your key is wrong.<br/>
+- Loss of integrity - your key is wrong.<br />
   i.e: you noted the key incorrectly.
 
 </pba-flex>
@@ -236,7 +236,7 @@ That they key is available - you can access to it when you need it - the hard di
 <pba-flex center>
 
 - One or more keys and a threshold
-- The threshold defines how many signatories<br/>must sign for a sig check t be valid.
+- The threshold defines how many signatories<br />must sign for a sig check t be valid.
 
 </pba-flex>
 
@@ -457,7 +457,7 @@ He is the S on the RSA algorithm (Rivest-Shamir-Adleman)
 
 - Security is contextual
 - Define your risk appetite
-- Backups not only of information also for processes.<br/>
+- Backups not only of information also for processes.<br />
   Do not rely on single point of failure.
 - Don't put all your eggs in the same basket
 
@@ -510,9 +510,9 @@ He is the S on the RSA algorithm (Rivest-Shamir-Adleman)
 - Many actors or institutions have different objectives of the one you have.
 
 - Software have bugs and errors.
-  They are made by people like you and me,<br/>which needs to eat and go to sleep.
+  They are made by people like you and me,<br />which needs to eat and go to sleep.
 - No technology is agnostic.
-  This includes they technology we communicate with,<br/>we work with or the one we use to keep us entertained.
+  This includes they technology we communicate with,<br />we work with or the one we use to keep us entertained.
 - Sometimes we are our worst adversary.
 
 > Be diligent. 🖖

@@ -83,7 +83,7 @@ Notes:
 
 - Selena wants to sell one item of a good.
 - Two buyers, Alice and Bob.
-- Each buyer has a secret _valuation_ $v_A$ and $v_B$:<br/>
+- Each buyer has a secret _valuation_ $v_A$ and $v_B$:<br />
   how much they are willing to pay for the item.
 
 </pba-flex>
@@ -388,8 +388,8 @@ Recall the rules:
 - Selena continually raises the price.
 - At any price, you decide whether to stay or leave.
 - If you leave, you may not return.
-- If you are the last one in the auction you win<br/>
-  and pay the price at which the second-to-last<br/> bidder left.
+- If you are the last one in the auction you win<br />
+  and pay the price at which the second-to-last<br /> bidder left.
 
 </pba-flex>
 
@@ -552,7 +552,7 @@ Notes:
 <pba-flex center>
 
 - Selena continually lowers the price.
-- As soon as a bidder accepts the price,<br/>
+- As soon as a bidder accepts the price,<br />
   they are declared winners and auction is over.
 - Winner pays the price they accepted.
 
@@ -753,7 +753,7 @@ Notes:
 
 ## Sniping
 
-_Answer:_ **candle auctions.**<br/>
+_Answer:_ **candle auctions.**<br />
 Dynamic first-price auction with _random ending time._
 
 <img rounded style="width: 600px;" src="./img/candle-auction-photo.jpg" />
@@ -762,7 +762,7 @@ Dynamic first-price auction with _random ending time._
 
 ## Sniping
 
-_Answer:_ **candle auctions.**<br/>
+_Answer:_ **candle auctions.**<br />
 Dynamic first-price auction with _random ending time._
 
 - Similar to first-price auction
@@ -864,7 +864,7 @@ Link will be distributed!
 
 ## Further Reading
 
-Polkadot & Kusama Auctions<br/>Data & Background information:
+Polkadot & Kusama Auctions<br />Data & Background information:
 
 <pba-flex center>
 

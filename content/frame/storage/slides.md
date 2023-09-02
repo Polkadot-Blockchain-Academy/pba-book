@@ -41,7 +41,7 @@ Today we will focus on the top two layers: Runtime Storage APIs and Storage Over
 
 ### Overlay Deep Dive
 
-<br/>
+<br />
 <div class="flex-container">
 <div class="left-small" style="font-size:0.9em">
 
@@ -56,12 +56,12 @@ The overlay stages changes to the underlying database.
 <tr><td style="background-color: darkred;">Runtime Memory</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: green;">
 <tr><td>Runtime Storage API</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Overlay Change Set</td></tr>
 <tr>
@@ -72,12 +72,12 @@ The overlay stages changes to the underlying database.
 </tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: blue;">
 <tr><td>Memory / Database Interface</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Database</td></tr>
 <tr>
@@ -113,12 +113,12 @@ The overlay stages changes to the underlying database.
 <tr><td style="background-color: darkred;">Runtime Memory</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: green;">
 <tr><td>Runtime Storage API</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Overlay Change Set</td></tr>
 <tr>
@@ -129,12 +129,12 @@ The overlay stages changes to the underlying database.
 </tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: blue;">
 <tr><td>Memory / Database Interface</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Database</td></tr>
 <tr>
@@ -151,7 +151,7 @@ The overlay stages changes to the underlying database.
 
 ### Overlay: Balance Transfer
 
-<br/>
+<br />
 <div class="flex-container">
 <div class="left-small">
 
@@ -166,12 +166,12 @@ The overlay stages changes to the underlying database.
 <tr><td style="background-color: darkred;">Runtime Memory</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: green;">
 <tr><td>Runtime Storage API</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Overlay Change Set</td></tr>
 <tr>
@@ -182,12 +182,12 @@ The overlay stages changes to the underlying database.
 </tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: blue;">
 <tr><td>Memory / Database Interface</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Database</td></tr>
 <tr>
@@ -204,7 +204,7 @@ The overlay stages changes to the underlying database.
 
 ### Overlay: Balance Transfer
 
-<br/>
+<br />
 <div class="flex-container">
 <div class="left-small">
 
@@ -220,12 +220,12 @@ The overlay stages changes to the underlying database.
 <tr><td style="background-color: darkred;">Runtime Memory</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: green;">
 <tr><td>Runtime Storage API</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Overlay Change Set</td></tr>
 <tr>
@@ -236,12 +236,12 @@ The overlay stages changes to the underlying database.
 </tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: blue;">
 <tr><td>Memory / Database Interface</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Database</td></tr>
 <tr>
@@ -258,7 +258,7 @@ The overlay stages changes to the underlying database.
 
 ### Overlay: Balance Transfer
 
-<br/>
+<br />
 <div class="flex-container">
 <div class="left-small">
 
@@ -273,12 +273,12 @@ The overlay stages changes to the underlying database.
 <tr><td style="background-color: darkred;">Runtime Memory</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: green;">
 <tr><td>Runtime Storage API</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Overlay Change Set</td></tr>
 <tr>
@@ -289,12 +289,12 @@ The overlay stages changes to the underlying database.
 </tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: blue;">
 <tr><td>Memory / Database Interface</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Database</td></tr>
 <tr>
@@ -311,7 +311,7 @@ The overlay stages changes to the underlying database.
 
 ### Overlay: Implications
 
-<br/>
+<br />
 <div class="flex-container">
 <div class="left-small">
 
@@ -326,12 +326,12 @@ The overlay stages changes to the underlying database.
 <tr><td style="background-color: darkred;">Runtime Memory</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: green;">
 <tr><td>Runtime Storage API</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Overlay Change Set</td></tr>
 <tr>
@@ -342,12 +342,12 @@ The overlay stages changes to the underlying database.
 </tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: blue;">
 <tr><td>Memory / Database Interface</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Database</td></tr>
 <tr>
@@ -368,7 +368,7 @@ also this means that cross implementation of substrate/polkadot can be tricky to
 
 ### Additional Storage Overlays (Transactional)
 
-<br/>
+<br />
 <div class="flex-container">
 <div class="left-small text-small">
 
@@ -384,12 +384,12 @@ also this means that cross implementation of substrate/polkadot can be tricky to
 <tr><td style="background-color: darkred;">Runtime Memory</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: green;">
 <tr><td>Runtime Storage API</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Transactional Layer</td></tr>
 <tr>
@@ -400,7 +400,7 @@ also this means that cross implementation of substrate/polkadot can be tricky to
 </tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Overlay Change Set</td></tr>
 <tr>
@@ -411,12 +411,12 @@ also this means that cross implementation of substrate/polkadot can be tricky to
 </tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table" style="background-color: blue;">
 <tr><td>Memory / Database Interface</td></tr>
 </table>
 
-<br/>
+<br />
 <table class="overlay-table">
 <tr><td colspan=4>Database</td></tr>
 <tr>
@@ -467,7 +467,7 @@ This is the same behavior as you would expect from smart contract environments l
 
 Transactional layers can be used to attack your chain:
 
-<br/>
+<br />
 
 - Allow a user to spawn a lot of transactional layers.
 - On the top layer, make a bunch of changes.

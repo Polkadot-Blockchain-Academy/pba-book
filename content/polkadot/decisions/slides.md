@@ -26,13 +26,13 @@ Notes:
 
 ## Type 1 Decisions
 
-> Some decisions are consequential and irreversible or nearly irreversible – <span style="color:#d92f78">**one-way doors**</span> – and these decisions must be made methodically, carefully, slowly, with great deliberation and consultation. If you walk through and don't like what you see on the other side, you can't get back to where you were before. We can call these Type 1 decisions.
+> Some decisions are consequential and irreversible or nearly irreversible – <span style="color:#d92f78"> **one-way doors**</span> – and these decisions must be made methodically, carefully, slowly, with great deliberation and consultation. If you walk through and don't like what you see on the other side, you can't get back to where you were before. We can call these Type 1 decisions.
 
 ---
 
 ## Type 2 Decisions
 
-> But most decisions aren't like that – they are changeable, reversible – <span style="color:#d92f78">**they're two-way doors**</span>. If you've made a suboptimal Type 2 decision, you don't have to live with the consequences for that long. You can reopen the door and go back through. Type 2 decisions can and should be made quickly by high judgment individuals or small groups.
+> But most decisions aren't like that – they are changeable, reversible – <span style="color:#d92f78"> **they're two-way doors**</span>. If you've made a suboptimal Type 2 decision, you don't have to live with the consequences for that long. You can reopen the door and go back through. Type 2 decisions can and should be made quickly by high judgment individuals or small groups.
 
 ---
 

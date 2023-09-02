@@ -188,7 +188,7 @@ Spot instances may be more expensive if overall demand is high, but help to soot
 
 Within Polkadot, we measure the amount of blockspace that an application can use in _coretime_.
 
-Just like a CPU and OS, there is a scheduler that multiplexes many<br/> different processes onto execution cores.
+Just like a CPU and OS, there is a scheduler that multiplexes many<br /> different processes onto execution cores.
 
 Coretime is acquired through either primary or secondary marketplaces.
 

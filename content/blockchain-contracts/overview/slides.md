@@ -99,7 +99,12 @@ No individual actor, company, state, or coalition should be able to degrade any 
 
 Notes:
 
-So now we understand the goals of web3. How do we achieve them? The key is allowing users to agree on a shared history. The simplest blockchains do nothing more than timestamp and attest to a stream of historical records. In Web 2 users have no visibility into the history of the app. They must trust the provider to accurately represent the current state. By giving the service provider the power to change the story, we give them the power to shape our understanding of reality and consequently our behavior.
+So now we understand the goals of web3.
+How do we achieve them? The key is allowing users to agree on a shared history.
+The simplest blockchains do nothing more than timestamp and attest to a stream of historical records.
+In Web 2 users have no visibility into the history of the app.
+They must trust the provider to accurately represent the current state.
+By giving the service provider the power to change the story, we give them the power to shape our understanding of reality and consequently our behavior.
 
 ---v
 
@@ -107,7 +112,9 @@ So now we understand the goals of web3. How do we achieve them? The key is allow
 
 > Any large-scale operation - whether a modern state, a medieval church, or an archaic tribe - is rooted in common stories that exist only in people's collective imaginations.
 
-> Telling effective stories is not easy. The difficulty lies ... in convincing everyone else to believe it. Much of history revolves around this question: How does one convince millions of people to believe particular stories about gods, nations, or LLCs?
+> Telling effective stories is not easy.
+> The difficulty lies ... in convincing everyone else to believe it.
+> Much of history revolves around this question: How does one convince millions of people to believe particular stories about gods, nations, or LLCs?
 
 <!-- .element: class="fragment" -->
 
@@ -123,7 +130,7 @@ _-- Yuval Noah Harari, Sapiens --_
 
 If we agree on:
 
-- The starting state<br/>(aka genesis state)
+- The starting state<br />(aka genesis state)
 - The history of transitions
 
 </pba-col>
@@ -143,7 +150,11 @@ Then we _MUST_ agree on:
 
 Notes:
 
-Now that we have a formal math-y model of systems that we care about, we can see that the notion of shared stories being powerful is more than slick language of philosophical mumbo jumbo. Even the term genesis state (or genesis block) is taken straight from mythology. We aren't newly discovering or inventing the idea that having a shared understanding of our past is important. It dates back to pre-history. We are just formalizing it and applying it to digital services.
+Now that we have a formal math-y model of systems that we care about, we can see that the notion of shared stories being powerful is more than slick language of philosophical mumbo jumbo.
+Even the term genesis state (or genesis block) is taken straight from mythology.
+We aren't newly discovering or inventing the idea that having a shared understanding of our past is important.
+It dates back to pre-history.
+We are just formalizing it and applying it to digital services.
 
 ---
 
@@ -188,11 +199,20 @@ What part of history is final?
 
 Notes:
 
-First, each blockchain tracks some state machine. We've discussed several examples of what that might be already, we'll code some simple examples shortly, and we'll spend all of module 5 digging into how to create a blockchain-friendly production-ready state machine.
+First, each blockchain tracks some state machine.
+We've discussed several examples of what that might be already, we'll code some simple examples shortly, and we'll spend all of module 5 digging into how to create a blockchain-friendly production-ready state machine.
 
-Next is the Blockchain Data structure. This data structure is basically a linked list of state transitions. But unlike the linked lists you studied in your data structures course, it isn't just linked by memory addresses or any other malleable thing. Instead it is cryptographically linked so that if anyone presents a different history, you can tell right away that you don't agree on a shared history. We'll dive into this data structure in the next lesson.
+Next is the Blockchain Data structure.
+This data structure is basically a linked list of state transitions.
+But unlike the linked lists you studied in your data structures course, it isn't just linked by memory addresses or any other malleable thing.
+Instead it is cryptographically linked so that if anyone presents a different history, you can tell right away that you don't agree on a shared history.
+We'll dive into this data structure in the next lesson.
 
-Finally, is a consensus mechanism. Defining a state machine alone does not uniquely define a history. There are many possible valid histories. Just like the many worlds interpretation of quantum mechanics. To really agree on the current state, we need to agree on which of the possible histories is the real one.
+Finally, is a consensus mechanism.
+Defining a state machine alone does not uniquely define a history.
+There are many possible valid histories.
+Just like the many worlds interpretation of quantum mechanics.
+To really agree on the current state, we need to agree on which of the possible histories is the real one.
 
 ---v
 
@@ -204,7 +224,9 @@ Finally, is a consensus mechanism. Defining a state machine alone does not uniqu
 
 <img rounded style="width: 500px;" src="./img/bitcoin-transaction.png" />
 
-Uses an unspent transaction output (UTXO) model & Proof of Work (PoW) consensus. <!-- .element: class="fragment" -->
+Uses an unspent transaction output (UTXO) model & Proof of Work (PoW) consensus.
+
+<!-- .element: class="fragment" -->
 
 Notes:
 
@@ -256,10 +278,10 @@ Let the market decide.
 <br />
 <br />
 
-#### Broad Definition <small style="margin-top:20px;">_"Szabo definition"_</small>
+#### Broad Definition <small style="margin-top:20px;"> _"Szabo definition"_</small>
 
 <blockquote>A machine program with rules that we could have defined in a contract, but instead a machine performs or verifies performance.</blockquote>
 
-#### Narrow Definition <small style="margin-top:20px;">_"web3 definition"_</small>
+#### Narrow Definition <small style="margin-top:20px;"> _"web3 definition"_</small>
 
 <blockquote>A program that specifies how users can interact with a state machine and is deployed permissionlessly to a blockchain network</blockquote>

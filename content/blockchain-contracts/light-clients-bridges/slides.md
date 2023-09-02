@@ -43,6 +43,7 @@ Reality:
 - It takes a lot of disk, memory, etc
 - It takes some know-how
 - I don't need it _all the time_
+
 </div>
 <!-- .element: class="fragment" -->
 
@@ -70,7 +71,7 @@ AKA, trust somebody else's node.
 
 <ul>
 <li>🕵️ Spy on you (<a href="https://decrypt.co/115486/infura-collect-metamask-users-ip-ethereum-addresses-after-privacy-policy-update">like infura</a>).</li> <!-- .element: class="fragment" -->
- 
+
 <li>🔞 Censor you <!-- .element: class="fragment" -->
 <li>🤥 Lie to you <!-- .element: class="fragment" -->
 <li>💔 Steal your boyfriend <!-- .element: class="fragment" -->
@@ -254,7 +255,7 @@ More on this after we cover the basic design.
 
 ### Trust-based
 
-Trusted intermediary makes a transfer manually.<br/>
+Trusted intermediary makes a transfer manually.<br />
 Eg. Wrapped bitcoin on ethereum (WBTC)
 
 </pba-col>
@@ -262,7 +263,7 @@ Eg. Wrapped bitcoin on ethereum (WBTC)
 
 ### Trustless
 
-Trustless is the goal,<br/>like almost everything in web3.
+Trustless is the goal,<br />like almost everything in web3.
 
 </pba-col>
 </pba-cols>
@@ -291,7 +292,7 @@ The bridge can never be stronger than the consensus on the source chain
 
 <pba-flex center>
 
-- Most trustless way to interact with blockchain<br/>is to run a node
+- Most trustless way to interact with blockchain<br />is to run a node
 - This is true for individuals _and_ other blockchains
 - A blockchain is extremely resource constrained.
 - Run a source chain light client on the target chain
@@ -392,9 +393,9 @@ One is to add a role of fishermen.
 They are responsible for noticing when the header candidate on the target chain is different from the one in the main source chain protocol and reporting this behavior back to the source chain so the validators can be slashed there.
 Two problems:
 
-1.  Fishermen have weak incentives.
-    If they do a good job there will be no equivocations and they will not get paid.
-1.  Target chain is relying on the foreign source chain to keep the bridge secure instead of owning that security itself.
+1. Fishermen have weak incentives.
+   If they do a good job there will be no equivocations and they will not get paid.
+1. Target chain is relying on the foreign source chain to keep the bridge secure instead of owning that security itself.
 
 The other is to have the relayer role require a security deposit.
 If it turns out that a relayer relays an attack header, that relayer is slashed and the relayer who reports it gets a reward.
@@ -413,9 +414,9 @@ Relayers will expect to earn some reward for the opportunity cost of their stake
 <pba-flex center>
 
 - App users submit proofs
-- Need a source chain transaction?<br/>
+- Need a source chain transaction?<br />
   Submit an spv-style transaction proof
-- Need some source chain state?<br/>
+- Need some source chain state?<br />
   Submit a state proof
 
 </pba-flex>

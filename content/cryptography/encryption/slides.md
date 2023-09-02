@@ -20,7 +20,7 @@ duration: 1 hour
 
 ## Symmetric Cryptography
 
-Symmetric encryption assumes all parties begin with some shared secret information, a potentially very difficult requirement.<br/>The shared secret can then be used to protect further communications from others who do not know this secret.
+Symmetric encryption assumes all parties begin with some shared secret information, a potentially very difficult requirement.<br />The shared secret can then be used to protect further communications from others who do not know this secret.
 
 In essence, it gives a way of _extending_ a shared secret over time.
 
@@ -38,9 +38,9 @@ Examples: ChaCha20, Twofish, Serpent, Blowfish, XOR, DES, AES
 
 Symmetric encryption libraries should generally all expose some basic functions:
 
-- `fn generate_key(r) -> k;` <br/> Generate a `k` (secret key) from some input `r`.
-- `fn encrypt(k, msg) -> ciphertext;` <br/> Takes `k` and a message; returns the ciphertext.
-- `fn decrypt(k, ciphertext) -> msg;` <br/> Takes `k` and a ciphertext; returns the original message.
+- `fn generate_key(r) -> k;` <br /> Generate a `k` (secret key) from some input `r`.
+- `fn encrypt(k, msg) -> ciphertext;` <br /> Takes `k` and a message; returns the ciphertext.
+- `fn decrypt(k, ciphertext) -> msg;` <br /> Takes `k` and a ciphertext; returns the original message.
 
 It always holds that `decrypt(k, encrypt(k, msg)) == msg`.
 
@@ -73,7 +73,7 @@ Notes:
 
 There is cryptographic proof that the secret was known to the producer of the encrypted message.
 
-<br/>
+<br />
 
 _However_, knowledge of the secret is not restricted to one party: Both (or all) parties in a symmetrically encrypted communication know the secret. Additionally, in order to prove this to anyone, they must _also_ gain knowledge of the secret.
 
@@ -186,10 +186,10 @@ i.e. Public key is used to encrypt but a different, _secret_, key must be used t
 
 Asymmetric encryption libraries should generally all expose some basic functions:
 
-- `fn generate_key(r) -> sk;` <br/> Generate a `sk` (secret key) from some input `r`.
-- `fn public_key(sk) -> pk;` <br/> Generate a `pk` (public key) from the private key `sk`.
-- `fn encrypt(pk, msg) -> ciphertext;` <br/> Takes the public key and a message; returns the ciphertext.
-- `fn decrypt(sk, ciphertext) -> msg;` <br/> For the inputs `sk` and a ciphertext; returns the original message.
+- `fn generate_key(r) -> sk;` <br /> Generate a `sk` (secret key) from some input `r`.
+- `fn public_key(sk) -> pk;` <br /> Generate a `pk` (public key) from the private key `sk`.
+- `fn encrypt(pk, msg) -> ciphertext;` <br /> Takes the public key and a message; returns the ciphertext.
+- `fn decrypt(sk, ciphertext) -> msg;` <br /> For the inputs `sk` and a ciphertext; returns the original message.
 
 It always holds that `decrypt(sk, encrypt(public_key(sk), msg)) == msg`.
 

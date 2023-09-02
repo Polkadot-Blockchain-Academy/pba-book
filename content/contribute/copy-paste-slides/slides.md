@@ -118,7 +118,7 @@ pub type Executive = frame_executive::Executive<
 
 Use `o` to open the overview mode and explore slides here.
 
-You can see the source of these slides to copy&paste<br/>
+You can see the source of these slides to copy&paste<br />
 as slide templates in your slides!
 
 <pba-flex center>
@@ -138,14 +138,14 @@ as slide templates in your slides!
 
 ### Center 1
 
-Using<br/>`<pba-col center>`
+Using<br /> `<pba-col center>`
 
 </pba-col>
 <pba-col center>
 
 ### Center 2
 
-Using<br/>`<pba-col center>`
+Using<br /> `<pba-col center>`
 
 </pba-col>
 </pba-cols>
@@ -161,14 +161,14 @@ Using<br/>`<pba-col center>`
 
 ### Center 1
 
-Using<br/>`<pba-col center>`
+Using<br />`<pba-col center>`
 
 </pba-col>
 <pba-col center>
 
 ### Center 2
 
-Using<br/>`<pba-col center>`
+Using<br />`<pba-col center>`
 
 </pba-col>
 </pba-cols>
@@ -183,21 +183,21 @@ Using<br/>`<pba-col center>`
 
 ### Left
 
-Using<br/>`<pba-col left>`
+Using<br /> `<pba-col left>`
 
 </pba-col>
 <pba-col center>
 
 ### Center
 
-Using<br/>`<pba-col center>`
+Using<br /> `<pba-col center>`
 
 </pba-col>
 <pba-col right>
 
 ### Right
 
-Using<br/>`<pba-col right>`
+Using<br /> `<pba-col right>`
 
 </pba-col>
 </pba-cols>
@@ -213,21 +213,21 @@ Using<br/>`<pba-col right>`
 
 ### Left
 
-Using<br/>`<pba-col left>`
+Using<br />`<pba-col left>`
 
 </pba-col>
 <pba-col center>
 
 ### Center
 
-Using<br/>`<pba-col center>`
+Using<br />`<pba-col center>`
 
 </pba-col>
 <pba-col right>
 
 ### Right
 
-Using<br/>`<pba-col right>`
+Using<br />`<pba-col right>`
 
 </pba-col>
 </pba-cols>
@@ -776,7 +776,7 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 
 ### [A Flowchart](https://mermaid.js.org/syntax/flowchart.html)
 
-  <diagram class="mermaid">
+<diagram class="mermaid">
     %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
     flowchart TD
       A(Start) --> B{Is it?};
@@ -784,7 +784,7 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
       C --> D(Rethink);
       D --> B;
       B -- No ----> E(End);
-  </diagram>
+</diagram>
 
 ---v
 

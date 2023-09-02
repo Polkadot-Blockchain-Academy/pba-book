@@ -133,10 +133,10 @@ If we actually include an infinite loop into the `validate_block` function, a pa
 <pba-flex center>
 
 - Our node will sync relay chain blocks
-- When importing the new best block,<br/>we'll connect to the backing group
-- Then we'll advertise our block ("collation")<br/>to a validator in the group
-- The validator will request the collation<br/>from us using `collator-protocol`
-- Now it's in the hands of validators<br/>to include our block
+- When importing the new best block,<br />we'll connect to the backing group
+- Then we'll advertise our block ("collation")<br />to a validator in the group
+- The validator will request the collation<br />from us using `collator-protocol`
+- Now it's in the hands of validators<br />to include our block
 
 <pba-flex>
 

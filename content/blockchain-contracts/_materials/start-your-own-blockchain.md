@@ -10,11 +10,11 @@ See the README included in the repository for further instructions.
 
 ## Learning objectives:
 
-1.  How to run a node
-1.  What the log messages mean
-1.  Preview: How to configure a network with a chain spec
-1.  Experience peer connections coming and going
-1.  Practice checking for common not-peering issues (different genesis, firewall)
+1. How to run a node
+1. What the log messages mean
+1. Preview: How to configure a network with a chain spec
+1. Experience peer connections coming and going
+1. Practice checking for common not-peering issues (different genesis, firewall)
 
 ## Outline
 

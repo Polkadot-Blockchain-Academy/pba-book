@@ -71,7 +71,7 @@ Notes:
 
 ---
 
-## Why are economic concepts<br/>important?
+## Why are economic concepts<br />important?
 
 <pba-flex center>
 
@@ -119,7 +119,7 @@ Notes:
 
 ## Guiding Human Behavior
 
-> An incentive is a bullet, a key:<br/>an often tiny object with astonishing power to change a situation.<br/>-- Steven Levitt --
+> An incentive is a bullet, a key:<br />an often tiny object with astonishing power to change a situation.<br />-- Steven Levitt --
 
 Notes:
 
@@ -311,8 +311,8 @@ Notes:
 <pba-flex center>
 
 <ul>
-<li class="fragment">A common model to help predict and rationalize the price<br/>which emerges from a market.</li>
-<li class="fragment">Can be used to (gu)estimate the quantity<br/>of produced goods vs. their market prices.</li>
+<li class="fragment">A common model to help predict and rationalize the price<br />which emerges from a market.</li>
+<li class="fragment">Can be used to (gu)estimate the quantity<br />of produced goods vs. their market prices.</li>
 </ul>
 
 </pba-flex>
@@ -608,7 +608,7 @@ Notes:
 
 #### _(or: why bother trading at all?)_
 
-> It is the maxim of every prudent master of a family, never to attempt to make at home what it will cost him more to make than to buy.<br/>-- Adam Smith, 1776 --
+> It is the maxim of every prudent master of a family, never to attempt to make at home what it will cost him more to make than to buy.<br />-- Adam Smith, 1776 --
 
 Notes:
 
@@ -749,7 +749,7 @@ Notes:
 <ul>
 <li class="fragment">Money now is worth more than the same amount in the future.</li>
 <li class="fragment">Why?
-    <ul> 
+    <ul>
     <li class="fragment">Again, opportunity costs: The money at hand now could be invested, potentially earning more money.</li>
     <li class="fragment">This potential earning capacity bestows more value to present money over future money.</li>
     </ul>
@@ -866,7 +866,7 @@ Notes:
 
 ## Behavioral Economics
 
-> Simply put, the stock market is a creation of man and therefore reflects human idiosyncrasy.<br/>-- Ralph Nelson Elliott --
+> Simply put, the stock market is a creation of man and therefore reflects human idiosyncrasy.<br />-- Ralph Nelson Elliott --
 
 ---
 

@@ -14,7 +14,7 @@ duration: 1 hour
 <pba-col>
 <pba-flex center>
 
-##### Decision<br/>making systems
+##### Decision<br />making systems
 
 - Common systems
 - Goals and trade-offs
@@ -46,7 +46,7 @@ Notes:
 
 ## Collective decision making
 
-An umbrella term that contains voting mechanisms,<br/>governance processes, policy making, budget allocation.
+An umbrella term that contains voting mechanisms,<br />governance processes, policy making, budget allocation.
 
 ---
 
@@ -90,10 +90,10 @@ Notes:
 
 ## A more profound interpretation
 
-Long you live and high you fly<br/>
-Smiles you'll give and tears you'll cry<br/>
-**And all you touch and all you see<br/>
-Is all your life will ever be**<br/>
+Long you live and high you fly<br />
+Smiles you'll give and tears you'll cry<br />
+**And all you touch and all you see<br />
+Is all your life will ever be**<br />
 
 -- Pink Floyd (Breathe)
 
@@ -122,9 +122,9 @@ Notes:
 <!-- prettier-ignore -->
 |                  |                                                                                              |
 | :--------------: | :------------------------------------------------------------------------------------------: |
-|   **Utility**    | - decision maximizes society's welfare<br/> - it reflects people's preferences |
-|  **Legitimacy**  |            - decision is considered fair<br/>- people trust the process            |
-| **Practicality** |                      - process is fast<br/> - it is simple to understand                      |
+|   **Utility**    | - decision maximizes society's welfare<br /> - it reflects people's preferences |
+|  **Legitimacy**  |            - decision is considered fair<br />- people trust the process            |
+| **Practicality** |                      - process is fast<br /> - it is simple to understand                      |
 |                  |                                                                                              |
 
 Notes:
@@ -234,7 +234,7 @@ Notes:
 
 <pba-flex center>
 
-- Not very practical:<br/>asking everyone to vote.
+- Not very practical:<br />asking everyone to vote.
 - One decision at a time.
 - Not great for emergencies.
 
@@ -441,7 +441,7 @@ Notes:
 <pba-flex center>
 
 - A dictatorship system is captured by definition.
-- A majority vote can lead to capture<br/>if the minority's opinion is consistently ignored.<br/>
+- A majority vote can lead to capture<br />if the minority's opinion is consistently ignored.<br />
   Known as "tyranny of the majority".
 - It can affect legitimacy.
 
@@ -457,7 +457,7 @@ Notes:
 
 ## Random dictator
 
-Whenever there is a decision to be made,<br/>pick a person at random in the collective<br/>and let them decide as a dictator.
+Whenever there is a decision to be made,<br />pick a person at random in the collective<br />and let them decide as a dictator.
 
 Notes:
 
@@ -834,7 +834,7 @@ Notes:
 | 7 voters | C | B | A |
 | 5 voters | B | C | A |
 
-<br/>
+<br />
 
 16 points for A, **25 points for B**, 19 points for C.
 
