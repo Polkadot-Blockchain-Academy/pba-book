@@ -1,15 +1,17 @@
-# Rust artifacts
-**/target
-
 # Build artifacts
 /html*
 
-# Jupyter artifacts
+# Rust artifacts
+**/target
 
+# Jupyter artifacts
 **/.ipynb_checkpoints/**
 
 # Some common ones
 tmp
+tmp/**
+*.log
+log/**
 .vscode
 .idea/
 *.iml
@@ -18,8 +20,6 @@ tmp
 out/
 .DS_Store
 .svn
-log/*.log
-tmp/**
 node_modules/
 .sass-cache
 _static/

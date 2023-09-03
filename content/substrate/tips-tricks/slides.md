@@ -541,8 +541,8 @@ Things like **addition**, **multiplication**, **division** could all easily fail
 - Panic
   - `u32::MAX * 2 / 2` (in debug builds)
   - `100 / 0`
-    s
-  </div>
+
+</div>
 
 <!-- .element: class="fragment" -->
 

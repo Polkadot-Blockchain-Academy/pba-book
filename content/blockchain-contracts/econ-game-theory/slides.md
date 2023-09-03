@@ -2376,7 +2376,7 @@ The whole field of blockchain incentivization and protocol design is still devel
 Thats it...
 
 - Podcast: <https://www.youtube.com/watch?v=aP9f_1v9Ulc>
-- Whitepaper: <https://2039955362-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FPy2Kmkwju3mPSo9jrKKt%2Fuploads%2F9tExk4U2OdiRKGEsUWqW%2FEigenLayer_WhitePaper.pdf?alt=media&token=c20ac4bd-badd-4826-9fb6-492923741c9e> <!-- markdown-link-check-disable-line -->
+- Whitepaper: <https://2039955362-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FPy2Kmkwju3mPSo9jrKKt%2Fuploads%2F9tExk4U2OdiRKGEsUWqW%2FEigenLayer_WhitePaper.pdf?alt=media&token=c20ac4bd-badd-4826-9fb6-492923741c9e>
 
 ---
 

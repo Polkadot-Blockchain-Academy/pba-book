@@ -175,12 +175,12 @@ _Intuition: protocol will eventually work synchronously, but it needs to be safe
 
 <br />
 
-> [FLP theorem] It is impossible to have a deterministic protocol that solves consensus in an asynchronous system in which at least one process may fail by crashing.
+> \[FLP theorem\] It is impossible to have a deterministic protocol that solves consensus in an asynchronous system in which at least one process may fail by crashing.
 
 <br />
 <br />
 
-> [Castro-Liskov theorem] It is impossible to have a protocol that solves consensus in a partially synchronous system with \\(3f+1\\) nodes in which more than \\(f\\) processes are byzantine.
+> \[Castro-Liskov theorem\] It is impossible to have a protocol that solves consensus in a partially synchronous system with \\(3f+1\\) nodes in which more than \\(f\\) processes are byzantine.
 
 ---
 
@@ -188,12 +188,12 @@ _Intuition: protocol will eventually work synchronously, but it needs to be safe
 
 <br />
 
-> [FLP theorem] It is impossible to have a <font color="#c2ff33">deterministic</font> protocol that solves consensus in an <font color="#c2ff33">asynchronous</font> system in which at least one process may fail by crashing.
+> \[FLP theorem\] It is impossible to have a <font color="#c2ff33">deterministic</font> protocol that solves consensus in an <font color="#c2ff33">asynchronous</font> system in which at least one process may fail by crashing.
 
 <br />
 <br />
 
-> [Castro-Liskov theorem] It is impossible to have a protocol that solves consensus in a <font color="#c2ff33">partially synchronous</font> system with \\(3f+1\\) nodes in which <font color="#c2ff33">more than</font> \\(f\\) processes are byzantine.
+> \[Castro-Liskov theorem\] It is impossible to have a protocol that solves consensus in a <font color="#c2ff33">partially synchronous</font> system with \\(3f+1\\) nodes in which <font color="#c2ff33">more than</font> \\(f\\) processes are byzantine.
 
 ---
 
@@ -400,29 +400,29 @@ Aleph paper, as the first, also achieved fully asynchronous randomness beacon:
 
 ### Classical protocols:
 
-- [DLS’88], [CR’92],
-- PBFT [CL’99]
-- Random Oracles … [CKS’05]
-- Honey Badger BFT [MXCSS’16]
-- Tendermint [BKM’18]
-- VABA [AMS’19]
-- Flexible BFT [MNR’19]
-- HotStuff [YMRGA’19]
-- Streamlet [CS’20]
-- Grandpa [SKK'20]
+- \[DLS’88\], \[CR’92\],
+- PBFT \[CL’99\]
+- Random Oracles … \[CKS’05\]
+- Honey Badger BFT \[MXCSS’16\]
+- Tendermint \[BKM’18\]
+- VABA \[AMS’19\]
+- Flexible BFT \[MNR’19\]
+- HotStuff \[YMRGA’19\]
+- Streamlet \[CS’20\]
+- Grandpa \[SKK'20\]
 
 </pba-col>
 <pba-col>
 
 ### DAG-based protocols:
 
-- [L. Moser, P. Meliar-Smith ‘99]
-- Hashgraph [B’16]
-- Aleph [GLSS’18]
-- DAG-Rider [KKNS’21]
-- Highway [KFGS’21]
-- Narwhal&Tusk [DKSS’22]
-- Bullshark [SGSK’22]
+- \[L. Moser, P. Meliar-Smith ‘99\]
+- Hashgraph \[B’16\]
+- Aleph \[GLSS’18\]
+- DAG-Rider \[KKNS’21\]
+- Highway \[KFGS’21\]
+- Narwhal&Tusk \[DKSS’22\]
+- Bullshark \[SGSK’22\]
 
 </pba-col>
 </pba-cols>

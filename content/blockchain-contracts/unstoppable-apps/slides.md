@@ -79,7 +79,7 @@ In reality we strive for Absolute Unstoppability, but likely cannot grantee it i
 > Antifragility is beyond resilience or robustness.
 > The resilient resists shocks and stays the same; the antifragile gets better.
 >
-> -- [Antifragile](https://en.wikipedia.org/wiki/Antifragile_(book)) --
+> -- [Antifragile](https://en.wikipedia.org/wiki/Antifragile_%28book%29) --
 
 </div>
 
@@ -568,7 +568,7 @@ Notes:
 - Unlike PoW where voting on a chain costs something _extrinsic_ to the system, PoS has only _intrinsic_ measures to do accounting of consensus rules.
 - **Critical:** This was a problem with early naive implementations of PoS.
   Modern PoS schemes avoid this specific problem by having the security deposit and slashing for equivocation (in a few slides)
-- Good explainer, source of image: <https://golden.com/wiki/Nothing-at-stake_problem-639PVZA> <!-- markdown-link-check-disable-line -->
+- Good explainer, source of image: <https://golden.com/wiki/Nothing-at-stake_problem-639PVZA>
 
 ---v
 
@@ -651,7 +651,7 @@ Nuke argue this is the same for the sum of all contracts valuations on something
   - Finality: Voting for mutually<br />exclusive chains to be final
 - Invalidity
 - Lack of availability
-- **Intentional protocol abuse** ([selfish mining](https://golden.com/wiki/Selfish_mining_attack-39PMNNA)) <!-- markdown-link-check-disable-line -->
+- **Intentional protocol abuse** ([selfish mining](https://golden.com/wiki/Selfish_mining_attack-39PMNNA))
 
 </pba-flex>
 
@@ -818,7 +818,7 @@ Notes:
 
 Notes:
 
-<https://cryptoslate.com/op-ed-is-ethereum-now-under-u-s-control-99-of-latest-relay-blocks-are-censoring-the-network/> <!-- markdown-link-check-disable-line -->
+<https://cryptoslate.com/op-ed-is-ethereum-now-under-u-s-control-99-of-latest-relay-blocks-are-censoring-the-network/>
 
 - code is unstoppable, but platform _can_ sensor.
   Ability -> responsibility (we may talk more on that latter)

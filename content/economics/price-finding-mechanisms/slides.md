@@ -112,7 +112,7 @@ Notes:
 - We saw the notion of an abstraction already in game theory class: we lose a bit in realism, but gain in structure which allows us to make precise statements, and develop a richer theory.
   The intuition and conclusions still apply in real life.
 - In particular, we are assuming that each of the three characters has a certain amount of information about the valuations of the other players, namely the distribution they are sampled from, and they can use this info to strategize their actions.
-- Assuming that each valuation $v_i$ follows a uniform distribution between 0 and 1 simplifies Selena's life, because she knows that for any value $x\in [0,1]$, the probability that a bidder's valuation is below $x$ is exactly $x$, i.e., $P[v_i\leq x]=x$.
+- Assuming that each valuation $v_i$ follows a uniform distribution between 0 and 1 simplifies Selena's life, because she knows that for any value $x\in \[0,1\]$, the probability that a bidder's valuation is below $x$ is exactly $x$, i.e., $P\[v_i\leq x\]=x$.
 - However, assuming a uniform distribution is just for pedagogical reasons: most results in auction theory can be extended to more general distributions.
 
 ---
@@ -316,7 +316,7 @@ TIP: use arrow chars in unicode for style: <https://www.htmlsymbols.xyz/arrow-sy
 **Expected revenue**
 
 - Selena's expected revenue is expected value of 2nd highest valuation.
-- For two independent variables uniformly sampled from $[0,1]$,
+- For two independent variables uniformly sampled from $\[0,1\]$,
   the expected value of the minimum is $1/3\approx 0.33$.
 - This is not quite as good as posting a price
   (which provided expected revenue $0.38$).
@@ -324,8 +324,8 @@ TIP: use arrow chars in unicode for style: <https://www.htmlsymbols.xyz/arrow-sy
 
 Notes:
 
-- Let $F(x)$ be the cumulative density function (CDF) of the lowest of Alice and Bob's valuations, $\min\{v_A, v_B\}$, where $v_A$ and $v_B$ are independent variables sampled uniformly from $[0,1]$.
-- By definition, for any $x$ in $[0,1]$, $F(x)$ is the probability that the lower valuation is below $x$, or equivalently, $g(x):=1-F(x)$ is the probability that both valuations are above $x$; clearly $g(x)=(1-x)^2$, and hence $F(x)=1-(1-x)^2$.
+- Let $F(x)$ be the cumulative density function (CDF) of the lowest of Alice and Bob's valuations, $\min\{v_A, v_B\}$, where $v_A$ and $v_B$ are independent variables sampled uniformly from $\[0,1\]$.
+- By definition, for any $x$ in $\[0,1\]$, $F(x)$ is the probability that the lower valuation is below $x$, or equivalently, $g(x):=1-F(x)$ is the probability that both valuations are above $x$; clearly $g(x)=(1-x)^2$, and hence $F(x)=1-(1-x)^2$.
 - From the CDF, we can compute the probability density function (PDF) by derivation: $f(x)=\frac{d}{dx}F(x)=2(1-x)$.
 - Finally, the expected value is computed from the PDF with the integral formula
   $$\int_0^1 x\cdot f(x) dx = 2\int_0^1 (x-x^2)dx=2\cdot \left(\frac{1}{2}-\frac{1}{3}\right)=\frac{1}{3}.$$
@@ -363,10 +363,10 @@ Notes:
   You can check that these probabilities sum up to one.
 - In the first case Selena's revenue is zero, and in the second case it is $r$.
   Hence the expected revenue for the first two cases is $2r^2(1-r)$.
-- To compute the expected revenue of the third case, we simply copy the integral formula for the expected value (from a couple of slides ago), but we restrict the integration limits to $[r, 1]$:
+- To compute the expected revenue of the third case, we simply copy the integral formula for the expected value (from a couple of slides ago), but we restrict the integration limits to $\[r, 1\\]$:
   \begin{align}
   \int_r^1 x\cdot f(x) dx &= 2\int_r^1 (x-x^2)dx\\
-  &=2\cdot \left[\frac{x^2}{2}-\frac{x^3} {3}\right]\_r^1 \\&=\frac{1}{3} - r^2 + \frac{2}{3}r^3.
+  &=2\cdot \left\[\frac{x^2}{2}-\frac{x^3} {3}\right\\]\_r^1 \\&=\frac{1}{3} - r^2 + \frac{2}{3}r^3.
   \end{align}
 - Putting all terms together, we obtain that the expected revenue is
   $$R(r)=0+2r^2(1-r)+\left(\frac{1}{3} - r^2 + \frac{2}{3}r^3\right)=\frac{1}{3}+r^2-\frac{4}{3}r^3.$$
@@ -495,9 +495,9 @@ Notes:
 - Assume you are Alice, with valuation $v_A$ and bid $b_A$.
 - Assuming that Bob's bid $b_B$ equals half his valuation $v_B$, that $v_B$ is sampled uniformly at random between 0 and 1, and that your bid $b_A$ is at most $1/2$, your winning probability is:
   \begin{align}
-  Pr[winning] &= Pr[b_B\leq b_A] \\
-  &= Pr[v_B/2 \leq b_A] \\
-  &= Pr[v_B \leq 2b_A] \\
+  Pr\[winning\] &= Pr\[b_B\leq b_A\] \\
+  &= Pr\[v_B/2 \leq b_A\] \\
+  &= Pr\[v_B \leq 2b_A\] \\
   &= 2b_A.
   \end{align}
 - Your profit in case of winning is $(v_A-b_A)$, hence your expected profit is $2b_A(v_A-b_A)$.
@@ -524,7 +524,7 @@ Notes:
   The optimal strategies are so different, but somehow the fact that you underbid is exactly compensated by the fact that you pay more when you win.
 - Is there a deeper connection going on here?
   Or is it just a coincidence that the expected revenues are all the same so far?
-- Formal proof of the expected revenue: recall that the valuations $v_A$ and $v_B$ are assumed to be independent variables uniformly drawn from $[0,1]$.
+- Formal proof of the expected revenue: recall that the valuations $v_A$ and $v_B$ are assumed to be independent variables uniformly drawn from $\[0,1\]$.
 - The cumulative density function (CDF) of the higher valuation, $\max\{v_A, v_B\}$, is $F(x)=x^2$.
   This is because $F(x)$ is lower than $x$ only if both valuations are below $x$, and these are two independent events each happening with probability $x$.
 - Then, the probability density function (PDF) is $f(x)=F'(x)=2x$.

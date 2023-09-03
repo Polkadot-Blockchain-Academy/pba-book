@@ -1,12 +1,10 @@
 # From https://github.com/rust-lang/mdBook/wiki/Automated-Deployment%3A-GitHub-Actions#raw-example
 name: Build and push to `html-*` branches, publish to Pages
 on:
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
   push:
     branches:
       - main
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -77,7 +75,6 @@ jobs:
         with:
           path: ./html-book
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages

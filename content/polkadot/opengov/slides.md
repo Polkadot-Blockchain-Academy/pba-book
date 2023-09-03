@@ -500,7 +500,7 @@ Stress that as an oracle, the Fellowship can't take any action on its own. Any w
 
 1. [PolkaWorld Hands-On OpenGov](https://polkaworld.medium.com/a-hands-on-guide-for-kusamas-open-gov-governance-system-98277629b0c5)
 1. [OpenGov Article from Moonbeam Team](https://moonbeam.network/blog/opengov/)
-1. [Gavin’s Polkadot Decoded 2022 talk](https://www.youtube.com/watch?v=EF93ZM_P_Oc) <!-- markdown-link-check-disable-line -->
+1. [Gavin’s Polkadot Decoded 2022 talk](https://www.youtube.com/watch?v=EF93ZM_P_Oc)
 1. [Gov V1 tracking](https://polkadot.polkassembly.io/)
 1. [OpenGov tracking](https://kusama.subsquare.io/)
 

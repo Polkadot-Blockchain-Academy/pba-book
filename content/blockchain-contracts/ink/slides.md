@@ -725,8 +725,8 @@ Notes:
 | Unsigned int | 42                                    | 0x2a00                       |                                                                                |
 | Enum         | enum IntOrBool { Int(u8), Bool(bool)} | 0x002a and 0x0101            | first byte encodes the variant index, remaining bytes encode the data          |
 | Tuple        | (3, false)                            | 0x0c00                       | concatenation of each encoded value                                            |
-| Vector       | [4, 8, 15, 16, 23, 42]                | 0x18040008000f00100017002a00 | encoding of the vector length followed by conatenation of each item's encoding |
-| Struct       | {x:30u64, y:true}                     | [0x1e,0x0,0x0,0x0,0x1]       | names are ignored, Vec<u8> structure, only order matters                       |
+| Vector       | \[4, 8, 15, 16, 23, 42\]              | 0x18040008000f00100017002a00 | encoding of the vector length followed by conatenation of each item's encoding |
+| Struct       | {x:30u64, y:true}                     | \[0x1e,0x0,0x0,0x0,0x1\]     | names are ignored, Vec<u8> structure, only order matters                       |
 
 </div>
 

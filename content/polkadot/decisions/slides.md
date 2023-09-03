@@ -20,7 +20,7 @@ Jeff Bezos outlined in an annual letter to Amazon shareholders how he approaches
 
 Notes:
 
-<https://www.sec.gov/Archives/edgar/data/1018724/000119312516530910/d168744dex991.htm> <!-- markdown-link-check-disable-line -->
+<https://www.sec.gov/Archives/edgar/data/1018724/000119312516530910/d168744dex991.htm>
 
 ---
 

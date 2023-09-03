@@ -308,7 +308,7 @@ svg, png, gif, ... anything that works on the web should work here!
 Notes:
 
 Image source: <https://giphy.com/stickers/transparent-hU2uvl6LdxILQOIad3>
-License: <https://support.giphy.com/hc/en-us/articles/360020027752-GIPHY-Terms-of-Service> <!-- markdown-link-check-disable-line -->
+License: <https://support.giphy.com/hc/en-us/articles/360020027752-GIPHY-Terms-of-Service>
 
 ---v
 

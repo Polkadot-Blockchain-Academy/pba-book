@@ -1,0 +1,33 @@
+name: Checks
+on:
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ci-checks:
+    runs-on: ubuntu-latest
+    env:
+      DPRINT_VERSION: v2.2
+      DPRINT_CONFIG_PATH: ./dprint.json
+    steps:
+    - uses: actions/checkout@v3
+    - name: Cache
+      id: cache
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/dprint # TODO add more paths here for various checkers
+        key: ${{ runner.os }}-${{ hashFiles('**/dprint.json') }}
+
+    - name: Format Check (dprint)
+      uses: dprint/check@${DPRINT_VERSION}
+      with:
+        config-path: ${DPRINT_CONFIG_PATH}
+
+    # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
+    - name: Markup Link Checker (mlc)
+      uses: becheran/mlc@v0.16.2
+      with:
+        args: "./content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com/*'"

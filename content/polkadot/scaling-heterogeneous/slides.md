@@ -72,7 +72,7 @@ https://www.starknet.io/en/posts/developers/rollup-validium-volition-where-is-yo
 
 Notes:
 
-- <https://celestia.org/learn/sovereign-rollups/an-introduction/> <!-- markdown-link-check-disable-line -->
+- <https://celestia.org/learn/sovereign-rollups/an-introduction/>
 - <https://rollkit.dev/blog/sovereign-rollups-on-bitcoin-with-rollkit>
 
 ---
@@ -164,7 +164,7 @@ Notes:
 
 Notes:
 
-- <https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer/> <!-- markdown-link-check-disable-line -->
+- <https://docs.celestia.org/concepts/how-celestia-works/data-availability-layer/>
 
 ---
 

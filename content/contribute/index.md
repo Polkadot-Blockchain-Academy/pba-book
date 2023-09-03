@@ -261,17 +261,18 @@ They typically are identical to:
 
 This book, and all content within have style and typographic conventions that, where practical, have tooling to help everyone conform to them.
 
-### Formatting Markdown, TOML, JSON
+### Formatting
 
-We enforce the use of a few formatters, the primary one being [Prettier](https://prettier.io/) that is included in the dev-dependencies for this repository.
-In `package.json` used in the `cargo make` tooling we include easy access to run this:
+All Markdown, TOML, JSON, Typescript, and Javascript files in this repository are formatter with [dprint](https://dprint.dev/).
+The setting for this formatter are found in `.dprint.json`.
+We use `cargo make` to run this:
 
 ```sh
-# This will format all `content/*.md` files
+# This will format all files SUPER FAST after the first run is cached
 makers f
 ```
 
-If (and only if) formatting _breaks_ markdown from rendering correctly, you may use `<!-- prettier-ignore -->` preceding a block in markdown to skip formatting like this:
+If (and only if) formatting _breaks_ Markdown from rendering correctly, you may use `<!-- prettier-ignore -->` preceding a block in markdown to skip formatting like this:
 
 ````markdown
 <!-- prettier-ignore -->
@@ -291,40 +292,66 @@ If (and only if) formatting _breaks_ markdown from rendering correctly, you may 
 </pba-col>
 </pba-cols>
 ```
+
+<!-- prettier-ignore-start -->
+
+Some    text
+
+* other    text
+*           testing
+
+<!-- prettier-ignore-end -->
 ````
 
-The above `` ```html `` block will not be formatted.
+See [the docs on Markdown for dprint](https://dprint.dev/plugins/markdown/#ignore-comments) for more.
 
 ### Checking Links
 
-To ensure all `*.md` contain no broken links within them, we have included a [simple link checker](https://github.com/tcort/markdown-link-check) you can run per module of content with:
+To ensure all `*.md` and `.html` files contain no broken links within them, we use a [the `mlc` link checker](https://github.com/becheran/mlc).
+Run with:
 
 ```sh
-# Link check a single file:
-makers links-for <relative-link-to/the-top-working-dir/file.md>
-# Regex glob match works too:
-makers links-for ./content/contribute/**/*.md
-
 # Link check all content files
 makers l
+
+# Link check a single file:
+makers links-for <relative-link-to/the-top-working-dir/file.md>
+# Link check a directory, recursively
+makers links-for <./content/some-dir/inner-dir>
 ```
 
-The checker uses the `.github/workflows/mlc_config.json` configuration, primarily used to _globally_ ignore specific common URLs that throw errors, in error 😛.
+The checker configuration is set ine `Makefile.rs` task to see settings (the `.mlc.toml` config.github/workflows/check.ymlrimarily used to _globally_ ignore specific common URLs that throw errors, in error 😛.
 _Notice that ignored links must be check from time to time manually!_
 _Thus don't use this unless explicitly needed, rather use a know good URL if at all possible, perhaps from the <https://archive.org/web/>_
 The same tool is also run by our CI on all files for all pushes to all branches.
 See the `.github/workflows/link-check.yml` file in this repo for details.
 
-> You can ignore the link check for a single line by post-fixing it with `<!-- markdown-link-check-disable-line -->`:
+> You can ignore the link check for a `regex` compliant entry in:
 >
-> ```markdown
-> Some [private](nonono) or intentionally [broken link](FIXME). <!-- Remove the following disable once <something> happens --> <!-- markdown-link-check-disable-line -->`
-> ```
+> 1. `.mlc.toml`
+> 1. `.github/workflows/check.yml`
+> 1. `Makefile.rs`
+>
+> [Eventually](https://github.com/becheran/mlc/issues/78) just `.mlc.toml` will do.
+
+### Checking Images
+
+In order to ensure that there are no issues with images in this book, we check for:
+
+1. Broken links to images that will not be found in the build.
+1. Orphaned image files - not linked to at all from the book.
+
+```sh
+# Link check all `<img ...>` tags
+makers img
+```
+
+Please **_delete_** any assets you do not need, we can always `git recover` at a latter time to bring them back in 💽.
 
 ## CI
 
-On any merge with `main`, the CI is tasked with building the book and deploying a hosted version of it.
+1. `.github/workflows/pages.yml` - On any merge with `main`, the CI is tasked with building the book and deploying a hosted version of it.
+1. `.github/workflows/check.yml` - On any merge with `main`, the CI is tasked with checking book for any issues with format, links, and images.
 
 See `.github/workflows/` in this repository for more details.
-Other tasks mostly stand alone from the `cargo make` tooling suggested in development workflows at this time, but does require the `yarn` tooling to properly build and test things.
-The workflows consist of minimal checks for style, common errors, formatting, etc.
+Other tasks mostly stand alone from the `cargo make` tooling suggested in development workflows at this time, but some require the `yarn` tooling to properly build and test things.

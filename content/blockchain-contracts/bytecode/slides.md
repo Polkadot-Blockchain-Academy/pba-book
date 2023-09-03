@@ -530,7 +530,7 @@ Notes:
 
 proposal to switch from a stack based ir to registry based ir <https://github.com/paritytech/wasmi/issues/361>
 
-paper explaining the efficiency of translating wasm to registry based code <https://www.intel.com/content/www/us/en/developer/articles/technical/webassembly-interpreter-design-wasm-micro-runtime.html> <!-- markdown-link-check-disable-line -->
+paper explaining the efficiency of translating wasm to registry based code <https://www.intel.com/content/www/us/en/developer/articles/technical/webassembly-interpreter-design-wasm-micro-runtime.html>
 
 Due to it's characteristics it is mainly used to execute SmartContracts on chain
 

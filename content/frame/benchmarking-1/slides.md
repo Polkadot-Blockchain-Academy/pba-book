@@ -267,6 +267,7 @@ For each component and repeat:
 - We set number of steps to 3.
 - Vary one component at a time, select high value for the others.
 
+<!-- prettier-ignore -->
 |   | Δx | Δy | Δy | Δz | Δz | max |
 | - | -- | -- | -- | -- | -- | --- |
 | x | 1  | 2  | 2  | 2  | 2  | 2   |

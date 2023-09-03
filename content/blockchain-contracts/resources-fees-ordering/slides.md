@@ -179,7 +179,7 @@ If it runs out of gas, it terminates the program.
 
 Notes:
 
-[Source: Etherscan](https://etherscan.io/chart/gasprice) <!-- markdown-link-check-disable-line -->
+[Source: Etherscan](https://etherscan.io/chart/gasprice)
 
 ---
 
