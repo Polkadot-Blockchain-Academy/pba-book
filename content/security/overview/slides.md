@@ -77,7 +77,7 @@ Notes:
 - <https://www.zdnet.com/article/iota-cryptocurrency-shuts-down-entire-network-after-wallet-hack/>
 - <https://news.bitcoin.com/kucoin-boss-on-strategy-after-hack-we-chose-to-act/>
 - <https://halborn.com/explained-the-ronin-hack-march-2022/>
-- <https://www.bitdefender.com/blog/hotforsecurity/cryptocurrency-monero-website-hacked-original-binaries-replaced>
+- <https://www.bitdefender.com/blog/hotforsecurity/cryptocurrency-monero-website-hacked-original-binaries-replaced/>
 - <https://www.coindesk.com/markets/2020/02/10/new-crypto-exchange-altsbit-says-it-will-close-following-hack/>
 - <https://peckshield.medium.com/akropolis-incident-root-cause-analysis-c11ee59e05d4>
 - <https://www.coindesk.com/markets/2020/12/21/bitgrail-operator-may-have-hacked-own-exchange-to-steal-120m-police-allege/>

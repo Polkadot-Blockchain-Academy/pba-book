@@ -9,7 +9,7 @@ match-file-extension = true
 ignore-path = [""]
 # List of links which will be ignored
 ignore-links = [
-  "*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com/*",
+  "*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,",
 ]
 # List of markup types which shall be checked
 markup-types = ["Markdown", "Html"]

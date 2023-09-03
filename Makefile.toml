@@ -165,14 +165,14 @@ alias = "all-links"
 category = "Checks"
 description = "Check included links for all markup (.md|.html) files."
 # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
-script = "mlc content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com/*'"
+script = "mlc content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
 
 [tasks.links-for]
 # FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
 category = "Checks"
 description = "Check links for specific file(s). Example: `makers links-for ./content/contribute/**/*.md`"
 # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
-script = "mlc ${@} --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com/*'"
+script = "mlc ${@} --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
 
 [tasks.f]
 category = "Format"
