@@ -124,10 +124,10 @@ pub type FooValue = StorageValue<_, Foo>;
 ```
 
 ```rust
-  // old
-  pub enum Foo { A(u32), B(u32) }
-  // new
-  pub enum Foo { A(u32), B(u32), C(u128) }
+// old
+pub enum Foo { A(u32), B(u32) }
+// new
+pub enum Foo { A(u32), B(u32), C(u128) }
 ```
 
 - Extending an enum is even more interesting, because if you add the variant to the end, no migration is needed.
@@ -182,7 +182,7 @@ pub type FooValue = StorageValue<_, u32>;
 pub type BarValue = StorageValue<_, u32>;
 ```
 
-- So far everything is changing the _value_ format.<br/>
+- So far everything is changing the _value_ format.<br />
 
 <div>
 
@@ -208,7 +208,7 @@ pub type FooValue = StorageValue<_, u32>;
 pub type I_can_NOW_BE_renamEd_hahAA = StorageValue<_, u32>;
 ```
 
-- Handy macro if you must rename a storage type.<br/>
+- Handy macro if you must rename a storage type.<br />
 - This does _not_ require a migration.
 
 <!-- .element: class="fragment" -->
@@ -357,7 +357,6 @@ impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
     }
   }
 }
-
 ```
 
 Stores the version as u16 in [`twox(pallet_name) ++ twox(:__STORAGE_VERSION__:)`](https://github.com/paritytech-stg/polkadot-sdk/blob/c7c5fc7/substrate/frame/support/src/traits/metadata.rs#L163).

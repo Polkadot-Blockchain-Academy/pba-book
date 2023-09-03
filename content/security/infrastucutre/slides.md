@@ -348,7 +348,7 @@ It is the nature of git. A great field for social engineering!
 
 ### Exploiting git
 
-Get a target repo, find a "victim" - a popular person,<br/>uses mixed verified and unverified commits:
+Get a target repo, find a "victim" - a popular person,<br />uses mixed verified and unverified commits:
 
 <img rounded style="width: 1000px" src="./img/commit-forgery1.png" />
 

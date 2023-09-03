@@ -297,7 +297,7 @@ Steps in order: **Proposing, Lead In, Deciding, Confirming, Enactment**
 - Addressed with time varying curves
   - Support threshold
     - Starts at ~50%
-    - Ends at minimum secure turnout for track <br/>(EX: Big Spender ends at 0 + epsilon %)
+    - Ends at minimum secure turnout for track <br />(EX: Big Spender ends at 0 + epsilon %)
   - Approval threshold
     - Starts at 100%
     - Ends at 50 + epsilon %
@@ -365,7 +365,7 @@ Solution: Some sort of oracle capable of providing expert information
 
 <!-- .slide: data-background-color="#4A2439" -->
 
-## Enter...<br/><br/>The Polkadot Fellowship
+## Enter...<br /><br />The Polkadot Fellowship
 
 ---
 
@@ -418,18 +418,31 @@ Stress that as an oracle, the Fellowship can't take any action on its own. Any w
 <pba-col center>
 
 - Open source + single process + track abstraction -> Transparency
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Liberal proposal creation + greater throughput + per-track delegation -> Accessibility
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Accessibility + No special bodies -> Decentralization
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Limited origins + emergency tracks + white list -> Security
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
+
 - Multiple tracks + low risk tracks -> Concurrency
+
 <!-- .element: class="fragment" data-fragment-index="5" -->
+
 - Low risk tracks + early confirmation -> Speed
+
 <!-- .element: class="fragment" data-fragment-index="6" -->
+
 - Support and approval threshold curves + white list -> Agility
+
 <!-- .element: class="fragment" data-fragment-index="7" -->
 
 </pba-col>
@@ -438,7 +451,7 @@ Stress that as an oracle, the Fellowship can't take any action on its own. Any w
 
 <!-- .slide: data-background-color="#000" -->
 
-# OpenGov<br/><br/>By The Numbers
+# OpenGov<br /><br />By The Numbers
 
 ---
 
@@ -487,7 +500,7 @@ Stress that as an oracle, the Fellowship can't take any action on its own. Any w
 
 1. [PolkaWorld Hands-On OpenGov](https://polkaworld.medium.com/a-hands-on-guide-for-kusamas-open-gov-governance-system-98277629b0c5)
 1. [OpenGov Article from Moonbeam Team](https://moonbeam.network/blog/opengov/)
-1. [Gavin’s Polkadot Decoded 2022 talk](https://www.youtube.com/watch?v=EF93ZM_P_Oc) <!-- markdown-link-check-disable-line -->
+1. [Gavin’s Polkadot Decoded 2022 talk](https://www.youtube.com/watch?v=EF93ZM_P_Oc)
 1. [Gov V1 tracking](https://polkadot.polkassembly.io/)
 1. [OpenGov tracking](https://kusama.subsquare.io/)
 

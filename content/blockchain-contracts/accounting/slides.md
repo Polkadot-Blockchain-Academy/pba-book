@@ -210,7 +210,8 @@ Did I forget any?
 
 Notes:" />
 
-Verify as opposed to determining the outcome. Not submitting output state in transaction
+Verify as opposed to determining the outcome.
+Not submitting output state in transaction
 
 ---
 

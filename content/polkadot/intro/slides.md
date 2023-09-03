@@ -57,7 +57,7 @@ Polkadot fulfills its goals with a combination of mechanisms and games which pro
 
 Notes:
 
-source: banner image from <https://twitter.com/gavofyork> <!-- markdown-link-check-disable-line -->
+source: banner image from <https://twitter.com/gavofyork>
 
 ---
 
@@ -99,7 +99,7 @@ It aims to do so at high scale.
 
 > (3) Explicit network-wide governance and co-evolution
 
-Polkadot stakeholders explicitly govern and evolve the network,<br/>with the ability to set new rules.
+Polkadot stakeholders explicitly govern and evolve the network,<br />with the ability to set new rules.
 
 ---
 
@@ -143,7 +143,7 @@ Validators are _incentivized_ to do things like put user transactions in blocks 
 
 Validators are strongly punished for explicitly doing their job wrongly.
 
-The games work as long as enough validators are doing their job<br/>and also not misbehaving.
+The games work as long as enough validators are doing their job<br />and also not misbehaving.
 
 ---
 
@@ -188,7 +188,7 @@ Simplified Polkadot Architecture (Parachains)
 The relay chain is the "hub" of Polkadot, providing the main games which validators play.
 It is built with Substrate.
 
-Notably, the functionality of the relay chain is minimized,<br/>with the expectation that more complex functionalities will be pushed to less critical parts of the system.
+Notably, the functionality of the relay chain is minimized,<br />with the expectation that more complex functionalities will be pushed to less critical parts of the system.
 
 ---
 
@@ -198,7 +198,7 @@ Notably, the functionality of the relay chain is minimized,<br/>with the expecta
 
 - Governance (moving to parachain)
 - Staking
-- Registration, scheduling,<br/>and advancement of parachains
+- Registration, scheduling,<br />and advancement of parachains
 - Communication between parachains
 - Consensus Safety
 - Balance Transfers
@@ -248,7 +248,7 @@ These games are the enablers of all activity within Polkadot.
 
 </div>
 
-<br/>
+<br />
 
 **The game works whenever <1/3 of validators misbehave.**
 
@@ -279,7 +279,7 @@ These games are the enablers of all activity within Polkadot.
 
 </div>
 
-<br/>
+<br />
 
 **The game works whenever <1/3 of validators misbehave.**
 
@@ -352,7 +352,7 @@ Notes:
 - Tokens are burned if they are not spent.
 
 </pba-flex>
-<br/>
+<br />
 
 The intention of the treasury is to pay people to help grow Polkadot itself.
 As tokens are burned, this creates pressure to fund public projects.
@@ -478,7 +478,7 @@ Polkadot allocates its resources to parachains through **Execution Cores**.
 
 Just like a decentralized CPU, Polkadot multiplexes many processes across cores.
 
-When a parachain is assigned to a core, it can advance.<br/>
+When a parachain is assigned to a core, it can advance.<br />
 Otherwise, it lies dormant.
 
 Execution Cores enable efficient allocation through _Coretime_ trading.
@@ -507,7 +507,7 @@ Time -->
 
 ## Coretime: Polkadot's Product
 
-Coretime is what applications buy to build on Polkadot.<br/>
+Coretime is what applications buy to build on Polkadot.<br />
 Goal: be like cloud.
 
 Primary and secondary markets are key enablers.

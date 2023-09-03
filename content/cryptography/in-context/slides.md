@@ -66,7 +66,7 @@ A side channel attack is when a cryptographic system is attacked, and the attack
 
 ## Timing Attacks
 
-A timing attack can be possible if any of the following<br/> depend on the contents of a secret:
+A timing attack can be possible if any of the following<br /> depend on the contents of a secret:
 
 <pba-flex center>
 
@@ -180,7 +180,6 @@ NOTES
        provide such a function (e.g., NetBSD's consttime_memequal()),
        but no such function is specified in POSIX.  On Linux, it may be
        necessary to implement such a function oneself.
-
 ```
 
 ---

@@ -1,0 +1,20 @@
+# FIXME this config is not working... https://github.com/becheran/mlc/issues/78
+# Print debug information to console
+debug = false
+# Do not check web links
+offline = false
+# Check the exact file extension when searching for a file
+match-file-extension = true
+# List of files and directories which will be ignored
+ignore-path = [""]
+# List of links which will be ignored
+ignore-links = [
+  "*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,",
+]
+# List of markup types which shall be checked
+markup-types = ["Markdown", "Html"]
+# Wait time in milliseconds between http request to the same host
+# Consider use only if getting `429 - Too Many Requests`
+throttle = 0
+# Path to the root folder used to resolve all relative paths
+root-dir = "./content/"

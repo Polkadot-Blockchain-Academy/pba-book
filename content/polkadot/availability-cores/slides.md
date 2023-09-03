@@ -40,13 +40,23 @@ Lets get to it
 <pba-flex center>
 
 - What do availability cores represent?
+
+<!-- .element: class="fragment" data-fragment-index="0" -->
+
 - How do cores map parachain leases and claims to validator subsets?
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - How do cores gate each step of the parachains protocol?
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - What advantages do cores give us now?
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - What roadmap items do cores accommodate?
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 </pba-flex>
@@ -55,7 +65,7 @@ Lets get to it
 
 ## Review, Blockspace
 
-> Blockspace is the capacity of a blockchain<br/>to finalize and commit operations
+> Blockspace is the capacity of a blockchain<br />to finalize and commit operations
 
 Polkadot's primary product is _blockspace_.
 
@@ -67,8 +77,12 @@ Polkadot blockspace is consumed in two ways:
 
 <pba-flex center>
 
-1. When the relay chain validates, includes, <br/> and finalizes a parachain block
-1. When the capacity to validate a parachain block<br/> is left unused and expires
+1. When the relay chain validates, includes, <br /> and finalizes a parachain block
+
+<!-- .element: class="fragment" data-fragment-index="0" -->
+
+1. When the capacity to validate a parachain block<br /> is left unused and expires
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 </pba-flex>
@@ -84,13 +98,23 @@ Polkadot blockspace is consumed in two ways:
 <pba-col center>
 
 - Availability cores are the abstraction we use to allocate Polkadot's blockspace.
+
+<!-- .element: class="fragment" data-fragment-index="0" -->
+
 - Allocated via leases and on-demand claims
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Cores divide blockspace supply into discrete units, 1 parachain block per relay chain block per core
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Why "availability"?
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Why "core"?
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 </pba-col>
@@ -110,15 +134,18 @@ Notes:
 
 ## Availability
 
-Though cores gate the entire parachain block pipeline,<br/> the availability process alone determines when these cores are considered occupied vs free.
+Though cores gate the entire parachain block pipeline,<br /> the availability process alone determines when these cores are considered occupied vs free.
 
 To recap, the goals of availability are:
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 1. To ensure that approvers will always be able to recover the PoVs to validate their assigned blocks
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 2. To ensure that parachain nodes can recover blocks in the case that a parablock author fails to share them, through malintent or malfunction
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
@@ -164,16 +191,27 @@ Notes:
 <pba-flex center>
 
 1. Block author places a candidate on-chain as backed, immediately occupying its scheduled core
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 1. Candidate backers distribute erasure coded PoV chunks
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 1. Validators distribute statements as to which candidates they have chunks for
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 1. Availability threshold is met (2/3 vs the 1/3 needed to reconstruct POV)
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
+
 1. Candidate marked as included on chain and core freed
+
 <!-- .element: class="fragment" data-fragment-index="5" -->
+
 1. Approvers or parachain nodes retrieve PoV chunks as needed
+
 <!-- .element: class="fragment" data-fragment-index="6" -->
 
 </pba-flex>
@@ -259,10 +297,15 @@ Notes:
 
 - Randomness via schnorrkel::vrf
 - Approver assignments activated with delay tranches until threshold met
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Results in 30-40 approvers checking each block
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Different assignments each block prevent DOS
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 </pba-flex>
@@ -405,8 +448,11 @@ if Some(candidate.descriptor().para_id) != rp_state.assignment {
 
 - For each core that is either unoccupied or is about to be a new candidate is found
 - A candidate for the parachain scheduled next on that core is provided to the block author
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Backed on-chain -> immediately occupies core
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 </pba-flex>
@@ -483,6 +529,7 @@ Approvals, Disputes, and Finality are only provided to included candidates
 
 1. Predictability of parachain execution
 1. Predictability of allocation for execution sharding
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 </pba-flex>
@@ -509,8 +556,11 @@ Notes:
 
 - Multiple cores per parachain
 - Overlapping leases of many lengths
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Lease + On-demand
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 </pba-flex>
@@ -529,7 +579,7 @@ Notes:
 
 ## Divisible and Marketable Blockspace
 
-We want Parachains to buy, sell, and split blockspace such that they are allocated exactly as much as fits their needs.<br/><br/>
+We want Parachains to buy, sell, and split blockspace such that they are allocated exactly as much as fits their needs.<br /><br />
 
 <pba-flex center>
 

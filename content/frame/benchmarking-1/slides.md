@@ -267,11 +267,12 @@ For each component and repeat:
 - We set number of steps to 3.
 - Vary one component at a time, select high value for the others.
 
-|     | Δx  | Δy  | Δy  | Δz  | Δz  | max |
-| --- | --- | --- | --- | --- | --- | --- |
-| x   | 1   | 2   | 2   | 2   | 2   | 2   |
-| y   | 5   | 0   | 2   | 5   | 5   | 5   |
-| z   | 10  | 10  | 10  | 0   | 5   | 10  |
+<!-- prettier-ignore -->
+|   | Δx | Δy | Δy | Δz | Δz | max |
+| - | -- | -- | -- | -- | -- | --- |
+| x | 1  | 2  | 2  | 2  | 2  | 2   |
+| y | 5  | 0  | 2  | 5  | 5  | 5   |
+| z | 10 | 10 | 10 | 0  | 5  | 10  |
 
 ---
 

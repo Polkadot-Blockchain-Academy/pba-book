@@ -241,7 +241,7 @@ Namely:
 - Substrate does in fact use a key-value based database under the hood..
 - In order to store trie nodes, not direct storage keys!
 
-<br/>
+<br />
 
 <div>
 
@@ -351,6 +351,7 @@ In general, you have a tradeoff: send more data, but require less hashing on Ali
 <div>
 
 - Storage key is arbitrary length.
+
 </div>
 <!-- .element: class="fragment" -->
 

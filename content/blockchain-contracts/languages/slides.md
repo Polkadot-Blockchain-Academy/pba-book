@@ -804,7 +804,6 @@ def referenceTypes():
     map[0] = 0
     map[1] = 10
     map[2] = 20
-
 ```
 
 ---v

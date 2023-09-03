@@ -44,7 +44,7 @@ Link to article: (https://www-users.cse.umn.edu/~arnold/disasters/ariane.html)
 
 ## Software Correctness is _very_ important
 
-> Program testing can be used to show the presence of bugs,<br/>but never to show their absence!
+> Program testing can be used to show the presence of bugs,<br />but never to show their absence!
 >
 > --Edgard Dijkstra--
 
@@ -80,7 +80,7 @@ Notes:
 
 ## Formal Methods Today
 
-From being theoretical research interests<br/> to delivering practical cost-effective tools
+From being theoretical research interests<br /> to delivering practical cost-effective tools
 
 <pba-flex center>
 
@@ -143,7 +143,7 @@ Note:
 
 Notes:
 
-- [Great blog](https://web.archive.org/web/20230209000724/www.pl-enthusiast.net/2017/10/23/what-is-soundness-in-static-analysis/) that explains the trade-offs between soundness and tractability <!-- markdown-link-check-disable-line -->
+- [Great blog](https://web.archive.org/web/20230209000724/www.pl-enthusiast.net/2017/10/23/what-is-soundness-in-static-analysis/) that explains the trade-offs between soundness and tractability
 
 ---
 
@@ -522,8 +522,8 @@ impl<'a> Arbitrary<'a> for Rgb {
 
 > Verify [Fixed-width](https://github.com/paritytech/parity-scale-codec/blob/master/src/codec.rs) & [Compact](https://github.com/paritytech/parity-scale-codec/blob/master/src/compact.rs) Encoding for integer types in SCALE.
 
-<br/>
-<br/>
+<br />
+<br />
 
 **Open Ended properties!**
 
@@ -544,8 +544,8 @@ Notes:
 
 # Less Bugs
 
-<br/>
-<br/>
-<br/>
+<br />
+<br />
+<br />
 
 **_Questions_**

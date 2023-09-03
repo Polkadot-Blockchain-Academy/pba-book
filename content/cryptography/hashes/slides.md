@@ -10,7 +10,7 @@ duration: 1 hour
 
 ## Introduction
 
-We often want a succinct representation of some data<br/>with the expectation that we are referring to the same data.
+We often want a succinct representation of some data<br />with the expectation that we are referring to the same data.
 
 ##### A "fingerprint"
 
@@ -23,9 +23,9 @@ We often want a succinct representation of some data<br/>with the expectation th
 1. Accept unbounded size input
 1. Map to a bounded output
 1. Be fast to compute
-1. Be computable strictly one-way<br/>(difficult to find a pre-image for a hash)
-1. Resist pre-image attacks<br/>(attacker controls one input)
-1. Resist collisions<br/>(attacker controls both inputs)
+1. Be computable strictly one-way<br />(difficult to find a pre-image for a hash)
+1. Resist pre-image attacks<br />(attacker controls one input)
+1. Resist collisions<br />(attacker controls both inputs)
 
 </pba-flex>
 
@@ -165,7 +165,7 @@ Source: <https://github.com/Cyan4973/xxHash#benchmarks>
 
 ## Non-Cryptographic Hash Functions
 
-Non-cryptographic hash functions provide weaker<br/>guarantees in exchange for performance.
+Non-cryptographic hash functions provide weaker<br />guarantees in exchange for performance.
 
 They are OK to use when you know that the input is not malicious.
 
@@ -175,7 +175,7 @@ They are OK to use when you know that the input is not malicious.
 
 ## One Way
 
-Given a hash, it should be difficult to find an input value (pre-image)<br/>that would produce the given hash.
+Given a hash, it should be difficult to find an input value (pre-image)<br />that would produce the given hash.
 
 That is, given `H(x)`, it should be difficult to find `x`.
 
@@ -187,7 +187,7 @@ We sometimes add random bytes to pre-images to prevent guesses based on context 
 
 ## Second Pre-Image Attacks
 
-Given a hash and a pre-image, it should be difficult to find _another_<br/>pre-image that would produce the same hash.
+Given a hash and a pre-image, it should be difficult to find _another_<br />pre-image that would produce the same hash.
 
 Given `H(x)`, it should be difficult to find any `x'`
 
@@ -201,7 +201,7 @@ Since most signature schemes perform some internal hashing, this second pre-imag
 
 ## Collision Resistance
 
-It should be difficult for someone to find two messages that<br/>hash to the same value.
+It should be difficult for someone to find two messages that<br />hash to the same value.
 
 It should be difficult to find an `x` and `y`
 
@@ -233,7 +233,7 @@ single hash collision often results in the hash function being considered unsafe
 
 > With 23 people, there is a 6% chance that someone will be born on a specific date, but a 50% chance that two share a birthday.
 
-- Must compare each output with every other, not with a single one.<br/>
+- Must compare each output with every other, not with a single one.<br />
 - Number of possible "hits" increases exponentially for more attempts, reducing the expected success to the square-root of what a specific target would be.
 
 </pba-col>
@@ -353,7 +353,7 @@ This is key in digital signatures. However, it's important to realize that if $D
 
 ## Content-Derived Indexing
 
-Hash functions can be used to generate deterministic<br/>and unique lookup keys for databases.
+Hash functions can be used to generate deterministic<br />and unique lookup keys for databases.
 
 Notes:
 
@@ -363,9 +363,9 @@ Given some fixed property, like an ID and other metadata the user knows beforeha
 
 ## Data Integrity Checks
 
-Members of a peer-to-peer network may host and share<br/>file chunks rather than large files.
+Members of a peer-to-peer network may host and share<br />file chunks rather than large files.
 
-In [Bittorrent](https://en.wikipedia.org/wiki/BitTorrent), each file chunk is hash identified so peers can<br/>_request and verify_ the chunk is a member of the larger,<br/>_content addressed_ file.
+In [Bittorrent](https://en.wikipedia.org/wiki/BitTorrent), each file chunk is hash identified so peers can<br /> _request and verify_ the chunk is a member of the larger,<br /> _content addressed_ file.
 
 Notes:
 
@@ -383,8 +383,8 @@ The properties of hash functions allow other kinds of representations.
 
 ## Public Key Representation
 
-Because hashes serve as unique representations of other data,<br/>that other data could include public keys.<br/>
-A system can map a plurality of key sizes to a fixed length<br/>(e.g. for use as a database key).
+Because hashes serve as unique representations of other data,<br />that other data could include public keys.<br />
+A system can map a plurality of key sizes to a fixed length<br />(e.g. for use as a database key).
 
 For example, the ECDSA public key is 33 bytes:
 
@@ -401,7 +401,7 @@ Hash of pub key:
 
 ## Commitment Schemes
 
-It is often useful to commit to some information<br/> without storing or revealing it:
+It is often useful to commit to some information<br /> without storing or revealing it:
 
 - A prediction market would want to reveal predictions only after the confirming/refuting event occurred.
 - Users of a system may want to discuss proposals without storing the proposal on the system.
@@ -419,7 +419,7 @@ However, participants should not be able to modify their predictions or proposal
 
 <pba-flex>
 
-It is normal to add some randomness to the message<br/>to expand the input set size:
+It is normal to add some randomness to the message<br />to expand the input set size:
 
 $$ hash(message + randomness) => commitment $$
 
@@ -462,7 +462,7 @@ For now, just a brief introduction.
 
 Pointer-based linked lists are a foundation of programming.
 
-But pointers are independent from the data they reference,<br/>so the data can be modified while maintaining the list.
+But pointers are independent from the data they reference,<br />so the data can be modified while maintaining the list.
 
 That is, pointer-based linked lists are not tamper evident.
 
@@ -472,7 +472,7 @@ That is, pointer-based linked lists are not tamper evident.
 
 ## Hash-Based Linked Lists
 
-Hash-based lists make the reference related to the data they are referencing.<br/>
+Hash-based lists make the reference related to the data they are referencing.<br />
 The properties of hash functions make them a good choice for this application.
 
 Any change at any point in the list would create downstream changes to all hashes.
@@ -491,7 +491,7 @@ Each leaf is the hash of some data object and each node is the hash of its child
 
 ## Proofs
 
-Merkle trees allow many proofs relevant to the rest of this course,<br/>e.g. that some data object is a member of the tree<br/>without passing the entire tree.
+Merkle trees allow many proofs relevant to the rest of this course,<br />e.g. that some data object is a member of the tree<br />without passing the entire tree.
 
 **_More info in the next lesson._**
 
@@ -513,13 +513,13 @@ Sr25519 hashes the message as part of its signing process.
 
 **Transactions**
 
-In transactions in Substrate, key holders sign a<br/>_hash of the instructions_ when the instructions<br/>are longer than 256 bytes.
+In transactions in Substrate, key holders sign a<br /> _hash of the instructions_ when the instructions<br />are longer than 256 bytes.
 
 ---
 
 ## Database Keys
 
-**TwoX64** is safe to use when users (read: attackers)<br/>cannot control the input, e.g. when a<br/>database key is a system-assigned index.
+**TwoX64** is safe to use when users (read: attackers)<br />cannot control the input, e.g. when a<br />database key is a system-assigned index.
 
 **Blake2** should be used for everything else.
 

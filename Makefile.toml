@@ -27,16 +27,25 @@ skip_crate_env_info = true
 category = "Install"
 alias = "install"
 
-
 [tasks.install]
 description = "Install dependencies for slides and book tooling."
 category = "Install"
-dependencies = ["install-slides", "install-book"]
+dependencies = ["install-slides", "install-book", "install-linkcheck", "install-formatter"]
 
 [tasks.install-book]
-description = "Install dependencies for book tooling only."
+description = "Install dependencies for building the book only."
 category = "Install"
-script = "cargo install mdbook"
+script = "cargo install --locked mdbook"
+
+[tasks.install-linkcheck]
+description = "Install markup link checker (mlc)."
+category = "Install"
+script = "cargo install --locked mlc"
+
+[tasks.install-formatter]
+description = "Install formatter (dprint)."
+category = "Install"
+script = "cargo install --locked dprint"
 
 [tasks.install-slides]
 description = "Install dependencies for slides tooling only."
@@ -144,7 +153,6 @@ category = "Clean"
 script = "rm -rf html-slides"
 
 [tasks.img]
-# FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
 category = "Checks"
 description = "Scan for image issues througout content."
 script = "./tools/scripts/orphan-image-scan.sh content/"
@@ -154,16 +162,17 @@ category = "Checks"
 alias = "all-links"
 
 [tasks.all-links]
-# FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
 category = "Checks"
-description = "Check included links for all markdown files."
-script = "yarn l"
+description = "Check included links for all markup (.md|.html) files."
+# FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
+script = "mlc content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
 
 [tasks.links-for]
 # FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
 category = "Checks"
 description = "Check links for specific file(s). Example: `makers links-for ./content/contribute/**/*.md`"
-script = "yarn links-for ${@}"
+# FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
+script = "mlc ${@} --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
 
 [tasks.f]
 category = "Format"
@@ -173,17 +182,7 @@ alias = "fmt"
 # FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
 category = "Format"
 description = "Format everything."
-script = "yarn fmt"
-
-[tasks.fmt-book]
-description = "Format the book source, only. (requires slides tooling installed)"
-category = "Format"
-script = "yarn fmt-book"
-
-[tasks.fmt-slides]
-description = "Format the slides source, only."
-category = "Format"
-script = "yarn fmt-slides"
+script = "dprint fmt"
 
 [tasks.catch-error]
 description = "Check and hint at solutions to common errors."
@@ -197,7 +196,17 @@ if ! $(echo "type mdbook" | sh > /dev/null ) ; then
     exit 127
 fi
 
-if ! $(yarn --cwd ./slides-source/ --version > /dev/null) ; then
+if ! $(echo "type mlc" | sh > /dev/null ) ; then
+    echo "\n❌ You may need to install the helpers tooling. Run:\n\nmarkers install\n\n***********"
+    exit 127
+fi
+
+if ! $(echo "type dprint" | sh > /dev/null ) ; then
+    echo "\n❌ You may need to install the helpers tooling. Run:\n\nmarkers install\n\n***********"
+    exit 127
+fi
+
+if ! $(yarn --version > /dev/null) ; then
     echo "\n❌ You may need to install the slides tooling. Run:\n\nmarkers slides-install\n"
     exit 127
 fi

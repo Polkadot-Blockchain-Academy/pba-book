@@ -20,7 +20,8 @@ Trust example: If everyone trusts each other, then any one person can propose an
 
 Social Hierarchy example: If a community has an executive (President, Queen, CEO), the executive can propose her preference and everyone will accept it based on the external mechanism that keeps her as the executive.
 
-But these conditions are not interesting, and are often not realistic. It gets interesting when we don't make these simplifying assumption.
+But these conditions are not interesting, and are often not realistic.
+It gets interesting when we don't make these simplifying assumption.
 
 ---v
 
@@ -113,7 +114,8 @@ Image source: <https://southparkstudios.mtvnimages.com/images/shows/south-park/c
 
 **Crash Tolerance** - A system can keep operating normally when some actors crash or go offline.
 
-**Byzantine Fault Tolerance** - A system can keep operating normally when some actors are intentionally malicious. Byzantine actors may:
+**Byzantine Fault Tolerance** - A system can keep operating normally when some actors are intentionally malicious.
+Byzantine actors may:
 
 - Crash - Or pretend to have crashed - Byzantine faults are a superset of crash faults
 - Lie - Sending false information to peers
@@ -147,7 +149,8 @@ These examples and many others are _instances_ of the Byzantine Generals Problem
 
 Notes:
 
-Consider an Airplane flight computer. It is critical that the pilot (human or automated) knows the aircraft's airspeed at all times.
+Consider an Airplane flight computer.
+It is critical that the pilot (human or automated) knows the aircraft's airspeed at all times.
 Airspeed sensors can fail due to extreme temperatures, icing, solar radiation, and other reasons.
 For this reason, there are redundant sensors, and they run a consensus protocol.
 
@@ -155,7 +158,8 @@ Imagine that one of the sensors has an overflow _bug_ such that when the airspee
 
 Are these crash faults or byzantine?
 
-In a blockchain system, bugs in the code may cause nodes whose operators are intending to be honest, to deviate from the protocol anyway. This is why client diversity is important.
+In a blockchain system, bugs in the code may cause nodes whose operators are intending to be honest, to deviate from the protocol anyway.
+This is why client diversity is important.
 
 Image source: <https://thepointsguy.global.ssl.fastly.net/uk/originals/2020/12/pitot-ice-scaled.jpg>
 
@@ -232,8 +236,12 @@ Before I can tell you exactly how and where it can be solved, we have to underst
 A network is one of:
 
 - **Synchronous** - When sent, a message is received immediately by all.
-- **Asynchronous** - When a message is sent it may be received after some delay, or not at all. The sender doe not know whether it is received. Messages may be received in different orders by different parties.
-- **Partially Synchronous** - When a message is sent, it may be received after some delay up to a maximum delay, $T$. It may not be dropped entirely. Messages may be received in different orders by different parties.
+- **Asynchronous** - When a message is sent it may be received after some delay, or not at all.
+  The sender doe not know whether it is received.
+  Messages may be received in different orders by different parties.
+- **Partially Synchronous** - When a message is sent, it may be received after some delay up to a maximum delay, $T$.
+  It may not be dropped entirely.
+  Messages may be received in different orders by different parties.
 
 Roughly analogous to real-time (async) vs. turn-based (sync) games.
 
@@ -255,10 +263,14 @@ Classify each of these:
 
 Notes:
 
-- Telephone call is sync. You say something and wait for the other party to reply
-- Mail is async. You send a letter, then go do other stuff for several days
+- Telephone call is sync.
+  You say something and wait for the other party to reply
+- Mail is async.
+  You send a letter, then go do other stuff for several days
 - Jitsi video call is basically sync just like the phone call.
-- The others can be either. Sometimes you text back and forth quickly and wait for replies. Other times you send and come back later like mail.
+- The others can be either.
+  Sometimes you text back and forth quickly and wait for replies.
+  Other times you send and come back later like mail.
 
 ---
 
@@ -267,7 +279,7 @@ Notes:
 A system is one of:
 
 - **Deterministic** - The same inputs give the same outputs every time.
-- **Probabilistic** - The same inputs may not give the same outputs.<br/>
+- **Probabilistic** - The same inputs may not give the same outputs.<br />
   $~~~~~~~~~~~~~~~~~~~~~~~~~$ Requires a source of entropy. eg coin flipping. <!-- $~~~$ is a hack to put in white space chars -->
 
 ---
@@ -280,7 +292,8 @@ A system is one of:
 
 Notes:
 
-Once it was shown that deterministic consensus is impossible in an async network, the field split into two major parts. Either you:
+Once it was shown that deterministic consensus is impossible in an async network, the field split into two major parts.
+Either you:
 
 - Assume the network is (at least partially) synchronous
 - Introduce non-determinism
@@ -294,11 +307,12 @@ One interesting thing about Nakamoto pow consensus is that it does _both_.
 
 ## Ongoing Consensus
 
-We want to continue agreeing on<br/>an every-growing history of events
+We want to continue agreeing on<br />an every-growing history of events
 
 Notes:
 
-Blockchains are intended to keep processing and finalizing transactions forever. This is more like deciding where to go to dinner every night over and over.
+Blockchains are intended to keep processing and finalizing transactions forever.
+This is more like deciding where to go to dinner every night over and over.
 
 ---v
 
@@ -313,11 +327,16 @@ Blockchains are intended to keep processing and finalizing transactions forever.
 
 Notes:
 
-Traditional literature typically uses the term safety. Blockchain folks typically talk about finality. They basically mean the same thing.
+Traditional literature typically uses the term safety.
+Blockchain folks typically talk about finality.
+They basically mean the same thing.
 
 Finality can be proved to entities that are not involved in consensus.
 
-We spoke about liveness previously in the authoring system. There it means that more blocks will be authored, more blockspace will be created and put up for sale. Here, in finality, it means that more blocks will be finalized. Of course liveness in the finality depends on liveness in the authoring.
+We spoke about liveness previously in the authoring system.
+There it means that more blocks will be authored, more blockspace will be created and put up for sale.
+Here, in finality, it means that more blocks will be finalized.
+Of course liveness in the finality depends on liveness in the authoring.
 
 These two decisions can be entirely orthogonal to one another, or wrapped up together.
 
@@ -325,15 +344,18 @@ These two decisions can be entirely orthogonal to one another, or wrapped up tog
 
 ## Liveness vs Termination
 
-Earlier I described Termination as desireable,<br/>now I'm saying Liveness is desireable.
+Earlier I described Termination as desireable,<br />now I'm saying Liveness is desireable.
 
 Are these at odds with each other?
 
 Notes:
 
-Termination guarantees that, for a given decision, each honest participant will eventually decide something. This concept is relevant when there is a single decision to be made. In the blockchain context, it guarantees that we will eventually know which block is final at height n.
+Termination guarantees that, for a given decision, each honest participant will eventually decide something.
+This concept is relevant when there is a single decision to be made.
+In the blockchain context, it guarantees that we will eventually know which block is final at height n.
 
-Liveness guarantees that a system that is intended to continue making progress, will indeed eventually make progress. In the context of the blockchain, liveness means that once we've decided what block is final at height n, we will eventually go on to decide what block is final at height n + 1.
+Liveness guarantees that a system that is intended to continue making progress, will indeed eventually make progress.
+In the context of the blockchain, liveness means that once we've decided what block is final at height n, we will eventually go on to decide what block is final at height n + 1.
 
 ---
 
@@ -343,17 +365,18 @@ Liveness guarantees that a system that is intended to continue making progress, 
 
 - Longest chain rule
 - Longest chain is "best"... for now
-- Someone could always start mining a chain<br/>and,with low but non-zero probability,<br/> end up with it longer.
-- There could _already_ be a longer chain<br/>that you just haven't heard of.
+- Someone could always start mining a chain<br />and,with low but non-zero probability,<br /> end up with it longer.
+- There could _already_ be a longer chain<br />that you just haven't heard of.
 
 <pba-flex>
 
-The finality is only probabilistic.<br/>
+The finality is only probabilistic.<br />
 Nakamoto consensus in only safe in a synchronous network.
 
 Notes:
 
-This is to say that Nakamoto consensus is NOT safe on the real asynchronous internet. In practice, as long as
+This is to say that Nakamoto consensus is NOT safe on the real asynchronous internet.
+In practice, as long as
 blocks can be downloaded and executed much more quickly than the target block time, it is usually good enough.
 
 - Longest could also mean most accumulated work
@@ -381,13 +404,15 @@ blocks can be downloaded and executed much more quickly than the target block ti
 
 Notes:
 
-If you want deterministic finality, it basically means employing BFT agreement protocols that we talked about in the history lesson. This means we need a finite authority set with an honest majority. And that means we need incentives to keep them honest.
+If you want deterministic finality, it basically means employing BFT agreement protocols that we talked about in the history lesson.
+This means we need a finite authority set with an honest majority.
+And that means we need incentives to keep them honest.
 
 ---v
 
 ## Incentives: Game Theory!
 
-Abstractly: You behave honestly<br/>when the utility of doing so exceeds the cost.
+Abstractly: You behave honestly<br />when the utility of doing so exceeds the cost.
 
 Incentive designers may potentially:
 
@@ -400,9 +425,11 @@ Incentive designers may potentially:
 
 Notes:
 
-Many systems use both of these, but doing so is not strictly necessary. Even without slashes, the opportunity cost of staking and the missed rewards from authoring invalid blocks may be sufficient.
+Many systems use both of these, but doing so is not strictly necessary.
+Even without slashes, the opportunity cost of staking and the missed rewards from authoring invalid blocks may be sufficient.
 
-It is often the case that blockchain systems give rewards in the authorship and punishments in the finality. There is no fundamental reason for this; it is just a little more straightforward to implement.
+It is often the case that blockchain systems give rewards in the authorship and punishments in the finality.
+There is no fundamental reason for this; it is just a little more straightforward to implement.
 
 ---v
 
@@ -413,15 +440,16 @@ It is often the case that blockchain systems give rewards in the authorship and 
 - Authoring when you aren't supposed to
 - Failing to author when you are supposed to
 - Casting finality votes for conflicting blocks
-- Casting a finality vote for a block (or chain)<br/> that includes an invalid state transition.
+- Casting a finality vote for a block (or chain)<br /> that includes an invalid state transition.
 
-> How severe are each of these offenses?<br/>
-> Do they all warrant a slash?<br/>
+> How severe are each of these offenses?<br />
+> Do they all warrant a slash?<br />
 > A full slash?
 
 Notes:
 
-PoW has inherent punishment through wasted energy. BFT based system's don't.
+PoW has inherent punishment through wasted energy.
+BFT based system's don't.
 
 Instead, aspiring participants will typically lock up a security deposit which can be slashed in part or in whole.
 
@@ -429,11 +457,11 @@ Instead, aspiring participants will typically lock up a security deposit which c
 
 ### Concrete Punishment Example
 
-Let's say a slash is 100 units, and the reporter gets 10%.<br/>I plan to attack.
+Let's say a slash is 100 units, and the reporter gets 10%.<br />I plan to attack.
 
-If my attack is successful,<br/>I expect to gain roughly 200 units worth of utility.
+If my attack is successful,<br />I expect to gain roughly 200 units worth of utility.
 
-I ask another authority to cooperate with me:<br/>"I'll pay you 20 units to _not_ rat me out for my attack".
+I ask another authority to cooperate with me:<br />"I'll pay you 20 units to _not_ rat me out for my attack".
 
 > How would you respond?
 
@@ -449,18 +477,22 @@ Notes:
 
 - Authorship is like Aura - simple round robin
 - Naive but **simple** BFT implementation
-- If the block has enough votes<br/>by the end of the slot, it is finalized.<br/>
+- If the block has enough votes<br />by the end of the slot, it is finalized.<br />
   Otherwise, it is rejected via timeout.
 - "Instant finality"
-- Forkless - Forks are disallowed<br/>because blocks can only be authored<br/>on finalized parents.
+- Forkless - Forks are disallowed<br />because blocks can only be authored<br />on finalized parents.
 
 </pba-flex>
 
 Notes:
 
-Tendermint assumes a partially synchronous network, like all the BFT based systems - That is to say that messages may not arrive immediately, but will arrive within a finite time bound. In practice this means it is slot-based just like so many of the authoring schemes.
+Tendermint assumes a partially synchronous network, like all the BFT based systems - That is to say that messages may not arrive immediately, but will arrive within a finite time bound.
+In practice this means it is slot-based just like so many of the authoring schemes.
 
-Tendermint is often touted as "instant finality". It is instant in the sense that finality is tied to authorship. In practice this means that authorship, which is inherently O(n), is slowed down to stay in sync with finality which is O(n^2). They sacrifice liveness to guarantee absolute safety at all times.
+Tendermint is often touted as "instant finality".
+It is instant in the sense that finality is tied to authorship.
+In practice this means that authorship, which is inherently O(n), is slowed down to stay in sync with finality which is O(n^2).
+They sacrifice liveness to guarantee absolute safety at all times.
 
 ---v
 
@@ -520,7 +552,7 @@ Tendermint is often touted as "instant finality". It is instant in the sense tha
 ## What About Re-Orgs
 
 <img style="width: 500px; margin-right: 150px;" src="./img/reorgs-1.svg" />
-<br/>
+<br />
 <img style="width: 650px;" src="./img/reorgs-2.svg" />
 
 Notes:
@@ -532,13 +564,14 @@ Previously we talked about how a node's view of the best block can change, and t
 ## Modified Fork Choice Rule
 
 <img style="width: 500px; margin-right: 150px;" src="./img/reorgs-finality-1.svg" />
-<br/>
+<br />
 <img style="width: 650px" src="./img/reorgs-finality-2.svg" />
 
 Only extend best finalized chain
 Notes:
 
-Once you have a finality gadget installed, you have to make sure you only ever author on top of finalized blocks. Even if another chain is longer.
+Once you have a finality gadget installed, you have to make sure you only ever author on top of finalized blocks.
+Even if another chain is longer.
 
 ---
 
@@ -547,7 +580,7 @@ Once you have a finality gadget installed, you have to make sure you only ever a
 <pba-flex center>
 
 - Deterministic finality _only_
-- Requires an external block authoring scheme<br/> with its own liveness proof.
+- Requires an external block authoring scheme<br /> with its own liveness proof.
 - Kind of like Tendermint but better.
 - Finalizes chains, not blocks.
 
@@ -774,7 +807,7 @@ Notes:
 - Consensus systems can be {Deterministic, Probabilistic}
 - Consensus systems can be {Open participation, Finite participation}
 - There is always an assumption that at least {1/2, 2/3} participants are honest
-- In decentralized systems, we use Economics and Game Theory<br/>to incentivize honest execution of the consensus protocol
+- In decentralized systems, we use Economics and Game Theory<br />to incentivize honest execution of the consensus protocol
 
 ---
 
@@ -782,4 +815,4 @@ Notes:
 
 # Game Time
 
-> I want to play a game...<br/>a board game!
+> I want to play a game...<br />a board game!

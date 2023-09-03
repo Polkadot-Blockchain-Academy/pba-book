@@ -22,7 +22,7 @@ duration: 1 hour
 
 ---
 
-## Verifiable Random Functions<br/>(VRFs)
+## Verifiable Random Functions<br />(VRFs)
 
 <widget-center>
 
@@ -53,7 +53,7 @@ The output of verification being an option represents the possibility of an inva
 - Output is a deterministic function of _key_ and _input_
   - i.e. eval should be deterministic
 - It should be pseudo-random
-- But until the VRF is revealed, only the holder<br/>of the secret key knows the output
+- But until the VRF is revealed, only the holder<br />of the secret key knows the output
 - Revealing output does not leak secret key
 
 ---
@@ -161,7 +161,7 @@ If the messages are not far apart, it is impossible to distinguish in many cases
 
 With erasure coding, we extend each message magically so they are different enough. The sender and receiver know the same encoding procedure. These extensions will be very different, even if the messages are similar.
 
-`msg1`<span style="color: red;">`jdf`</span> and `msg2`<span style="color: red;">`ajk`</span>
+`msg1`<span style="color: red;"> `jdf`</span> and `msg2`<span style="color: red;"> `ajk`</span>
 
 Notes:
 
@@ -182,7 +182,7 @@ The magic here is polynomials, and the fact that a polynomial of degree $n$ is c
 ## Erasure Coding Classical use
 
 - Used for noisy channels
-- If a few bits of the coded data are randomly flipped,<br/> we can still recover the original data
+- If a few bits of the coded data are randomly flipped,<br /> we can still recover the original data
 - Typically $n$ is not much bigger than $k$
 
 ---
@@ -243,16 +243,16 @@ Notes:
 
 ## Proxy Reencryption API
 
-- `fn encrypt(pk, msg) -> ciphertext;` <br/> Takes your public key and a message; returns ciphertext.
-- `fn decrypt(sk, ciphertext) -> msg;` <br/> Takes your private key and a ciphertext; returns the message.
-- `fn get_reencryption_key(sk, pk) -> rk;` <br/> Takes your private key, and the recipient's public key; returns a reencryption key.
-- `fn reencrypt(rk, old_ciphertext) -> new_ciphertext;` <br/> Take a reencryption key, and transform ciphertext to be decrypted by new party.
+- `fn encrypt(pk, msg) -> ciphertext;` <br /> Takes your public key and a message; returns ciphertext.
+- `fn decrypt(sk, ciphertext) -> msg;` <br /> Takes your private key and a ciphertext; returns the message.
+- `fn get_reencryption_key(sk, pk) -> rk;` <br /> Takes your private key, and the recipient's public key; returns a reencryption key.
+- `fn reencrypt(rk, old_ciphertext) -> new_ciphertext;` <br /> Take a reencryption key, and transform ciphertext to be decrypted by new party.
 
 ---
 
 ## ZK Proofs
 
-How do we do private operations on a public blockchain<br/>and have everyone know that they were done correctly?
+How do we do private operations on a public blockchain<br />and have everyone know that they were done correctly?
 
 Notes:
 
@@ -361,11 +361,11 @@ Polkadot already scales better!
 
 <pba-flex center>
 
-A user has private data, but we can show<br/>publicly that this private data is correctly used.<br/>
+A user has private data, but we can show<br />publicly that this private data is correctly used.<br />
 An example would a private cryptocurrency:
 
 - Keep who pays who secret
-- Keep amounts secret, <br/> _But show they are positive!_
+- Keep amounts secret, <br /> _But show they are positive!_
 
 </pba-flex>
 
@@ -390,26 +390,26 @@ To do everything well, ZK-SNARKs are needed in e.g. ZCash and its many derivativ
 
 - Slow prover time for general computation
 - To be fast, need to hand optimize
-- Very weird computation model:<br/>
+- Very weird computation model:<br />
   Non-deterministic arithmetic circuits
 
 ---
 
 ## Downsides Conclusion?
 
-- So if you want to use this for a component,<br/>expect a team of skilled people to work for at least a year on it...
-- But if you are watching this 5 years later,<br/>people have built tools to make it less painful.
+- So if you want to use this for a component,<br />expect a team of skilled people to work for at least a year on it...
+- But if you are watching this 5 years later,<br />people have built tools to make it less painful.
 
 ---
 
-## Succinct Proving<br/>with Cryptography?
+## Succinct Proving<br />with Cryptography?
 
 <pba-flex center>
 
 - ZK friendly hashes
 - Non-hashed based data structures
   - RSA accumulators
-  - Polynomial commitment based<br/>
+  - Polynomial commitment based<br />
     (Verkle trees)
 
 </pba-flex>

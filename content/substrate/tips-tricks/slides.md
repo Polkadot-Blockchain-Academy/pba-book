@@ -461,7 +461,6 @@ impl Percent {
 impl Mul<u32> for Percent {
   ...
 }
-
 ```
 
 ---v
@@ -518,7 +517,6 @@ let z = x * y;
 - [`big_uint.rs`](https://paritytech.github.io/substrate/master/sp_arithmetic/biguint/index.html) (unaudited)
 
 ```rust
-
 pub struct BigUint {
 	/// digits (limbs) of this number (sorted as msb -> lsb).
 	pub(crate) digits: Vec<Single>,
@@ -543,8 +541,8 @@ Things like **addition**, **multiplication**, **division** could all easily fail
 - Panic
   - `u32::MAX * 2 / 2` (in debug builds)
   - `100 / 0`
-  s
-  </div>
+
+</div>
 
 <!-- .element: class="fragment" -->
 
@@ -960,7 +958,7 @@ Notes:
 - First reminder: don't panic, unless if you want to punish someone!
 - `.unwrap()`? no no
 
-<br/>
+<br />
 
 - be careful with implicit unwraps in standard operations!
   - slice/vector indexing can panic if out of bound

@@ -148,7 +148,7 @@ Let's now step away from concepts and talk about cold hard data.
 
 ### Common Runtime Data Size and Performance
 
-<br/>
+<br />
 
 <div class="flex-container">
 <div class="left">

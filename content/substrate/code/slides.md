@@ -152,7 +152,7 @@ Bute then each node can decide which subset of these it chooses, and how it impl
 
 Notes:
 
-<https://crates.io/crates/substrate-wasm-builder> (seen env variables, pretty useful!) <!-- markdown-link-check-disable-line -->
+<https://crates.io/crates/substrate-wasm-builder> (seen env variables, pretty useful!)
 <https://docs.substrate.io/build/build-process>
 
 ---v

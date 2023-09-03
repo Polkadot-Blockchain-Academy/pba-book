@@ -50,7 +50,7 @@ To do this, it adds additional limitations to candidates to ensure messaging rul
 
 XCMP is the data layer, while XCM is the language.
 
-XCMP only focuses on the transmission of raw bytes between chains.<br/>
+XCMP only focuses on the transmission of raw bytes between chains.<br />
 In this lesson we will focus only on XCMP.
 
 <img rounded width="400px" src="./img/people-talking.jpg" />
@@ -217,7 +217,6 @@ DownwardMessages: StorageMap<ParaId, Deque<Message>>;
 // (sender, receiver)
 // Sender posts, receiver drains
 HrmpChannels: StorageMap<(ParaId, ParaId), Deque<Message>>;
-
 ```
 
 ---
@@ -511,7 +510,6 @@ pub struct OutboundHrmpMessage {
 	/// The message payload.
 	pub data: sp_std::vec::Vec<u8>,
 }
-
 ```
 
 ---

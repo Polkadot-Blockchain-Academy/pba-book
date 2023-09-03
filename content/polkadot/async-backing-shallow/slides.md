@@ -22,12 +22,19 @@ Lets get to it
 
 - Synchronous vs asynchronous
 - Why is asynchronous backing desirable?
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - High level mechanisms of async backing
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - The unincluded segment, and prospective parachains
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Async backing enabling other roadmap items
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 </pba-flex>
@@ -68,6 +75,7 @@ Our cache of parablock candidates allows us to pause just before that dividing l
 
 1. "The best existing parablock I'm aware of will eventually be included in the relay chain."
 1. "There won't be a chain reversion impacting that best parablock."
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 </pba-flex>
@@ -92,10 +100,15 @@ Brief BABE fork choice rule review
 
 1. 3-5x more extrinsics per block
 1. Shorter parachain block times 6s vs 12s
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 1. Resulting 6-10x boost in quantity of blockspace
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 1. Fewer wasted parachain blocks
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 </pba-flex>
@@ -174,10 +187,15 @@ Image version 3:
 
 - A parachain's record of all parablocks on a particular chain fork produced but not yet included
 - Used to apply limitations when constructing future blocks
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Lives in the parachain runtime
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Viewed from the perspective of a new parablock under construction
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 </pba-flex>
@@ -220,10 +238,15 @@ UsedBandwidth:
 
 - The relay chain's record of all candidates on all chain forks from all parachains
 - As if you folded all unincluded segments into one huge structure
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Used to store candidates and later provide them to the on-chain backing process
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Lives in the relay client (off chain)
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 </pba-flex>

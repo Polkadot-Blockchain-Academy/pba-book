@@ -179,9 +179,9 @@ path = "lib.rs"
 [features]
 default = ["std"]
 std = [
-    "ink/std",
-    "scale/std",
-    "scale-info/std",
+  "ink/std",
+  "scale/std",
+  "scale-info/std",
 ]
 ```
 
@@ -259,7 +259,8 @@ Artifacts:
 
 The contract was built in RELEASE mode.
 
-Your contract artifacts are ready. You can find them in:
+Your contract artifacts are ready.
+You can find them in:
 /home/CloudStation/Blockchain-Academy/flipper/target/ink
 
   - flipper.contract (code + metadata)
@@ -479,6 +480,7 @@ pub fn get(&self) -> bool {
 
 - `#[ink(message)]` is how we tell ink! this is a function that can be called on the contract
 - `&self` is a reference to the contract's storage
+
 <!-- #you’re calling this method on  -->
 
 Notes:
@@ -538,7 +540,6 @@ pub fn spin(&mut self) -> Result<()> {
 };
 
 pub type Result<T> = core::result::Result<T, MyError>;
-
 ```
 
 </div>
@@ -568,7 +569,6 @@ pub fn flip(&mut self) {
     }
 
 }
-
 ```
 
 - what is the state of this contract if the tx is called in an odd block number?
@@ -624,7 +624,6 @@ pub fn flip(&mut self) {
     }
 
 }
-
 ```
 
 - What happens to the events from reverted transactions?
@@ -726,8 +725,8 @@ Notes:
 | Unsigned int | 42                                    | 0x2a00                       |                                                                                |
 | Enum         | enum IntOrBool { Int(u8), Bool(bool)} | 0x002a and 0x0101            | first byte encodes the variant index, remaining bytes encode the data          |
 | Tuple        | (3, false)                            | 0x0c00                       | concatenation of each encoded value                                            |
-| Vector       | [4, 8, 15, 16, 23, 42]                | 0x18040008000f00100017002a00 | encoding of the vector length followed by conatenation of each item's encoding |
-| Struct       | {x:30u64, y:true}                     | [0x1e,0x0,0x0,0x0,0x1]       | names are ignored, Vec<u8> structure, only order matters                       |
+| Vector       | \[4, 8, 15, 16, 23, 42\]              | 0x18040008000f00100017002a00 | encoding of the vector length followed by conatenation of each item's encoding |
+| Struct       | {x:30u64, y:true}                     | \[0x1e,0x0,0x0,0x0,0x1\]     | names are ignored, Vec<u8> structure, only order matters                       |
 
 </div>
 
@@ -788,27 +787,27 @@ pub struct Flipper<KEY: StorageKey = ManualKey<0xcafebabe>> {
 <div style="font-size: 0.82em;">
 
 ```json
-  "storage": {
-    "root": {
-      "layout": {
-        "struct": {
-          "fields": [
-            {
-              "layout": {
-                "leaf": {
-                  "key": "0xcafebabe",
-                  "ty": 0
-                }
-              },
-              "name": "value"
-            }
-          ],
-          "name": "Flipper"
-        }
-      },
-      "root_key": "0xcafebabe"
-    }
+"storage": {
+  "root": {
+    "layout": {
+      "struct": {
+        "fields": [
+          {
+            "layout": {
+              "leaf": {
+                "key": "0xcafebabe",
+                "ty": 0
+              }
+            },
+            "name": "value"
+          }
+        ],
+        "name": "Flipper"
+      }
+    },
+    "root_key": "0xcafebabe"
   }
+}
 ```
 
 </div>
@@ -857,8 +856,6 @@ pub fn transfer(&mut self) {
 
     balance += endowment;
 }
-
-
 ```
 
 - what is wrong here?
@@ -866,7 +863,10 @@ pub fn transfer(&mut self) {
 Notes:
 
 - working with mapping:
-- Answer: Mapping::get() method will result in an owned value (a local copy), as opposed to a direct reference into the storage. Changes to this value won't be reflected in the contract's storage "automatically". To avoid this common pitfall, the value must be inserted again at the same key after it was modified. The transfer function from above example illustrates this:
+- Answer: Mapping::get() method will result in an owned value (a local copy), as opposed to a direct reference into the storage.
+  Changes to this value won't be reflected in the contract's storage "automatically".
+  To avoid this common pitfall, the value must be inserted again at the same key after it was modified.
+  The transfer function from above example illustrates this:
 
 ---
 
@@ -941,7 +941,6 @@ pub fn set_code(&mut self, code_hash: [u8; 32]) -> Result<()> {
     ink::env::set_code_hash(&code_hash)?;
     Ok(())
 }
-
 ```
 
 - Within SC's lifecycle it is often necessary to perform an upgrade or a bugfix.
@@ -967,7 +966,6 @@ pub fn set_code(&mut self, code_hash: [u8; 32]) -> Result<()> {
     ink::env::set_code_hash(&code_hash)?;
     Ok(())
 }
-
 ```
 
 Notes:
@@ -1154,7 +1152,6 @@ Notes:
 <div style="font-size: 0.72em;">
 
 ```rust [3-7,12,18]
-
 #[ink(message)]
 pub fn swap(
     &mut self,
@@ -1272,7 +1269,7 @@ impl MyContract {
 
 ## Blockchain node onion
 
-<br/>
+<br />
 
 <img style="margin-top: 50px;margin-bottom: 50px" width="800" src="./img/onions.png" />
 
@@ -1337,7 +1334,7 @@ impl MyContract {
 
 ## Interacting with the state transition function
 
-<br/>
+<br />
 
 <div class="flex-container fragment">
 <div class="left">
@@ -1368,7 +1365,7 @@ impl MyContract {
 
 ## Interacting with the state transition function
 
-<br/>
+<br />
 
 <div class="flex-container">
 <div class="left">
@@ -1397,7 +1394,7 @@ impl MyContract {
 <li>outsourcing computation</li>
 <li>...</li>
 
-<br/>
+<br />
 
 **_chain extension_**
 
@@ -1409,7 +1406,7 @@ impl MyContract {
 
 ## Runtime
 
-<br/>
+<br />
 
 In Polkadot ecosystem _state transition function_ is called **_runtime_**
 
@@ -1417,7 +1414,7 @@ In Polkadot ecosystem _state transition function_ is called **_runtime_**
 
 ## Calling runtime
 
-<br/>
+<br />
 
 ```rust [7-10]
 #[ink(message)]
@@ -1439,7 +1436,7 @@ pub fn transfer_through_runtime(
 
 ## Calling runtime
 
-<br/>
+<br />
 
 ```rust [12]
 #[ink(message)]
@@ -1461,7 +1458,7 @@ pub fn transfer_through_runtime(
 
 ## Chain extensions
 
-<br/>
+<br />
 
 Chain extension is a way to extend the runtime with custom functionalities _dedicated to contracts_.
 
@@ -1469,14 +1466,14 @@ Chain extension is a way to extend the runtime with custom functionalities _dedi
 
 ## Chain extensions
 
-<br/>
+<br />
 
 **ink! side:**
 
 - provide `ChainExtension` trait
 - include extension in the `Environment` trait instantiation
 
-<br/>
+<br />
 
 **runtime side:**
 
@@ -1543,7 +1540,7 @@ impl ink::env::chain_extension::FromStatusCode for OutsourcingErr {
 
 ## Include extension in the `Environment` trait instantiation
 
-<br/>
+<br />
 
 ```rust
 pub enum EnvironmentWithOutsourcing {}
@@ -1562,7 +1559,7 @@ mod my_contract {
 
 ## Include extension in the `Environment` trait instantiation
 
-<br/>
+<br />
 
 ```rust
 #[ink::contract(env = crate::EnvironmentWithOutsourcing)]
@@ -1577,7 +1574,7 @@ mod my_contract {
 
 ## Handling extension calls
 
-<br/>
+<br />
 
 ```rust [5-11]
 pub struct HeavyCryptoOutsourcingExtension;
@@ -1609,7 +1606,7 @@ impl ChainExtension<Runtime> for HeavyCryptoOutsourcingExtension {
 
 ## Testing contracts
 
-<br/>
+<br />
 
 <img style="margin-top: 100px;margin-bottom: 50px" width="800" src="./img/blockchain-onion-3.svg" />
 
@@ -1623,7 +1620,7 @@ impl ChainExtension<Runtime> for HeavyCryptoOutsourcingExtension {
 
 ## Unit tests
 
-<br/>
+<br />
 
 ```rust [1-3]
 #[ink::test]
@@ -1654,7 +1651,7 @@ fn erc20_transfer_works() {
 
 ## Unit tests
 
-<br/>
+<br />
 
 ```rust [5-9]
 #[ink::test]
@@ -1685,7 +1682,7 @@ fn erc20_transfer_works() {
 
 ## Unit tests
 
-<br/>
+<br />
 
 ```rust [11-22]
 #[ink::test]
@@ -1716,7 +1713,7 @@ fn erc20_transfer_works() {
 
 ## E2E tests
 
-<br/>
+<br />
 
 ```rust [1-7]
 #[ink_e2e::test]
@@ -1740,7 +1737,7 @@ async fn e2e_transfer(mut client: ink_e2e::Client<C, E>) -> E2EResult<()> {
 
 ## E2E tests
 
-<br/>
+<br />
 
 ```rust [9-13]
 #[ink_e2e::test]
@@ -1764,7 +1761,7 @@ async fn e2e_transfer(mut client: ink_e2e::Client<C, E>) -> E2EResult<()> {
 
 ## E2E tests
 
-<br/>
+<br />
 
 ```rust [14]
 #[ink_e2e::test]
@@ -1820,7 +1817,7 @@ async fn e2e_transfer(mut client: ink_e2e::Client<C, E>) -> E2EResult<()> {
 
 ## Test core
 
-<br/>
+<br />
 
 1. Preparing and encoding transaction data (_given_)
 1. Transaction execution (_when_)
@@ -1830,7 +1827,7 @@ async fn e2e_transfer(mut client: ink_e2e::Client<C, E>) -> E2EResult<()> {
 
 ## quasi-E2E tests
 
-<br/>
+<br />
 
 Interact directly with runtime, skipping node layer.
 
@@ -1838,7 +1835,7 @@ Interact directly with runtime, skipping node layer.
 
 ## quasi-E2E tests
 
-<br/>
+<br />
 
 ```rust
 #[test]

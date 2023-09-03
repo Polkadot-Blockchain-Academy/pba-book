@@ -88,7 +88,7 @@ not just person-to-person messages.
 
 _Cryptography based on public systems is more sound._
 
-**Kerckhoff's Principle:** Security should not rely on secret _methods_,<br/>but rather on secret _information_.
+**Kerckhoff's Principle:** Security should not rely on secret _methods_,<br />but rather on secret _information_.
 
 Notes:
 
@@ -131,7 +131,7 @@ Do note the assumptions and monitor their validity over time (like quantum tech)
 
 </pba-flex>
 
-<br/>
+<br />
 
 Cryptography alone cannot make strong guarantees that data is available to people when they want to access it.
 
@@ -144,9 +144,9 @@ We will touch on erasure coding, which makes data availability more efficient.
 
 ## Data Confidentiality
 
-A party may gain access to information<br/>if and only if they know some secret (a key).
+A party may gain access to information<br />if and only if they know some secret (a key).
 
-<br/>
+<br />
 
 Confidentiality ensures that a third party cannot read my confidential data.
 
@@ -176,7 +176,7 @@ Suppose Alice and Bob are sending confidential messages back and forth. There ar
 
 Users can have the **credible** expectation that the stated origin of a message is authentic.
 
-<br/>
+<br />
 
 Authenticity ensures that a third party cannot pretend I created some data.
 
@@ -191,7 +191,7 @@ Notes:
 
 If data is tampered with, it is detectable. In other words, it possible to check if the current state of some data is the consistent with when it was created.
 
-<br/>
+<br />
 
 Integrity ensures that if data I create is corrupted, it can be detected.
 
@@ -199,7 +199,7 @@ Integrity ensures that if data I create is corrupted, it can be detected.
 
 ## Physical Signatures
 
-Physical signatures provide weak authenticity guarantees<br/>(i.e. they are quite easy to forge), and no integrity guarantees.
+Physical signatures provide weak authenticity guarantees<br />(i.e. they are quite easy to forge), and no integrity guarantees.
 
 ---v
 
@@ -218,7 +218,7 @@ Digital signatures provide a guarantee that the signed information has not been 
 
 The sender of a message cannot deny that they sent it.
 
-<br/>
+<br />
 
 Non-repudiation ensures if Bob sends me some data, I can prove to a third party that they sent it.
 
@@ -226,7 +226,7 @@ Non-repudiation ensures if Bob sends me some data, I can prove to a third party 
 
 ## One-Way Functions
 
-One-way functions form the basis of both<br/>**(cryptographic) hashing** and **asymmetric cryptography**. A function $f$ is one way if:
+One-way functions form the basis of both<br /> **(cryptographic) hashing** and **asymmetric cryptography**. A function $f$ is one way if:
 
 - it is reasonably fast to compute
 - it is very, very slow to undo
@@ -260,7 +260,7 @@ Hashes can be useful for many applications:
 
 <pba-flex center>
 
-- Representation of larger data object<br/>(history, commitment, file)
+- Representation of larger data object<br />(history, commitment, file)
 - Keys in a database
 - Digital signatures
 - Key derivation
@@ -272,7 +272,7 @@ Hashes can be useful for many applications:
 
 ## Symmetric Cryptography
 
-Symmetric encryption assumes all parties begin with some shared secret information, a potentially very difficult requirement.<br/>The shared secret can then be used to protect further communications from others who do not know this secret.
+Symmetric encryption assumes all parties begin with some shared secret information, a potentially very difficult requirement.<br />The shared secret can then be used to protect further communications from others who do not know this secret.
 
 In essence, it gives a way of _extending_ a shared secret over time.
 
@@ -316,15 +316,15 @@ _Using only the public key_, information can be transformed ("encrypted") such t
 
 - Digital signatures provide message authenticity and integrity guarantees.
 
-- _There are two lessons are dedicated to digital signatures,<br/>this is strictly an intro._
+- _There are two lessons are dedicated to digital signatures,<br />this is strictly an intro._
 
 ---
 
 ## Digital Signatures
 
-**Signing function**: a function which operates on some<br/>_message data_ and some _secret_ to yield a _signature_.
+**Signing function**: a function which operates on some<br /> _message data_ and some _secret_ to yield a _signature_.
 
-A **signature** _proves_ that the signer had knowledge of the secret,<br/>without revealing the secret itself.
+A **signature** _proves_ that the signer had knowledge of the secret,<br />without revealing the secret itself.
 
 The signature cannot be used to create other signatures, and is unique to the message.
 
@@ -343,9 +343,9 @@ It has a special property: it proves (beyond reasonable doubt) that the signer (
 
 There is cryptographic proof that the secret was known to the producer of the signature.
 
-<br/>
+<br />
 
-The signer cannot claim that the signature was forged, unless they can defend a claim that the secret was compromised prior to signing.<br/>
+The signer cannot claim that the signature was forged, unless they can defend a claim that the secret was compromised prior to signing.<br />
 
 ---
 

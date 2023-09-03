@@ -91,7 +91,6 @@ The goal:
 ### In code
 
 ```rust
-
 type Data = Vec<u8>;
 
 pub struct Chunk {
@@ -189,7 +188,7 @@ How do we do reconstruction?
 - Each PoV is divided into $N_{validator}$ chunks
 - Validator with index i gets a chunk with the same index
 - Validators sign statements when they receive their chunk
-- Once we have $\frac{2}{3} + 1$ of signed statements,<br/>PoV is considered available
+- Once we have $\frac{2}{3} + 1$ of signed statements,<br />PoV is considered available
 - Any subset of $\frac{1}{3} + 1$ of chunks can recover the data
 
 </pba-flex>
@@ -255,7 +254,7 @@ This can eliminate honest majority assumption!
 
 This approach guarantees there's at least one honest full nodes that has the data with high probability.
 
-<br/>
+<br />
 
 > <https://arxiv.org/abs/1809.09044>
 
@@ -304,7 +303,7 @@ Danksharding is aiming at 1.3 MB/s and Celestia < 1 MB/s.
 
 <pba-flex center>
 
-- Data Availability Sampling for parachain<br/>light clients and full nodes
+- Data Availability Sampling for parachain<br />light clients and full nodes
 - Consider using KZG commitments
 - Reducing the number of signatures to verify
 - A Data Availability Parachain

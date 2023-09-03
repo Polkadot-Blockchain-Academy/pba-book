@@ -150,7 +150,6 @@ Notes:
 ## Constraints and Modifications
 
 ```rust
-
 pub struct Constraints {
 	/// The minimum relay-parent number accepted under these constraints.
 	pub min_relay_parent_number: BlockNumber,
@@ -201,7 +200,6 @@ pub struct ConstraintModifications {
 	/// Whether a pending code upgrade has been applied.
 	pub code_upgrade_applied: bool,
 }
-
 ```
 
 Notes:
@@ -296,7 +294,6 @@ Out of scope:
 Excerpt from `backing_state()` in `runtime/parachains/src/runtime_api_impl/vstaging.rs`
 
 ```rust
-
 let (ump_msg_count, ump_total_bytes) = <ump::Pallet<T>>::relay_dispatch_queue_size(para_id);
 let ump_remaining = config.max_upward_queue_count - ump_msg_count;
 
@@ -316,7 +313,6 @@ let constraints = Constraints {
 		upgrade_restriction,
 		future_validation_code,
 	};
-
 ```
 
 ---
@@ -326,7 +322,6 @@ let constraints = Constraints {
 Excerpt from `Constraints::apply_modifications()`
 
 ```rust
-
 if modifications.dmp_messages_processed > new.dmp_remaining_messages.len() {
 	return Err(ModificationError::DmpMessagesUnderflow {
 		messages_remaining: new.dmp_remaining_messages.len(),
@@ -336,7 +331,6 @@ if modifications.dmp_messages_processed > new.dmp_remaining_messages.len() {
 	new.dmp_remaining_messages =
 		new.dmp_remaining_messages[modifications.dmp_messages_processed..].to_vec();
 }
-
 ```
 
 ---
@@ -346,14 +340,12 @@ if modifications.dmp_messages_processed > new.dmp_remaining_messages.len() {
 `Excerpt from Fragment::validate_against_constraints()`
 
 ```rust
-
 if relay_parent.number < constraints.min_relay_parent_number {
 	return Err(FragmentValidityError::RelayParentTooOld(
 		constraints.min_relay_parent_number,
 		relay_parent.number,
 	))
 }
-
 ```
 
 ---
@@ -361,7 +353,6 @@ if relay_parent.number < constraints.min_relay_parent_number {
 ## AsyncBackingParams
 
 ```rust
-
 pub struct AsyncBackingParams {
 	/// The maximum number of para blocks between the para head in a relay parent
 	/// and a new candidate. Restricts nodes from building arbitrary long chains
@@ -375,7 +366,6 @@ pub struct AsyncBackingParams {
 	/// When async backing is disabled, the only valid value is 0.
 	pub allowed_ancestry_len: u32,
 }
-
 ```
 
 </br>
@@ -418,7 +408,6 @@ Mention
 Function `request_backable_candidates` from the Provisioner subsystem
 
 ```rust
-
 /// Requests backable candidates from Prospective Parachains subsystem
 /// based on core states.
 ///
@@ -483,7 +472,6 @@ async fn request_backable_candidates(
 
 	Ok(selected_candidates)
 }
-
 ```
 
 Notes:

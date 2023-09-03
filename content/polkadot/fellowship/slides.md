@@ -19,8 +19,11 @@ duration: 30 mins
 #### 1. Technical 🔐
 
 - Can the software be executed in a decentralized manner?
+
 <!-- .element: class="fragment" -->
+
 - Can multiple nodes actually run the software and come to consensus?
+
 <!-- .element: class="fragment" -->
 
 Notes:
@@ -39,6 +42,7 @@ Notes:
   - Intermediaries, gateways, pools.
   <!-- .element: class="fragment" -->
 - Is the right "software" being executed by node operators?
+
 <!-- .element: class="fragment" -->
 
 Notes:
@@ -58,10 +62,15 @@ Notes:
 #### 3. Intellectual 🧠
 
 - How many people know the existing protocol well enough to understand it.
+
 <!-- .element: class="fragment" -->
+
 - Which subset of these people make decisions about the future?
+
 <!-- .element: class="fragment" -->
+
 - Important to remember that node operators are usually in neither.
+
 <!-- .element: class="fragment" -->
 
 Notes:
@@ -131,14 +140,23 @@ around it and letting it be as-is, but it might be sub-optimal.
 ## The Fellowship Lifecycle
 
 1. Initial seed
+
 <!-- .element: class="fragment" -->
+
 1. Entry
+
 <!-- .element: class="fragment" -->
+
 1. Promotion
+
 <!-- .element: class="fragment" -->
+
 1. Continuation
+
 <!-- .element: class="fragment" -->
+
 1. Gradual demote every 3-6 months.
+
 <!-- .element: class="fragment" -->
 
 ---v
@@ -254,7 +272,7 @@ The manifesto provides one such example
 
 - The (potentially) softest of the materials
 - Wide range of hardness (1-3 Moh)
-- Shares the exact same chemical composition as the material of the highest rank Grand Master—the hardest material—symbolising the individual’s potential to go all the
+- Shares the exact same chemical composition as the material of the highest rank Grand Master—the hardest material—symbolizing the individual’s potential to go all the
   way.
 
 ---v

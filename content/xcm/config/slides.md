@@ -138,7 +138,6 @@ Notes:
 - `HashedDescription`: Hashes the description of a `Location` and converts that into an `AccountId`.
 
 ```rust
-
 pub struct HashedDescription<AccountId, Describe>(PhantomData<(AccountId, Describe)>);
 impl<
   AccountId: From<[u8; 32]> + Clone,
