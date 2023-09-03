@@ -2,16 +2,15 @@ name: Checks
 on:
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
   push:
+    branches:
+    - main
   pull_request:
     branches:
-      - main
+    - main
 
 jobs:
   ci-checks:
     runs-on: ubuntu-latest
-    env:
-      DPRINT_VERSION: v2.2
-      DPRINT_CONFIG_PATH: ./dprint.json
     steps:
     - uses: actions/checkout@v3
     - name: Cache
@@ -22,9 +21,9 @@ jobs:
         key: ${{ runner.os }}-${{ hashFiles('**/dprint.json') }}
 
     - name: Format Check (dprint)
-      uses: dprint/check@${DPRINT_VERSION}
+      uses: dprint/check@v2.2
       with:
-        config-path: ${DPRINT_CONFIG_PATH}
+        config-path: ./dprint.json
 
     # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
     - name: Markup Link Checker (mlc)
