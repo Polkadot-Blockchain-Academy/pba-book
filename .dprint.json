@@ -15,6 +15,9 @@
     "**/html*",
     "**/.yarn",
     "**/node_modules",
+    "tools/**/*min.js",
+    "tools/plugin/chart",
+    "tools/plugin/mermaid.js",
     "**/*-lock.json"
   ],
   "plugins": [

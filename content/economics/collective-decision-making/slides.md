@@ -120,12 +120,12 @@ Notes:
 ## Goals
 
 <!-- prettier-ignore -->
-|                  |                                                                                              |
-| :--------------: | :------------------------------------------------------------------------------------------: |
+|                  |                                                                                 |
+| :--------------: | :-----------------------------------------------------------------------------: |
 |   **Utility**    | - decision maximizes society's welfare<br /> - it reflects people's preferences |
-|  **Legitimacy**  |            - decision is considered fair<br />- people trust the process            |
-| **Practicality** |                      - process is fast<br /> - it is simple to understand                      |
-|                  |                                                                                              |
+|  **Legitimacy**  |          - decision is considered fair<br />- people trust the process          |
+| **Practicality** |              - process is fast<br /> - it is simple to understand               |
+|                  |                                                                                 |
 
 Notes:
 
