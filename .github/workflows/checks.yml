@@ -18,12 +18,12 @@ jobs:
       uses: actions/cache@v3
       with:
         path: ~/.cache/dprint # TODO add more paths here for various checkers
-        key: ${{ runner.os }}-${{ hashFiles('**/dprint.json') }}
+        key: ${{ runner.os }}-${{ hashFiles('**/*dprint.json') }}
 
     - name: Format Check (dprint)
       uses: dprint/check@v2.2
       with:
-        config-path: ./dprint.json
+        config-path: .dprint.json
 
     # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
     - name: Markup Link Checker (mlc)
