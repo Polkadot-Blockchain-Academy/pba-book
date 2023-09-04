@@ -261,6 +261,11 @@ They typically are identical to:
 
 This book, and all content within have style and typographic conventions that, where practical, have tooling to help everyone conform to them.
 
+```sh
+# This will install the tooling needed for formatting, linting, checkers, etc.
+makers install-dev
+```
+
 ### Formatting
 
 All Markdown, TOML, JSON, Typescript, and Javascript files in this repository are formatter with [dprint](https://dprint.dev/).

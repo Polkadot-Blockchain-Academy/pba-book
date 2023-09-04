@@ -30,22 +30,12 @@ alias = "install"
 [tasks.install]
 description = "Install dependencies for slides and book tooling."
 category = "Install"
-dependencies = ["install-slides", "install-book", "install-linkcheck", "install-formatter"]
+dependencies = ["install-slides", "install-book"]
 
 [tasks.install-book]
 description = "Install dependencies for building the book only."
 category = "Install"
 script = "cargo install --locked mdbook"
-
-[tasks.install-linkcheck]
-description = "Install markup link checker (mlc)."
-category = "Install"
-script = "cargo install --locked mlc"
-
-[tasks.install-formatter]
-description = "Install formatter (dprint)."
-category = "Install"
-script = "cargo install --locked dprint"
 
 [tasks.install-slides]
 description = "Install dependencies for slides tooling only."
@@ -71,6 +61,20 @@ echo "✅ Slides instalation complete!"
 description = "Wipeout build and dependancy artifacts, then install."
 category = "Install"
 script = 'rm -rf node_modules/ html-slides/ html-book/ && makers i'
+
+[tasks.install-dev]
+description = "Install dev tools."
+dependencies = ["install-linkcheck", "install-formatter"]
+
+[tasks.install-linkcheck]
+description = "Install markup link checker (mlc)."
+category = "Install"
+script = "cargo install --locked mlc"
+
+[tasks.install-formatter]
+description = "Install formatter (dprint)."
+category = "Install"
+script = "cargo install --locked dprint"
 
 # -----------------------------------------------------------------------------
 # Serve
@@ -131,7 +135,7 @@ script = "yarn build-slides-local > /dev/null"
 # script = "yarn build-slides-gh-pages > /dev/null"
 
 # -----------------------------------------------------------------------------
-# Helpers for style, convention, and formatting
+# Dev tools for style, convention, and formatting
 
 [tasks.c]
 category = "Clean"
@@ -191,25 +195,25 @@ script = '''
 
 # Build deps are present?
 
-if ! $(echo "type mdbook" | sh > /dev/null ) ; then
-    echo "\n❌ You may need to install the book tooling. Run:\n\nmarkers install\n\n***********"
+if ! $(echo "type mdbook" | sh > /dev/null ); then
+    echo -e "❌ You may need to install the book tooling. Run:\n\nmarkers install\n"
     exit 127
 fi
 
-if ! $(echo "type mlc" | sh > /dev/null ) ; then
-    echo "\n❌ You may need to install the helpers tooling. Run:\n\nmarkers install\n\n***********"
+if ! $(yarn --version > /dev/null) || [ ! -d node_modules ]; then
+    echo -e "❌ You may need to install the slides tooling. Run:\n\nmarkers slides-install\n"
     exit 127
 fi
 
-if ! $(echo "type dprint" | sh > /dev/null ) ; then
-    echo "\n❌ You may need to install the helpers tooling. Run:\n\nmarkers install\n\n***********"
+if ! $(echo "type mlc" | sh > /dev/null ); then
+    echo -e "❌ You may need to install the dev tooling. Run:\n\nmarkers install-dev\n"
     exit 127
 fi
 
-if ! $(yarn --version > /dev/null) ; then
-    echo "\n❌ You may need to install the slides tooling. Run:\n\nmarkers slides-install\n"
+if ! $(echo "type dprint" | sh > /dev/null ); then
+    echo -e "❌ You may need to install the dev tooling. Run:\n\nmarkers install-dev\n"
     exit 127
 fi
 
-echo "✅ Instalation of dependencies seems OK."
+echo "✅ Instalation of all dependencies seems OK."
 '''
