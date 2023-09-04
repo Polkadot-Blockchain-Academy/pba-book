@@ -30,3 +30,6 @@ jobs:
       uses: becheran/mlc@v0.16.2
       with:
         args: "./content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
+
+    - name: Check for image issues (orphans and broken links)
+      run: ${PWD}/tools/scripts/orphan-image-scan.sh content/
