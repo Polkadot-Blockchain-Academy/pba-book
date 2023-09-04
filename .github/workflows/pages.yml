@@ -32,18 +32,6 @@ jobs:
         with:
           working-directory: .
 
-      # # Fleek publishes files when a push to `html-slides` by this CI happens.
-      # # Thus the book and slides can be separately hosted from each other.
-      # - name: Build static slides, publish to `html-slides` branch
-      #   run: yarn build-slides-fleek
-      # - name: Deploy `html-slides` branch
-      #   uses: crazy-max/ghaction-github-pages@v2
-      #   with:
-      #     target_branch: html-slides
-      #     build_dir: html-slides
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Install mdBook
         run: |
           url="https://github.com/rust-lang/mdbook/releases/download/${MDBOOK_VERSION}/mdbook-${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
@@ -59,13 +47,11 @@ jobs:
           rsync -av html-slides/content/ html-book/ --ignore-existing
           rsync -av html-slides/ --exclude 'content' html-book/ --ignore-existing
           find html-book/ -regex .*\.html | xargs sed -i 's#./../../../#../../#g'
-      - name: Deploy `html-book` branch
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: html-book
-          build_dir: html-book
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # TODO: Without making a _branch_ that bloats the .git object,
+      #       we should push out the static build files in html-book/ and html-slides/ to some archive,
+      #       thus the bok and slides will be usable anywhere independently and
+      #       a simple download to have a copy locally without building it yourself 
 
       - name: Setup Pages
         id: pages
