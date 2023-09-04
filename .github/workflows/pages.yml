@@ -1,5 +1,5 @@
 # From https://github.com/rust-lang/mdBook/wiki/Automated-Deployment%3A-GitHub-Actions#raw-example
-name: Build and push to `html-*` branches, publish to Pages
+name: Build `html-*` static files, publish `html-book` to Pages
 on:
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
   push:
