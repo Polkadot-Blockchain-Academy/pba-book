@@ -49,14 +49,15 @@ Use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to install and 
 With `nvm` installed, from the academy top level dir:
 
 ```sh
-# Ensure you have the right node
-nvm i
-# For yarn, you need to enable some node features
-corepack enable
-# Install Dependencies
-yarn
-# Run a slide server watching for file changes
-yarn start
+if ! $(echo "type bun" | sh > /dev/null ); then
+    echo "🥟 Installing https://bun.sh ..."
+    curl -fsSL https://bun.sh/install | bash
+fi
+echo "💽 Bun installed."
+
+echo "🥟 Install slides tooling with Bun..."
+bun install
+echo "✅ Slides instalation complete!"
 ```
 
 This should open a new browser tab with a simple listing of all slide decks to choose from.
@@ -124,7 +125,7 @@ To view and edit slides (only) in **watching** mode (updates immediately on chan
 # WATCHING server for slides only
 makers serve-slides
 # Or simply:
-yarn s
+bun s
 ```
 
 See the [Using this Book](./how-to/page.md) page for more details on `reveal.js` features and use.
@@ -359,4 +360,4 @@ Please **_delete_** any assets you do not need, we can always `git recover` at a
 1. `.github/workflows/check.yml` - On any merge with `main`, the CI is tasked with checking book for any issues with format, links, and images.
 
 See `.github/workflows/` in this repository for more details.
-Other tasks mostly stand alone from the `cargo make` tooling suggested in development workflows at this time, but some require the `yarn` tooling to properly build and test things.
+Other tasks mostly stand alone from the `cargo make` tooling suggested in development workflows at this time, but some require the `bun` tooling to properly build and test things.

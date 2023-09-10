@@ -27,6 +27,14 @@ skip_crate_env_info = true
 category = "Install"
 alias = "install"
 
+[tasks.id]
+category = "Install"
+alias = "install-dev"
+
+[tasks.ia]
+category = "Install"
+dependencies = ["install", "install-dev"]
+
 [tasks.install]
 description = "Install dependencies for slides and book tooling."
 category = "Install"
@@ -41,26 +49,21 @@ script = "cargo install --locked mdbook"
 description = "Install dependencies for slides tooling only."
 category = "Install"
 script = '''
-# https://github.com/nvm-sh/nvm#installing-and-updating // https://yarnpkg.com/getting-started/install
-echo "⬢ Install node via nvm..."
-if ! [ -d "${HOME}/.nvm/.git" ]; then
-    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash > /dev/null
+if ! $(echo "type bun" | sh > /dev/null ); then
+    echo "🥟 Installing https://bun.sh ..."
+    curl -fsSL https://bun.sh/install | bash
 fi
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" > /dev/null 2>&1
-nvm i > /dev/null
-echo "💽 Node installed."
+echo "💽 Bun installed."
 
-echo "🧶 Install slides tooling with yarn..."
-corepack enable
-yarn
+echo "🥟 Install slides tooling with Bun..."
+bun install
 echo "✅ Slides instalation complete!"
 '''
 
 [tasks.reinstall]
 description = "Wipeout build and dependancy artifacts, then install."
 category = "Install"
-script = 'rm -rf node_modules/ html-slides/ html-book/ && makers i'
+script = 'rm -rf node_modules/ html-slides/ html-book/ && makers ia'
 
 [tasks.install-dev]
 description = "Install dev tools."
@@ -98,7 +101,7 @@ find html-book/ -regex .*\.html | xargs sed -i 's#./../../../#../../#g' > /dev/n
 
 # serve the book with embedded slides
 # FIXME non-watching server becuase mdBook clobbers the rsync we did above 😭
-yarn serve-book
+makers serve-embedded
 '''
 
 [tasks.serve-book]
@@ -109,7 +112,12 @@ script = "mdbook serve -o"
 [tasks.serve-slides]
 description = "Serve slides only for local viewing, auto-updates for slides-source file changes"
 category = "Serve"
-script = "yarn s"
+script = "bun s"
+
+[tasks.serve-embedded]
+description = "Serve book with embedd slides for local viewing, NO updates for slides-source file changes"
+category = "Serve"
+script = "bun serve-book 2> /dev/null "
 
 # -----------------------------------------------------------------------------
 # Build, staging for and/or publishing for production
@@ -131,8 +139,7 @@ script = "mdbook build"
 [tasks.build-slides]
 description = "Build the static slides only, local developmet."
 category = "Build"
-script = "yarn build-slides-local > /dev/null"
-# script = "yarn build-slides-gh-pages > /dev/null"
+script = "bun build-slides-local > /dev/null"
 
 # -----------------------------------------------------------------------------
 # Dev tools for style, convention, and formatting
@@ -172,7 +179,6 @@ description = "Check included links for all markup (.md|.html) files."
 script = "mlc content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
 
 [tasks.links-for]
-# FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
 category = "Checks"
 description = "Check links for specific file(s). Example: `makers links-for ./content/contribute/**/*.md`"
 # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
@@ -183,7 +189,6 @@ category = "Format"
 alias = "fmt"
 
 [tasks.fmt]
-# FIXME want a native-to-rust way to invoke prettier, ideally without need for global install of https://prettier.io/docs/en/install.html
 category = "Format"
 description = "Format everything."
 script = "dprint fmt"
@@ -200,7 +205,7 @@ if ! $(echo "type mdbook" | sh > /dev/null ); then
     exit 127
 fi
 
-if ! $(yarn --version > /dev/null) || [ ! -d node_modules ]; then
+if ! $(bun --version > /dev/null) || [ ! -d node_modules ]; then
     echo -e "❌ You may need to install the slides tooling. Run:\n\nmarkers slides-install\n"
     exit 127
 fi
