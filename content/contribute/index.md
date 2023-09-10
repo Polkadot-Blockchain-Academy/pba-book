@@ -43,10 +43,10 @@ Serve the book offline with:
 mdbook serve --open
 ```
 
-### Slides and Tooling - `node`
+### Slides and Tooling - `bun`
 
-Use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to install and manage multiple node versions.
-With `nvm` installed, from the academy top level dir:
+Use [bun](https://bun.dev) to install and run the javascript and node tooling.
+With `bun` installed, from the academy top level dir:
 
 ```sh
 if ! $(echo "type bun" | sh > /dev/null ); then

@@ -10,7 +10,8 @@
     "help-rmd": "reveal-md --help",
     "serve-slides": "reveal-md ./ --watch --absolute-url http://localhost:1948",
     "serve-book": "printf '****************************** 👇 ctrl+click to open 👇 ******\\nNon-watching server started @    http://localhost:1949\\n               (Close with SIGINT [Ctrl-C])' & bun tools/scripts/devserver.ts ",
-    "build-slides-local": "rm -rf html-slides && reveal-md ./ --static html-slides"
+    "build-slides-local": "rm -rf html-slides && reveal-md ./ --static html-slides",
+    "build-slides-gh-pages": "rm -rf html-slides && reveal-md ./ --static html-slides --absolute-url https://polkadot-blockchain-academy.github.io/pba-book/"
   },
   "dependencies": {
     "reveal-md": "git+https://github.com/NukeManDan/reveal-md.git#patch-1"
