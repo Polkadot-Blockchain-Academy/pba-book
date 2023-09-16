@@ -29,6 +29,6 @@ The tasks should be self-explanatory, if they are not - please file an issue to 
 
 All materials found within this repository are licensed under Mozilla Public License Version 2.0 - See the [License](./LICENSE.md) for details.
 
-In addition to the license, we ask you read and respect the Academy's [Code of Conduct](./CODE-OF-CONDUCT.md) and help us forster a healthy and scholarly community of high academic integrity.
+In addition to the license, we ask you read and respect the Academy's [Code of Conduct](./CODE-OF-CONDUCT.md) and help us foster a healthy and scholarly community of high academic integrity.
 
 <h3 align="center"><a href="https://dot.li/pba-github">Learn more about and apply for the next Academy today!</a></h3>
