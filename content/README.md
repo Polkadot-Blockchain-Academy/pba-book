@@ -1,6 +1,6 @@
 # Course Materials Book
 
-This book is the home of the majority of materials used within the [Polkadot Blockchain Academy](https://dot.li/pba-github).
+This book is the home of the majority of materials used within the Core Developer Track of the [Polkadot Blockchain Academy](https://dot.li/pba-github).
 
 ## Read the Book
 
@@ -12,7 +12,7 @@ The latest version is hosted at: <a target="_blank" href="https://polkadot-block
 
 ### Build Offline
 
-The Academy is Rust _heavy_ and as such, you need to [install rust](https://www.rust-lang.org/tools/install) before you can continue.
+The Developer Track of the Academy is Rust _heavy_ and as such, you need to [install rust](https://www.rust-lang.org/tools/install) before you can continue.
 
 In order to `make` your life easy 😉, there is a set of tasks that use [`cargo make`](https://sagiegurari.github.io/cargo-make/#overview).
 
