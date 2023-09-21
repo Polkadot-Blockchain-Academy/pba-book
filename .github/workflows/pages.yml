@@ -30,7 +30,7 @@ jobs:
       - name: Install Bun (uses cache in action)
         uses: oven-sh/setup-bun@v1
         with:
-          bun-version: latest
+          bun-version: 1.0.0
       - name: Install js/ts dependancies with Bun
         run: bun install
 
@@ -49,7 +49,7 @@ jobs:
           rsync -av html-slides/content/ html-book/ --ignore-existing
           rsync -av html-slides/ --exclude 'content' html-book/ --ignore-existing
           find html-book/ -regex .*\.html | xargs sed -i 's#./../../../#../../#g'
-          chmod +r html-book
+          chmod +rw html-book
 
       # TODO: Without making a _branch_ that bloats the .git object,
       #       we should push out the static build files in html-book/ and html-slides/ to some archive,

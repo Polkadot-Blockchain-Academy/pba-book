@@ -15,8 +15,5 @@
   },
   "dependencies": {
     "reveal-md": "git+https://github.com/NukeManDan/reveal-md.git#patch-1"
-  },
-  "devDependencies": {
-    "http-server": "^14.1.1"
   }
 }
