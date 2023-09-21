@@ -49,6 +49,7 @@ jobs:
           rsync -av html-slides/content/ html-book/ --ignore-existing
           rsync -av html-slides/ --exclude 'content' html-book/ --ignore-existing
           find html-book/ -regex .*\.html | xargs sed -i 's#./../../../#../../#g'
+          chmod +r html-book
 
       # TODO: Without making a _branch_ that bloats the .git object,
       #       we should push out the static build files in html-book/ and html-slides/ to some archive,
