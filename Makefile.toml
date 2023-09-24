@@ -201,22 +201,22 @@ script = '''
 # Build deps are present?
 
 if ! $(echo "type mdbook" | sh > /dev/null ); then
-    echo -e "❌ You may need to install the book tooling. Run:\n\nmarkers install\n"
+    echo -e "❌ You may need to install the book tooling. Run:\n\nmakers install\n"
     exit 127
 fi
 
 if ! $(bun --version > /dev/null) || [ ! -d node_modules ]; then
-    echo -e "❌ You may need to install the slides tooling. Run:\n\nmarkers slides-install\n"
+    echo -e "❌ You may need to install the slides tooling. Run:\n\nmakers install-slides\n"
     exit 127
 fi
 
 if ! $(echo "type mlc" | sh > /dev/null ); then
-    echo -e "❌ You may need to install the dev tooling. Run:\n\nmarkers install-dev\n"
+    echo -e "❌ You may need to install the dev tooling. Run:\n\nmakers install-dev\n"
     exit 127
 fi
 
 if ! $(echo "type dprint" | sh > /dev/null ); then
-    echo -e "❌ You may need to install the dev tooling. Run:\n\nmarkers install-dev\n"
+    echo -e "❌ You may need to install the dev tooling. Run:\n\nmakers install-dev\n"
     exit 127
 fi
 
