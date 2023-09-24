@@ -221,7 +221,7 @@ Given the existence of a value bearing token, it can be used to provide security
 
 - Punishments are aggressive enough that rational actors would never act maliciously.
 
-<https://polkadot.network/features/staking/>
+<https://www.polkadot.network/features/staking/>
 
 </div>
 
@@ -276,7 +276,7 @@ Polkadot has an on-chain governance system called OpenGov which is used to:
 - Support Parachain Teams
 - etc...
 
-<https://polkadot.network/features/opengov/>
+<https://www.polkadot.network/features/opengov/>
 
 </div>
 
@@ -397,7 +397,7 @@ The main Polkadot Client is built using Rust in Substrate.
 
 However, other clients for Polkadot are under development:
 
-- Kagome (C++17): <https://github.com/soramitsu/kagome>
+- Kagome (C++17): <https://github.com/qdrvm/kagome>
 - Gossamer (Go): <https://github.com/ChainSafe/gossamer>
 
 Over time, this can help provide additional resilience to the network from software bugs.

@@ -635,16 +635,16 @@ fn main() {
 
 SCALE Codec has been implemented in other languages, including:
 
-- Python: [`polkascan/py-scale-codec`](https://github.com/polkascan/py-scale-codec)
-- Golang: [`itering/scale.go`](https://github.com/itering/scale.go)
-- C: [`MatthewDarnell/cScale`](https://github.com/MatthewDarnell/cScale)
-- C++: [`soramitsu/scale-codec-cpp`](https://github.com/soramitsu/scale-codec-cpp)
-- JavaScript: [`polkadot-js/api`](https://github.com/polkadot-js/api)
+- Python: [`polkascan/py-scale-codec`](https://github.com/polkascan/py-scale-codec/)
+- Golang: [`itering/scale.go`](https://github.com/itering/scale.go/)
+- C: [`MatthewDarnell/cScale`](https://github.com/MatthewDarnell/cScale/)
+- C++: [`soramitsu/scale-codec-cpp`](https://github.com/qdrvm/scale-codec-cpp/)
+- JavaScript: [`polkadot-js/api`](https://github.com/polkadot-js/api/)
 - TypeScript: [`scale-ts`](https://github.com/unstoppablejs/unstoppablejs/tree/main/packages/scale-ts#scale-ts)
-- AssemblyScript: [`LimeChain/as-scale-codec`](https://github.com/LimeChain/as-scale-codec)
-- Haskell: [`airalab/hs-web3`](https://github.com/airalab/hs-web3/tree/master/packages/scale)
-- Java: [`emeraldpay/polkaj`](https://github.com/emeraldpay/polkaj)
-- Ruby: [`wuminzhe/scale_rb`](https://github.com/wuminzhe/scale_rb)
+- AssemblyScript: [`LimeChain/as-scale-codec`](https://github.com/LimeChain/as-scale-codec/)
+- Haskell: [`airalab/hs-web3`](https://github.com/airalab/hs-web3/tree/master/packages/scale/)
+- Java: [`emeraldpay/polkaj`](https://github.com/emeraldpay/polkaj/)
+- Ruby: [`wuminzhe/scale_rb`](https://github.com/wuminzhe/scale_rb/)
 
 ---
 

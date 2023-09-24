@@ -1003,7 +1003,7 @@ Notes:
 
 - Great documentation about all things substrate/blockchain from smoldot: <https://docs.rs/smoldot/latest/smoldot/>
 
-- Read more about why we use Rust at Parity: <https://www.parity.io/blog/why-rust>
+- Read more about why we use Rust at Parity: <https://www.parity.io/blog/why-rust/>
 
 - An interesting question on JVM/Wasm: <https://stackoverflow.com/questions/58131892/why-the-jvm-cannot-be-used-in-place-of-webassembly>
 

@@ -246,7 +246,7 @@ Notes:
 
 Point 2 is not to imply that the polkadot validator set's security is partitioned among parachains,
 security comes from approval voters.
-<https://polkadot.network/blog/polkadot-v1-0-sharding-and-economic-security/>
+<https://www.polkadot.network/blog/polkadot-v1-0-sharding-and-economic-security/>
 
 ---v
 

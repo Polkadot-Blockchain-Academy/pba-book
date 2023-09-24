@@ -339,7 +339,7 @@ Polkadot has on-chain governance by stakeholder referendum, voting on subjects s
 
 Notes:
 
-<https://polkadot.network/features/opengov/>
+<https://www.polkadot.network/features/opengov/>
 
 ---
 

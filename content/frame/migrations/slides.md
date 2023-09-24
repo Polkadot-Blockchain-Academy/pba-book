@@ -454,7 +454,7 @@ pub type Executive = Executive<
 
 Notes:
 
-Short answer is, yes, but it is a LOT of work. See here: <https://github.com/paritytech/substrate/issues/10308>
+Short answer is, yes, but it is a LOT of work. See here: <https://github.com/paritytech/polkadot-sdk/issues/296>
 
 ---
 
@@ -584,8 +584,11 @@ Notes:
 
 #### Reference material:
 
-<https://docs.google.com/presentation/d/1hr3fiqOI0JlXw0ISs8uV9BXiDQ5mGOQLc3b_yWK6cxU/edit#slide=id.g43d9ae013f_0_82>
-<https://www.crowdcast.io/e/substrate-seminar/41>
+- 📺 [Substrate Seminar on Migrations](https://www.youtube.com/watch?v=MQgDV37JrIY>)
+
+Notes:
+
+FIXME: `docs.google.com/presentation/d/1hr3fiqOI0JlXw0ISs8uV9BXiDQ5mGOQLc3b_yWK6cxU/edit#slide=id.g43d9ae013f_0_82` was listed here as a reference but is not public!
 
 #### Exercise ideas:
 

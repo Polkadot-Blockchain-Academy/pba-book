@@ -187,7 +187,7 @@ Notice that this number that we get back is the little endian (SCALE) encoded va
 
 A brief introduction.
 
-Excellent tutorial at: <https://polkadot.js.org/docs>
+Excellent tutorial at: <https://polkadot.js.org/docs/>
 
 ---v
 

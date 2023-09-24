@@ -164,8 +164,8 @@ Notes:
 
 This is all in the agenda of the FRAME team at Parity for 2023.
 
-<https://github.com/paritytech/substrate/issues/13530>
-<https://github.com/paritytech/substrate/issues/13690>
+<https://github.com/paritytech/polkadot-sdk/issues/206>
+<https://github.com/paritytech/polkadot-sdk/issues/198>
 
 ---
 
@@ -294,7 +294,7 @@ Notes:
 
 Notes:
 
-<https://github.com/paritytech/substrate/issues/13334>
+<https://github.com/paritytech/polkadot-sdk/issues/25>
 
 ---
 
@@ -475,8 +475,8 @@ Notes:
 What other ideas you can think of?
 
 - a hook called once a pallet is first initialized.
-  <https://github.com/paritytech/substrate/issues/14098>
-- Local on Post/Pre dispatch: <https://github.com/paritytech/substrate/issues/12047>
+  <https://github.com/paritytech/polkadot-sdk/issues/109>
+- Local on Post/Pre dispatch: <https://github.com/paritytech/polkadot-sdk/issues/261>
 - Global on Post/Pre dispatch is in fact a signed extension. It has to live in the runtime, because you have to specify order.
 
 ---

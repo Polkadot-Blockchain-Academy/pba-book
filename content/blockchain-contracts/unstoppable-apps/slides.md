@@ -250,7 +250,7 @@ We use the word "proof" a lot...<br />it means many things in [different context
 Notes:
 
 The one so far not covered is Provable Correctness - where we can use maths to _prove_ that our logic cannot do unexpected behavior.
-An interesting example is [Cardano's design value proposition](https://docs.cardano.org/explore-cardano/cardano-design-rationale) using haskell and provably correct most parts of their platform.
+An interesting example is [Cardano's design value proposition](https://docs.cardano.org/explore-cardano/cardano-design-rationale/) using haskell and provably correct most parts of their platform.
 
 > We have a lesson and exercise on formal verification methods latter on - this is how we can approach Provable Correctness in the context of Rust and thus Substrate.
 
@@ -263,7 +263,7 @@ Nuke proposes that when considering factors outside the consensus system, there 
 
 An [oracle](https://en.wikipedia.org/wiki/Category:Computation_oracles) provides eternal data to a consensus system.<br />(i.e. a partial state of an external chain)
 
-The [oracle problem](https://blog.chain.link/what-is-the-blockchain-oracle-problem/) relates to the _trust_ in the oracle.
+The [oracle problem](https://chain.link/education-hub/oracle-problem) relates to the _trust_ in the oracle.
 
 Notes:
 
@@ -272,7 +272,6 @@ Notes:
   - Everything in a chain is self-referential.
     Applications in a consensus system may want to _try_ and reason about something outside itself.
 - Inclusive of bridges
-- <https://blog.chain.link/what-is-the-blockchain-oracle-problem/>
 
 ---v
 
@@ -500,7 +499,7 @@ Similar issues, but in a more bounded set.
 
 Notes:
 
-Source: [Buy Bitcoin Worldwide](https://www.buybitcoinworldwide.com/pages/mining/pools/img/pool-graph.png)
+Source: [Buy Bitcoin Worldwide](https://buybitcoinworldwide.com/pages/mining/pools/img/pool-graph.png)
 
 ---v
 

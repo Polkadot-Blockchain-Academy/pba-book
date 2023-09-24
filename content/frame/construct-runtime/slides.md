@@ -271,7 +271,7 @@ mod runtime {
 
 Notes:
 
-See: <https://github.com/paritytech/substrate/issues/13137>
+See: <https://github.com/paritytech/polkadot-sdk/issues/232>
 
 ---
 

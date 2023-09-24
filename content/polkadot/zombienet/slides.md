@@ -686,10 +686,10 @@ Notes:
 
 Zombienet:
 
-- [repo](https://github.com/paritytech/zombienet)
-- [docs](https://paritytech.github.io/zombienet)
-- [v2 Roadmap](https://github.com/orgs/paritytech/projects/55)
-- [sub0 slides](https://docs.google.com/presentation/d/1wPjbrqLg9MCfygvBYV5gDra39cSr5TXg)
+- [repo](https://github.com/paritytech/zombienet/)
+- [docs](https://paritytech.github.io/zombienet/)
+- [v2 Roadmap](https://github.com/orgs/paritytech/projects/55/)
+- [sub0 slides](https://docs.google.com/presentation/d/1wPjbrqLg9MCfygvBYV5gDra39cSr5TXg/edit)
 - [sub0 presentation](https://www.youtube.com/watch?v=QKTZZCpdGH4)
 - [Presentation examples](https://github.com/pepoviola/zombienet-presentation-examples)
 - [Setting up a local testnet](https://hackmd.io/kSFS2ButRESeJ7hu_iKKoA)

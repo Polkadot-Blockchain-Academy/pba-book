@@ -428,4 +428,4 @@ Question: What do you think about Inflation?
 - [Agile Coretime RFC](https://github.com/polkadot-fellows/RFCs/pull/1)
 - [Discussion on Changing Inflation Model](https://forum.polkadot.network/t/adjusting-the-current-inflation-model-to-sustain-treasury-inflow/3301)
 - [Talk about Polkadot 2.0](https://www.youtube.com/watch?v=GIB1WeVuJD0)
-- [Nominating and Validator Selection On Polkadot](https://polkadot.network/blog/nominating-and-validator-selection-on-polkadot/)
+- [Nominating and Validator Selection On Polkadot](https://www.polkadot.network/blog/nominating-and-validator-selection-on-polkadot/)

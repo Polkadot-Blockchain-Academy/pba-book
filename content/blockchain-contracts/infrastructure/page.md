@@ -1,6 +1,6 @@
 # The Quest for Infrastructure
 
-<!-- markdown-link-check-enable -->
+<!-- markdown-link-check-disable -->
 <center>
 <iframe style="width: 90%; aspect-ratio: 1400/900; margin: 0 0; border: none;" src="slides.html"></iframe>
 <br />

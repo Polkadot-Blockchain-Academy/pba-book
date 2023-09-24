@@ -274,7 +274,7 @@ Notes:
 Notes:
 
 - <https://github.com/OffchainLabs/bold/blob/main/docs/research-specs/BOLDChallengeProtocol.pdf>
-- <https://offchain.medium.com/solutions-to-delay-attacks-on-rollups-434f9d05a07a>
+- <https://medium.com/offchainlabs/solutions-to-delay-attacks-on-rollups-434f9d05a07a>
 
 ---
 

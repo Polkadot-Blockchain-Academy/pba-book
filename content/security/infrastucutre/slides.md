@@ -251,7 +251,7 @@ One picture that says everything (on Polkadot - the whole ecosystem):
 
 <img rounded style="width: 1200px" src="./img/concentration.png" />
 
-[Web Source: Polkawatch](https://polkadot.polkawatch.app/network)
+[Web Source: Polkawatch](https://polkadot.polkawatch.app/network/)
 
 ---
 

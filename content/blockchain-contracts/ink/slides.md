@@ -1238,7 +1238,7 @@ Notes:
 
 ## Pause
 
-Optional challenge: [github.com/Polkadot-Blockchain-Academy/adder](https://github.com/Polkadot-Blockchain-Academy/adder)
+Optional challenge: [github.com/Polkadot-Blockchain-Academy/adder](https://github.com/Polkadot-Blockchain-Academy/ink-adder)
 
 Notes:
 

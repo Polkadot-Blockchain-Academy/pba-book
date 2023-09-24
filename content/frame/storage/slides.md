@@ -444,7 +444,7 @@ Notes:
 
 For more details see:
 
-- <https://github.com/paritytech/substrate/issues/10806>
+- <https://github.com/paritytech/substrate/pull/10413>
 - <https://github.com/paritytech/substrate/pull/10809>
 
 In module 6, we can take a closer look at how this functionality is exposed in FRAME.

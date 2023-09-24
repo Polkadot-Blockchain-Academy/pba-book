@@ -944,7 +944,7 @@ Notes:
 - Is it always good?
   People might consume more energy because they feel better about their contract, companies can exploit this effect "default to accept all cookies".
 - <https://www.bbc.com/news/science-environment-56361970>
-- [Paper](https://www.nature.com/articles/s41562-021-01070-3.epdf?sharing_token=4HCcx-Aouj5gOGkD37i319RgN0jAjWel9jnR3ZoTv0MsXRMaQ2nk_xsjwawpA_drZ4p8HWONsx-i-1PN3ZRN0hxsKmhDtSpN5xn5qXXWcPCTjRQxPpY5yovJQehlrDn56a7Ff3-f5ESorQLlggQObIrxTOC9Y4nefV5OGXZRww9iZyuuvAOwV0kRLk12-rKINRixIpE45bF2ZtQQdPcWuA%3D%3D&tracking_referrer=www.bbc.com)
+- [Paper](https://www.nature.com/articles/s41562-021-01070-3)
 
 ---
 

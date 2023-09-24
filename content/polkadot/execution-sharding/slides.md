@@ -33,7 +33,7 @@ This enables Polkadot to scale.
 
 Notes:
 
-[Polkadot v1.0: Sharding and Economic Security](https://polkadot.network/blog/polkadot-v1-0-sharding-and-economic-security/) is a comprehensive writeup of the content here in much more detail.
+[Polkadot v1.0: Sharding and Economic Security](https://www.polkadot.network/blog/polkadot-v1-0-sharding-and-economic-security/) is a comprehensive writeup of the content here in much more detail.
 Please read it after the lesson if you would like to understand how Polkadot works from top to bottom.
 
 ---
@@ -603,7 +603,7 @@ Orchestra ensures that the message to the other subsystem only arrives after it 
 
 ## Implementers' Guide
 
-[The Implementers' Guide](https://paritytech.github.io/polkadot/book) contains information about all subsystems, architectural motivations, and protocols used within Polkadot's runtime and node implementation.
+[The Implementers' Guide](https://paritytech.github.io/polkadot/book/) contains information about all subsystems, architectural motivations, and protocols used within Polkadot's runtime and node implementation.
 
 ---
 

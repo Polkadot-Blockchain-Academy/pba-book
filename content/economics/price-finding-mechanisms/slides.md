@@ -868,9 +868,9 @@ Polkadot & Kusama Auctions<br />Data & Background information:
 
 <pba-flex center>
 
-- [Kusama Auctions 1-5](https://polkadot.network/blog/making-history-an-overview-of-the-first-five-parachain-slot-auctions-on-kusama/)
-- [Kusama Auctions 6-10](https://polkadot.network/blog/kusama-batch-2-auctions-report/)
-- [Polkadot Auctions 1-5](https://polkadot.network/blog/making-history-again-polkadot-auctions-1-5/)
+- [Kusama Auctions 1-5](https://www.polkadot.network/blog/making-history-an-overview-of-the-first-five-parachain-slot-auctions-on-kusama/)
+- [Kusama Auctions 6-10](https://www.polkadot.network/blog/kusama-batch-2-auctions-report/)
+- [Polkadot Auctions 1-5](https://www.polkadot.network/blog/making-history-again-polkadot-auctions-1-5/)
 
 </pba-flex>
 

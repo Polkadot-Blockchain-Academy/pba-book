@@ -45,7 +45,7 @@ mdbook serve --open
 
 ### Slides and Tooling - `bun`
 
-Use [bun](https://bun.dev) to install and run the javascript and node tooling.
+Use [bun](https://bun.sh/) to install and run the javascript and node tooling.
 With `bun` installed, from the academy top level dir:
 
 ```sh
@@ -225,7 +225,7 @@ They typically are identical to:
 ```md
 # SOME TITLE HERE
 
-<!-- markdown-link-check-enable -->
+<!-- markdown-link-check-disable -->
 
 <center>
 <iframe style="width: 90%; aspect-ratio: 1400/900; margin: 0 0; border: none;" src="slides.html"></iframe>
@@ -239,7 +239,7 @@ They typically are identical to:
 { {#include slides.md} } <!-- 👈 REMOVE the spaces in curly brackets ( {{include things}} ) when in use -- mdBook gives a build error without mangling the syntax here in the example 😜 -->
 <a href="#top" style="position: fixed; right: 11%; bottom: 3%;"><i style="font-size: 1.3em;" class="fa fa-arrow-up"></i></a>
 
-<!-- markdown-link-check-enable -->
+<!-- markdown-link-check-disable -->
 ```
 
 - `find . -name 'page.md' -exec bash -c 'cat ../tmp  >> "{}"' \;` to apply the page stuff to embed slides

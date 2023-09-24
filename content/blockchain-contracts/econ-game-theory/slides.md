@@ -306,7 +306,7 @@ It's the BLOCKSPACE.
 Miners secure and produce blockspace and sell it in an auction to various users.
 Blockspace as a product is actually a pretty new way of thinking about blockchains so I highly suggest checking out the article linked in the notes.
 
-- <https://polkadot.network/blog/blockspace-blockspace-ecosystems-how-polkadot-is-unlocking-the-full-potential-of-web3/>
+- <https://www.polkadot.network/blog/blockspace-blockspace-ecosystems-how-polkadot-is-unlocking-the-full-potential-of-web3/>
 
 ---v
 

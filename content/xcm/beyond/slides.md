@@ -518,5 +518,5 @@ During this presentation we went through a couple real world XCM use cases and s
 
 <!-- FIXME new repo expected soon for XCM outside SDK -->
 
-- [XCM Documentation](https://paritytech.github.io/xcm-docs) - The official documentation for XCM: Cross-Consensus Messaging.
+- [XCM Documentation](https://paritytech.github.io/xcm-docs/) - The official documentation for XCM: Cross-Consensus Messaging.
 - [InvArch's Pallet Rings](https://github.com/InvArch/InvArch-Frames/tree/main/pallet-rings) - Reference implementation of an XCM abstraction pallet for XCMultisigs.
