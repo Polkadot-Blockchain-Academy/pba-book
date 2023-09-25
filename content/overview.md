@@ -3,7 +3,7 @@
 This book contains a set of course materials covering both the conceptual underpinnings and hands-on experience in developing blockchain and web3 technologies.
 Students will be introduced to core concepts in economic, cryptographic, and computer science fields that lay the foundation for approaching web3 development, as well as hands-on experience developing web3 systems in Rust, primarily utilizing the ecosystem of tooling provided by Polkadot and Substrate.
 
-> 🙋 This book is designed specifically for use in an a **_in-person course_**.
+> 🙋 This book is designed specifically for use in an **_in-person course_**.
 > This provides _far more value_ from these materials than an online only, self-guided experience could provide.
 >
 > ✅ The Academy encourages everyone to [apply to the program](https://dot.li/pba-github)
@@ -49,7 +49,7 @@ The course is segmented into **modules**, with the granular **lessons** intended
 | [⛓️ Blockchains and Smart Contracts](./blockchain-contracts/) | Blockchain and applications built on them covered in depth conceptually and hands-on operation and construction.     |
 | [🧬 Substrate](./substrate/)                                  | The blockchain framework canonical to Polkadot and Parachains covered in depth, at a lower level.                    |
 | [🧱 FRAME](./frame/)                                          | The primary Substrate runtime framework used for parachain development.                                              |
-| [🟣 Polkadot](./polkadot/)                                    | The Polkadot blockchain covered in depth, focus on high-level design and practically how to utilize it's blockspace. |
+| [🟣 Polkadot](./polkadot/)                                    | The Polkadot blockchain covered in depth, focus on high-level design and practically how to utilize its blockspace. |
 | [💱 XCM](./xcm/)                                              | The cross consensus messaging format covered from first principals to use in protocols.                              |
 
 <!-- prettier-ignore-end -->
