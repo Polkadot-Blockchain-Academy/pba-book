@@ -103,8 +103,8 @@ Notes:
 
 Bitcoin block size has never been and is an ongoing debate.
 
-I am not against L2s per se, but it is truth that they mostly exist because the underlying protocol
-is too hard/slow to upgrade itself. ETH Gas prices is also shows that the underlying protocol cannot
+I am not against L2s per se, but it is true that they mostly exist because the underlying protocol
+is too hard/slow to upgrade itself. ETH Gas prices also show that the underlying protocol cannot
 meet the demands of today.
 
 <https://en.wikipedia.org/wiki/Bitcoin_scalability_problem>
@@ -558,7 +558,7 @@ Wasm's instruction set is deterministic, so all good.
 
 Notes:
 
-howe can we guarantee that neither enter an infinite loop, or try to access the filesystem?
+how can we guarantee that neither enter an infinite loop, or try to access the filesystem?
 
 ---v
 
@@ -616,7 +616,7 @@ Notes:
 - Can be slower than native, depending on the executor/execution method.
 - Limited access to the host host env, all needs to be done through syscalls.
 
-Less state-transition diversification, because the runtime is the same for all clients. If there a
+Less state-transition diversification, because the runtime is the same for all clients. If there is a
 bug in it, everyone is affected.
 
 ---
@@ -656,7 +656,7 @@ the next episode to air actually will be.
 
 Notes:
 
-state is sometimes called "storage" asd well.
+state is sometimes called "storage" as well.
 
 ---
 
@@ -681,7 +681,7 @@ state is sometimes called "storage" asd well.
 
 ## The Client: Database 🤔
 
-- The database, from the client's PoV, is a _untyped_, key-value storage.
+- The database, from the client's PoV, is an _untyped_, key-value storage.
 - The runtime knows which key/value means what.
 
 ---
@@ -965,7 +965,7 @@ hardcoded, but the protocol itself is flexible.
 
 Notes:
 
-We are aware that the module is highly skewed in terms of lecture time, but is is intentional and we
+We are aware that the module is highly skewed in terms of lecture time, but it is intentional and we
 want to see how it works. This allows you to kickstart with your assignment earlier.
 
 ---v
