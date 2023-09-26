@@ -12,7 +12,7 @@ The latest version is hosted at: <a target="_blank" href="https://polkadot-block
 
 ### Build Offline
 
-The Developer Track of the Academy is Rust _heavy_ and as such, you need to [install rust](https://www.rust-lang.org/tools/install) before you can continue.
+The Core Developer Track of the Academy is Rust _heavy_ and as such, you need to [install rust](https://www.rust-lang.org/tools/install) before you can continue.
 
 In order to `make` your life easy 😉, there is a set of tasks that use [`cargo make`](https://sagiegurari.github.io/cargo-make/#overview).
 
