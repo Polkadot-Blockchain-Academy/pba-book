@@ -413,7 +413,7 @@ When proof is being sent, there is no IO.
 First glance, the radix-8 seems better: you will typically have less DB access to reach a key.
 For example, with binary, with 3 IO, we can reach only 8 items, but with radix-8 512.
 
-So why should not chose a very wide tree?
+So why should not choose a very wide tree?
 Because the wider you make the tree, the bigger each node gets, because it has to store more hashes.
 At some point, this start to screw with both the proof size and the cost of reading/writing/encoding/decoding all these nodes.
 
@@ -524,7 +524,8 @@ One can assume that the green node is like any other node in the trie.
 
 Notes:
 
-in other words, one should one care too much about updating a "trie" and all of its hashing details while the block is still being executed? all of that can be delayed.
+In other words, one should care too much about updating a "trie" and all of its hashing details while the block is still being executed?
+All of that can be delayed.
 
 ---
 
@@ -597,7 +598,7 @@ Notes:
 
 ### Overlay
 
-- The overlay is also able to spawn child-overlays, know as "_storage layer_".
+- The overlay is also able to spawn child-overlays, known as "_storage layer_".
 - Useful for having a _transactional_ block of code.
 
 ```rust
@@ -664,7 +665,7 @@ with_storage_layer(|| {
 Notes:
 
 NO!
-overlay works on the level on key-values, ot knows nothing of trie nodes, and to compute the root we have to go to the trie layer and pull a whole lot of data back from the disk and build all the nodes etc. etc.
+The overlay works on the level on key-values, it knows nothing of trie nodes, and to compute the root we have to go to the trie layer and pull a whole lot of data back from the disk and build all the nodes etc.
 
 ---v
 
@@ -858,4 +859,4 @@ Notes:
 Double check the narrative and example of the `BIG_STUFF` node.
 An example/exercise of some sort
 would be great, where students call a bunch of `sp_io` functions, visualize the trie, and invoke
-proof recorder, and see which pars of the trie is exactly part of the proof.
+proof recorder, and see which parts of the trie is exactly part of the proof.

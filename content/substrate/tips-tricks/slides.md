@@ -386,7 +386,7 @@ log::debug!(target: "bar", "hello world! ({})", 10u32);
 
 ### Logging And Prints In The Runtime.
 
-- But `log` crate doesn't doo much in itself! it needs two additional steps to work:
+- But `log` crate doesn't do much in itself! it needs two additional steps to work:
 
 1. `// $ RUST_LOG=foo=debug,bar=trace cargo run`
 2. `sp_tracing::try_init_simple()`
@@ -441,7 +441,7 @@ If the interface is built with `disable-logging`, it omits all log messages.
 > false
 ```
 
-- Google "weird float behavior" fro more entertainment around this.
+- Search "weird float behavior" for more entertainment around this.
 
 ---v
 

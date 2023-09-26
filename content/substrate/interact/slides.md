@@ -227,7 +227,7 @@ const provider = new WsProvider("wss://rpc.polkadot.io");
 const api = await ApiPromise.create({ provider });
 api.stats;
 api.isConnected;
- // where doe this come from?
+ // where does this come from?
 api.runtimeVersion;
 // where does this come from?
 api.registry.chainDecimals;

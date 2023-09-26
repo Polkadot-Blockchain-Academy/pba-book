@@ -10,7 +10,7 @@ duration: 60 minutes
 
 ## Substrate; Show Me The Code 👨‍💻
 
-Previous lecture was all abut high level information; now we want to bridge that to real code.
+Previous lecture was all about high level information; now we want to bridge that to real code.
 
 ---
 
@@ -131,7 +131,7 @@ Notes:
 all commands: <https://paritytech.github.io/substrate/master/sc_cli/commands/index.html>
 all args to a typical run command <https://paritytech.github.io/substrate/master/sc_cli/commands/struct.RunCmd.html>
 
-Bute then each node can decide which subset of these it chooses, and how it implements it.
+But then each node can decide which subset of these it chooses, and how it implements it.
 
 <https://paritytech.github.io/substrate/master/node_template/cli/enum.Subcommand.html>
 <https://paritytech.github.io/substrate/master/node_cli/enum.Subcommand.html>
@@ -180,7 +180,7 @@ trait Config {
 
 Notes:
 
-Especially in FRAME, often times you have to parameterize your pallets with a pattern like above.
+Especially in FRAME, oftentimes you have to parameterize your pallets with a pattern like above.
 Simply search the trait in the rust-docs, and find the implementors!
 
 ---
