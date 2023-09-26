@@ -441,7 +441,7 @@ If the interface is built with `disable-logging`, it omits all log messages.
 > false
 ```
 
-- Google "weird float behavior" for more entertainment around this.
+- Search "weird float behavior" for more entertainment around this.
 
 ---v
 

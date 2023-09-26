@@ -524,7 +524,8 @@ One can assume that the green node is like any other node in the trie.
 
 Notes:
 
-in other words, one should care too much about updating a "trie" and all of its hashing details while the block is still being executed? all of that can be delayed.
+In other words, one should care too much about updating a "trie" and all of its hashing details while the block is still being executed?
+All of that can be delayed.
 
 ---
 
@@ -664,7 +665,7 @@ with_storage_layer(|| {
 Notes:
 
 NO!
-overlay works on the level on key-values, ot knows nothing of trie nodes, and to compute the root we have to go to the trie layer and pull a whole lot of data back from the disk and build all the nodes etc.
+The overlay works on the level on key-values, it knows nothing of trie nodes, and to compute the root we have to go to the trie layer and pull a whole lot of data back from the disk and build all the nodes etc.
 
 ---v
 
