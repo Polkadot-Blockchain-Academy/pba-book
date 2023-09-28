@@ -971,7 +971,6 @@ Democratic Mediums is a directory of patterns<br /> for decision, deliberation, 
 
 - <https://medlabboulder.gitlab.io/democraticmediums/>
 - <https://metagov.org/> -- weekly seminar
-- <https://daocollective.xyz/>
 - <https://www.smartcontractresearch.org/>
 
 </pba-flex>
