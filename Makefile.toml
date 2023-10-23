@@ -3,10 +3,6 @@
 # See all insluded task with:
 # makers --list-all-steps
 
-[tasks.default]
-alias = "serve"
-dependencies = ["check-install"]
-
 [config]
 # Catch errors and report to try and help user
 on_error_task = "catch-error"
@@ -20,6 +16,10 @@ skip_rust_env_info = true
 # Skips loading the current crate related environment variables
 skip_crate_env_info = true
 
+[tasks.default]
+alias = "serve"
+dependencies = ["check-install"]
+
 # -----------------------------------------------------------------------------
 # Installation
 
@@ -32,6 +32,11 @@ category = "Install"
 alias = "install-dev"
 
 [tasks.ia]
+category = "Install"
+alias = "install-all"
+
+[tasks.install-all]
+description = "Install all dependencies for slides and book tooling, and dev tools."
 category = "Install"
 dependencies = ["install", "install-dev"]
 
@@ -53,7 +58,7 @@ if ! $(echo "type bun" | sh > /dev/null ); then
     echo "🥟 Installing https://bun.sh ..."
     curl -fsSL https://bun.sh/install | bash
 fi
-echo "💽 Bun installed."
+echo "💽 Bun installed. NOTE: you may need to update your shell to include this, see above output."
 
 echo "🥟 Install slides tooling with Bun..."
 bun install
@@ -67,6 +72,7 @@ script = 'rm -rf node_modules/ html-slides/ html-book/ && makers ia'
 
 [tasks.install-dev]
 description = "Install dev tools."
+category = "Install"
 dependencies = ["install-linkcheck", "install-formatter"]
 
 [tasks.install-linkcheck]
@@ -84,6 +90,15 @@ script = "cargo install --locked dprint"
 
 [tasks.s]
 alias = "serve"
+category = "Serve"
+
+[tasks.sb]
+alias = "serve-book"
+category = "Serve"
+
+[tasks.ss]
+alias = "serve-slides"
+category = "Serve"
 
 [tasks.serve]
 # FIXME - want some way to have a watching server for slides AND the book. Likely some hooks in mdBook and/or reveal-md could be used.
