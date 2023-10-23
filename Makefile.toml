@@ -185,9 +185,13 @@ script = "./tools/scripts/orphan-image-scan.sh content/"
 
 [tasks.l]
 category = "Checks"
-alias = "all-links"
+alias = "links"
 
-[tasks.all-links]
+[tasks.lf]
+category = "Checks"
+alias = "links-for"
+
+[tasks.links]
 category = "Checks"
 description = "Check included links for all markup (.md|.html) files."
 # FIXME .mlc.toml config not working... https://github.com/becheran/mlc/issues/78
