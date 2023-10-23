@@ -359,7 +359,7 @@ impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
 }
 ```
 
-Stores the version as u16 in [`twox(pallet_name) ++ twox(:__STORAGE_VERSION__:)`](https://github.com/paritytech-stg/polkadot-sdk/blob/c7c5fc7/substrate/frame/support/src/traits/metadata.rs#L163).
+Stores the version as u16 in [`twox(pallet_name) ++ twox(:__STORAGE_VERSION__:)`](https://github.com/paritytech/polkadot-sdk/blob/c7c5fc7/substrate/frame/support/src/traits/metadata.rs#L163).
 
 ---
 

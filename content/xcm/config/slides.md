@@ -183,7 +183,7 @@ pub trait DescribeLocation {
 
 Notes:
 
-[Impl for Tuple](https://github.com/paritytech-stg/polkadot-sdk/blob/342d720/polkadot/xcm/xcm-builder/src/location_conversion.rs#L34)
+[Impl for Tuple](https://github.com/paritytech/polkadot-sdk/blob/342d720/polkadot/xcm/xcm-builder/src/location_conversion.rs#L34)
 
 ---v
 

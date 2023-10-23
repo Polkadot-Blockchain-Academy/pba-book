@@ -231,7 +231,7 @@ fn pre_dispatch() -> Result<Self::Pre, TransactionValidityError>;
 ## Post Dispatch
 
 - The dispatch result, plus generic type (`type Pre`) returned from `pre_dispatch` is passed to `post_dispatch`.
-- See [`impl Applyable for CheckedExtrinsic`](https://github.com/paritytech-stg/polkadot-sdk/blob/bc53b9a/substrate/primitives/runtime/src/generic/checked_extrinsic.rs#L69) for more info.
+- See [`impl Applyable for CheckedExtrinsic`](https://github.com/paritytech/polkadot-sdk/blob/bc53b9a/substrate/primitives/runtime/src/generic/checked_extrinsic.rs#L69) for more info.
 
 ---
 

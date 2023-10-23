@@ -8,7 +8,7 @@ duration: 1.5 hours
 
 > _NOTE_ this is using the archived repo of the Polkadot v1.0.0 release.
 
-<!-- FIXME update to https://github.com/paritytech-stg/polkadot-sdk/ next time -->
+<!-- FIXME update to https://github.com/paritytech/polkadot-sdk/ next time -->
 
 ---
 

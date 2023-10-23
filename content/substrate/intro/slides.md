@@ -12,7 +12,7 @@ duration: 60 minutes
 
 While I speak, please clone `polkadot-sdk`, and run `cargo build && cargo build --release`.
 
-> <https://github.com/paritytech-stg/polkadot-sdk/>
+> <https://github.com/paritytech/polkadot-sdk/>
 
 ---
 
