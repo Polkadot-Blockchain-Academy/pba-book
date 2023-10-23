@@ -165,8 +165,6 @@ Notes:
 
 It is a joke of course, but how the provider engineer can see your web3 server.
 
-[Web Source: some hosting provider](https://www.datacenter-insider.de/wohlfuehlklima-fuer-rechenzentren-a-352014/)
-
 ---
 
 ### How do ISPs detect blockchain?
