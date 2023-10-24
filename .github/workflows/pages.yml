@@ -31,7 +31,7 @@ jobs:
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: 1.0.0
-      - name: Install js/ts dependancies with Bun
+      - name: Install js/ts dependencies with Bun
         run: bun install
 
       - name: Install mdBook
@@ -48,7 +48,7 @@ jobs:
         run: |
           rsync -av html-slides/content/ html-book/ --ignore-existing
           rsync -av html-slides/ --exclude 'content' html-book/ --ignore-existing
-          find html-book/ -regex .*\.html | xargs sed -i 's#./../../../#../../#g'
+          find html-book/ -regex .*\.html | xargs sed -i'' -e 's#./../../../#../../#g' > /dev/null
 
       # TODO: Without making a _branch_ that bloats the .git object,
       #       we should push out the static build files in html-book/ and html-slides/ to some archive,

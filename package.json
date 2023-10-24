@@ -14,6 +14,6 @@
     "build-slides-gh-pages": "rm -rf html-slides && reveal-md ./ --static html-slides --absolute-url https://polkadot-blockchain-academy.github.io/pba-book/"
   },
   "dependencies": {
-    "reveal-md": "git+https://github.com/NukeManDan/reveal-md.git#patch-1"
+    "reveal-md": "^5.5.2"
   }
 }

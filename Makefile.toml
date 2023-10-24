@@ -68,7 +68,12 @@ echo "✅ Slides instalation complete!"
 [tasks.reinstall]
 description = "Wipeout build and dependancy artifacts, then install."
 category = "Install"
-script = 'rm -rf node_modules/ html-slides/ html-book/ && makers ia'
+script = 'rm -rf node_modules/ html-slides/ html-book/ && makers i'
+
+[tasks.reinstall-dev]
+description = "Wipeout build and dependancy artifacts, then install (including dev tooling)."
+category = "Install"
+dependencies = ["reinstall", "install-dev"]
 
 [tasks.install-dev]
 description = "Install dev tools."
