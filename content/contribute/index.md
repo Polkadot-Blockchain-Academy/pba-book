@@ -326,7 +326,9 @@ makers links-for <relative-link-to/the-top-working-dir/file.md>
 makers links-for <./content/some-dir/inner-dir>
 ```
 
-The checker configuration is set ine `Makefile.rs` task to see settings (the `.mlc.toml` config.github/workflows/check.ymlrimarily used to _globally_ ignore specific common URLs that throw errors, in error 😛.
+The checker configuration is set ine `Makefile.rs` task to see settings.
+The `.mlc.toml` config file is used to _globally_ ignore specific common URLs that throw errors, in error 😛...
+at least it should, but is [not working at this time](https://github.com/becheran/mlc/issues/76).
 _Notice that ignored links must be check from time to time manually!_
 _Thus don't use this unless explicitly needed, rather use a know good URL if at all possible, perhaps from the <https://archive.org/web/>_
 The same tool is also run by our CI on all files for all pushes to all branches.
