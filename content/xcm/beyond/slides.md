@@ -514,7 +514,7 @@ During this presentation we went through a couple real world XCM use cases and s
 
 ## References
 
-- [XCM source code](https://github.com/paritytech-stg/polkadot-sdk/tree/master/polkadot/xcm) - The source code for the main XCM implementation in the paritytech/polkadot repository.
+- [XCM source code](https://github.com/paritytech/polkadot-sdk/tree/master/polkadot/xcm) - The source code for the main XCM implementation in the paritytech/polkadot repository.
 
 <!-- FIXME new repo expected soon for XCM outside SDK -->
 

@@ -1,7 +1,7 @@
 # Subkey Signature and HDKD (Hierarchical Deterministic Key Derivation) Demo
 
 Here are subkey examples for reference on use.
-Compliments the formal documentation [found here](https://github.com/paritytech-stg/polkadot-sdk/tree/master/substrate/bin/utils/subkey#subkey).
+Compliments the formal documentation [found here](https://github.com/paritytech/polkadot-sdk/tree/master/substrate/bin/utils/subkey#subkey).
 
 ## Key Generation
 

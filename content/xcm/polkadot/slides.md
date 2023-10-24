@@ -263,7 +263,7 @@ Notes:
 ### 🏋️ `Weigher` in Rococo
 
 - Uses `WeightInfoBounds` with benchmarked values with `pallet-xcm-benchmarks`
-- Full list of weights can be seen [here](https://github.com/paritytech-stg/polkadot-sdk/tree/cc9f812/polkadot/runtime/rococo/src/weights/xcm)
+- Full list of weights can be seen [here](https://github.com/paritytech/polkadot-sdk/tree/cc9f812/polkadot/runtime/rococo/src/weights/xcm)
 
 ```rust
 impl xcm_executor::Config for XcmConfig {

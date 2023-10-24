@@ -365,4 +365,4 @@ pub trait Hooks<BlockNumber> {
 }
 ```
 
-Source: [`/frame/support/src/traits/hooks.rs`](https://github.com/paritytech-stg/polkadot-sdk/blob/a13382f/substrate/frame/support/src/traits/hooks.rs)
+Source: [`/frame/support/src/traits/hooks.rs`](https://github.com/paritytech/polkadot-sdk/blob/a13382f/substrate/frame/support/src/traits/hooks.rs)

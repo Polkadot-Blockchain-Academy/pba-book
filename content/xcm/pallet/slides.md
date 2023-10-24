@@ -471,7 +471,7 @@ Notes:
 
 Let's jump into the code and have a look at `limited_teleport_assets` extrinsic.
 
-[source 🔍](https://github.com/paritytech-stg/polkadot-sdk/blob/342d720/polkadot/xcm/pallet-xcm/src/lib.rs#L1099)
+[source 🔍](https://github.com/paritytech/polkadot-sdk/blob/342d720/polkadot/xcm/pallet-xcm/src/lib.rs#L1099)
 
 ---
 

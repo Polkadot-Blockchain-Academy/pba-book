@@ -50,7 +50,7 @@ We are expecting them to say transfers, but there are so many other things you c
 - Cross-consensus asset transfers
 - Execute platform-specific actions such as governance voting
 - Enables single use-case chains
-  - [Collectives](https://github.com/paritytech-stg/polkadot-sdk/tree/f8115b9/cumulus/parachains/runtimes/collectives)
+  - [Collectives](https://github.com/paritytech/polkadot-sdk/tree/72c4535/cumulus/parachains/runtimes/collectives)
   - Identity chains
 
 Notes:

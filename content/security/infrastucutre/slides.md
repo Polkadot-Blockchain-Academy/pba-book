@@ -161,8 +161,6 @@ Joke: how does a provider see your node:
 
 <img rounded style="width: 600px" src="./img/rack.png" />
 
-[Web Source: some hosting provider](https://www.datacenter-insider.de/wohlfuehlklima-fuer-rechenzentren-a-352014/)
-
 Notes:
 
 It is a joke of course, but how the provider engineer can see your web3 server.
