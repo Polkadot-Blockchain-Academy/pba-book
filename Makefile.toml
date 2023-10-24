@@ -97,7 +97,7 @@ rsync -av html-slides/ --exclude "content" html-book/ --ignore-existing  > /dev/
 
 # The reveal tooling uses a one-too-deep path for the book
 # "./../../../" in ALL CASES within the html flies should be "../../" so we fix those:
-find html-book/ -regex .*\.html | xargs sed -i 's#./../../../#../../#g' > /dev/null
+find html-book/ -regex .*\.html | xargs sed -i.bak 's#./../../../#../../#g' > /dev/null
 
 # serve the book with embedded slides
 # FIXME non-watching server becuase mdBook clobbers the rsync we did above 😭
