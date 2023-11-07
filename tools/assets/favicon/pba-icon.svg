@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.04 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6007a;
+      }
+
+      .cls-2 {
+        fill: #321d47;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="m9.36,9.72v.02c-.02.58-.85,1.03-1.87.99s-1.82-.53-1.81-1.11v-1.52s3.67,0,3.67,0v1.62s0,0,0,0Z"/>
+    <path class="cls-1" d="m7.28,9.54l-3.18-1.91c-.15-.09-.15-.3,0-.39l3.18-1.91c.15-.09.34-.09.49,0l3.18,1.91c.15.09.15.3,0,.39l-3.18,1.91c-.15.09-.34.09-.49,0Z"/>
+    <path class="cls-2" d="m10.42,8.98c-.13,0-.24-.11-.24-.24v-.66l-.71-.4c-.11-.06-.15-.21-.09-.32.06-.11.21-.15.32-.09l.84.47c.07.04.12.12.12.21v.8c0,.13-.11.24-.24.24h0Z"/>
+    <circle class="cls-1" cx="10.42" cy="9.64" r=".34"/>
+  </g>
+  <g>
+    <ellipse class="cls-1" cx="7.52" cy="1.68" rx="2.88" ry="1.68"/>
+    <ellipse class="cls-1" cx="7.52" cy="14.32" rx="2.88" ry="1.68"/>
+    <ellipse class="cls-1" cx="2.05" cy="4.84" rx="2.88" ry="1.68" transform="translate(-3.17 4.19) rotate(-60)"/>
+    <ellipse class="cls-1" cx="13" cy="11.16" rx="2.88" ry="1.68" transform="translate(-3.17 16.84) rotate(-60)"/>
+    <ellipse class="cls-1" cx="2.05" cy="11.16" rx="1.68" ry="2.88" transform="translate(-5.31 2.52) rotate(-30)"/>
+    <ellipse class="cls-1" cx="13" cy="4.84" rx="1.68" ry="2.88" transform="translate(-.68 7.15) rotate(-30)"/>
+  </g>
+</svg>
