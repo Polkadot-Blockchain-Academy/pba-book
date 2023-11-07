@@ -479,12 +479,6 @@ The transaction pool filters out which of these are indeed valuable and nodes sh
 
 <img style="width: 1400px;" src="./img/dev-4-3-4-author-pool.svg" />
 
-<!-- 
-<div class="fragment fade-out" style="width: 220px; height: 120px; position: fixed; left: 450px; bottom: 180px; background: #140526"></div>
-<div class="fragment fade-out" style="width: 220px; height: 90px; position: fixed; left: 450px; bottom: 180px; background: #140526"></div>
-<div class="fragment fade-out" style="width: 220px; height: 60px; position: fixed; left: 450px; bottom: 180px; background: #140526"></div>
-<div class="fragment fade-out" style="width: 220px; height: 30px; position: fixed; left: 450px; bottom: 180px; background: #140526"></div> -->
-
 Notes:
 
 The point being, eventually the pool builds a list of "ready transactions".
@@ -536,15 +530,6 @@ The point being, eventually the pool builds a list of "ready transactions".
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-7-author-builder.svg" />
-
-<!-- <div id="block-3" class="fragment fade-out" style="
-    width: 300px; height: 30px; position: fixed; left: 320px; bottom: 400px;
-    background: #BF9001"></div> -->
-
-<!-- This is the box that will unhide the state root. -->
-<!-- <div class="fragment fade-out" style="
-  width: 240px; height: 30px; position: fixed; left: 320px; top: 350px;
-  background: #BF9001;"></div> -->
 
 ---v
 
