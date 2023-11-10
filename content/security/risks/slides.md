@@ -1104,15 +1104,16 @@ fn validate_transaction_common(
 
 ### Mitigation
 
-- Ensure that the data your pallet is accepting from untrustworthy sources can’t be re-used by using nonces.
-- Ensure all entry points to your pallet verify or implement the nonces.
+- Ensure that the data your system is receiving from untrustworthy sources:
+  - Can’t be re-used by implementing a nonces mechanism.
+  - Is intended for your system by checking any identification type like ID, hashes, etc.
 
 ---v
 
 ### Takeaways
 
 - Replay issues can lead to serious damage.
-- Even if the chain ensure a runtime transaction can’t be replayed, external actors could replay a transaction by passing same inputs if the transaction doesn’t implement correctly nonces.
+- Even if the chain ensure a runtime transaction can’t be replayed, external actors could replay a similar output by passing similar inputs if the they are not correctly verified.
 
 ---
 
@@ -1352,8 +1353,8 @@ pub fn dispatch_whitelisted_call(
 ### Mitigation
 
 - Regularly review logs to identify any suspicious activity, and determine if there is sufficient verbosity.
-
 - Implement logs in the critical parts of your pallets.
+- Implement dashboards to detect anomaly patterns in logs and metrics. A great example is Grafana that is used by some node maintainers to be aware of recent issues.
 
 ---v
 
@@ -1455,7 +1456,7 @@ fn decode_concatenated_extrinsics(
 ### Takeaways
 
 - Ensure error handling.
-- Optimize your batch processing to handle errors instead of abort execution.
+- Optimize your batch processing to handle errors instead of losing execution time.
 
 ---
 
