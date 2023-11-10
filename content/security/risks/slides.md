@@ -31,16 +31,16 @@ Each security risk is composed of: **Challenge, Risk, Case Studies, Mitigation a
 
 ## Security Risks
 
-1. [Insecure Randomness](#insecure-randomness)
-2. [Storage Exhaustion](#storage-exhaustion)
-3. [Insufficient Benchmarking](#insufficient-benchmarking)
-4. [Outdated Crates](#outdated-crates)
-5. [XCM Misconfiguration](#xcm-misconfiguration)
-6. [Unsafe Math](#unsafe-math)
-7. [Replay Issues](#replay-issues)
-8. [Unbounded Decoding](#unbounded-decoding)
-9. [Verbosity Issues](#verbosity-issues)
-10. [Inconsistent Error Handling](#inconsistent-error-handling)
+1. Insecure Randomness
+2. Storage Exhaustion
+3. Insufficient Benchmarking
+4. Outdated Crates
+5. XCM Misconfiguration
+6. Unsafe Math
+7. Replay Issues
+8. Unbounded Decoding
+9. Verbosity Issues
+10. Inconsistent Error Handling
 
 </pba-col>
 </pba-cols>
