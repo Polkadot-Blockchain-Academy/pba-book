@@ -20,24 +20,20 @@ Security is about your **residual risks**, not what you have prevented.
 
 ---
 
-## Index
+## Overview
 
 <pba-flex center>
 
-1. ### Securing SDLC
-   - The Big Picture of AppSec
-   - Components of AppSec
-   - Shifting Left
-2. ### Known Attack Surfaces & Vectors
-   - Known Rust Vulnerabilities
-   - Known Substrate Vulnerabilities
-   - Known ink! Vulnerabilities
+1. [Securing SDLC](#securing-sdlc)
+1. [Appsec Design Principles](#appsec-design-principles)
+1. [Components of AppSec](#components-of-appsec)
+1. [Known Attack Surfaces and Vectors](#known-attack-surfaces-and-vectors)
 
 </pba-flex>
 
 ---
 
-# 1. Securing SDLC
+# Securing SDLC
 
 ---
 
@@ -49,7 +45,7 @@ We will visit this picture multiple times.
 
 ---
 
-## Security Enforced Through Controls.
+## Security Enforced Through Controls
 
 Controls must be:
 
@@ -98,11 +94,13 @@ The likelihood of a threat exploiting a vulnerability and thereby causing damage
 
 ---
 
-# A brief look at design principles
+# Appsec Design Principles
+
+_In Brief_
 
 ---
 
-## Good enough security
+## Good Enough Security
 
 Don’t spend $10.000 on a safe to protect a $20 bill
 
@@ -206,7 +204,7 @@ If SPoF fails, means the entire system fails
 
 ---
 
-# Securing a software is very simple(!)
+## Securing Software is Very Simple(!?)
 
 ---
 
@@ -223,7 +221,7 @@ If SPoF fails, means the entire system fails
 
 ---
 
-# Security Controls are easy(!)
+## Security Controls are Easy(!?)
 
 ---
 
@@ -242,7 +240,7 @@ If SPoF fails, means the entire system fails
 
 ---
 
-Deterrent
+### Deterrent
 
 <img rounded style="height: 600px" src="./img/deterrent.png" />
 
@@ -296,7 +294,7 @@ Deterrent
 
 ---
 
-## Components of AppSec
+# Components of AppSec
 
 ---
 
@@ -346,7 +344,7 @@ There will be blood (**risk**), you need to manage the blood. But how?
 
 ---
 
-# Vulnerability Disclosure Program vs Bug Bounty
+## Vulnerability Disclosure Program vs Bug Bounty
 
 ---
 
@@ -356,7 +354,7 @@ There will be blood (**risk**), you need to manage the blood. But how?
 
 ---
 
-## Known Attack Surfaces & Vectors
+# Known Attack Surfaces and Vectors
 
 ---
 
