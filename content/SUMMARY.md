@@ -144,6 +144,7 @@
   - [User Centric](./security/user-centric/page.md)
   - [Infrastructure](./security/infrastucutre/page.md)
   - [Application](./security/appsec/page.md)
+  - [Common Security Risks](./security/risks/page.md)
 
 - [𝞨 Formal Methods for Rust](./formal-methods/intro/page.md)
 
