@@ -453,12 +453,31 @@ The transaction pool filters out which of these are indeed valuable and nodes sh
 
 ### Example #3: Block Authoring
 
-<img style="width: 1400px;" src="./img/dev-4-3-author-pool.svg" />
+<img style="width: 1400px;" src="./img/dev-4-3-0-author-pool.svg" />
 
-<div class="fragment fade-out" style="width: 220px; height: 120px; position: fixed; left: 450px; bottom: 180px; background: #140526"></div>
-<div class="fragment fade-out" style="width: 220px; height: 90px; position: fixed; left: 450px; bottom: 180px; background: #140526"></div>
-<div class="fragment fade-out" style="width: 220px; height: 60px; position: fixed; left: 450px; bottom: 180px; background: #140526"></div>
-<div class="fragment fade-out" style="width: 220px; height: 30px; position: fixed; left: 450px; bottom: 180px; background: #140526"></div>
+---v
+
+### Example #3: Block Authoring
+
+<img style="width: 1400px;" src="./img/dev-4-3-1-author-pool.svg" />
+
+---v
+
+### Example #3: Block Authoring
+
+<img style="width: 1400px;" src="./img/dev-4-3-2-author-pool.svg" />
+
+---v
+
+### Example #3: Block Authoring
+
+<img style="width: 1400px;" src="./img/dev-4-3-3-author-pool.svg" />
+
+---v
+
+### Example #3: Block Authoring
+
+<img style="width: 1400px;" src="./img/dev-4-3-4-author-pool.svg" />
 
 Notes:
 
@@ -468,36 +487,49 @@ The point being, eventually the pool builds a list of "ready transactions".
 
 ### Example #3: Block Authoring
 
-<img style="width: 1400px;" src="./img/dev-4-3-author-builder.svg" />
+<img style="width: 1400px;" src="./img/dev-4-3-0-author-builder.svg" />
 
-<div id="pool-1" class="fragment" style="
-    width: 300px; height: 30px; position: fixed; left: 450px; top: 610px;
-    background: #140526"></div>
+---v
 
-<div id="block-1" class="fragment fade-out" style="
-    width: 300px; height: 90px; position: fixed; left: 320px; bottom: 400px;
-    background: #BF9001"></div>
+### Example #3: Block Authoring
 
-<div id="pool-2" class="fragment" style="
-    width: 300px; height: 30px; position: fixed; left: 450px; top: 640px;
-    background: #140526"></div>
+<img style="width: 1400px;" src="./img/dev-4-3-1-author-builder.svg" />
 
-<div id="block-2" class="fragment fade-out" style="
-    width: 300px; height: 60px; position: fixed; left: 320px; bottom: 400px;
-    background: #BF9001"></div>
+---v
 
-<div id="pool-3" class="fragment" style="
-    width: 300px; height: 30px; position: fixed; left: 450px; top: 670px;
-    background: #140526"></div>
+### Example #3: Block Authoring
 
-<div id="block-3" class="fragment fade-out" style="
-    width: 300px; height: 30px; position: fixed; left: 320px; bottom: 400px;
-    background: #BF9001"></div>
+<img style="width: 1400px;" src="./img/dev-4-3-2-author-builder.svg" />
 
-<!-- This is the box that will unhide the state root. -->
-<div class="fragment fade-out" style="
-  width: 240px; height: 30px; position: fixed; left: 320px; top: 350px;
-  background: #BF9001;"></div>
+---v
+
+### Example #3: Block Authoring
+
+<img style="width: 1400px;" src="./img/dev-4-3-3-author-builder.svg" />
+
+---v
+
+### Example #3: Block Authoring
+
+<img style="width: 1400px;" src="./img/dev-4-3-4-author-builder.svg" />
+
+---v
+
+### Example #3: Block Authoring
+
+<img style="width: 1400px;" src="./img/dev-4-3-5-author-builder.svg" />
+
+---v
+
+### Example #3: Block Authoring
+
+<img style="width: 1400px;" src="./img/dev-4-3-6-author-builder.svg" />
+
+---v
+
+### Example #3: Block Authoring
+
+<img style="width: 1400px;" src="./img/dev-4-3-7-author-builder.svg" />
 
 ---v
 
