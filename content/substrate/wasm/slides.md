@@ -18,7 +18,8 @@ duration: 60 minutes
 
 <img rounded style="width: 1200px;" src="./img/dev-4-3-substrate-wasm.png" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### It All Began With a Runtime..
 
@@ -31,7 +32,8 @@ Notes:
 
 > It is only a matter of time until every blockchain is doing the same thing.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## It All Began With a Runtime..
 
@@ -49,13 +51,15 @@ Recall that the boundary for this division is the **state transition**
 
 <img style="width: 1200px;" src="./img/dev-4-3-full-comm.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate: a short recap
 
 - **Host Functions**: Means of a runtime communicating with its host environment, i.e. the Substrate client.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate: a short recap
 
@@ -65,13 +69,15 @@ Notes:
 
 Building a Wasm module's activity was building something akin to runtime-apis
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate: a short recap
 
 - Database is on the client side, storing an opaque key-value state per block.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate: a short recap
 
@@ -99,7 +105,8 @@ During each example, we deduce what host functions and/or runtime APIs are neede
 
 - The runtime wants to add 10 units to Kian's balance.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #1: State
 
@@ -123,7 +130,8 @@ let new_balance_encoded: Vec<u8> = current_kian_balance.encode();
 host_functions::set(key, new_balance_encoded);
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #1: State
 
@@ -139,7 +147,8 @@ Notes:
 ofc the IO to these functions is all opaque bytes, because the client does not know the state
 layout.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #1: State
 
@@ -154,7 +163,8 @@ Notes:
 This would imply that the client would have to know, indefinitely, the types needed for account id
 and balance. Also, it would have to know the final key for someone's balance.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #1: State
 
@@ -171,7 +181,8 @@ Notes:
 
 See <https://paritytech.github.io/substrate/master/sp_storage/well_known_keys/index.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #1: State
 
@@ -181,7 +192,8 @@ See <https://paritytech.github.io/substrate/master/sp_storage/well_known_keys/in
 
 ## Example #2: Block Import
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import
 
@@ -195,7 +207,8 @@ Notes:
 Short answer is: anything that is part of the STF definition must be opaque to the client, and is
 upgradeable, but we will learn this later.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import
 
@@ -217,11 +230,13 @@ Notably, `trait Block` and `trait Header` in this crate define what it means to 
 
 Also, substrate provides one set of implementation for all of these types in <https://paritytech.github.io/substrate/master/sp_runtime/generic/index.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1200px;" src="./img/dev-4-3-block-opaque.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import
 
@@ -255,7 +270,8 @@ Notes:
 
 this slide is intentionally using the keyword transaction instead of extrinsic.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import
 
@@ -271,7 +287,8 @@ let runtime = wasm::Executor::new(code);
 runtime.execute_block(opaque_block);
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import
 
@@ -306,7 +323,8 @@ Notes:
 - This probably calls into `host_functions::{get/set}` internally.
   What do we return
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import
 
@@ -336,7 +354,8 @@ Notes:
 - Question: why is `state` defined as `mut`?
 - within these snippets, more or less, everything inside `state.execute` is executed within Wasm.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import
 
@@ -362,13 +381,15 @@ Notes:
   argument.
   This specifies "at which block to load the runtime and state from".
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import
 
 - I can add one more small touch to this to make it more accurate.. 🤌
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import
 
@@ -398,7 +419,8 @@ state.execute(|| {
 database::store_state(block.header.hash, state)
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #2: Block Import: Recap
 
@@ -411,7 +433,8 @@ database::store_state(block.header.hash, state)
 - Previous slides used the term "transactions" in a simplified way.
   Let's correct it.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Detour: Extrinsic
 
@@ -424,7 +447,8 @@ database::store_state(block.header.hash, state)
     T --> UT(Unsigned)
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Detour: Extrinsic
 
@@ -449,31 +473,36 @@ The transaction pool filters out which of these are indeed valuable and nodes sh
 
 ## Example #3: Block Authoring
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-0-author-pool.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-1-author-pool.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-2-author-pool.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-3-author-pool.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
@@ -483,55 +512,64 @@ Notes:
 
 The point being, eventually the pool builds a list of "ready transactions".
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-0-author-builder.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-1-author-builder.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-2-author-builder.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-3-author-builder.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-4-author-builder.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-5-author-builder.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-6-author-builder.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 <img style="width: 1400px;" src="./img/dev-4-3-7-author-builder.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
@@ -566,14 +604,16 @@ Notes:
 - What is the type of `next_ext`? `Vec<u8>`
 - Do we actually loop forever until the tx-pool is empty? probably not!
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 - Substrate based runtimes are allowed to perform some operations at the beginning and end of each block.
 - ✋🏻 And recall that a smart contract could not do this.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
@@ -609,13 +649,15 @@ runtime.finalize_block();
 block.header.state_root = state.root();
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
 - What about Inherents?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
@@ -662,7 +704,8 @@ come first, we also keep our example aligned.
 Should you wish to see the real version of this, check this crate:
 https://paritytech.github.io/substrate/master/sc_basic_authorship/index.html
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example #3: Block Authoring
 
@@ -688,7 +731,8 @@ in fact, the client also builds its inherent list with the help of the runtime.
 
 - <!-- .element: class="fragment" --> How on earth is an application (i.e. a wallet) is supposed to survive?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### BUT WAIT A MINUTE 😱
 
@@ -712,7 +756,8 @@ In order the address the mentioned issue, metadata must be a runtime API.
   It is `Vec<u8>`.
 - FRAME based runtime expose a certain format, which is extensively adopted in the ecosystem.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### BUT WAIT A MINUTE 😱
 
@@ -754,7 +799,8 @@ also, as noted in an earlier slide, once you make it work for one chain, it work
 - The underlying reason why the client is "**kept in the dark**" is so that it wouldn't need to care
   about the runtime upgrading from one block to the other.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Oblivious Client 🙈🙉
 
@@ -773,7 +819,8 @@ In essence, all components of the STF must be opaque to the client.
 Metadata is there to assist where needed.
 This is why forkless upgrades are possible in substrate.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Oblivious Client 🙈🙉
 
@@ -808,7 +855,8 @@ time to ask any missing questions.
 
 ## Activity: Finding APIs and Host Functions
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Finding APIs and Host Functions
 
@@ -817,7 +865,8 @@ time to ask any missing questions.
 - Look for `#[runtime_interface]` macro, and try and find usage of the host functions!
 - You have 15 minutes!
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Finding APIs and Host Functions
 
@@ -833,7 +882,8 @@ a question that arise here is that why don't have multiple runtimes, where one i
 one only for authoring, and such? the reality is that while these have different names, the
 underlying code is like 95% the same.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Finding APIs and Host Functions
 
@@ -867,7 +917,8 @@ Notes:
 to be frank, these are still a simplification.
 Inherent for example are not really represented here.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Finding APIs and Host Functions
 
@@ -971,7 +1022,8 @@ there are talks of exploring Risk-v ISA instead of wasm nowadays.
 
 https://github.com/paritytech/substrate/issues/13640
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Considerations: Speed
 
@@ -1017,7 +1069,8 @@ wasm can be bigger than the actual hashing cost.
 
 <img style="width: 1200px;" src="./img/dev-4-3-native.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consideration: Native Runtime
 
@@ -1038,7 +1091,8 @@ pub const VERSION: RuntimeVersion = RuntimeVersion {
 };
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consideration: Native Runtime
 
@@ -1058,13 +1112,15 @@ fn execute_native_else_wasm() {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consideration: Native Runtime
 
 - The days of native runtime are numbered 💀.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consideration: Native Runtime
 
@@ -1076,7 +1132,8 @@ Notes:
 If everyone is executing wasm, technically nothing, but that's super confusing, don't do it.
 But, if some are executing native, then you will have a consensus error.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Speaking of Versions..
 
@@ -1084,25 +1141,29 @@ But, if some are executing native, then you will have a consensus error.
   - Client Version
   - Runtime Version
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Speaking of Versions..
 
 <img style="width: 1200px;" src="./img/dev-4-1-substrate-meta-version.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Speaking of Versions..
 
 <img style="width: 1200px;" src="./img/dev-4-3-telemetry.png" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Speaking of Versions..
 
 <img style="width: 1200px;" src="./img/dev-4-3-PJS.png" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Speaking of Versions..
 
@@ -1116,7 +1177,8 @@ But, if some are executing native, then you will have a consensus error.
 - What if any of the runtime calls, like `execute_block` or `apply_extrinsic` panics 😱?
 - To answer this, let's take a step back toward validator economics.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Considerations: Panic
 
@@ -1124,7 +1186,8 @@ But, if some are executing native, then you will have a consensus error.
 - While building a block, sometimes it is unavoidable (when?). <!-- .element: class="fragment" -->
 - While importing a block, nodes will not tolerate this. <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Considerations: Panic
 
@@ -1150,7 +1213,8 @@ In other words, a DOS vector.
 workshop idea: make a panicing runtime, and DoS it out.
 workshop idea for FRAME: find all instances where the runtime actually correctly panics (wrong timestamp, disabled validator)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Considerations: Panic
 
@@ -1159,14 +1223,16 @@ workshop idea for FRAME: find all instances where the runtime actually correctly
 - Panic on "automatic" part of your blockchain like "initialize_block"? <!-- .element: class="fragment" -->
 - 😱 Stuck forever <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Considerations: Panic
 
 - This is why, crucially, transaction pool checks always include, despite being costly, at least
   some sort of nonce and payment checks to make sure you can pay the transaction.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Considerations: Panic
 
@@ -1213,7 +1279,8 @@ See the documentation of `ApplyExtrinsicResult` in Substrate for more info about
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consideration: Breaking a Host Function
 
@@ -1243,7 +1310,8 @@ fn root(&mut self, version: StateVersion) -> Vec<u8> { .. }
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Host Functions..
 
@@ -1259,7 +1327,8 @@ fn root(&mut self, version: StateVersion) -> Vec<u8> { .. }
 
 ## Workshop: Inspecting Wasm Code
 
----v
+<!-- prettier-ignore -->
+----
 
 - `wasm2wat polkadot_runtime.wasm > dump | rg import`
 
@@ -1319,7 +1388,8 @@ fn root(&mut self, version: StateVersion) -> Vec<u8> { .. }
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 - `wasm2wat polkadot_runtime.wasm > dump | rg export`
 
@@ -1394,7 +1464,8 @@ fn root(&mut self, version: StateVersion) -> Vec<u8> { .. }
 (export "__heap_base" (global 2))
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Workshop: Inspecting Wasm Code
 
@@ -1466,7 +1537,8 @@ SomeExternalities.execute_with(|| {
 
 Content that is not covered, but is relevant.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consideration: Runtime API Versioning
 
@@ -1483,7 +1555,8 @@ Recall from another slide:
 
 > - A lot of other runtime APIs _could_ be optional depending on the context.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consideration: Runtime API Versioning
 
@@ -1491,7 +1564,8 @@ Recall from another slide:
   - For example, input/output types change.
     Rust code cannot deal with that!
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consideration: Runtime API Versioning
 
@@ -1515,7 +1589,8 @@ let new_return_type = if api.version < 4 {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consideration: Runtime API Versioning
 

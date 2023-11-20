@@ -26,7 +26,8 @@ Notes:
 
 <https://paritytech.github.io/substrate/master/frame_support/traits/trait.Hooks.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: All In One
 
@@ -73,7 +74,8 @@ Has its own lecture, more over there.
 - Useful for any kind of **automatic** operation.
 - The weight you return is interpreted as `DispatchClass::Mandatory`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: `On_Initialize`
 
@@ -88,7 +90,8 @@ fn on_initialize() -> Weight {
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: `On_Initialize`
 
@@ -122,7 +125,8 @@ fn on_finalize() -> Weight {} // ❌
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: `on_finalize`
 
@@ -151,7 +155,8 @@ See: <https://github.com/paritytech/substrate/pull/14279> and related PRs
 - Small semantical difference: executes one pallet's hook, per block, randomly, rather than all
   pallets'.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## The Future: Moving Away From Mandatory Hooks
 
@@ -222,7 +227,8 @@ Inherents are only first, which was being discussed: <https://github.com/polkado
   - &shy;<!-- .element: class="fragment" --> Is this invoked every time you run `cargo run`?
 - `#[pallet::genesis_build]`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: `genesis_build`
 
@@ -257,7 +263,8 @@ impl<T: Config> GenesisBuild<T> for GenesisConfig<T> {
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: `genesis_build`
 
@@ -285,7 +292,8 @@ Notes:
 
 <https://paritytech.github.io/substrate/master/node_template_runtime/struct.RuntimeGenesisConfig.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: `genesis_build`
 
@@ -320,7 +328,8 @@ founders to be careful with this!
 
 <https://paritytech.github.io/substrate/master/pallet_examples/index.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: `offchain_worker`
 
@@ -342,7 +351,8 @@ founders to be careful with this!
     - native-else-wasm:
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: `offchain_worker`
 
@@ -356,7 +366,8 @@ Notes:
 
 <https://paritytech.github.io/substrate/master/sp_runtime/offchain/storage_lock/index.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Hooks: `offchain_worker`
 

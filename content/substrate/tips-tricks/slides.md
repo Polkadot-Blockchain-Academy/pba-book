@@ -25,7 +25,8 @@ Notes:
 what is a type? A struct is a type. An unum is a type. all primitives are type. A lot of things are
 types.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `<Type as Trait>::AssociatedType`
 
@@ -53,7 +54,8 @@ Notes:
 turbo fish
 fully qualified syntax.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Speaking of Traits..
 
@@ -128,7 +130,8 @@ fn main() {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Speaking of Traits..
 
@@ -142,7 +145,8 @@ trait Block<Extrinsic> {
 fn process_block<B: Block<E1, Header = H1>>(b: B)
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Speaking of Traits..
 
@@ -161,7 +165,8 @@ fn process_block<B: Block<E1, Header = H1>>(b: B)
 
 - a `no_std` crate is one that relies on `core` rather than `std`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Cargo Features
 
@@ -183,7 +188,8 @@ Notes:
 imagine that you have a crate that has some additional features that are not always needed. You put
 that behind a feature flag called `additional-features`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Cargo Features: Substrate Wasm Crates
 
@@ -211,7 +217,8 @@ dependencies "std".
 Then, in `std = ["dep/std"]` you are saying "if my std is enabled, enable my dependencies std as
 well".
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Cargo Features
 
@@ -226,7 +233,8 @@ But in substrate, it kinda means like that:
 std => native
 no_std => wasm
 
----v
+<!-- prettier-ignore -->
+----
 
 ### The `std` Paradigm
 
@@ -236,7 +244,8 @@ no_std => wasm
 #![cfg_attr(not(feature = "std"), no_std)]
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### The `std` Paradigm: Adding dependencies
 
@@ -256,7 +265,8 @@ error: duplicate lang item in crate sp_io (which frame_support depends on): oom.
  the lang item is first defined in crate std (which serde depends on)
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### The `std` Paradigm
 
@@ -291,7 +301,8 @@ interesting to look at `if_std` macro in `sp_std`.
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Logging And Prints In The Runtime.
 
@@ -302,7 +313,8 @@ interesting to look at `if_std` macro in `sp_std`.
 
 - This contains string literals form errors, logs, metadata, etc.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Logging And Prints In The Runtime.
 
@@ -320,7 +332,8 @@ struct LONG_AND_BEAUTIFUL_NAME {
 
 will add a lot of string literals to your wasm blob.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Logging And Prints In The Runtime.
 
@@ -330,7 +343,8 @@ Notes:
 
 <https://paritytech.github.io/substrate/master/sp_debug_derive/index.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Logging And Prints In The Runtime.
 
@@ -356,7 +370,8 @@ impl ::core::fmt::Debug for WithDebug {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Logging And Prints In The Runtime.
 
@@ -371,7 +386,8 @@ sp_std::if_std! {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Logging And Prints In The Runtime.
 
@@ -382,7 +398,8 @@ log::info!(target: "foo", "hello world!");
 log::debug!(target: "bar", "hello world! ({})", 10u32);
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Logging And Prints In The Runtime.
 
@@ -395,7 +412,8 @@ Notes:
 
 <https://paritytech.github.io/substrate/master/sp_tracing/index.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Logging And Prints In The Runtime.
 
@@ -424,7 +442,8 @@ If the interface is built with `disable-logging`, it omits all log messages.
 
 - If my balance is `10.000000000000001` DOT on one validator and `10.000000000000000` DOT on another validator, game over for your consensus 😮‍💨.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### PerThing.
 
@@ -443,7 +462,8 @@ If the interface is built with `disable-logging`, it omits all log messages.
 
 - Search "weird float behavior" for more entertainment around this.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### PerThing.
 
@@ -463,7 +483,8 @@ impl Mul<u32> for Percent {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### PerThing.
 
@@ -480,7 +501,8 @@ let p = Perbill::from_rational(1, 4);
 
 - Some precision concerns exist, but that's a story for another day.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Fixed Point Numbers
 
@@ -495,7 +517,8 @@ What if we need more?
 350 ~ 3.5
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Fixed Point Numbers
 
@@ -508,7 +531,8 @@ let z = x * y;
 > 25
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Larger Types
 
@@ -523,7 +547,8 @@ pub struct BigUint {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Arithmetic Types
 
@@ -555,7 +580,8 @@ Things like **addition**, **multiplication**, **division** could all easily fail
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Fallibility: Math Operations
 
@@ -583,7 +609,8 @@ relevant.
 <https://doc.rust-lang.org/std/primitive.u32.html#method.checked_add>
 <https://doc.rust-lang.org/std/primitive.u32.html#method.saturating_add>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Fallibility: Conversion
 
@@ -598,7 +625,8 @@ Notes:
 
 conversion of primitive number types is also a common point of error. Avoid `as`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Fallibility: Conversion
 
@@ -632,7 +660,8 @@ Typically you don't implement `Into` and `TryInto`, because of blanket impls. Se
 
 For any T and U, `impl From<T> for U` implies `impl Into<U> for T`
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Fallibility: Conversion
 
@@ -654,7 +683,8 @@ T is u32 or larger.
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Fallibility: Conversion
 
@@ -711,7 +741,8 @@ Notes:
 
 implementing defaults for `()` is a very FRAME-idiomatic way of doing things.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `trait Get`
 
@@ -753,7 +784,8 @@ pub struct BoundedVec<T, S: Get<u32>>(
 
 - &shy;<!-- .element: class="fragment" --> `PhantomData`?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `bounded`
 
@@ -768,7 +800,8 @@ pub struct BoundedVec<T>(
 );
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `bounded`
 
@@ -801,7 +834,8 @@ Notes:
 
 this one's much simpler, but good excuse to teach them blanket implementations.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example of `Get` and `Convert`
 
@@ -885,7 +919,8 @@ fn main() {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Implementing Traits For Tuples
 
@@ -898,7 +933,8 @@ fn main() {
 <(Module1, Module2, Module3) as OnInitialize>::on_initialize();
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Implementing Traits For Tuples
 
@@ -924,7 +960,8 @@ impl_for_tuples!(A, B, C, D, E);
 impl_for_tuples!(A, B, C, D, E, F);
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Implementing Traits For Tuples
 
@@ -951,7 +988,8 @@ Notes:
 
 - As you know, you should (almost) never panic in your runtime code.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Defensive Programming
 
@@ -965,7 +1003,8 @@ Notes:
   - `.insert`, `.remove`
   - division by zero.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Defensive Programming
 
@@ -980,7 +1019,8 @@ let pos = announcements
 announcements.remove(pos);
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Defensive Programming: QED
 
@@ -997,7 +1037,8 @@ let value = maybe_value.expect("value checked to be 'Some'; qed");
 
 - Q.E.D. or QED is an initialism of the Latin phrase "quod erat demonstrandum", meaning "**which was to be demonstrated**".
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Defensive Programming
 
@@ -1020,7 +1061,8 @@ pub fn try_insert(&mut self, index: usize, element: T) -> Result<(), ()> {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Defensive Programming
 
@@ -1044,7 +1086,8 @@ pub fn try_insert(&mut self, index: usize, element: T) -> Result<(), ()> {
 fn multiply_by_2(x: u32) -> u32 { .. }
 ````
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Defensive Programming
 
@@ -1058,7 +1101,8 @@ fn multiply_by_2(x: u32) -> u32 { .. }
 fn multiply_by_2(x: u32) -> u32 { .. }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Defensive Programming
 
@@ -1082,7 +1126,8 @@ Notes:
 
 But, for example, you are absolutely sure that `Error::DefensiveError` will never happen, can we enforce it better?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Defensive Programming
 
@@ -1097,7 +1142,8 @@ let x = y
   })?;
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Defensive Programming
 

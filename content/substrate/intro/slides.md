@@ -29,7 +29,8 @@ While I speak, please clone `polkadot-sdk`, and run `cargo build && cargo build 
 
 Substrate is a **Rust framework** for **building blockchains**.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Why Substrate?
 
@@ -39,7 +40,8 @@ Notes:
 
 Highlight the multi-chain part.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Why Substrate?
 
@@ -50,7 +52,8 @@ Notes:
 Polkadot is the biggest bet in this ecosystem against chain maximalism, and Substrate plays a big
 role in this scenario.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Why Substrate?
 
@@ -81,7 +84,8 @@ The **pre-substrate** way of thinking:
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Core Philosophies of Substrate 💭
 
@@ -109,7 +113,8 @@ ETH Gas prices also show that the underlying protocol cannot meet the demands of
 <https://en.wikipedia.org/wiki/Bitcoin_scalability_problem>
 <https://ycharts.com/indicators/ethereum_average_gas_price>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Core Philosophies of Substrate 💭
 
@@ -127,7 +132,8 @@ The **Substrate** way of thinking:
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Core Philosophies of Substrate 💭
 
@@ -157,7 +163,8 @@ Memory safety is a fundamental issue in most major system-level programming lang
 
 Some such mistakes are impossible to make in Rust.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🦀 Rust
 
@@ -213,7 +220,8 @@ fn main() {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🦀 Rust
 
@@ -223,7 +231,8 @@ Notes:
 
 <https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/3215760/nsa-releases-guidance-on-how-to-protect-against-software-memory-safety-issues/#:~:text=Microsoft%20and%20Google%20have%20each,70%20percent%20of%20their%20vulnerabilities.>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🦀 Rust
 
@@ -253,7 +262,8 @@ Notes:
 this is where a module, generic design is useful. You can change components easily based on the
 needs of the future.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🤩 Generic, Modular and Extensible Design
 
@@ -284,7 +294,8 @@ FRAME takes this even multiple steps further, but that's for later.
 These are all examples of being generic, modular and extensible at the Substrate level. FRAME takes
 these even further, but more on that later.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🤩 Generic, Modular and Extensible Design
 
@@ -306,7 +317,8 @@ particular implementation.
 
 - Third, final, and non-negotiable line of defense to survive the test of time.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🏦 Governance + Upgradeability
 
@@ -330,14 +342,16 @@ Even if we are governable, but we still need "trust" to enact the upgrade, it is
 In essence, if an upgrade mechanism is not self-enacting, it might as well just reside offchain and
 be a signaling mechanism.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🏦 Governance + Upgradeability
 
 - ✅ Governance: Easy
 - 😢 Upgradeability: Not so much
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🏦 Governance + Upgradeability
 
@@ -349,13 +363,15 @@ Notes:
 2. Possibly onchain voting
 3. Hard(ish) Fork
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🏦 Governance + Upgradeability
 
 <img src="./img/dev-4-1-substrate-monol.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🏦 Governance + Upgradeability
 
@@ -366,13 +382,15 @@ Notes:
 the problem is that the system is one big monolith protocol. Updating any part of it requires the
 whole thing to be updated.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🏦 Governance + Upgradeability
 
 _The way to make a protocol truly upgradeable is to design a meta-protocol that is not upgradeable._
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🏦 Governance + Upgradeability
 
@@ -383,13 +401,15 @@ Note:
 In this figure, the meta-protocol, the substrate client, is not forklessly upgrade-able. It can only
 be upgraded with a fork. The Wasm protocol, though, can be upgraded forklessly.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🏦 Governance + Upgradeability
 
 <img src="./img/dev-4-1-substrate-meta-substrate.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🏦 Governance + Upgradeability
 
@@ -404,7 +424,8 @@ be upgraded with a fork. The Wasm protocol, though, can be upgraded forklessly.
 
 <img src="./img/dev-4-1-substrate.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Substrate (simplified) Architecture
 
@@ -476,7 +497,8 @@ entire set of data upon which we want to maintain a consensus.
 key value.
 associated with each block.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### State Transition Function
 
@@ -484,13 +506,15 @@ associated with each block.
 
 <img width="400px" src="./img/dev-4-1-state-transition-def.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### State Transition Function
 
 $$STF = F(block_{N}, state_{N}, code_{N}): state_{N+1}$$
 
----v
+<!-- prettier-ignore -->
+----
 
 ### State Transition Function
 
@@ -500,13 +524,15 @@ Notes:
 
 The Wasm runtime in this figure is in fact obtained from the state (see `0x123`)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### State Transition Function
 
 <img style="width: 1200px;" src="./img/dev-4-1-state-code.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### State Transition Function
 
@@ -536,7 +562,8 @@ ofc, changing the Wasm code cannot be done by anyone. That's up to governance.
 
 ## Positive Consequences of _Wasm_ Runtime 🔥
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🤖 Deterministic Execution
 
@@ -546,7 +573,8 @@ Notes:
 
 Wasm's instruction set is deterministic, so all good.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🧱 Sandboxing
 
@@ -559,7 +587,8 @@ Notes:
 
 How can we guarantee that neither enter an infinite loop, or try to access the filesystem?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🌈 Easier (light)Client Development
 
@@ -573,19 +602,22 @@ re-implement the EVM.
 
 Same applies to light client, as they do not need to deal with the state transition function.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 😎 Forkless Upgrade
 
 <img style="width: 1400px;" src="./img/dev-4-1-forkless-1.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 😎 Forkless Upgrade
 
 <img style="width: 1400px;" src="./img/dev-4-1-forkless-2.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 😎 Forkless Upgrade
 
@@ -670,13 +702,15 @@ State is sometimes called "storage" as well.
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Database <> Runtime 🤔
 
 <img style="width: 1200px" src="./img/dev-4-1-state-opaque.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## The Client: Database 🤔
 
@@ -689,7 +723,8 @@ State is sometimes called "storage" as well.
 
 - Client that follows headers, therefore knows state roots and can ask for state-proofs to do more.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### State of Light Clients
 
@@ -726,19 +761,22 @@ configured with GRANDPA.
 
 <img style="width: 1400px" src="./img/dev-4-1-comms.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Communication Paths
 
 <img style="width: 1400px" src="./img/dev-4-1-comms-format.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example: SCALE vs JSON
 
 - SCALE is an efficient, non-descriptive, binary encoding format, used EXTENSIVELY in the Substrate ecosystem.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example: SCALE vs JSON
 
@@ -765,7 +803,8 @@ fn main() {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example: SCALE vs JSON
 
@@ -804,7 +843,8 @@ fn main() {
 
 <img style="width: 800px;" src="./img/dev-4-1-contracts.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate and Smart Contracts
 
@@ -812,7 +852,8 @@ fn main() {
 
 Question: How many nested Wasm blobs are executing one another?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate and Smart Contracts
 
@@ -832,13 +873,15 @@ Question: How many nested Wasm blobs are executing one another?
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate and Smart Contracts
 
 <img style="width: 1000px;" src="./img/dev-4-1-ink.jpeg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate and Smart Contracts
 
@@ -901,13 +944,15 @@ Another good analogy: Client is the FPGA, and FRAME/Wasm is the VHDL.
 - Substrate next to Polkadot and other chains.
 - Substrate for Smart Contracts.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Recap: Substrate Architecture
 
 <img style="width: 1400px;" src="./img/dev-4-3-full.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Recap: 🏦 Governance and Upgradeability
 
@@ -948,7 +993,8 @@ hardcoded, but the protocol itself is flexible.
 
 - FRAME-Less
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Rest of This Module! 😈
 
@@ -967,7 +1013,8 @@ Notes:
 We are aware that the module is highly skewed in terms of lecture time, but it is intentional and we
 want to see how it works. This allows you to kickstart with your assignment earlier.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Rest of This Module! 😈
 
@@ -979,7 +1026,8 @@ want to see how it works. This allows you to kickstart with your assignment earl
 - 🌭 _Lunch Break_
 - FRAME-Less Activity
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Rest of This Module! 😈
 
@@ -1045,13 +1093,15 @@ Substrate Client (`/client/*` / `sc-*`) is licensed under [GPL v3.0](https://www
 > machine_. Wasm is designed as a _portable compilation_ target for programming languages, enabling
 > deployment on the web for client and server applications.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What is Wasm Anyways?
 
 <img style="width: 1400px;" src="./img/dev-4-1-wasm-langs.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What is Wasm Anyways?
 
@@ -1077,7 +1127,8 @@ Notes:
 
 People actually tried sticking things like JVM into the browser (_Java Applets_), but it didn't work.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### How to Write a Wasm Runtime?
 
@@ -1093,18 +1144,22 @@ Notes:
 I made these figures recently to explain the relationship between Substrate, Cumulus and Polkadot.
 They use the most generic term for client and runtime, namely "Host" and "STF" respectively.
 
----v
+<!-- prettier-ignore -->
+----
 
 Substrate
 
 <img style="width: 1400px;" src="./img/dev-4-1-substrate-new-1.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 Polkadot
 
 <img style="width: 1400px;" src="./img/dev-4-1-substrate-new-2.svg" />
----v
+
+<!-- prettier-ignore -->
+----
 
 A Parachain
 

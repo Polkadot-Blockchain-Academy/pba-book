@@ -64,7 +64,8 @@ pub type Barrier = (
 );
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🚧 XCM `Barrier` in Rococo
 
@@ -107,7 +108,8 @@ pub type TrustedTeleporters = (
 );
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🤝 Trusted teleporters in Rococo
 
@@ -204,7 +206,8 @@ impl xcm_executor::Config for XcmConfig {
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🪙 `asset-transactors` in Rococo
 
@@ -243,7 +246,8 @@ impl xcm_executor::Config for XcmConfig {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 📍`origin-converter` in Rococo
 
@@ -330,7 +334,8 @@ impl pallet_xcm::Config for Runtime {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🎨 XcmPallet in Rococo
 

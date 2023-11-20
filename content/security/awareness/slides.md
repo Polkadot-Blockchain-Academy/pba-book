@@ -30,7 +30,8 @@ Notes:
 
 Security folks love their jargon and acronyms, you may be familiar with some of these, but no worries if not.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Threat Actor
 
@@ -40,7 +41,8 @@ Notes:
 
 Threat actors can be hackers, cybercriminals, social engineers, insiders, state-sponsored groups, or other malicious actors.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Attack Surface
 
@@ -50,7 +52,8 @@ Notes:
 
 This ranges from network interfaces, APIs, software, hardware and infrastructure, through to human factors.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Attack Vector
 
@@ -87,7 +90,8 @@ Notes:
 
 In the real world, there is minimal scope - financially motivated attackers do not follow a code of ethics, and will monetize whatever they can get their hands on.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Funds
 
@@ -97,7 +101,8 @@ Notes:
 
 Financially motivated attacks are among the most common, earnings from these can be used to fund more advanced future attacks, for market manipulation, or directly cashed out
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Networks & Infrastructure
 
@@ -118,7 +123,8 @@ Ransomware and denial of service attacks can be utilized to reduce confidence in
 
 Mechanics of protocols themselves can be taken advantage of through 51% attacks, double spends, or malicious validation
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Personally Identifiable Information
 
@@ -175,7 +181,8 @@ While that's true, we can't rule out politically motivated attacks.
 
 ### A Deeper Dive
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Opportunists
 
@@ -186,7 +193,8 @@ Notes:
 Opportunists can impact us from phishing through to being in the wrong place at the wrong time.
 Keep your guard up when in transit or a public place, all it takes is a momentary lapse in focus for a device to be stolen.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### I Pickpocketed a Pickpocket
 
@@ -196,7 +204,8 @@ Notes:
 
 Source: <a href="https://www.youtube.com/watch?v=j25VkESewZg">I Pickpocketed a Pickpocket</a>
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Organized Crime Groups (OCGs)
 
@@ -210,7 +219,8 @@ This knowledge can be used to carry out more advanced phishing campaigns, also k
 
 These details can be used for extortion, be it compromising information or physical threats, through to kidnap for those higher value targets.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Nation States
 
@@ -231,7 +241,8 @@ In the context of web3, nation states may be interested in:
 
 # Methods of Adversaries
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Theft
 
@@ -259,7 +270,8 @@ Losing a device can mean lost, and potentially compromised, second factor authen
 
 Lost or stolen keys and ID documents pose an increased physical threat: the leak of your home address and the means to access it, which can also extend to workplaces or infrastructure locations
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Tampering
 
@@ -273,7 +285,8 @@ They range from devices, such as the Rubber Ducky, through to a simple USB-USB c
 
 These can put your devices - be it phone, laptop, or hardware wallet - at risk of malware injection or firmware integrity
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Tampering: Mitigations
 
@@ -286,7 +299,8 @@ For a start use our own, trusted, cables - consider identifying them in a distin
 
 Don't use that charger you found randomly left in a café, even if it was offered to you by a nice businessman, and it's probably best to not pick up that mysterious USB on the side of the road anyway.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Hacking
 
@@ -302,7 +316,8 @@ Notes:
 
 If you're on a network that isn't your own or trusted (home, hotspot, place of work), pop on your VPN for additional protection and privacy.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Social Engineering
 
@@ -316,7 +331,8 @@ Phishing and attacks under its umbrella are still a very real threat, but often 
 
 # Situational Awareness
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Shoulder Surfing
 
@@ -324,7 +340,8 @@ Notes:
 
 Privacy screens are a mitigation, but they're not infallible - they reduce the viewing angle, but those behind you still have the best seats in the house.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Shoulder Surfing
 
@@ -334,7 +351,8 @@ Notes:
 
 Besides, we know that Mr Tom Cruise runs at a 22° angle, rendering privacy screens useless.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Shoulder Surfing
 
@@ -344,7 +362,8 @@ Notes:
 
 It's unrealistic that you can wear shoulder pads all the time to block the view of your sweet sweet screen real estate.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Shoulder Surfing
 
@@ -354,7 +373,8 @@ Notes:
 
 Nor are you going to be able to rapidly grow out your hair
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Shoulder Surfing
 
@@ -376,7 +396,8 @@ Notes:
 It’s no secret that folks in tech love their stickers, they make our devices unique versus our friends and colleagues - but this also comes with downsides.
 There’s a tipping point between a casual interest and direct involvement: stickers can act like a fingerprint, but what kind of information can we glean from them?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Device Stickers
 
@@ -401,7 +422,8 @@ Notes:
 
 Cover in transit - benefit of protected device
 
----v
+<!-- prettier-ignore -->
+----
 
 <pba-cols>
   <pba-col>
@@ -427,7 +449,8 @@ The last point applies to tattoos too, unless it's a Dogecoin tattoo.
 
 # Digital Footprint
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Social Media
 
@@ -473,7 +496,8 @@ Phishing is still highly effective, at the end of the day we're only human.
 The cost of phishing is constantly dropping, making it easier for the masses to be reached
 Actions and decisions are circumstantial
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Rise of AI
 
@@ -486,7 +510,8 @@ Notes:
 Not only is phishing getting cheaper, the bar to entry has been significantly lowered.
 Existing trusted email infrastructure and its exploitation leads to more and more convincing attacks, paired with the rise of services like ChatGPT, the risk is increasing.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Beyond the Nigerian prince
 
@@ -503,7 +528,8 @@ There is also the issue of consent - avoid blindly tagging people and tainting t
 
 Not to say don't post, but add a delay to obscure your live location and minimize physical risks
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Reacting to a Phish
 

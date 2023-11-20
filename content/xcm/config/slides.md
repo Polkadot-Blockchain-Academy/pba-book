@@ -6,7 +6,8 @@ duration: 1 hour
 
 # Parachain XCM Configuration
 
----v
+<!-- prettier-ignore -->
+----
 
 ## _At the end of this lecture, you will be able to:_
 
@@ -25,7 +26,8 @@ The XCM Configuration has many configurable items
 
 EXERCISE: ask the class to raise hands and postulate on what they think should be configurable.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🛠️ Configurables in `XcmConfig`
 
@@ -71,7 +73,8 @@ Notes:
 
 - `xcm-pallet` is a pallet that not only allows sending and executing XCM messages, but rather it also implements several of the configuration traits and thus can be used perform several XCM configuration actions.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🛠️ `xcm-builder`
 
@@ -104,7 +107,8 @@ Notes:
 
 - Some of the answers to these questions might imply you need to use your own custom primitives.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Our starting example setup requirements
 
@@ -131,7 +135,8 @@ Notes:
 - This will define how we convert a `Location` into a local account ID.
 - This is useful when we want to withdraw/deposit tokens from a `Location` defined origin or when we want to dispatch as signed origins from a `Location` defined origin.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📁 `SovereignAccountOf` via `xcm-builder`
 
@@ -150,7 +155,8 @@ impl<
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📁 `SovereignAccountOf` via `xcm-builder`
 
@@ -167,7 +173,8 @@ pub type LocationToAccount =
   )>;
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📁 `SovereignAccountOf` via `xcm-builder`
 
@@ -185,7 +192,8 @@ Notes:
 
 [Impl for Tuple](https://github.com/paritytech/polkadot-sdk/blob/342d720/polkadot/xcm/xcm-builder/src/location_conversion.rs#L34)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📁 `SovereignAccountOf` via `xcm-builder`
 
@@ -200,7 +208,8 @@ fn describe_location(l: &Location) -> Option<Vec<u8>> {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📁 `SovereignAccountOf` via `xcm-builder`
 
@@ -215,7 +224,8 @@ fn describe_location(l: &Location) -> Option<Vec<u8>> {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📁 `SovereignAccountOf` via `xcm-builder`
 
@@ -231,7 +241,8 @@ fn describe_location(l: &Location) -> Option<Vec<u8>> {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📁 `SovereignAccountOf` via `xcm-builder`
 
@@ -246,7 +257,8 @@ fn describe_location(l: &Location) -> Option<Vec<u8>> {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📁 `SovereignAccountOf` via `xcm-builder`
 
@@ -256,7 +268,8 @@ fn describe_location(l: &Location) -> Option<Vec<u8>> {
 
 - `ParentIsPreset`: Converts the parent `Location` into an account of the form `b'Parent' + trailing 0s`
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📁 `SovereignAccountOf` via `xcm-builder`
 
@@ -290,7 +303,8 @@ Notes:
 
 **At the point at which barriers are checked nothing has yet been paid for its execution**.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🚧 `Barrier` via `xcm-builder`
 
@@ -303,7 +317,8 @@ Notes:
 
 If an EOA transfers some funds via XCM, then the computed origin would be its account, but the physical origin would be the platform that was used (e.g. parachain).
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🚧 `Barrier` via `xcm-builder`
 
@@ -317,14 +332,16 @@ Allows for origin altering instructions at the start.
 pub struct WithComputedOrigin<InnerBarrier, LocalUniversal, MaxPrefixes>;
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🚧 `Barrier` via `xcm-builder`
 
 - `TakeWeightCredit`: Subtracts the maximum weight the message can consume from the available weight credit.
   Usually configured for local `xcm-execution`
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🚧 `Barrier` via `xcm-builder`
 
@@ -338,7 +355,8 @@ Notes:
 
 - While `BuyExecution` is crucial for messages coming from other consensus systems, local XCM execution fees are paid as any other substrate extrinsic.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🚧 `Barrier` via `xcm-builder`
 
@@ -349,7 +367,8 @@ Notes:
 - **This fulfills our requirements**
 - To meet our example use case, we only need the relay to have free execution.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🚧 `Barrier` via `xcm-builder`
 
@@ -373,7 +392,8 @@ Notes:
 - The relay chain is a clear example of a chain that handles a **single token**.
 - AssetHub on the contrary acts as an asset-reserve chain, and it needs to handle **several assets**
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🪙 `AssetTransactor` via `xcm-builder`
 
@@ -388,7 +408,8 @@ Notes:
 
 - For our example, it suffices to uses `CurrencyAdapter`, as all we are going to do is mint in a single currency (Balances) whenever we receive the relay token.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🪙 `AssetTransactor` via `xcm-builder`
 
@@ -409,7 +430,8 @@ fn withdraw_asset(
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🪙 `AssetTransactor` via `xcm-builder`
 
@@ -443,7 +465,8 @@ Notes:
   However the `xcm-executor` works with XCM origins which are defined by `Location`s.
 - `OriginConverter` is the component that converts one into the other
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 📍 List of origin converters
 
@@ -486,7 +509,8 @@ Notes:
   As of today, an HRMP channel should be established before the message can be routed.
 - The tuple implementation of this item means the executor will try using the items in order.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Router
 

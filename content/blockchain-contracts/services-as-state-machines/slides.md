@@ -90,7 +90,8 @@ You can even think about things like Google search for example, that hardly exis
 Notice that there are no more pink lines in the diagram - people don't have their own servers - they're all connected to this one Central server.
 Obviously in reality it isn't a single Central server, but the the point kind of remains - it's a small number of centralized service providers.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Digital Services
 
@@ -114,7 +115,8 @@ What are other examples? I have some listed here - online banking, what else?
 
 And the key thing here is that they're all administered by these service providers and the model is - don't call your friend on the phone and communicate directly with them anymore - instead send us your information -
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Trust Example
 
@@ -140,7 +142,8 @@ But here, the slide reminds us that we all essentially accept a trusting relatio
 We trust that we're seeing information from the same database, we trust that if a tweet is from Aaron, then Aaron wrote that tweet, we trust that others see our messages as from us, we trust that the messages we see are the messages the users wrote, and we trust that we're interacting with the application as equals.
 Cryptography actually provides a lot of these guarantees, but not when an intermediary has stepped in between users.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## God Mode Enabled
 
@@ -156,7 +159,8 @@ Notes:
 Okay in summary, these are the problems that trusted service providers can do to us.
 They can censor our interactions, they can restrict our interactions, they can fail to produce requested data, and they can mutate state opaquely.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Thought experiment: Digital Currency
 
@@ -183,7 +187,8 @@ So even though coding the cryptocurrency application is like super simple it's t
 And that's what the blockchain is about.
 And that's what Joshy is going to speak to very soon.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Distributed Applications in Web 2
 
@@ -221,7 +226,8 @@ But then the glaring question is: well okay - how do you make sure that two-thir
 Hence why you had econ and tokenomics last week.
 Because that's how we're going to get all of these mutually distrusting, not otherwise incentive aligned parties to agree to follow the protocol - by creating the incentive such that following the protocol is the best strategy: they can maximize their own utility by following the protocol.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Desired Approach
 
@@ -261,7 +267,8 @@ It's a model comprised of a set of states and a set of rules about how to transi
 Looking at the diagram, maybe my state machine starts in state one over here and then somebody pokes it in some particular way, or to use more blockchain-y lingo, they send a transaction and that puts the state machine into into State-two.
 And so, what we're going to be doing with the blockchain is tracking a complete history of all of these transitions and if we know the history of all the transitions, then we should know what state we're in right now
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Labelled Transition Systems
 
@@ -281,7 +288,8 @@ Consider if we tried to map all possible states of a social media app or a digit
 Sometimes an LTS drawing like this is useful, other times it would be too large or even infinite.
 Even still, sometimes drawing part of it can help you think about what the states and transitions might be.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Example: Light Switch
 
@@ -311,7 +319,8 @@ There's only one - it's the toggle transition that turns the light off and Etc a
 Right now this is such a simple State machine that like this isn't going to be a very interesting history it's just going to be toggle toggle toggle toggle forever.
 But with that information, if if for some reason knowing whether this light was on or off is like super important to your Society or your community, you've now achieved it - or at least we know a way to start achieving it.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## State Machine Example: Digital Cash
 
@@ -336,7 +345,8 @@ That's not allowed.
 So we have to be careful about what transitions are allowed and what transitions are not allowed.
 And again, if we know the history of all the transitions, then we should know what state we're in right now.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Sate Machine Example: Social Media
 
@@ -356,7 +366,8 @@ Here the diagram basically we see - if the state starts out simple with this one
 Just to drive the point home the idea is that if you know the starting State and you know the history of the transitions, then you know the the current state and so you can sit and watch as every transition comes in you can validate them yourselves and say this one's good we're adding it to our history or this one's bad we're chucking it's invalid transition.
 And then therefore you can know the final state
 
----v
+<!-- prettier-ignore -->
+----
 
 ## More State Machine Examples:
 
@@ -377,7 +388,8 @@ For each example, write out what are the state transitions and the the states.
 If possible, draw a complete LTS.
 If that is not possible, draw a partial LTS.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Garage Door Lock
 

@@ -159,7 +159,8 @@ Mention use of the term "plaintext".
 
 Allegory: A private document stored on server where sysadmin has _access_ can be subpoenaed, violating assumed Attorney-Client Privilege on the document.
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- This slide should potentially be pushed into the lecture on encryption. I can see it in either spot. Alternately, could be cut entirely, as encrypted communication is not an emphasized topic. -->
 
@@ -195,13 +196,15 @@ If data is tampered with, it is detectable. In other words, it possible to check
 
 Integrity ensures that if data I create is corrupted, it can be detected.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Physical Signatures
 
 Physical signatures provide weak authenticity guarantees<br />(i.e. they are quite easy to forge), and no integrity guarantees.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## An Ideal Signature
 
@@ -252,7 +255,8 @@ The following slides serve as an intro.
 Many terms may be glossed over, and covered in detail later.
 There are lessons later in this module dedicated to hashes and hash-based data structures.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Hash Function Applications
 

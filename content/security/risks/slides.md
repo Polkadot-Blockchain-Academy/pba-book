@@ -1,16 +1,7 @@
 ---
-title: Common Security Risks in Polkadot SDK Development # Also update the h1 header on the first slide to the same name
-description: A session to explain common security risks in the development using Polkadot SDK.
-duration: 60 minutes.
-separator: "\r?\n---\r?\n"
-verticalSeparator: "\r?\n---v\r?\n"
-revealOptions:
-  transition: "slide" # animation between slides = none/fade/slide/convex/concave/zoom
-	backgroundTransition: "fade" # background swap between slides = none/fade/slide/convex/concave/zoom
-	slideNumber: true
-	controls: true
-	progress: true
-  
+title: Common Security Risks in Polkadot SDK Development
+description: A session to explain common security risks in the development using Polkadot SDK
+duration: 60 minutes
 ---
 
 # Common Security Risks in **Polkadot SDK** Development
@@ -57,7 +48,8 @@ Each security risk is composed of: **Challenge, Risk, Case Studies, Mitigation a
 
 ## Insecure Randomness
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -77,7 +69,8 @@ Each security risk is composed of: **Challenge, Risk, Case Studies, Mitigation a
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
@@ -95,7 +88,8 @@ Each security risk is composed of: **Challenge, Risk, Case Studies, Mitigation a
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Randomness Collective Flip
 
@@ -103,7 +97,8 @@ Each security risk is composed of: **Challenge, Risk, Case Studies, Mitigation a
 - Low-influence randomness can be useful when defending against relatively weak adversaries.
 - Using this pallet as a randomness source is advisable primarily in low-security situations like testing.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Randomness Collective Flip
 
@@ -150,7 +145,8 @@ fn random(subject: &[u8]) -> (T::Hash, BlockNumberFor<T>) {
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - VRF
 
@@ -160,7 +156,8 @@ fn random(subject: &[u8]) -> (T::Hash, BlockNumberFor<T>) {
 
 - With VRF, the proof can be verified by any challenger to ensure the random number generation is valid.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - VRF
 
@@ -183,7 +180,8 @@ fn random(subject: &[u8]) -> (T::Hash, BlockNumberFor<T>) {
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - VRF
 
@@ -240,7 +238,8 @@ impl<T: Config> RandomnessT<T::Hash, BlockNumberFor<T>> for RandomnessFromOneEpo
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
@@ -257,7 +256,8 @@ impl<T: Config> RandomnessT<T::Hash, BlockNumberFor<T>> for RandomnessFromOneEpo
 
     > VRF
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 
@@ -271,7 +271,8 @@ impl<T: Config> RandomnessT<T::Hash, BlockNumberFor<T>> for RandomnessFromOneEpo
 
 ## Storage Exhaustion
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -291,14 +292,16 @@ impl<T: Config> RandomnessT<T::Hash, BlockNumberFor<T>> for RandomnessFromOneEpo
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
 - Unsustainable growth in blockchain storage, leading to increased costs and potential failure for node operators.
 - Increased susceptibility to DoS attacks that exploit the inadequate storage deposit mechanism to clutter the blockchain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Existential Deposit
 
@@ -306,7 +309,8 @@ impl<T: Config> RandomnessT<T::Hash, BlockNumberFor<T>> for RandomnessFromOneEpo
 - Existential deposits are required to optimize storage. The absence or undervaluation of existential deposits can lead to DoS attacks.
 - The cost of permanent storage is generally not accounted for in the weight calculation for extrinsics, making it possible for an attacker to fill up the blockchain storage by distributing small amounts of native tokens to many accounts.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Existential Deposit
 
@@ -333,7 +337,8 @@ impl pallet_balances::Config for Runtime {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - General Storage Usage System
 
@@ -341,7 +346,8 @@ impl pallet_balances::Config for Runtime {
 
 [Issue in Polkadot SDK](https://github.com/paritytech/polkadot-sdk/issues/207)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - NFT Pallet Manual Deposit
 
@@ -403,7 +409,8 @@ fn do_set_item_metadata {
 
 [Commit](https://github.com/paritytech/substrate/commit/e907e15e0bda28b5c5db90e6a0bce3393fbc59f1)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
@@ -433,7 +440,8 @@ if old_deposit.account.is_some() &&
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 
@@ -446,7 +454,8 @@ if old_deposit.account.is_some() &&
 
 ## Insufficient Benchmarking
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -466,7 +475,8 @@ if old_deposit.account.is_some() &&
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
@@ -487,7 +497,8 @@ if old_deposit.account.is_some() &&
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Benchmark Input Length - Issue
 
@@ -533,7 +544,8 @@ benchmarks! {
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Benchmark Input Length - Mitigation
 
@@ -580,7 +592,8 @@ benchmarks! {
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
@@ -592,7 +605,8 @@ benchmarks! {
 - Secondary goal is to be as accurate as possible to maximize throughput.
 - For non-hard deadline code use **metering**.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 
@@ -604,7 +618,8 @@ benchmarks! {
 
 ## Outdated Crates
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -623,14 +638,16 @@ benchmarks! {
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
 - Exposure to known vulnerabilities that could be exploited by attackers.
 - Compromised network integrity and security, leading to potential data breaches or financial loss.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Serde Precompiled Binary
 
@@ -651,7 +668,8 @@ benchmarks! {
 
 **A trustless system, such as Polkadot, can't blindly trust binaries.**
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
@@ -660,7 +678,8 @@ benchmarks! {
 - Use tools such as `cargo audit` or `cargo vet` to monitor the state of your system’s dependencies.
 - Don't use dependencies that include precompiled binaries.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 
@@ -672,7 +691,8 @@ benchmarks! {
 
 ## XCM Misconfiguration
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -683,7 +703,8 @@ benchmarks! {
 - For new parachains, it is difficult to determine which XCM messages are needed and which are not.
 - If the config is not correctly setup the chain could be vulnerable to attacks, become spam targets if incoming XCM messages are not handled as untrusted and/or sanitized properly, or even be used as a **bridge** to attack other parachains by not enforcing a good Access Control in **send** operations.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
@@ -691,14 +712,16 @@ benchmarks! {
 - Execution of unauthorized transactions, leading to potential financial loss.
 - Be used as an attack channel to parachains.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Rococo Bridge Hub - Description
 
 - The `MessageExporter` type (`BridgeHubRococoOrBridgeHubWococoSwitchExporter`) in the Rococo's Bridge Hub XcmConfig was using the `unimplemented!()` macro in [`validate`](https://github.com/paritytech/polkadot-sdk/blob/f6560c2b7226ea756ade18df42018c3eaf3be2e0/cumulus/parachains/runtimes/bridge-hubs/bridge-hub-rococo/src/xcm_config.rs#L391) and `deliver` methods, what is equivalent to the `panic!()` macro. This was exposing the Rococo Bridge Hub runtime to non-skippable panic reachable by any parachain allowed to send messages to the Rococo Bridge Hub.
 - This issue was trivial to execute for anyone that can send messages to the Bridge Hub, as the only needed is to send a valid XCM message that includes an ExportMessage instruction trying to bridge to a network that is not implemented.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Rococo Bridge Hub - Issue
 
@@ -736,7 +759,8 @@ impl ExportXcm for BridgeHubRococoOrBridgeHubWococoSwitchExporter {
 		}
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Rococo Bridge Hub - XCM Config
 
@@ -835,7 +859,8 @@ pub type Barrier = TrailingSetTopicAsId<
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
@@ -846,7 +871,8 @@ pub type Barrier = TrailingSetTopicAsId<
   - Only the specific messages structures your parachain needs to receive can be accepted. Filter message structures with `Barrier` (general), `SafeCallFilter` (transact), `IsReserve` (reserve), `IsTeleporter` (teleport), `MessageExporter` (export), `XcmSender` (send), etc.
 - In XCMP queue, ensure only trusted channels are open.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 
@@ -859,7 +885,8 @@ pub type Barrier = TrailingSetTopicAsId<
 
 ## Unsafe Math
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -868,7 +895,8 @@ pub type Barrier = TrailingSetTopicAsId<
 
 <img rounded style="height: 300px" src="./img/overflow.webp" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
@@ -877,7 +905,8 @@ pub type Barrier = TrailingSetTopicAsId<
 - Incorrect calculations, leading to unintended consequences like incorrect account balances or transaction fees..
 - Potential for attackers to exploit the vulnerability to manipulate outcomes in their favor.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Frontier Balances - Description
 
@@ -887,7 +916,8 @@ pub type Barrier = TrailingSetTopicAsId<
   2. People with bad intentions could use this error to get unfair advantages.
 - To fix this, it's important to double-check how these conversions are done to make sure the numbers are accurate.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Frontier Balances - Issue
 
@@ -915,7 +945,8 @@ pub type Barrier = TrailingSetTopicAsId<
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Frontier Balances - Mitigation
 
@@ -951,7 +982,8 @@ pub type Barrier = TrailingSetTopicAsId<
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
@@ -968,7 +1000,8 @@ pub type Barrier = TrailingSetTopicAsId<
   - Avoid downcasting values. Otherwise, use methods like `unique_saturated_into` instead of methods like `low_u64`.
   - **Your system should be designed to avoid downcasting!**
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 
@@ -985,7 +1018,8 @@ pub type Barrier = TrailingSetTopicAsId<
 
 ## Replay Issues
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -1003,14 +1037,16 @@ pub type Barrier = TrailingSetTopicAsId<
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
 - Spamming the network with repeated transactions, leading to congestion and reduced performance.
 - Potential for double-spending attacks, which can compromise the integrity of the blockchain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Frontier STF - Description
 
@@ -1018,7 +1054,8 @@ pub type Barrier = TrailingSetTopicAsId<
 - In the following sample from [Frontier](https://github.com/paritytech/frontier/blob/0a8e696fdfb9ce73a7f99941a2f2ec22eefd4f38/frame/ethereum/src/lib.rs#L249) is possible to observe how the `do_transact` function was used before the update, where the `validate_self_contained` was not used.
 - In a later [commit](https://github.com/paritytech/frontier/commit/146bb48849e5393004be5c88beefe76fdf009aba), this is patch by adding the validations on block production. Between the changes can be observe that replace of `do_transact` for `validate_transaction_in_block` that contains the logic to validate a transaction that was previously in `validate_self_contained`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Frontier Balances - Issue
 
@@ -1048,7 +1085,8 @@ fn on_initialize(_: T::BlockNumber) -> Weight {
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Frontier Balances - Mitigation
 
@@ -1100,7 +1138,8 @@ fn validate_transaction_common(
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
@@ -1108,7 +1147,8 @@ fn validate_transaction_common(
   - Can’t be re-used by implementing a nonces mechanism.
   - Is intended for your system by checking any identification type like ID, hashes, etc.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 
@@ -1119,7 +1159,8 @@ fn validate_transaction_common(
 
 ## Unbounded Decoding
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -1137,14 +1178,16 @@ fn validate_transaction_common(
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
 - Stack exhaustion, which can lead to network instability and crashes.
 - Potential for Denial of Service (DoS) attacks by exploiting the stack overflow vulnerability.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Whitelist Pallet - Description
 
@@ -1153,7 +1196,8 @@ fn validate_transaction_common(
 - Auditors detected this method could lead to an stack overflow and suggested the developers to use decode_with_depth_limit to mitigate the issue.
 - Risk was limited due to the origin had specific restrictions, but if the issue is triggered, the resulting stack overflow could cause a whole block to be invalid and the chain could get stuck failing to produce new blocks.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Whitelist Pallet - Issue
 
@@ -1183,7 +1227,8 @@ pub fn dispatch_whitelisted_call(
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Whitelist Pallet - Exploit PoC
 
@@ -1243,13 +1288,15 @@ fn test_unsafe_dispatch_whitelisted_call_stack_overflow() {
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Whitelist Pallet - Exploit Results
 
 <img rounded style="height: 500px" src="./img/stack-overflow.webp" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Whitelist Pallet - Mitigation
 
@@ -1282,14 +1329,16 @@ pub fn dispatch_whitelisted_call(
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
 - Use the `decode_with_depth_limit` method instead of `decode` method.
 - Use `decode_with_depth_limit` with a depth limit lower than the depth that can cause an stack overflow.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 
@@ -1301,7 +1350,8 @@ pub fn dispatch_whitelisted_call(
 
 ## Verbosity Issues
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -1319,14 +1369,16 @@ pub fn dispatch_whitelisted_call(
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
 - Difficulty in diagnosing and resolving system issues, leading to extended downtime.
 - Reduced ability to identify and mitigate security threats compromising network integrity.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study
 
@@ -1348,7 +1400,8 @@ pub fn dispatch_whitelisted_call(
 - Consensus systems are complex and almost never halt, but when they do, it is difficult to recreate the scenario that led to it.
 - A good logging system can therefore help to reduce downtime.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
@@ -1356,7 +1409,8 @@ pub fn dispatch_whitelisted_call(
 - Implement logs in the critical parts of your pallets.
 - Implement dashboards to detect anomaly patterns in logs and metrics. A great example is Grafana that is used by some node maintainers to be aware of recent issues.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 
@@ -1367,7 +1421,8 @@ pub fn dispatch_whitelisted_call(
 
 ## Inconsistent Error Handling
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Challenge
 
@@ -1385,14 +1440,16 @@ pub fn dispatch_whitelisted_call(
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Risk
 
 - Privileged extrinsics Denial of Service (DoS).
 - Unexpected behavior in the system.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Decode Concatenated Data - Issue
 
@@ -1413,7 +1470,8 @@ fn decode_concatenated_extrinsics(
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Case Study - Decode Concatenated Data - Issue
 
@@ -1437,7 +1495,8 @@ fn decode_concatenated_extrinsics(
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Mitigation
 
@@ -1451,7 +1510,8 @@ fn decode_concatenated_extrinsics(
 
     > Handle the error and continue the batch processing.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Takeaways
 

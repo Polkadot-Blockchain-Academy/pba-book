@@ -61,7 +61,8 @@ Just ask the Monero community.
 There are _some_ reasons not to run a full node and the reality is that not everyone will.
 So even though we should always run our own nodes, let's look at some alternatives and ways we can make node running more accessible.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## RPC Nodes
 
@@ -88,7 +89,8 @@ Lot's of things can go wrong.
 So this is definitely not the best option.
 Let's see if we can do better.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Lighten the Load
 
@@ -110,7 +112,8 @@ This is especially true if we want people to be able to run the node in all kind
 And we do want that because we want people to run their own node even when they're just paying the bill at dinner from their phone or liking social posts while scrolling on the bus.
 Let's make the client lighter so it doesn't require as much resources.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Light Client Duties
 
@@ -131,7 +134,8 @@ This is what a typical light client does.
 There is not a single definition of light client.
 There are varying degrees of lightness to suit your needs.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Trustless
 
@@ -155,7 +159,8 @@ But you couldn't confirm that the tokens in question still existed or anything e
 
 Chains with state roots can have much more powerful light clients
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Syncing Strategies
 
@@ -185,7 +190,8 @@ If you have authority hand-offs, there is more work to be done.
 You have to check that each authority set signs the transition to the next authority set.
 But this is still only even N blocks instead of every block.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Self Defense
 
@@ -215,7 +221,8 @@ Generally speaking bridges move arbitrary data between unrelated consensus syste
 Basically between different blockchains, and those messages can evoke arbitrary side effects on the target chain.
 To keep it concrete, we'll mostly talk about moving tokens.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Source and Target Chain
 
@@ -232,7 +239,8 @@ Think of a two-way
 street.
 There is a dedicated lane for each direction.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Source Chain Re-Orgs
 
@@ -246,7 +254,8 @@ We need to wait for finality.
 But even this isn't foolproof.
 More on this after we cover the basic design.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Bridge Models
 
@@ -301,7 +310,8 @@ The bridge can never be stronger than the consensus on the source chain
 
 Notes:
 
----v
+<!-- prettier-ignore -->
+----
 
 ## BTC Relay
 
@@ -317,7 +327,8 @@ Notes:
 
 Bridges present their own set of design challenges beyond what we encounter in regular stand-alone light clients.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Peers?
 
@@ -343,7 +354,8 @@ You do need at least one honest relayer for the chain to get the correct header 
 For this reason a large decentralized relayer group is nice.
 But even if you don't trust any relayer out there, you can always run your own.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Finality and Equivocation
 
@@ -363,7 +375,8 @@ Because the validators may be equivocating.
 They don't send equivocations to real nodes on the network because those equivocations will be gossiped around and reported on the source chain and the validators will be slashed accordingly.
 But remember a light client on the target chain has no way to report such equivocations back to the source chain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Equivocation Incentives
 
@@ -407,7 +420,8 @@ Relayers will expect to earn some reward for the opportunity cost of their stake
 
 <img rounded width="800px" src="./img/bridge-multichain-stack.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## We have a header, now what?
 
@@ -430,7 +444,8 @@ If you need some source chain transaction, your app needs to require an spv-styl
 
 If you need some source chain state, your app needs to require a state proof to check against the header's state root.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Multichain Security
 
@@ -444,7 +459,8 @@ The weaker security of the two is the security your app has.
 More abstractly, your app consumes two different kinds of blockspace that may be of different qualities.
 Your app is only as quality as the lower of the blockspaces.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Example: Depository Mint Model
 

@@ -47,7 +47,8 @@ Notes:
 
 The reason for the name comes from their XCM functionality, more specifically from the idea that these entities have their logic defined in the InvArch Network runtime, but exist in all other connected chains with the same exact account address, thus allowing them to transact in these chains through XCM.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Overview
 
@@ -115,7 +116,8 @@ state Polkadot {
 }
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Message details
 
@@ -199,7 +201,8 @@ MultiLocation {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### XCM Converters
 
@@ -239,7 +242,8 @@ Notes:
 The reason for the custom hasher is to replicate the account generation in the origin chain.
 The combination of these checks and the hasher makes up the converters that return AccountIds and native Origins for our MultiLocation.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What happens if we map AccountId origins to the exact accounts within?
 
@@ -266,7 +270,8 @@ Emphatically explain this!
 XCM can be used as a general API abstraction on top of multiple blockchains.
 With some clever usage, we can build chains that can be integrated by dApps in a generic manner, and also dApps that easily integrate multiple chains without any custom logic.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Concept
 
@@ -274,7 +279,8 @@ With some clever usage, we can build chains that can be integrated by dApps in a
 
 Imagine an NFT marketplace where not only multiple chains are supported, but also any standards these chains choose to implement!
 
----v
+<!-- prettier-ignore -->
+----
 
 ### How?
 
@@ -321,7 +327,8 @@ stateDiagram-v2
 
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Matching NFTs
 
@@ -350,7 +357,8 @@ MultiAsset {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Implementing AssetExchanger
 
@@ -411,7 +419,8 @@ impl xcm_executor::Config for XcmConfig {
 
 In this section we will go over some general tips on how to build with XCM.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### MultiLocations & MultiAssets
 
@@ -452,7 +461,8 @@ MultiAsset {
 };
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Message Instructions
 

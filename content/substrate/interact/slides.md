@@ -26,7 +26,8 @@ almost all external communication happens over JSPN-RPC, so let's take a closer 
 > JSON-RPC is a remote procedure call protocol encoded in JSON. It is similar to the XML-RPC
 > protocol, defining only a few data types and commands.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### JSON-RPC
 
@@ -47,7 +48,8 @@ almost all external communication happens over JSPN-RPC, so let's take a closer 
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### JSON-RPC
 
@@ -56,7 +58,8 @@ almost all external communication happens over JSPN-RPC, so let's take a closer 
 
 > with `--ws-port` and `--rpc-port`, 9944 and 9934 respectively.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### JSON-RPC
 
@@ -79,7 +82,8 @@ Recall:
 
 The full list can also be seen here: <https://polkadot.js.org/docs/substrate/rpc/>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### JSON-RPC
 
@@ -94,7 +98,8 @@ wscat \
   | jq
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### JSON-RPC: Runtime Agnostic
 
@@ -102,7 +107,8 @@ wscat \
   being used or not.
 - <!-- .element: class="fragment" --> Except... metadata, to some extent.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### JSON-RPC: Runtime API
 
@@ -110,19 +116,22 @@ wscat \
 - &shy;<!-- .element: class="fragment" --> RPC Endpoints have an `at: Option<hash>`, runtime APIs do too, what a coincidence! 🌈
   - &shy;<!-- .element: class="fragment" --> Recall the scope `state`?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### JSON-RPC: Extending
 
 - The runtime can extend more custom RPC methods, but the new trend is to move toward using `state_call`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### JSON-RPC: Safety
 
 - Some PRC methods are unsafe 😱.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### JSON-RPC: Resilience
 
@@ -189,20 +198,23 @@ A brief introduction.
 
 Excellent tutorial at: <https://polkadot.js.org/docs/>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Polkadot JS API
 
 <img src="./img/pjs.png" style="width: 500px" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### PJS: Overview
 
 - `api.registry`
 - `api.rpc`
 
----v
+<!-- prettier-ignore -->
+----
 
 ### PJS: Overview
 
@@ -215,7 +227,8 @@ Almost everything else basically builds on top of `api.rpc`.
 
 Please revise this while you learn FRAME, and they will make perfect sense!
 
----v
+<!-- prettier-ignore -->
+----
 
 ### PJS: Workshop 🧑‍💻
 

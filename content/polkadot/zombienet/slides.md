@@ -54,7 +54,8 @@ Integration tests are always <span class="colored">complex</span>:
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Friction to resolve
 
@@ -67,7 +68,8 @@ Integration tests are always <span class="colored">complex</span>:
 - Scaling
 - Test-runner
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Goals
 
@@ -159,7 +161,8 @@ Notes:
   code is available in GitHub with the instructions on how to build and run Zombienet.
   (https://github.com/paritytech/zombienet)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Download Zombienet
 
@@ -182,7 +185,8 @@ chmod +x zombienet
 
 # Let’s spawn a new network!
 
----v
+<!-- prettier-ignore -->
+----
 
 ## But first, try manually…
 
@@ -213,7 +217,8 @@ Notes:
 
 Tutorials <https://docs.substrate.io/tutorials/build-a-parachain/>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Add keys\*
 
@@ -247,7 +252,8 @@ Notes:
 
 This step is optional if you use the dev accounts (e.g. alice, bob, charlie, dave, etc)
 
----v
+<!-- prettier-ignore -->
+----
 
 - Start relay chain nodes
 
@@ -276,7 +282,8 @@ Notes:
 
 Why do we need to use different ports for Alice and Bob?
 
----v
+<!-- prettier-ignore -->
+----
 
 - Start collator
 
@@ -299,7 +306,8 @@ parachain-template-node \
 --ws-port 9977
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 - Register ParaId on relay chain
 
@@ -348,7 +356,8 @@ Follow the [connect a local parachain](https://docs.substrate.io/tutorials/build
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Zombienet network definition
 
@@ -358,7 +367,8 @@ Notes:
 
 <https://paritytech.github.io/zombienet/network-definition-spec.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ```toml[1|3-12|14-21]
 # examples/0001-small-network.toml
@@ -388,7 +398,8 @@ Notes:
 
 <https://github.com/pepoviola/zombienet-presentation-examples/blob/main/examples/0001-small-network.toml>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Spawn the network
 
@@ -423,7 +434,8 @@ default_image = "{{ZOMBIENET_INTEGRATION_IMG}}"
 default_command = "polkadot"
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Make the network config dynamic
 
@@ -435,7 +447,8 @@ default_command = "polkadot"
 
 Zombienet <span class="colored">providers</span> allow to <span class="colored-green">spawn and test</span> networks with in different environments.
 
----v
+<!-- prettier-ignore -->
+----
 
 <pba-cols style="align-items:normal">
 
@@ -483,7 +496,8 @@ Zombienet <span class="colored">providers</span> allow to <span class="colored-g
 
 Zombienet’s built-in <span class="colored">test-runner</span> allows users to use a simple <span class="colored-green">D.S.L.</span> to easily and intuitively write tests with a set of natural language expressions to make assertions.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Built-in assertions
 
@@ -499,7 +513,8 @@ Zombienet’s built-in <span class="colored">test-runner</span> allows users to 
 
 - <span class="colored">Integrations</span>: Zombienet supports multiple integrations, like jaeger spans, polkadot introspector and the backchannel.
 
----v
+<!-- prettier-ignore -->
+----
 
 ```[1-3|6|7|14-16|18-20|22-24|26-28]
 Description: Small Network Paras
@@ -569,7 +584,8 @@ Show the extension link
 
 <span class="colored">Zombienet</span> allow users to use the custom-js assertion to extend and run custom tests.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Custom-js
 
@@ -607,7 +623,8 @@ The assertions can validate the return value or the completions of your script.
 
 <span class="colored">Zombienet</span> also allow users to use as a library to create their own interactions with the running network.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### As a Library
 
@@ -619,7 +636,8 @@ The assertions can validate the return value or the completions of your script.
 
 - <span class="colored">@zombienet/utils</span> module expose misc utils functions like _readNetworkConfig_.
 
----v
+<!-- prettier-ignore -->
+----
 
 ```js[1|2|6-7|10-12|14|]
 import {start} from "@zombienet/orchestrator";

@@ -23,7 +23,8 @@ Previous lecture was all about high level information; now we want to bridge tha
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### A Word on the Rust Exam
 
@@ -37,7 +38,8 @@ Notes:
 Personally doing my best to make it hard, but reasonable, such that it prepares you best for
 in-depth development of Substrate.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Interactive
 
@@ -72,7 +74,8 @@ High level
 
 <https://paritytech.github.io/substrate/master/substrate/index.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate From Within
 
@@ -86,7 +89,8 @@ Notes:
 
 this should be covered
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate Binaries
 
@@ -94,7 +98,8 @@ Notes:
 
 alternative way is to search for `[[bin]]` in all toml files.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Structure of a Binary Crate
 
@@ -116,7 +121,8 @@ node is client side entry point, `runtime amalgamator for the runtime`.
 - node has even more
 - polkadot has even more.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate CLI
 
@@ -143,7 +149,8 @@ But then each node can decide which subset of these it chooses, and how it imple
 - pruning
 - sync modes
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Wasm Build + `std` feature.
 
@@ -155,7 +162,8 @@ Notes:
 <https://crates.io/crates/substrate-wasm-builder> (seen env variables, pretty useful!)
 <https://docs.substrate.io/build/build-process/>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Chain Specification
 

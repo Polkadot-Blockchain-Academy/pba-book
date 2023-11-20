@@ -27,7 +27,8 @@ Why do we use PoS?
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Why Proof of Stake Ser?
 
@@ -63,13 +64,15 @@ Assumptions:
 
 ### What is NPoS: Re-inventing the Wheel
 
----v
+<!-- prettier-ignore -->
+----
 
 **Solo-POS**
 
 <img style="width: 1000px" src="./img/dev-6-x-npos-0.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What is NPoS: Re-inventing the Wheel
 
@@ -81,13 +84,15 @@ Notes:
 
 Low amount of stake that we can capture, impossible for those who don't want to run the hardware to join.
 
----v
+<!-- prettier-ignore -->
+----
 
 **Single-Delegation-POS**
 
 <img style="width: 1000px" src="./img/dev-6-x-npos-1.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What is NPoS: Re-inventing the Wheel
 
@@ -102,13 +107,15 @@ Notes:
 - Better, but funds might be delegated to non-winners, which get wasted.
 - In other words, there is no incentive to delegate to those that are non-winners.
 
----v
+<!-- prettier-ignore -->
+----
 
 **Multi-Delegation-POS**
 
 <img style="width: 1000px" src="./img/dev-6-x-npos-2.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What is NPoS: Re-inventing the Wheel
 
@@ -120,19 +127,22 @@ Notes:
 
 Same issue as before.
 
----v
+<!-- prettier-ignore -->
+----
 
 **Nominated Proof of Stake**
 
 <img style="width: 1000px" src="./img/dev-6-x-npos-3.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 **Nominated Proof of Stake**
 
 <img style="width: 1000px" src="./img/dev-6-x-npos-4.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What is NPoS: Re-inventing the Wheel
 
@@ -140,7 +150,8 @@ Same issue as before.
   the **winners** and **how to distribute the stake among them**.
 - Voters are called **Nominators**.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What is NPoS: Re-inventing the Wheel
 
@@ -186,7 +197,8 @@ Same issue as before.
   episodes.
 - This gives you an idea about how we solved the scalability issue for the time being.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### NPoS Protocol Overview: Episode 1
 
@@ -196,7 +208,8 @@ Same issue as before.
 - Allows us to not need to "freeze" the staking system.
 - Allows us to index stakers, not `AccountIds`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### NPoS Protocol Overview: Episode 2
 
@@ -205,7 +218,8 @@ Same issue as before.
 - Any signed account can come up with a **NPoS solution** based on that snapshot.
 - Deposits, rewards, slash, other game-theoretic tools incorporated to make to secure.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### NPoS Protocol Overview: Episode 3
 
@@ -213,7 +227,8 @@ Same issue as before.
 
 - As the first backup, any validator can also submit a solution as a part of their block authoring.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### NPoS Protocol Overview: Episode 4
 
@@ -248,7 +263,8 @@ Point 2 is not to imply that the polkadot validator set's security is partitione
 security comes from approval voters.
 <https://www.polkadot.network/blog/polkadot-v1-0-sharding-and-economic-security/>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### NPoS Objective: Election Score
 
@@ -269,7 +285,8 @@ pub struct ElectionScore {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### NPoS Objective: Election Score
 
@@ -281,7 +298,8 @@ Notes:
 
 A common example: we allow signed submissions. What if they send solutions that are censoring a particular validator? if it can achieve a better score, so be it! we don't care.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### NPoS Objective: Election Score
 

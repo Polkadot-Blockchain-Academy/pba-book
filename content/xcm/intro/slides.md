@@ -16,7 +16,8 @@ Notes:
 - Polkadot & parachains conceptually
 - Assets (NFTs and fungibles)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## _At the end of this lecture, you will be able to:_
 
@@ -41,7 +42,8 @@ We are expecting them to say transfers, but there are so many other things you c
 - Credential checking
 - Voting
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🎬 Some Concrete Use-cases
 
@@ -64,7 +66,8 @@ XCM enables a single chain to direct the actions of many other chains, which hid
 
 > XCM is a **language** for communicating **intentions** between **consensus systems**.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consensus systems
 
@@ -80,7 +83,8 @@ A consensus system does not necessarily have to be a blockchain or a smart contr
 It can be something that already exists in the Web 2.0 world, such as an EC2 instance in an AWS server.
 XCM is Cross-Consensus since it's much more than cross chain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### ✉️ A Format, not a Protocol
 
@@ -101,7 +105,8 @@ A post card relies on the postal service to get itself sent towards its receiver
 The transport layer concerns itself with sending arbitrary blobs, it doesn't care about the format.
 A common format has its benefits though, as we'll see next.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Versioning
 
@@ -111,7 +116,8 @@ It's currently in version 3.
 
 What goes in each version is defined via an RFC process.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Terminology: XCMs
 
@@ -150,19 +156,22 @@ Notes:
   -->
   It's up to the interpreter to interpret the intention how it makes sense.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Message format changes
 
 <img style="width: 1050px;" src="./img/against-native-messaging.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Message format changes
 
 <img style="width: 1050px;" src="./img/against-native-messaging-2.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Message format changes
 
@@ -172,7 +181,8 @@ Notes:
 
 XCM abstracts away the actual on-chain operation that will be called, which lets the recipient redirect calls to always make them valid.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### No one-to-one mapping
 
@@ -189,7 +199,8 @@ Notes:
 You might want to withdraw some assets and deposit some amount to one account and another to another.
 Using transactions, you'd have to send many messages to achieve this.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Different assumptions
 
@@ -221,7 +232,8 @@ Notes:
 
 The 4 'A's are assumptions XCM makes over the transport protocol and overall the environment where these messages are sent and processed.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Agnostic
 
@@ -232,7 +244,8 @@ Notes:
 XCM is not restricted to Polkadot, it's a language that can be used for communication between any systems.
 For example, EVM-chains or Cosmos hubs.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Absolute
 
@@ -243,7 +256,8 @@ Notes:
 The message format does not do much about the message possibly not being delivered.
 In IBC, for example, you factor in fallibility of the transport protocol into your messages.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Asynchronous
 
@@ -261,7 +275,8 @@ Generally, consensus systems are not designed to operate in sync with external s
 They intrinsically need to have a uniform state to reason about and do not, by default, have the means to verify states of other consensus systems.
 Thus, each consensus system cannot make any guarantees on the expected time required to deliver results; doing so haphazardly would cause the recipient to be blocked waiting for responses that are either late or would never be delivered, and one of the possible reasons for that would be an impending runtime upgrade that caused a change in how responses are delivered.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Asymmetric
 
@@ -306,7 +321,8 @@ Relative locations are easier to handle due to the fact that the network structu
 
 Locations don't define the actual path to get there, just a way of addressing.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Interior locations
 
@@ -316,7 +332,8 @@ Notes:
 
 An example, a smart contract in Ethereum would be interior to Ethereum itself.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Location hierarchy
 
@@ -335,7 +352,8 @@ Notes:
 
 Locations form a hierarchy using the interior relation.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Location Representation
 
@@ -368,7 +386,8 @@ We also don't expect Junctions being more than 8 levels deep.
 
 It's perfectly possible to create locations that don't point anywhere.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Network Id
 
@@ -397,7 +416,8 @@ Notes:
 
 Junctions are ways to descend the location hierarchy
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Text notation
 
@@ -430,13 +450,15 @@ Notes:
 
 This notation comes from an analogy to a file system.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Universal Location
 
 > The Universal Location is a **theoretical** location. It's the parent of all locations which generate their own consensus. It itself has no parents.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Universal Location
 
@@ -452,7 +474,8 @@ Notes:
 
 We can imagine a hypothetical location that contains all top-level consensus systems.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Absolute locations
 
@@ -472,7 +495,8 @@ Notes:
 
 To write an absolute location, we need to know our location relative to the Universal Location.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What are `Location`s used for?
 
@@ -484,7 +508,8 @@ To write an absolute location, we need to know our location relative to the Univ
 - Fees
 - Bridging
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Cross-Chain Origins
 
@@ -506,7 +531,8 @@ Since `Location`s are relative, when an XCM gets sent over to another chain, the
 
 ## Location Examples
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Sibling parachain
 
@@ -522,7 +548,8 @@ Notes:
 
 What does the location resolve to if evaluated on Parachain(1000)?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Sibling parachain
 
@@ -537,7 +564,8 @@ graph TD
     linkStyle 2 stroke-dasharray:5
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Parachain account
 
@@ -554,7 +582,8 @@ Notes:
 
 What does the location resolve to if evaluated on the relay chain?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Parachain account
 
@@ -569,7 +598,8 @@ graph TD
     classDef disabled opacity:0.3
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Bridge
 
@@ -594,7 +624,8 @@ Speak to an example of non-parachain multi-location that would use a bridge
 XCM reasons about addressing (as in a postal address) that must include understanding where you are, not just where you are going!
 This will be very powerful later on (Origins)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Bridge
 
@@ -631,7 +662,8 @@ Even with Bridge Hubs, the relative location is what you'd expect.
 Bridge Hubs are just a way for routing messages.
 They are an implementation detail of the transport layer.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Bridge (actual routing)
 
@@ -690,7 +722,8 @@ In this example, Alice is an account on AssetHub, and it controls a sovereign ac
 
 When transferring between consensus systems, the sovereign account is the one that gets the funds on the destination system.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Sovereign Accounts again
 
@@ -713,7 +746,8 @@ Most messages will deal with assets in some way.
 
 How do we address these assets?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Asset Representation
 
@@ -742,7 +776,8 @@ Assets can also either be fungible or non-fungible:
 Fungible - each token of this asset has the same value as any other
 NonFungible - each token of this asset is unique and cannot be seen as having the same value as any other token under this asset
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Asset filtering and wildcards
 
@@ -793,7 +828,8 @@ Locations are relative, so they must be updated and rewritten when sent to anoth
 
 Native tokens are referenced by the location to their system.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### USDT from Asset Hub
 
@@ -812,7 +848,8 @@ graph TD
     classDef disabled opacity:0.3
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### USDT from Bridge Hub
 
@@ -832,7 +869,8 @@ graph TD
     classDef disabled opacity:0.3
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Reanchoring to the rescue
 
@@ -855,7 +893,8 @@ Notes:
 
 The two ways of transferring assets between consensus systems are teleports and reserve transfers.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 1. Asset teleportation
 
@@ -866,7 +905,8 @@ Notes:
 Teleportation works by burning the assets on the source chain and minting them on the destination chain.
 This method is the simplest one, but requires a lot of trust, since failure to burn or mint on either side will affect the total issuance.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 1.1. Example: System parachains?
 
@@ -875,7 +915,8 @@ graph LR
     BridgeHub(Bridge Hub)--"Trust"-->AssetHub(Asset Hub)
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 1.2. Example: Polkadot and Kusama?
 
@@ -884,7 +925,8 @@ graph LR
     Polkadot(Polkadot)--"No trust"-->Kusama(Kusama)
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 2. Reserve asset transfers
 
@@ -902,7 +944,8 @@ This usually happens with parachains' native tokens.
 
 You always trust the issuer of the token to not mint infinite tokens.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 2.1. Example: Parachain native tokens
 
@@ -919,7 +962,8 @@ Notes:
 Most parachains act as the reserve for their own token.
 To transfer their token to other chains, they move the real assets to a sovereign account and then tell the chain to mint equivalent derivatives.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 2.2. Example: Polkadot to Kusama
 
@@ -954,7 +998,8 @@ No new trust relationships are added.
   - Teleports
   - Reserve asset transfers
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Next steps
 
@@ -964,7 +1009,8 @@ No new trust relationships are added.
 2. XCM Format [repository](https://github.com/paritytech/xcm-format)
 3. XCM [Docs](https://paritytech.github.io/xcm-docs/)
 
----v
+<!-- prettier-ignore -->
+----
 
 <figure>
     <img rounded style="width: 50%;" src="./img/subscan-xcm-dashboard.png" />

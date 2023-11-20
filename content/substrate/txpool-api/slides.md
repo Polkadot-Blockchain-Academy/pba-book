@@ -47,7 +47,8 @@ Second, it is more accurate to think of the transactions themselves waiting in l
 
 Let's take a closer look.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Paths of a Transaction
 
@@ -60,7 +61,8 @@ It points out that each node has its own view of the blockchain.
 Now I'll show you another layer of detail which is that each node also has its own transaction pool
 CLICK
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Paths of a Transaction
 
@@ -74,7 +76,8 @@ Directly to user's authoring node and into chain is simplest.
 Could also be gossiped to other author.
 Could even go in a block, get orphaned off, back to tx pool, and then in a new block
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pool Validation
 
@@ -88,7 +91,8 @@ When a node gets a transaction, it does some light pre-validation sometimes know
 This checking determines whether the transactions is {valid now, valid in some potential future, invalid}.
 There is periodic re-validation if transactions have been in the pool for a long time.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pool Prioritization
 
@@ -130,7 +134,8 @@ Like most others, it requires that the Core api also be implemented.
 This one is slightly different in that it is actually called from off-chain, and is not part of your STF.
 So let's talk about that for a little bit.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Runtime vs STF
 
@@ -142,7 +147,8 @@ It is commonly said that the runtime is basically your STF.
 This is a good first order approximation.
 It is nearly true.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Runtime vs STF
 
@@ -152,7 +158,8 @@ Notes:
 
 But as we can see here, when we put our glasses on, actually only some of the apis are part of the stf.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Why is pool logic in the runtime?
 
@@ -191,7 +198,8 @@ The second two points are the new additions, and they are the duty of the "tags"
 
 The results of all of this are returned to the client side through a shared type `ValidTransaction` or `InvalidTransaction`
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `ValidTransaction`
 
@@ -236,7 +244,8 @@ And finally whether the transaction should be gossiped.
 This is usually true.
 Only in special edge cases would this be false.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example 1: UTXO System
 
@@ -248,7 +257,8 @@ Prioritize by implicit tip (difference of inputs and outputs)
 Requires all missing input transactions
 provides this input
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example 2: Nonced Account System
 
@@ -264,7 +274,8 @@ This demonstrates one of the biggest downsides of the Accounts system.
 Transactions cannot deterministically specify the initial state on which they operate.
 There is only an inherent ordering between transactions from the same account.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Always Re-check On-chain
 

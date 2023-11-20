@@ -121,7 +121,8 @@ Notes:
 This concept of a subset of messages being valid is super common in real life, and occurs all over the place.
 At a restaurant, when they ask you if you want soup or salad, even if you mumble they will probably understand you.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Erasure Coding Intuition
 
@@ -129,7 +130,8 @@ How would you classify each of the following words?
 
 <span style="color: red;">file</span> pile pale tale tall rule tail rail rain <span style="color: blue;">ruin</span>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Erasure Coding Intuition
 
@@ -143,7 +145,8 @@ Notes:
 
 There is no perfect way to separate these, but one very reasonable one is to do it based on the edit distance of the received word with any valid messsage you could receive.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Erasure Coding Intuition
 
@@ -155,7 +158,8 @@ Notes:
 
 If the messages are not far apart, it is impossible to distinguish in many cases. There is not enough "distance" between the two possibilities.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Erasure Coding Intuition
 

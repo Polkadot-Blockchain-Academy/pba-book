@@ -285,7 +285,8 @@ Notes:
 
 Only go through a few of these based on interest and remaining time.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## PS3 Secret Key Leak
 
@@ -299,7 +300,8 @@ Notes:
 
 [source](https://www.engadget.com/2010-12-29-hackers-obtain-ps3-private-cryptography-key-due-to-epic-programm.html)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## IOTA's Novel Hash Function
 
@@ -318,7 +320,8 @@ Some hash function weaknesses are weak. This was not. The proof of concept explo
 [exploit POC](https://github.com/mit-dci/tangled-curl/blob/master/vuln-iota.md)
 [shutdown source](https://www.bitfinex.com/posts/215)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## How the NSA wiretapped all cellphone calls for years
 
@@ -335,7 +338,8 @@ When the standardization process started, professors proposed 128-bit keys. West
 [article source](https://goodenoughsecurity.blogspot.com/2011/10/gsm-a51-substandard-security-pt2.html)
 [source on weakening](https://www.aftenposten.no/verden/i/Olkl/sources-we-were-pressured-to-weaken-the-mobile-security-in-the-80s)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Why HTTPS isn't as secure as you'd hope
 

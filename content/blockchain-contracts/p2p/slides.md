@@ -254,7 +254,8 @@ Notes:
 
 - Talk about how we have and want block 45 being peered to others
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Gossip Protocol
 

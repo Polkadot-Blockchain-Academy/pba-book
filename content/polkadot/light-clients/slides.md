@@ -20,7 +20,8 @@ Before I proceed with anything, let's take a moment to see the current state of 
 Welcome to the realm of Web 2.0, where the majority of web applications currently reside.
 While I won't be roasting anyone, it's essential to recognize that platforms like Facebook, Twitter, WhatsApp, and many others fall under this category; (Describe image)
 
----v
+<!-- prettier-ignore -->
+----
 
 #### The Web 3 vision
 
@@ -37,7 +38,8 @@ Now, show of hands:
 - how many of you believe that we are close to achieving this vision at the moment?
 - And how many think we still have a considerable distance to go?
 
----v
+<!-- prettier-ignore -->
+----
 
 #### The Web 3 reality
 
@@ -55,7 +57,8 @@ While many applications claim to be decentralized, we must ask ourselves, how tr
 Now, I want to emphasize one crucial point - and I encourage you to take a moment to reflect on it.
 I will pause there for a few seconds to let this sink in;
 
----v
+<!-- prettier-ignore -->
+----
 
 <h1 style="font-size:7rem; font-weight: bold">Blockchain "decentralized” apps are still centralized</h1>
 
@@ -63,7 +66,8 @@ Notes:
 
 I will pause there for a few seconds to let this sink in;
 
----v
+<!-- prettier-ignore -->
+----
 
 <img rounded style="width: 30%;" src="./img/learn-student.gif" />
 
@@ -121,7 +125,8 @@ They are useful for users who want to interact with the network without the need
 
 Any combination of “validator”, “bootnode” and “JSON-RPC node” is possible, except for “light” and “archive” that are mutually incompatible.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### The reality of blockchains today
 
@@ -137,7 +142,8 @@ Here is how this is happening in reality at the moment, or how one could possibl
 Make a note that: For simplicity reasons from now on I will be using the word "UI" to refer to a client/user/app etc/
 Ask: WHAT ARE THE WAYS to connect to the network from a UI like (e.g. polkadotJS apps or any custom one) today?
 
----v
+<!-- prettier-ignore -->
+----
 
 #### USER-CONTROLLED NODE
 
@@ -158,7 +164,8 @@ Notes:
 
 (Read slides)
 
----v
+<!-- prettier-ignore -->
+----
 
 #### PUBLICLY-ACCESSIBLE NODE
 
@@ -180,7 +187,8 @@ Notes:
 
 (Read slides)
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Why this needs fixing?
 
@@ -218,14 +226,16 @@ In the 3rd party case the user relies on the 3rd party node to connect to, in or
 - (there is a) Possibility of censorship or hijacking
 - Front running is the act of placing a transaction in a queue with the knowledge of a future transaction
 
----v
+<!-- prettier-ignore -->
+----
 
 ## The reality of blockchains we want
 
 <img rounded style="width: 100%;" src="./img/reality_we_want.png" />
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 # The solution
 
@@ -256,7 +266,8 @@ Back then I was like… “Yeah – thanks I guess”
 
 But that was actually true!
 
----v
+<!-- prettier-ignore -->
+----
 
 # What is a light client?
 
@@ -289,7 +300,9 @@ based on the request it either provides the response from existing data, if any,
 Bullet 4) Light clients can synchronize with the blockchain more quickly since they only need to fetch recent data, using justifications (we will talk about it in a while), reducing the time needed to get up-to-date with the network (few seconds).
 They fetch less data from the network and consume less bandwidth.
 This is especially advantageous for users on limited data plans or slow internet connections
----v
+
+<!-- prettier-ignore -->
+----
 
 ### Real-life example
 
@@ -306,7 +319,8 @@ Once the [talisman wallet](https://www.talisman.xyz/) loads up, pay attention to
 
 Full video: <https://www.youtube.com/watch?v=oaidhA5eL_8>
 
----v
+<!-- prettier-ignore -->
+----
 
 <h2>How does a light client know where to connect to</h2>
 
@@ -330,7 +344,8 @@ It serves as a blueprint for launching and running a new blockchain node, provid
 Our Substrate nodes can produce what is called a Chain spec which Smoldot then uses in order to spin up a light client node based on that chain-spec;
 (Show the chainspec on screen)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### How does a light client know what/who to trust
 
@@ -357,7 +372,8 @@ It is also used by nodes who might not have received all the votes, or for examp
 
 A Light client receives these justifications and this way it verifies the authenticity of a block.
 
----v
+<!-- prettier-ignore -->
+----
 
 <section>
   <diagram class="mermaid limit size-80">
@@ -380,7 +396,8 @@ A Light client receives these justifications and this way it verifies the authen
   </diagram>
 </section>
 
----v
+<!-- prettier-ignore -->
+----
 
 <pba-cols>
   <pba-col left>
@@ -421,7 +438,8 @@ As we progress through the slide, you might have come across or heard various te
 At this point, it's crucial to draw a clear distinction;
 Let's proceed with a more focused and detailed exploration of light clients in the Polkadot Ecosystem.
 
----v
+<!-- prettier-ignore -->
+----
 
 <h1>Smoldot<h1>
 
@@ -472,7 +490,8 @@ It was rewritten from scratch, in rust - and it comes with:
 
 Powered by Pierre Krieger (a.k.a. tomaka)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Substrate Connect
 
@@ -493,7 +512,8 @@ Notes:
 - Chrome and Mozilla extension
 - Comes with 4 integrated "Well Known" chains (Kusama, Polkadot, Westend, Rococo) - which means these chains can be used without the need of providing chainspecs;
 
----v
+<!-- prettier-ignore -->
+----
 
 ## On a diagram
 
@@ -538,7 +558,8 @@ The dApp (UI) connects to a third-party-owned publicly-accessible node client
 <p class="bg-red-600 rounded-2xl p-4 !mt-2"><span class="font-bold">Centralized and insecure:</span> Publicly-accessible node can be malicious</p>
 <p class="bg-green-600 rounded-2xl p-4 !mt-2"><span class="font-bold">Convenient:</span> Works transparently</p>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## So what one needs to do
 
@@ -550,7 +571,8 @@ The dApp (UI) connects to a third-party-owned publicly-accessible node client
 
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ## In your dApp
 
@@ -575,7 +597,8 @@ The dApp (UI) connects to a node client that the user has installed on their mac
 <p class="bg-green-600 rounded-2xl p-4 !mt-2"><span class="font-bold">Secure Trustless:</span> connects to multiple nodes, verifies everything</p>
 <p class="bg-red-600 rounded-2xl p-4 !mt-2"><span class="font-bold">Inconvenient:</span> Needs an installation process and having a node up and running, plus maintenance effort</p>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## So what one needs to do
 
@@ -602,7 +625,8 @@ The dApp (UI) connects to a node client that the user has installed on their mac
    <!-- .element: class="fragment" data-fragment-index="5" -->
    <pba-flex>
 
----v
+<!-- prettier-ignore -->
+----
 
 <p>...wait for the node to synchronize...</p>
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -619,7 +643,8 @@ The dApp (UI) connects to a node client that the user has installed on their mac
 <p>ok</p>
 <!-- .element: class="fragment" data-fragment-index="7" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ## In your dApp
 
@@ -644,7 +669,8 @@ The uApp (UI) connects to an _integrated_ light client
 <p class="bg-green-600 rounded-2xl p-4 !mt-2"><span class="font-bold">Secure Trustless:</span> connects to multiple nodes, verifies everything</p>
 <p class="bg-green-600 rounded-2xl p-4 !mt-2"><span class="font-bold">Convenient:</span> Works transparently</p>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## So what one needs to do
 
@@ -654,7 +680,8 @@ The uApp (UI) connects to an _integrated_ light client
 
 </pba-flex>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## With PolkadotJS API
 
@@ -672,7 +699,8 @@ const header = await api.rpc.chain.getHeader();
 const chainName = await api.rpc.system.chain();
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Or even without PolkadotJS API
 
@@ -694,7 +722,8 @@ mainChain.sendJsonRpc(
 );
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Or even without PolkadotJS API
 
@@ -721,7 +750,8 @@ mainChain.sendJsonRpc(
 );
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Or even only with smoldot
 

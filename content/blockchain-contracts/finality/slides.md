@@ -23,7 +23,8 @@ Social Hierarchy example: If a community has an executive (President, Queen, CEO
 But these conditions are not interesting, and are often not realistic.
 It gets interesting when we don't make these simplifying assumption.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Five Aspects of Blockchain Consensus
 
@@ -37,7 +38,8 @@ It gets interesting when we don't make these simplifying assumption.
 
 </pba-flex>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Adversarial Conditions
 
@@ -54,7 +56,8 @@ A single decision to make.
 
 Once it is made, we are done.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Desired Properties
 
@@ -64,7 +67,8 @@ All honest participants...
 - **Agreement** - Reach the same decision
 - **Integrity** - Reach at most one decision, which was proposed by at least one participant.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Also Validity
 
@@ -108,7 +112,8 @@ In the end Kenny may not agree that Whistlin' Willie's is the best option for di
 
 Image source: <https://southparkstudios.mtvnimages.com/images/shows/south-park/clip-thumbnails/season-14/1402/south-park-s14e02c03-ill-show-them-f-obscene-16x9.jpg>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Mistakes vs Malice
 
@@ -125,7 +130,8 @@ Notes:
 
 These examples and many others are _instances_ of the Byzantine Generals Problem
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Mistake or Malice?
 
@@ -205,7 +211,8 @@ Since then we've looked through so many layers of abstraction (contracts, smart 
 We've taken a huge class of problems - human coordination problems - and distilled them down to their absolute essence.
 Human coordinate at global scale reduced to this one cute, carefully stated problem.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Byzantine Generals: Solved
 
@@ -245,7 +252,8 @@ A network is one of:
 
 Roughly analogous to real-time (async) vs. turn-based (sync) games.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Sync or Async?
 
@@ -314,7 +322,8 @@ Notes:
 Blockchains are intended to keep processing and finalizing transactions forever.
 This is more like deciding where to go to dinner every night over and over.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Desireable Properties
 
@@ -340,7 +349,8 @@ Of course liveness in the finality depends on liveness in the authoring.
 
 These two decisions can be entirely orthogonal to one another, or wrapped up together.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Liveness vs Termination
 
@@ -408,7 +418,8 @@ If you want deterministic finality, it basically means employing BFT agreement p
 This means we need a finite authority set with an honest majority.
 And that means we need incentives to keep them honest.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives: Game Theory!
 
@@ -431,7 +442,8 @@ Even without slashes, the opportunity cost of staking and the missed rewards fro
 It is often the case that blockchain systems give rewards in the authorship and punishments in the finality.
 There is no fundamental reason for this; it is just a little more straightforward to implement.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What is potentially punishable?
 
@@ -453,7 +465,8 @@ BFT based system's don't.
 
 Instead, aspiring participants will typically lock up a security deposit which can be slashed in part or in whole.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Concrete Punishment Example
 
@@ -494,7 +507,8 @@ It is instant in the sense that finality is tied to authorship.
 In practice this means that authorship, which is inherently O(n), is slowed down to stay in sync with finality which is O(n^2).
 They sacrifice liveness to guarantee absolute safety at all times.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Tendermint Deep Dive
 
@@ -547,7 +561,8 @@ They sacrifice liveness to guarantee absolute safety at all times.
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What About Re-Orgs
 
@@ -559,7 +574,8 @@ Notes:
 
 Previously we talked about how a node's view of the best block can change, and that is called a re-org.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Modified Fork Choice Rule
 
@@ -586,7 +602,8 @@ Even if another chain is longer.
 
 </pba-flex>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Vote on Chains, not Blocks
 

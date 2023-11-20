@@ -23,7 +23,8 @@ A runtime is really ✌️ things:
 1. A struct that implements `Config` of all pallets.
 2. A type that helps `Executive` implement `RuntimeApis`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet <=> Runtime
 
@@ -52,7 +53,8 @@ frame_support::construct_runtime!(
 );
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `Runtime` type
 
@@ -65,7 +67,8 @@ impl pallet_timestamp::Config for Runtime { .. }
 impl pallet_dpos::Config for Runtime { .. }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `<T: Config>` ==> `Runtime`
 
@@ -97,7 +100,8 @@ frame_support::construct_runtime!(
 );
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet List
 
@@ -112,7 +116,8 @@ type DPos = pallet_dpos::Pallet<Runtime>;
 
 - Recall that `Runtime` implements `<T: Config>` of all pallets.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet List
 
@@ -124,7 +129,8 @@ frame_system::Pallet::<Runtime>::account(42u32); // 🤮
 System::account(42u32); // 🥳
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet List
 
@@ -152,7 +158,8 @@ Notes:
 Question: What will be the order of `fn on_initialize()`?
 There's also `type AllPalletsWithoutSystem` and some other variants that are no longer
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet List + Outer Enums
 
@@ -167,7 +174,8 @@ Notes:
 
 See the lecture on individual item, and the "Outer Enum" lecture.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet List: `RuntimeCall` Example
 
@@ -200,7 +208,8 @@ enum RuntimeCall {
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet List: Pallet Parts
 
@@ -218,7 +227,8 @@ frame_support::construct_runtime!(
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet List: Pallet Index
 
@@ -243,7 +253,8 @@ frame_support::construct_runtime!(
 test mock::__construct_runtime_integrity_test::runtime_integrity_tests ... ok
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Preview
 
@@ -287,7 +298,8 @@ A test requires a mock runtime, so we need to do a full `construct_runtime` 😱
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing and Mocks
 
@@ -309,7 +321,8 @@ pub trait Config: frame_system::Config {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing: `Get<_>`
 
@@ -327,7 +340,8 @@ impl pallet_template::Config for Runtime {
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing: `Get<_>`
 
@@ -339,7 +353,8 @@ impl pallet_dpos::Config for Runtime {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing: `Get<_>`
 
@@ -382,7 +397,8 @@ impl<T: Config> BuildGenesisConfig for GenesisConfig<T> {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing and Mocks: Genesis and Builder
 
@@ -406,7 +422,8 @@ impl Builder {
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing and Mocks: Genesis and Builder
 
@@ -428,7 +445,8 @@ impl Builder {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing and Mocks
 
@@ -478,7 +496,8 @@ MyMaxVoters::get();
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Progressing Blocks
 
@@ -495,7 +514,8 @@ pub fn next_block() {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Progressing Blocks
 
@@ -510,7 +530,8 @@ pub fn next_block() {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Progressing Blocks
 
