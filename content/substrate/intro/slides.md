@@ -488,7 +488,7 @@ associated with each block.
 
 ### State Transition Function
 
-$$STF = F(block_{N}, state_{N}, code_{N}): state_{N+1}$$
+$$STF = F(block_{N+1}, state_{N}, code_{N}): state_{N+1}$$
 
 ---v
 
