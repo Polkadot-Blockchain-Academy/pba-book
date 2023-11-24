@@ -69,7 +69,8 @@ In this demo, our main objective is to establish a seamless monthly recurring pa
 To accomplish this, we will utilize a powerful extrinsic call, `automationTime.scheduleXcmpTask`, executed remotely on the Turing Network.
 This will trigger a payment at the end of each month, ensuring a smooth and automated payment process.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What we need to do
 
@@ -87,7 +88,8 @@ To execute this operation, we will interact with the following components:
 - Target XCM Version: V3
 - Target Extrinsic: `automationTime.scheduleXcmpTask`
 
----v
+<!-- prettier-ignore -->
+----
 
 Upon successful XCM execution, a TaskScheduled event will fire on the Turing Network, indicating that the remote call has been executed successfully, thereby creating an automation task.
 
@@ -115,7 +117,8 @@ For this demo, we are using the existing xcmPallet built in Polkadot and Kusama.
 This pallet provides common extrinsic interfaces that developers can use to easily compose an XCM message.
 Moonriver has further encapsulated the function to make their own xcmTransactor.
 
----v
+<!-- prettier-ignore -->
+----
 
 1. Ensure Barriers on the recipient chain.<br />
    In this case, an Allow Barrier\*\* `WithComputedOrigin<Everything>`, needs to be configured in the XCM config of Turing Network.
@@ -140,7 +143,8 @@ Notes:
 
 This extrinsic serves as the gateway to composing the XCM message, incorporating all the necessary instructions for the desired cross-chain message.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## XCM configs
 
@@ -165,7 +169,8 @@ Although there are several variables to be decided, once you become familiar wit
 
 With these parameters decided, proceed to construct the instruction sequence for the XCM message.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Message elements
 
@@ -181,7 +186,8 @@ It requires the following parameters:
   <figcaption>The parameters in the `transactThroughDerivative()` extrinsic</figcaption>
 </figure>
 
----v
+<!-- prettier-ignore -->
+----
 
 **InnerCall**
 
@@ -193,42 +199,50 @@ This value will be passed on to the Transact XCM instruction.
 `transactRequiredWeightAtMost` restricts the gas fee of the innerCall, preventing excessive fee token costs.
 Likewise, `overallWeight` sets an upper limit on XCM execution, including the Transact hash.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Initiating the XCM Message
 
----v
+<!-- prettier-ignore -->
+----
 
 <img rounded style="width: 770px;" src="./img/xcm-send-1.png"/>
 
 Once all the parameters are set, we can proceed by submitting and signing the transaction.
 The XCM message can be conveniently triggered directly from the extrinsic tab of [polkadot.js apps](https://polkadot.js.org/apps/).
 
----v
+<!-- prettier-ignore -->
+----
 
 <img rounded style="width: 770px;" src="./img/xcm-send-2.png"/>
 
 `DescendOrigin(descend_location)`: The first instruction in the XCM array is DescendOrigin, transferring authority to the user's proxy account on the destination chain.
 
----v
+<!-- prettier-ignore -->
+----
 
 <img rounded style="width: 770px;" src="./img/xcm-send-3.png"/>
 
 `WithdrawAsset` and `BuyExecution`: These two instructions work together to deduct XCM fees from the user's proxy wallet and reserve them for execution.
 
----v
+<!-- prettier-ignore -->
+----
 
 <img rounded style="width: 770px;" src="./img/xcm-send-4.png"/>
 
 XCM message - Buy Execution
----v
+
+<!-- prettier-ignore -->
+----
 
 <img rounded style="width: 770px;" src="./img/xcm-send-5.png"/>
 
 `Transact(origin_type, require_weight_at_most, call)`: The Transact instruction executes the encoded innerCall on the target chain.
 We ensured that the gas cost does not exceed the specified limit by setting requireWeightAtMost during the call.
 
----v
+<!-- prettier-ignore -->
+----
 
 <img rounded style="width: 770px;" src="./img/xcm-send-5.png"/>
 
@@ -240,7 +254,8 @@ After successfully firing the message, XCM events from both the sender and recip
 
 </div>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Inspection of the message
 
@@ -250,7 +265,8 @@ An example of the script is shown below:
 
 `yarn xcm-decode-para --w wss://wss.api.moonbeam.network --b 1649282 --channel hrmp --p 2000`
 
----v
+<!-- prettier-ignore -->
+----
 
 <pba-flex center>
 
@@ -280,7 +296,8 @@ To run the program, clone it using git and execute the following command:
 PASS_PHRASE=<PASS_PHRASE> PASS_PHRASE_ETH=<PASS_PHRASE_ETH> npm run moonbase-alpha
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Example
 
@@ -329,7 +346,8 @@ With the help of the following code, we can easily dispatch the message repeated
 
 When working with XCM messages, potential issues can arise in two areas: during message construction and during transaction execution on the target chain.
 
----v
+<!-- prettier-ignore -->
+----
 
 **Message Formatting Issues**: If the XCM message is malformed, the recipient chain may not process it correctly.
 To interpret XCM messages on-chain, we can use the xcm-tool covered in Chapter 5.
@@ -341,7 +359,8 @@ Some common problems and solutions include:
 - Version Mismatch: A VersionMismatch error occurs when the recipient chain does not accept the Multi-location version specified in Destination or FeeAsset.
   Check the recipient XCM version and adjust the multi-location version to V2 or V3 accordingly.
 
----v
+<!-- prettier-ignore -->
+----
 
 **Transact Encoded Call Issues**: To examine encoded call hash in the Transact instruction, locate the specific transaction on the recipient chain, which will be an event occurring after `XcmMessageQueue.success`.
 Unfortunately, there is no automated tool to directly correlate `XcmMessageQueue.success` with the event of the encoded call.
@@ -357,7 +376,8 @@ does anybody have a great tool to correlate the XcmMessageQueue.success with the
 
 In this section, we explained the backbone of a recurring payment dApp leveraging XCM.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Lesson Recap
 
@@ -371,7 +391,8 @@ To create a successful XCM message between chains, ensure you have the following
   Decide on DescendOrigin, choosing between descending to the user's remote wallet or using a parachain’s sovereign account.
   Also, specify the Sequence, outlining the instructions to be included in the message.
 
----v
+<!-- prettier-ignore -->
+----
 
 After preparing these elements, assemble them to form the XCM message and carefully troubleshoot it.
 Once you establish a reliable template, consider automating the construction process using the polkadot.js JavaScript library.

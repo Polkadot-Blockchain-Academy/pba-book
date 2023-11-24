@@ -25,7 +25,8 @@ duration: 60 minutes
 
 #### _Story Time!_
 
----v
+<!-- prettier-ignore -->
+----
 
 ### _Ariane 5 Rocket - Flight 501_
 
@@ -40,7 +41,8 @@ Notes:
 
 Link to article: (https://www-users.cse.umn.edu/~arnold/disasters/ariane.html)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Software Correctness is _very_ important
 
@@ -50,7 +52,8 @@ Link to article: (https://www-users.cse.umn.edu/~arnold/disasters/ariane.html)
 
 **_Hence, the necessity to go beyond testing_** <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Formal Methods to the Rescue!
 
@@ -62,7 +65,8 @@ Notes:
 
 this is how Formal Methods were motivated; to prove the absence of Bugs! A bit of fear-mongering in my opinion.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## It is no longer Rocket Science!
 
@@ -76,7 +80,8 @@ Notes:
 - Personally think of formal methods as a more systematic way of detecting bugs.
 - Ideally, verifying if your property holds on all possible inputs.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Formal Methods Today
 
@@ -97,7 +102,8 @@ Notes:
   For example, Z3 by microsoft, can solve constraints with billions of variables.
 - Unified theory with blurring lines; Combining both static and dynamic techniques.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## More like _Light-weight Formal Methods_
 
@@ -110,7 +116,8 @@ Notes:
 - No more obscure logic that the developer has to learn to write specifications.
 - You will see how intuitive it is to verify code.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Formal Methods ↔ Blockchains
 
@@ -128,7 +135,8 @@ Note:
   Lot of interest in Smart Contract verification.
 - Check out Certora, Echidna, Securify, and more [here](https://ethereum.org/en/developers/docs/smart-contracts/formal-verification/)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Key Takeaways
 
@@ -168,7 +176,8 @@ Links to listed tools
 - [Substrace](https://github.com/kaiserkarel/substrace)
 - [Clippy](https://github.com/rust-lang/rust-clippy)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Tools Landscape
 
@@ -197,7 +206,8 @@ Notes:
 - Safety: nothing bad ever happens; no two honest nodes agree on different state
 - Liveness: something good eventually happens; eventually 2/3rds reach consensus
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Tools Landscape
 
@@ -228,7 +238,8 @@ Notes:
   specifically useful for detecting panics statically and information flow properties
 - Kani: we will dive deeper soon
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Tools Landscape
 
@@ -279,13 +290,15 @@ Notes:
 Link to Bounded Model Checking paper for interested folks [here](https://www.cs.cmu.edu/~emc/papers/Books%20and%20Edited%20Volumes/Bounded%20Model%20Checking.pdf).
 For example when you are accessing/modifying mutable static variable
 
----v
+<!-- prettier-ignore -->
+----
 
 ### _Lets see some Magic first_
 
 > Demo of the Rectangle-Example
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Proof Harness
 
@@ -317,7 +330,8 @@ fn check_my_property() {
 
 </pba-col>
 
----v
+<!-- prettier-ignore -->
+----
 
 Property: `decode(encode(x)) == x`
 
@@ -374,7 +388,8 @@ fn proof_u32_roundtrip {
 verifies exhaustively all values of `u16`
 </pba-col>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Under the Hood: Bounded Model Checking
 
@@ -393,7 +408,8 @@ Notes:
 
 Kani uses miniSAT as the backend engine; a lot of other verification tools use Z3 solver.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Translation to constraints
 
@@ -440,7 +456,8 @@ z != 7 /\ w != 9 (negation of the assert condition)
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## How does it handle loops?
 
@@ -448,7 +465,8 @@ z != 7 /\ w != 9 (negation of the assert condition)
 - Loops are unwound up to a certain bounded depth $k$, else the verification does not terminate.
 - Determining the _sweet-spot_ $k$ is a trade-off between _tractability_ and _verification confidence_ .
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Demo: Unwinding Loops
 
@@ -480,7 +498,8 @@ fn check_initialize_prefix() {
 
 <!-- .element: style="font-size:0.62em"-->
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Dealing with Loops: Summary
 
@@ -492,7 +511,8 @@ fn check_initialize_prefix() {
   - verifier times-out
   - predetermined upper-bound $N$ for $k$ is reached
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Implementing Arbitrary for custom type
 

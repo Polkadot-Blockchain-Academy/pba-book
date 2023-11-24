@@ -23,7 +23,8 @@ description: Runtime upgrades and how to survive them
 
 ## When is a Migration Required?
 
----v
+<!-- prettier-ignore -->
+----
 
 ### When is a Migration Required?
 
@@ -32,7 +33,8 @@ description: Runtime upgrades and how to survive them
 
 > Anything that changes **encoding** is a migration!
 
----v
+<!-- prettier-ignore -->
+----
 
 ### When is a Migration Required?
 
@@ -52,7 +54,8 @@ pub struct Foo(u64)
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### When is a Migration Required?
 
@@ -74,7 +77,8 @@ pub struct Foo(u16, u16)
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### When is a Migration Required?
 
@@ -94,7 +98,8 @@ pub struct Foo { a: u32, b: u32, c: u32 }
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### When is a Migration Required?
 
@@ -114,7 +119,8 @@ pub struct Foo { a: u32, b: u32, c: PhantomData<_> }
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### When is a Migration Required?
 
@@ -138,7 +144,8 @@ pub enum Foo { A(u32), B(u32), C(u128) }
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### When is a Migration Required?
 
@@ -158,7 +165,8 @@ pub enum Foo { A(u32), C(u128), B(u32) }
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 🦀 Rust Recall 🦀
 
@@ -167,7 +175,8 @@ Enums are encoded as the variant enum, followed by the inner data:
 - The order matters! Both in `struct` and `enum`.
 - Enums that implement `Encode` cannot have more than 255 variants.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### When is a Migration Required?
 
@@ -192,7 +201,8 @@ pub type BarValue = StorageValue<_, u32>;
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### When is a Migration Required?
 
@@ -219,14 +229,16 @@ pub type I_can_NOW_BE_renamEd_hahAA = StorageValue<_, u32>;
 
 - Now that we know how to detect if a storage change is a **migration**, let's see how we write one.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Writing Runtime Migrations
 
 - Once you upgrade a runtime, the code is expecting the data to be in a new format.
 - Any `on_initialize` or transaction might fail decoding data, and potentially `panic!`
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Writing Runtime Migrations
 
@@ -237,7 +249,8 @@ pub type I_can_NOW_BE_renamEd_hahAA = StorageValue<_, u32>;
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Writing Runtime Migrations
 
@@ -247,7 +260,8 @@ pub type I_can_NOW_BE_renamEd_hahAA = StorageValue<_, u32>;
 
 ## Pallet Internal Migrations
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet Internal Migrations
 
@@ -266,7 +280,8 @@ impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet Internal Migrations
 
@@ -285,7 +300,8 @@ impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
 
 - If you execute `migrate_stuff_and_things_here_and_there` twice as well, then you are doomed 😫.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet Internal Migrations
 
@@ -313,7 +329,8 @@ impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet Internal Migrations
 
@@ -339,7 +356,8 @@ Pallet::<T>::on_chain_storage_version();
 current.put::<Pallet<T>>();
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pallet Internal Migrations
 
@@ -365,7 +383,8 @@ Stores the version as u16 in [`twox(pallet_name) ++ twox(:__STORAGE_VERSION__:)`
 
 ## External Migrations
 
----v
+<!-- prettier-ignore -->
+----
 
 ### External Migrations
 
@@ -380,14 +399,16 @@ Alternative:
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### External Migrations
 
 - The main point of external migrations is making it more clear:
 - "_What migrations did exactly execute on upgrade to spec_version xxx_"
 
----v
+<!-- prettier-ignore -->
+----
 
 ### External Migrations
 
@@ -404,7 +425,8 @@ pub mod v3 {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### External Migrations
 
@@ -429,7 +451,8 @@ pub mod v3 {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### External Migrations
 
@@ -446,7 +469,8 @@ pub type Executive = Executive<
 >;
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### External Migrations
 
@@ -482,7 +506,8 @@ Imagine you want to remove a storage map and in a migration you want to iterate 
 
 ## Testing Upgrades
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing Upgrades
 
@@ -490,7 +515,8 @@ Imagine you want to remove a storage map and in a migration you want to iterate 
 
 - It is meant to try things out, and inspired by traits like `TryFrom`, the name `TryRuntime` was chosen.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing Upgrades
 
@@ -501,7 +527,8 @@ Recall:
 - An environment that provides these host functions is called `Externalities`.
 - One example of which is `TestExternalities`, which you have already seen.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing Upgrades: `remote-externalities`
 
@@ -521,7 +548,8 @@ let mut ext = Builder::<Block>::new()
 
 Reading all this data over RPC can be slow!
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing Upgrades: `remote-externalities`
 
@@ -533,7 +561,8 @@ Reading all this data over RPC can be slow!
 - Reading child-tree data -> Relevant for crowdloan pallet etc.
 - Caching everything in disk for repeated use.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing Upgrades: `remote-externalities`
 
@@ -550,13 +579,15 @@ Reading all this data over RPC can be slow!
 
 - .. including running `OnRuntimeUpgrade` code of a new runtime, on top of a real chain's data.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing Upgrades: `try-runtime`
 
 - A lot can be said about it, the best resource is the [rust-docs](https://paritytech.github.io/substrate/master/try_runtime_cli/index.html).
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing Upgrades: `try-runtime`
 
@@ -564,7 +595,8 @@ Reading all this data over RPC can be slow!
 - `pre_upgrade` and `post_upgrade`: Hooks executed before and after `on_runtime_upgrade`.
 - `try_state`: called in various other places, used to check the invariants the pallet.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Testing Upgrades: `try-runtime`: Live Demo.
 

@@ -10,7 +10,8 @@ duration: 60 minutes
 
 # Landscape
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Landscape
 
@@ -21,7 +22,8 @@ In an ideal world blockchains would look like this:
 
 <img style="width: 800px" src="./img/no_fork.drawio.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Landscape
 
@@ -33,7 +35,8 @@ Things don't always go according to plan:
 
 <img style="width: 800px" src="./img/fork_small.drawio.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Landscape
 
@@ -49,7 +52,8 @@ And sometimes they get extra messy:
 
 # What's the goal?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What's the goal?
 
@@ -62,7 +66,8 @@ Notes:
 There are different forks, they can have different shapes and reasons.
 We'll try to identify some examples.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What's the goal?
 
@@ -80,7 +85,8 @@ It's also worth pointing out that the whole web3 space is still very young and w
 There is definitely still a lot of confusion about the fork types and the convention I will be using here today is based on the naming proposed by the MIT Digital Currencies Initiative.
 It will cover most of the common terms and hopefully will not be as self-contradictory as some of the terms used within the community.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What's the goal?
 
@@ -102,7 +108,8 @@ Some of you might have heard about soft forks and hard forks, any idea which one
 
 # Fork Categorization
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -125,7 +132,8 @@ Notes:
 
 For that we'll talk about transitory forks.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -139,7 +147,8 @@ Notes:
 One of the simplest forks that is rarely talked about so the name might not sound familiar.
 They are often also called short-lived forks or temporary forks.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Transitory Forks
 
@@ -163,7 +172,8 @@ Notes:
 So now let's move to something more interesting.
 Consensus forks.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -177,7 +187,8 @@ Notes:
 Usually when you hear about forks you hear about those guys.
 They are the other branch and they also come in many flavours we'll discuss in a minute.
 
----v
+<!-- prettier-ignore -->
+----
 
 # Consensus Forks
 
@@ -187,7 +198,8 @@ Notes:
 
 But first before we understand the intricacies of consensus forks we need to understand the concept of the validity set and how it connects to the protocol.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Consensus Forks
 
@@ -206,7 +218,8 @@ You don't need to understand all the fields that are in it but for now take a lo
 <br />
 <img style="width: 300px" src="./img/BTC_header.drawio.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Consensus Forks
 
@@ -215,7 +228,8 @@ You don't need to understand all the fields that are in it but for now take a lo
 <br />
 <img style="width: 500px" src="./img/BTC_header_constraints.drawio.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Consensus Forks
 
@@ -231,7 +245,8 @@ It's a set of all valid blocks under those rules.
 
 So if there is a block D that for instance is too big, it's blocksize is bigger than the allowed one...
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Consensus Forks
 
@@ -245,7 +260,8 @@ Notes:
 Then it falls out of the validity set into the universal set of all possible data blobs.
 Only some of those data blobs are valid blocks.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Consensus Forks
 
@@ -263,7 +279,8 @@ The numbers at the top are initial few digits from the hashes representing those
 Imagine all the Bitcoin nodes suddenly decide they really dislike when the first hash digit is odd.
 They only like when it's even so they band together and change the protocol to only accept hashes with an even first digit.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Consensus Forks
 
@@ -280,7 +297,8 @@ Some of the previously valid blocks would no longer be valid under the new rules
 What happens in that case?
 Can we predict that?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Consensus Forks
 
@@ -308,7 +326,8 @@ The fancy notion at the bottom says the same N is contained in O.
 
 To understand the example from a second ago we'll dive into soft forks.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -321,7 +340,8 @@ Notes:
 
 Firstly soft forks are a type of a consensus fork and they are results of a change in the protocol and thus the validity set.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -350,7 +370,8 @@ Old nodes generally don't produce blocks accepted by the new nodes.
 
 Before we jump into demonstration is decreasing or increasing blocksize a soft fork?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -381,7 +402,8 @@ Another good example would be banning some transaction types from use.
 
 Now let's take a look at how forks work in practice and how they vary based on the hash power or staking power in favour of the protocol change.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -406,7 +428,8 @@ In that case the blocks produced by new nodes are marked with N and they are acc
 Blocks produced by old nodes are NOT accepted by the new nodes so the longest chain for new nodes is the short chain with only the N blocks.
 This is effectively a permanent fork.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -438,7 +461,8 @@ Notes:
 Now let's take a look at something a bit less known.
 Hidden forks.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -451,7 +475,8 @@ Notes:
 
 An edge case of soft forks.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -482,7 +507,8 @@ Because old nodes never used this field pretty much all old blocks will be accep
 
 TL;DR the stuff we removed from the validity set wasn't even used despite being technically valid.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -507,7 +533,8 @@ Notes:
 
 A good example of that assigning new optional use-cases for previously unused opcodes as with the example of the recent Bitcoin Ordinals update.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -534,7 +561,8 @@ All nodes effectively accept each others blocks so there is no conflict.
 
 Notes:
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -543,7 +571,8 @@ Notes:
 <br />
 <img style="width: 800px" src="./img/fork_family_hard.drawio.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -564,7 +593,8 @@ Notes:
     </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -587,7 +617,8 @@ Notes:
     </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -610,7 +641,8 @@ Remember that the rules were loosened this time.
 If new guys accept old blocks so because they have less than 50% power they get constantly reorged out.
 There is no permanent fork in this scenario and the change will not go through if if it has this limited support.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -662,7 +694,8 @@ We only have permanent forks in soft forks with under 50% support and in hard fo
 
 # Full Forks
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -671,7 +704,8 @@ We only have permanent forks in soft forks with under 50% support and in hard fo
 <br />
 <img style="width: 800px" src="./img/fork_family_full.drawio.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -692,7 +726,8 @@ We only have permanent forks in soft forks with under 50% support and in hard fo
     </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 
@@ -715,7 +750,8 @@ We only have permanent forks in soft forks with under 50% support and in hard fo
     </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Fork Categorization
 

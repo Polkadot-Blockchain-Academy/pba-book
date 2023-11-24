@@ -11,7 +11,8 @@ duration: 60mins
 
 <img style="width: 900px;" src="./img/dev-storage-1.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What We Know So Far
 
@@ -21,7 +22,8 @@ duration: 60mins
   - `vec![8, 2]` is a "storage key".
 - `sp_io::storage::set(vec![2, 9], vec![42, 33])`;
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What We Know So Far
 
@@ -35,7 +37,8 @@ Notes:
 - We call this an "externality environment", represented by [`trait Externalities`](https://paritytech.github.io/substrate/master/sp_externalities/trait.Externalities.html).
 - By convention, an externality has a "**backend**" that is in charge of dealing with storage.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What We Know So Far
 
@@ -45,7 +48,8 @@ sp_io::TestExternalities::new_empty().execute_with(|| {
 });
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### What We Know So Far
 
@@ -57,13 +61,15 @@ sp_io::TestExternalities::new_empty().execute_with(|| {
 
 - How about a key-value storage externality? why not? 🙈
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Key Value
 
 <img style="width: 1200px;" src="./img/dev-kv-backend.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Key Value
 
@@ -78,7 +84,8 @@ Good time to hammer down what you mean by storage key and what you mean by datab
 literally imagine that in the implementation of `sp_io::storage::set`, we write it to a key-value
 database.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Key Value
 
@@ -92,7 +99,8 @@ Notes:
 
 Alice is representing a light client, I represent a full node.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Key Value
 
@@ -104,13 +112,15 @@ Alice is representing a light client, I represent a full node.
 
 - This brings us again to why blockchain based systems tend to "merkelize" their storage.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Merklized
 
 > Substrate uses a base-16, (patricia) radix merkle trie.
 
----v
+<!-- prettier-ignore -->
+----
 
 <pba-cols>
 <pba-col>
@@ -134,7 +144,8 @@ flowchart TD
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 <pba-cols>
 <pba-col>
@@ -174,7 +185,8 @@ Notes:
 
 this is how we encode key value based data in a trie.
 
----v
+<!-- prettier-ignore -->
+----
 
 <pba-cols>
 <pba-col>
@@ -228,13 +240,16 @@ Namely:
 > Today, Patricia tries are seen
 > as radix trees with radix equals 2, which means that each bit of the key is compared individually
 > and each node is a two-way (i.e., left versus right) branch.
-> ---v
+
+<!-- prettier-ignore -->
+----
 
 ### Merklized
 
 > Substrate uses a base-16, (patricia) radix merkle trie.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Merklized
 
@@ -257,7 +272,8 @@ Namely:
 </div>
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Merklized
 
@@ -269,7 +285,8 @@ imagine:
 
 sp_io::storage::get(b"ad")
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Merklized
 
@@ -289,23 +306,28 @@ simplification.
   English alphabet is the key-scope.
 - Let's see the steps needed to read `balances_alice` from the storage.
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-trie-backend-walk-m1.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-trie-backend-walk-0.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-trie-backend-walk-1.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-trie-backend-walk-2.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-trie-backend-walk-full.svg" />
 
@@ -315,7 +337,8 @@ simplification.
 
 - If alice only has this root, how can I prove to her how much balance she has?
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-trie-backend-proof.svg" />
 
@@ -331,7 +354,8 @@ This differs slightly from how actual proof generation might work in the code.
 
 In general, you have a tradeoff: send more data, but require less hashing on Alice, or opposite (this is what we call "compact proof").
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Merklized: Proofs
 
@@ -390,7 +414,8 @@ it will be `O(LOG_n)`.
 - `System` -> `73797374656d`
 - `:code` -> `3a636f646500`
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Base 2, Base 16, Base-26?
 
@@ -417,7 +442,8 @@ So why should not choose a very wide tree?
 Because the wider you make the tree, the bigger each node gets, because it has to store more hashes.
 At some point, this start to screw with both the proof size and the cost of reading/writing/encoding/decoding all these nodes.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Base 2, Base 16, Base-26?
 
@@ -427,7 +453,8 @@ Note:
 
 Here's a different way to represent it; the nodes are bigger on the base-16 trie.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Base 2, Base 16, Base-26?
 
@@ -446,7 +473,8 @@ Anyone interested in blockchain and research stuff should look into this.
 
 <img style="width: 800px;" src="./img/dev-trie-backend-unbalanced.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Unbalanced Tree
 
@@ -469,11 +497,13 @@ Notes:
   - If the one of the parent nodes has some large data.
   - If you want to prove the deletion/non-existence of a leaf node.
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-trie-backend-proof-fat.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## WAIT A MINUTE... 🤔
 
@@ -491,7 +521,8 @@ struct RuntimeVersion {
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-trie-backend-proof-fat-fix.svg" />
 <!-- TODO: update figure. -->
@@ -534,7 +565,8 @@ All of that can be delayed.
 - Is a cache layer outside of the Runtime.
 - It works **based on key-values**, **not trie-format**.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Overlay
 
@@ -545,31 +577,38 @@ All of that can be delayed.
   - <!-- .element: class="fragment" --> All writes are flushed at the end of the runtime api call.
 - <!-- .element: class="fragment" --> No race conditions as runtime is single-threaded.
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-overlay.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-overlay-1.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-overlay-2.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-overlay-3.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-overlay-4.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-overlay-5.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Overlay
 
@@ -594,7 +633,8 @@ Notes:
   Most often, this is a micro-optimization that won't matter too much, but in general you should know that the former is more performant, as won't go the the host at all.
 - A deletion is basically a write to `null`.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Overlay
 
@@ -621,15 +661,18 @@ Notes:
 
 - implement with zero-copy. So, the size of values is not so important, it is more about the number.
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-overlay-nested.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 <img style="width: 1400px;" src="./img/dev-overlay-nested-1.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Overlay
 
@@ -655,7 +698,8 @@ with_storage_layer(|| {
 })
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Overlay
 
@@ -667,7 +711,8 @@ Notes:
 NO!
 The overlay works on the level on key-values, it knows nothing of trie nodes, and to compute the root we have to go to the trie layer and pull a whole lot of data back from the disk and build all the nodes etc.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Overlay: More Caches
 
@@ -688,7 +733,8 @@ Notes:
 
 <img style="width: 1000px;" src="./img/dev-storage-full.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate Storage
 
@@ -701,7 +747,8 @@ There are multiple implementations of `Externalities`:
   - `Overlay`
   - `TrieDb` with a real database being the backend
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Substrate Storage
 
@@ -739,28 +786,36 @@ Notes:
 - Only trie nodes that are updated from one block to the other are created as new DB Keys.
 - For the unchanged ones, we only reference the existing one.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### State Pruning
 
 <img style="width: 1400px;" src="./img/dev-4-3-pruning-1.svg" />
----v
+
+<!-- prettier-ignore -->
+----
 
 ### State Pruning
 
 <img style="width: 1400px;" src="./img/dev-4-3-pruning-2.svg" />
----v
+
+<!-- prettier-ignore -->
+----
 
 ### State Pruning
 
 <img style="width: 1400px;" src="./img/dev-4-3-pruning-3.svg" />
----v
+
+<!-- prettier-ignore -->
+----
 
 ### State Pruning
 
 <img style="width: 1400px;" src="./img/dev-4-3-pruning-4.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## State Pruning
 
@@ -773,7 +828,8 @@ Notes:
 
 <img style="width: 1400px;" src="./img/dev-4-3-child.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Child Trees
 

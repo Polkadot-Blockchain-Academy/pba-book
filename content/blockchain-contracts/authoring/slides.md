@@ -6,19 +6,22 @@ duration: 30min
 
 # Consensus: Authoring
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Consensus is...
 
 ...a decision making process that strives to achieve acceptance of a decision by all participants.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Blockchain Consensus is...
 
 ...a decentralized consensus system to reach agreement over a shared history of a state machine.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Blockspace
 
@@ -83,7 +86,8 @@ The fifth is covered in detail two lectures from now in great detail.
 The first three aspects are about ruling possibilities out.
 The fourth and fifth are about deciding between any remaining possibilities.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## State Machine Validity
 
@@ -97,7 +101,8 @@ Example spending more money than you have.
 Noting your present location such that you would have traveled faster than speed of light since last record.
 Calling a smart contract with invalid parameters.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Arbitrary / Political Validity
 
@@ -145,7 +150,8 @@ It would be impossible to check them all.
 It would be DOS central.
 So we need some organization / order to the process.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Leader Election
 
@@ -157,7 +163,8 @@ Notes:
 
 By electing a few leaders, we are able to throttle the authoring.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Liveness
 
@@ -178,7 +185,8 @@ Satoshi's Big invention.
 
 Solve a Pre-image search - earn the right to author.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Proof of Work: Pros
 
@@ -208,7 +216,8 @@ With PoW, it costs energy for every block you author.
 This makes it expensive to perform such attacks.
 This provides an economic incentive for authors to only author blocks on the "correct" fork.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Proof of Work: Cons
 
@@ -235,7 +244,8 @@ When waiting for block to be authored, there are sometimes spurts of blocks foll
 
 Although it seems permissionless on its face, in practice, to be a bitcoin miner you need to have expensive specialized hardware.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Why Author at All?
 
@@ -266,7 +276,8 @@ Certain identities are allowed to author in each slot.
 
 Prove your identity with a signature.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Proof of Authority: Pros
 
@@ -283,7 +294,8 @@ Stable block time is a property of high-quality block space.
 It allows applications that consume the blockspace to have expectations about throughput.
 In PoW you will occasionally have long periods without a block which can negatively affect applications.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Proof of Authority: Cons
 
@@ -306,7 +318,8 @@ We will need an incentive for that.
 
 Reminder: PoA is a family of leader election schemes
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Aura
 
@@ -329,7 +342,8 @@ Cons:
 
 - Not blind - welcome targeted attacks
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Babe
 
@@ -351,7 +365,8 @@ Cons:
 - Some slots have no authors - There is a workaround for this.
 - Other slots have multiple authors which leads to forks - There is **no** workaround for this.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Sassafras
 
@@ -375,7 +390,8 @@ Notes:
 - Has most of the Pros of PoW (except for the external resource based valuation hint)
 - Has all the Pros of PoA
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Sassafras Analogy
 
@@ -389,7 +405,9 @@ Notes:
 
 </pba-col>
 </pba-cols>
----v
+
+<!-- prettier-ignore -->
+----
 
 ## Sassafras Analogy
 
@@ -399,7 +417,8 @@ Notes:
 <img rounded width="400px" style="float: left; padding: 1px;" src="./img/caa_white_2.png" />
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Sassafras Analogy
 
@@ -419,7 +438,8 @@ Notes:
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 # Proof of Stake
 
@@ -443,7 +463,8 @@ The participants with the most tokens staked are elected as the authorities.
 There is a state transition that allows reporting authority misbehavior (eg authoring competing blocks at the same height), and the authority loses their tokens.
 There are often block rewards too like PoW.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 💒 Consensus 🪢 State Machine
 
@@ -488,7 +509,8 @@ The fork choice allows you, as a network participant, to decide which fork you c
 It is not binding.
 Your opinion can change as you see more blocks appear on the network
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Reorganizations
 
@@ -514,7 +536,8 @@ You can experience this in a social way too.
 - Imagine that you believe the colleague submitted the paper months ago and the paper has been published.
   You have applied on a job having listed the publication.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Double Spends
 
@@ -527,7 +550,8 @@ It exploits the existence of forks.
 Attacker has to get two conflicting transactions into two forks.
 And convince a counterparty to believe one chain long enough to take an off-chain action before they see the reorg.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Double Spends
 

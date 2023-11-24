@@ -27,7 +27,8 @@ How do we ensure a piece of data is retrievable without storing it on every sing
 
 Incorrectness can be proven (fraud proofs), but unavailability can't.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Data Availability Problem: Parachains
 
@@ -44,7 +45,8 @@ What could such a collator do?
 
 We want other collators to be able to reconstruct the block from the relay chain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Data Availability Problem: Relay Chain
 
@@ -86,7 +88,8 @@ The goal:
 
 <img rounded style="width: 1000px" src="./img/erasure-coding-1.png" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### In code
 
@@ -113,19 +116,22 @@ pub fn reconstruct(_chunks: impl Iterator<Item = Chunk>) -> Result<Data, Error> 
 
 <img rounded style="width: 1000px" src="./img/line.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Polynomials: Line
 
 <img rounded style="width: 1000px" src="./img/line-extra.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Even More Polynomials
 
 <img rounded style="width: 1000px" src="./img/polynomial-2.png" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Polynomial we need
 
@@ -165,7 +171,8 @@ The simplest example of a finite field is arithmetic mod prime number.
 Computers are quite bad at division by prime numbers.
 Reed-Solomon codes are used in CDs, DVDs, QR codes and RAID 6.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Reed-Solomon with Lagrange interpolation
 
@@ -224,7 +231,8 @@ How does a validator know if a chunk corresponds to the committed data?
 
 <img rounded style="width: 600px" src="./img/not-that-merkel.jpg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Not that Merkle!
 

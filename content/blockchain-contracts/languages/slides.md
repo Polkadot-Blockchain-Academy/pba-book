@@ -52,7 +52,8 @@ results.
 
 </pba-flex>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## DAO Hack
 
@@ -70,7 +71,8 @@ Like any other business entity, it has assets and can carry out operations, but 
 The earliest DAO ("The DAO") on Ethereum suffered a catastrophic hack due to a bug in its code.
 The DAO community disagreed on whether or not to hard-fork and revert the hack, resulting in Ethereum splitting into two different chains.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## The first smart contracting platform
 
@@ -83,7 +85,8 @@ Ethereum has faced many challenges as the pioneer of smart contracts.
 - Problems with aggregating smart contract protocols together
 - Storage bloat: Misaligned incentives with burden of storage
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Idiosyncrasies
 
@@ -111,7 +114,8 @@ The Halting Problem tells us that it's not possible to know that an arbitrary pr
 To prevent such abuse, we check that there is gas remaining before every single opcode execution.
 Since gas is limited, this ensures that no EVM execution will run forever and that all work performed is properly paid for.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Gasometer
 
@@ -127,7 +131,8 @@ Notes:
 This not only makes it possible to prevent abuse, but crucially allows nodes to agree on doing so.
 A centralized service could easily impose a time limit, but decentralized nodes wouldn't be able to agree on the outcome of such a limit (or trust each other).
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Gas limits and prices
 
@@ -142,7 +147,8 @@ Notes:
 
 This amount is initially deducted from the txn's sender account and any remaining gas is refunded after the txn has executed.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## EIP-1559
 
@@ -165,7 +171,8 @@ Notes:
 <https://eips.ethereum.org/EIPS/eip-1559>
 Introduced in London hard-fork.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## OOG and Gas Estimation
 
@@ -186,7 +193,8 @@ However, there are a few caveats:
 There are two types of Ethereum accounts.
 Both use 160-bit account IDs and can hold and send Ether, but they are controlled very differently.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Account Types
 
@@ -218,7 +226,8 @@ Both use 160-bit account IDs and can hold and send Ether, but they are controlle
 
 A transaction is a signed payload from an EoA which contains details about what the transaction should do and how it will pay for itself.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Transactions fields:
 
@@ -231,7 +240,8 @@ A transaction is a signed payload from an EoA which contains details about what 
 - **signature**: proves ownership of private keys, allows receiving Account ID
 - _there can be more_
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Possible use-cases:
 
@@ -241,7 +251,8 @@ A transaction is a signed payload from an EoA which contains details about what 
 
 In all cases, Ether can be sent (`Neither` being a normal Ether send).
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Transaction Validity
 
@@ -276,7 +287,8 @@ This bytecode is bundled together and becomes the on-chain contract code.
 
 ABI ("Application Binary Interface") describes the bytecode for a contract by annotating where functions and other objects exist and how they are formatted.
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- .slide: data-background-color="#4A2439" -->
 
@@ -284,7 +296,8 @@ ABI ("Application Binary Interface") describes the bytecode for a contract by an
 
 Review this [Contract Code on Etherscan](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984?a=0xd0fc8ba7e267f2bc56044a7715a489d851dc6d78#code)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Sandboxed Contract State
 
@@ -292,7 +305,8 @@ Review this [Contract Code on Etherscan](https://etherscan.io/token/0x1f9840a85d
 contract writes to storage.
 Contracts may not write to storage outside of their own sandbox, but they can call other contracts whose bytecode _might_ write to their respective storage.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Calling Contracts
 
@@ -301,7 +315,8 @@ Contract functions can be invoked in two ways different ways:
 - EoAs can call a contract functions directly
 - Contracts can call other contracts (called "messaging")
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Types of contract messaging
 
@@ -313,7 +328,8 @@ Notes:
 
 Transactions are the only means through which state changes happen.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Message Object
 
@@ -327,7 +343,8 @@ msg.sig (bytes4) first 4 bytes of calldata (function signature)
 msg.value (uint256) amount of Ether sent with this call
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Ether Denominations
 
@@ -342,7 +359,8 @@ Notes:
 
 Integer math with such insignificant units mostly avoids truncation issues and makes it easy to agree on outcomes.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Named Denominations
 
@@ -388,7 +406,8 @@ We will look at two in particular:
 
 </pba-flex>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Basics
 
@@ -404,7 +423,8 @@ contract Foo {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Functions
 
@@ -416,7 +436,8 @@ contract Foo {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Modifiers
 
@@ -447,7 +468,8 @@ Notes:
 Although Modifiers can be an elegant way to require preconditions, they can do
 entirely arbitrary things, and auditing code requires carefully reading them.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Payable
 
@@ -469,7 +491,8 @@ Notes:
 The actual payment accounting is handled by the EVM automatically, we don't need
 to update our own account balance.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Types: "Value" Types
 
@@ -508,7 +531,8 @@ contract Foo {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Types: "Reference" Types
 
@@ -540,7 +564,8 @@ contract Foo {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Data Location
 
@@ -552,7 +577,8 @@ It can be one of 3 places:
 - storage: Stored in the contract's permanent on-chain storage
 - calldata: read-only data, using this can avoid copies
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Data Location Sample
 
@@ -588,7 +614,8 @@ contract DataLocationSample {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Enums
 
@@ -608,7 +635,8 @@ contract Foo {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Structs
 
@@ -634,7 +662,8 @@ contract Foo {
 
 ## Solidity Hands-On
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Dev Environment
 
@@ -643,13 +672,15 @@ It provides an editor, compiler, EVM, and debugger all within the browser, makin
 
 > <https://remix.ethereum.org>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Flipper Example
 
 Code along and explain as you go
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- .slide: data-background-color="#4A2439" -->
 
@@ -667,7 +698,8 @@ Code along and explain as you go
 > pragma solidity ^0.7.0;
 > ```
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- .slide: data-background-color="#4A2439" -->
 
@@ -687,7 +719,8 @@ Code along and explain as you go
 - Intentionally lacks some features such as inheritance
 - Auditable: "Simplicity for the reader is more important than simplicity for the writer"
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Compared to Solidity
 
@@ -701,7 +734,8 @@ Some examples:
 - No recursive calling (!)
 - No infinite-loops
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Basics
 
@@ -719,7 +753,8 @@ def __init__(val):
     self.bar = val
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Functions
 
@@ -729,7 +764,8 @@ def doSomething() -> bool:
     return True
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Decorators and Payable
 
@@ -750,7 +786,8 @@ Notes:
 
 source: <https://docs.vyperlang.org/en/stable/control-structures.html#decorators-reference>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Types
 
@@ -806,7 +843,8 @@ def referenceTypes():
     map[2] = 20
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Enums
 
@@ -822,7 +860,8 @@ enum Suite {
 hearts: Suite = Suite.Hearts
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Structs
 
@@ -842,7 +881,8 @@ name: string = someBallot.name
 
 ## Vyper Hands-On
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Remix Plugin
 
@@ -852,7 +892,8 @@ First, search for "Vyper" in the plugins tab:
 
 <img rounded style="width: 500px;" src="./img/RemixInstallVyper1.png" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Remix Plugin
 
@@ -887,7 +928,8 @@ The DAO Vulnerability
 
 We make a call to withdraw user's balance before updating our internal state.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## How can this be avoided?
 
@@ -909,7 +951,8 @@ them.
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Storing Hashed Secrets On-Chain
 
@@ -922,7 +965,8 @@ before it is executed and settled, allowing someone to frontrun it.
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Verifying with commit-reveal
 
@@ -947,7 +991,8 @@ verify(alleged_secret == secret)
 verify(commitment == hash(salt, alleged_secret))
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Alternative: Signature
 

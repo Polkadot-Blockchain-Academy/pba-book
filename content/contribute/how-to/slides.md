@@ -29,7 +29,8 @@ Try doing down a slide.
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Use the keybindings!
 
@@ -41,7 +42,8 @@ Try doing down a slide.
 
 - **Zoom-in**: ALT+click make the view zoom at the position of your mouse’s pointer; very useful to look closely at a picture or chart surrounded by too much bullet points.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Speaker Notes & Viewer
 

@@ -5,7 +5,7 @@ duration: 15 minuets
 # PBA has a theme: "reveal-md/PBA-theme.css", alternatively, you can use a named default like "night" from this list: https://github.com/hakimel/reveal.js/tree/master/css/theme/source
 # Add custom css files for your slides here, comma separated:
 separator: "\r?\n---\r?\n"
-verticalSeparator: "\r?\n---v\r?\n"
+verticalSeparator: "\r?\n----\r?\n"
 # Below can be any of these: https://revealjs.com/config/
 revealOptions:
     transition: "slide" # animation between slides = none/fade/slide/convex/concave/zoom
@@ -150,7 +150,8 @@ Using<br /> `<pba-col center>`
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Two Column
 
@@ -202,7 +203,8 @@ Using<br /> `<pba-col right>`
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Three Columns
 
@@ -251,7 +253,8 @@ Using<br />`<pba-col right>`
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- prettier-ignore -->
 ```html
@@ -285,7 +288,8 @@ Notes:
 
 <!-- Don't forget to link to the image source here, AND the license, if not included with the first use of the image elsewhere in this book. -->
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- prettier-ignore -->
 ```html
@@ -310,7 +314,8 @@ Notes:
 Image source: <https://giphy.com/stickers/transparent-hU2uvl6LdxILQOIad3>
 License: <https://support.giphy.com/hc/en-us/articles/360020027752-GIPHY-Terms-of-Service>
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- prettier-ignore -->
 ```html
@@ -336,7 +341,8 @@ Notes:
 Video source: <https://www.youtube.com/watch?v=oaidhA5eL_8>
 License: <https://www.youtube.com/static?template=terms>
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- prettier-ignore -->
 ```html
@@ -352,7 +358,8 @@ License: <https://www.youtube.com/static?template=terms>
 
 # Section title
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- .slide: data-background-color="#4A2439" -->
 
@@ -425,7 +432,8 @@ pub type Executive = frame_executive::Executive<
 >;
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- prettier-ignore -->
 ~~~
@@ -534,7 +542,8 @@ fn main() {
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- prettier-ignore -->
 ```html
@@ -606,7 +615,8 @@ fn main() {
 | col 3 is            |    right-aligned    |                      $1 |
 | This row sure has a | _lot_ of text so it | spaces the columns outs |
 
----v
+<!-- prettier-ignore -->
+----
 
 ```
 | Tables              |         Are         |                    Cool |
@@ -640,7 +650,9 @@ A plugin for Reveal.js allowing to easily add charts using Chart.js.
 
 <p style="font-size: 1.2rem; margin-top: 1.2rem; color: #999;">There is a known bug:<br /> Chart (meaning the < canvas > tag) needs to be in a full HTML slide (no md allowed); this means that the whole slide that contains a chart MUST be written in plain HTML.
 
----v
+<!-- prettier-ignore -->
+----
+
 <canvas data-chart="line" style="height: 300px">
 
 <!--
@@ -662,7 +674,8 @@ A plugin for Reveal.js allowing to easily add charts using Chart.js.
 -->
 </canvas>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### The code
 
@@ -692,7 +705,8 @@ A plugin for Reveal.js allowing to easily add charts using Chart.js.
   Note : < !-- and --> are intentional
 </pba-flex>
 
----v
+<!-- prettier-ignore -->
+----
 
 <section style="margin-top: 100px">
   <h5>Bar chart with CSV data</h5>
@@ -705,7 +719,8 @@ A plugin for Reveal.js allowing to easily add charts using Chart.js.
   </div>
 </section>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Previous slides' code:
 
@@ -721,7 +736,8 @@ A plugin for Reveal.js allowing to easily add charts using Chart.js.
 </section>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 <section style="margin-top: 100px">
   <h5>Stacked bar chart from CSV file with JSON configuration</h5>
@@ -740,7 +756,8 @@ A plugin for Reveal.js allowing to easily add charts using Chart.js.
   <div style="font-size:1.2rem">(There is a data.csv file located under same dir in order for this slide to work</div>
 </section>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Previous slide's code:
 
@@ -772,7 +789,8 @@ It is a JavaScript based diagramming and charting tool that renders Markdown-ins
 
 First of all lets see some examples of diagrams that Mermaid can show with its integration with revealJS;
 
----v
+<!-- prettier-ignore -->
+----
 
 ### [A Flowchart](https://mermaid.js.org/syntax/flowchart.html)
 
@@ -786,7 +804,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
       B -- No ----> E(End);
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### And its code
 
@@ -803,7 +822,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
   </diagram>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Entity relationship diagram
 
@@ -814,7 +834,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
     Node }|..|{ Some-IP : uses
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### And its code
 
@@ -828,7 +849,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 </diagram>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Sequence diagram
 
@@ -839,7 +861,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
       Alice-)John: See you later!
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### And its code
 
@@ -853,7 +876,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 </diagram>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Class Diagram
 
@@ -883,7 +907,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
       }
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### And its code
 
@@ -916,7 +941,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 </diagram>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### State diagram (v2)
 
@@ -932,7 +958,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### And its code
 
@@ -950,7 +977,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 </diagram>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### User Journey
 
@@ -966,7 +994,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
       Sit down: 5: Me
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### And its code
 
@@ -985,7 +1014,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 </diagram>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Gantt
 
@@ -996,7 +1026,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
       cherry :active, c, after b a, 1d
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### And its code
 
@@ -1010,7 +1041,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 </diagram>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Pie Chart
 
@@ -1021,7 +1053,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
       "Rats" : 15
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### And its code
 
@@ -1035,7 +1068,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 </diagram>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Git Graph
 
@@ -1053,7 +1087,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
       commit
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### And its code
 
@@ -1074,7 +1109,8 @@ First of all lets see some examples of diagrams that Mermaid can show with its i
 </diagram>
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Useful links
 

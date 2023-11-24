@@ -298,7 +298,8 @@ Keccak is available for Ethereum compatibility.
 
 Let's see which cryptographic properties apply to hashes.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Confidentiality
 
@@ -306,7 +307,8 @@ Sending or publically posting a hash of some data $D$ keeps $D$ confidential, as
 
 Both cryptographic and non-cryptographic hashes work for this. _only if the input space is large enough_.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Confidentiality Bad Example
 
@@ -325,19 +327,22 @@ Notes:
 The data space has to be _sufficiently large_.
 Adding some randomness to input of the hash fixes this. Add x bits of randomness to make it x bits of security on that hash.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Authenticity
 
 Anyone can make a hash, so hashes provide no authenticity guarantees.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Integrity
 
 A hash changes if the data changes, so it does provide integrity.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Non-Repudiation
 

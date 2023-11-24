@@ -6,7 +6,7 @@
   ],
   "assetsDir": ".",
   "separator": "\r?\n---\r?\n",
-  "verticalSeparator": "\r?\n---v\r?\n",
+  "verticalSeparator": "\r?\n----\r?\n",
   "highlightTheme": "shades-of-purple",
   "template": "./tools/templates/slide-template.html",
   "listingTemplate": "./tools/templates/listing-template.html",

@@ -6,7 +6,8 @@ duration: 1 hour
 
 # FRAME Deep Dive
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Agenda
 
@@ -18,7 +19,8 @@ Notes:
 
 Without frame, there is the runtime and there is the client, and an API that sits in between.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Agenda
 
@@ -38,7 +40,8 @@ By the end of this lecture, you will fully understand this figure.
 
 - and implements `UnfilteredDispatchable` (which just forward the call back to `Pallet`)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Expanding A Pallet
 
@@ -63,7 +66,8 @@ Call::<T>::set_value(10).dispatch_bypass_filter(origin);
 
 - Now, let's look at a minimal runtime amalgamator.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `construct_runtime!` and Runtime Amalgamator.
 
@@ -95,7 +99,8 @@ pub struct Executive<
 >(..);
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Expanding The Generic Types.
 
@@ -121,7 +126,8 @@ where
 {...}
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 #### `Block::Extrinsic: Checkable`
 
@@ -136,7 +142,8 @@ type Block = generic::Block<Header, UncheckedExtrinsic>;
 type Executive = frame_executive::Executive<_, Block, ...>;
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 #### What Does `Checkable<_>` Do?
 
@@ -153,27 +160,31 @@ impl Checkable<_> for UncheckedExtrinsic<_, _, _, _> {
 }
 ```
 
----v
+<!-- prettier-ignore -->
+----
 
 #### `<Block::Extrinsic as Checkable>::Checked: Applyable`
 
 - `UncheckedExtrinsic::Checked` is `CheckedExtrinsic`.
 - And it surely does implement `Applyable`.
 
----v
+<!-- prettier-ignore -->
+----
 
 #### What Does `Applyable<_>` Do?
 
 - TLDR: `Ok(self.call.dispatch(maybe_who.into()))`
 
----v
+<!-- prettier-ignore -->
+----
 
 #### Lastly: `<<Block::Extrinsic as Checkable>::Checked as Applyable>::Call: Dispatchable`
 
 - And guess who implemented `Dispatchable`, which we already looked at!
 - The `enum Call` that we had in our expanded file!
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Circling Back..
 

@@ -13,13 +13,15 @@ Where can I actually run these things!?
 
 # Quick Review of Smart Contracts
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Expression
 
 Write code instead of long confusing legalese
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Execution
 
@@ -56,7 +58,8 @@ We know we need somewhere to run these things with no back door or trusted party
 We have seen some hints so far.
 Let's check them out.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Diversity and Redundancy
 
@@ -74,7 +77,8 @@ Some digital services, or subsystems of digital services may never even need web
 
 But indeed there is also some to be thrown out or improved.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## P2P Networking
 
@@ -84,7 +88,8 @@ Notes:
 
 We saw well how this worked out well in the file sharing and anonymous browsing domains (bit torrent,)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Reproducible Execution
 
@@ -107,7 +112,8 @@ PABs make it practical for diverse parties all over the world to run the same so
 
 <img rounded src="./img/moses-blockchain.png" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Solves Some Specific Problems
 
@@ -121,7 +127,8 @@ It also brings some efficiency improvements to modern bureaucracies.
 It does not automatically make everyone believe the same things or magically arrive in happy unicorn bunny land.
 Tomorrow and Thursday will dig in on how the blockchain and its P2P network work together.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Blockchain Data structure
 
@@ -133,7 +140,8 @@ We'll discuss two new blockchain related topics.
 First is the blockchain data structure which you can see here.
 This one is forked which is when things get really interesting, and when you need to invoke the second part
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Blockchain Consensus
 
@@ -144,7 +152,8 @@ Notes:
 Consensus deals with how we agree which version of the data structure is real.
 It is an interesting and complex topic, but we first need to learn a bit more about how the data structure allows us to track a shared story.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Reading Assignment
 

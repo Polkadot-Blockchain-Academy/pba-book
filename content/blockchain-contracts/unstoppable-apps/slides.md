@@ -194,7 +194,8 @@ especially
 
 Image Source: <https://xkcd.com/538/>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Web3 Criticisms
 
@@ -233,7 +234,8 @@ This is valid mostly in the present, we will discuss these and what we're buildi
 
 # Systems Level
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Prove it!
 
@@ -257,7 +259,8 @@ An interesting example is [Cardano's design value proposition](https://docs.card
 BUT this property assumes a complete system model!
 Nuke proposes that when considering factors outside the consensus system, there cannot be a rigorous proof of correctness as we cannot model the universe.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🔮 Oracle Problem
 
@@ -273,7 +276,8 @@ Notes:
     Applications in a consensus system may want to _try_ and reason about something outside itself.
 - Inclusive of bridges
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🦢 Black Swans
 
@@ -291,7 +295,8 @@ Explain example of luna or other system collapse.
 - 📔[The Black Swan: The Impact of the Highly Improbable](https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable)
 - [Wiki Black Swan Theory](https://en.wikipedia.org/wiki/Black_swan_theory)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🤯 Complexity
 
@@ -319,7 +324,8 @@ Perhaps it's far easier and more likely than it at first appears to experience a
 
 - Image [source](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb#/media/File:Genealogy_map_of_topics_treated_by_Nassim_Taleb.jpg) - Describes the various categories of uncertainty, epistemology limits and statistical subjects touching on Taleb's Black swan / antifragility etc. ideas
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 👪 Dependency
 
@@ -348,7 +354,8 @@ Notes:
 
 Image source: <https://xkcd.com/2347/>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🦸 Dependency in Polkadot
 
@@ -370,7 +377,8 @@ Notes:
 - [Jaco](https://github.com/jacogr) is effectively the only maintainer of how _just about everything_ communicates with Substrate nodes!
 - [Capi](https://github.com/paritytech/capi) is on the way, but just getting started.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🙈 Unknown unknowns
 
@@ -389,13 +397,15 @@ Assumptions about context must be rigorously evaluated (i.e. - what does finalit
 
 # Network Level
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🕸️ Peer-to-Peer Networks
 
 <img style="width: 1000px" src="./img/3.4-network-topologies.png" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Network Attacks
 
@@ -421,7 +431,8 @@ Boot nodes can decide what peers to advertize, or can be inaccessible.
 Common data centers (AWS, GCP, ...) could fail or censor, potentially large number of peers go dark.
 Hard to hide! Most p2p traffic is easy to identify vs. web2 traffic.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Node Queries
 
@@ -431,7 +442,8 @@ Running a node is hard, most people outsource.
 
 These service have power to deceive, censor, and surveil.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Multi-Chain Applications
 
@@ -439,7 +451,8 @@ If running _one_ node is burdensome, try multiple.
 
 <img style="width: 700px" src="./img/3.4-multi-chain-apps.png" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Trustless Messaging
 
@@ -447,7 +460,8 @@ In order to handle messages _without trust_,<br />systems must share common fina
 
 `A` should never process a message from `B`,<br />where `B` is reverted and `A` is not.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## A Note on Synchronicity
 
@@ -456,7 +470,8 @@ Smart contracts on a single chain (e.g. Ethereum)<br />can interact trustlessly 
 Asynchronous systems can also share finality.<br />
 i.e., be members of the same consensus system.
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- .slide: data-background-color="#4A2439" -->
 
@@ -477,7 +492,8 @@ Notes:
 
 # Consensus
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Mining Pools
 
@@ -491,7 +507,8 @@ Notes:
 Call out that Nomination pools exist and are discussed in the NPoS lesson latter.
 Similar issues, but in a more bounded set.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Mining Pools
 
@@ -501,7 +518,8 @@ Notes:
 
 Source: [Buy Bitcoin Worldwide](https://buybitcoinworldwide.com/pages/mining/pools/img/pool-graph.png)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Security Dilution
 
@@ -515,7 +533,8 @@ Security is always a finite resource:
 
 </pba-flex>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Security Dilution
 
@@ -523,7 +542,8 @@ Consensus systems compete for security,<br />and they have reason to attack each
 
 Emergence of obscure/niche "Proof of X" algorithms<br />to shelter from attack only goes so far.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## ⚔ Blockchain Wars
 
@@ -535,7 +555,8 @@ Notes:
 
 "In ~~a galaxy~~ the universal consensus ~~far far away~~ not so far away..."
 
----v
+<!-- prettier-ignore -->
+----
 
 ## ⚔ Proof of Work Battles
 
@@ -551,7 +572,8 @@ Notes:
 - ASICs are less flexible, but also can to the highest paying coin.
 - Example: [ETH classic deep re-ogs](https://coingeek.com/ethereum-classic-experiences-51-attack-and-3000-block-reorg/)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Proof of...<br />Nothing at Stake
 
@@ -569,7 +591,8 @@ Notes:
   Modern PoS schemes avoid this specific problem by having the security deposit and slashing for equivocation (in a few slides)
 - Good explainer, source of image: <https://golden.com/wiki/Nothing-at-stake_problem-639PVZA>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Proof of...<br /> _Relatively_ Nothing at Stake
 
@@ -583,7 +606,8 @@ Notes:
 
 - Again PoS ha only _intrinsic_ measures to do accounting of consensus rules, but the system doesn't exist in a vacuum: the relative valuation of what is at stake needs to be accounted for.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Validator Consolidation
 
@@ -597,7 +621,8 @@ Notes:
 
 Yet another N-lemma to consider.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## PoS Economic Security
 
@@ -609,7 +634,8 @@ Notes:
 
 - This market capitalization could be company shares, or total ETH in existence, or total X token associated with a specific smart contract or parachain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## ⚔ PoS Economic Security Battles
 
@@ -621,7 +647,8 @@ Here like in PoW we have relative safety in networks, but there is no way to "ho
 
 What about an system of value _within_ consensus?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## DApp PoS Economic Security
 
@@ -639,7 +666,8 @@ Therefore the sum of all parachains market cap is also limited as that same leve
 
 Nuke argue this is the same for the sum of all contracts valuations on something like Ethereum.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Authority Misbehavior
 
@@ -662,7 +690,8 @@ Selfish mining where it's impossible to _prove_ an author is withholding valid b
 
 ...Could other actors abuse the protocols?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Accountability of Authority
 
@@ -672,7 +701,8 @@ No matter how you design an authority selection mechanism, some people will have
 
 Those who _choose_ to become authorities should be liable for their actions.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Provability and Equivocation
 
@@ -687,7 +717,8 @@ Notes:
 Nothing at stake solution, with the possible caveat of long range attacks
 [Weak subjectivity](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity) can still potentially cause the same behavior in a much harder to orchestra way, with bad actors having already have their stake released to produce a valid, finalized fork.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Design Considerations<br />in Polkadot
 
@@ -701,7 +732,8 @@ A few interesting design decisions in Polkadot's architecture.
 
 We will cover polkadot much more in depth latter!
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Transaction Censorship and Ordering
 
@@ -714,7 +746,8 @@ Block authors choose the transactions they include and in what order.
 
 </pba-flex>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Web3 Goal: Non-Censorship
 
@@ -730,7 +763,8 @@ Notes:
 
 Most present systems have no mechanism to penalize censorship, and a much harder problem can be the ability to discover this is happening on the network at all, depending on the actors involved.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Maximal Extractable Value (MEV)
 
@@ -751,7 +785,8 @@ Notes:
 Emergent behavior.
 Not realized as possible by many until it quietly became the norm.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Maximal Extractable Value
 
@@ -767,7 +802,8 @@ This is now the norm on Ethereum at least, and further _it's becoming institutio
 
 <!-- FIXME TODO Dark Forest game on Ethereum testnet... or other zk game? -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 👼 Flashbots
 
@@ -778,7 +814,8 @@ Notes:
 
 This might be misleading, in that they are profiting in making MeV more effective and institutionalized!
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Flashbots 😈
 
@@ -795,7 +832,8 @@ Competitive landscape for this exists, and to Flashbots' credit, they seem genui
 (BUT FIRST a discussion!)
 Especially in light of recent OFAC pressures revealing fragility in the system...
 
----v
+<!-- prettier-ignore -->
+----
 
 <!-- .slide: data-background-color="#4A2439" -->
 
@@ -809,7 +847,8 @@ Notes:
 
 - Flashbots & Friends
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Compliance
 
@@ -822,7 +861,8 @@ Notes:
 - code is unstoppable, but platform _can_ sensor.
   Ability -> responsibility (we may talk more on that latter)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Social Context
 
@@ -841,7 +881,8 @@ Notes:
   Bitcoin big block wars show social pressures help decide the canonical forks.
 - Normalizing MEV for the profit of middlemen, providing extraction services in the worst case.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Unbundling
 
@@ -854,13 +895,15 @@ From before, but here point out how this is getting more fine grained as well, a
 - Especially if more things like MeV can be enhanced by doing so.
 - This introduces more complexity and interfaces that can provide weakness (especially when a network is required!)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Unbundling
 
 ### _The vision of "blockspace" leads</br>more and more to this end_
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Diversity
 
@@ -928,7 +971,8 @@ Notes:
 Watch _after class_!
 Perhaps assigned informally to everyone to watch in the next few days.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Unstoppable Code
 
@@ -938,7 +982,8 @@ Perhaps assigned informally to everyone to watch in the next few days.
 > And at that point, we will start to find out how unstoppable our code is.<br /><br />
 > -- Andreas Antonopoulos --
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Can't vs. Won't
 
@@ -961,7 +1006,8 @@ Decentralized Autonomous Organizations ([DAOs](https://www.investopedia.com/tech
 
 > A **coordination** mechanism.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Democratic Systems
 

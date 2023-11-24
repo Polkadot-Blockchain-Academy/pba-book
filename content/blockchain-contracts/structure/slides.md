@@ -30,7 +30,8 @@ Notes:
 This is a simplified blockchain.
 Each block has a pointer to the parent block as well as a payload.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Hash Linked List
 
@@ -42,7 +43,8 @@ The pointer is a cryptographic hash of the parent block.
 This ensures data integrity throughout the entire history of the chain.
 This is the simplest form that a blockchain could take and indeed it allows us to agree on a shared history.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Hash Linked List
 
@@ -53,7 +55,8 @@ Notes:
 This ensures data integrity throughout the entire history of the chain.
 This is the simplest form that a blockchain could take and indeed it allows us to agree on a shared history.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Genesis Block
 
@@ -80,7 +83,8 @@ A state machine defines:
 
 <img style="width: 900px;" src="./img/state-machine-general.svg" />
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Blockchain meet State Machine
 
@@ -91,7 +95,8 @@ Notes:
 The simplest way to join a blockchain to a state machine is to to make the blockchain's payload a state machine transition.
 By doing so, we effectively track the history of a state machine in a cryptographically guaranteed way.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Where do the States Live?
 
@@ -113,7 +118,8 @@ But it is stored separately from the block
 ...Pause...
 One more time to make sure it sinks in: The state is NOT in the block.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### State Roots
 
@@ -149,7 +155,8 @@ You can think of them like alternate realities.
 We need to decide which of the many possible forks is ultimately the "real" one.
 This is the core job of consensus and we will talk about it in two upcoming lessons in this module.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Invalid Transitions
 
@@ -180,7 +187,8 @@ There are many name aliases for what is included in the body:
 - Transactions
 - Extrinsics
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Blocks in Substrate
 
@@ -212,7 +220,8 @@ Notes:
 The parent hash links blocks together (cryptographically linked list).
 The other info is handy for other infrastructure and applications (more on that later).
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Header Examples
 
@@ -253,7 +262,8 @@ The other info is handy for other infrastructure and applications (more on that 
 </pba-col>
 </pba-cols>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Substrate Header
 
@@ -270,7 +280,8 @@ It is very similar to the state root.
 Consensus Digest is information necessary for the consensus algorithm to determine a block's validity.
 It varies widely with the consensus algorithm used and we will discuss it in two upcoming lectures.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Substrate Header (Full Picture)
 
@@ -307,7 +318,8 @@ Consider if someone authored a block that looks like this.
 
 CLICK
 
----v
+<!-- prettier-ignore -->
+----
 
 ## DAGS
 
@@ -345,7 +357,8 @@ What do you see here?
 - In a p2p network.
 - Each with their own view of the blockchain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nodes
 
@@ -379,7 +392,8 @@ Notes:
 
 Many nodes only perform a subset of these tasks
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Types of Nodes
 
@@ -415,7 +429,8 @@ The state machine is the application layer, and the blockchain is the server rep
 In the same way that applications pay data centers for server resources like cpu time, disk space, bandwidth etc.
 Applications (maybe via their developers or users) pay for the privilege of having their history attested to and their state tracked by a trustless unstoppable consensus layer.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Transaction Pool
 

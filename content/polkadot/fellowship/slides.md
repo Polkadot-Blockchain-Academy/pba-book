@@ -12,7 +12,8 @@ duration: 30 mins
 - Decentralization can come in many fashions.
 - Some of my (somewhat) personal opinions.. 💭
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Prelude: Decentralization
 
@@ -31,7 +32,8 @@ Notes:
 - Nakatomo coefficient
 - Most blockchain systems actually already have this.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Prelude: Decentralization
 
@@ -55,7 +57,8 @@ Notes:
 
 <https://moxie.org/2022/01/07/web3-first-impressions.html>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Prelude: Decentralization
 
@@ -80,7 +83,8 @@ Notes:
 
 <https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Prelude: Decentralization
 
@@ -99,7 +103,8 @@ say in that by default.
 This is taking away the "power of default" to be in the hands of the token holders, not the
 node-operators.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Prelude: Decentralization
 
@@ -119,7 +124,8 @@ Notes:
 - Technical, high focus on core protocol aspects for now.
 - decision-making: not saying it has absolute power yet.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## The Fellowship
 
@@ -159,7 +165,8 @@ around it and letting it be as-is, but it might be sub-optimal.
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### The Fellowship Lifecycle: Evaluation
 
@@ -275,7 +282,8 @@ The manifesto provides one such example
 - Shares the exact same chemical composition as the material of the highest rank Grand Master—the hardest material—symbolizing the individual’s potential to go all the
   way.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Dan I: The Humble
 

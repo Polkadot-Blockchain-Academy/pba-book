@@ -97,7 +97,8 @@ Notes:
 It checks the origin to ensure that the configured `SendXcmOrigin` filter is not blocking the execution.
 It executes the message **locally** and returns the outcome as an event.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## `pallet-xcm` Primitive extrinsics
 
@@ -142,7 +143,8 @@ Notes:
 
 We have already seen what teleports and reserve transfers mean in lesson 7.1; A quick reminder.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## `pallet-xcm` Asset Transfer extrinsics
 
@@ -163,7 +165,8 @@ sendera --"2."--> tdestination
 classDef left text-align:left
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `limited_teleport_assets`
 
@@ -192,7 +195,8 @@ Xcm(vec![
 
 </ol>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## `pallet-xcm` Asset Transfer extrinsics
 
@@ -213,7 +217,8 @@ sendera --"2."--> destination
 classDef left text-align:left
 </diagram>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `limited_reserve_transfer_assets`
 
@@ -264,7 +269,8 @@ Notes:
 
 - V0 and V1 were removed with the addition of XCM v3.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🗣️ version negotiation with `pallet-xcm`
 
@@ -294,7 +300,8 @@ Notes:
 - `query_id` would be identical in the `SubscribeVersion` and `QueryResponse` instructions.
 - Likewise, `max_response_weight` should also match `max_weight` in the response
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🗣️ version negotiation with `pallet-xcm`
 
@@ -344,7 +351,8 @@ Notes:
 SubscribeVersion - instructs the local system to notify the sender whenever the former has its XCM version upgraded or downgraded.
 UnsubscribeVersion - if the sender was previously subscribed to XCM version change notifications for the local system, then this instruction tells the local system to stop notifying the sender on version changes.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🗣️ XCM Version Negotiation
 
@@ -357,7 +365,8 @@ XCM version negotiation:
 1. The same procedure happens from chain B to chain A.
 1. Communication is established using the highest mutually supported version.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 🗣️ XCM Version Negotiation
 
@@ -385,13 +394,15 @@ chainARequest("Chain A") --"Chain E ? \n\n v2"--> chainERequest("Chain E")
 Version negotiation is just one example among many kinds of queries one chain can make to another.
 Regardless of which kind of query was made, the response usually takes the form of a `QueryResponse` instruction.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Response Handler
 
 We have talked about XCM being asymmetric, so why are there responses ?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Information Reporting
 
@@ -412,7 +423,8 @@ Notes:
 All Information Reporting instructions contain a `QueryResponseInfo` struct, which contains information about the intended destination of the response, the ID of the query, and the maximum weight that the dispatchable call function can use.
 The dispatchable call function is an optional operation that XCM author can specify, and is executed upon receiving the response, effectively acting as a lifecycle hook on response.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Information retrieval
 
@@ -450,7 +462,8 @@ Notes:
 
 - This is handled in the `post_execute` function of the xcm-executor.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Asset Trap/Claims with `pallet-xcm`
 

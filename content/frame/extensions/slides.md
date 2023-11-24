@@ -5,7 +5,8 @@ description: Signed Extensions, Transaction Priority.
 
 # Signed Extensions
 
----v
+<!-- prettier-ignore -->
+----
 
 - In this lecture you will learn above one of the most advance FRAME concepts, _Signed Extensions_.
 
@@ -21,7 +22,8 @@ description: Signed Extensions, Transaction Priority.
 
 > [Tipped Transaction Type. by kianenigma · Pull Request #2930 · paritytech/substrate](https://github.com/paritytech/substrate/pull/2930/files) > [Extensible transactions (and tips) by gavofyork · Pull Request #3102 · paritytech/substrate](https://github.com/paritytech/substrate/pull/3102/files)
 
----v
+<!-- prettier-ignore -->
+----
 
 ### History
 
@@ -44,7 +46,8 @@ A signed extension can be either combination of the following things:
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Anatomy
 
@@ -59,7 +62,8 @@ A signed extension can be either combination of the following things:
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Anatomy: Let's Peek at the Trait
 
@@ -96,7 +100,8 @@ Notes:
 
 TODO: how `TransactionValidity` is `combined_with` is super important here, but probably something to cover more in 4.3 and recap here.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Usage In The Runtime
 
@@ -195,7 +200,8 @@ Notes:
 - <https://github.com/paritytech/substrate/issues/6102>
 - <https://github.com/paritytech/polkadot-sdk/issues/365>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Transaction Pool Validation
 
@@ -211,7 +217,8 @@ Notes:
 > Transaction queue is not part of the consensus system. Validation of transaction are _free_. Doing
 > too much work in validation of transactions is essentially opening a door to be DOS-ed.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### Transaction Pool Validation
 
@@ -240,7 +247,8 @@ fn pre_dispatch() -> Result<Self::Pre, TransactionValidityError>;
 - These are some of the default signed extensions that come in FRAME.
 - See if you can predict how they are made!
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `ChargeTransactionPayment`
 
@@ -259,7 +267,8 @@ type Pre = (
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `check_genesis`
 
@@ -273,7 +282,8 @@ Put the genesis hash in `additional_signed`.
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `check_non_zero_sender`
 
@@ -285,7 +295,8 @@ Notes:
 
 <https://github.com/paritytech/substrate/pull/10413>
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `check_nonce`
 
@@ -304,7 +315,8 @@ Notes:
 
 <!-- .element: class="fragment" -->
 
----v
+<!-- prettier-ignore -->
+----
 
 ### `check_weight`
 
@@ -321,7 +333,8 @@ Notes:
 - Signed extensions (or at least the `pre_dispatch` and `validate` part) remind me of the extension
   system of `express.js`, if any of you know what that is
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Big Picture: Pipeline of Extension
 

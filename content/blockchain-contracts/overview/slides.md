@@ -55,37 +55,43 @@ It also removes the need for a central authority to deal with all appeals/compla
 
 # Desired Properties
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Permissionless access
 
 Anyone should be able to access and interact with the system.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Privacy
 
 Users should have credible expectations about what information they give up about themselves.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Authenticity
 
 Users should have credible expectations about the messages they see, regardless of the platform the messages are on.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Finality
 
 Users should be able to form credible expectations about when a state transition is final.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Behavior
 
 The system should behave as expected, even if system operators do not.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## _Unstoppability_
 
@@ -106,7 +112,8 @@ In Web 2 users have no visibility into the history of the app.
 They must trust the provider to accurately represent the current state.
 By giving the service provider the power to change the story, we give them the power to shape our understanding of reality and consequently our behavior.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## A Shared History
 
@@ -120,7 +127,8 @@ By giving the service provider the power to change the story, we give them the p
 
 _-- Yuval Noah Harari, Sapiens --_
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Shared Story of a State Machine
 
@@ -214,11 +222,13 @@ There are many possible valid histories.
 Just like the many worlds interpretation of quantum mechanics.
 To really agree on the current state, we need to agree on which of the possible histories is the real one.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Short History of Blockchains
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Bitcoin
 
@@ -243,7 +253,8 @@ It was the first time most people considered a digital service that was not run 
 
 Figure source: [Bitcoin white paper](https://bitcoin.org/en/bitcoin-paper)
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Litecoin, Monero, Dogecoin
 
@@ -262,7 +273,8 @@ NO! The point is that anytime you don't like the system or have an idea for a be
 If you don't like bitcoin, build your own coin and make it better.
 Let the market decide.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Ethereum
 
@@ -271,7 +283,8 @@ Let the market decide.
 - Accounts can store balances, but can also store executable code (smart contracts)
 - Each contract can have its own internal state and API
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Smart contracts - Two Definitions
 

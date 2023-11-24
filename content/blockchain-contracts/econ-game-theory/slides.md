@@ -20,7 +20,8 @@ Notes:
 
 What's the goal of this lecture?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What's the goal?
 
@@ -43,7 +44,8 @@ Notes:
 
 By now you all should be familiar with all the terms and techniques from the Economy and Game Theory module like the Demand & Supply or Nash equilibrium.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What's the goal?
 
@@ -70,7 +72,8 @@ Notes:
 
 And you also just finished covering the basics of Blockchains so you all should be familiar with state transition functions as well as have some understanding of consensus protocols.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## What's the goal?
 
@@ -90,7 +93,8 @@ Notes:
 
 But first let's start with a quick summary of how we'll be approaching to bridge the gap between the two modules.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Landscape
 
@@ -108,7 +112,8 @@ Notes:
 
 Firstly, we'll be looking at various blockchain systems as isolated games.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Landscape
 
@@ -127,7 +132,8 @@ Notes:
 
 Participants in those games will be for instance the miners, like in the Bitcoin protocol, maybe the validators in the Polkadot protocol or just some users of your smart contract.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Landscape
 
@@ -148,7 +154,8 @@ Notes:
 The protocol is essentially a set of rules that will define the game itself.
 The one we will be analyzing.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Landscape
 
@@ -169,7 +176,8 @@ Notes:
 
 And to properly analyze those games we need to have some value representation, which in our case will be usually cryptocurrencies.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Landscape
 
@@ -193,7 +201,8 @@ And finally we'll be having various reward and punishment schemes that will shap
 
 Now that we have all the elements defining our blockchain games we can look for further parallels.
 
----v
+<!-- prettier-ignore -->
+----
 
 # Market Emergence
 
@@ -201,7 +210,8 @@ Notes:
 
 And first let's take a look at something that hopefully very familiar: Markets
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Market Emergence
 
@@ -217,7 +227,8 @@ Which is very fortunate for us.
 
 Now let's look at something that might also be pretty familiar to many...
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Market Emergence
 
@@ -232,7 +243,8 @@ The fee market.
 That's a chart of the average transaction fees in the Bitcoin network over time.
 As you can see the price is constantly fluctuating.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Market Emergence
 
@@ -258,7 +270,8 @@ So the users are bidding with how much they are willing to pay and miners are ch
 If miners already included all the best transactions and there are not many new ones coming in they need to start accepting lower fees, so the price drops.
 But wait...?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Market Emergence
 
@@ -281,7 +294,8 @@ What is actually being traded in here?
 
 Anyone has an idea what it might be?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Market Emergence
 
@@ -308,7 +322,8 @@ Blockspace as a product is actually a pretty new way of thinking about blockchai
 
 - <https://www.polkadot.network/blog/blockspace-blockspace-ecosystems-how-polkadot-is-unlocking-the-full-potential-of-web3/>
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Market Emergence
 
@@ -332,7 +347,8 @@ The price of blockspace is determined by the market equilibrium of supply and de
 Demand force is the users willing to transact and supply is the miners producing the blockspace.
 Transactions that are actually included represent the current equilibrium.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Market Emergence
 
@@ -356,7 +372,8 @@ We all know that the transaction fees can sometimes get outrageous.
 In cases where many users want to transact the demand can skyrocket.
 And what we see is the price equilibrium following suit.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Market Emergence
 
@@ -386,7 +403,8 @@ That means a better quality blockspace.
 So the supply is often fixed and the demand is fluctuating.
 This is often the cause for the very volatile fee market.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Market Emergence
 
@@ -425,7 +443,8 @@ Notes:
 Now let's look at something a bit different that allows us to predict what users would do...
 a Nash Equilibrium.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -437,7 +456,8 @@ Notes:
 Nash Equilibrium is strategy from which no player wants to deviate.
 Pretty simple but what's the strategy for BTC mining? How can we leverage that knowledge?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -448,7 +468,8 @@ Notes:
 And more importantly...
 being honestly is the answer, right?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -461,7 +482,8 @@ Notes:
 Let's dive in and actually see what's the answer.
 What's the Nash Equilibrium of Bitcoin mining? Is it being honest or dishonest?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -491,7 +513,8 @@ Here we have a few assumptions, but the main ones are:
 
 Let's figure out how many bitcoins each one of them will mine on average.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -504,7 +527,8 @@ then there are no ACTUAL bitcoins being mined.
 Remember that they don't cooperate but for instance try and push blocks with 9999 BTC in their account.
 So the reward is 0 for both.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -515,7 +539,8 @@ Notes:
 If both are working honestly and making valid blocks they have an equal chance to mine a block and reap the rewards.
 Rest of the nodes will accept those blocks but the two miners compete for the same resource so each one will get a single BTC on average (as the mining reward is 2).
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -529,7 +554,8 @@ In that case the honest party gains 2 BTC.
 Now that we know who earns how many bitcoins in each scenario we need to shift out attention to another important force.
 Things like Twitter, Facebook or Bitcoin are often deemed as valuable because of their Network Effect.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -547,7 +573,8 @@ It's a pretty simple concept but it's very important in the blockchain space.
 Bitcoin is precious to many because many people believe in it and mine it and exchange it.
 In blockchains if more people use your chain it's more valuable.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -577,7 +604,8 @@ If there are more miners securing the network the coins itself are more valuable
 We will use a super simple model here where the price of a coin is a square of the number of miners.
 We will be investigating small systems so it is a good enough approximation.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -587,7 +615,8 @@ Notes:
 
 We can apply the changes by changing the evaluations of the miners coins.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -597,7 +626,8 @@ Notes:
 
 If both miners honestly secure the network the coin price is 4 and in case of single honest miner the price is 1.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -608,7 +638,8 @@ Notes:
 Now we can actually focus on finding the Nash Equilibrium
 so let's used the simplest method.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -618,7 +649,8 @@ Notes:
 
 Assuming Miner B is honest the Miner A needs to choose between a payoff of 4 or 0.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -629,7 +661,8 @@ Notes:
 He ofc chooses 4 as it's higher.
 We temporarily mark it with the red circle.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -639,7 +672,8 @@ Notes:
 
 Same reasoning for B being dishonest and A chooses 2 over 0.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -649,7 +683,8 @@ Notes:
 
 Now we reverse the assumptions and assume A is honest and then B chooses between 4 and 0.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -659,7 +694,8 @@ Notes:
 
 Similarly as before he should choose 4 as it's higher.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -669,7 +705,8 @@ Notes:
 
 And the last remaining options will result in the circled 2.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -680,7 +717,8 @@ Notes:
 Now the square with all the options circled is the Nash Equilibrium.
 In our case it seems to be being honest.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -691,7 +729,8 @@ Notes:
 Not a big surprise, and being dishonest lands you with zero coins so it was too be expected.
 But what if we change the assumptions a bit?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -729,7 +768,8 @@ But what if multiple miners break the protocol in the same way? It can be seen a
 And that's what we'll be looking at next.
 The dishonest miners are cooperating.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -758,7 +798,8 @@ Effectively they will be following a different modified protocol.
 So we will no longer consider them dishonest but they simply follow a different set of rules.
 Now miners choose to mine for the bitcoin BTC protocol or the bitcoin cash BCH protocol.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -769,7 +810,8 @@ Notes:
 Let's quickly fill up this table with the same rules as before.
 Only this time of both miners follow BCH they ofc get the rewards in the BCH token.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -780,7 +822,8 @@ Notes:
 Just as before we take the extra step and apply the network effect.
 If both miners secure the network price is 4 and if only 1 the price is 1.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -790,7 +833,8 @@ Notes:
 
 Here we have all the prices adjusted.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -802,7 +846,8 @@ Now let's take a look at what happens if Miner B miners BTC.
 Miner A would prefer to also mine bitcoin.
 So they are both mining the same thing.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -812,7 +857,8 @@ Notes:
 
 On the other hand if miner B mines BCH then it seems that Miner A prefers to mine BCH...
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -822,7 +868,8 @@ Notes:
 
 And in fact what we have in here is two distinct Nash Equilibria!
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Nash Equilibrium
 
@@ -874,7 +921,8 @@ Notes:
 On that topic...
 What if we have multiple Nash Equilibria? Schelling point often comes to the rescue.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -893,7 +941,8 @@ It is generally a Nash Equilibrium
 
 But how in the world is it useful to us in Blockchain?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -920,7 +969,8 @@ So the story goes like that.
 We have to bank robbers and a detective.
 The detective interrogates he robbers and tries to make them confess or catch them lying.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -936,7 +986,8 @@ Seems super simple and it should be pretty straightforward that they both simply
 
 Seems like a safe strategy, right? But remember than both of them witnessed the same real events of the robbery...
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -953,7 +1004,8 @@ So now they need to coordinate on a specific lie and have all the details exactl
 Contrast it with how easy it would be to just tell the truth.
 They both witnessed the truth so talking about it in a consistent way is trivial.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -968,7 +1020,8 @@ The truth itself is a Schelling point.
 
 And this concept is vital to something in blockchain called...
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -986,7 +1039,8 @@ Firstly who in the room heard of oracles? Raise your hands.
 Oracles are super interesting because what they are trying to achieve is to provide information from the outside world to the blockchain.
 And that's a very very hard task.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -1011,7 +1065,8 @@ Some examples of the information they can provide are for instance what's the cu
 
 Let's actually see how they might work is a slightly simplified version with the temperate example.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -1029,7 +1084,8 @@ So you want to know the temperature in Berkeley.
 We know the answer lies somewhere on this axis.
 But what it is exactly?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -1044,7 +1100,8 @@ Notes:
 We can ask some users to submit what they think the temperature is.
 Some of them will check it themselves, some will use weather apps and some will just guess.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -1058,7 +1115,8 @@ What we are hoping for is that the cluster of votes you can see here will be aro
 The best approach would be to check the median.
 And why is that?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -1087,7 +1145,8 @@ It's much harder to pull of than simply checking the temperature outside.
 
 Submitting the truth is the Schelling Point in here and it makes it easy to be honest.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -1106,7 +1165,8 @@ Notes:
 
 But what if there are some attackers? What can we do about them?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -1128,7 +1188,8 @@ Notes:
 If we never punish them they can repeat the attack until they are successful.
 And that's not good.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Schelling Point
 
@@ -1166,7 +1227,8 @@ Incentives.
 Incentives are the next big topic we will be exploring.
 And they are vital to the blockchain space.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1185,7 +1247,8 @@ Incentives are things that encourage people to do something.
 In our case we want to shape incentives that motivate the users to submit honest values.
 We need to build out incentives in a way that shapes the expected behavior of the users to honesty.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1208,7 +1271,8 @@ Notes:
 
 So going back to our oracle problem how can we deal with attackers?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1232,7 +1296,8 @@ Notes:
 Let's focus on the second issue of fake identities.
 How can we prevent that?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1265,7 +1330,8 @@ Only a user with some funds locked can vote.
 The strength of the vote is proportional to the stake so making a million accounts makes no sense.
 This is a very simple solution but it's not always applicable.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1289,7 +1355,8 @@ Notes:
 Now let's go back to the first issue of unpunished attackers.
 How can we deal with them so they don't continue attacking us?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1325,7 +1392,8 @@ Incorrect in that case would be very far from the median.
 
 We have designed some protective incentives and now the system seems safe.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1348,7 +1416,8 @@ But did we forget about something? Anyone has any idea what it might be? What we
 
 Why would anyone participate in this system? Why would anyone vote? Why would anyone lock their funds and take the risk?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1373,7 +1442,8 @@ Getting information from the real world is an effort and they voters are doing t
 So we need to incentivize them to participate.
 We need a rewards scheme or otherwise the network will be a ghost town.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1413,7 +1483,8 @@ But what is crucial here the protocol is safe and dependable only if there is en
 More precisely, incentives need to be roughly proportional to the value an attacker could gain by compromising the system.
 Low-stakes oracles don't need to have super aggressive incentives.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1454,7 +1525,8 @@ Otherwise the system is vulnerable to sybil attacks.
 If you have a million fake identities you can vote a million times and get a million times the reward.
 So the reward should be proportional to the stake.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Incentives
 
@@ -1510,7 +1582,8 @@ Notes:
 Misaligned.
 When they promote some behavior that is not good for the network.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1526,7 +1599,8 @@ And smart contracts are basically programs that run on the blockchain.
 They are stored on chain and they can be executed by anyone.
 For them to work a bunch of code needs to be deployed on the chain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1551,7 +1625,8 @@ Notes:
 And moreover whenever we store something on chain (like a smart contract) it needs to be at least partially replicated among the nodes.
 Thousands of nodes store the same data which is not super efficient.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1577,7 +1652,8 @@ Ethereum attempts to deal with it by introducing scaling fees.
 The more data you put in the state the more you need to pay.
 And that's on top of any computation costs.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1605,7 +1681,8 @@ So nodes cannot simply discard it.
 
 Now let's explore an example.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1632,7 +1709,8 @@ Bob is a developer and he happily deploys his awesome smart contract in Ethereum
 He paid a hefty gas fee but so be it.
 His code was added to the state and now many nodes hold a copy of it.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1659,7 +1737,8 @@ He doesn't care about his smart contract anymore.
 But the chain doesn't know about it.
 His code still lives in the state and has to be continuously replicated and maintained.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1685,7 +1764,8 @@ Now imagine there are hundreds of people like Bob.
 Some of them even continue developing but, WHY BOTHER removing old data? They already paid for it.
 And some of them just don't care anymore.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1714,7 +1794,8 @@ Getting the data to state is indeed expensive but once we do...
 why clean it? There is no incentive to do so.
 So the chain was getting overwhelmed in junk.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1737,7 +1818,8 @@ Notes:
 So what can we do about it? What's the goal? We need to design new protocol rules that shape the behavior of the users in a way that they start cleaning up the state.
 Hopefully without any side effects.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1763,7 +1845,8 @@ One of the proposed solutions was the introduction of a Gas Refund.
 You pay a hefty fee when deploying data to state, but get some of it refunded when removing it.
 So now there is an incentive to clean up the state.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1778,7 +1861,8 @@ Notes:
 
 So what we had originally is Bob paid for his smart contract and then simply went away to play a guitar.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Misaligned Incentives
 
@@ -1807,7 +1891,8 @@ Notes:
 Opportunity Cost.
 It's a very important concept in economics and it's also crucial in blockchain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Opportunity Cost
 
@@ -1821,7 +1906,8 @@ d
 Generally opportunity cost is the loss of other alternatives when making a choice.
 When choosing between 10 and 30$ the opportunity cost of picking 30 is 10, the other option you are forgoing.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Opportunity Cost
 
@@ -1854,7 +1940,8 @@ This is especially true in inflationary systems, and spoiler alert that most of 
 
 The opportunity cost is a clever mechanism that allows us to include costs without directly charging them, and we also need to be super aware so we don't accidentally punish the users by not thinking of some external opportunity costs.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Opportunity Cost
 
@@ -1888,7 +1975,8 @@ Notes:
 
 Now to actually appreciate what the we did in the previous section we need to talk about externalities.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Externalities
 
@@ -1903,7 +1991,8 @@ It's a negative externality that affects all the people around you.
 Alternatively imagine planting a tree in your garden simply because you like how it looks and gives you some shade.
 The tree improves the quality of air in the neighborhood and that's a positive externality for the people around you.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Externalities
 
@@ -1921,7 +2010,8 @@ The chain is an example of a common good.
 
 As protocol engineers or system designers you need to identify those externality costs and price them in.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Externalities
 
@@ -1945,7 +2035,8 @@ That's what we did with the opportunity cost in Ethereum.
 We made it so burdening the chain is actually expensive for the perpetrator.
 We aligned his incentives with the incentives of the chain.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Externalities
 
@@ -1972,7 +2063,8 @@ But not all externalities are negative.
 For example the whole oracle scheme makes it so the chain can get information from the real world.
 This is a positive externality for the network that can further use this extra information.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Externalities
 
@@ -1990,7 +2082,8 @@ The honest voters are providing a valuable service to the protocol.
 
 So having that mind should they pay any transaction fees when submitting votes?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Externalities
 
@@ -2020,7 +2113,8 @@ But make sure it cannot be spammed! And it's super important, because if it is f
 In our oracle system we can make sure there is only ONE vote per stake.
 This way we remain safe and can make the transaction free to further incentivize participation.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Free Transactions
 
@@ -2057,7 +2151,8 @@ Notes:
 Now let's look at something totally different.
 We will talk about a concept crucial to game theory and that is information.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2069,7 +2164,8 @@ Notes:
 
 We'll be looking at questions like do players know everything about the game state? Do they NEED to know everything about the game state? And how does it affect the game?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2085,7 +2181,8 @@ This is something I personally work on at Parity and you will learn a lot more a
 What you need to understand now is that there are some special nodes called validators.
 They as they name suggests validate if the new blocks in the network are valid and correct.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2110,7 +2207,8 @@ But in Polkadot not every validator does all the work.
 They share the work and each block is checked only by a subset of validators.
 They are called Approval Checkers.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2136,7 +2234,8 @@ We also need to make some assumptions about the attackers willing to disrupt the
 We assume that attackers can DDoS some but not ALL Validators.
 Being DDoS'ed makes them unable to vote in time.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2159,7 +2258,8 @@ If all the votes received confirm the block is fine it passes.
 
 But there is a problem with it? Does anyone know what it is?
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2179,7 +2279,8 @@ Notes:
 If the attackers learn who the designated approval checkers are they can focus their attack.
 And only eliminate the relevant targets thus compromising the network.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2207,7 +2308,8 @@ The information is the weapon.
 If we could somehow limit the information the game would change in our favour.
 We need to make this a game of incomplete information, where some things are hidden.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2236,7 +2338,8 @@ Notes:
 This method has this nice property that attackers don't learn who the approval checkers are until they reveal themselves.
 So they cannot plan ahead.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2257,7 +2360,8 @@ This vastly reduces their chances of success and makes thm vulnerable to punishm
 This is pretty much the method used in Polkadot and it's called a VRF based random assignment.
 It's a game of incomplete information.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Complete vs Incomplete Information Games
 
@@ -2279,7 +2383,8 @@ Notes:
 
 By now you might have noticed a pattern that usually we have a list of assumptions.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Shifting Assumptions
 
@@ -2303,7 +2408,8 @@ Notes:
 Some of the assumptions are connected to the number of players or maybe the access to information.
 And they are usually pretty stable.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Shifting Assumptions
 
@@ -2323,7 +2429,8 @@ What happens when for some reason the assumptions evolve and change?
 The game changes as well.
 Old incentives that were previously sensible may now motivate a vastly different behavior.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Shifting Assumptions
 
@@ -2349,7 +2456,8 @@ This is called restaking.
 
 This is not something natively available in Ethereum and it wasn't taken into consideration when slashes/rewards were designed.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Shifting Assumptions
 

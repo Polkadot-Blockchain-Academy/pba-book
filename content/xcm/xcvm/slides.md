@@ -29,7 +29,8 @@ An XCM executor following the XCVM specification is provided by Parity, and it c
 
 XCVM Instructions might change a register, they might change the state of the consensus system or both.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Kinds of instructions
 
@@ -40,7 +41,8 @@ XCVM Instructions might change a register, they might change the state of the co
 - Information
 - System Notification
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Example: TransferAsset
 
@@ -79,7 +81,8 @@ Registers _are_ the state of XCVM.
 Note that they are temporary/transient.
 We'll talk about are the `holding` and `origin` registers, but there are more.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## 📍 The Origin Register
 
@@ -91,7 +94,8 @@ This `Location` can change over the course of program execution.
 
 It might be `None` because some instructions clear the origin register.
 
----v
+<!-- prettier-ignore -->
+----
 
 ### 💸 The Holding Register
 
@@ -127,7 +131,8 @@ Notes:
 
 The XCVM fetches instruction from the program and executes them one by one.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## XCVM vs. Standard State Machine
 
@@ -143,7 +148,8 @@ Notes:
    This ensures that error handling logic from a previous program does not affect any appended code (i.e. the code in the error handler register does not loop infinitely, the code in the Appendix register cannot access the result of the code execution in the error handler).
 2. Code that is run regardless of the execution result of the XCM program.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## More complete XCVM operation
 
@@ -178,7 +184,8 @@ graph LR
 
 # 💁 XCM by example
 
----v
+<!-- prettier-ignore -->
+----
 
 ## The `WithdrawAsset` instruction
 
@@ -204,7 +211,8 @@ But what does it do with them?
 If they don’t get deposited anywhere then it's a pretty useless operation.
 These assets are held in the holding register until something is done with them, for example, using the following instruction.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## The `BuyExecution` instruction
 
@@ -230,7 +238,8 @@ It's used in systems that pay fees.
 The estimate for the weight has to come from using the recipient's weigher, not the sender's.
 The recipient is the one who actually executes the message.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## The `DepositAsset` instruction
 
@@ -252,7 +261,8 @@ Notes:
 Takes assets from the holding register and deposits them in a beneficiary.
 Typically an instruction that places assets into the holding register would have been executed previously.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Putting it all together
 
@@ -273,7 +283,8 @@ Notes:
 
 All examples in these slides use the latest xcm version.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Good pattern
 
@@ -315,7 +326,8 @@ This message is executed locally.
 Then, a message is sent to the `reserve` location.
 That message contains the custom `xcm` provided along with other instructions.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Message received in reserve
 
@@ -336,7 +348,8 @@ This is the message the reserve receives.
 The `ClearOrigin` instruction deletes the content of the origin register.
 This is needed because we don't trust the origin to do anything other than move its own assets.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Custom XCM
 
@@ -361,7 +374,8 @@ Notes:
 
 For a simple reserve asset transfer, this message will work.
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Message received in destination
 
@@ -399,7 +413,8 @@ The destination can't trust the reserve to totally speak for the source, only fo
   - RefundSurplus
   - InitiateReserveWithdraw, ReserveAssetDeposited
 
----v
+<!-- prettier-ignore -->
+----
 
 ## Next steps
 
