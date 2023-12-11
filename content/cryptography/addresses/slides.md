@@ -57,6 +57,8 @@ Notes:
 
 It turns out that converting from hex/base64 to base58 can in theory take n^2 time!
 
+The number of bits of a character is log2(Base) so for base58 it is log2(58) ~ 5.8
+
 ---
 
 # Mnemonics and Seed Creation
@@ -114,17 +116,18 @@ _The first 5 words of the [BIP39 English dictionary](https://github.com/bitcoin/
 
 ## Mnemonic to Secret Key
 
-Of course, the secret key is a point on an elliptic curve, not a phrase.
+The secret key is a scalar value from the scalar field of the base field which the elliptic curve is defined over. Not a phrase.
 
-BIP39 applies 2,048 rounds of the SHA-512 hash function<br />to the mnemonic to derive a 64 byte key.
-
-Substrate uses the entropy byte array from the mnemonic.
+BIP39 applies 2,048 rounds of the SHA-512 hash function<br /> to the mnemonic to derive a 64 byte key.
 
 ---
 
 ## Portability
 
 Different key derivation functions affect the ability to use the same mnemonic in multiple wallets as different wallets may use different functions to derive the secret from the mnemonic.
+
+Notes:
+i.e. May hash to a different base field because of a different elliptic curve
 
 ---
 
@@ -140,7 +143,14 @@ We will go more in depth in future lectures!
 
 Notes:
 
+These are digital signature schemes. ECDSA can use any elliptic curve but
+in the case of bitcoin it use secp256r1
+
+Sr25519 and Ed25519 uses the same which is Curve25519
+
 You may have learned RSA in school. It is outdated now, and requires _huge_ keys.
+RSA-4096: A 4096-bit RSA key 512 bytes
+sr25519 is 32 bytes
 
 ---
 
@@ -149,6 +159,9 @@ You may have learned RSA in school. It is outdated now, and requires _huge_ keys
 An address is a representation of a public key, potentially with additional contextual information.
 
 Notes:
+
+A public key is a point on a defined elliptic curve more specifically
+the secret scalar value multiplied times a fixed base point on some curve G
 
 Having an address for a symmetric cryptography doesn't actually make any sense, because there is no
 public information about a symmetric key.
