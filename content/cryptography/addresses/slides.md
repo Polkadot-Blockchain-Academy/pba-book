@@ -144,7 +144,7 @@ We will go more in depth in future lectures!
 Notes:
 
 These are digital signature schemes. ECDSA can use any elliptic curve but
-in the case of bitcoin it use secp256r1
+in the case of bitcoin it use secp256k1
 
 Sr25519 and Ed25519 uses the same which is Curve25519
 
