@@ -149,7 +149,7 @@ in the case of bitcoin it use secp256k1
 Sr25519 and Ed25519 uses the same which is Curve25519
 
 You may have learned RSA in school. It is outdated now, and requires _huge_ keys.
-RSA-4096: A 4096-bit RSA key 512 bytes
+RSA-4096: A 4096-bit RSA key is 512 bytes
 sr25519 is 32 bytes
 
 ---
