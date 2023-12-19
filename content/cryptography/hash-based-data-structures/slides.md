@@ -34,18 +34,15 @@ Each block has the hash of the previous one.
 
 A binary Merkle tree is a binary tree using hashes to connect nodes.
 
-Notes:
-
-Ralph Merkle is a Berkeley alum!
-
 ---
 
 ## Proofs
 
-- The root or head hash is a commitment to the entire data structure.
-- Generate a proof by expanding some but not all hashes.
-
-_Crucial for the trustless nature of decentralised cryptographic data systems!_
+<ul>
+<li class="fragment">The root or head hash is a commitment to the entire data structure.</li>
+<li class="fragment">Generate a proof by expanding some but not all hashes.</li>
+<li class="fragment"><i>Crucial for the trustless nature of decentralised cryptographic data systems!</i></li>
+</ul>
 
 ---
 

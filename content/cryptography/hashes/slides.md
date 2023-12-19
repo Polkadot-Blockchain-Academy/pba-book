@@ -20,12 +20,15 @@ We often want a succinct representation of some data<br />with the expectation t
 
 <pba-flex center>
 
-1. Accept unbounded size input
-1. Map to a bounded output
-1. Be fast to compute
-1. Be computable strictly one-way<br />(difficult to find a pre-image for a hash)
-1. Resist pre-image attacks<br />(attacker controls one input)
-1. Resist collisions<br />(attacker controls both inputs)
+<section>
+    <p class="fragment">Accept unbounded size input</p>
+    <p class="fragment">Map to a bounded output</p>
+    <p class="fragment">Be fast to compute</p>
+    <p class="fragment">Be computable strictly one-way<br />(difficult to find a pre-image for a hash)</p>
+    <p class="fragment">Resist pre-image attacks<br />(attacker controls one input)</p>
+    <p class="fragment">Second pre-image resistance: Given an input and output<br />(resisting second pre-image attacks).</p>
+    <p class="fragment">Resist collisions<br />(attacker controls both inputs)</p>
+</section>
 
 </pba-flex>
 
@@ -266,9 +269,11 @@ e.g., a 256 bit hash output yields 2^128 security
 
 It should be difficult for someone to partially (for a substring of the hash output) find a collision or "second" pre-image.
 
-- Bitcoin PoW is a partial pre-image attack.
-- Prefix/suffix pre-image attack resistance reduces opportunity for UI attacks for address spoofing.
-- Prefix collision resistance important to rationalize costs for some cryptographic data structures.
+<section>
+    <p class="fragment">Bitcoin PoW is a partial pre-image attack.</p>
+    <p class="fragment">Prefix/suffix pre-image attack resistance reduces opportunity for UI attacks for address spoofing.</p>
+    <p class="fragment">Prefix collision resistance important to rationalize costs for some cryptographic data structures.</p>
+</section>
 
 ---
 
