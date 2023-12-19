@@ -106,7 +106,7 @@ Kenny and Cartman propose Casa Bonita.
 
 In the end Kenny may not agree that Whistlin' Willie's is the best option for dinner, but he will agree that it is the legitimate group decision.
 
-Image source: <https://southparkstudios.mtvnimages.com/images/shows/south-park/clip-thumbnails/season-14/1402/south-park-s14e02c03-ill-show-them-f-obscene-16x9.jpg>
+Image source: South park season 14 episode 2
 
 ---v
 

@@ -120,7 +120,7 @@ We want the most robust system possible, given the _environment and context_ the
 
 More relevant trilemma:
 
-- [Scalability](https://vitalik.ca/general/2021/04/07/sharding.html#the-scalability-trilemma)
+- [Scalability](https://vitalik.eth.limo/general/2021/04/07/sharding.html#the-scalability-trilemma)
 - [Zooko's Triangle](https://en.wikipedia.org/wiki/Zooko's_triangle) (Network IDs)
 - More likely!
 

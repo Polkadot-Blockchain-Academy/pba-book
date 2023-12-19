@@ -826,7 +826,7 @@ Meaning, if another client wants to sync polkadot, it should know the details of
 
 Notes:
 
-- Shawn's deep dive: <https://www.shawntabrizi.com/substrate/substrate-storage-deep-dive/>
+- Shawn's deep dive: <https://www.shawntabrizi.com/blog/substrate/substrate-storage-deep-dive/>
 
 - Basti's talk on Trie caching: <https://www.youtube.com/watch?v=OoMPlJKUULY>
 

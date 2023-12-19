@@ -107,7 +107,7 @@ Notes:
 
 Notes:
 
-- <https://vitalik.ca/general/2021/04/07/sharding.html>
+- <https://vitalik.eth.limo/general/2021/04/07/sharding.html>
 
 ---
 
@@ -197,7 +197,7 @@ Notes:
 
 Notes:
 
-- <https://vitalik.ca/general/2021/01/05/rollup.html>
+- <https://vitalik.eth.limo/general/2021/01/05/rollup.html>
 - <https://www.jeffcoleman.ca/state-channels/>
 - <https://lightning.network/lightning-network-paper.pdf>
 
