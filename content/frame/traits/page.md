@@ -1,4 +1,4 @@
-# Outer Enum
+# FRAME Pallets & Traits
 
 <!-- markdown-link-check-disable -->
 <center>
