@@ -1,4 +1,4 @@
-# Pallets & Traits
+# Introduction to FRAME
 
 <!-- markdown-link-check-disable -->
 <center>
