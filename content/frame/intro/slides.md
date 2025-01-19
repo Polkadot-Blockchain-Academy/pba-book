@@ -4,6 +4,9 @@ description: An introduction into FRAME, a framework for building Substrate runt
 duration: 1 hour
 ---
 
+# Introduction to FRAME
+
+---
 ## Lesson Plan
 
 <table class="no-bullet-padding">
