@@ -38,7 +38,7 @@ We explore how pre-funded, legally protected review frameworks can enable higher
 
 This module examines three real-world scenarios that demonstrate the challenges of sustainable OpenGov participation:
 
-1. **Polkadot Decentralized Voices OpenGov Proposal Reviews** - Unpaid specialized work with legal exposure
+1. **Polkadot Decentralized Voices OpenGov Proposal Reviews** - Unpaid or limited and vested compensation for specialized work with legal exposure
 2. **Polkadot Ambassador Fellowship Program** - Volunteering with retroactive discretionary compensation challenges
 3. **Polkadot AMI Bounty Program** - Issues with explicit agreements and ecosystem reliability
 

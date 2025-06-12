@@ -28,7 +28,7 @@ duration: 60 minutes
 
 Common patterns that undermine OpenGov participation:
 
-1. Uncompensated specialized expertise
+1. Uncompensated or limited compensation for specialized expertise
 2. Legal risk without protection
 3. Retroactive/discretionary compensation
 4. Administrative overhead exceeding value
@@ -63,9 +63,9 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 <pba-flex center>
 
-- Contributors providing detailed reviews without compensation structure
+- Contributors providing detailed reviews without or with only a limited compensation structure
 - Legal risk if project fails or funds are misallocated
-- Time spent on reviews without predefined compensation structures may affect overall contributor workload
+- Time spent on reviews without predefined or suitable compensation structures may affect overall contributor workload
 - May create challenging incentives for broader participation
 
 </pba-flex>
@@ -91,7 +91,7 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 - Recognition of specialized expertise may help foster sustainable participation
 - Legal protection frameworks could encourage more open communication
-- Predictable compensation models rather than retroactive or discretionary compensation tend to reduce uncertainty for contributors
+- Predictable and suitable compensation models rather than retroactive or discretionary compensation tend to reduce uncertainty for contributors
 - Long-term engagement benefits from appropriate recognition of value
 
 </pba-flex>
@@ -220,7 +220,7 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 Requirements for sustainable OpenGov participation:
 
-1. Upfront funding through OpenGov **prior to** work commencement
+1. Upfront and suitable funding through OpenGov **prior to** work commencement
 2. Clear scope and compensation established before work begins
 3. Legal protections through pre-approved budget allocations
 4. Recognition of specialized expertise through fair compensation
@@ -289,7 +289,7 @@ Ecosystem-wide insurance coverage for contributors:
 
 Sustainable OpenGov participation requires fundamental changes:
 
-- Securing upfront funding through OpenGov prior to work commencement
+- Securing suitable upfront funding through OpenGov prior to work commencement
 - Clear terms for contribution scope and compensation
 - Appropriate legal protections secured through budgeting
 - Ecosystem-wide professional indemnity and liability insurance
@@ -308,6 +308,7 @@ Pre-funded, formally approved work through OpenGov combined with pooled insuranc
 - [Polkadot OpenGov](https://wiki.polkadot.network/learn/learn-polkadot-opengov/)
 - [Polkadot Treasury](https://wiki.polkadot.network/learn/learn-guides-treasury/)
 - [Polkadot Decentralized Voices](https://wiki.polkadot.network/general/decentralized-voices/)
+- [Polkadot Decentralized Voices Cohort IV](https://medium.com/web3foundation/decentralized-voices-cohort-4-delegates-announced-a5a9c64927fd)
 - [Polkadot Ambassador Fellowship](https://wiki.polkadot.network/general/ambassadors/)
 - [Polkadot Ambassador Fellowship Referendum #1598](https://polkadot.polkassembly.io/referenda/1598)
 - [Polkadot AMI Bounty Program Referendum #562](https://polkadot.polkassembly.io/referenda/562)
