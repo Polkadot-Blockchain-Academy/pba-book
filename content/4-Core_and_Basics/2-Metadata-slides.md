@@ -79,7 +79,7 @@ Vector(
           fields: Vector(field),
           index: u8,
           docs,
-        })
+        }),
       ),
       sequence: compact,
       array: Struct({
@@ -92,7 +92,7 @@ Vector(
       bitSequence,
     }),
     docs: Vector(str),
-  })
+  }),
 );
 
 const field = Struct({

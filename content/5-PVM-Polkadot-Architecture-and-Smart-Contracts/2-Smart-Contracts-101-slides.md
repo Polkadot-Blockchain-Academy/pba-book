@@ -503,11 +503,11 @@ curl https://westend-asset-hub-eth-rpc.polkadot.io \
   "maxPriorityFeePerGas": "0x878415",
   "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
   "value": "0x0",
-  "input": "0x..."
+  "input": "0x...",
   "r": "0xc330502a046982553df56842433dfb1f318c980724bfd30be53e6461cea620ac",
   "s": "0x25217d80ae9538009b3b24ab83fdac6df67982b433f74488d2c14fee41ca2d79",
   "yParity": "0x0",
-  "v": "0x0",
+  "v": "0x0"
 }
 ```
 
@@ -547,8 +547,6 @@ INPUT="0xa9059cbb000000000000000000000000ba04f1c1e4577165dd2297d3fbedf956b0e4c8a
 1) "transfer(address,uint256)"
 0xBA04f1c1E4577165dD2297D3FbEdF956B0e4C8a7
 80510000 [8.051e7]
-
-
 ```
 
 Notes:

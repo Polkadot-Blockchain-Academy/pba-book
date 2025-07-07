@@ -71,8 +71,11 @@ You configure it!
 <pba-flex center>
 
 - Fungible(s) adapter: pallet-balances/pallet-assets
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Nonfungible(s) adapter: pallet-uniques/pallet-nfts
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Notes:
@@ -141,10 +144,15 @@ For example, this "Random Action" doesn't have to be a transfer, could be trying
 <pba-flex center>
 
 - AllowTopLevelPaidExecutionFrom
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - AllowExplicitUnpaidExecutionFrom
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - ...
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Notes:
@@ -200,8 +208,11 @@ This means pallets can have account, external locations can also have accounts.
 <pba-flex center>
 
 - AccountId32Aliases
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - HashedDescription
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Notes:
@@ -236,8 +247,11 @@ The weigher weighs XCMs, it assigns a weight to each instruction.
 <pba-flex center>
 
 - FixedWeightBounds (testing)
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - WeightInfoBounds (production)
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Notes:

@@ -8,7 +8,7 @@ duration: 15 minutes
 
 Notes:
 
-Intro  
+Intro\
 We'll trace the historical evolution of execution environments on Polkadot, focusing explicitly on smart contract and pallet development. Specifically: Frontier (initial EVM compatibility), ink! (WASM-based contracts), and recent developments like pallet-revive (RISC-V compatible VM with Solidity compilation).
 
 ---

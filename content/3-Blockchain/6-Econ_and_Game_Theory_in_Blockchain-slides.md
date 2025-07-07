@@ -891,6 +891,7 @@ What if we have multiple Nash Equilibria? Schelling point often comes to the res
 - A solution that people tend to choose (easiest to coordinate on)
 - Generally it is also a Nash Equilibrium
 - How in the world can it be useful in Blockchain?
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Notes:
@@ -1468,12 +1469,19 @@ So the reward should be proportional to the stake.
 **In summary:**
 
 - Make it easy to honest users and hard for attackers
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Service to the protocol needs to be rewarded
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Destructive or interfering actions need to be punished
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - De-Sybiling the users can help defend against spam
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Notes:
@@ -1863,7 +1871,8 @@ The opportunity cost is a clever mechanism that allows us to include costs witho
 - Creating invalid blocks in Bitcoin never gets directly punished even if the block is rejected by the network.
   The real cost is the opportunity cost, as the miner could have mined a valid block instead.
 - Polkadot native token DOT is inflationary (\~7.5% per year) but it can be staked to earn rewards (~15% per year).
-Not staking DOT has an opportunity cost which incentives staking to secure the network.
+  Not staking DOT has an opportunity cost which incentives staking to secure the network.
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Notes:
@@ -2194,6 +2203,7 @@ And only eliminate the relevant targets thus compromising the network.
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 - Limit the information the attackers have access to so they cannot plan ahead
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Notes:

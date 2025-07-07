@@ -166,7 +166,6 @@ impl Encode for Vec<u8> {
         self.clone()
     }
 }
-
 ```
 
 ---

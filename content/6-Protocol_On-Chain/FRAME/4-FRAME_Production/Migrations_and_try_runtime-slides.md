@@ -126,10 +126,10 @@ pub type FooValue = StorageValue<_, Foo>;
 ```
 
 ```rust
-  // old
-  pub enum Foo { A(u32), B(u32) }
-  // new
-  pub enum Foo { A(u32), B(u32), C(u128) }
+// old
+pub enum Foo { A(u32), B(u32) }
+// new
+pub enum Foo { A(u32), B(u32), C(u128) }
 ```
 
 - Extending an enum is even more interesting, because if you add the variant to the end, no migration is needed.
@@ -359,7 +359,6 @@ impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
     }
   }
 }
-
 ```
 
 Stores the version as u16 in [`twox(pallet_name) ++ twox(:__STORAGE_VERSION__:)`](https://github.com/paritytech/substrate/blob/6d84315348d1fca9ca59454b9f37411c80e05ab4/frame/support/src/traits/metadata.rs#L155).

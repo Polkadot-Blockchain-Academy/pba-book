@@ -857,7 +857,7 @@ Notes:
 <ul>
 <li class="fragment">Money now is worth more than the same amount in the future.</li>
 <li class="fragment">Why?
-    <ul> 
+    <ul>
     <li class="fragment">Again, opportunity costs: The money at hand now could be invested, potentially earning more money.</li>
     <li class="fragment">This potential earning capacity bestows more value to present money over future money.</li>
     </ul>

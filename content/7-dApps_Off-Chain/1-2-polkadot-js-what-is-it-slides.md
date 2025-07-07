@@ -198,7 +198,9 @@ async function main() {
   const historicalBalance = await apiAt.query.system.account(ADDR);
 
   console.log(`Current Balance: ${currentBalance.data.free.toString()}`);
-  console.log(`Balance at Block 1,000,000: ${historicalBalance.data.free.toString()}`);
+  console.log(
+    `Balance at Block 1,000,000: ${historicalBalance.data.free.toString()}`,
+  );
 }
 
 main().catch(console.error);

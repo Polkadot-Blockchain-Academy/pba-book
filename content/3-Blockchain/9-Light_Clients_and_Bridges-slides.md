@@ -43,6 +43,7 @@ Reality:
 - It takes a lot of disk, memory, etc
 - It takes some know-how
 - I don't need it _all the time_
+
 </div>
 <!-- .element: class="fragment" -->
 
@@ -70,7 +71,7 @@ AKA, trust somebody else's node.
 
 <ul>
 <li>🕵️ Spy on you (<a href="https://decrypt.co/115486/infura-collect-metamask-users-ip-ethereum-addresses-after-privacy-policy-update">like infura</a>).</li> <!-- .element: class="fragment" -->
- 
+
 <li>🔞 Censor you <!-- .element: class="fragment" -->
 <li>🤥 Lie to you <!-- .element: class="fragment" -->
 <li>💔 Steal your boyfriend <!-- .element: class="fragment" -->
@@ -392,9 +393,9 @@ One is to add a role of fishermen.
 They are responsible for noticing when the header candidate on the target chain is different from the one in the main source chain protocol and reporting this behavior back to the source chain so the validators can be slashed there.
 Two problems:
 
-1.  Fishermen have weak incentives.
-    If they do a good job there will be no equivocations and they will not get paid.
-1.  Target chain is relying on the foreign source chain to keep the bridge secure instead of owning that security itself.
+1. Fishermen have weak incentives.
+   If they do a good job there will be no equivocations and they will not get paid.
+1. Target chain is relying on the foreign source chain to keep the bridge secure instead of owning that security itself.
 
 The other is to have the relayer role require a security deposit.
 If it turns out that a relayer relays an attack header, that relayer is slashed and the relayer who reports it gets a reward.

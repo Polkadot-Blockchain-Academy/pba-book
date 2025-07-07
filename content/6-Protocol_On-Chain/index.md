@@ -267,10 +267,9 @@ other abstract entities within chains, not just the chain itself.
 Async and Sync: Disjoint consensus systems are in principle[^1] asynchronous by nature. This is an
 important concept to keep in mind.
 
-[^1]:
-    Technically, if two parachains are co-scheduled in the same core in the same block, they
-    could have synchronous communication. But they cannot count on this. So at the programming
-    model, one must assume everything is always asynchronous.
+[^1]: Technically, if two parachains are co-scheduled in the same core in the same block, they
+could have synchronous communication. But they cannot count on this. So at the programming
+model, one must assume everything is always asynchronous.
 
 ---
 

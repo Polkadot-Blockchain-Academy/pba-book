@@ -110,7 +110,7 @@ _Lottery_
 
 ## BLS-based VRF
 
-- `sign(sk,input) `: run `BLS.sign(sk, input)->signature`, return `signature`
+- `sign(sk,input)`: run `BLS.sign(sk, input)->signature`, return `signature`
 
 - `eval(sk,input)`： return `Hash(signature)`
 
@@ -219,7 +219,7 @@ If the messages are not far apart, it is impossible to distinguish in many cases
 
 With erasure coding, we extend each message magically so they are different enough. The sender and receiver know the same encoding procedure. These extensions will be very different, even if the messages are similar.
 
-`msg1`<span style="color: red;">`jdf`</span> and `msg2`<span style="color: red;">`ajk`</span>
+`msg1`<span style="color: red;"> `jdf`</span> and `msg2`<span style="color: red;"> `ajk`</span>
 
 Notes:
 

@@ -180,7 +180,6 @@ NOTES
        provide such a function (e.g., NetBSD's consttime_memequal()),
        but no such function is specified in POSIX.  On Linux, it may be
        necessary to implement such a function oneself.
-
 ```
 
 ---
@@ -250,7 +249,7 @@ Preventing side channel attacks is _hard_! Noticing sidechannel attacks is even 
 
 <img style="width: 800px;" src="./img/we_rolled_our_own_crypto.png" />
 
-###
+### 
 
 Notes:
 

@@ -32,7 +32,9 @@ Ensure the `main` branch is write protected, by required a PR first`- no one sho
 
 1. [Introduction](./1-Intro-to-Substrate-slides.md) (60m)
 1. [Wasm Meta Protocol](./2-Wasm-Meta-Protocol-slides.md) (90m)
+
 <!-- FIXME where is this? -->
+
 1. Activity: Finding Runtime APIs and Host Functions in Substrate
 
 #### Afternoon

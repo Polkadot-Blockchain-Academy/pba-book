@@ -32,8 +32,11 @@ Highlight the multi-chain part.
 
 - ⛓️ Future is multi-chain.
 - 😭 Building a blockchain is hard. Upgrading it even harder.
+
 <!-- .element: class="fragment" -->
+
 - 💡 Framework!
+
 <!-- .element: class="fragment" -->
 
 ---v
@@ -80,6 +83,7 @@ The **pre-substrate** way of thinking:
 
 - 😭 _Building a blockchain is hard. Upgrading it even harder_.
 - 💪🏻 We are going to spend maximal resources at making sure we get it right.
+
 <!-- .element: class="fragment" -->
 
 ---v
@@ -89,10 +93,15 @@ The **pre-substrate** way of thinking:
 But has this worked?
 
 - 😭 Bitcoin block size debate
+
 <!-- .element: class="fragment" -->
+
 - 2️⃣ L2s and beyond
+
 <!-- .element: class="fragment" -->
+
 - 📈 Ethereum gas price
+
 <!-- .element: class="fragment" -->
 
 Notes:
@@ -116,10 +125,15 @@ https://github.com/Sovereign-Labs/sovereign-sdk / https://arbitrum.io/orbit
 The **Substrate** way of thinking:
 
 - ☯️ Society and technology evolve
+
 <!-- .element: class="fragment" -->
+
 - 🦸 Humans are fallible
+
 <!-- .element: class="fragment" -->
+
 - 🧠 Best decision of today -> mistake of tomorrow
+
 <!-- .element: class="fragment" -->
 
 ---v
@@ -196,7 +210,6 @@ int main() {
     int* y = foo();
     printf("%d\n", *y); // Accessing memory out of its scope
 }
-
 ```
 
 <br/>
@@ -257,14 +270,23 @@ needs of the future.
 ### 🤩 Generic, Modular and Extensible Design
 
 - Multiple consensus engines (BABE/Grandpa/AURA/PoW/Sassafras)
+
 <!-- .element: class="fragment" -->
+
 - Multiple network protocols (QUIC, TCP)
+
 <!-- .element: class="fragment" -->
+
 - Multiple database implementations (ParityDB, RocksDB)
+
 <!-- .element: class="fragment" -->
+
 - Highly configurable, graph-based transaction-pool.
+
 <!-- .element: class="fragment" -->
+
 - Easy to change primitives: AccountId, Signature, BlockNumber, Header, Hash, and many more.
+
 <!-- .element: class="fragment" -->
 
 Notes:
@@ -935,8 +957,11 @@ Notes:
 
 - Yes, consensus is not a core part of a blockchain runtime. Why?
 - Not part of your STF!
+
 <!-- .element: class="fragment" -->
+
 - The consensus protocol is to your runtime what HTTP is to Facebook.
+
 <!-- .element: class="fragment" -->
 
 Notes:
@@ -971,8 +996,11 @@ state is sometimes called "storage" asd well.
 
 - Yes, data is stored outside of the runtime. Why?
 - Wasm runtime does not have the means to store it.
+
 <!-- .element: class="fragment" -->
+
 - Yet, the interpretation of the data is up to the runtime.
+
 <!-- .element: class="fragment" -->
 
 ---v
@@ -1060,12 +1088,9 @@ Notes:
   - https://www.futurelearn.com/info/courses/defi-exploring-decentralised-finance-with-blockchain-technologies/0/steps/251885#:~:text=to%20the%201990s.-,Writing%20in%201994%2C%20the%20computer%20scientist%20Nick%20Szabo%20defined%20a,of%20artificial%20intelligence%20is%20implied.
 
 - Substrate Primitives (`sp-*`), Frame (`frame-*`) and the pallets (`pallets-*`), binaries (`/bin`)
-  and all other utilities are licensed under [Apache
-  2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
+  and all other utilities are licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.html).
 
-Substrate Client (`/client/*` / `sc-*`) is licensed under [GPL
-v3.0](https://www.gnu.org/licenses/gpl-3.0.html) with a [classpath linking
-exception](https://www.gnu.org/software/classpath/license.html).
+Substrate Client (`/client/*` / `sc-*`) is licensed under [GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.html) with a [classpath linking exception](https://www.gnu.org/software/classpath/license.html).
 
 - Apache2 allows teams full freedom over what and how they release, and giving licensing clarity to
   commercial teams.

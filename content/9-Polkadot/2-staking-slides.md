@@ -236,7 +236,7 @@ Slashing is quite interesting because in PoW you could argue there wasnt an expl
 <pba-col>
   <ul>
     <li>Less energy usage</li>
-    <li>Decoupling throughput scaling with security scaling</li>    
+    <li>Decoupling throughput scaling with security scaling</li>
     <li>Stronger hardware = better throughput</li>
     <li>Ecosystem TVL growing usually automatically improves (economic) security</li>
     <li>Removes economy of scale</li>
@@ -488,10 +488,15 @@ the **winners** and **how to distribute the stake among them**.
 # Nominated Proof of Stake
 
 - ✅ As a nominator, you are free to express your desire to back non-winners. If you have some other strong nominations you will NOT be disadvantaged.
+
 <!-- .element: class="fragment" -->
+
 - ✅ Has a much higher chance to make sure staked tokens won't get wasted.
+
 <!-- .element: class="fragment" -->
+
 - ✅ Can optimize other criteria other than "who had more votes".
+
 <!-- .element: class="fragment" -->
 
 Notes:

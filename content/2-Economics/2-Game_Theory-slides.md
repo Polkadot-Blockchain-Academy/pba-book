@@ -229,23 +229,23 @@ Notes:
 
 ### Quiz Questions:
 
-1.  Is this game static or dynamic?
-    What would need to change in the description of the game such that it would fall in the other category?
-1.  Is this game of complete or incomplete information?
-    What would need to change in the description of the game such that it would fall in the other category?
+1. Is this game static or dynamic?
+   What would need to change in the description of the game such that it would fall in the other category?
+1. Is this game of complete or incomplete information?
+   What would need to change in the description of the game such that it would fall in the other category?
 
 </pba-col>
 </pba-cols>
 
 Notes:
 
-1.  The game is static.
-    For it to be dynamic, firms would need to make offers sequentially, _knowing what the firms before had offered_.
+1. The game is static.
+   For it to be dynamic, firms would need to make offers sequentially, _knowing what the firms before had offered_.
 
-2.  The game is of complete information.
-    To make information incomplete, we would need to have that the value of hiring the engineer differs between firms and is unknown between firms.
-    Or that the cost of working for the engineer is not known to the firms.
-    The point is that we need to have uncertainty over payoffs.
+2. The game is of complete information.
+   To make information incomplete, we would need to have that the value of hiring the engineer differs between firms and is unknown between firms.
+   Or that the cost of working for the engineer is not known to the firms.
+   The point is that we need to have uncertainty over payoffs.
 
 - This lesson focuses on static games of complete information.
 - When we look at auctions in lesson Price finding mechanisms, we will also consider games of incomplete information, both dynamic and static.

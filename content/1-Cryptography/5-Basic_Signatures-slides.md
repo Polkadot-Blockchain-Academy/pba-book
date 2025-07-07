@@ -209,7 +209,7 @@ Show image of ECDSA vs schnorr to demonstrate this
   - Send $(s, e)$. <!-- .element: class="fragment" data-fragment-index="4" -->
 - To Verify : <!-- .element: class="fragment" data-fragment-index="5" -->
   - recover $r = sG + e Pub_{Signer}.$ <!-- .element: class="fragment" data-fragment-index="6" -->
-  - Verify $e \stackrel{?}{=}  H(r | M)$ <!-- .element: class="fragment" data-fragment-index="7" -->
+  - Verify $e \stackrel{?}{=} H(r | M)$ <!-- .element: class="fragment" data-fragment-index="7" -->
 
 ---
 

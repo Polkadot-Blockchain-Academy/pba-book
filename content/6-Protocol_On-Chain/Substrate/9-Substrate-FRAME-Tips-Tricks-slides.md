@@ -403,7 +403,6 @@ impl Percent {
 impl Mul<u32> for Percent {
   ...
 }
-
 ```
 
 ---v
@@ -465,7 +464,6 @@ Notes:
 - [`big_uint.rs`](https://paritytech.github.io/polkadot-sdk/master/sp_arithmetic/biguint/index.html) (unaudited)
 
 ```rust
-
 pub struct BigUint {
 	/// digits (limbs) of this number (sorted as msb -> lsb).
 	pub(crate) digits: Vec<Single>,
@@ -483,7 +481,7 @@ Things like **addition**, **multiplication**, **division** could all easily fail
 - Panic
   - `u32::MAX * 2 / 2` (in debug builds)
   - `100 / 0`
-  s
+    s
   </div>
 
 <!-- .element: class="fragment" -->

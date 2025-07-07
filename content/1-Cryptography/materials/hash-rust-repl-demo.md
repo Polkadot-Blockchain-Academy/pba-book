@@ -43,7 +43,6 @@ HexDisplay::from(&long_input_hash)
 use std::time::{Instant};
 // Let's give the function 1kb of data to hash
 let value_to_hash = [0u8; 1024];
-
 ```
 
 ```rust

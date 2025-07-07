@@ -509,6 +509,7 @@ MyMaxVoters::get();
 
 - Often times, in your test, you want mimic the progression of an empty block.
 - De-nada! We can fake everything in tests 🤠
+
 <!-- .element: class="fragment" -->
 
 ---v
@@ -570,7 +571,6 @@ fn test() {
 ````
 
 ```
-
 ---
 
 ## Additional Resources 😋

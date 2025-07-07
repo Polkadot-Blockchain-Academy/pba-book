@@ -409,10 +409,15 @@ but we also have a storage proof. Hmmm what's that?
 
 - Makes up most of the information in a collation
 - Acts as a replacement for the parachain's pre-state for the purpose of validating a single block
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - It enables the construction of a sparse in-memory merkle trie
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - State root can then be compared to that from parent header
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Notes:
@@ -438,8 +443,11 @@ With the storage proof we can reconstruct a small part of the state that is rele
 <br/>
 
 - Only includes the data modified in this block along with hashes of the data from the rest of the trie
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - This makes up the majority of the data in a collation (max 10MB)
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 Notes:
@@ -536,12 +544,19 @@ The input of the runtime validation process is the PoV, and the function called 
 
 - The parachain runtime expects to run in conjunction with a parachain client
 - But validation is occurring in a relay chain node
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - We need to implement the API the parachain client exposes to the runtime, known as host functions
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - The host functions most importantly allow the runtime to query its state, so we need a light weight replacement for the parachain's state sufficient for the execution of this single block
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - validate_block prepares said state and host functions, then runs the parachain's STF on top of them
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 </pba-flex>
@@ -647,8 +662,11 @@ We discussed a lot of the responsibilities of collators but those are in fact mo
 <pba-flex center>
 
 - Every Substrate blockchain supports runtime upgrades
+
 <!-- .element: class="fragment" data-fragment-index="0" -->
+
 - Every time a validator wants to validate a parablock, it must first compile the PVF
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ##### Problem
@@ -699,14 +717,23 @@ https://github.com/paritytech/cumulus/blob/master/docs/overview.md#runtime-upgra
 
 - Track
 - Check
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Vote
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Conclude
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Upgrade
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
+
 - Notify
+
 <!-- .element: class="fragment" data-fragment-index="5" -->
 
 </pba-flex>

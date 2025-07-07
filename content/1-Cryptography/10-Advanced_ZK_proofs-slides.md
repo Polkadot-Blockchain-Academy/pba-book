@@ -61,7 +61,7 @@ $r \times s = N$
 
 $Q_l\times a + Q_r\times b + Q_o\times c + Q_m\times a\times b + Q_c = 0$
 
- <img style="height: 200px; padding-left:100px" src="./img/gate-table-factorization.png" />
+<img style="height: 200px; padding-left:100px" src="./img/gate-table-factorization.png" />
 
 ---
 
@@ -94,7 +94,7 @@ $Q_l\times a + Q_r\times b + Q_o\times c + Q_m\times a\times b + Q_c = 0$
 - $Q_l(x)$ such that $Q_l(1) = 0, Q_l(2) = 1, Q_l(3) = 1, Q_l(4) = -1 ,...$<!-- .element: class="fragment" data-fragment-index="2" -->
   <img style="height: 300px; padding-left:100px" src="./img/gate-table-left-input-less-than-8-and-not-1.png" /><!-- .element: class="fragment" data-fragment-index="2" -->
 - When you have one polynomial for each column then you can turn the whole table into a polynomial:<!-- .element: class="fragment" data-fragment-index="3" -->
-  $Q_l(x)\times a(x) + Q_r(x)\times b(x) + Q_o(x)\times  c(x) + Q_m(x)\times a(x)\times b(x) + Q_c(x)$<!-- .element: class="fragment" data-fragment-index="4" -->
+  $Q_l(x)\times a(x) + Q_r(x)\times b(x) + Q_o(x)\times c(x) + Q_m(x)\times a(x)\times b(x) + Q_c(x)$<!-- .element: class="fragment" data-fragment-index="4" -->
   $= 0$<!-- .element: class="fragment" data-fragment-index="4" -->
 
 ---
@@ -114,7 +114,7 @@ SAGE demo
 # Zero test
 
 - if f(x) = 0 for x = 1,..,13 then
-- $f(x) = q(x) \times  (x-1)\times ...\times (x-13)$
+- $f(x) = q(x) \times (x-1)\times ...\times (x-13)$
 - $f(x)/q(x) = (x-1)...(x-13)$
 - How to verifier this.
 
@@ -254,7 +254,7 @@ $t(x + 1)(u_1 - u_2 \times (x+1) - T(x + 1)) - t(x)(u_1 - u_2 \times (\psi(x)+1)
 
 - The prover claims it has $f(x)$ passing the zero test.<!-- .element: class="fragment" data-fragment-index="1" -->
 - The prover is also able to compute $q(x)$ such that <!-- .element: class="fragment" data-fragment-index="2" -->
-- $f(x) = q(x) \times  \prod(x-1)..(x-13)$<!-- .element: class="fragment" data-fragment-index="3" -->
+- $f(x) = q(x) \times \prod(x-1)..(x-13)$<!-- .element: class="fragment" data-fragment-index="3" -->
 - The prover commit to $f$ and $q$.<!-- .element: class="fragment" data-fragment-index="4" -->
 - The verifier ask the prover to provide them with $f(u)$ and $q(u)$ for some random point $u$<!-- .element: class="fragment" data-fragment-index="5" -->
 - It is very unlikely that the prover is able to lie about $f(u)$ and $q(u)$ given he has commited to $f$ and $q$. <!-- .element: class="fragment" data-fragment-index="6" -->

@@ -391,7 +391,11 @@ Example: `Metadata` APIs
       "name": "metadata_versions",
       "inputs": [],
       "output": 121,
-      "docs": [" Returns the supported metadata versions.", "", " This can be used to call `metadata_at_version`."]
+      "docs": [
+        " Returns the supported metadata versions.",
+        "",
+        " This can be used to call `metadata_at_version`."
+      ]
     }
   ],
   "docs": [" The `Metadata` api trait that returns metadata for the runtime."]

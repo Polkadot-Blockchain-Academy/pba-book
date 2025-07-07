@@ -768,7 +768,8 @@ Notes:
 - Soft are often preferred for changes because with >50%HP they do not fracture the community (BTC community logic)
 - Hard can be preferred as they seem to better represent minorities.
   If some people don't agree with the majority they naturally fork off and are not peer pressured to follow (ETH community logic)
-- ***
+
+---
 
 # Thank you!
 

@@ -32,8 +32,8 @@ They should not zone-out of class to complete this during class time, they shoul
 1. 💻 [Many time pad](many-time-pad.md) activity
 
 Release:
-1. `p2_addresses` assignment problem
 
+1. `p2_addresses` assignment problem
 
 ### Day 2
 
@@ -42,7 +42,7 @@ Release:
 1. Quiz 1
 1. [3-Hashes](3-Hashes-slides.md)
    - 🪄 [hashing demo](./materials/hash-rust-repl-demo.md)
-1.  [4-Encryption](4-Encryption-slides.md)
+1. [4-Encryption](4-Encryption-slides.md)
 
 #### Afternoon
 
@@ -52,6 +52,7 @@ Release:
 1. 💻 [AES Modes](./materials/aes-modes-activity/) activity
 
 Release:
+
 1. `p1_hashing` assignment problem.
 1. `p9_attacks::low_entropy_hash` assignment problem.
 1. `p3_encryption assignment` problem.
@@ -73,6 +74,7 @@ Release:
 1. 💻 [VRF poker](./materials/vrf_card_activity.rs)
 
 Release:
+
 1. `p6_merkle assignment` problem.
 1. `p5_data_integrity_and_recovery` assignment problem.
 1. `p7_exotics` assignment problem if it exists.
@@ -87,6 +89,6 @@ Release:
 1. ZKP activity.
 
 Release:
+
 1. `p9_attacks::timing_attacks` assignment problem.
 1. `p10_zkp assignment.`
-

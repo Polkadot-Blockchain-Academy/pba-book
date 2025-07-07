@@ -186,6 +186,7 @@ A "complex" type is a codec that references other types.
 - Vectors: A collection of a dynamic size of any other type.<!-- .element: class="fragment" -->
 - Arrays: A collection of static size of any other type.<!-- .element: class="fragment" -->
 - Enum: Discriminated unions (AKA variants, tagged unions...).<!-- .element: class="fragment" -->
+
 <li class="fragment">Specialized Enums:
 <ul>
   <li>Option: The first byte indicates whether there is a value or not.</li>

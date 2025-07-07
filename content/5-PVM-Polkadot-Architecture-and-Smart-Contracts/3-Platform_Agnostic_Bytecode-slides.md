@@ -148,16 +148,27 @@ The main goal of a PAB is to make the code **portable**, you should be able to c
 ## Desireable Features
 
 - Hardware Independence
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Efficiency: minimize overhead vs. native
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Tool Simplicity
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Support as Compilation Target
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
+
 - Sandboxing
+
 <!-- .element: class="fragment" data-fragment-index="5" -->
+
 - Deterministic execution
+
 <!-- .element: class="fragment" data-fragment-index="5" -->
 
 Notes:
@@ -275,8 +286,11 @@ Those things can't be addressed by the PAB itself but they can give good guideli
   - Rust, C, C++ and many others
   <!-- .element: class="fragment" data-fragment-index="2" -->
 - Fast (with near-native performance when compiled - more later)
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Safe (executed in a sandboxed environment)
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 </pba-flex>
@@ -452,7 +466,6 @@ There are also light clients, where both Runtime and Client are implemented in w
 - A browser as embedder of the node's client
   - the node's client as embedder for the node's runtime
     - the node's runtime as embedder for the SmartContract
-
 
 <img style="height: 30vh" src="./img/pab/mind-blown-explosion.gif" />
 

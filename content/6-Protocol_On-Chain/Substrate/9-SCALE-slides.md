@@ -205,7 +205,6 @@ fn main() {
 <pba-col center style="margin-left: 10px;">
 
 ```sh
-
 1000101
 [45]
 [45]
@@ -215,8 +214,6 @@ fn main() {
 111111111111111111111111
 [00, ff, ff, ff]
 [ff, ff, ff, 00]
-
-
 ```
 
 </pba-col>

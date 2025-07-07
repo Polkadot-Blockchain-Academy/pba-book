@@ -212,15 +212,27 @@ import.meta.env.DEV && source.id !== "polkadot_people"
     ? withLogFollowEvents(console.debug, provider)
     : provider
 */
-const withLogFollowEvents = (logFn: (...args: string[]) => void, provider: JsonRpcProvider): JsonRpcProvider => {
-  const events = ["initialized", "newBlock", "bestBlockChanged", "finalized", "stop"];
+const withLogFollowEvents = (
+  logFn: (...args: string[]) => void,
+  provider: JsonRpcProvider,
+): JsonRpcProvider => {
+  const events = [
+    "initialized",
+    "newBlock",
+    "bestBlockChanged",
+    "finalized",
+    "stop",
+  ];
 
   return onMsg => {
     let followId = "";
 
     const connection = provider(message => {
       onMsg(message);
-      if (message.includes(`"id":"${followId}"`) || events.some(m => message.includes(`"event":"${m}"`))) {
+      if (
+        message.includes(`"id":"${followId}"`)
+        || events.some(m => message.includes(`"event":"${m}"`))
+      ) {
         const { event, ...rest } = JSON.parse(message)?.params?.result || {};
         logFn(`<< ${event}`, rest);
       }
@@ -376,7 +388,10 @@ const connection = provider(message => {
   const msg = JSON.parse(message);
   ellipsisBody(msg);
   console.log(msg);
-  if (msg.method === "chainHead_v1_followEvent" && msg.params.result.event === "newBlock") {
+  if (
+    msg.method === "chainHead_v1_followEvent"
+    && msg.params.result.event === "newBlock"
+  ) {
     const reqId = id++;
     console.log("Request body", reqId);
     connection.send(
@@ -385,7 +400,7 @@ const connection = provider(message => {
         id: reqId,
         method: "chainHead_v1_body",
         params: [msg.params.subscription, msg.params.result.blockHash],
-      })
+      }),
     );
   }
 });
@@ -396,12 +411,17 @@ connection.send(
     id: id++,
     method: "chainHead_v1_follow",
     params: [true],
-  })
+  }),
 );
 
 function ellipsisBody(res: any) {
-  if (res.method === "chainHead_v1_followEvent" && res.params.result.event === "operationBodyDone") {
-    res.params.result.value = res.params.result.value.map((v: string) => (v.length > 32 ? v.slice(0, 32) + "…" : v));
+  if (
+    res.method === "chainHead_v1_followEvent"
+    && res.params.result.event === "operationBodyDone"
+  ) {
+    res.params.result.value = res.params.result.value.map((
+      v: string,
+    ) => (v.length > 32 ? v.slice(0, 32) + "…" : v));
   }
 }
 ```
@@ -450,10 +470,10 @@ function ellipsisBody(res: any) {
 Notes:
 
 ```ts
+import { decAnyMetadata, u32 } from "@polkadot-api/substrate-bindings";
 import { chainSpec } from "polkadot-api/chains/westend2";
 import { getSmProvider } from "polkadot-api/sm-provider";
 import { start } from "polkadot-api/smoldot";
-import { decAnyMetadata, u32 } from "@polkadot-api/substrate-bindings";
 import { toHex } from "polkadot-api/utils";
 
 const smoldot = start({
@@ -474,8 +494,13 @@ const connection = provider(message => {
           jsonrpc: "2.0",
           id: `${id++}-call`,
           method: "chainHead_v1_call",
-          params: [msg.params.subscription, lastFinalized, "Metadata_metadata_at_version", toHex(u32.enc(15))],
-        })
+          params: [
+            msg.params.subscription,
+            lastFinalized,
+            "Metadata_metadata_at_version",
+            toHex(u32.enc(15)),
+          ],
+        }),
       );
       msg.params.result.finalizedBlockHashes.forEach((hash: string) =>
         connection.send(
@@ -484,7 +509,7 @@ const connection = provider(message => {
             id: `${id++}-unpin`,
             method: "chainHead_v1_unpin",
             params: [msg.params.subscription, hash],
-          })
+          }),
         )
       );
     }
@@ -495,7 +520,7 @@ const connection = provider(message => {
           id: `${id++}-unpin`,
           method: "chainHead_v1_unpin",
           params: [msg.params.subscription, msg.params.result.blockHash],
-        })
+        }),
       );
     }
 
@@ -515,7 +540,7 @@ connection.send(
     id: id++,
     method: "chainHead_v1_follow",
     params: [true],
-  })
+  }),
 );
 ```
 
@@ -710,11 +735,11 @@ E.g. the votes for a given referendum, as the storage is Votes -> Account -> Ref
 - The node might drop some of them.
 
 ```ts
-  {
-    result: "started",
-    operationId: "…",
-    discardedItems: 5
-  }
+{
+  result: "started",
+  operationId: "…",
+  discardedItems: 5
+}
 ```
 
 - Just try later!

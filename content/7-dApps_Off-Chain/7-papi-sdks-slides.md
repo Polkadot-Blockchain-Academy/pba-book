@@ -55,7 +55,7 @@ owner: Carlo Sala
 #### Governance
 
 - We want to abstract as much as possible the interaction with the chain.
-- We discovered ~_3.5_~ 4 main groups of functionality:
+- We discovered ~~_3.5_~~ 4 main groups of functionality:
   - Referenda
   - ConvictionVoting
   - Bounties / ChildBounties

@@ -15,6 +15,7 @@
 ## Cross Consensus Messaging (XCM)
 
 <!-- TODO Break down the following in the schedule below -->
+
 Day 1:
 
 - Intro to XCM
@@ -44,7 +45,7 @@ Goal for Day 2: Building an example end to end with JavaScript / Rust front end 
 
 ### Hands on activities
 
-----
+---
 
 ## Schedule
 
@@ -107,4 +108,3 @@ Goal for Day 2: Building an example end to end with JavaScript / Rust front end 
 #### Morning
 
 #### Afternoon
-

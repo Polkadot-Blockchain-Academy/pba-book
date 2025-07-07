@@ -770,7 +770,6 @@ We can compile this down to PVM.
 24: a0 = 0x1
 27: a1 = 0
 29: ret
-
 ```
 
 </pba-col>

@@ -532,7 +532,7 @@ async function run() {
   const { proof, publicSignals } = await snarkjs.groth16.fullProve(
     { a: 10, b: 21 },
     "circuit.wasm",
-    "circuit_final.zkey"
+    "circuit_final.zkey",
   );
 
   console.log("Proof: ");

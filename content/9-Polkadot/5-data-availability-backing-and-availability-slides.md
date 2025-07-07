@@ -478,8 +478,11 @@ The goal: Avoid storing full PoV in each validator
 <pba-flex center>
 
 - Encode data of K chunks into a larger code word of N chunks
+
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Any K-subset of N chunks can be used to recover the data
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 </pba-flex>
@@ -616,10 +619,15 @@ Solution: Merkle proofs!
 <pba-flex center>
 
 - PoV chunks form branches of a merkle tree
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Proof distributed with each chunk
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Chunks checked against erasure_root from CandidateReceipt
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 </pba-flex>
@@ -654,6 +662,7 @@ Reed Solomon is costly, taking 14-20% of validator CPU time.
       - ~33-50% CPU time improvement depending on unsafe Rust use
   <!-- .element: class="fragment" data-fragment-index="3" -->
 - Better implemented Reed Solomon library (potential 10x improvement!)
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 </pba-flex>

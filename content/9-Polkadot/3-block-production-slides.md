@@ -271,8 +271,8 @@ And on top of that it is possible that sometimes we will get multiple validators
 
 <pba-cols>
 <pba-col>
-    
-  <ul>
+
+<ul>
     <li><b>BABE uses Aura as plan B</b></li>
     <li>For every slot we try and find a VRF winner and we call those <b>primaries</b></li>
     <li>If no primary is present default to AURA and select a <b>secondary</b> author</li>

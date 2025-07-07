@@ -188,6 +188,7 @@ First launched using Trackers: <!-- .element: class="fragment" data-fragment-ind
 - Files are split into multiple pieces <!-- .element: class="fragment" data-fragment-index="3" -->
 - .torrent files contain the hash of the pieces <!-- .element: class="fragment" data-fragment-index="4" -->
 - Trackers saves which peers in the network have which file
+
 <!-- .element: class="fragment" data-fragment-index="5" -->
 
 ```rust
@@ -219,8 +220,11 @@ Later introduced, **Trackerless** mode:
 <!-- .element: class="fragment" data-fragment-index="7" -->
 
 - Does not require Tracker nodes
+
 <!-- .element: class="fragment" data-fragment-index="8" -->
+
 - How does it achieve that? How is the knowledge of who has what is shared across the network?
+
 <!-- .element: class="fragment" data-fragment-index="9" -->
 
 Notes:
@@ -236,7 +240,9 @@ Same `HashMap` as before, but distributed:
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 - key: hash of the .torrent file (=FileId)
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - value: list of peers who own the file <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Notes:

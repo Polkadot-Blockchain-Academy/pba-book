@@ -8,7 +8,7 @@ duration: 30 minutes
 
 Notes:
 
-Intro  
+Intro\
 Today we'll explore Polkadot’s blockchain architecture in depth. We'll cover blockchain scalability, parachain and relay chain design, coretime resource allocation, cross-chain interoperability (XCM), and contextualize with comparisons to web2 distributed systems and common scaling limits faced historically by vertical architectures.
 
 ---

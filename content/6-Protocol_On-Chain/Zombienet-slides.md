@@ -43,14 +43,23 @@ Integration tests are always <span class="colored">complex</span>:
 <pba-flex center>
 
 - Setup Configuration
+
 <!-- .element: class="fragment" -->
+
 - Port management
+
 <!-- .element: class="fragment" -->
+
 - Ready state off all artifacts
+
 <!-- .element: class="fragment" -->
+
 - Observability
+
 <!-- .element: class="fragment" -->
+
 - Leaking resources
+
 <!-- .element: class="fragment" -->
 
 </pba-flex>
@@ -64,16 +73,27 @@ Integration tests are always <span class="colored">complex</span>:
 <pba-flex center>
 
 - Config flexibility
+
 <!-- .element: class="fragment" -->
+
 - Local environment
+
 <!-- .element: class="fragment" -->
+
 - Maintenance
+
 <!-- .element: class="fragment" -->
+
 - CI friendly
+
 <!-- .element: class="fragment" -->
+
 - Scaling
+
 <!-- .element: class="fragment" -->
+
 - Test-runner
+
 <!-- .element: class="fragment" -->
 
 </pba-flex>
@@ -234,25 +254,25 @@ Tutorials https://docs.substrate.io/tutorials/build-a-parachain/
 When not using --alice or --bob, you need to provide additional `aura` and `grandpa` keys and inject them into the keystore! (**per node**)
 
 ```sh
-  ./target/release/polkadot \
-  key insert --base-path /tmp/node01 \
-    --chain /tmp/relay.json \
-    --scheme Sr25519 \
-    --suri <your-secret-seed> \
-    --password-interactive \
-    --key-type aura
+./target/release/polkadot \
+key insert --base-path /tmp/node01 \
+  --chain /tmp/relay.json \
+  --scheme Sr25519 \
+  --suri <your-secret-seed> \
+  --password-interactive \
+  --key-type aura
 ```
 
 <br/>
 
 ```sh
-  ./target/release/polkadot key insert \
-    --base-path /tmp/node01 \
-    --chain /tmp/relay.json \
-    --scheme Ed25519 \
-    --suri <your-secret-key> \
-    --password-interactive \
-    --key-type gran
+./target/release/polkadot key insert \
+  --base-path /tmp/node01 \
+  --chain /tmp/relay.json \
+  --scheme Ed25519 \
+  --suri <your-secret-key> \
+  --password-interactive \
+  --key-type gran
 ```
 
 Notes:
@@ -713,9 +733,7 @@ let network_config = minimal_config()?;
 You can still use the _toml_ network definition to load the config
 
 ```rust
-
 let network_config = NetworkConfig::load_from_toml("./0001-simple.toml")?;
-
 ```
 
 ---
@@ -799,7 +817,6 @@ Node interactions:
 ---v
 
 ```rust
-
 // Get a ref to the node
 let alice = network.get_node("alice")?;
 

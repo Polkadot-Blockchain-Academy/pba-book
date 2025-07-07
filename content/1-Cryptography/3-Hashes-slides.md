@@ -42,10 +42,10 @@ We often want a succinct representation of some data<br />with the expectation t
 
 Notes:
 
-1.  one way meaning for a given output difficult to get the input
-1.  attacker has the value 5 and from that can find a preimage that hashes to 5 (5 just an example value)
-1.  attacker has input and output and cant find a another input which maps to the output
-1.  More generally the attacker has the entire input space and cant find two inputs which hash to the same value
+1. one way meaning for a given output difficult to get the input
+1. attacker has the value 5 and from that can find a preimage that hashes to 5 (5 just an example value)
+1. attacker has input and output and cant find a another input which maps to the output
+1. More generally the attacker has the entire input space and cant find two inputs which hash to the same value
 
 ---
 

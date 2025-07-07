@@ -348,7 +348,7 @@ _Using only the public key_, information can be transformed ("encrypted") such t
 
 ## Digital Signatures
 
-**Signing function**: a function which operates on some<br/>_message data_ and some _secret_ to yield a _signature_.
+**Signing function**: a function which operates on some<br/> _message data_ and some _secret_ to yield a _signature_.
 
 A **signature** _proves_ that the signer had knowledge of the secret,<br/>without revealing the secret itself.
 

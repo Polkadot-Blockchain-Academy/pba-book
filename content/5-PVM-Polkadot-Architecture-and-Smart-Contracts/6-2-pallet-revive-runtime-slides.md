@@ -324,13 +324,6 @@ extern "C" {
     value_ptr: *const u8,
     value_len: u32,
   ) -> ReturnCode;
-
-
-
-
-
-
-
 ```
 
 </pba-col>
@@ -526,7 +519,6 @@ Everything that is executed in the VM expect a 20 bytes address, we need to map 
 ## 5. Address mapping
 
 ```rust[0|4-9|16-20|11-12]
-
 #[frame_support::pallet]
 pub mod pallet {
   pub trait Config: frame_system::Config {

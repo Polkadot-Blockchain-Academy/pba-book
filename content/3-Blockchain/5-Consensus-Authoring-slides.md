@@ -290,10 +290,15 @@ Cons:
 
 - In each slot, compute a VRF output.
 - If it is below a threshold, you are eligible to author.
+
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
 - If eligible, author a block showing VRF proof
+
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
 - If NOT eligible, do nothing
+
 <!-- .element: class="fragment" data-fragment-index="4" -->
 
 Notes:

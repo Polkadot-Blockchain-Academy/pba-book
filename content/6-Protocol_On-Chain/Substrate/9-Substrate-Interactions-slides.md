@@ -179,10 +179,10 @@ Notes:
 The RPC methods that a substrate node exposes are scoped and has the pattern `"<scope>_<method>"`.
 
 ```sh
- wscat \
-  -c ws://localhost:9944 \
-  -x '{"jsonrpc":"2.0", "id": 42, "method":"rpc_methods" }' \
-  | jq
+wscat \
+ -c ws://localhost:9944 \
+ -x '{"jsonrpc":"2.0", "id": 42, "method":"rpc_methods" }' \
+ | jq
 ```
 
 ---v

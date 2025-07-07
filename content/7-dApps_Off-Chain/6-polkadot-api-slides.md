@@ -83,13 +83,19 @@ const account = await typedApi.query.System.Account.getValue(ACCOUNT_ID);
 ### Metadata Builders
 
 ```ts
-import { getDynamicBuilder, getLookupFn } from "@polkadot-api/metadata-builders";
+import {
+  getDynamicBuilder,
+  getLookupFn,
+} from "@polkadot-api/metadata-builders";
 
 const metadata = getMetadataFromSource();
 const lookup = getLookupFn(metadata);
 const dynamicBuilder = getDynamicBuilder(lookup);
 
-const { keys, value, fallback } = dynamicBuilder.buildStorage("Pallet", "Entry");
+const { keys, value, fallback } = dynamicBuilder.buildStorage(
+  "Pallet",
+  "Entry",
+);
 
 const { codec, location } = dynamicBuilder.buildCall("Pallet", "Name");
 
@@ -220,7 +226,7 @@ Create a `withLogsRecorder`
 export function withLogsRecorder(
   persistLog: (msg: string) => void,
   // Provider wrapped
-  provider: JsonRpcProvider
+  provider: JsonRpcProvider,
 ): JsonRpcProvider {
   // TODO
 }
@@ -327,7 +333,7 @@ api.query.System.Account.watchValue(
   value => {
     console.log("Value", value);
   },
-  error => console.error("oh no!")
+  error => console.error("oh no!"),
 );
 ```
 
@@ -430,18 +436,16 @@ Showcase / demo how observables are cold by default
 Operator: `(source: Observable<T>) => Observable<R>`
 
 ```ts
-const map =
-  <T, R>(mapFn: (value: T) => R) =>
-  (source: Observable<T>) =>
-    new Observable<R>(subscriber => {
-      const subscription = source.subscribe({
-        next: v => subscriber.next(mapFn(v)),
-        error: e => subscriber.error(e),
-        complete: () => subscriber.complete(),
-      });
-
-      return subscription;
+const map = <T, R>(mapFn: (value: T) => R) => (source: Observable<T>) =>
+  new Observable<R>(subscriber => {
+    const subscription = source.subscribe({
+      next: v => subscriber.next(mapFn(v)),
+      error: e => subscriber.error(e),
+      complete: () => subscriber.complete(),
     });
+
+    return subscription;
+  });
 
 const multipliedBy2$ = observable$.pipe(map(v => v * 2));
 // Same as map(v => v * 2)(multipliedBy2$)
@@ -459,7 +463,7 @@ import { interval, map, take } from "rxjs";
 // Create an observable of the first 10 even numbers, one second at a time.
 const even$ = interval(1000).pipe(
   map(v => v * 2),
-  take(10)
+  take(10),
 );
 ```
 
@@ -479,8 +483,7 @@ switchMap
 
 ```ts
 const switchMap =
-  <T, R>(mapFn: (value: T) => Observable<R>) =>
-  (source: Observable<T>) =>
+  <T, R>(mapFn: (value: T) => Observable<R>) => (source: Observable<T>) =>
     new Observable<R>(subscriber => {
       // TODO
 
@@ -502,7 +505,7 @@ const switchMap =
 const bounty$ = selectedBountyId$.pipe(
   switchMap(id => {
     return from(typedApi.query.Bounties.Bounty.getValue(id));
-  })
+  }),
 );
 ```
 
@@ -511,7 +514,7 @@ const bounty$ = selectedBountyId$.pipe(
 ### Observable ↔ Promise
 
 ```ts
-import { firstValueFrom, lastValueFrom, from, defer } from "rxjs";
+import { defer, firstValueFrom, from, lastValueFrom } from "rxjs";
 const firstValue = await firstValueFrom(observable$);
 const lastValue = await lastValueFrom(observable$);
 
@@ -583,27 +586,35 @@ const getDirectVotes = (voting: ConvictionVotingVoteVoting) => {
     .filter(v => v !== null);
 };
 
-dotApi.query.ConvictionVoting.VotingFor.watchValue("1jbZxCFeNMRgVRfggkknf8sTWzrVKbzLvRuLWvSyg9bByRG", 33)
+dotApi.query.ConvictionVoting.VotingFor.watchValue(
+  "1jbZxCFeNMRgVRfggkknf8sTWzrVKbzLvRuLWvSyg9bByRG",
+  33,
+)
   .pipe(
     map(getDirectVotes),
     switchMap(async voting => {
-      const referenda = await dotApi.query.Referenda.ReferendumInfoFor.getValues(voting.map(v => [v.id]));
+      const referenda = await dotApi.query.Referenda.ReferendumInfoFor
+        .getValues(voting.map(v => [v.id]));
 
       return referenda
         .filter(v => v != null)
         .filter((referendum, i) => {
           const { direction } = voting[i];
           if (referendum.type !== "Ongoing") {
-            return (direction === "aye" && referendum.type === "Approved") || direction === "nay";
+            return (direction === "aye" && referendum.type === "Approved")
+              || direction === "nay";
           }
-          const referendumDirection = referendum.value.tally.ayes > referendum.value.tally.nays ? "aye" : "nay";
+          const referendumDirection =
+            referendum.value.tally.ayes > referendum.value.tally.nays
+              ? "aye"
+              : "nay";
           return direction === referendumDirection;
         })
         .map((v, i) => ({
           ...v,
           id: voting[i].id,
         }));
-    })
+    }),
   )
   .subscribe(r => {
     console.log(r);
@@ -727,11 +738,13 @@ Checksum(Struct) := hash("5(" +
 </pba-cols>
 
 ```ts
-Checksum(proposal_origin) = "4(BigSpender0MediumSpender0Sma…ender0WishForChange0)";
+Checksum(proposal_origin) =
+  "4(BigSpender0MediumSpender0Sma…ender0WishForChange0)";
 Checksum((Binary, number)) = "3(21)";
 Checksum(proposal) = "4(Inline2Lookup3(21))";
 Checksum(enactment_moment) = "4(After1At1)";
-Checksum(Referenda.submit) = "5(proposal_origin4(BigSpend…Change0)proposal4(Inline2Lookup3(21))enactm…r1At1))";
+Checksum(Referenda.submit) =
+  "5(proposal_origin4(BigSpend…Change0)proposal4(Inline2Lookup3(21))enactm…r1At1))";
 ```
 
 ---v
@@ -879,14 +892,14 @@ const account = await dotApi.query.System.Account.getValue(ALICE);
 - Typescript definitions
 
 ```ts
-  function api.query.System.Account(id: AccountID): Promise<{
-    nonce: number,
-    data: {
-      free: bigint,
-      reserved: bigint,
-      frozen: bigint
-    }
-  }>
+function api.query.System.Account(id: AccountID): Promise<{
+  nonce: number,
+  data: {
+    free: bigint,
+    reserved: bigint,
+    frozen: bigint
+  }
+}>
 ```
 
 - Metadata types
@@ -1014,7 +1027,7 @@ interface PolkadotSigner {
     >,
     metadata: Uint8Array,
     atBlockNumber: number,
-    hasher: (data: Uint8Array) => Uint8Array
+    hasher: (data: Uint8Array) => Uint8Array,
   ): Promise<Uint8Array>;
 }
 ```
@@ -1032,7 +1045,7 @@ Explain broadly the interface
 function getPolkadotSigner(
   publicKey: Uint8Array,
   signingType: "Ecdsa" | "Ed25519" | "Sr25519",
-  sign: (input: Uint8Array) => Promise<Uint8Array> | Uint8Array
+  sign: (input: Uint8Array) => Promise<Uint8Array> | Uint8Array,
 ): PolkadotSigner;
 ```
 
@@ -1045,11 +1058,15 @@ This is the basic signer. I have a function that can sign stuff, give me a polka
 ### Polkadot Signer
 
 ```ts
-import { entropyToMiniSecret, mnemonicToEntropy } from "@polkadot-labs/hdkd-helpers";
 import { sr25519CreateDerive } from "@polkadot-labs/hdkd";
+import {
+  entropyToMiniSecret,
+  mnemonicToEntropy,
+} from "@polkadot-labs/hdkd-helpers";
 import { getPolkadotSigner } from "polkadot-api/signer";
 
-const alice_mnemonic = "bottom drive obey lake curtain smoke basket hold race lonely fit walk";
+const alice_mnemonic =
+  "bottom drive obey lake curtain smoke basket hold race lonely fit walk";
 const entropy = mnemonicToEntropy(alice_mnemonic);
 const miniSecret = entropyToMiniSecret(entropy);
 const derive = sr25519CreateDerive(miniSecret);
@@ -1165,7 +1182,7 @@ const response = await typedApi.apis.ContractsApi.call(
   0n, // Value
   undefined, // GasLimit
   undefined, // StorageDepositLimit
-  messageData
+  messageData,
 );
 ```
 

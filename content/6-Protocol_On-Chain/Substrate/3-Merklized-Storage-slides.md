@@ -44,10 +44,9 @@ Notes:
 - Recall that at the `sp_io` layer, you have **opaque keys and values**.
 
 ```rust
-    let storage_key = vec![8, 2];
-    sp_io::storage::get(storage_key);
-    sp_io::storage::set(storage_key, vec![42, 33]);
-
+let storage_key = vec![8, 2];
+sp_io::storage::get(storage_key);
+sp_io::storage::set(storage_key, vec![42, 33]);
 ```
 
 ---v
@@ -55,9 +54,9 @@ Notes:
 ### What We Know So Far
 
 ```rust
-  sp_io::TestExternalities::new_empty().execute_with(|| {
-        sp_io::storage::get(..);
-    });
+sp_io::TestExternalities::new_empty().execute_with(|| {
+      sp_io::storage::get(..);
+  });
 ```
 
 Notes:
