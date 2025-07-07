@@ -1,0 +1,9 @@
+[patch."https://github.com/paritytech/polkadot"]
+xcm-executor = { path = "xcm-related-code/xcm-executor" }
+
+[workspace]
+members = [
+    "xcm-related-code/xcm-simulator-for-exercises",
+    "2-XCVM/execution_exercises",
+    "3-Pallet_XCM/constructing-messages-with-simulator",
+]

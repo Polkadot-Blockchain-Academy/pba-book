@@ -1,0 +1,56 @@
+[package]
+name = "simple-runtime"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+substrate-wasm-builder = { git = "https://github.com/paritytech/substrate", branch = "master" }
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false }
+scale-info = { version = "2.1.1", default-features = false, features = ["derive"] }
+log = { version = "0.4.17", default-features = false }
+
+simple-pallet = { path = "./simple-pallet", default-features = false }
+dispatch-pallet = { path = "./dispatch-pallet", default-features = false }
+transfer-pallet = { path = "./transfer-pallet", default-features = false }
+
+frame-support = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+frame-system = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+frame-executive = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+
+sp-io = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-std = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-api = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-version = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-block-builder = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-inherents = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+sp-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
+
+[features]
+default = ["std"]
+std = [
+	"codec/std",
+	"scale-info/std",
+	"log/std",
+
+	"simple-pallet/std",
+	"dispatch-pallet/std",
+	"transfer-pallet/std",
+
+	"frame-system/std",
+	"frame-system/std",
+	"frame-executive/std",
+
+	"sp-io/std",
+	"sp-runtime/std",
+	"sp-std/std",
+	"sp-api/std",
+	"sp-core/std",
+	"sp-version/std",
+	"sp-block-builder/std",
+	"sp-inherents/std",
+	"sp-transaction-pool/std",
+]

@@ -1,0 +1,32 @@
+(Andrew Gorka)
+Module 1
+- Discuss problem of interoperability of consensus systems more
+    - Current bridging solutions(Andrew)
+    - Nomad hack example(Gorka)
+- Why XCM handles these guarantees of interoperability differently
+- Remove Versioning from Module 1 and put in Module 3 
+- Remove convenience code section 
+- Reanchoring section needs more depth and content (Reanchoring example in paper exercise in class exercise)
+- End Module 1 at transferring assets part
+
+(Andrew)
+Module 2 (Dedicated to XCVM)
+- Take XCVM stuff from Module 1 and CURRENT Module 2 and aggregate them into new Module 2
+- Small exercise on XCVM(Local setup for executor with debug statements and some simple messages)
+- Each group gets assigned a specific use case to execute and analyze.
+
+(Andrew Loop in Keith)
+Module 3 (Sending and Execution XCM)
+- Left over after restructuring Mod 1 and 2
+- Focus on exercises(Day 2)
+
+(Gorka)
+Module 4 (Parachain Config)
+- Gorka Lecture
+- Versioning Exercise
+- Try out different configurable scenarios
+- Assignment Transactor pallet(Verify we need to do this) 
+
+(Gorka)
+Module 5 (Testing and Troubleshooting)
+- Debugging in Polkadot XCM

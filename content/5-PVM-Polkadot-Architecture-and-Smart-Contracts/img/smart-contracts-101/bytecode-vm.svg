@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1180px" height="473px" viewBox="0 0 1180 473" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bytecode-vm</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-25, -55)">
+            <g id="bytecode-vm" transform="translate(25, 55)">
+                <g id="Group-8" transform="translate(0, 99)">
+                    <g id="src" transform="translate(0, 75.4069)">
+                        <rect id="bg" fill="#7916F3" x="0" y="0" width="128.289655" height="66.5931034" rx="9"></rect>
+                        <text id="Source-code-(.sol,-." font-family="Helvetica" font-size="16" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="15.1310345" y="31.5931034">Source code</tspan>
+                            <tspan x="15.1310345" y="50.6931034" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.681080638">(.sol, .rs)</tspan>
+                        </text>
+                    </g>
+                    <g id="bytecode-copy" transform="translate(248.131, 0)">
+                        <rect id="Rectangle" fill="#7916F3" x="0" y="0" width="118" height="107" rx="9"></rect>
+                        <text id="[{-name:-“…”,-inputs" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="12" font-weight="normal" fill="#FFFFFF" fill-opacity="0.711456512">
+                            <tspan x="2" y="45">[{ name: “…”,</tspan>
+                            <tspan x="2" y="61">   inputs: […],</tspan>
+                            <tspan x="2" y="77.1">   outputs: […]</tspan>
+                            <tspan x="2" y="93.2">  }, …]</tspan>
+                        </text>
+                        <text id="ABI" font-family="Helvetica" font-size="16" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="48" y="24">ABI</tspan>
+                        </text>
+                    </g>
+                    <g id="bytecode-copy-2" transform="translate(241.131, 121)">
+                        <rect id="Rectangle" fill="#7916F3" x="0" y="0" width="125" height="137" rx="9"></rect>
+                        <text id="001101001010-0011010" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="12" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="19" y="59" fill-opacity="0.702906469">001101001010</tspan>
+                            <tspan x="19" y="75.1" fill-opacity="0.702906469">001101001010</tspan>
+                            <tspan x="19" y="91.2" fill-opacity="0.702906469">010101101010</tspan>
+                            <tspan x="19" y="107.3" fill-opacity="0.702906469">001101001010</tspan>
+                            <tspan x="19" y="123.4" fill-opacity="0.702906469">001101001010</tspan>
+                            <tspan x="105.4" y="123.4">  </tspan>
+                        </text>
+                        <text id="Bye-code" font-family="Helvetica" font-size="16" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="30" y="24">Bye code</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-9" transform="translate(157.131, 90)" fill="#FFFFFF">
+                        <text id="Compile" font-family="Helvetica" font-size="12" font-weight="normal">
+                            <tspan x="0" y="11">Compile</tspan>
+                        </text>
+                        <path id="Line" d="M36.5852161,19.6078473 L45.5708264,24.1365123 L36.5565282,28.6078016 L36.569,24.607 L1.99840623,24.4976252 L1.49840877,24.4960314 L1.50159631,23.4960365 L2.00159377,23.4976303 L36.572,23.607 L36.5852161,19.6078473 Z" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <text id="Off-chain" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="147.140625" y="18">Off chain </tspan>
+                </text>
+                <text id="On-chain" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="851.978027" y="18">On chain </tspan>
+                </text>
+                <line x1="492.5" y1="25.5" x2="492.5" y2="472.5" id="Line-7" stroke="#979797" stroke-linecap="square" stroke-dasharray="9"></line>
+                <g id="runtime" transform="translate(585, 39)">
+                    <rect id="bg" fill-opacity="0.848448427" fill="#7916F3" x="0" y="0" width="595" height="433" rx="9"></rect>
+                    <g id="pallet-revive" transform="translate(17, 57)">
+                        <rect id="bg" fill="#7916F3" x="0" y="0" width="264" height="167" rx="9"></rect>
+                        <text id="JSON-RPC---eth_call" font-family="Helvetica" font-size="16" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="13.3220842" y="31.8649362">JSON RPC</tspan>
+                            <tspan x="13.3220842" y="50.9649362"></tspan>
+                            <tspan x="13.3220842" y="70.0649362" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.681080638">- eth_call</tspan>
+                            <tspan x="13.3220842" y="88.1649362" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.681080638">- eth_estimateGas</tspan>
+                            <tspan x="13.3220842" y="106.264936" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.681080638">- eth_sendRawTransaction</tspan>
+                            <tspan x="13.3220842" y="124.364936" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.681080638">- eth_getTransactionReceipt</tspan>
+                            <tspan x="13.3220842" y="142.364936" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.681080638">… </tspan>
+                        </text>
+                    </g>
+                    <g id="pallet-revive-copy" transform="translate(12, 254)">
+                        <rect id="bg" fill="#7916F3" x="0" y="0" width="555" height="169" rx="9"></rect>
+                        <text id="KV-Store---...---add" font-family="Helvetica" font-size="16" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="28" y="25">KV Store</tspan>
+                            <tspan x="28" y="44.1"></tspan>
+                            <tspan x="28" y="63.2" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.696596372">- ...	</tspan>
+                            <tspan x="28" y="81.3" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.696596372">- address:   0x12345</tspan>
+                            <tspan x="28" y="99.4" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.696596372">- balance    1ETH </tspan>
+                            <tspan x="28" y="117.5" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.696596372">- bytecode   0x...</tspan>
+                            <tspan x="28" y="135.6" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.696596372">- key1       value1  </tspan>
+                            <tspan x="28" y="153.7" font-family="JetBrainsMono-Regular, JetBrains Mono" font-size="14" fill-opacity="0.696596372">- key2       value2</tspan>
+                            <tspan x="187.6" y="153.7" font-family="JetBrainsMono-Regular, JetBrains Mono" fill-opacity="0.696596372">  </tspan>
+                            <tspan x="206.8" y="153.7" font-family="JetBrainsMono-Regular, JetBrains Mono"></tspan>
+                            <tspan x="28" y="174.8"></tspan>
+                        </text>
+                    </g>
+                </g>
+                <text id="Node" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="874.079148" y="62.1129808">Node </tspan>
+                </text>
+                <text id="--Instantiate-new-co" font-family="Helvetica" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="878.991335" y="148.956413">- Instantiate new contract</tspan>
+                    <tspan x="878.991335" y="163.056413">- Call existing contract</tspan>
+                </text>
+                <text id="Execute-and-update" font-family="Helvetica" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="970.991335" y="265.956413">Execute and update</tspan>
+                </text>
+                <text id="Submit-tx-/-read-sta" font-family="Helvetica" font-size="12" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="418.991335" y="203.956413">Submit tx / read state</tspan>
+                </text>
+                <path id="Line" d="M983.005572,169.989491 L992,174.500618 L982.994441,178.989484 L982.999,174.989 L880.491905,174.862709 L879.991906,174.86209 L879.993142,173.862091 L880.493142,173.86271 L983,173.989 L983.005572,169.989491 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path id="Line" d="M1095.99241,248.864965 L1095.99252,249.364965 L1095.998,272.999 L1099.99802,272.998953 L1095.50012,282 L1090.99802,273.001047 L1094.998,273 L1094.99252,249.365198 L1094.99241,248.865198 L1095.99241,248.864965 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path id="Line" d="M565.380119,210.865081 L574.380119,215.365081 L565.380119,219.865081 L565.38,215.865 L409.992524,215.865081 L409.992524,214.865081 L565.38,214.865 L565.380119,210.865081 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <g id="interpreter" transform="translate(1027, 98.9889)">
+                    <g id="pallet-revive" transform="translate(36, 61.0111)" fill="#FFFFFF" font-family="Helvetica" font-size="16" font-weight="normal">
+                        <text id="VM">
+                            <tspan x="21" y="15">VM</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-2" transform="translate(0, -0)">
+                        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="2" x="12.1034483" y="12.0497856" width="113.793103" height="112.922575" rx="22"></rect>
+                        <g id="Group" transform="translate(130.069, 39.3869)" fill="#FFFFFF">
+                            <rect id="Rectangle" x="0" y="0" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy" x="0" y="11.0199729" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-2" x="0" y="22.0399459" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-3" x="0" y="32.2727779" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-4" x="0" y="43.2927509" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-5" x="0" y="54.3127238" width="7.93103448" height="3.93570462"></rect>
+                        </g>
+                        <g id="Group" transform="translate(0, 39.3869)" fill="#FFFFFF">
+                            <rect id="Rectangle" x="0" y="0" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy" x="0" y="11.0199729" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-2" x="0" y="22.0399459" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-3" x="0" y="32.2727779" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-4" x="0" y="43.2927509" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-5" x="0" y="54.3127238" width="7.93103448" height="3.93570462"></rect>
+                        </g>
+                        <g id="Group" transform="translate(69, 3.9655) rotate(-90) translate(-69, -3.9655)translate(65.0345, -25.1587)" fill="#FFFFFF">
+                            <rect id="Rectangle" x="0" y="0" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy" x="0" y="11.0199729" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-2" x="0" y="22.0399459" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-3" x="0" y="32.2727779" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-4" x="0" y="43.2927509" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-5" x="0" y="54.3127238" width="7.93103448" height="3.93570462"></rect>
+                        </g>
+                        <g id="Group" transform="translate(72.9655, 133.0566) rotate(-90) translate(-72.9655, -133.0566)translate(69, 103.9324)" fill="#FFFFFF">
+                            <rect id="Rectangle" x="0" y="0" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy" x="0" y="11.0199729" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-2" x="0" y="22.0399459" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-3" x="0" y="32.2727779" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-4" x="0" y="43.2927509" width="7.93103448" height="3.93570462"></rect>
+                            <rect id="Rectangle-Copy-5" x="0" y="54.3127238" width="7.93103448" height="3.93570462"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="}" transform="translate(383.558, 172.748)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M4.6,0 L0,0 L0,1.84 L4.416,1.84 C5.27466667,1.84 6.026,1.978 6.67,2.254 C7.314,2.53 7.83533333,3.036 8.234,3.772 C8.63266667,4.508 8.93933333,5.53533333 9.154,6.854 C9.36866667,8.17266667 9.476,9.844 9.476,11.868 L9.476,26.772 C9.476,30.268 10.074,33.4113333 11.27,36.202 C12.466,38.9926667 14.076,40.8786667 16.1,41.86 C14.9346667,42.3506667 13.938,43.148 13.11,44.252 C12.282,45.356 11.592,46.6133333 11.04,48.024 C10.488,49.4346667 10.0893333,50.9066667 9.844,52.44 C9.59866667,53.9733333 9.476,55.4146667 9.476,56.764 L9.476,71.76 C9.476,75.5626667 9.09266667,78.154 8.326,79.534 C7.55933333,80.914 6.256,81.604 4.416,81.604 L0,81.604 L0,83.444 L4.6,83.444 C7.176,83.444 8.93933333,82.6466667 9.89,81.052 C10.8406667,79.4573333 11.316,76.912 11.316,73.416 L11.316,58.328 C11.316,56.488 11.4693333,54.6786667 11.776,52.9 C12.0826667,51.1213333 12.5273333,49.5266667 13.11,48.116 C13.6926667,46.7053333 14.398,45.54 15.226,44.62 C16.054,43.7 16.9586667,43.148 17.94,42.964 L17.94,41.124 C15.2413333,39.4066667 13.4626667,37.26 12.604,34.684 C11.7453333,32.108 11.316,28.9493333 11.316,25.208 L11.316,10.212 C11.316,6.716 10.8406667,4.14 9.89,2.484 C8.93933333,0.828 7.176,0 4.6,0 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
