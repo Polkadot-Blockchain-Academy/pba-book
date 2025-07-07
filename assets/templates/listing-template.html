@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>{{pageTitle}}</title>
+  <link rel="stylesheet" href="{{{themeUrl}}}" id="theme" />
+  <link rel="icon" href="./assets/favicon.svg" />
+  <link rel="shortcut icon" href="./assets/favicon.png" />
+  <style>
+    /* local variables */
+    html {
+      --font-size: 16px;
+      --container: 100em;
+      --size: 1.5rem;
+    }
+
+    /* general layout elements */
+    html,
+    body,
+    .site {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    html {
+      align-items: center;
+      font-size: var(--font-size);
+      color: var(--r-main-color);
+      background-color: var(--r-background-color);
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    /* site layout */
+    .site {
+      max-width: var(--container);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      background-color: var(--r-selection-background-color);
+    }
+
+    .site-footer {
+      position: sticky;
+      bottom: 0;
+      background-color: var(--r-selection-background-color);
+    }
+
+    a:hover {
+      color: var(--r-link-color-dark) !important;
+    }
+
+    a span:first-of-type {
+      color: var(--r-heading-color);
+    }
+
+    h1 {
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: var(--r-heading-letter-spacing);
+      font-family: var(--r-heading-font);
+      font-size: calc(var(--font-size) * 1.5);
+      text-shadow: var(--r-heading1-text-shadow);
+    }
+
+    .site-logo {
+      width: calc(var(--size) * 10);
+      margin-left: calc(var(--size) / 2);
+    }
+
+    .slide-list li::before {
+      color: var(--r-link-color);
+    }
+
+    .slide-list li {
+      /* Replacing the link-color-hover with the CYAN #00B2FF */
+      /* color: var(--r-link-color-hover); */
+      color: var(--r-hub-cyan);
+      display: flex;
+      align-items: center;
+    }
+
+    .slide-list li::before {
+      font-size: calc(var(--font-size) * 2);
+      content: "";
+      display: list-item;
+      line-height: 0;
+      color: var(--r-link-color-dark);
+    }
+
+    .slide-card-name {
+      font-family: var(--r-heading-font);
+      letter-spacing: var(--r-heading-letter-spacing);
+    }
+
+    .slide-card-path {
+      font-style: italic;
+      color: var(--r-link-color);
+      font-size: 0.7em;
+    }
+
+    a:hover .slide-card-path {
+      color: var(--r-hub-cyan);
+      transition: color 200ms ease-in-out;
+    }
+
+    .slide-list li a {
+      padding-top: calc(var(--size) / 3);
+      padding-bottom: calc(var(--size) / 3);
+      font-size: calc(var(--font-size) * 1.2);
+      color: var(--r-main-color);
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .slide-list li a:hover {
+      color: var(--r-hub-cyan);
+    }
+
+    /* menu navigation bar, sticky */
+    .menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu--header {
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .menu--footer {
+      justify-content: center;
+      padding: calc(var(--font-size) * 0.5);
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu--footer .menu-item {
+      font-size: var(--font-size);
+      font-family: var(--r-heading-font);
+    }
+  </style>
+
+
+<body class="site">
+  <header class="site-header site-header--small">
+    <menu class="menu menu--header">
+      <li class="menu-item">
+        <img class="site-logo" src="./assets/img/0-Shared/logo/pba-logo-white.svg" />
+      </li>
+      <li class="menu-item">
+        <h1>PBA Slides</h1>
+      </li>
+    </menu>
+  </header>
+
+  <main class="site-main">
+    <ul class="slide-list">
+      {{#files}}
+      <li {{#filePath}}data-template="{{filePath}}" {{/filePath}}>
+        <a href="{{filePath}}" title="{{title}}" class="slide-card">
+          {{#title}}
+          <span class="slide-card-name">{{.}}</span>
+          <span class="slide-card-path"><br />&nbsp;&nbsp;&nbsp;&nbsp;{{filePath}}</span>
+          {{/title}}
+          {{^title}}
+          {{filePath}}
+          {{/title}}
+        </a>
+      </li>
+      {{/files}}
+    </ul>
+  </main>
+
+  {{#watch}}
+  <footer class="site-footer">
+    <menu class="menu menu--footer">
+      <li class="menu-item">
+        <a class="menu-link" href="https://github.com/Polkadot-Blockchain-Academy/pba-content/">PBA Content on
+          GitHub</a>
+      </li>
+    </menu>
+  </footer>
+  {{/watch}}
+</body>
+
+</html>

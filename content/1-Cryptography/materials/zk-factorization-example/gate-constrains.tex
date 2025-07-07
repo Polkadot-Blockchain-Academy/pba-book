@@ -1,0 +1,243 @@
+% Created 2024-05-22 Wed 06:20
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.3 (Org mode 9.6.15)}, 
+ pdflang={English}}
+\begin{document}
+
+
+\section{Gate constrains:}
+\label{sec:org949341d}
+
+\subsection{Multiplication constrain:}
+\label{sec:org23a6312}
+
+\begin{itemize}
+\item \(r * s = n\)
+\end{itemize}
+
+\subsection{constraining \(r \neq 1\)}
+\label{sec:org60688ab}
+\begin{itemize}
+\item Making sure that the prover doesn't fool the verifier by using 1 as a factor.
+\item We force them to use r-1's inverse.
+\item \((r-1)(r-1)^{-1} = 1 \Rightarrow  r * (r-1)^{-1} - (r-1)^{-1} = 1\)
+\end{itemize}
+
+\subsection{constraining \(0< r < 8\):}
+\label{sec:orgd3ea1d2}
+We need to make sure r \% p = r
+otherwise prover can cheat because everything has an inverse in \(FF_p\)
+We use Binary decomposition:
+\begin{itemize}
+\item \(r0 + 2 * r1 = r01\)
+\item \(r01 + 4 * r2 = r\)
+\item \(r0 * r0 - r0 = 0\)
+\item \(r1 * r1 - r1 = 0\)
+\item \(r2 * r2 - r2 = 0\)
+\end{itemize}
+
+\subsection{similarly constraining \(b\):}
+\label{sec:org3a9fab7}
+
+\begin{itemize}
+\item \(s0 + 2 * s1 = s01\)
+\item \(s01 + 4 * s2 = s\)
+\item \(s0 * s0 - s0 = 0\)
+\item \(s1 * s1 - s1 = 0\)
+\item \(s2 * s2 - s2 = 0\)
+\item \(s * (s-1)^{-1} - (s-1)^{-1} = 1\)
+\end{itemize}
+
+\section{Universal way of summerizing constrains:}
+\label{sec:org9c3240b}
+\(Q_l*a + Q_r*b + Q_o*c + Q_m*a*b + Q_c = 0\)
+
+\section{Constrain for factorization:}
+\label{sec:orgea626c6}
+\(Q_l*a + Q_r*b + Q_o*c + Q_m*a*b + Q_c = 0\)
+
+\begin{center}
+\begin{tabular}{rrrrrlllr}
+Gate No & Q\textsubscript{l} & Q\textsubscript{r} & Q\textsubscript{o} & Q\textsubscript{m} & Q\textsubscript{c} & a & b & c\\[0pt]
+\hline
+1 & 0 & 0 & 0 & 1 & -n & r & s & 0\\[0pt]
+\end{tabular}
+\end{center}
+
+\section{Constrain table \(a\)}
+\label{sec:orgfa4de93}
+\(Q_l*a + Q_r*b + Q_o*c + Q_m*a*b + Q_c = 0\)
+
+\begin{center}
+\begin{tabular}{rrrrrrllr}
+Gate No & Q\textsubscript{l} & Q\textsubscript{r} & Q\textsubscript{o} & Q\textsubscript{m} & Q\textsubscript{c} & a & b & c\\[0pt]
+\hline
+2 & 1 & 2 & -1 & 0 & 0 & r0 & r1 & r01\\[0pt]
+3 & 1 & 4 & -1 & 0 & 0 & r01 & r2 & r\\[0pt]
+4 & -1 & 0 & 0 & 1 & 0 & r0 & r0 & 0\\[0pt]
+5 & -1 & 0 & 0 & 1 & 0 & r1 & r1 & 0\\[0pt]
+6 & -1 & 0 & 0 & 1 & 0 & r2 & r2 & 0\\[0pt]
+7 & 0 & -1 & 0 & 1 & -1 & r & (r-1)\textsuperscript{-1} & 0\\[0pt]
+\hline
+\end{tabular}
+\end{center}
+
+\section{Constrain table  \(b\)}
+\label{sec:orgcce3822}
+\(Q_l*a + Q_r*b + Q_o*c + Q_m*a*b + Q_c = 0\)
+
+\begin{center}
+\begin{tabular}{rrrrrrllr}
+Gate No & Q\textsubscript{l} & Q\textsubscript{r} & Q\textsubscript{o} & Q\textsubscript{m} & Q\textsubscript{c} & a & b & c\\[0pt]
+\hline
+8 & 1 & 2 & -1 & 0 & 0 & s0 & s1 & s01\\[0pt]
+9 & 1 & 4 & -1 & 0 & 0 & s01 & s2 & s\\[0pt]
+10 & -1 & 0 & 0 & 1 & 0 & s0 & s0 & 0\\[0pt]
+11 & -1 & 0 & 0 & 1 & 0 & s1 & s1 & 0\\[0pt]
+12 & -1 & 0 & 0 & 1 & 0 & s2 & s2 & 0\\[0pt]
+13 & 0 & -1 & 0 & 1 & -1 & s & (s-1)\textsuperscript{-1} & 0\\[0pt]
+\hline
+\end{tabular}
+\end{center}
+
+\section{all constraints for wiring}
+\label{sec:org582ca25}
+\begin{center}
+\begin{tabular}{rrrrrrllr}
+Gate No & Q\textsubscript{l} & Q\textsubscript{r} & Q\textsubscript{o} & Q\textsubscript{m} & Q\textsubscript{c} & a & b & c\\[0pt]
+\hline
+1 & 0 & 0 & 0 & 1 & -n & r & s & 0\\[0pt]
+2 & 1 & 2 & -1 & 0 & 0 & r0 & r1 & r01\\[0pt]
+3 & 1 & 4 & -1 & 0 & 0 & r01 & r2 & r\\[0pt]
+4 & -1 & 0 & 0 & 1 & 0 & r0 & r0 & 0\\[0pt]
+5 & -1 & 0 & 0 & 1 & 0 & r1 & r1 & 0\\[0pt]
+6 & -1 & 0 & 0 & 1 & 0 & r2 & r2 & 0\\[0pt]
+7 & 0 & -1 & 0 & 1 & -1 & r & (r-1)\textsuperscript{-1} & 0\\[0pt]
+8 & 1 & 2 & -1 & 0 & 0 & s0 & s1 & s01\\[0pt]
+9 & 1 & 4 & -1 & 0 & 0 & s01 & s2 & s\\[0pt]
+10 & -1 & 0 & 0 & 1 & 0 & s0 & s0 & 0\\[0pt]
+11 & -1 & 0 & 0 & 1 & 0 & s1 & s1 & 0\\[0pt]
+12 & -1 & 0 & 0 & 1 & 0 & s2 & s2 & 0\\[0pt]
+13 & 0 & -1 & 0 & 1 & -1 & s & (s-1)\textsuperscript{-1} & 0\\[0pt]
+\hline
+\end{tabular}
+\end{center}
+
+\section{Trace polynomial for wiring with omega}
+\label{sec:org836884f}
+\begin{center}
+\begin{tabular}{rlll}
+Gate & a & b & c\\[0pt]
+\hline
+1 & \(T(\omega^1) := r\) & \(T(\omega^2):=s\) & \(T(\omega^3) :=  0\)\\[0pt]
+2 & \(T(\omega^4) := r0\) & \(T(\omega^5):=r1\) & \(T(\omega^6) := r01\)\\[0pt]
+3 & \(T(\omega^7) := r01\) & \(T(\omega^8) := r2\) & \(T(\omega^9) := r\)\\[0pt]
+4 & \(T(\omega^{10}) := r0\) & \(T(\omega^{11}) := r0\) & \(T(\omega^{12}) := 0\)\\[0pt]
+5 & \(T(\omega^{13}) := r1\) & \(T(\omega^{14}) := r1\) & \(T(\omega^{15}) := 0\)\\[0pt]
+6 & \(T(\omega^{16}) := r2\) & \(T(\omega^{17}) := r2\) & \(T(\omega^{18}) := 0\)\\[0pt]
+7 & \(T(\omega^{19}) := r\) & \(T(\omega^{20}) := (r-1)^-1\) & \(T(\omega^{21}) := 0\)\\[0pt]
+8 & \(T(\omega^{22}) := s0\) & \(T(\omega^{23}) := s1\) & \(T(\omega^{24}) := s01\)\\[0pt]
+9 & \(T(\omega^{25}) := s01\) & \(T(\omega^{26}) := s2\) & \(T(\omega^{27}) := s\)\\[0pt]
+10 & \(T(\omega^{28}) := s0\) & \(T(\omega^{29}) := s0\) & \(T(\omega^{30}) := 0\)\\[0pt]
+11 & \(T(\omega^{31}) := s1\) & \(T(\omega^{32}) := s1\) & \(T(\omega^{33}) := 0\)\\[0pt]
+12 & \(T(\omega^{34}) := s2\) & \(T(\omega^{35}) := s2\) & \(T(\omega^{36}) := 0\)\\[0pt]
+13 & \(T(\omega^{37}) := s\) & \(T(\omega^{38}) := (s-1)^-1\) & \(T(\omega^{39}) := 0\)\\[0pt]
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{Permutation Psi with omega}
+\label{sec:org35f2b9a}
+\begin{center}
+\begin{tabular}{rlll}
+Gate & a & b & c\\[0pt]
+\hline
+1 & \(\Psi(\omega^1) := \omega^9\) & \(\Psi(\omega^2):=\omega^{27}\) & \(\Psi(\omega^3) := \omega^3\)\\[0pt]
+2 & \(\Psi(\omega^4) := \omega^{10}\) & \(\Psi(\omega^5):=\omega^{13}\) & \(\Psi(\omega^6) := \omega^7\)\\[0pt]
+3 & \(\Psi(\omega^7) := \omega^6\) & \(\Psi(\omega^8) := \omega^{16}\) & \(\Psi(\omega^9) := \omega^{19}\)\\[0pt]
+4 & \(\Psi(\omega^{10}) := \omega^{11}\) & \(\Psi(\omega^{11}) := \omega^4\) & \(\Psi(\omega^{12}) := \omega^{12}\)\\[0pt]
+5 & \(\Psi(\omega^{13}) := \omega^{14}\) & \(\Psi(\omega^{14}) := \omega^{5}\) & \(\Psi(\omega^{15}) := \omega^{15}\)\\[0pt]
+6 & \(\Psi(\omega^{16}) := \omega^{17}\) & \(\Psi(\omega^{17}) := \omega^{8}\) & \(\Psi(\omega^{18}) := \omega^{18}\)\\[0pt]
+7 & \(\Psi(\omega^{19}) := \omega^{1}\) & \(\Psi(\omega^{20}) := \omega^{20}\) & \(\Psi(\omega^{21}) := \omega^{21}\)\\[0pt]
+8 & \(\Psi(\omega^{22}) := \omega^{28}\) & \(\Psi(\omega^{23}) := \omega^{31}\) & \(\Psi(\omega^{24}) := \omega^{25}\)\\[0pt]
+9 & \(\Psi(\omega^{25}) := \omega^{24}\) & \(\Psi(\omega^{26}) := \omega^{34}\) & \(\Psi(\omega^{27}) := \omega^{37}\)\\[0pt]
+10 & \(\Psi(\omega^{28}) := \omega^{29}\) & \(\Psi(\omega^{29}) := \omega^{22}\) & \(\Psi(\omega^{30}) := \omega^{30}\)\\[0pt]
+11 & \(\Psi(\omega^{31}) := \omega^{31}\) & \(\Psi(\omega^{32}) := \omega^{31}\) & \(\Psi(\omega^{33}) := \omega^{33}\)\\[0pt]
+12 & \(\Psi(\omega^{34}) := \omega^{35}\) & \(\Psi(\omega^{35}) := \omega^{35}\) & \(\Psi(\omega^{36}) := \omega^{36}\)\\[0pt]
+13 & \(\Psi(\omega^{37}) := \omega^{2}\) & \(\Psi(\omega^{38}) := \omega^{38}\) & \(\Psi(\omega^{39}) := \omega^{39}\)\\[0pt]
+\hline
+\end{tabular}
+\end{center}
+
+\section{Trace polynomial for wiring}
+\label{sec:org232436d}
+\begin{center}
+\begin{tabular}{rlll}
+Gate & a & b & c\\[0pt]
+\hline
+1 & \(T(1) := r\) & \(T(2):=s\) & \(T(3) :=  0\)\\[0pt]
+2 & \(T(4) := r0\) & \(T(5):=r1\) & \(T(6) := r01\)\\[0pt]
+3 & \(T(7) := r01\) & \(T(8) := r2\) & \(T(9) := r\)\\[0pt]
+4 & \(T({10}) := r0\) & \(T({11}) := r0\) & \(T({12}) := 0\)\\[0pt]
+5 & \(T({13}) := r1\) & \(T({14}) := r1\) & \(T({15}) := 0\)\\[0pt]
+6 & \(T({16}) := r2\) & \(T({17}) := r2\) & \(T({18}) := 0\)\\[0pt]
+7 & \(T({19}) := r\) & \(T({20}) := (r-1)^-1\) & \(T({21}) := 0\)\\[0pt]
+8 & \(T({22}) := s0\) & \(T({23}) := s1\) & \(T({24}) := s01\)\\[0pt]
+9 & \(T({25}) := s01\) & \(T({26}) := s2\) & \(T({27}) := s\)\\[0pt]
+10 & \(T({28}) := s0\) & \(T({29}) := s0\) & \(T({30}) := 0\)\\[0pt]
+11 & \(T({31}) := s1\) & \(T({32}) := s1\) & \(T({33}) := 0\)\\[0pt]
+12 & \(T({34}) := s2\) & \(T({35}) := s2\) & \(T({36}) := 0\)\\[0pt]
+13 & \(T({37}) := s\) & \(T({38}) := (s-1)^-1\) & \(T({39}) := 0\)\\[0pt]
+\hline
+\end{tabular}
+\end{center}
+
+\section{Permutation Psi}
+\label{sec:org8d7dfb9}
+\begin{center}
+\begin{tabular}{rlll}
+Gate & a & b & c\\[0pt]
+\hline
+1 & \(\Psi(1) := 9\) & \(\Psi(2):={27}\) & \(\Psi(3) := 3\)\\[0pt]
+2 & \(\Psi(4) := {10}\) & \(\Psi(5):={13}\) & \(\Psi(6) := 7\)\\[0pt]
+3 & \(\Psi(7) := 6\) & \(\Psi(8) := {16}\) & \(\Psi(9) := {19}\)\\[0pt]
+4 & \(\Psi({10}) := {11}\) & \(\Psi({11}) := 4\) & \(\Psi({12}) := {12}\)\\[0pt]
+5 & \(\Psi({13}) := {14}\) & \(\Psi({14}) := {5}\) & \(\Psi({15}) := {15}\)\\[0pt]
+6 & \(\Psi({16}) := {17}\) & \(\Psi({17}) := {8}\) & \(\Psi({18}) := {18}\)\\[0pt]
+7 & \(\Psi({19}) := {1}\) & \(\Psi({20}) := {20}\) & \(\Psi({21}) := {21}\)\\[0pt]
+8 & \(\Psi({22}) := {28}\) & \(\Psi({23}) := {31}\) & \(\Psi({24}) := {25}\)\\[0pt]
+9 & \(\Psi({25}) := {24}\) & \(\Psi({26}) := {34}\) & \(\Psi({27}) := {37}\)\\[0pt]
+10 & \(\Psi({28}) := {29}\) & \(\Psi({29}) := {22}\) & \(\Psi({30}) := {30}\)\\[0pt]
+11 & \(\Psi({31}) := {31}\) & \(\Psi({32}) := {31}\) & \(\Psi({33}) := {33}\)\\[0pt]
+12 & \(\Psi({34}) := {35}\) & \(\Psi({35}) := {35}\) & \(\Psi({36}) := {36}\)\\[0pt]
+13 & \(\Psi({37}) := {2}\) & \(\Psi({38}) := {38}\) & \(\Psi({39}) := {39}\)\\[0pt]
+\hline
+\end{tabular}
+\end{center}
+
+\section{Gate Polynomial}
+\label{sec:org5caea92}
+Summerizing all of our constrains in one polynomial:
+
+\(Q_l(x)*a(x) + Q_r(x)*b(x) + Q_o(x)* c(x) + Q_m(x)*a(x)*b(x) + Q_c(x) = 0\)
+\end{document}
