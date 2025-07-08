@@ -148,7 +148,7 @@
 
 - [Formal Methods for Rust](./formal-methods/intro/page.md)
 
-- [Sustainable Governance](./polkadot/sustainable-governance/page.md)
+- [Sustainable Governance](./sustainable-opengov/page.md)
 
 # 👪 Contributing
 

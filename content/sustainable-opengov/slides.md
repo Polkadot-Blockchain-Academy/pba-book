@@ -1,10 +1,10 @@
 ---
-title: Sustainable Governance Participation
+title: Sustainable Governance
 description: Understanding patterns for sustainable contribution in blockchain governance
 duration: 60 minutes
 ---
 
-# Sustainable Governance Participation
+# Sustainable Governance
 
 ---
 

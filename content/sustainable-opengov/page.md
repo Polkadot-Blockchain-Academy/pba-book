@@ -1,4 +1,4 @@
-# Sustainable Governance Participation
+# Sustainable Governance
 
 <!-- markdown-link-check-disable -->
 <center>
