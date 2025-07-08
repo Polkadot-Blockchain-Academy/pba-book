@@ -1,4 +1,4 @@
-# Sustainable OpenGov
+# Sustainable Governance Participation
 
 <!-- markdown-link-check-disable -->
 <center>
@@ -16,14 +16,14 @@ By the end of this lesson, you will be able to:
 - Identify common patterns that create unsustainable governance participation
 - Evaluate how compensation models impact ecosystem health and participation
 - Design frameworks that balance volunteer contributions with appropriate recognition
-- Apply pre-funding models to OpenGov work that requires specialized expertise
-- Implement legal protection mechanisms for OpenGov contributors
+- Apply pre-funding models to governance work that requires specialized expertise
+- Implement legal protection mechanisms for governance contributors
 
 ## Overview
 
-OpenGov relies heavily on volunteer contributions, creating challenges for sustained expertise and participation. This lesson examines real-world case studies of contribution incentives in decentralized ecosystems, analyzing successful and problematic compensation models.
+Blockchain governance systems often rely heavily on volunteer contribution, creating challenges for sustained expertise and participation. This lesson examines real-world case studies of contribution incentives in decentralized ecosystems, analyzing successful and problematic compensation models.
 
-We explore how pre-funded, legally protected review frameworks can enable higher quality OpenGov participation without forcing contributors to choose between ecosystem support and personal sustainability.
+We explore how pre-funded, legally protected review frameworks can enable higher quality governance participation without forcing contributors to choose between ecosystem support and personal sustainability.
 
 ## Key Concepts
 
@@ -31,16 +31,36 @@ We explore how pre-funded, legally protected review frameworks can enable higher
 - **Specialized Expertise Recognition**: Valuing technical, legal, and analytical skills appropriately
 - **Legal Protection Frameworks**: Implementing proper liability waivers, confidentiality agreements, and insurance coverage
 - **Pooled Insurance Resources**: Establishing ecosystem-wide professional indemnity and liability coverage
-- **OpenGov Participation Patterns**: Analyzing how incentive structures affect participation quality and consistency
+- **Governance Participation Patterns**: Analyzing how incentive structures affect participation quality and consistency
 - **Sustainable Contribution Models**: Creating balanced systems that maintain ecosystem support without sacrificing contributor viability
+- **Contribution Recognition Systems**: Designing attribution and accountability mechanisms that verify involvement, contribution extent, and compensation status
+- **Values Assurance Frameworks**: Implementing witness-based verification systems with privacy-preserving improvement periods
 
 ## Case Studies
 
-This module examines three real-world scenarios that demonstrate the challenges of sustainable OpenGov participation:
+This module examines three real-world scenarios that demonstrate the challenges of sustainable governance participation:
 
-1. **Polkadot Decentralized Voices OpenGov Proposal Reviews** - Unpaid or limited and vested compensation for specialized work with legal exposure
-2. **Polkadot Ambassador Fellowship Program** - Volunteering with retroactive discretionary compensation challenges
-3. **Polkadot AMI Bounty Program** - Issues with explicit agreements and ecosystem reliability
+1. **Decentralized Voices Governance Proposal Reviews** - Unpaid specialized work with legal exposure
+2. **Polkadot Ambassador Fellowship Program** - Volunteering with retroactive discretionary compensation challenges, including self-funded initiatives that created cross-ecosystem value
+3. **AMI Bounty Program** - Issues with explicit agreements and ecosystem reliability
+
+## Real-World Examples
+
+The module includes concrete examples that illustrate governance challenges across all three case studies:
+
+- **Self-funded cross-ecosystem value creation**: Volunteers self-funding expenses and associated costs for community initiatives that are recognised for value creation beyond their immediate scope by leaders across multiple ecosystems
+- **Compensation disparities**: Different compensation models across contributor types create varying levels of sustainability and certainty for ecosystem participants
+- **Funding timing challenges**: Pre-funded versus retroactive compensation approaches and their impact on contributor sustainability and risk exposure
+- **Capacity alignment**: Importance of matching governance responsibilities with contributor capacity and expertise
+- **Administrative efficiency**: Balancing necessary oversight with streamlined processes to maximize value creation
+
+## Implementation Tools
+
+The module presents practical tools for improving governance sustainability:
+
+- **Values assurance framework**: Witness-based verification system with privacy-preserving improvement periods and mentorship
+- **Pre-funded governance review model**: Structured approach with clear scope, compensation, and legal protections
+- **Contribution recognition systems**: Methods to verify involvement and ensure accurate attribution
 
 ## Supporting Materials
 

@@ -1,10 +1,10 @@
 ---
-title: Sustainable OpenGov
-description: Understanding patterns for sustainable contributions to OpenGov
+title: Sustainable Governance Participation
+description: Understanding patterns for sustainable contribution in blockchain governance
 duration: 60 minutes
 ---
 
-# Sustainable OpenGov Participation
+# Sustainable Governance Participation
 
 ---
 
@@ -12,8 +12,8 @@ duration: 60 minutes
 
 <pba-flex center>
 
-- OpenGov depends on active, informed participation
-- Many of its systems rely heavily on unpaid volunteer work
+- Blockchain governance depends on active, informed participation
+- Many systems rely heavily on unpaid volunteer work
 - This creates tension between ecosystem support and personal sustainability
 - We'll examine real case studies that reveal problematic patterns
 - And explore frameworks for sustainable participation models
@@ -26,9 +26,9 @@ duration: 60 minutes
 
 <pba-flex center>
 
-Common patterns that undermine OpenGov participation:
+Common patterns that undermine governance participation:
 
-1. Uncompensated or limited compensation for specialized expertise
+1. Uncompensated specialized expertise
 2. Legal risk without protection
 3. Retroactive/discretionary compensation
 4. Administrative overhead exceeding value
@@ -40,7 +40,7 @@ Common patterns that undermine OpenGov participation:
 
 ## Case Study 1
 
-### Polkadot Decentralized Voices OpenGov Proposal Reviews
+### Decentralized Voices Governance Proposal Reviews
 
 ---
 
@@ -63,23 +63,23 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 <pba-flex center>
 
-- Contributors providing detailed reviews without or with only a limited compensation structure
+- Contributors providing detailed reviews without compensation structure
 - Legal risk if project fails or funds are misallocated
-- Time spent on reviews without predefined or suitable compensation structures may affect overall contributor workload
-- May create challenging incentives for broader participation
+- Time spent on unpaid reviews may directly compete with ability to compete for funded work
+- Creates counterproductive incentives against participation
 
 </pba-flex>
 
 ---
 
-### Outcomes
+### Outcome
 
 <pba-flex center>
 
-- Varied levels of participation in OpenGov review over time
-- Some qualified and experienced contributors finding it challenging to maintain involvement
-- Opportunity to increase informed participation on important proposals
-- Potential OpenGov deterioration over time and for system evolution to address these challenges
+- Declining participation in governance review
+- Most qualified contributors reducing involvement
+- Fewer informed votes on important proposals
+- Potential governance deterioration over time
 
 </pba-flex>
 
@@ -89,10 +89,10 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 <pba-flex center>
 
-- Recognition of specialized expertise may help foster sustainable participation
-- Legal protection frameworks could encourage more open communication
-- Predictable and suitable compensation models rather than retroactive or discretionary compensation tend to reduce uncertainty for contributors
-- Long-term engagement benefits from appropriate recognition of value
+- Specialized expertise without compensation creates unsustainable participation
+- Legal risk without protection discourages open communication
+- Retroactive or discretionary compensation creates uncertainty
+- Long-term engagement requires appropriate recognition
 
 </pba-flex>
 
@@ -111,7 +111,22 @@ Decentralized Voices relies on community members to provide detailed proposal an
 - Established to recognize community volunteers with discretionary bonuses
 - Participants completed substantial work first
 - Expectation of potential retroactive compensation
-- Approval through OpenGov vote after completion
+- Approval through governance vote after completion
+
+</pba-flex>
+
+---
+
+### Real-World Example
+
+<pba-flex center>
+
+
+- Volunteer self-funded travel expenses to support ecosystem initiatives
+- Volunteer self-initiated and self-funded design and transportation of a costume of Polkadot's Tod mascot to support Polkadot events that created cross-ecosystem value through community initiatives
+- Volunteer created technical specification for Polkadot Ambassador Fellowship
+- Leader in Polkadot Ambassador Fellowship program proposed a discretionary tip for the volunteer to support their work in creating the technical specification that was later rejected by the community
+- Demonstrates how volunteer contributions can create unexpected value connections
 
 </pba-flex>
 
@@ -121,7 +136,7 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 <pba-flex center>
 
-- Discretionary OpenGov vote on compensation after work completed
+- Discretionary governance vote on compensation after work completed
 - Significant upfront effort with no guarantee of payment
 - Contributors must both complete work and advocate for payment
 - Political factors impact compensation decisions
@@ -130,14 +145,14 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 ---
 
-### Outcomes
+### Outcome
 
 <pba-flex center>
 
-- Some contributors experienced challenges with compensation despite completing requested work
-- In some instances, work quality recognition and payment approval followed different paths
-- These experiences highlighted opportunities to improve clarity around contribution expectations
-- Provided insights for developing more sustainable participation frameworks
+- Some contributors completed requested work but received no compensation
+- Even when work quality wasn't contested, payment was still rejected
+- Established precedent that even requested contributions might go unpaid
+- Created unsustainable participation model
 
 </pba-flex>
 
@@ -147,10 +162,10 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 <pba-flex center>
 
-- Retroactive compensation models can introduce uncertainty for contributors
-- OpenGov decisions on payment involve multiple stakeholder considerations
-- Contributors may need to balance both work effort and result communication
-- These dynamics present opportunities to evolve participation frameworks
+- Retroactive compensation models create significant risk
+- Governance decisions on payment introduce political factors
+- Contributors face both work effort and advocacy burden
+- System discourages continued participation
 
 </pba-flex>
 
@@ -158,7 +173,7 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 ## Case Study 3
 
-### Polkadot AMI Bounty Program
+### AMI Bounty Program
 
 ---
 
@@ -179,10 +194,10 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 <pba-flex center>
 
-- Even with explicit written agreements, divergent interpretations emerged
-- Created opportunities to clarify financial documentation standards
-- Administrative overhead to secure compensation required attention from multiple stakeholders
-- Highlighted that even with clear communication in ecosystem mechanisms, trust may be undermined
+- Despite explicit written agreements, funds faced clawback requests
+- Created financial uncertainty even with documentation
+- Administrative overhead to secure compensation
+- Undermined trust in ecosystem mechanisms
 
 </pba-flex>
 
@@ -192,10 +207,10 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 <pba-flex center>
 
-- Revealed that formal agreements face retroactive challenges and benefit from additional clarity mechanisms
-- Highlighted the importance of consistency in compensation frameworks to avoid damaging contributor trust in compensation reliability
-- Created precedent that formality alone may not address all communication needs and reduce compensation uncertainty
-- Informed perspectives on willingness and sustainability of future contributions
+- Demonstrated that even formal agreements face retroactive challenges
+- Further damaged contributor trust in compensation reliability
+- Created precedent of compensation uncertainty regardless of formality
+- Reduced willingness for future contributions
 
 </pba-flex>
 
@@ -205,10 +220,10 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 <pba-flex center>
 
-- Clear agreements benefit from consistent interpretation standards since they may face retroactive challenges
-- Streamlining administrative processes can preserve value for all parties to mitigate the risk of administrative overhead exceeding compensation value
-- Ecosystem reliability and sustainability flourishes when expectations align across stakeholders that honor agreements
-- Trust-building requires ongoing attention and care from all participants since once trust is broken, it is very difficult to rebuild
+- Even explicit agreements may face retroactive challenges
+- Administrative overhead can exceed compensation value
+- Ecosystem reliability depends on honoring agreements
+- Trust once broken is difficult to rebuild
 
 </pba-flex>
 
@@ -218,9 +233,9 @@ Decentralized Voices relies on community members to provide detailed proposal an
 
 <pba-flex center>
 
-Requirements for sustainable OpenGov participation:
+Requirements for sustainable governance participation:
 
-1. Upfront and suitable funding through OpenGov **prior to** work commencement
+1. Upfront funding through OpenGov **prior to** work commencement
 2. Clear scope and compensation established before work begins
 3. Legal protections through pre-approved budget allocations
 4. Recognition of specialized expertise through fair compensation
@@ -231,7 +246,39 @@ Requirements for sustainable OpenGov participation:
 
 ---
 
-## Pre-Funded OpenGov Review Model
+## Contribution Recognition Systems
+
+<pba-flex center>
+
+- **Accountability mechanisms** must:
+  - Balance ecosystem values with operational needs
+  - Ensure accurate representation of contributions
+  - Provide clear remediation pathways
+  - Support collaborative improvement
+
+- **Attribution systems** must verify:
+  - Actual involvement in initiatives
+  - Nature, extent, and criticality of contributions
+  - Compensation status (volunteer vs. funded)
+  - Risk exposure (including retroactive clawback vulnerability)
+  - Equitable treatment across technical and operational roles
+
+
+</pba-flex>
+
+---
+
+## Practical Implementation Tools
+
+<pba-flex center>
+
+- Values assurance framework must be implemented for all ecosystem contributors that must implement a witness-based verification system that randomly verifies alignment with values of individuals and entities proactively rather than reactively in a privacy-preserving way, and offer remediation periods for observable improvement in behavior against targeted values with mentorship in a sandboxed environment that balances accountability with dignity-preserving options
+
+</pba-flex>
+
+---
+
+## Pre-Funded Governance Review Model
 
 <pba-flex center>
 
@@ -256,12 +303,12 @@ Key elements of a sustainable model:
 Ecosystem-wide insurance coverage for contributors:
 
 - **Professional Indemnity Insurance**: For proposal reviewers providing professional opinions
-- **Public & Product Liability Insurance**: For organizers of physical pop-ups, events, and activities
-- **Treasury-Funded Coverage**: Treasury funded rather than funding being an individual responsibility
+- **Public & Product Liability Insurance**: For organizers of physical events and activities
+- **Treasury-Funded Coverage**: Centrally funded rather than individual responsibility
 - **Coverage Across Contributor Types**:
   - Decentralized Voices proposal assessments
   - Treasury bounty curator evaluations
-  - Polkadot Ambassador Fellowship physical pop-ups, events, and activities
+  - Polkadot Ambassador Fellowship physical events
 - **Cost Efficiency**: Pool resources to make insurance financially viable
 
 </pba-flex>
@@ -272,12 +319,12 @@ Ecosystem-wide insurance coverage for contributors:
 
 <pba-flex center>
 
-- Enables sustained high-quality OpenGov participation
+- Enables sustained high-quality governance participation
 - Creates clear expectations for all stakeholders
 - Provides appropriate legal protections for contributors
 - Recognizes specialized expertise appropriately
 - Allows for balanced ecosystem participation
-- Improves OpenGov outcomes through consistent quality review
+- Improves governance outcomes through consistent quality review
 
 </pba-flex>
 
@@ -287,15 +334,15 @@ Ecosystem-wide insurance coverage for contributors:
 
 <pba-flex center>
 
-Sustainable OpenGov participation requires fundamental changes:
+Sustainable governance participation requires fundamental changes:
 
-- Securing suitable upfront funding through OpenGov prior to work commencement
+- Securing upfront funding through OpenGov prior to work commencement
 - Clear terms for contribution scope and compensation
 - Appropriate legal protections secured through budgeting
 - Ecosystem-wide professional indemnity and liability insurance
 - Recognition of specialized expertise through fair compensation
 
-Pre-funded, formally approved work through OpenGov combined with pooled insurance resources represents a promising sustainable approach for specialized OpenGov contributions, while remaining open to diverse participation models that may emerge from community innovation.
+Pre-funded, formally approved work through OpenGov combined with pooled insurance resources provides the only sustainable path forward for specialized governance contributions.
 
 </pba-flex>
 
@@ -307,11 +354,5 @@ Pre-funded, formally approved work through OpenGov combined with pooled insuranc
 
 - [Polkadot OpenGov](https://wiki.polkadot.network/learn/learn-polkadot-opengov/)
 - [Polkadot Treasury](https://wiki.polkadot.network/learn/learn-guides-treasury/)
-- [Polkadot Decentralized Voices](https://wiki.polkadot.network/general/decentralized-voices/)
-- [Polkadot Decentralized Voices Cohort IV](https://medium.com/web3foundation/decentralized-voices-cohort-4-delegates-announced-a5a9c64927fd)
-- [Polkadot Ambassador Fellowship](https://wiki.polkadot.network/general/ambassadors/)
-- [Polkadot Ambassador Fellowship Referendum #1598](https://polkadot.polkassembly.io/referenda/1598)
-- [Polkadot AMI Bounty Program Referendum #562](https://polkadot.polkassembly.io/referenda/562)
-- [Close Polkadot AMI Bounty Program Referendum #1033](https://polkadot.polkassembly.io/referenda/1033)
 
 </pba-flex>
