@@ -46,8 +46,8 @@ jobs:
         run: mdbook build
       - name: Embed `html-slides` into `html-book`, fix relative paths
         run: |
-          rsync -av html-slides/content/ html-book/ --ignore-existing
-          rsync -av html-slides/ --exclude 'content' html-book/ --ignore-existing
+          rsync -av html-slides/content/ html-book/
+          rsync -av html-slides/ --exclude 'content' html-book/
           find html-book/ -regex .*\.html | xargs sed -i'' -e 's#./../../../#../../#g' > /dev/null
 
       # TODO: Without making a _branch_ that bloats the .git object,
