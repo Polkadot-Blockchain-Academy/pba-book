@@ -546,7 +546,7 @@ Notes:
 - [Updates on Coretime Sales](https://forum.polkadot.network/t/agile-coretime-launch-status-report/8347)
 - [Discussion on Changing Inflation Model](https://forum.polkadot.network/t/adjusting-the-current-inflation-model-to-sustain-treasury-inflow/3301)
 - [Talk about Agile Polkadot](https://www.youtube.com/watch?v=GIB1WeVuJD0)
-- [Nominating and Validator Selection On Polkadot](https://polkadot.network/blog/nominating-and-validator-selection-on-polkadot/)
+- [Nominating and Validator Selection On Polkadot](https://medium.com/polkadot-network/nominating-and-validator-selection-on-polkadot-6c5c76cd6b9d)
 - [(Journal Version) Paper on Validator Selection](https://www.sciencedirect.com/science/article/abs/pii/S0305048323000336)
 - [(Open Source Version) Paper on Validator Selection)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4253515)
 - [Referendum 166](https://polkadot.polkassembly.io/referenda/166)

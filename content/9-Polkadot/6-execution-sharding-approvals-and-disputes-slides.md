@@ -179,7 +179,7 @@ Now that we have the core principle of sharding and let's see where it manifests
 Notes:
 ELVES which gives us execution sharding depends on Collation, Backing and Availability, but it primarily happens in the Approval Checking and Disputes protocol.
 
-[Polkadot v1.0: Sharding and Economic Security](https://polkadot.network/blog/polkadot-v1-0-sharding-and-economic-security/) is a comprehensive writeup of the content here in much more detail. Please read it after the lesson if you would like to understand how Polkadot works from top to bottom.
+[Polkadot v1.0: Sharding and Economic Security](https://www.web3news.info/projects/Polkadot_v1.0_A_Sharding_and_Economic_Security.html) is a comprehensive writeup of the content here in much more detail. Please read it after the lesson if you would like to understand how Polkadot works from top to bottom.
 
 ---
 
