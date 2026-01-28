@@ -3,7 +3,6 @@ title = "Polkadot Blockchain Academy"
 authors = ["Polkadot Blockchain Academy"]
 description = "The materials used in the Polkadot Blockchain Academy"
 language = "en"
-multilingual = false
 src = "content"
 
 [build]
