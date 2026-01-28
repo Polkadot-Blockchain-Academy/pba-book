@@ -29,7 +29,7 @@ They should not zone-out of class to complete this during class time, they shoul
 1. [1-Intro](1-Intro-slides.md)
 1. [2-Addresses](2-Addresses-slides.md)
    - 🪄 [`subkey` demo](./materials/subkey-demo.md)
-1. 💻 [Many time pad](many-time-pad.md) activity
+1. 💻 Many time pad activity
 
 Release:
 
