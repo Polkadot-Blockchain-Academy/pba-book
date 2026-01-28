@@ -505,7 +505,7 @@ If all is well, you should see that `OK` has been outputted to your console. Thi
 snarkjs zkey export solidityverifier circuit_final.zkey verifier.sol
 ```
 
-Finally, we export the verifier as a Solidity smart-contract so that we can publish it on-chain -- using [remix](https://remix.ethereum.org/) for example. For the details on how to do this, refer to section 4 of [this tutorial](https://blog.iden3.io/first-zk-proof.html).
+Finally, we export the verifier as a Solidity smart-contract so that we can publish it on-chain -- using [remix](https://remix.ethereum.org/) for example.
 
 ### 26. Simulate a verification call
 

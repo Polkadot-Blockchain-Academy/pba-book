@@ -784,7 +784,7 @@ network.add_node("new1", opts).await?;
 ```
 
 ---v
-Example: [Add a new parachain](https://paritytech.github.io/zombienet-sdk/zombienet_orchestrator/network/struct.Network.html#method.add_parachain) to a running network
+Example: Add a new parachain to a running network
 
 ```rust [1-7|9]
 let para_config = network
