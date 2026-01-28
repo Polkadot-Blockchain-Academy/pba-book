@@ -29,7 +29,7 @@ jobs:
     - name: Markup Link Checker (mlc)
       uses: becheran/mlc@v0.16.2
       with:
-        args: "./content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,'"
+        args: "./content/ --ignore-links '*slides.md,*slides.html,*twitter.com*,*sec.gov*,*support.giphy.com*,*bitdefender.com*,*etherscan.io*,*cryptoslate.com*,*golden.com*,*medium.com*,*sciencedirect.com*,*ct.cloudflare.com*,*opec.org*,'"
 
     - name: Check for image issues (orphans and broken links)
       run: ${PWD}/tools/scripts/orphan-image-scan.sh content/

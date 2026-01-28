@@ -71,7 +71,7 @@ Release:
 #### Afternoon
 
 1. [9-ZK Proofs](9-ZK_Proofs-slides.md)
-1. 💻 [VRF poker](./materials/vrf_card_activity.rs)
+1. 💻 [VRF poker](./materials/Exotic_Primitives_VRF_Activity.md)
 
 Release:
 
