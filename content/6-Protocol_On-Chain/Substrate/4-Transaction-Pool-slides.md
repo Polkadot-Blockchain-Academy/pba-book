@@ -12,15 +12,15 @@ Because it is a (⛓️ blockspace) market.
 
 <pba-cols>
 <pba-col>
-<img style="width: 500px;" src="./img/tx-pool/BlockspaceBooth.png" />
+<img style="width: 500px;" src="../../../assets/img/6-Protocol_On-Chain/Substrate/tx-pool/BlockspaceBooth.png" />
 </pba-col>
 
 <pba-col>
-<img style="width: 500px; margin-left: -100px; margin-top: 250px;" src="./img/tx-pool/short-line.png" /> <!-- .element: class="fragment" -->
+<img style="width: 500px; margin-left: -100px; margin-top: 250px;" src="../../../assets/img/6-Protocol_On-Chain/Substrate/tx-pool/short-line.png" /> <!-- .element: class="fragment" -->
 </pba-col>
 
 <pba-col>
-<img style="width: 700px; margin-left: -100px; margin-top: 100px;" src="./img/tx-pool/long-line.png" /> <!-- .element: class="fragment" -->
+<img style="width: 700px; margin-left: -100px; margin-top: 100px;" src="../../../assets/img/6-Protocol_On-Chain/Substrate/tx-pool/long-line.png" /> <!-- .element: class="fragment" -->
 </pba-col>
 
 </pba-cols>
@@ -430,7 +430,7 @@ what we said before. What does this imply?
 
 ### Shower Thought: Runtime vs STF
 
-<img style="width: 1100px;" src="./img/tx-pool/peter-parker-glasses-off.png" />
+<img style="width: 1100px;" src="../../../assets/img/6-Protocol_On-Chain/Substrate/tx-pool/peter-parker-glasses-off.png" />
 
 Notes:
 
@@ -441,7 +441,7 @@ It is nearly true.
 
 ### Shower Thought: Runtime vs STF
 
-<img style="width: 1100px;" src="./img/tx-pool/peter-parker-glasses-on.png" />
+<img style="width: 1100px;" src="../../../assets/img/6-Protocol_On-Chain/Substrate/tx-pool/peter-parker-glasses-on.png" />
 
 Notes:
 

@@ -59,7 +59,7 @@ We want these same _kinds_ of guarantees, not just about messages, but about ent
 
 ## A Shared History
 
-<img style="height: 500px;" src="./img/overview/sapiens.jpg" />
+<img style="height: 500px;" src="../../assets/img/3-Blockchain/overview/sapiens.jpg" />
 
 Notes:
 
@@ -100,7 +100,7 @@ These stories have really stood the test of time. They span cultures. They are t
 
 ## Newer Stories
 
-<img style="height: 500px;" src="./img/overview/DeclarationOfIndependance.png" />
+<img style="height: 500px;" src="../../assets/img/3-Blockchain/overview/DeclarationOfIndependance.png" />
 
 Notes:
 
@@ -114,7 +114,7 @@ I bet some of you have other similar stories.
 
 Chancellor on Brink of second bailout for banks
 
-<img style="height: 500px;" src="./img/overview/ChancellorOnBrink.jpeg" />
+<img style="height: 500px;" src="../../assets/img/3-Blockchain/overview/ChancellorOnBrink.jpeg" />
 
 Notes:
 
@@ -122,7 +122,7 @@ Notes:
 
 ## Storytelling Technology
 
-<img style="height: 500px;" src="./img/overview/StorytellingTechnology.png" />
+<img style="height: 500px;" src="../../assets/img/3-Blockchain/overview/StorytellingTechnology.png" />
 
 ---
 
@@ -144,19 +144,19 @@ This is dangerous.
 
 ## Tell the Story Together
 
-<img style="height: 500px;" src="./img/overview/campfire1.png" />
+<img style="height: 500px;" src="../../assets/img/3-Blockchain/overview/campfire1.png" />
 
 ---v
 
 ## Tell the Story Together
 
-<img style="height: 500px;" src="./img/overview/campfire3.png" />
+<img style="height: 500px;" src="../../assets/img/3-Blockchain/overview/campfire3.png" />
 
 ---v
 
 ## Tell the Story Together
 
-<img style="height: 500px;" src="./img/overview/campfire4.png" />
+<img style="height: 500px;" src="../../assets/img/3-Blockchain/overview/campfire4.png" />
 
 ---
 
@@ -176,7 +176,7 @@ Users transmit information peer-to-peer.
 
 Crypto not typically used except by military, but upheld guarantees when used.
 
-<img src="./img/overview/Web0.png" />
+<img src="../../assets/img/3-Blockchain/overview/Web0.png" />
 
 ---
 
@@ -188,7 +188,7 @@ Still mostly peer-to-peer.
 
 Cryptography more often, but still not ubiquitous.
 
-<img style="width: 300px;" src="./img/overview/Web1.png" />
+<img style="width: 300px;" src="../../assets/img/3-Blockchain/overview/Web1.png" />
 
 ---
 
@@ -202,7 +202,7 @@ However, users must place faith in the service provider.
 
 Cryptographic guarantees are about interactions with the service provider, not peers.
 
-<img style="width: 300px;" src="./img/overview/Web2.png" />
+<img style="width: 300px;" src="../../assets/img/3-Blockchain/overview/Web2.png" />
 
 ---v
 

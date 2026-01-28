@@ -247,7 +247,7 @@ This is an excerpt from the [ed25519](https://ed25519.cr.yp.to/) description.
 
 Preventing side channel attacks is _hard_! Noticing sidechannel attacks is even harder!
 
-<img style="width: 800px;" src="./img/we_rolled_our_own_crypto.png" />
+<img style="width: 800px;" src="../../assets/img/1-Cryptography/we_rolled_our_own_crypto.png" />
 
 ### 
 
@@ -362,7 +362,7 @@ Mitigation looks like:
 
 ## Physical Security
 
-<img style="width: 900px;" src="./img/xkcd-physical-security.png" />
+<img style="width: 900px;" src="../../assets/img/1-Cryptography/xkcd-physical-security.png" />
 
 Notes:
 

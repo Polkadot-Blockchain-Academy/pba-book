@@ -25,7 +25,7 @@ So far we've seen the low-level details for interacting with a chain. Now we'll 
 
 ### Packages
 
-<img rounded src="./img/papi-packages.png" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/papi-packages.png" />
 
 Notes:
 
@@ -625,7 +625,7 @@ dotApi.query.ConvictionVoting.VotingFor.watchValue(
 
 ### Watch Entries
 
-<img rounded src="./img/block-states.png" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/block-states.png" />
 
 `Observable<Array<[Key, Value]>>?` <!-- .element: class="fragment" -->
 
@@ -962,7 +962,7 @@ How can we let dev start interacting without having to first "await" the descrip
 - We're only interested in data (lookup)
 - Some types can also be merged (u8, u16, u32, …)
 
-<img rounded src="./img/descriptors.png" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/descriptors.png" />
 
 Notes:
 
@@ -1108,7 +1108,7 @@ To get a signer from a PJs-based extension
 
 ### Meta signers
 
-<img src="./img/meta-signer.svg" />
+<img src="../../assets/img/7-dApps_Off-Chain/meta-signer.svg" />
 
 Notes:
 

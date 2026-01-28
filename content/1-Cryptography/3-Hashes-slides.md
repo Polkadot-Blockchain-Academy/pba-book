@@ -144,7 +144,7 @@ Exercise: Write your own benchmarking script that compares the performance of th
 
 ### Hashing Benchmarks
 
-<img rounded style="height: 650px" src="./img/crypto-bench.png" />
+<img rounded style="height: 650px" src="../../assets/img/1-Cryptography/crypto-bench.png" />
 
 Notes:
 
@@ -155,7 +155,7 @@ Source: <https://www.blake2.net/>
 
 #### XXHash - _Fast_ hashing algorithm
 
-<img rounded style="height: 600px" src="./img/Benchmark-XXHash.png" />
+<img rounded style="height: 600px" src="../../assets/img/1-Cryptography/Benchmark-XXHash.png" />
 
 Notes:
 
@@ -238,7 +238,7 @@ single hash collision often results in the hash function being considered unsafe
 </pba-col>
 <pba-col>
 
-<img style="width: 700px; border-radius: 0;" src="./img/birthday-problem.svg" />
+<img style="width: 700px; border-radius: 0;" src="../../assets/img/1-Cryptography/birthday-problem.svg" />
 
 </pba-col>
 </pba-cols>
@@ -476,7 +476,7 @@ But pointers are independent from the data they reference,<br />so the data can 
 
 That is, pointer-based linked lists are not tamper evident.
 
-<img src="./img/Hash-Chains.png" />
+<img src="../../assets/img/1-Cryptography/Hash-Chains.png" />
 
 ---
 
@@ -491,7 +491,7 @@ Any change at any point in the list would create downstream changes to all hashe
 
 ## Merkle Trees
 
-<img  src="./img/Merkle-Tree.png" />
+<img  src="../../assets/img/1-Cryptography/Merkle-Tree.png" />
 
 Notes:
 

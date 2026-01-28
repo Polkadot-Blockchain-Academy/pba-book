@@ -85,7 +85,7 @@ _Lottery_
 - Lottery organizer generate $pk$,$sk$ for VRF;
 - Each participants choose their own tickets $t_i$;
 
-<img style="width: 500px;" src="./img/vrf1.png" />
+<img style="width: 500px;" src="../../assets/img/1-Cryptography/vrf1.png" />
 
 ---
 
@@ -96,7 +96,7 @@ _Lottery_
 - Lottery organizer computes `eval(sk,$t_i$)-> $y_i$` for each participants;
 - $y_i$ determines wining or not;
 - `sign(sk, $t_i$) -> $\sigma_i$` published for verification.
-  <img style="width: 500px;" src="./img/vrf1.png" />
+  <img style="width: 500px;" src="../../assets/img/1-Cryptography/vrf1.png" />
 
 ---
 
@@ -152,7 +152,7 @@ A participant in a RingVRF could still only reveal _one_ random number.
 
 - Ring VRFs: generate `output` and `signature` on behalf of a group of people without revealing the true identity of the signer.
 
-<img style="height: 300px" src="./img/ring.png" />
+<img style="height: 300px" src="../../assets/img/1-Cryptography/ring.png" />
 
 ---
 
@@ -233,7 +233,7 @@ The magic here is polynomials, and the fact that a polynomial of degree $n$ is c
 
 ## Erasure Coding
 
-<img style="width: 1000px;" src="./img/erasure-code.svg" />
+<img style="width: 1000px;" src="../../assets/img/1-Cryptography/erasure-code.svg" />
 
 ---
 
@@ -244,7 +244,7 @@ Parity Check: $n=k+1$
 - Codeword length $(x_1,\cdots,x_k)$: $k$
 - Add a sum of the codeword
 
-<img style="width: 1000px;" src="./img/ECC1.png" />
+<img style="width: 1000px;" src="../../assets/img/1-Cryptography/ECC1.png" />
 
 - What if one element gets erasured during transmission?
 
@@ -260,7 +260,7 @@ Parity Check: $n=k+1$
 
 ## Use in Decentralized Systems
 
-<img style="width: 600px;" src="./img/ECC2.png" />
+<img style="width: 600px;" src="../../assets/img/1-Cryptography/ECC2.png" />
 
 ---
 
@@ -285,7 +285,7 @@ _Redundancy for your secrets_
 
 ## Shamir Secret Sharing
 
-<img style="height: 600px" src="./img/shamir-secret-sharing.png" />
+<img style="height: 600px" src="../../assets/img/1-Cryptography/shamir-secret-sharing.png" />
 
 Notes:
 
@@ -299,7 +299,7 @@ Image credit here: https://medium.com/clavestone/bitcoin-multisig-vs-shamirs-sec
 - We can reconstruct the $t$ polynomial from any of its $t+1$ points (use Lagrange interpolation).
 - With point less than $t+1$, the polynomial cannot be uncovered.
 - $y=x^3+4x^2+2$
-  <img style="width:500px " src="./img/secshare1.png" />
+  <img style="width:500px " src="../../assets/img/1-Cryptography/secshare1.png" />
 
 ---
 
@@ -327,7 +327,7 @@ Image credit here: https://medium.com/clavestone/bitcoin-multisig-vs-shamirs-sec
 
 - Construct a polynomial $f(x)=12-13x-7x^2+2x^3$
 
-<img style="width:600px " src="./img/secshare2.png" />
+<img style="width:600px " src="../../assets/img/1-Cryptography/secshare2.png" />
 
 ---
 
@@ -335,7 +335,7 @@ Image credit here: https://medium.com/clavestone/bitcoin-multisig-vs-shamirs-sec
 
 - Evaluate on $f(1)$, $f(2)$, $f(3)$, $f(4)$, $f(5)$
 
-  <img style="width:600px " src="./img/secshare3.png" />
+  <img style="width:600px " src="../../assets/img/1-Cryptography/secshare3.png" />
 
 ---
 
@@ -367,7 +367,7 @@ Image credit here: https://medium.com/clavestone/bitcoin-multisig-vs-shamirs-sec
 
 ## Proxy Reencryption Intuition
 
-<img rounded style="height: 400px" src="./img/proxy1.png" />
+<img rounded style="height: 400px" src="../../assets/img/1-Cryptography/proxy1.png" />
 
 - Directly give Email Server $sk_A$?
 - $A$ encrypt the email using $pk_B$ by itself and send the ciphertext to server?
@@ -384,7 +384,7 @@ Image credit here: https://medium.com/clavestone/bitcoin-multisig-vs-shamirs-sec
 
 ## Proxy Reencryption
 
-<img rounded style="height: 600px" src="./img/proxy-reencryption.png" />
+<img rounded style="height: 600px" src="../../assets/img/1-Cryptography/proxy-reencryption.png" />
 
 Notes:
 

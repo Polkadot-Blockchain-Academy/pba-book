@@ -120,7 +120,7 @@ Explain a bit every one. Don't focus particularly, it is just a quick summary of
 
 <span style="font-size: 0.6em; opacity: 0.6">We used Tarjan's SCC algorithm to detect cycles, see notes</span>
 
-![Image](./img/circular-lookup.svg)
+![Image](../../assets/img/7-dApps_Off-Chain/circular-lookup.svg)
 
 Notes:
 
@@ -135,7 +135,7 @@ https://en.wikipedia.org/wiki/Tarjan's_strongly_connected_components_algorithm
 - Mirrored types
   - These are types that are completely equivalent, but yet they have different structures that connect them.
 
-<img src="./img/mirrored-lookup.svg" width="50%" />
+<img src="../../assets/img/7-dApps_Off-Chain/mirrored-lookup.svg" width="50%" />
 
 ---v
 
@@ -717,7 +717,7 @@ Examples:
 
 #### Extrinsic shape
 
-![Image](./img/extrinsic.svg)
+![Image](../../assets/img/7-dApps_Off-Chain/extrinsic.svg)
 
 <span style="font-size: 0.6em; opacity: 0.6">It is _opaque_ encoded; i.e. prepended by its compact-encoded length</span>
 
@@ -729,7 +729,7 @@ Examples:
 
 In order to sign an extrinsic, the payload to be signed by the algorithm is:
 
-![Image](./img/sign-payload.svg)
+![Image](../../assets/img/7-dApps_Off-Chain/sign-payload.svg)
 
 ---
 
@@ -741,6 +741,6 @@ Extrinsic `v5` will rely on extensions to define its origin. I.e. no `origin` or
 
 This increases the flexibility of the extrinsics, leaving the runtime (through extensions) decide the permission level.
 
-![Image](./img/extrinsic-v5.svg)
+![Image](../../assets/img/7-dApps_Off-Chain/extrinsic-v5.svg)
 
 <span style="font-size: 0.6em; opacity: 0.6">Take it with a pinch of salt, it is still under RFC process (RFC#0124)</span>

@@ -123,7 +123,7 @@ In an application, this typically looks like namespacing in the signature payloa
 
 ## Signing and Verifying
 
-<img style="height: 600px" src="./img/sig-verify-flow.svg" />
+<img style="height: 600px" src="../../assets/img/1-Cryptography/sig-verify-flow.svg" />
 
 Notes:
 

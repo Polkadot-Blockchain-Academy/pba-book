@@ -126,7 +126,7 @@ owner: Carlo Sala
 
 ---v
 
-![Image](./img/bounties.svg)
+![Image](../../assets/img/7-dApps_Off-Chain/bounties.svg)
 
 ---
 

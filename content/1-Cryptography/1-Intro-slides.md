@@ -22,7 +22,7 @@ duration: 1 hour
 
 ## Some Useful Equations
 
-<img rounded style="height: 600px" src="./img/scary-equations.png" />
+<img rounded style="height: 600px" src="../../assets/img/1-Cryptography/scary-equations.png" />
 
 Notes:
 
@@ -48,7 +48,7 @@ In this first lesson,
 
 ## Cryptography Landscape
 
-<img style="height: 700px; padding-left:100px" src="./img/crypto-mind-map.svg" />
+<img style="height: 700px; padding-left:100px" src="../../assets/img/1-Cryptography/crypto-mind-map.svg" />
 
 Notes:
 
@@ -207,7 +207,7 @@ Physical signatures provide weak authenticity guarantees<br/>(i.e. they are quit
 
 ## An Ideal Signature
 
-<img style="width: 900px;" src="./img/Data-Integrity.png" />
+<img style="width: 900px;" src="../../assets/img/1-Cryptography/Data-Integrity.png" />
 
 Notes:
 
@@ -466,7 +466,7 @@ Cryptography is much more than encryption.
 
 # Questions
 
-<img style="height: 600px" src="./img/crypto-mind-map.svg" />
+<img style="height: 600px" src="../../assets/img/1-Cryptography/crypto-mind-map.svg" />
 
 ##### _What insights did you gain?_
 

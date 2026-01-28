@@ -74,7 +74,7 @@ When trying to understand the problem it’s often useful to look at how bitcoin
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 300px" src="./assets/staking/PoW.png" />
+<img style="width: 300px" src="../../assets/img/9-Polkadot/staking/PoW.png" />
 </pba-col>
 </pba-cols>
 
@@ -94,7 +94,7 @@ Bitcoin uses proof of work as its authority module. It allows all nodes with som
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 300px" src="./assets/staking/PoW.png" />
+<img style="width: 300px" src="../../assets/img/9-Polkadot/staking/PoW.png" />
 </pba-col>
 </pba-cols>
 
@@ -117,7 +117,7 @@ There were some alternatives though and one of them was...
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/PoA.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/PoA.png" />
 </pba-col>
 </pba-cols>
 
@@ -142,7 +142,7 @@ But this idea of selecting a bounded set of authorities and then working only wi
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/PoA.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/PoA.png" />
 </pba-col>
 </pba-cols>
 
@@ -168,7 +168,7 @@ But this idea of selecting a bounded set of authorities and then working only wi
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/scales.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/scales.png" />
 </pba-col>
 </pba-cols>
 
@@ -195,7 +195,7 @@ In proof of work the more money to buy hardware you had the more influence you h
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/stake.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/stake.png" />
 </pba-col>
 </pba-cols>
 
@@ -219,7 +219,7 @@ But you are still an individual. You can use the power for good and be rewarded 
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/slash.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/slash.png" />
 </pba-col>
 </pba-cols>
 
@@ -243,7 +243,7 @@ Slashing is quite interesting because in PoW you could argue there wasnt an expl
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/slash.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/slash.png" />
 </pba-col>
 </pba-cols>
 
@@ -272,7 +272,7 @@ PoS also helps with in reducing the impact of economy of scale which generally l
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/scales.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/scales.png" />
 </pba-col>
 </pba-cols>
 
@@ -297,7 +297,7 @@ That being said there are some approaches and research being done to help with t
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/leader.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/leader.png" />
 </pba-col>
 </pba-cols>
 
@@ -546,7 +546,7 @@ But as always there are some trade-offs here. Computing the elections is actuall
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/nominations.drawio.svg" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/nominations.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -558,13 +558,13 @@ But as always there are some trade-offs here. Computing the elections is actuall
 
 <pba-cols>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/solution2.drawio.svg" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/solution2.drawio.svg" />
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/solution3.drawio.svg" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/solution3.drawio.svg" />
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/staking/solution1.drawio.svg" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/staking/solution1.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -653,7 +653,7 @@ In the second example all you need is 10 tokens and you can outbid the weakest s
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 300px" src="./assets/staking/phragmen.jpg" />
+<img style="width: 300px" src="../../assets/img/9-Polkadot/staking/phragmen.jpg" />
 Lars Phragmén
 (1863-1937)
 </pba-col>
@@ -739,7 +739,7 @@ The current NPoS protocol revolves around an **election round**, which is itself
 
 ## Nomination Pools
 
-<img style="width: 900px" src="./assets/staking/NPoS-Pools.png" />
+<img style="width: 900px" src="../../assets/img/9-Polkadot/staking/NPoS-Pools.png" />
 
 Notes:
 
@@ -761,7 +761,7 @@ Notes:
 
 ## Nakamoto Coefficient
 
-<img style="width: 600px" src="./assets/staking/nakamoto.png" />
+<img style="width: 600px" src="../../assets/img/9-Polkadot/staking/nakamoto.png" />
 
 https://nakaflow.io/
 

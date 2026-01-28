@@ -41,25 +41,25 @@ But these conditions are not interesting, and are often not realistic. It gets i
 
 ## What do these things have in common?
 
-<img style="width: 600px" src="./img/roller_coaster.jpg" />
+<img style="width: 600px" src="../../assets/img/9-Polkadot/roller_coaster.jpg" />
 
 ---v
 
 ## What do these things have in common?
 
-<img style="width: 600px" src="./img/slackline.jpg" />
+<img style="width: 600px" src="../../assets/img/9-Polkadot/slackline.jpg" />
 
 ---v
 
 ## What do these things have in common?
 
-<img style="width: 600px" src="./img/wheel.jpg" />
+<img style="width: 600px" src="../../assets/img/9-Polkadot/wheel.jpg" />
 
 ---v
 
 ## What do these things have in common?
 
-<img style="width: 600px" src="./img/ratchet.jpg" />
+<img style="width: 600px" src="../../assets/img/9-Polkadot/ratchet.jpg" />
 
 ---
 
@@ -105,7 +105,7 @@ Another desireable property that is sometimes too obvious to say.
 <pba-cols>
 <pba-col>
 
-<img rounded style="width: 20em" src="./img/south-park-consensus.png" />
+<img rounded style="width: 20em" src="../../assets/img/9-Polkadot/south-park-consensus.png" />
 
 </pba-col>
 
@@ -187,7 +187,7 @@ In a blockchain system, bugs in the code may cause nodes whose operators are int
 <pba-cols>
 <pba-col>
 
-<img rounded style="width: 700px" src="./img/byzantine-generals.png" />
+<img rounded style="width: 700px" src="../../assets/img/9-Polkadot/byzantine-generals.png" />
 
 </pba-col>
 
@@ -226,7 +226,7 @@ Human coordinate at global scale reduced to this one cute, carefully stated prob
 
 ## Byzantine Generals: Solved
 
-<img height="600px" src="./img/pbft-cover.png" />
+<img height="600px" src="../../assets/img/9-Polkadot/pbft-cover.png" />
 
 _Miguel Castro and Barbara Liskov, 1999_
 
@@ -295,7 +295,7 @@ A system is one of:
 
 ## FLP Impossibility
 
-<img style="padding: 0 200px 0 0" src="./img/FLP-impossible.png" />
+<img style="padding: 0 200px 0 0" src="../../assets/img/9-Polkadot/FLP-impossible.png" />
 
 [Excellent Podcast with Ethan Buchman](https://www.youtube.com/watch?v=t0T-5QOXvrQ)
 
@@ -521,7 +521,7 @@ Tendermint is often touted as "instant finality". It is instant in the sense tha
 <pba-cols>
 <pba-col>
 
-<img rounded style="width: 900px;" src="./img/grandpa-abstract.png" />
+<img rounded style="width: 900px;" src="../../assets/img/9-Polkadot/grandpa-abstract.png" />
 
 </pba-col>
 <pba-col>
@@ -540,9 +540,9 @@ Tendermint is often touted as "instant finality". It is instant in the sense tha
 
 ## What About Re-Orgs
 
-<img style="width: 500px; margin-right: 150px;" src="./img/reorgs-1.svg" />
+<img style="width: 500px; margin-right: 150px;" src="../../assets/img/9-Polkadot/reorgs-1.svg" />
 <br/>
-<img style="width: 650px;" src="./img/reorgs-2.svg" />
+<img style="width: 650px;" src="../../assets/img/9-Polkadot/reorgs-2.svg" />
 
 Notes:
 
@@ -552,9 +552,9 @@ Previously we talked about how a node's view of the best block can change, and t
 
 ## Modified Fork Choice Rule
 
-<img style="width: 500px; margin-right: 150px;" src="./img/reorgs-finality-1.svg" />
+<img style="width: 500px; margin-right: 150px;" src="../../assets/img/9-Polkadot/reorgs-finality-1.svg" />
 <br/>
-<img style="width: 650px" src="./img/reorgs-finality-2.svg" />
+<img style="width: 650px" src="../../assets/img/9-Polkadot/reorgs-finality-2.svg" />
 
 Only extend best finalized chain
 Notes:
@@ -578,7 +578,7 @@ Once you have a finality gadget installed, you have to make sure you only ever a
 
 ## Vote on Chains, not Blocks
 
-<img style="width: 1000px" src="./img/grandpa-round/4.6-validators-vote-on-chain.png"/>
+<img style="width: 1000px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-validators-vote-on-chain.png"/>
 
 Notes:
 
@@ -605,7 +605,7 @@ A **validator** that is designated as the **primary** broadcasts the highest blo
 
 ## A GRANDPA Round
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-1.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-1.png"/>
 
 Notes:
 
@@ -616,7 +616,7 @@ Notes:
 
 ## A GRANDPA Round
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-2.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-2.png"/>
 
 Notes:
 
@@ -636,7 +636,7 @@ Each validator **computes** the **highest block** that can be **finalized based*
 
 ## A GRANDPA Round
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-3.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-3.png"/>
 
 Notes:
 
@@ -657,7 +657,7 @@ We define the round **estimate** as the **highest ancestor** of the **prevote GH
 
 ## A GRANDPA Round
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-4.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-4.png"/>
 
 Notes:
 
@@ -679,7 +679,7 @@ Each validator **waits** to receive **enough precommits** to be able to finalize
 
 ## A GRANDPA Round
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-5.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-5.png"/>
 
 Notes:
 
@@ -690,7 +690,7 @@ Notes:
 
 ## A GRANDPA Round
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-6.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-6.png"/>
 
 Notes:
 
@@ -712,7 +712,7 @@ Validators **start** a **new round** after it becomes **completable**.
 
 ## A GRANDPA Round
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-6.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-6.png"/>
 
 Notes:
 
@@ -723,7 +723,7 @@ Notes:
 
 ## A GRANDPA Round
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-7.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-7.png"/>
 
 Notes:
 
@@ -734,7 +734,7 @@ Notes:
 
 ## A GRANDPA Round
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-8.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-8.png"/>
 
 Notes:
 
@@ -745,7 +745,7 @@ Notes:
 
 ## A GRANDPA Round (Alt)
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-6.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-6.png"/>
 
 Notes:
 
@@ -756,7 +756,7 @@ Notes:
 
 ## A GRANDPA Round (Alt)
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-7-alternative.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-7-alternative.png"/>
 
 Notes:
 
@@ -767,7 +767,7 @@ Notes:
 
 ## A GRANDPA Round (Alt)
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-8-alternative.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-8-alternative.png"/>
 
 Notes:
 
@@ -778,7 +778,7 @@ Notes:
 
 ## A GRANDPA Round (Alt)
 
-<img style="width: 400px" src="./img/grandpa-round/4.6-grandpa-round-9-alternative.png"/>
+<img style="width: 400px" src="../../assets/img/9-Polkadot/grandpa-round/4.6-grandpa-round-9-alternative.png"/>
 
 Notes:
 

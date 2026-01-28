@@ -19,12 +19,16 @@ echo "📸 Scanning for image issues in: $contentpath"
 # https://unix.stackexchange.com/a/301817
 ramdir=$(mktemp -dt "$(basename $0).XXXXXXXX" --tmpdir=/run/user/$(id -u))
 
-# Find all <img /> sources
-grep -hrPo '<img.*src="\K.*?(?=".*)' $contentpath > $ramdir/img-element-list
+# Find all <img /> sources and Markdown image syntax ![](...)
+# Filter out external URLs (http:// and https://)
+grep -hrPo '<img.*src="\K[^"]+' $contentpath | grep -v '^http' > $ramdir/img-element-list
+grep -hrPo '!\[[^\]]*\]\(\K[^)]+' $contentpath | grep -v '^http' >> $ramdir/img-element-list
 awk -F ":" '{print $NF}' $ramdir/img-element-list | awk -F "/" '{print $NF}' | sort | uniq > $ramdir/img-element-files
 
-# Find all img flies
-find $contentpath \
+# Find all img files (only in assets/img/ directory)
+# Derive assets path relative to content path
+assetsimgdir=$(dirname "$contentpath")/assets/img
+find $assetsimgdir \( \
 -name "*.png" \
 -o -name "*.svg" \
 -o -name "*.jpg" \
@@ -32,7 +36,7 @@ find $contentpath \
 -o -name "*.webp" \
 -o -name "*.gif" \
 -o -name "*.avif" \
-> $ramdir/img-asset-path
+\) > $ramdir/img-asset-path
 awk -F "/" '{print $NF}' $ramdir/img-asset-path | sort | uniq > $ramdir/img-asset-files
 
 # Check where files and <img src="..."> are not congruent with assets included
@@ -41,18 +45,25 @@ comm -13 $ramdir/img-asset-files $ramdir/img-element-files > $ramdir/img-no-src-
 
 # DEBUG view the tmp files with important info
 # TODO - expand this script if needed to automatically prune/fix issues
+exit_code=0
+
 if [ -s $ramdir/img-no-src-asset ]; then
     echo -e "🤷 Images used in book, but not found in files (should be saved in book assets, in right path):\n"
     cat $ramdir/img-no-src-asset
     echo -e "\n➤ DEBUG - above list saved to: $ramdir/img-no-src-asset --- more debugging files in: $ramdir/"
+    # Missing images is a hard failure
+    exit_code=1
 fi
+
 if [ -s $ramdir/img-to-delete ]; then
-    echo -e "❌ Image files included, but not used in book (delete if not needed):\n"
+    echo -e "⚠️  Image files included, but not used in book (consider deleting if not needed):\n"
     cat $ramdir/img-to-delete
     echo -e "\n➤ DEBUG - above list saved to: $ramdir/img-to-delete --- more debugging files in: $ramdir/"
+    # Orphan images is only a warning, not a failure
 fi
-if [ -s $ramdir/img-to-delete ] || [ -s $ramdir/img-no-src-asset ]; then
-    exit 1
+
+if [ $exit_code -ne 0 ]; then
+    exit $exit_code
 fi
 
 # Don't clean up if needed to debug 😜

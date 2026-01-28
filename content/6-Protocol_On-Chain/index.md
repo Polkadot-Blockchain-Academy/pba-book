@@ -66,13 +66,13 @@ meta questions for ice breaker:
 
 ### Polkadot
 
-<img width="800px" rounded src="./img/single-threaded.svg" />
+<img width="800px" rounded src="../../assets/img/6-Protocol_On-Chain/single-threaded.svg" />
 
 ---v
 
 ### Polkadot
 
-<img width="800px" rounded src="./img/single-threaded-eth.svg" />
+<img width="800px" rounded src="../../assets/img/6-Protocol_On-Chain/single-threaded-eth.svg" />
 
 ---v
 
@@ -89,7 +89,7 @@ The holy grain of what ETH 2.0 was meant to be.
 
 ### Polkadot
 
-<img width="800px" rounded src="./img/multi-threaded.svg" />
+<img width="800px" rounded src="../../assets/img/6-Protocol_On-Chain/multi-threaded.svg" />
 
 Note:
 
@@ -99,7 +99,7 @@ Have we compromised security in any way in this model?
 
 ### Polkadot
 
-<img width="800px" rounded src="./img/multi-threaded-dot.svg" />
+<img width="800px" rounded src="../../assets/img/6-Protocol_On-Chain/multi-threaded-dot.svg" />
 
 Note: Polkadot achieves perfect shared security and sharded execution. The primitives that can
 progress an input in parallel is called a "Core", much like a normal CPU.
@@ -108,7 +108,7 @@ progress an input in parallel is called a "Core", much like a normal CPU.
 
 ### Polkadot
 
-<img width="800px" rounded src="./img/dot-heterogenous.svg" />
+<img width="800px" rounded src="../../assets/img/6-Protocol_On-Chain/dot-heterogenous.svg" />
 
 Note:
 
@@ -119,7 +119,7 @@ is used.
 
 ### Polkadot
 
-<img width="800px" rounded src="./img/dot-parachain.svg" />
+<img width="800px" rounded src="../../assets/img/6-Protocol_On-Chain/dot-parachain.svg" />
 
 Note:
 
@@ -130,7 +130,7 @@ therefore smart contracts. We can run anything we want. We can run a whole block
 
 ### Polkadot
 
-<img width="800px" rounded src="./img/dot-parachain-auction.svg" />
+<img width="800px" rounded src="../../assets/img/6-Protocol_On-Chain/dot-parachain-auction.svg" />
 
 Note:
 
@@ -182,7 +182,7 @@ TODO: maybe turn into slides, maybe leave as notes for now.
 
 ⛓️‍💥 Substrate 🤝 FRAME 🤝 Cumulus ⛓️‍💥
 
-<img width="800px" rounded src="./img/substrate-frame-cumulus.svg" >
+<img width="800px" rounded src="../../assets/img/6-Protocol_On-Chain/substrate-frame-cumulus.svg" >
 
 ---v
 
@@ -239,7 +239,7 @@ but it can 100% ensure that the parachain will do exactly as stated in its WASM 
 
 ### Interoperability
 
-<img width="800px" rounded src="./img/dot-parachain-message.svg" />
+<img width="800px" rounded src="../../assets/img/6-Protocol_On-Chain/dot-parachain-message.svg" />
 
 ---v
 

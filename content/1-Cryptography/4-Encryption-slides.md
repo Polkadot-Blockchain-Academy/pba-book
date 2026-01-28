@@ -28,7 +28,7 @@ In essence, it gives a way of _extending_ a shared secret over time.
 
 ## Symmetric Encryption
 
-<img style="width: 1100px" src="./img/Symmetric-Cryptography.png" />
+<img style="width: 1100px" src="../../assets/img/1-Cryptography/Symmetric-Cryptography.png" />
 
 Examples: ChaCha20, Twofish, Serpent, Blowfish, XOR, DES, AES<!-- .element: class="fragment" data-fragment-index="0" -->
 
@@ -111,14 +111,14 @@ We caution however that constructing these protocols remains delicate, even give
 <pba-cols>
 <pba-col>
 
-<img style="width: 300px" src="./img/ECB-Penguin.png" />
+<img style="width: 300px" src="../../assets/img/1-Cryptography/ECB-Penguin.png" />
 
 _Original image_
 
 </pba-col>
 <pba-col>
 
-<img style="width: 300px" src="./img/ECB-Penguin-Encrypted.png" />
+<img style="width: 300px" src="../../assets/img/1-Cryptography/ECB-Penguin-Encrypted.png" />
 
 _Encrypted image_
 
@@ -127,7 +127,7 @@ _Encrypted image_
 </pba-col>
 <pba-col>
 
-<img style="width: 300px" src="./img/ECB-Penguin-Secure.png" />
+<img style="width: 300px" src="../../assets/img/1-Cryptography/ECB-Penguin-Secure.png" />
 
 _Encrypted image_
 
@@ -156,7 +156,7 @@ Image sources: <https://github.com/robertdavidgraham/ecb-penguin/blob/master/Tux
 
 ## Asymmetric Encryption
 
-<img style="height: 600px" src="./img/asymmetric-crypto-flow.svg" />
+<img style="height: 600px" src="../../assets/img/1-Cryptography/asymmetric-crypto-flow.svg" />
 
 ---
 
@@ -206,7 +206,7 @@ Notes:
 
 ## Diffie-Hellman Key Exchange
 
-<img style="height: 500px" src="./img/Diffie-Hellman_Key_Exchange_horizontal.svg" />
+<img style="height: 500px" src="../../assets/img/1-Cryptography/Diffie-Hellman_Key_Exchange_horizontal.svg" />
 
 Mixing Paint Visualization
 
@@ -223,7 +223,7 @@ Authenticated encryption adds a **M**essage **A**uthentication **C**ode to addit
 
 A reader can check the MAC to ensure the message was constructed by someone knowing the secret.
 
-<img style="height: 500px" src="./img/Authenticated_Encryption_EtM.png" />
+<img style="height: 500px" src="../../assets/img/1-Cryptography/Authenticated_Encryption_EtM.png" />
 
 Notes:
 

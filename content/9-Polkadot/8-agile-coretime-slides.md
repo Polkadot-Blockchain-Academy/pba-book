@@ -34,7 +34,7 @@ and exposes it's most important resources, execution cores. Essentially it's an 
 
 ## RFC Disclaimer
 
-<img style="width: 500px" src="./assets/coretime/rfc_1.png"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/rfc_1.png"/>
 
 Notes:
 The coretime I will be presenting today is still in development but more than 90% of it has been delivered. The blueprint for it was outlined in the Fellowship RFC 1 and 5 (links in notes) and it is mostly staying true to it but implementation details can be different here and there. Nevertheless the spirit will remain unchanged.
@@ -48,7 +48,7 @@ https://github.com/polkadot-fellows/RFCs/blob/main/text/0005-coretime-interface.
 
 ## JAM Disclaimer
 
-<img style="width: 500px" src="./assets/coretime/jam.png"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/jam.png"/>
 
 Notes:
 And we can go further because more importantly coretime will carry over into the future when the chain migrates to JAM. In fact Jam needs coretime as a dependency so what we are learning here will remain very relevant in the upcoming years.
@@ -70,7 +70,7 @@ First let’s zoom out and look at the Polkadot protocol. What does it actually 
 
 ## Blockspace
 
-<img style="width: 500px" src="./assets/coretime/blockspace.png"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/blockspace.png"/>
 
 Notes:
 It is blockspace! Blockspace is the data that we guarantee consensus on and provide availability for. And not only is it blockspace, it is high quality blockspace.
@@ -82,7 +82,7 @@ The quality is referring to how confidence in it being secure and live, it needs
 
 ## Sharding
 
-<img style="width: 500px" src="./assets/coretime/polkadot-architecture.svg"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/polkadot-architecture.svg"/>
 
 Sharding allows us to produce more blockspace with the same resources
 
@@ -109,7 +109,7 @@ Coretime is presenting a more execution based perspective and blockspace paints 
 
 ## Pricing blockspace
 
-<img style="width: 300px" src="./assets/coretime/tokens.png"/>
+<img style="width: 300px" src="../../assets/img/9-Polkadot/coretime/tokens.png"/>
 
 Blockspace needs to be priced and distributed to those that need it.
 
@@ -131,7 +131,7 @@ Lease gave you the right to register your parachain and fully occupy a specific 
 
 A core is able to validate a single block every 6s and leases were practically always 2 years.
 
-<img  src="./assets/coretime/para.svg"/>
+<img  src="../../assets/img/9-Polkadot/coretime/para.svg"/>
 
 Note:
 This design was very strictly defining the amount and frequency of the blockspace being sold. Teams could only buy the right to validate a single block every 6s for up to 2 years. That is committing to roughly 175 000 blocks! We called that commitment a lease. And most parachains to this day still operate on those leases.
@@ -144,7 +144,7 @@ Lease gave you the right to register your parachain and fully occupy a specific 
 
 A core is able to validate a single block every 6s and leases were practically always 2 years.
 
-<img  src="./assets/coretime/para_0.svg"/>
+<img  src="../../assets/img/9-Polkadot/coretime/para_0.svg"/>
 
 Note:
 2 years is a really looo-
@@ -157,7 +157,7 @@ Lease gave you the right to register your parachain and fully occupy a specific 
 
 A core is able to validate a single block every 6s and leases were practically always 2 years.
 
-<img  src="./assets/coretime/para_1.svg"/>
+<img  src="../../assets/img/9-Polkadot/coretime/para_1.svg"/>
 
 Note:
 ooo-
@@ -170,7 +170,7 @@ Lease gave you the right to register your parachain and fully occupy a specific 
 
 A core is able to validate a single block every 6s and leases were practically always 2 years.
 
-<img  src="./assets/coretime/para_2.svg"/>
+<img  src="../../assets/img/9-Polkadot/coretime/para_2.svg"/>
 
 Note:
 ooo-
@@ -183,7 +183,7 @@ Lease gave you the right to register your parachain and fully occupy a specific 
 
 A core is able to validate a single block every 6s and leases were practically always 2 years.
 
-<img  src="./assets/coretime/para_3.svg"/>
+<img  src="../../assets/img/9-Polkadot/coretime/para_3.svg"/>
 
 Note:
 -ong time.
@@ -206,7 +206,7 @@ So now we know what is being sold so how was it sold? Every once in a while when
 
 ## Slot Auctions
 
-<img  src="./assets/coretime/slot_auctions.png"/>
+<img  src="../../assets/img/9-Polkadot/coretime/slot_auctions.png"/>
 
 Notes:
 The auctions required huge amounts of DOT tokens. Often millions of dollars. So to allow amazing but poorly funded teams to flourish a crowd loan system was created. It allowed normal token holders to pool their dot together and lend them to the team. Those tokens were then used to secure a bid in the auction. Of course the token holders were not doing it for free. They were expecting some rewards in return coming from the team behind the project.
@@ -221,7 +221,7 @@ https://parachains.info/auctions/polkadot-60-66
 
 Tokens were **refunded** after the lease was over
 
-<img style="width: 300px" src="./assets/coretime/rewards.svg"/>
+<img style="width: 300px" src="../../assets/img/9-Polkadot/coretime/rewards.svg"/>
 
 What was the cost?
 
@@ -345,7 +345,7 @@ We'll start with a method that should be the most familiar and in fact very simi
 
 Parablock every 6s for 28 days
 
-<img  src="./assets/coretime/para.svg"/>
+<img  src="../../assets/img/9-Polkadot/coretime/para.svg"/>
 
 Notes:
 So how much coretime are we selling this time around? Bit less then previously but still a large chunk of it - a whole bulk of coretime.
@@ -358,7 +358,7 @@ So how much coretime are we selling this time around? Bit less then previously b
 
 Dutch Auctions
 
-<img style="width: 600px" src="./assets/coretime/dutch.jpeg"/>
+<img style="width: 600px" src="../../assets/img/9-Polkadot/coretime/dutch.jpeg"/>
 
 Notes:
 And to sell all of that we are using the classic dutch auctions. In that case the price decreases over the span
@@ -399,7 +399,7 @@ Pricing could be it's own lecture but to keep it brief. The system starts with s
 
 ## Pricing
 
-<img style="width: 500px" src="./assets/coretime/bulk_pricing.png"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/bulk_pricing.png"/>
 
 Notes:
 This very roughly approximates an exponential decay curve with three linear functions. We are actually in discussions to make it smooth and make the potential scope of prices even wider.
@@ -410,7 +410,7 @@ This very roughly approximates an exponential decay curve with three linear func
 
 ## Leases repackaged?
 
-<img style="width: 500px" src="./assets/coretime/spider.jpg"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/spider.jpg"/>
 
 Notes:
 Although despite this difference at this point you might be asking, hey, this is nearly exactly the same as the method
@@ -443,7 +443,7 @@ This is the truly exciting stuff. That was fully impossible before.
 
 # Interlacing
 
-<img style="width: 700px" src="./assets/coretime/no_interlacing.svg"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/no_interlacing.svg"/>
 
 Notes:
 So with no interlacing someone could utilize bulk like this. Just naively put out a block every 6s.
@@ -464,7 +464,7 @@ same core. They might be taking turns or using any other arbitrary co-scheduling
 
 ## Example
 
-<img style="width: 700px" src="./assets/coretime/interlacing.svg"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/interlacing.svg"/>
 
 Notes:
 A concrete example of that would be two parachains coscheduled onto the same core. They would take turns in producing blocks so each on will effectively have a 12s block time.
@@ -479,7 +479,7 @@ Interlacing is achieve through manipulating the coretime region bit masks.
 
 Freshly bought coretime region from the bulk auction would be fully scheduled (complete):
 
-<img style="width: 700px" src="./assets/coretime/complete_mask.svg"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/complete_mask.svg"/>
 
 ---v
 
@@ -489,7 +489,7 @@ Freshly bought coretime region from the bulk auction would be fully scheduled (c
 
 Two parachains interlaced together would split the region into 2 complementary regions:
 
-<img style="width: 700px" src="./assets/coretime/interlaced_regions_masks.svg"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/interlaced_regions_masks.svg"/>
 
 Notes:
 
@@ -501,7 +501,7 @@ Notes:
 
 Interlacing always should create masks that complement each other (XOR to 1):
 
-<img style="width: 700px" src="./assets/coretime/mask_interlacing.svg"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/mask_interlacing.svg"/>
 
 Notes:
 
@@ -509,7 +509,7 @@ Notes:
 
 # Interlacing
 
-<img style="width: 700px" src="./assets/coretime/triple_interlace.png"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/triple_interlace.png"/>
 
 Notes:
 This can be pushed quite far triple co-scheduling is not an issue at all and if you want a parachain that makes a block only every 1000th slots you can!
@@ -545,7 +545,7 @@ Coretime was built with secondary markets in mind. Those would be the interfaces
 
 ## Current Solutions
 
-<img style="width: 700px" src="./assets/coretime/regionx_land.png"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/regionx_land.png"/>
 
 Notes:
 
@@ -557,7 +557,7 @@ https://www.regionx.tech/
 
 ## Current Solutions
 
-<img style="width: 700px" src="./assets/coretime/lastic_land.png"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/lastic_land.png"/>
 
 Notes:
 
@@ -569,7 +569,7 @@ https://www.lastic.xyz/
 
 ## What to expect?
 
-<img style="width: 700px" src="./assets/coretime/regionx.png"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/regionx.png"/>
 
 ---v
 
@@ -577,7 +577,7 @@ https://www.lastic.xyz/
 
 ## What to expect?
 
-<img style="width: 700px" src="./assets/coretime/lastic.png"/>
+<img style="width: 700px" src="../../assets/img/9-Polkadot/coretime/lastic.png"/>
 
 Notes:
 Interfaces for buying or auto-bidding on bulk auctions
@@ -608,7 +608,7 @@ of the design since 1.0 days. On-Demand is the generally accepted term nowadays.
 
 ## Disclaimer
 
-<img style="width: 500px" src="./assets/coretime/spider3.jpg"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/spider3.jpg"/>
 
 Note:
 
@@ -687,7 +687,7 @@ On-demand pricing is detached from the bulk auction pricing.
 
 It's a separate free market system where price is adapted based on the demand and current supply.
 
-<img style="width: 500px" src="./assets/coretime/market_eq.drawio.svg"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/market_eq.drawio.svg"/>
 
 Notes:
 On-demand pricing is detached from the bulk auction pricing.
@@ -720,7 +720,7 @@ What can they do scale further?
 
 Projects like Moonbeam and soon Mythical are definitely capable of fully utilizing a single core.
 
-<img style="width: 250px" src="./assets/coretime/mythical.png"/>
+<img style="width: 250px" src="../../assets/img/9-Polkadot/coretime/mythical.png"/>
 
 Early projections show that Mythical will need 2-3 cores (although async backing might lower this demand)
 
@@ -733,7 +733,7 @@ Mythical is coming over to Polkadot with a pretty mature fanbase and a few alrea
 
 Assume Parachain A is running out of blockspace:
 
-<img style="width: 500px" src="./assets/coretime/elastic_1.svg"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/elastic_1.svg"/>
 
 Notes:
 We see 2 parachains. Let's assume A is running out of space. They fully utilize the blocks every 6s. Core 2 sits empty there is no 3rd parachain that would like to register.
@@ -746,7 +746,7 @@ Looking at this diagram, even if you don't know about coretime I feel like the a
 
 With Elastic Scaling Parachain A can purchase more cores and produce blocks on all of them to get more blockspace:
 
-<img style="width: 500px" src="./assets/coretime/elastic_2_fork.svg"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/elastic_2_fork.svg"/>
 
 Notes:
 With Elastic Scaling Parachain A can purchase more cores and produce blocks on all of them to get more blockspace. But does anyone see an issue with that? At least based on that diagram.
@@ -757,7 +757,7 @@ With Elastic Scaling Parachain A can purchase more cores and produce blocks on a
 
 Parachain A needs to still produce blocks sequentially so now there needs to be an inner ordering between cores:
 
-<img style="width: 500px" src="./assets/coretime/elastic_2_ordered.svg"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/elastic_2_ordered.svg"/>
 
 Notes:
 This Increases the strain on collators as they not only have to produce multiple blocks per 6s but also share them to the next collator in the chain so they can import and potentially build their collation dependant on it. We generally limit elastic scaling to 3-4 cores max.
@@ -785,7 +785,7 @@ Remember when we discussed how in the old auction model vast majority of teams o
 
 Business don't like uncertainty. They want to know they can operate for a long time and budget for their expenses.
 
-<img style="width: 900px" src="./assets/coretime/volatility.png"/>
+<img style="width: 900px" src="../../assets/img/9-Polkadot/coretime/volatility.png"/>
 
 If every spike on the graph endangers your business you will build it elsewhere.
 
@@ -810,7 +810,7 @@ If you don't interlace or split your coretime region and you fully utilize it th
 
 Renewals can be made in the interlude phase before the actual bulk auction starts:
 
-<img style="width: 500px" src="./assets/coretime/bulk_pricing.png"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/bulk_pricing.png"/>
 
 Notes:
 Making a renewal increases your costs but it gives a solid cap for how much they can increase allowing you to budget well into the future. Additionally if the target price in the market drops heavily the renewal price can also be lowered, but the growth is always capped.
@@ -828,7 +828,7 @@ Now comes the best part. What happens when all those features go live? They can 
 
 ## Leases Landscape
 
-<img style="width: 500px" src="./assets/coretime/dumb_coretime.png"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/coretime/dumb_coretime.png"/>
 
 Notes:
 In general we are hoping to migrate from a mundane and inflexible system like this.
@@ -839,7 +839,7 @@ In general we are hoping to migrate from a mundane and inflexible system like th
 
 ## Agile Coretime Landscape
 
-<img style="width: 800px" src="./assets/coretime/agile_coretime.png"/>
+<img style="width: 800px" src="../../assets/img/9-Polkadot/coretime/agile_coretime.png"/>
 
 Notes:
 To a much more free market model where blockspace can be freely allocated, interlaced, exchanged, scaled etc. Giving away the freedom to the users and allowing them to fully utilize the resources of Polkadot.

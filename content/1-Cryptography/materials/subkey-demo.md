@@ -1,6 +1,6 @@
 # Subkey Signature and HDKD (Hierarchical Deterministic Key Derivation) Demo
 
-All the subkey examples also exist in [a jupyter notebook](./signature-demo.ipynb) for reference.
+All the subkey examples also exist in [a jupyter notebook](../../../../assets/img/1-Cryptography/materials/signature-demo.ipynb) for reference.
 As an alternative, here are subkey examples to compliment/replace using the REPL.
 
 ## Key Generation

@@ -95,7 +95,7 @@ Stuff you should remember to say
 
 ## Some Image
 
-<img rounded style="width: 60%;" src="./img/REMOVE-ME-example-img.png" />
+<img rounded style="width: 60%;" src="../../../assets/img/contribute/REMOVE-ME-example-img.png" />
 
 <!--
 Always place images and other media assets into `./img/`.

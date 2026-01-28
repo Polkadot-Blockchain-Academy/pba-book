@@ -107,7 +107,7 @@ Full Typed: Not only the library itself, but the interactions with each chain. I
 
 ## Concepts
 
-<img rounded src="./img/high-lvl-overview.svg" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/high-lvl-overview.svg" />
 
 Notes:
 

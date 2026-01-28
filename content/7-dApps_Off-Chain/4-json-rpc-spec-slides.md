@@ -11,7 +11,7 @@ description: New JSON-RPC Spec in depth
 
 ## Block States
 
-<img rounded src="./img/block-states.png" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/block-states.png" />
 
 Notes:
 
@@ -198,7 +198,7 @@ The notifications we will see will be the value of `result`, we omit the JSON-RP
 
 # Follow
 
-<img rounded src="./img/block-states.png" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/block-states.png" />
 
 Notes:
 
@@ -593,7 +593,7 @@ connection.send(
 
 ## Merkle Tree Recap
 
-<img rounded src="./img/merkle-tree.png" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/merkle-tree.png" />
 
 Notes:
 
@@ -678,7 +678,7 @@ Explain structure, then explain an example of how the storage is traversed.
 
 </pba-col>
 <pba-col>
-<img rounded src="./img/merkle-tree.png" style="width: 100%" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/merkle-tree.png" style="width: 100%" />
 </pba-col>
 <pba-cols>
 
@@ -816,7 +816,7 @@ tl;dr; Light Clients currently can't request the hashes, they must download the 
 
 ## Handling forks
 
-<img rounded src="./img/block-states.png" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/block-states.png" />
 
 ---v
 

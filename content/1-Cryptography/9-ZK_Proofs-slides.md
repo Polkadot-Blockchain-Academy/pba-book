@@ -334,7 +334,7 @@ Notes:
 
 $r \times s = N$
 
-<img style="height: 500px; padding-left:100px" src="./img/factorization-circuit.png" />
+<img style="height: 500px; padding-left:100px" src="../../assets/img/1-Cryptography/factorization-circuit.png" />
 
 ---
 
@@ -342,7 +342,7 @@ $r \times s = N$
 
 $(r-1)(\frac{1}{r - 1}) = 1$
 
-<img style="height: 500px; padding-left:100px" src="./img/inhibit-1-circuit.png" />
+<img style="height: 500px; padding-left:100px" src="../../assets/img/1-Cryptography/inhibit-1-circuit.png" />
 
 ---
 
@@ -354,7 +354,7 @@ $r_{01} = r_{0} + 2r_{1}$
 
 $r = r_{01} + 4r_{2}$
 
-<img style="height: 500px; padding-left:100px" src="./img/binary-decomposition-circuit.png" />
+<img style="height: 500px; padding-left:100px" src="../../assets/img/1-Cryptography/binary-decomposition-circuit.png" />
 
 ---
 
@@ -362,7 +362,7 @@ $r = r_{01} + 4r_{2}$
 
 $r_{i} \times (r_{i} - 1) = 0$
 
-<img style="height: 500px; padding-left:100px" src="./img/enforce-0-or-1-circuit.png" />
+<img style="height: 500px; padding-left:100px" src="../../assets/img/1-Cryptography/enforce-0-or-1-circuit.png" />
 
 ---
 

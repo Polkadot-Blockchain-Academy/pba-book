@@ -140,7 +140,7 @@ Let's zoom out for a second and remind ourselves how Polkadot overall aims to co
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 500px" src="./assets/introduction/decentralised.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/decentralised.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -166,7 +166,7 @@ And I often here the complaint that blockchains are jsut giant ledgers and it ce
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 500px" src="./assets/introduction/decentralised.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/decentralised.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -191,7 +191,7 @@ This was still a world where each blockchain to communicate with another needed 
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 500px" src="./assets/introduction/decentralised.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/decentralised.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -214,7 +214,7 @@ Then there came solutions that tried to quickly boost the throughput. The easies
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 500px" src="./assets/introduction/centralised.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/Centralised.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -239,7 +239,7 @@ It topoligically looks like all other monolithic but just a lot more sparse and 
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./assets/introduction/cosmos.drawio.svg" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/introduction/cosmos.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -256,7 +256,7 @@ In this solution cosmos blockchains are like separate islands, they technically 
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 250px" src="./assets/introduction/transformation_8.drawio.svg" />
+<img style="width: 250px" src="../../assets/img/9-Polkadot/introduction/transformation_8.drawio.svg" />
 
 Notes:
 And finally we can take a look at Polkadot. Polkadot since day 1 of its inception was centered around sharding. A single monolithic blockchain cannot scale unless it compromises on core blockchain principles.
@@ -267,7 +267,7 @@ And finally we can take a look at Polkadot. Polkadot since day 1 of its inceptio
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/scalability-trilemma.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/scalability-trilemma.svg" />
 
 Notes:
 and at this point I'm sure you all are very familiar with the blockchain trilemma.
@@ -278,7 +278,7 @@ and at this point I'm sure you all are very familiar with the blockchain trilemm
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/transformation_1.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/Transformation_1.drawio.svg" />
 
 Notes:
 So on a high level Polkadot also decided to split the state into smaller subnetworks.
@@ -289,7 +289,7 @@ So on a high level Polkadot also decided to split the state into smaller subnetw
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/transformation_2.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/Transformation_2.drawio.svg" />
 
 Notes:
 Each subnetwork or shard with a fully programmable runtime logic thanks to substrate and wasm.
@@ -300,7 +300,7 @@ Each subnetwork or shard with a fully programmable runtime logic thanks to subst
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/transformation_2b.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/transformation_2b.drawio.svg" />
 
 Notes:
 but then Instead of fully separating the execution and security layers Polkadot instead chooses to start pooling them together. Combining forces.
@@ -311,7 +311,7 @@ but then Instead of fully separating the execution and security layers Polkadot 
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/transformation_3.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/Transformation_3.drawio.svg" />
 
 Notes:
 From the diagram here you can start noticing that there is a region forming that is crossection between all of the islands. The islands are no longer separated, individual beings, they have something in common.
@@ -322,7 +322,7 @@ From the diagram here you can start noticing that there is a region forming that
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/transformation_4.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/Transformation_4.drawio.svg" />
 
 Notes:
 And the more and more subnetworks we add the emergent existence of this central core becomes more and more obvious.
@@ -333,7 +333,7 @@ And the more and more subnetworks we add the emergent existence of this central 
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/transformation_5.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/Transformation_5.drawio.svg" />
 
 Notes:
 So lets crystalize it a bit. Some nodes remain unique and specialised for the subnetwork while others aim to remain very generic and sitting in the middle. The middle section is not just one node but a full on family of general compute nodes able to fully sync up with every other subnetwork in the ecosystem.
@@ -344,7 +344,7 @@ So lets crystalize it a bit. Some nodes remain unique and specialised for the su
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/polkadot_small.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/polkadot_small.drawio.svg" />
 
 Notes:
 The universal nodes in the middle will be a unifying force bringing together all the subnetworks into a single cohesive structure. We will be looking into more and more detail of what is this central structure, but some of you might already now it as the Polkadot Beacon Chain, or Polkadot Relay Chain. This is the auditing layer of Polkadot that is the source of its security and interoperability.
@@ -357,7 +357,7 @@ And looking at this diagram it should already be pretty straightforward to see w
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/transformation_7.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/transformation_7.drawio.svg" />
 
 Notes:
 And we can arrive to our familiar design.
@@ -368,7 +368,7 @@ And we can arrive to our familiar design.
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 500px" src="./assets/introduction/transformation_8.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/transformation_8.drawio.svg" />
 
 Notes:
 Pause
@@ -390,7 +390,7 @@ Pause
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 500px" src="./assets/introduction/polkadot_large.drawio.svg" />
+<img style="width: 500px" src="../../assets/img/9-Polkadot/introduction/polkadot_large.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -409,7 +409,7 @@ Additionally Polkadot not only provides a messaging language BUT it also comes w
 
 ## Sharded Networks - Polkadot
 
-<img style="width: 700px" src="./assets/introduction/polkadot_large_labeled.drawio.svg" />
+<img style="width: 700px" src="../../assets/img/9-Polkadot/introduction/polkadot_large_labeled.drawio.svg" />
 
 Notes:
 In this module we will be mainly focusing on the role of responsibilities of the central nodes. They are the Polkadot validators hosting the Polkadot Relay Chain.

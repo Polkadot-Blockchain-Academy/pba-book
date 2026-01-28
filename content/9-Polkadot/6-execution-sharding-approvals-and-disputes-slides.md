@@ -23,7 +23,7 @@ Introduction
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/actors.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/actors.png" />
 </pba-col>
 </pba-cols>
 
@@ -31,7 +31,7 @@ Introduction
 
 ## Execution Sharding in Polkadot
 
-<img style="width: 600px" src="./assets/execution-sharding/scalability-trilemma.svg"/>
+<img style="width: 600px" src="../../assets/img/9-Polkadot/execution-sharding/scalability-trilemma.svg"/>
 
 Notes:
 First let's outline why we even need to go through all of that trouble. IN short sharding is our answer to scalability. And I could say that in general sharding is **solving** scalability. But in truth as many have heard...
@@ -42,7 +42,7 @@ First let's outline why we even need to go through all of that trouble. IN short
 
 <pba-cols>
     <pba-col>
-        <img style="width: 500px" src="./assets/execution-sharding/scalability-trilemma.svg"/>
+        <img style="width: 500px" src="../../assets/img/9-Polkadot/execution-sharding/scalability-trilemma.svg"/>
     </pba-col>
     <pba-col>
         <blockquote>
@@ -269,7 +269,7 @@ Validators starting with the lowest numbers (in the lowest tranches) start valid
 - Validators starting with the lowest numbers (in the lowest tranches) start validating the parablock.
 - Gradually higher and higher numbers start revealing themselves continuing the process.
 
-<img style="width: 900px" src="./assets/execution-sharding/tranches.svg" />
+<img style="width: 900px" src="../../assets/img/9-Polkadot/execution-sharding/tranches.svg" />
 
 Notes:
 but over time more and more people start checking because higher and higher numbers are called in to reveal themselves. This is how it can be visualized. We group up validators with similar roles together into those small tranches. Every single active validator is one of those tranches. The more time passes the more tranches are woken up and do their checks. You can notice that the first tranche is a bit larger. That is because...
@@ -282,7 +282,7 @@ but over time more and more people start checking because higher and higher numb
 - Gradually higher and higher numbers start revealing themselves continuing the process.
 - Once a certain threshold of validators (30) have submitted valid statements, the parablock is considered **Approved**.
 
-<img style="width: 800px" src="./assets/execution-sharding/tranches_happy.svg" />
+<img style="width: 800px" src="../../assets/img/9-Polkadot/execution-sharding/tranches_happy.svg" />
 
 Notes:
 The protocol is parametrised to such a way that we require around 30 checks made in total. If we get 30 positive checks the parablock is considered approved. But wait... wait if it's invalid?
@@ -318,7 +318,7 @@ Malicious attackers can try and eliminate good guys so that they get the first 3
 
 ## Approval Checking - No-Shows
 
-<img style="width: 800px" src="./assets/execution-sharding/tranches_dos.svg" />
+<img style="width: 800px" src="../../assets/img/9-Polkadot/execution-sharding/tranches_dos.svg" />
 
 Notes:
 So this will look something like that. In one tranche one of the validators will wake up because it is their time to check. They announce themselves first, start rebuilding the PoV, but before they can publish they PVF result they get DoSed. We never receive their result so remaining validators raise a soft alarm, they start requiring more checkers. And because of that another tranche will be called in before finishing the approval process.
@@ -327,7 +327,7 @@ So this will look something like that. In one tranche one of the validators will
 
 ## Approval Checking - No-Shows
 
-<img rounded style="width: 700px" src="./assets/execution-sharding/lernaean-hydra.jpg" />
+<img rounded style="width: 700px" src="../../assets/img/9-Polkadot/execution-sharding/lernaean-hydra.jpg" />
 
 Notes:
 Fighting DoS should be like fighting a hydra. Even if you eliminate a few honest nodes even more will raise in their place. 2/3 \* 3 gives us 2 extra honest nodes per one no-show.
@@ -336,7 +336,7 @@ Fighting DoS should be like fighting a hydra. Even if you eliminate a few honest
 
 ## Approval Checking - Summary
 
-<img rounded style="width: 1300px" src="./assets/execution-sharding/approval_flow.svg" />
+<img rounded style="width: 1300px" src="../../assets/img/9-Polkadot/execution-sharding/approval_flow.svg" />
 
 Notes:
 This is a flow chart from the perspective of an individual approval checker. First once we notice inclusion we generate the assignment. Then we wait for our turn but if the parablock got approved before that we call it a day, we locally mark it as approved for us and finish the process.
@@ -434,7 +434,7 @@ So now we have the full picture of the path a parablock would take through the E
 Validators refuse to author relay chain blocks on top of forks containing parablocks which are invalid or have lost disputes.
 This causes a "reorganization" whenever a dispute resolves against a candidate.
 
-<img rounded style="width: 650px" src="./assets/execution-sharding/babe-chain-selection.png" />
+<img rounded style="width: 650px" src="../../assets/img/9-Polkadot/execution-sharding/babe-chain-selection.png" />
 
 Notes:
 The authoring mechanism is also paired with a chain selection logic. This logic helps us leverage forks to our advantage by tactically ignoring relay blocks with invalid parablocks so the chain can easily reorg those out.
@@ -464,7 +464,7 @@ Since Polkadot involves not only on-chain logic but off-chain logic, the runtime
 
 Clients learn about the state by invoking **Runtime APIs** at recent blocks, and the runtime is updated with **new blocks**.
 
-<img rounded style="width: 900px" src="./assets/execution-sharding/runtime-node-interaction.png" />
+<img rounded style="width: 900px" src="../../assets/img/9-Polkadot/execution-sharding/runtime-node-interaction.png" />
 
 Notes:
 

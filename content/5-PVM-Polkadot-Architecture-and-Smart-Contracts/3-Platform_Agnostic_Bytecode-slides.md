@@ -10,7 +10,7 @@ duration: 20 minutes
 
 ## Review of Compilers
 
-<img src="./img/pab/compiling.png" />
+<img src="../../assets/img/5-PVM/pab/compiling.png" />
 
 🤯 Fun Side Reading: <!-- .element: class="fragment" data-fragment-index="1" -->
 [Reflections on Trusting Trust](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf) <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -53,11 +53,11 @@ Ideally a bytecode like this is designed to be executed on a virtual machine tha
 
 ###### High Level Languages
 
-<img style="width: 30%" src="./img/pab/rust_logo.png" />
+<img style="width: 30%" src="../../assets/img/5-PVM/pab/rust_logo.png" />
 
-<img style="width: 30%" src="./img/pab/c_logo.png" />
+<img style="width: 30%" src="../../assets/img/5-PVM/pab/c_logo.png" />
 
-<img style="width: 30%" src="./img/pab/c++_logo.png" />
+<img style="width: 30%" src="../../assets/img/5-PVM/pab/c++_logo.png" />
 
 </pba-flex>
 </pba-col>
@@ -68,10 +68,10 @@ Ideally a bytecode like this is designed to be executed on a virtual machine tha
 
 ###### PABs
 
-<img style="width: 30%" src="./img/pab/jvm_logo.png" />
-<img style="width: 30%" src="./img/pab/wasm_logo.png" />
-<img style="width: 20%" src="./img/pab/eth_logo.png" />
-<img style="width: 30%" src="./img/pab/risc-v_logo.png" />
+<img style="width: 30%" src="../../assets/img/5-PVM/pab/jvm_logo.png" />
+<img style="width: 30%" src="../../assets/img/5-PVM/pab/wasm_logo.png" />
+<img style="width: 20%" src="../../assets/img/5-PVM/pab/eth_logo.png" />
+<img style="width: 30%" src="../../assets/img/5-PVM/pab/risc-v_logo.png" />
 
 </pba-flex>
 </pba-col>
@@ -82,9 +82,9 @@ Ideally a bytecode like this is designed to be executed on a virtual machine tha
 
 ###### Architecture's bytecode
 
-<img style="width: 30%" src="./img/pab/intel_logo.png" />
-<img style="width: 30%" src="./img/pab/arm_logo.png" />
-<img style="width: 30%" src="./img/pab/risc-v_logo.png" />
+<img style="width: 30%" src="../../assets/img/5-PVM/pab/intel_logo.png" />
+<img style="width: 30%" src="../../assets/img/5-PVM/pab/arm_logo.png" />
+<img style="width: 30%" src="../../assets/img/5-PVM/pab/risc-v_logo.png" />
 
 </pba-flex>
 </pba-col>
@@ -110,7 +110,7 @@ Other examples of PABs used right now:
 
 ## Compiling in a PAB
 
-<img src="./img/pab/compiling_twice.png" />
+<img src="../../assets/img/5-PVM/pab/compiling_twice.png" />
 
 Notes:
 
@@ -187,7 +187,7 @@ An environment for running untrusted code without affecting the host.
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-<img style="height: 300px" src="./img/pab/sandbox.jpg" />
+<img style="height: 300px" src="../../assets/img/5-PVM/pab/sandbox.jpg" />
 
 A SmartContract is _Arbitrary Code_ that may be executed on other people's infrastructure, we don't want SmartContracts capable of destroying the nodes on which they are executed
 
@@ -211,7 +211,7 @@ For actual untrusted code, a better analogy would be a walled garden or a Jail
 
 ### Sandboxing?
 
-<img src="./img/pab/jail.jpg" /> <!-- .element: class="fragment" data-fragment-index="1" -->
+<img src="../../assets/img/5-PVM/pab/jail.jpg" /> <!-- .element: class="fragment" data-fragment-index="1" -->
 
 A sandboxed environment must be created by the executor of the PAB.
 
@@ -231,16 +231,16 @@ Those things can't be addressed by the PAB itself but they can give good guideli
 ## PAB's lifecycle example
 
 <div class="r-stack">
-<img style="width: 70%" src="./img/pab/pab_path_1.svg" />
-<img style="width: 70%" src="./img/pab/pab_path_2.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/pab_path_1.svg" />
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/pab_path_2.svg"/>
 <!-- .element: class="fragment" data-fragment-index="1" -->
-<img style="width: 70%" src="./img/pab/pab_path_3.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/pab_path_3.svg"/>
 <!-- .element: class="fragment" data-fragment-index="2" -->
-<img style="width: 70%" src="./img/pab/pab_path_4.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/pab_path_4.svg"/>
 <!-- .element: class="fragment" data-fragment-index="3" -->
-<img style="width: 70%" src="./img/pab/pab_path_5.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/pab_path_5.svg"/>
 <!-- .element: class="fragment" data-fragment-index="4" -->
-<img style="width: 70%" src="./img/pab/pab_path_6.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/pab_path_6.svg"/>
 <!-- .element: class="fragment" data-fragment-index="5" -->
 </div>
 
@@ -331,17 +331,17 @@ Adding two number in wasm text representation (.wat)
 <pba-col center>
 
 <div class="r-stack">
-<img src="./img/pab/stack_1.svg" style="width: 100%">
+<img src="../../assets/img/5-PVM/pab/stack_1.svg" style="width: 100%">
 <!-- .element: class="fragment" data-fragment-index="1" -->
-<img src="./img/pab/stack_2.svg" style="width: 100%">
+<img src="../../assets/img/5-PVM/pab/stack_2.svg" style="width: 100%">
 <!-- .element: class="fragment" data-fragment-index="2" -->
-<img src="./img/pab/stack_3.svg" style="width: 100%">
+<img src="../../assets/img/5-PVM/pab/stack_3.svg" style="width: 100%">
 <!-- .element: class="fragment" data-fragment-index="3" -->
-<img src="./img/pab/stack_4.svg" style="width: 100%">
+<img src="../../assets/img/5-PVM/pab/stack_4.svg" style="width: 100%">
 <!-- .element: class="fragment" data-fragment-index="4" -->
-<img src="./img/pab/stack_5.svg" style="width: 100%">
+<img src="../../assets/img/5-PVM/pab/stack_5.svg" style="width: 100%">
 <!-- .element: class="fragment" data-fragment-index="5" -->
-<img src="./img/pab/stack_6.svg" style="width: 100%">
+<img src="../../assets/img/5-PVM/pab/stack_6.svg" style="width: 100%">
 <!-- .element: class="fragment" data-fragment-index="6" -->
 </div>
 
@@ -416,12 +416,12 @@ Cranelift is a fast, secure, relatively simple and innovative compiler backend. 
 #### Wasm lifecycle in Wasmtime
 
 <div class="r-stack">
-<img style="width: 70%" src="./img/pab/wasmtime_exec_1.svg" />
-<img style="width: 70%" src="./img/pab/wasmtime_exec_2.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/wasmtime_exec_1.svg" />
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/wasmtime_exec_2.svg"/>
 <!-- .element: class="fragment" data-fragment-index="1" -->
-<img style="width: 70%" src="./img/pab/wasmtime_exec_3.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/wasmtime_exec_3.svg"/>
 <!-- .element: class="fragment" data-fragment-index="2" -->
-<img style="width: 70%" src="./img/pab/wasmtime_exec_4.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/wasmtime_exec_4.svg"/>
 <!-- .element: class="fragment" data-fragment-index="3" -->
 </div>
 
@@ -450,12 +450,12 @@ Due to it's characteristics it is mainly used to execute SmartContracts on chain
 #### Wasm lifecycle in Wasmi
 
 <div class="r-stack">
-<img style="width: 70%" src="./img/pab/wasmi_exec_1.svg" />
-<img style="width: 70%" src="./img/pab/wasmi_exec_2.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/wasmi_exec_1.svg" />
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/wasmi_exec_2.svg"/>
 <!-- .element: class="fragment" data-fragment-index="1" -->
-<img style="width: 70%" src="./img/pab/wasmi_exec_3.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/wasmi_exec_3.svg"/>
 <!-- .element: class="fragment" data-fragment-index="2" -->
-<img style="width: 70%" src="./img/pab/wasmi_exec_4.svg"/>
+<img style="width: 70%" src="../../assets/img/5-PVM/pab/wasmi_exec_4.svg"/>
 <!-- .element: class="fragment" data-fragment-index="3" -->
 </div>
 
@@ -467,7 +467,7 @@ There are also light clients, where both Runtime and Client are implemented in w
   - the node's client as embedder for the node's runtime
     - the node's runtime as embedder for the SmartContract
 
-<img style="height: 30vh" src="./img/pab/mind-blown-explosion.gif" />
+<img style="height: 30vh" src="../../assets/img/5-PVM/pab/mind-blown-explosion.gif" />
 
 We have a double recursion of a PAB that embed itself
 
