@@ -475,7 +475,7 @@ hardcoded, but the protocol itself is flexible.
 
 - Why all this complexity? 😵‍💫😵‍💫
 
-<img style="width: 1200px" style="width: 1400px;" src="./img/centuries.png" />
+<img style="width: 1200px" style="width: 1400px;" src="../../../assets/img/6-Protocol_On-Chain/Substrate/centuries.png" />
 
 Note:
 

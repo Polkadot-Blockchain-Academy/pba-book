@@ -6,7 +6,7 @@ duration: 30 min
 
 # Blockchain Structure
 
-![An opaque blockchain structure](./img/opaque-blockchain.svg)
+![An opaque blockchain structure](../../assets/img/3-Blockchain/opaque-blockchain.svg)
 
 ---
 
@@ -23,7 +23,7 @@ And it allows them to know whether they have identical histories in O(1) by just
 
 ## Hash Linked List
 
-<img src="./img/hash-linked-1.svg" width="1000px" />
+<img src="../../assets/img/3-Blockchain/hash-linked-1.svg" width="1000px" />
 
 Notes:
 
@@ -33,7 +33,7 @@ This is a simplified blockchain. Each block has a pointer to the parent block as
 
 ## Hash Linked List
 
-<img src="./img/hash-linked-2.svg" width="1000px" />
+<img src="../../assets/img/3-Blockchain/hash-linked-2.svg" width="1000px" />
 
 Notes:
 
@@ -43,7 +43,7 @@ The pointer is a cryptographic hash of the parent block.
 
 ## Hash Linked List
 
-<img src="./img/hash-linked-3.svg" width="1000px" />
+<img src="../../assets/img/3-Blockchain/hash-linked-3.svg" width="1000px" />
 
 Notes:
 
@@ -53,7 +53,7 @@ This ensures data integrity throughout the entire history of the chain. This is 
 
 ### Genesis Block
 
-![Beginning of blockchain. Genesis block's "parent" is 0x0000](./img/hash-linked-genesis.svg)
+![Beginning of blockchain. Genesis block's "parent" is 0x0000](../../assets/img/3-Blockchain/hash-linked-genesis.svg)
 
 Notes:
 
@@ -72,7 +72,7 @@ A state machine defines:
 
 </pba-flex>
 
-<img style="width: 900px;" src="./img/state-machine/state-machine-general.svg" />
+<img style="width: 900px;" src="../../assets/img/3-Blockchain/state-machine/state-machine-general.svg" />
 
 <!-- FIXME - do you want to use shared img assets? Breaks the module specific intention of folders per mod... @joshy -Nuke
 Let's see how the hybrid contracts/blockchain thing goes first; then sort this. -Joshy
@@ -82,7 +82,7 @@ Let's see how the hybrid contracts/blockchain thing goes first; then sort this. 
 
 ### Blockchain meet State Machine
 
-![Blockchain where payload is state machine transition](./img/blockchain-meet-state-machine.svg)
+![Blockchain where payload is state machine transition](../../assets/img/3-Blockchain/blockchain-meet-state-machine.svg)
 
 Notes:
 
@@ -95,7 +95,7 @@ By doing so, we effectively track the history of a state machine in a cryptograp
 
 Somewhere else!
 
-![Blockchain with state shown outside of the blocks](./img/blockchain-with-state-outside.svg)
+![Blockchain with state shown outside of the blocks](../../assets/img/3-Blockchain/blockchain-with-state-outside.svg)
 
 Notes:
 
@@ -111,7 +111,7 @@ One more time to make sure it sinks in: The state is NOT in the block.
 
 A cryptographic anchor to the state
 
-![State roots cryptographically tie the block to its state](./img/blockchain-with-state-roots.svg)
+![State roots cryptographically tie the block to its state](../../assets/img/3-Blockchain/blockchain-with-state-roots.svg)
 
 Notes:
 
@@ -122,7 +122,7 @@ the state. This is known as a state root. You think of it as a hash of the state
 
 ## Forks
 
-![forks represent alternate histories](./img/forks.svg)
+![forks represent alternate histories](../../assets/img/3-Blockchain/forks.svg)
 
 A state machine can have different possible histories. These are called forks.
 
@@ -134,7 +134,7 @@ You can think of them like alternate realities. We need to decide which of the m
 
 ## Invalid Transitions
 
-![Not all transitions are valid. Forks containing them need not be considered](./img/forks-some-invalid.svg)
+![Not all transitions are valid. Forks containing them need not be considered](../../assets/img/3-Blockchain/forks-some-invalid.svg)
 
 Notes:
 
@@ -144,7 +144,7 @@ Before we even get to hardcore consensus, we can rule out _some_ possibilities b
 
 ## Realistic Blockchain Structure
 
-<img width="600px" src="./img/header-body.svg" />
+<img width="600px" src="../../assets/img/3-Blockchain/header-body.svg" />
 
 - Header: Summary of minimal important information about this block
 - Body: A batched list of state transitions
@@ -249,7 +249,7 @@ Consensus Digest is information necessary for the consensus algorithm to determi
 
 ## Substrate Header (Full Picture)
 
-![Header is cryptographically linked to parent, body, and state](./img/headers-link-state-body.svg)
+![Header is cryptographically linked to parent, body, and state](../../assets/img/3-Blockchain/headers-link-state-body.svg)
 
 ---
 
@@ -267,7 +267,7 @@ Packets from the outside world with _zero_ or more signatures attached.
 
 **Directed Acyclic Graphs**
 
-<img style="margin-left: 215px;" src="./img/forks.svg" />
+<img style="margin-left: 215px;" src="../../assets/img/3-Blockchain/forks.svg" />
 
 Notes:
 
@@ -288,7 +288,7 @@ CLICK
 
 **Directed Acyclic Graphs**
 
-![forks represent alternate histories](./img/dag.svg)
+![forks represent alternate histories](../../assets/img/3-Blockchain/dag.svg)
 
 Notes:
 
@@ -309,7 +309,7 @@ The part after this is about a P2P network of nodes that track this data structu
 
 ## Blockchain 💒 P2P Networks
 
-<img style="width: 900px;" src="./img/blockchain_p2p.svg" />
+<img style="width: 900px;" src="../../assets/img/3-Blockchain/blockchain_p2p.svg" />
 
 Notes:
 
@@ -374,7 +374,7 @@ Many nodes only perform a subset of these tasks
 
 A resource created, and often sold, by a decentralized blockchain network.
 
-<img style="width: 700px;" src="./img/Web2Web3Stacks.png" />
+<img style="width: 700px;" src="../../assets/img/3-Blockchain/Web2Web3Stacks.png" />
 
 #### Learn more:
 

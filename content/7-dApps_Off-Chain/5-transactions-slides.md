@@ -41,7 +41,7 @@ Not so much
 
 ## Transaction types
 
-<img rounded src="./img/transactions.svg" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/transactions.svg" />
 
 Notes:
 
@@ -210,7 +210,7 @@ Explain what it means to broadcast - it's not cancellable
 
 ## Transaction Tracking
 
-<img rounded src="./img/block-states.png" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/block-states.png" />
 
 ---v
 

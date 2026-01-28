@@ -42,15 +42,15 @@ The course is segmented into **modules**, with the granular **lessons** intended
 
 <!-- prettier-ignore-start -->
 
-| Module                                                        | Topic                                                                                                                |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [🔐 Cryptography](./cryptography/)                            | _Applied_ cryptography concepts and introduction to many common tools of the trade for web3 builders.                |
-| [🪙 Economics and Game Theory](./economics/)                  | _Applied_ economics and game theory fundamental to the architecture and operation of web3 applications.              |
-| [⛓️ Blockchains and Smart Contracts](./blockchain-contracts/) | Blockchain and applications built on them covered in depth conceptually and hands-on operation and construction.     |
-| [🧬 Substrate](./substrate/)                                  | The blockchain framework canonical to Polkadot and Parachains covered in depth, at a lower level.                    |
-| [🧱 FRAME](./frame/)                                          | The primary Substrate runtime framework used for parachain development.                                              |
-| [🟣 Polkadot](./polkadot/)                                    | The Polkadot blockchain covered in depth, focus on high-level design and practically how to utilize its blockspace. |
-| [💱 XCM](./xcm/)                                              | The cross consensus messaging format covered from first principals to use in protocols.                              |
+| Module                                                                    | Topic                                                                                                                |
+| ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| [🔐 Cryptography](./1-Cryptography/)                                      | _Applied_ cryptography concepts and introduction to many common tools of the trade for web3 builders.                |
+| [🪙 Economics and Game Theory](./2-Economics/)                            | _Applied_ economics and game theory fundamental to the architecture and operation of web3 applications.              |
+| [⛓️ Blockchains and Smart Contracts](./3-Blockchain/)                     | Blockchain and applications built on them covered in depth conceptually and hands-on operation and construction.     |
+| [🧬 Substrate](./6-Protocol_On-Chain/Substrate/)                          | The blockchain framework canonical to Polkadot and Parachains covered in depth, at a lower level.                    |
+| [🧱 FRAME](./6-Protocol_On-Chain/FRAME/)                                  | The primary Substrate runtime framework used for parachain development.                                              |
+| [🟣 Polkadot](./9-Polkadot/)                                              | The Polkadot blockchain covered in depth, focus on high-level design and practically how to utilize its blockspace. |
+| [💱 XCM](./6-Protocol_On-Chain/XCM/)                                      | The cross consensus messaging format covered from first principals to use in protocols.                              |
 
 <!-- prettier-ignore-end -->
 

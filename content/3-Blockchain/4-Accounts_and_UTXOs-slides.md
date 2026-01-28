@@ -36,25 +36,25 @@ We will focus on these two because they are by far the most common.
 
 ## UTXO Model
 
-![State User Model](img/utxo_state_1.svg)
+![State User Model](../../assets/img/3-Blockchain/utxo_state_1.svg)
 
 ---
 
 ## UTXO Model
 
-![State User Model](img/utxo_state_2.svg)
+![State User Model](../../assets/img/3-Blockchain/utxo_state_2.svg)
 
 ---
 
 ## How to represent Joshy and Andrew?
 
-![Representation](img/utxo_state_1.svg)
+![Representation](../../assets/img/3-Blockchain/utxo_state_1.svg)
 
 ---
 
 ## User Representation
 
-![User Representation](img/utxo_state_3.svg)
+![User Representation](../../assets/img/3-Blockchain/utxo_state_3.svg)
 
 ---
 
@@ -62,7 +62,7 @@ We will focus on these two because they are by far the most common.
 
 How to send from Joshy to Andrew? What do you need?
 
-![Transfer](img/utxo_state_4.svg)
+![Transfer](../../assets/img/3-Blockchain/utxo_state_4.svg)
 
 Notes:
 
@@ -75,7 +75,7 @@ In practice it os often a hash of a public key.
 
 What if we want to spend this?
 
-![Spend](img/utxo_state_5.svg)
+![Spend](../../assets/img/3-Blockchain/utxo_state_5.svg)
 
 Notes:
 
@@ -85,13 +85,13 @@ Why do we say spend here and not modify?
 
 ## Input
 
-![Input](img/utxo_transaction_1.svg)
+![Input](../../assets/img/3-Blockchain/utxo_transaction_1.svg)
 
 ---
 
 ## Transaction
 
-![Transaction](img/utxo_transaction_2.svg)
+![Transaction](../../assets/img/3-Blockchain/utxo_transaction_2.svg)
 
 Notes:
 
@@ -114,19 +114,19 @@ Which did I forget??
 
 ## Our new state
 
-![New State](img/utxo_state_6.svg)
+![New State](../../assets/img/3-Blockchain/utxo_state_6.svg)
 
 ---
 
 ## How do we generalize beyond money?
 
-![Generalization](img/utxo_state_7.svg)
+![Generalization](../../assets/img/3-Blockchain/utxo_state_7.svg)
 
 ---
 
 ## How do we generalize beyond money?
 
-![Generalization](img/utxo_state_8.svg)
+![Generalization](../../assets/img/3-Blockchain/utxo_state_8.svg)
 
 Notes:
 
@@ -136,13 +136,13 @@ How are we going to verify now that the state transition is valid?
 
 ## Transaction
 
-![Transaction](img/utxo_transaction_3.svg)
+![Transaction](../../assets/img/3-Blockchain/utxo_transaction_3.svg)
 
 ---
 
 ## Transaction
 
-![Transaction](img/utxo_transaction_4.svg)
+![Transaction](../../assets/img/3-Blockchain/utxo_transaction_4.svg)
 
 ---
 
@@ -156,7 +156,7 @@ How are we going to verify now that the state transition is valid?
 
 ## Is there a different way?
 
-![Different Way](img/utxo_state_7.svg)
+![Different Way](../../assets/img/3-Blockchain/utxo_state_7.svg)
 
 Notes:
 
@@ -166,7 +166,7 @@ Now ease them to the solution of Accounts
 
 ## Accounts
 
-![Accounts](img/accounts_state_1.svg)
+![Accounts](../../assets/img/3-Blockchain/accounts_state_1.svg)
 
 Notes:
 
@@ -176,13 +176,13 @@ Now ease them to the solution of Accounts
 
 ## State Transition Accounts
 
-![State Transition Accounts](img/accounts_transaction_1.svg)
+![State Transition Accounts](../../assets/img/3-Blockchain/accounts_transaction_1.svg)
 
 ---
 
 ## State Transition Accounts
 
-![State Transition Accounts](img/accounts_transaction_2.svg)
+![State Transition Accounts](../../assets/img/3-Blockchain/accounts_transaction_2.svg)
 
 ---
 
@@ -201,7 +201,7 @@ Did I forget any?
 
 ## State Transition Accounts
 
-![State Transition Accounts](img/accounts_transaction_3.svg)
+![State Transition Accounts](../../assets/img/3-Blockchain/accounts_transaction_3.svg)
 
 ---
 
@@ -215,7 +215,7 @@ Verify as opposed to determining the outcome. Not submitting output state in tra
 
 ## Account Arbitrary Data
 
-![Account Arbitrary Data](img/accounts_state_2.svg)
+![Account Arbitrary Data](../../assets/img/3-Blockchain/accounts_state_2.svg)
 
 ---
 

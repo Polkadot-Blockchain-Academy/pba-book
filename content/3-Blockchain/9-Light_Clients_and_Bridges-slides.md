@@ -8,7 +8,7 @@ description: Light clients principles and application in bridges
 <pba-cols>
 <pba-col>
 
-<img rounded style="width:400px" src="./img/tomaka.png" />
+<img rounded style="width:400px" src="../../assets/img/3-Blockchain/tomaka.png" />
 
 </pba-col>
 <pba-col>
@@ -135,7 +135,7 @@ There are varying degrees of lightness to suit your needs.
 
 ## Trustless
 
-<img rounded style="width:900px; margin-top:-30px" src="./img/bitcoin-spv.png" />
+<img rounded style="width:900px; margin-top:-30px" src="../../assets/img/3-Blockchain/bitcoin-spv.png" />
 
 <pba-flex center>
 
@@ -191,7 +191,7 @@ But this is still only even N blocks instead of every block.
 
 Stay in the gossip protocol or you might get got.
 
-<img rounded width="500px" src="./img/wanka.jpg" />
+<img rounded width="500px" src="../../assets/img/3-Blockchain/wanka.jpg" />
 <!-- .element: class="fragment" -->
 
 Notes:
@@ -207,7 +207,7 @@ So it is important to communicate with many different full nodes.
 
 Transport layers between independent consensus systems
 
-<img rounded width="700px" src="./img/basic-bridge.svg" />
+<img rounded width="700px" src="../../assets/img/3-Blockchain/basic-bridge.svg" />
 
 Notes:
 
@@ -219,7 +219,7 @@ To keep it concrete, we'll mostly talk about moving tokens.
 
 ## Source and Target Chain
 
-<img rounded width="700px" src="./img/bridge-source-target.svg" />
+<img rounded width="700px" src="../../assets/img/3-Blockchain/bridge-source-target.svg" />
 
 Notes:
 
@@ -236,7 +236,7 @@ There is a dedicated lane for each direction.
 
 ## Source Chain Re-Orgs
 
-<img rounded width="900px" src="./img/bridge-reorg.png" />
+<img rounded width="900px" src="../../assets/img/3-Blockchain/bridge-reorg.png" />
 
 Notes:
 
@@ -305,13 +305,13 @@ Notes:
 
 ## BTC Relay
 
-<img rounded width="1000px" src="./img/btc-relay.svg" />
+<img rounded width="1000px" src="../../assets/img/3-Blockchain/btc-relay.svg" />
 
 ---
 
 ## Bridge Design Challenges
 
-<img rounded width="1100px" src="./img/bridge-collapse.webp" />
+<img rounded width="1100px" src="../../assets/img/3-Blockchain/bridge-collapse.webp" />
 
 Notes:
 
@@ -348,8 +348,8 @@ But even if you don't trust any relayer out there, you can always run your own.
 ## Finality and Equivocation
 
 <section class="!flex">
-  <img rounded width="500px" src="./img/bridge-incentives-achiles.jpg" />
-  <img rounded width="700px" src="./img/bridge-double-finalized.svg" />
+  <img rounded width="500px" src="../../assets/img/3-Blockchain/bridge-incentives-achiles.jpg" />
+  <img rounded width="700px" src="../../assets/img/3-Blockchain/bridge-double-finalized.svg" />
 </section>
 
 Notes:
@@ -405,7 +405,7 @@ Relayers will expect to earn some reward for the opportunity cost of their stake
 
 ## Multichain Apps
 
-<img rounded width="800px" src="./img/bridge-multichain-stack.svg" />
+<img rounded width="800px" src="../../assets/img/3-Blockchain/bridge-multichain-stack.svg" />
 
 ---v
 
@@ -434,7 +434,7 @@ If you need some source chain state, your app needs to require a state proof to 
 
 ## Multichain Security
 
-<img rounded style="width: 500px; margin-top:-30px" src="./img/strong-and-weak-.png" />
+<img rounded style="width: 500px; margin-top:-30px" src="../../assets/img/3-Blockchain/strong-and-weak-.png" />
 
 Notes:
 

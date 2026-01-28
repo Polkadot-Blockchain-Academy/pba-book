@@ -247,7 +247,7 @@ This is an excerpt from the [ed25519](https://ed25519.cr.yp.to/) description.
 
 Preventing side channel attacks is _hard_! Noticing sidechannel attacks is even harder!
 
-<img style="width: 800px;" src="./img/we_rolled_our_own_crypto.png" />
+<img style="width: 800px;" src="../../assets/img/1-Cryptography/we_rolled_our_own_crypto.png" />
 
 ### 
 
@@ -318,7 +318,7 @@ IOTA originally rolled their own hash function in an effort to be quantum-proof.
 Some hash function weaknesses are weak. This was not. The proof of concept exploit literally found two hashes that correspond to a message for the blockchain sending a small amount of currency, and another that corresponded to a message sending a huge amount of money.
 
 [exploit POC](https://github.com/mit-dci/tangled-curl/blob/master/vuln-iota.md)
-[shutdown source](https://www.bitfinex.com/posts/215)
+[shutdown source](https://en.wikipedia.org/wiki/2016_Bitfinex_hack)
 
 ---v
 
@@ -362,7 +362,7 @@ Mitigation looks like:
 
 ## Physical Security
 
-<img style="width: 900px;" src="./img/xkcd-physical-security.png" />
+<img style="width: 900px;" src="../../assets/img/1-Cryptography/xkcd-physical-security.png" />
 
 Notes:
 

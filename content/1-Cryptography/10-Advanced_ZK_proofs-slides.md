@@ -45,7 +45,7 @@ duration: 2 hour
 
 ## Universal PLONK Gate
 
-<img style="height: 200px; padding-left:100px" src="./img/factorization-circuit.png" />
+<img style="height: 200px; padding-left:100px" src="../../assets/img/1-Cryptography/factorization-circuit.png" />
 
 - Supppose we have a left input $a$ and a right input $b$ and we are doing some addition and multiplication with them and the output is $c$.<!-- .element: class="fragment" data-fragment-index="1" -->
 - Then we could encode all of these operations as:<!-- .element: class="fragment" data-fragment-index="2" -->
@@ -61,7 +61,7 @@ $r \times s = N$
 
 $Q_l\times a + Q_r\times b + Q_o\times c + Q_m\times a\times b + Q_c = 0$
 
-<img style="height: 200px; padding-left:100px" src="./img/gate-table-factorization.png" />
+<img style="height: 200px; padding-left:100px" src="../../assets/img/1-Cryptography/gate-table-factorization.png" />
 
 ---
 
@@ -77,14 +77,14 @@ $(r-1)\times\frac{1}{r - 1} = 1 \Rightarrow r\frac{1}{r - 1} - \frac{1}{r - 1} =
 
 $Q_l\times a + Q_r\times b + Q_o\times c + Q_m\times a\times b + Q_c = 0$
 
-<img style="height: 500px; padding-left:100px" src="./img/gate-table-left-input-less-than-8-and-not-1.png" />
+<img style="height: 500px; padding-left:100px" src="../../assets/img/1-Cryptography/gate-table-left-input-less-than-8-and-not-1.png" />
 
 ---
 
 ## Gate table for the right input to be an integer and not 1
 
 $Q_l\times a + Q_r\times b + Q_o\times c + Q_m\times a\times b + Q_c = 0$
-<img style="height: 500px; padding-left:100px" src="./img/gate-table-right-input-less-than-8-and-not-1.png" />
+<img style="height: 500px; padding-left:100px" src="../../assets/img/1-Cryptography/gate-table-right-input-less-than-8-and-not-1.png" />
 
 ---
 
@@ -92,7 +92,7 @@ $Q_l\times a + Q_r\times b + Q_o\times c + Q_m\times a\times b + Q_c = 0$
 
 - You can always encode a column of a table into a polynomial.<!-- .element: class="fragment" data-fragment-index="1" -->
 - $Q_l(x)$ such that $Q_l(1) = 0, Q_l(2) = 1, Q_l(3) = 1, Q_l(4) = -1 ,...$<!-- .element: class="fragment" data-fragment-index="2" -->
-  <img style="height: 300px; padding-left:100px" src="./img/gate-table-left-input-less-than-8-and-not-1.png" /><!-- .element: class="fragment" data-fragment-index="2" -->
+  <img style="height: 300px; padding-left:100px" src="../../assets/img/1-Cryptography/gate-table-left-input-less-than-8-and-not-1.png" /><!-- .element: class="fragment" data-fragment-index="2" -->
 - When you have one polynomial for each column then you can turn the whole table into a polynomial:<!-- .element: class="fragment" data-fragment-index="3" -->
   $Q_l(x)\times a(x) + Q_r(x)\times b(x) + Q_o(x)\times c(x) + Q_m(x)\times a(x)\times b(x) + Q_c(x)$<!-- .element: class="fragment" data-fragment-index="4" -->
   $= 0$<!-- .element: class="fragment" data-fragment-index="4" -->
@@ -138,23 +138,23 @@ SAGE demo
 
 # The Wiring in a Glance
 
-## <img style="height: 700px; padding-left:100px" src="./img/wiring-fans-with-constraints.png" />
+## <img style="height: 700px; padding-left:100px" src="../../assets/img/1-Cryptography/wiring-fans-with-constraints.png" />
 
 # The Trace polynomial
 
-<img style="height: 700px; padding-left:100px" src="./img/trace-polynomial-known-points.png" />
+<img style="height: 700px; padding-left:100px" src="../../assets/img/1-Cryptography/trace-polynomial-known-points.png" />
 
 ---
 
 # The Trace poly with Wiring
 
-<img style="height: 700px; padding-left:100px" src="./img/trace-polynomial-known-points-with-wiring.png" />
+<img style="height: 700px; padding-left:100px" src="../../assets/img/1-Cryptography/trace-polynomial-known-points-with-wiring.png" />
 
 ---
 
 # The wiring permutation: $T(i)=T(\psi(i))$
 
-<img style="height: 700px; padding-left:100px" src="./img/psi-with-wirings.png" />
+<img style="height: 700px; padding-left:100px" src="../../assets/img/1-Cryptography/psi-with-wirings.png" />
 
 ---
 

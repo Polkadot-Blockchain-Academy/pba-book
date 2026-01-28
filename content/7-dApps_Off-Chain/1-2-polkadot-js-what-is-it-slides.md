@@ -10,7 +10,7 @@ duration: 1 hour
 
 ### Polkadot-JS Dependency Tree
 
-<img rounded style="width: 900px" src="./img/polkadot-js-dep-tree.png" />
+<img rounded style="width: 900px" src="../../assets/img/7-dApps_Off-Chain/polkadot-js-dep-tree.png" />
 
 Notes:
 

@@ -22,7 +22,7 @@ duration: 30min
 
 ## Blockspace
 
-![Blockspace machine](./img/blockspace-machine.svg)
+![Blockspace machine](../../assets/img/3-Blockchain/blockspace-machine.svg)
 
 Blockchain consensus systems produce a resource called blockspace.
 
@@ -36,7 +36,7 @@ As we discussed blockspace represents the right to contribute to the shared hist
 
 ## Forks Review
 
-<img style="width: 500px" src="./img/forks-some-invalid.svg" />
+<img style="width: 500px" src="../../assets/img/3-Blockchain/forks-some-invalid.svg" />
 
 There are going to be forks. We need to decide which one is the real one.
 
@@ -76,7 +76,7 @@ The first three aspects are about ruling possibilities out. The fourth and fifth
 
 Some forks can be ruled out simply because they contain invalid state transitions.
 
-![Invalid state transition](./img/invalid-state-transition.svg)
+![Invalid state transition](../../assets/img/3-Blockchain/invalid-state-transition.svg)
 
 Notes:
 
@@ -98,7 +98,7 @@ Examples:
 
 </pba-flex>
 
-![Invalid state transition](./img/politically-invalid-state-transition.svg)
+![Invalid state transition](../../assets/img/3-Blockchain/politically-invalid-state-transition.svg)
 
 Notes:
 
@@ -112,7 +112,7 @@ Not everyone will agree on these properties ad that leads to long-term network s
 
 Real-world blockchains impose additional restrictions on who can author blocks. Why?
 
-![Unthrottled authoring leads to fork chaos](./img/fork-chaos.svg)
+![Unthrottled authoring leads to fork chaos](../../assets/img/3-Blockchain/fork-chaos.svg)
 
 Notes:
 
@@ -318,7 +318,7 @@ Cons:
 
 <pba-cols>
 <pba-col>
-<img style="width: 500px" src="./img/Sassafras-albidum.jpg" />
+<img style="width: 500px" src="../../assets/img/3-Blockchain/Sassafras-albidum.jpg" />
 </pba-col>
 <pba-col>
 
@@ -344,7 +344,7 @@ Notes:
 
 <pba-cols>
 <pba-col>
-<img src="./img/jeff.jpeg" />
+<img src="../../assets/img/3-Blockchain/jeff.jpeg" />
 </pba-col>
 <pba-col>
 
@@ -356,10 +356,10 @@ Notes:
 
 ## Sassafras Analogy
 
-<img width="400px" style="float: left; padding: 1px;" src="./img/caa_black.png" />
-<img width="400px" style="float: left; padding: 1px;" src="./img/caa_white_1.png" />
+<img width="400px" style="float: left; padding: 1px;" src="../../assets/img/3-Blockchain/caa_black.png" />
+<img width="400px" style="float: left; padding: 1px;" src="../../assets/img/3-Blockchain/caa_white_1.png" />
 <!-- .element: class="fragment" data-fragment-index="2" -->
-<img width="400px" style="float: left; padding: 1px;" src="./img/caa_white_2.png" />
+<img width="400px" style="float: left; padding: 1px;" src="../../assets/img/3-Blockchain/caa_white_2.png" />
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---v
@@ -368,7 +368,7 @@ Notes:
 
 <pba-cols>
 <pba-col>
-<img src="./img/jeff.jpeg" />
+<img src="../../assets/img/3-Blockchain/jeff.jpeg" />
 </pba-col>
 <pba-col>
 <blockquote style="font-size: 80%">Ring VRF outputs are "cards".  You anonymously "play" the best aka smallest cards in your hand.</blockquote>
@@ -429,7 +429,7 @@ Each node's preference for which fork is best
 - Most blocks authored by Alice
 - Most total transactions (or most gas)
 
-<img style="width: 500px" src="./img/reorgs-1.svg" />
+<img style="width: 500px" src="../../assets/img/3-Blockchain/reorgs-1.svg" />
 
 </pba-flex>
 
@@ -441,9 +441,9 @@ The fork choice allows you, as a network participant, to decide which fork you c
 
 ## Reorganizations
 
-<img style="width: 500px" src="./img/reorgs-1.svg" />
+<img style="width: 500px" src="../../assets/img/3-Blockchain/reorgs-1.svg" />
 
-<img style="width: 500px" src="./img/reorgs-2.svg" /> <!-- .element: class="fragment" data-fragment-index="2" -->
+<img style="width: 500px" src="../../assets/img/3-Blockchain/reorgs-2.svg" /> <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Dropped transactions re-enter tx pool and re-appear in new blocks shortly <!-- .element: class="fragment" data-fragment-index="3" -->
 
@@ -460,7 +460,7 @@ You can experience this in a social way too.
 
 ## Double Spends
 
-<img style="width: 800px" src="./img/double-spend-1.svg" />
+<img style="width: 800px" src="../../assets/img/3-Blockchain/double-spend-1.svg" />
 
 Notes:
 
@@ -470,7 +470,7 @@ The name comes from bitcoin, but the attack generalizes. It exploits the existen
 
 ## Double Spends
 
-<img style="width: 800px" src="./img/double-spend-2.svg" />
+<img style="width: 800px" src="../../assets/img/3-Blockchain/double-spend-2.svg" />
 
 ---
 

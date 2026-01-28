@@ -25,7 +25,7 @@ Today we'll be covering State Sharding in Polkadot. To understand it we'll be di
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/actors.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/actors.png" />
 </pba-col>
 </pba-cols>
 
@@ -120,7 +120,7 @@ That is also why everyone needs to keep track of all the state. Because to apply
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/state.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/state.png" />
 </pba-col>
 </pba-cols>
 
@@ -140,7 +140,7 @@ So in a world with no state sharding all the nodes store all the data entries.
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 600px" src="./img/fully_connected_7_nodes.png" />
+<img style="width: 600px" src="../../assets/img/9-Polkadot/fully_connected_7_nodes.png" />
 </pba-col>
 </pba-cols>
 
@@ -160,7 +160,7 @@ if we have a thousand items in the state and want to have a thousand nodes. That
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 600px" src="./img/fully_connected_20_nodes.png" />
+<img style="width: 600px" src="../../assets/img/9-Polkadot/fully_connected_20_nodes.png" />
 </pba-col>
 </pba-cols>
 
@@ -181,7 +181,7 @@ If we would have a million items to store and a thousand nodes then we already n
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/state.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/state.png" />
 </pba-col>
 </pba-cols>
 
@@ -202,7 +202,7 @@ But data replication is not inherently bad. It is in fact really really good, it
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/state.drawio.svg" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/state.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -226,7 +226,7 @@ Additionally the relay chain also has some state in it, but the general directio
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/state.drawio.svg" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/state.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -607,7 +607,7 @@ Notes:
 
 ## All Together
 
-<img style="width: 900px" src="./assets/execution-sharding/parachain-validation-multiple.svg" />
+<img style="width: 900px" src="../../assets/img/9-Polkadot/execution-sharding/parachain-validation-multiple.svg" />
 
 ---
 
@@ -635,7 +635,7 @@ So we've discussed all the duties of collators but we ofc dont expect every para
 
 ## Cumulus
 
-<img style="width: 1200px" src="./img/glue.drawio.png" />
+<img style="width: 1200px" src="../../assets/img/9-Polkadot/glue.drawio.png" />
 
 Notes:
 Cumulus is an extension tool to Substrate. It is a bunch of libraries, scripts and tools that can take in your classic substrate chain and turn it into a polkadot compatible parachain. Cumulus is like the glue between substrate parachains and the Polkadot relay chain.
@@ -766,7 +766,7 @@ reference: https://paritytech.github.io/polkadot/book/pvf-prechecking.html
 ## References
 
 1. 🦸 [Bradley Olson](https://github.com/bradleyolson64) original lecturer
-1. 🦸 [Gabriele Miotti](https://github.com/gabriele-0201), who was a huge help putting together these slides
+1. 🦸 [Gabriele Miotti](https://github.com/gab8i), who was a huge help putting together these slides
 1. https://github.com/paritytech/cumulus/blob/master/docs/overview.md
 
 ---

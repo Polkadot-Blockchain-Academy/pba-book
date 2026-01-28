@@ -31,7 +31,7 @@ Note:
 
 ---
 
-<img rounded style="width: 1200px; margin-right: 50px;" src="./img/2.4-polkadot_pieces.svg" />
+<img rounded style="width: 1200px; margin-right: 50px;" src="../../assets/img/2-Economics/2.4-polkadot_pieces.svg" />
 
 ---
 
@@ -110,7 +110,7 @@ Note:
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <div style="flex: 1; text-align: center;">
-        <img rounded style="width: 650px; margin-right: 50px;" src="./img/2.4-current_inflation_model_polkadot.png" />
+        <img rounded style="width: 650px; margin-right: 50px;" src="../../assets/img/2-Economics/2.4-current_inflation_model_polkadot.png" />
     </div>
     <div style="flex: 1;">
         <ul>
@@ -218,7 +218,7 @@ Note:
 <pba-col>
 <pba-flex center>
 
-<img rounded style="width: 700px;" src="./img/2.4-rewards_flow.png" />
+<img rounded style="width: 700px;" src="../../assets/img/2-Economics/2.4-rewards_flow.png" />
 
 </pba-flex>
 </pba-col>
@@ -480,7 +480,7 @@ Notes:
 ---
 
 <div style="display: flex; justify-content: center; align-items: center;">
-    <img src="./img/Polkadot-Economics-Cycle.svg" style="width: 1200px;" />
+    <img src="../../assets/img/2-Economics/Polkadot-Economics-Cycle.svg" style="width: 1200px;" />
 </div>
 
 ---
@@ -546,7 +546,7 @@ Notes:
 - [Updates on Coretime Sales](https://forum.polkadot.network/t/agile-coretime-launch-status-report/8347)
 - [Discussion on Changing Inflation Model](https://forum.polkadot.network/t/adjusting-the-current-inflation-model-to-sustain-treasury-inflow/3301)
 - [Talk about Agile Polkadot](https://www.youtube.com/watch?v=GIB1WeVuJD0)
-- [Nominating and Validator Selection On Polkadot](https://polkadot.network/blog/nominating-and-validator-selection-on-polkadot/)
+- [Nominating and Validator Selection On Polkadot](https://medium.com/polkadot-network/nominating-and-validator-selection-on-polkadot-6c5c76cd6b9d)
 - [(Journal Version) Paper on Validator Selection](https://www.sciencedirect.com/science/article/abs/pii/S0305048323000336)
 - [(Open Source Version) Paper on Validator Selection)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4253515)
 - [Referendum 166](https://polkadot.polkassembly.io/referenda/166)

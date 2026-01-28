@@ -84,7 +84,7 @@ Additionally all the validators have something at stake. We can leverage that st
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 700px" src="./img/timeslot.drawio.svg" />
+<img style="width: 700px" src="../../assets/img/9-Polkadot/timeslot.drawio.svg" />
 </pba-col>
 </pba-cols>
 
@@ -142,7 +142,7 @@ Reminder that elections happe every 24h, so every day our validator set can dras
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/aura.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/aura.png" />
 </pba-col>
 </pba-cols>
 
@@ -167,7 +167,7 @@ So now that we have our 14_400 timeslots it is time to figure out who authors wh
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/aura.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/aura.png" />
 </pba-col>
 </pba-cols>
 
@@ -206,7 +206,7 @@ And this is where BABE comes in. Babe stands for Blind Assignment for Block Exte
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/vrf.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/vrf.png" />
 </pba-col>
 </pba-cols>
 
@@ -232,7 +232,7 @@ This is exactly like Proof of Work whre they are looking for a small hash, but i
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/vrf.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/vrf.png" />
 </pba-col>
 </pba-cols>
 
@@ -254,7 +254,7 @@ Does anyone see an obvious issue with this approach of rolling the dice and clai
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/vrf.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/vrf.png" />
 </pba-col>
 </pba-cols>
 
@@ -279,7 +279,7 @@ And on top of that it is possible that sometimes we will get multiple validators
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 600px" src="./img/fusion.jpg" />
+<img style="width: 600px" src="../../assets/img/9-Polkadot/fusion.jpg" />
 </pba-col>
 </pba-cols>
 
@@ -320,7 +320,7 @@ And finally we can take a look at the newest iteration of the block authoring me
     <b>Ambigious or conflicting statements</b>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/equiv.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/equiv.png" />
 </pba-col>
 </pba-cols>
 

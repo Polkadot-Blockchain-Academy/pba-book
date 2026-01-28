@@ -29,7 +29,7 @@ duration: 60 minutes
 
 ### _Ariane 5 Rocket - Flight 501_
 
-<img rounded style="width: 400px" src="./img/ariane.jpg" />
+<img rounded style="width: 400px" src="../../../assets/img/formal-methods/ariane.jpg" />
 
 - in **1996**, the launcher rocket disintegrated 39 secs after take-off.
 - **Failure**: An _overflow_, caused by a conversion from 64-bit to 16-bit floating point
@@ -151,7 +151,7 @@ Notes:
 
 ## Tools Landscape
 
-<img style="width: 700px" src="./img/Landscape.svg"/>
+<img style="width: 700px" src="../../../assets/img/formal-methods/Landscape.svg"/>
 
 Notes:
 
@@ -175,7 +175,7 @@ Links to listed tools
 <pba-cols>
 <pba-col center>
 
-<img style="width: 700px" src="./img/Landscape.svg"/>
+<img style="width: 700px" src="../../../assets/img/formal-methods/Landscape.svg"/>
 
 </pba-col>
 
@@ -204,7 +204,7 @@ Notes:
 <pba-cols>
 <pba-col center>
 
-<img style="width: 700px" src="./img/Landscape.svg"/>
+<img style="width: 700px" src="../../../assets/img/formal-methods/Landscape.svg"/>
 
 </pba-col>
 
@@ -235,7 +235,7 @@ Notes:
 <pba-cols>
 <pba-col center>
 
-<img style="width: 700px" src="./img/Landscape.svg"/>
+<img style="width: 700px" src="../../../assets/img/formal-methods/Landscape.svg"/>
 
 </pba-col>
 

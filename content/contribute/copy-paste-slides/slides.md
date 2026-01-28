@@ -297,7 +297,7 @@ Notes:
 ## Graphics
 
 <!-- So slides AND the raw markdown work as expected: Set WIDTH ONLY in PERCENT, relative to the `div` this img lands within. -->
-<img style="width: 20%" src="./img/makeitmove.gif" />
+<img style="width: 20%" src="../../../assets/img/contribute/makeitmove.gif" />
 
 svg, png, gif, ... anything that works on the web should work here!
 (Please do be mindful of file size, and minimize where practical)
@@ -314,7 +314,7 @@ License: <https://support.giphy.com/hc/en-us/articles/360020027752-GIPHY-Terms-o
 
 <!-- prettier-ignore -->
 ```html
-<img style="width: 20%" src="./img/makeitmove.gif" />
+<img style="width: 20%" src="../../../assets/img/contribute/makeitmove.gif" />
 ```
 
 ---

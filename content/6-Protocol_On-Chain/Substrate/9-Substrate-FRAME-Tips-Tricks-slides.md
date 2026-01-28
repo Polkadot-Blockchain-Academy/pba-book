@@ -881,7 +881,7 @@ impl_for_tuples!(A, B, C, D, E, F);
 
 ### Debugging Macros Generated Code
 
-<img rounded src="./img/frame-macro-error.gif" />
+<img rounded src="../../../assets/img/6-Protocol_On-Chain/Substrate/frame-macro-error.gif" />
 
 Notes:
 

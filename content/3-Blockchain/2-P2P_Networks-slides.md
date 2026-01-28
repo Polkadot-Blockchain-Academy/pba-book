@@ -27,7 +27,7 @@ It was the first step toward a distributed and resilient network
 
 ## Packets
 
-<img style="width: 600px" src="./img/message_packet.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/message_packet.svg" />
 
 Notes:
 
@@ -37,7 +37,7 @@ Mention that headers contain addressing, destination information, and ordering, 
 
 ## Routing
 
-<img style="width: 600px" src="./img/packet_switching_1.svg"  />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/packet_switching_1.svg"  />
 
 Notes:
 
@@ -47,7 +47,7 @@ We have a message that needs to be sent between two nodes.
 
 ## Routing
 
-<img  style="width: 600px" src="./img/packet_switching_2.svg" />
+<img  style="width: 600px" src="../../assets/img/3-Blockchain/packet_switching_2.svg" />
 
 Notes:
 
@@ -59,13 +59,13 @@ Not all packets need to traverse the same route
 
 ## What if a node goes down?
 
-<img style="width: 600px" src="./img/packet_switching_3.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/packet_switching_3.svg" />
 
 ---v
 
 ## Another Route is Used
 
-<img style="width: 600px" src="./img/packet_switching_4.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/packet_switching_4.svg" />
 
 Notes:
 
@@ -126,25 +126,25 @@ This was a turning point in digital copyright law and played a significant role 
 
 ## Napster Setup
 
-<img style="width: 600px" src="./img/napster_1.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/napster_1.svg" />
 
 ---v
 
 ## Napster Setup
 
-<img style="width: 600px" src="./img/napster_2.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/napster_2.svg" />
 
 ---v
 
 ## Napster Setup
 
-<img style="width: 600px" src="./img/napster_3.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/napster_3.svg" />
 
 ---v
 
 ## Napster Setup
 
-<img style="width: 600px" src="./img/napster_4.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/napster_4.svg" />
 
 ---
 
@@ -168,7 +168,7 @@ This was a turning point in digital copyright law and played a significant role 
   - TTL (Time To Live)
   <!-- .element: class="fragment" data-fragment-index="5" -->
 
-<img style="width: 400px" src="./img/gnutella.gif" />
+<img style="width: 400px" src="../../assets/img/3-Blockchain/gnutella.gif" />
 <!-- .element: class="fragment" data-fragment-index="5" -->
 
 Notes:
@@ -209,7 +209,7 @@ You could request from each peer in the swarm a piece of the file you wanted to 
 
 ---v
 
-<img style="width: 600px" src="./img/bittorrent.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/bittorrent.svg" />
 
 ---v
 
@@ -313,19 +313,19 @@ The distance metric makes it possible to understand the distance between you and
 
 ### Single Point of failure - Centralized Networks
 
-<img style="width: 600px" src="./img/client_server_1.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/client_server_1.svg" />
 
 ---v
 
 ### Single Point of failure - Centralized Networks
 
-<img style="width: 600px" src="./img/client_server_2.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/client_server_2.svg" />
 
 ---v
 
 ### Single Point of failure - Decentralized Networks
 
-<img style="width: 600px" src="./img/p2p_topology_1.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/p2p_topology_1.svg" />
 
 Notes:
 
@@ -336,7 +336,7 @@ Notes:
 
 ### Single Point of failure - Decentralized Networks
 
-<img style="width: 600px" src="./img/p2p_topology_2.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/p2p_topology_2.svg" />
 
 Notes:
 
@@ -349,7 +349,7 @@ Mention to block production ans block peering/importing. Generally there is no o
 
 ## Overlay Network
 
-<img style="width: 600px" src="./img/overlay.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/overlay.svg" />
 
 Notes:
 
@@ -361,7 +361,7 @@ But...
 
 ## Underlay Network
 
-<img style="width: 600px" src="./img/underlay.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/underlay.svg" />
 
 Notes:
 
@@ -373,13 +373,13 @@ There could be logical connections that are not physical but also the opposite
 
 ## The Underlay Network breaks
 
-<img style="width: 600px" src="./img/underlay_2.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/underlay_2.svg" />
 
 ---v
 
 ## What's happen to the overlay?
 
-<img style="width: 600px" src="./img/overlay_2.svg" />
+<img style="width: 600px" src="../../assets/img/3-Blockchain/overlay_2.svg" />
 
 Notes:
 
@@ -443,7 +443,7 @@ Notes:
 
 ## Gossip Protocol
 
-<img style="width: 500px" src="./img/3.7-p2p-gossip-1.svg" />
+<img style="width: 500px" src="../../assets/img/3-Blockchain/3.7-p2p-gossip-1.svg" />
 
 Notes:
 
@@ -455,7 +455,7 @@ In blockchain, nodes could gossip blocks that have been produced or received by 
 
 ## Gossip Protocol
 
-<img style="width: 85s0px" src="./img/3.7-p2p-gossip-2.svg" />
+<img style="width: 85s0px" src="../../assets/img/3-Blockchain/3.7-p2p-gossip-2.svg" />
 
 Notes:
 
@@ -492,7 +492,7 @@ Must know someone who is participating in the network initially(Bootnode)
 
 ## Attacks
 
-<img style="width: 600px" src="./img/eclipse_attack_1.svg"/>
+<img style="width: 600px" src="../../assets/img/3-Blockchain/eclipse_attack_1.svg"/>
 
 Notes:
 
@@ -511,7 +511,7 @@ There are multiple ways to attack an open network like the one we described beca
 
 ## Eclipse Attack
 
-<img style="width: 600px" src="./img/eclipse_attack_2.svg"/>
+<img style="width: 600px" src="../../assets/img/3-Blockchain/eclipse_attack_2.svg"/>
 
 ---v
 

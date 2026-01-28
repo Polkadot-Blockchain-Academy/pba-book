@@ -6,7 +6,7 @@ duration: 5 minutes
 
 # The revive contracts stack
 
-<img src="./img/resolc/stack.png">
+<img src="../../assets/img/5-PVM/resolc/stack.png">
 
 Notes:
 

@@ -390,7 +390,7 @@ Not really a problem for long-living application like web apps
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-<img src="./img/pvm/this-is-fine.jpg">
+<img src="../../assets/img/5-PVM/pvm/this-is-fine.jpg">
 
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
@@ -455,7 +455,7 @@ PolkaVM is based on RISC-V.
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-<img src="./img/pvm/RISC-V.svg" style="width: 100%">
+<img src="../../assets/img/5-PVM/pvm/RISC-V.svg" style="width: 100%">
 
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
@@ -483,7 +483,7 @@ I thought we are using PAB bytecodes? Let's explore why RISC-V can be used for t
 
 ## RISC-V
 
-<img src="./img/pvm/risc-v-microcontroller.jpg">
+<img src="../../assets/img/5-PVM/pvm/risc-v-microcontroller.jpg">
 
 Notes:
 
@@ -496,7 +496,7 @@ This looks like fairly simple microcontroller and CPU. Keep this in mind!
 
 ## RISC-V
 
-<img src="./img/pvm/risc-v-ledcube.png">
+<img src="../../assets/img/5-PVM/pvm/risc-v-ledcube.png">
 
 Notes:
 
@@ -538,7 +538,7 @@ RISC-V is close to either x86_64 and arm. Much closer than Wasm code anyways.
 
 ## RISC-V compilation
 
-<img src="./img/pvm/on-off-chain-compilation-1.svg">
+<img src="../../assets/img/5-PVM/pvm/on-off-chain-compilation-1.svg">
 
 Notes:
 
@@ -548,7 +548,7 @@ Let's look at what happens when we execute contract code.
 
 ## RISC-V compilation
 
-<img src="./img/pvm/on-off-chain-compilation-2.svg">
+<img src="../../assets/img/5-PVM/pvm/on-off-chain-compilation-2.svg">
 
 Notes:
 
@@ -685,7 +685,7 @@ on x86_64. We avoid that by using the embedded RISC-V ISA.
 <pba-cols>
 <pba-col center>
 
-<img src="./img/pvm/pvm-compilation-meme.jpg">
+<img src="../../assets/img/5-PVM/pvm/pvm-compilation-meme.jpg">
 
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -853,7 +853,7 @@ The PVM solution: It can do both!
 
 ## PVM bytecode interpreter vs. JIT compiler
 
-<img src="./img/pvm/interpret-vs-compile-1.svg">
+<img src="../../assets/img/5-PVM/pvm/interpret-vs-compile-1.svg">
 
 Notes:
 
@@ -868,7 +868,7 @@ will calculate Fibonacci numbers.
 
 ## PVM bytecode interpreter vs. JIT compiler
 
-<img src="./img/pvm/interpret-vs-compile-2.svg">
+<img src="../../assets/img/5-PVM/pvm/interpret-vs-compile-2.svg">
 
 Notes:
 
@@ -889,7 +889,7 @@ For a cryptographic computation, for example verifying a ZK proof, use the compi
 
 # PVM Benchmarks
 
-<img src="./img/pvm/benchmarks-1.png" style="width: 100%">
+<img src="../../assets/img/5-PVM/pvm/benchmarks-1.png" style="width: 100%">
 
 Notes:
 
@@ -899,7 +899,7 @@ Pinky is a NES emulator. The benchmark shows executing the emulator in various V
 
 # PVM Benchmarks
 
-<img src="./img/pvm/benchmarks-2.png" style="width: 100%">
+<img src="../../assets/img/5-PVM/pvm/benchmarks-2.png" style="width: 100%">
 
 Notes:
 

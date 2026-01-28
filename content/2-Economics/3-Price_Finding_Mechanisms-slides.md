@@ -17,7 +17,7 @@ duration: 1 hour
 
 ## Supply / demand for BIG markets
 
-<img rounded style="width: 800px; margin-right: 200px;" src="./img/2.1-supply-and-demand.png" />
+<img rounded style="width: 800px; margin-right: 200px;" src="../../assets/img/2-Economics/2.1-supply-and-demand.png" />
 
 Notes:
 
@@ -44,7 +44,7 @@ Notes:
 
 ## What about _difficult_ markets?
 
-<img rounded style="width: 900px;" src="./img/2.3-auction-platform.png" />
+<img rounded style="width: 900px;" src="../../assets/img/2-Economics/2.3-auction-platform.png" />
 
 Notes:
 
@@ -140,7 +140,7 @@ Notes:
 
 <pba-col>
 
-<img rounded style="width: 600px; margin-right: 10px;" src="./img/2.3-price-posting.png" />
+<img rounded style="width: 600px; margin-right: 10px;" src="../../assets/img/2-Economics/2.3-price-posting.png" />
 
 </pba-col>
 </pba-cols>
@@ -149,7 +149,7 @@ Notes:
 
 ## Auctions
 
-<img rounded style="width: 500px;" src="./img/2.3-auctioneer.gif" />
+<img rounded style="width: 500px;" src="../../assets/img/2-Economics/2.3-auctioneer.gif" />
 
 ---
 
@@ -271,7 +271,7 @@ Notes:
 - **Truthful equilibrium**: a _dominant strategy_ to bid truthfully.
 - **Dominant strategy**: outcome is at least as good as the outcome of any other strategy, _no matter what the other bidder bids_.
 
-<img rounded style="width: 1300px;" src="./img/second-price-auction.svg" />
+<img rounded style="width: 1300px;" src="../../assets/img/2-Economics/second-price-auction.svg" />
 
 Notes:
 
@@ -327,7 +327,7 @@ Notes:
 
 ## Reserve price
 
-<img rounded style="width: 1400px;" src="./img/reserve-price.svg" />
+<img rounded style="width: 1400px;" src="../../assets/img/2-Economics/reserve-price.svg" />
 
 Notes:
 
@@ -733,7 +733,7 @@ Notes:
 _Answer:_ **candle auctions.**<br/>
 Dynamic first-price auction with _random ending time._
 
-<img rounded style="width: 600px;" src="./img/2.3-candle-auction-photo.jpg" />
+<img rounded style="width: 600px;" src="../../assets/img/2-Economics/2.3-candle-auction-photo.jpg" />
 
 ---
 
@@ -801,7 +801,7 @@ The themes of his creations mostly focus on exploring the relationship between r
 
 ---
 
-<img rounded style="width:600px" src="./img/2.3-nft.jpeg" />
+<img rounded style="width:600px" src="../../assets/img/2-Economics/2.3-nft.jpeg" />
 
 ---
 
@@ -869,9 +869,9 @@ Polkadot & Kusama Auctions<br/>Data & Background information:
 
 <pba-flex center>
 
-- [Kusama Auctions 1-5](https://polkadot.network/blog/making-history-an-overview-of-the-first-five-parachain-slot-auctions-on-kusama/)
-- [Kusama Auctions 6-10](https://polkadot.network/blog/kusama-batch-2-auctions-report/)
-- [Polkadot Auctions 1-5](https://polkadot.network/blog/making-history-again-polkadot-auctions-1-5/)
+- [Kusama Auctions 1-5](https://medium.com/kusama-network/making-history-an-overview-of-the-first-five-parachain-slot-auctions-on-kusama-2a2c2d182d62)
+- [Kusama Auctions 6-10](https://medium.com/kusama-network/kusama-batch-2-auctions-report-8a6aed3435a2)
+- [Polkadot Auctions 1-5](https://medium.com/polkadot-network/making-history-again-polkadot-auctions-1-5-7592c07d5d01)
 
 </pba-flex>
 

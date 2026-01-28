@@ -23,7 +23,7 @@ owner: Maciej Zyszkiewicz (Bradley Olson originally)
   </ul>
 </pba-col>
 <pba-col>
-<img style="width: 400px" src="./img/actors.png" />
+<img style="width: 400px" src="../../assets/img/9-Polkadot/actors.png" />
 </pba-col>
 </pba-cols>
 
@@ -68,7 +68,7 @@ To answer that question we'll look into a procedure I call an assignment or back
 
 ## Active Validators
 
-<img style="width: 500px" src="./assets/execution-sharding/polkadot-components.svg"/>
+<img style="width: 500px" src="../../assets/img/9-Polkadot/execution-sharding/polkadot-components.svg"/>
 
 **Active validators** are given to the parachain protocol by the NPoS election subsystem.
 
@@ -81,7 +81,7 @@ Assignment will be operating only **Active validators**. They are given to the p
 
 ## Backing Groups
 
-<img rounded style="width: 1100px" src="./assets/execution-sharding/validator-groups.png" />
+<img rounded style="width: 1100px" src="../../assets/img/9-Polkadot/execution-sharding/validator-groups.png" />
 
 Validators are divided into small **Backing Groups**.
 
@@ -96,7 +96,7 @@ This is only a teaser but backing groups are mapping 1 to 1 to Polkadot **Execut
 
 ## Execution Cores
 
-<img rounded style="width: 500px" src="./assets/execution-sharding/polkadot-architecture-simple.png" />
+<img rounded style="width: 500px" src="../../assets/img/9-Polkadot/execution-sharding/polkadot-architecture-simple.png" />
 
 Each backing group corresponds to a **Polkadot Execution Core**.
 One execution core can handle a single parachain block every 6s.
@@ -110,7 +110,7 @@ In that map the white ovals are the validators. They are grouped into backing gr
 
 ## Rotations
 
-<img rounded style="width: 900px" src="./assets/execution-sharding/pairing_backing_groups_with_cores.svg" />
+<img rounded style="width: 900px" src="../../assets/img/9-Polkadot/execution-sharding/pairing_backing_groups_with_cores.svg" />
 
 Once every few blocks the backing groups **rotate** around the execution cores.
 
@@ -153,7 +153,7 @@ Now we finally arrive at Backing. We just sent some collations to the validators
 
 ## Backing - Backers
 
-<img rounded style="width: 700px" src="./assets/execution-sharding/polkadot-architecture-simple.png" />
+<img rounded style="width: 700px" src="../../assets/img/9-Polkadot/execution-sharding/polkadot-architecture-simple.png" />
 
 Validators in the backing group are often called backers.
 
@@ -164,7 +164,7 @@ Validators in the backing group are often called backers for those parablocks th
 
 ## Backing - Backers
 
-<img rounded style="width: 700px" src="./assets/execution-sharding/polkadot-architecture-simple-zoom.png" />
+<img rounded style="width: 700px" src="../../assets/img/9-Polkadot/execution-sharding/polkadot-architecture-simple-zoom.png" />
 
 Notes:
 We can zoom in on a specific backing group. Here we can see that backers are first point of contact to the outside world. They are the like club bouncers for the relay chain.
@@ -181,7 +181,7 @@ But for them to do their job correctly backers after receiving collations need t
 
 ## Backing - PVF definition
 
-<img rounded style="width: 1000px" src="./assets/execution-sharding/runtime_validation_2.svg" />
+<img rounded style="width: 1000px" src="../../assets/img/9-Polkadot/execution-sharding/runtime_validation_2.svg" />
 
 > **Parachain Validation Function** (PVF) is a function which takes in the current parachain state (PoV), the promised parachain state, and the parachain state transition arguments. It re-executes the parachain logic/runtime/STF using the arguments on the current state and checks if it matches the promised state. If it does, the parachain block is valid.
 
@@ -193,7 +193,7 @@ PVF reruns the STF in a sandbox environment to test its outputs.
 
 ## Backing - STF reminder
 
-<img style="width: 1200px" src="./assets/execution-sharding/parachain-validation.svg" />
+<img style="width: 1200px" src="../../assets/img/9-Polkadot/execution-sharding/parachain-validation.svg" />
 
 Notes:
 
@@ -306,7 +306,7 @@ The main goal of backing is not immediate security but accountability. Backers a
 
 ## Backing - Networking
 
-<img rounded style="width: 1000px" src="./assets/execution-sharding/backing-networking.png" />
+<img rounded style="width: 1000px" src="../../assets/img/9-Polkadot/execution-sharding/backing-networking.png" />
 
 Notes:
 Once a certain threshold of backers (3 of 5 in Polkadot) in the group approves the parablock it moves to the next stage. It can be broadcasted beyond it's backing group.
@@ -317,7 +317,7 @@ Once a certain threshold of backers (3 of 5 in Polkadot) in the group approves t
 
 Once a block author spots enough backing statements he puts them **on chain** as part of a block authoring inherent.
 
-<img rounded style="width: 500px" src="./img/backing_onchain.png" />
+<img rounded style="width: 500px" src="../../assets/img/9-Polkadot/backing_onchain.png" />
 
 ---v
 
@@ -497,7 +497,7 @@ Notes:
 
 ## Availability - Erasure Coding
 
-<img rounded style="width: 450px" src="./assets/execution-sharding/line.drawio.svg" />
+<img rounded style="width: 450px" src="../../assets/img/9-Polkadot/execution-sharding/line.drawio.svg" />
 
 Notes:
 It all sounds complicated but trust me it isnt. Let me show you an example.
@@ -507,7 +507,7 @@ That's a line. If we have those two red points everyone agrees that there is onl
 
 ## Availability - Erasure Coding
 
-<img rounded style="width: 450px" src="./assets/execution-sharding/poly-2nd.drawio.svg" />
+<img rounded style="width: 450px" src="../../assets/img/9-Polkadot/execution-sharding/poly-2nd.drawio.svg" />
 
 Notes:
 Let's keep going further... thats a quadratic polynomial. So a second degree. We need exactly 3 points to be able to draw it exactly.
@@ -516,7 +516,7 @@ Let's keep going further... thats a quadratic polynomial. So a second degree. We
 
 ## Availability - Erasure Coding
 
-<img rounded style="width: 450px" src="./assets/execution-sharding/poly-3rd.drawio.svg" />
+<img rounded style="width: 450px" src="../../assets/img/9-Polkadot/execution-sharding/poly-3rd.drawio.svg" />
 
 Notes:
 You might start seeing a pattern but now that's a 3rd degree polynomial, we need exactly 4 points to draw it.
@@ -525,7 +525,7 @@ You might start seeing a pattern but now that's a 3rd degree polynomial, we need
 
 ## Availability - Erasure Coding
 
-<img rounded style="width: 450px" src="./assets/execution-sharding/line-redundant.drawio.svg" />
+<img rounded style="width: 450px" src="../../assets/img/9-Polkadot/execution-sharding/line-redundant.drawio.svg" />
 
 Notes:
 Now let's go back to the nice and simple line. What if they gave us 3 points from the line? We can remove any one of them and we are still able to draw the line. That's a nice property.
@@ -536,7 +536,7 @@ Imagine you have 3 friends. Each remembers a single point from the line. But rem
 
 ## Availability - Erasure Coding
 
-<img rounded style="width: 450px" src="./assets/execution-sharding/line-not-enough.drawio.svg" />
+<img rounded style="width: 450px" src="../../assets/img/9-Polkadot/execution-sharding/line-not-enough.drawio.svg" />
 
 Notes:
 Of course if two of your friends go missing we have a problem. We can no longer recreate the line because we don't have enough points.

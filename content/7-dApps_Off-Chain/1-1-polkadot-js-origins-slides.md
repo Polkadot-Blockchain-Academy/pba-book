@@ -12,7 +12,7 @@ Duration: 30 minutes
 
 <pba-flex center>
 
-<img rounded src="./img/first-commit.png" />
+<img rounded src="../../assets/img/7-dApps_Off-Chain/first-commit.png" />
 
 - A personal side project before Polkadot existed
 - Started when only the specification was available
