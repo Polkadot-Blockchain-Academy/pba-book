@@ -4,7 +4,7 @@ A Python tutorial of the paper [PLONK: Permutations over Lagrange-bases for Oecu
 
 # Activity
 
-Change the [notbook content](../../../../assets/img/1-Cryptography/materials/plonk.ipynb) so it proves that you know the solution (3,4,5) to Pythagoras equation $x^2 + y^2 = z^2$ instead of proving the knowledge of solution to $x^3 + x + 5 = 35$ (as currently does). You only need to update the tutorial up to Part x FFT, until you generate the permutations successfully.
+Change the [notbook content](./plonk.ipynb) so it proves that you know the solution (3,4,5) to Pythagoras equation $x^2 + y^2 = z^2$ instead of proving the knowledge of solution to $x^3 + x + 5 = 35$ (as currently does). You only need to update the tutorial up to Part x FFT, until you generate the permutations successfully.
 
 You should _not_ import the `gen_copy_constraints` from `plonk.sample_problem` instead, you should create the `copy_constraints` array similar to $\psi$ array we built in the course.
 
@@ -14,7 +14,7 @@ You should _not_ import the `gen_copy_constraints` from `plonk.sample_problem` i
 pip install -e .
 ```
 
-See [./plonk.ipynb](../../../../assets/img/1-Cryptography/materials/plonk.ipynb) for the tutorial.
+See [./plonk.ipynb](./plonk.ipynb) for the tutorial.
 
 ## Testing
 

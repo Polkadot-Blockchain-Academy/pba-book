@@ -91,7 +91,7 @@ Why do we say spend here and not modify?
 
 ## Transaction
 
-![Transaction](img/utxo_transaction_2.svg)
+![Transaction](../../../assets/img/3-Blockchain/utxo_transaction_2.svg)
 
 Notes:
 
@@ -114,13 +114,13 @@ Which did I forget??
 
 ## Our new state
 
-![New State](img/utxo_state_6.svg)
+![New State](../../../assets/img/3-Blockchain/utxo_state_6.svg)
 
 ---
 
 ## How do we generalize beyond money?
 
-![Generalization](img/utxo_state_7.svg)
+![Generalization](../../../assets/img/3-Blockchain/utxo_state_7.svg)
 
 ---
 
@@ -136,7 +136,7 @@ How are we going to verify now that the state transition is valid?
 
 ## Transaction
 
-![Transaction](img/utxo_transaction_3.svg)
+![Transaction](../../../assets/img/3-Blockchain/utxo_transaction_3.svg)
 
 ---
 
@@ -156,7 +156,7 @@ How are we going to verify now that the state transition is valid?
 
 ## Is there a different way?
 
-![Different Way](img/utxo_state_7.svg)
+![Different Way](../../../assets/img/3-Blockchain/utxo_state_7.svg)
 
 Notes:
 
@@ -176,13 +176,13 @@ Now ease them to the solution of Accounts
 
 ## State Transition Accounts
 
-![State Transition Accounts](img/accounts_transaction_1.svg)
+![State Transition Accounts](../../../assets/img/3-Blockchain/accounts_transaction_1.svg)
 
 ---
 
 ## State Transition Accounts
 
-![State Transition Accounts](img/accounts_transaction_2.svg)
+![State Transition Accounts](../../../assets/img/3-Blockchain/accounts_transaction_2.svg)
 
 ---
 
