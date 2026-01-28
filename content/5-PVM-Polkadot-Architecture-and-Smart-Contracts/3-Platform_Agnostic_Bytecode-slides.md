@@ -529,7 +529,7 @@ Notes:
 
 - More on PAB:
 
-  - https://github.com/gabriele-0201/IPABDN/blob/main/thesis/IPABDN.pdf
+  - https://github.com/gab8i/IPABDN/blob/main/thesis/IPABDN.pdf
 
 - More on Rust target spec:
 

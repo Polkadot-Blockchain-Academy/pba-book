@@ -766,7 +766,7 @@ reference: https://paritytech.github.io/polkadot/book/pvf-prechecking.html
 ## References
 
 1. 🦸 [Bradley Olson](https://github.com/bradleyolson64) original lecturer
-1. 🦸 [Gabriele Miotti](https://github.com/gabriele-0201), who was a huge help putting together these slides
+1. 🦸 [Gabriele Miotti](https://github.com/gab8i), who was a huge help putting together these slides
 1. https://github.com/paritytech/cumulus/blob/master/docs/overview.md
 
 ---
