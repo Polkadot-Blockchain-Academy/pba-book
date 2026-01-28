@@ -25,7 +25,7 @@ The module is designed to 3 days of contact time lasting about 6-8 hours each da
 
 - The primary coding activity is [Blockchain From Scratch](https://github.com/JoshOrndorff/blockchain-from-scratch/). Each student should close this repository to work through it in and after class. This will occupy 8-10 hours of class time.
 
-- Grandpa Board Game - TODO find the repo, it may have gotten deleted. For now the content was copied into https://polkadot-blockchain-academy.github.io/pba-book/blockchain-contracts/_materials/grandpa-board-game.html
+- Grandpa Board Game - TODO find the repo, it may have gotten deleted.
 
 - Start a Blockchain and Fork Off - This activity is written up in [its own repo](https://github.com/Polkadot-Blockchain-Academy/Academy-PoW).
 
@@ -71,7 +71,7 @@ The module is designed to 3 days of contact time lasting about 6-8 hours each da
 
 - 🗣️ [Consensus Part 2 - Finality](./8-Consensus_Finality-slides.md)
 - ☕ Break
-- 🎲 [Grandpa Board Game](https://polkadot-blockchain-academy.github.io/pba-book/blockchain-contracts/_materials/grandpa-board-game.html) TODO Find proper repo
+- 🎲 Grandpa Board Game - TODO Find proper repo
 
 ### Day 3
 
